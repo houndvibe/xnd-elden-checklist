@@ -3,11 +3,11 @@ import type { ProgressProps } from "antd";
 import type { Shields } from "../categories/shields/data";
 import { getCategoryStats } from "../../lib";
 
-const conicColors: ProgressProps["strokeColor"] = {
-  "0%": "grey",
-  "30%": "#d4af37",
-  "60%": "#2c524d",
-  "100%": "green",
+export const conicColors: ProgressProps["strokeColor"] = {
+  "0%": "#3a3a3a",
+  "45%": "#8b7c3b",
+
+  "100%": "#083523",
 };
 
 export default function CategoryInfo({ items }: { items: Shields }) {

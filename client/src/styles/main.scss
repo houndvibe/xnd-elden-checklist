@@ -5,6 +5,16 @@ $text-light: #f4f1de;
 $header-bg: #1a1a1a;
 $title: #d4af37;
 
+$color-bg: #1a1a1a;
+$color-bg-secondary: #2b2b2b;
+$color-gold: #8b7c3b;
+$color-gold-bright: #c4a000;
+$color-text: #e0e0d0;
+$color-hover: #5a4e1e;
+$color-border: #3a3a3a;
+$color-error: #6c2e2e;
+$color-success: #3e553f;
+
 * {
   color: #8b7c3b;
   font-family: "Cinzel";
@@ -19,7 +29,7 @@ $title: #d4af37;
 }
 
 .row-collected {
-  background-color: #022718;
+  background-color: #083523;
 }
 
 /* .ant-collapse-content-box {
