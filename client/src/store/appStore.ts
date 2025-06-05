@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import shieldsReducer from "./components/categories/shields/slice";
+import shieldsReducer from "../components/categories/shields/slice";
 
 const store = configureStore({
   reducer: { shields: shieldsReducer },

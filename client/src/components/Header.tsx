@@ -24,7 +24,7 @@ export default function Header() {
             justifyContent: "flex-start",
           }}
         >
-          Xnd. Elden Ring Checklist
+          {"Xnd. Elden Ring Checklist"}
         </div>
         <div style={{ display: "flex", flex: 1, justifyContent: "center" }}>
           <Input.Search placeholder="Поиск..." allowClear />

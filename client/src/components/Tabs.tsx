@@ -4,82 +4,82 @@ import Shields from "./categories/shields/Shields";
 
 const items: TabsProps["items"] = [
   {
-    key: "1",
+    key: "weapons",
     label: "Weapons",
     children: "Weapons",
   },
   {
-    key: "2",
+    key: "armour",
     label: "Armour",
     children: "Armour",
   },
   {
-    key: "3",
+    key: "shields",
     label: "Shields",
     children: <Shields />,
   },
   {
-    key: "4",
+    key: "talismans",
     label: "Talismans",
     children: "Talismans",
   },
   {
-    key: "5",
+    key: "ashesOfWar",
     label: "Ashes of war",
     children: "Ashes of war",
   },
   {
-    key: "6",
+    key: "spiritAshes",
     label: "Spirit Ashes",
     children: "Spirit Ashes",
   },
   {
-    key: "7",
+    key: "sorceries",
     label: "Sorceries",
     children: "Sorceries",
   },
   {
-    key: "8",
+    key: "incontations",
     label: "Incontations",
     children: "Incontations",
   },
   {
-    key: "9",
+    key: "tears",
     label: "Tears",
     children: "Tears",
   },
   {
-    key: "10",
+    key: "gestures",
     label: "Gestures",
     children: "Gestures",
   },
   {
-    key: "11",
+    key: "tools",
     label: "Tools",
     children: "Tools",
   },
   {
-    key: "12",
+    key: "craft",
     label: "Craft",
     children: "Craft",
   },
   {
-    key: "13",
+    key: "upgrades",
     label: "Upgrades",
     children: "Upgrades",
   },
   {
-    key: "14",
+    key: "bellBearings",
     label: "Bell Bearings",
     children: "Bell Bearings",
   },
   {
-    key: "15",
+    key: "cookbooks",
     label: "Cookbooks",
     children: "Cookbooks",
   },
 ];
 
 export default function Tabs() {
-  return <AntdTabs defaultActiveKey="1" items={items} />;
+  return <AntdTabs items={items} />;
 }

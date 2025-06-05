@@ -1,6 +1,7 @@
 import { Layout } from "antd";
 
 const { Footer: AppFooter } = Layout;
+
 export default function Footer() {
   return (
     <AppFooter

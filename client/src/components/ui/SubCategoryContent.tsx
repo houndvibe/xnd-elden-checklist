@@ -4,7 +4,7 @@ import "../../styles/main.scss";
 import { useState } from "react";
 import { toWikiImageUrl } from "../../lib";
 import type { DataType, Shields } from "../categories/shields/data";
-import { useAppDispatch } from "../../typedDispatch";
+import { useAppDispatch } from "../../store/typedDispatch";
 import { toggleShieldCollected } from "../categories/shields/slice";
 
 export default function SubCategoryContent({

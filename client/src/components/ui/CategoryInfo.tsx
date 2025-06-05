@@ -1,6 +1,7 @@
 import { Progress, Typography } from "antd";
 import type { ProgressProps } from "antd";
-import type { DataType, Shields } from "../categories/shields/data";
+import type { Shields } from "../categories/shields/data";
+import { getCategoryStats } from "../../lib";
 
 const conicColors: ProgressProps["strokeColor"] = {
   "0%": "grey",
@@ -10,25 +11,15 @@ const conicColors: ProgressProps["strokeColor"] = {
 };
 
 export default function CategoryInfo({ items }: { items: Shields }) {
-  const getCollectedStats = (data: Shields) => {
-    let total = 0;
-    let collected = 0;
-
-    for (const category of Object.values(data)) {
-      total += category.length;
-      collected += category.filter((item: DataType) => item.collected).length;
-    }
-
-    const percent = total === 0 ? 0 : Math.round((collected / total) * 100);
-
-    return { total, collected, percent };
-  };
-
-  const { total, collected, percent } = getCollectedStats(items);
+  const { total, collected, percentage } = getCategoryStats(items);
 
   return (
     <div style={{ textAlign: "center" }}>
-      <Progress type="dashboard" percent={percent} strokeColor={conicColors} />
+      <Progress
+        type="dashboard"
+        percent={percentage}
+        strokeColor={conicColors}
+      />
       <Typography.Title>
         Shields <>{collected + "/" + total}</>
       </Typography.Title>

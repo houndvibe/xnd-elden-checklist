@@ -1,4 +1,6 @@
-export function toWikiImageUrl(itemName: string): string {
+import type { DataType, Shields } from "./components/categories/shields/data";
+
+export function toWikiImageUrl(itemName: string) {
   const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
@@ -9,14 +11,24 @@ export function toWikiImageUrl(itemName: string): string {
   return `${baseUrl}${formattedName}_elden_ring_wiki_guide_200px.png`;
 }
 
-export const getPercentage = (items: { collected: boolean }[]) => {
-  if (!items.length) return 0;
-  const collectedCount = items.filter((item) => item.collected).length;
-  return Math.round((collectedCount / items.length) * 100);
-};
+export function getCategoryStats(data: Shields) {
+  let total = 0;
+  let collected = 0;
 
-export const getPieces = (items: { collected: boolean }[]) => {
-  if (!items.length) return 0;
-  const collectedCount = items.filter((item) => item.collected).length;
-  return `${collectedCount}/${items.length}`;
-};
+  for (const category of Object.values(data)) {
+    total += category.length;
+    collected += category.filter((item: DataType) => item.collected).length;
+  }
+
+  const percentage = total === 0 ? 0 : Math.round((collected / total) * 100);
+
+  return { total, collected, percentage };
+}
+
+export function getSubCategoryStats(items: { collected: boolean }[]) {
+  const total = items.length;
+  const collected = items.filter((item) => item.collected).length;
+  const percentage = Math.round((collected / total) * 100);
+
+  return { total, collected, percentage };
+}
