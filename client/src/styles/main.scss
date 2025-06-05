@@ -6,6 +6,10 @@ $text-light: #f4f1de;
 $header-bg: #1a1a1a;
 $title: #d4af37;
 
+.background {
+  background: url("../assets/bg-2.jpeg") center/cover no-repeat;
+}
+
 /* .checklist {
    background: url("../assets/main-bg.jpg") center/cover no-repeat;
   background: #2d2d23;
