@@ -1,6 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import shieldsReducer from "./components/categories/shields/slice";
 
-export default configureStore({
+const store = configureStore({
   reducer: { shields: shieldsReducer },
 });
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+export type AppStore = ReturnType<typeof configureStore>;
+
+export default store;

@@ -14,3 +14,9 @@ export const getPercentage = (items: { collected: boolean }[]) => {
   const collectedCount = items.filter((item) => item.collected).length;
   return Math.round((collectedCount / items.length) * 100);
 };
+
+export const getPieces = (items: { collected: boolean }[]) => {
+  if (!items.length) return 0;
+  const collectedCount = items.filter((item) => item.collected).length;
+  return `${collectedCount}/${items.length}`;
+};
