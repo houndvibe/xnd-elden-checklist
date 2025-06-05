@@ -5,6 +5,11 @@ $text-light: #f4f1de;
 $header-bg: #1a1a1a;
 $title: #d4af37;
 
+* {
+  color: #8b7c3b;
+  font-family: "Cinzel";
+}
+
 .background {
   background: url("../assets/bg-2.jpeg") center/cover no-repeat;
 }
@@ -14,7 +19,7 @@ $title: #d4af37;
 }
 
 .row-collected {
-  background-color: #1d2d1d;
+  background-color: #022718;
 }
 
 /* .ant-collapse-content-box {

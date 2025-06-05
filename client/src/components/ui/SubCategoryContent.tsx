@@ -28,7 +28,10 @@ export default function SubCategoryContent({
       dataIndex: "collected",
       key: "collected",
       render: (_value: boolean, record: DataType) => (
-        <Checkbox checked={record.collected} />
+        <Flex gap={5} align="baseline">
+          <Checkbox checked={record.collected} />
+          {record.dlc && "SOTE"}
+        </Flex>
       ),
     },
     {
@@ -41,8 +44,9 @@ export default function SubCategoryContent({
           target="_blank"
           rel="noopener noreferrer"
           onClick={(e) => e.stopPropagation()}
+          style={{ color: "#8b7c3b", fontStyle: "italic" }}
         >
-          Open
+          FextraLife
         </Link>
       ),
     },
@@ -53,7 +57,7 @@ export default function SubCategoryContent({
       <Table
         columns={columns}
         dataSource={dataSource}
-        style={{ width: 500 }}
+        style={{ width: 700 }}
         pagination={false}
         size="small"
         rowKey="name"
@@ -61,7 +65,10 @@ export default function SubCategoryContent({
           record.collected ? "row-collected" : "row-missing"
         }
         onRow={(record) => ({
-          onMouseEnter: () => setHoveredImg(toWikiImageUrl(record.name)),
+          onMouseEnter: () =>
+            setHoveredImg(
+              record.imgUrl || toWikiImageUrl(record.name, record.dlc)
+            ),
           onClick: () =>
             dispatch(
               toggleShieldCollected({
@@ -71,8 +78,15 @@ export default function SubCategoryContent({
             ),
         })}
       />
-      <Flex>
-        <Image height={600} src={hoveredImg} preview={false} alt={"No Image"} />
+      <Flex
+        style={{
+          padding: 50,
+          width: "100%",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Image height={600} src={hoveredImg} preview={false} alt={"no image"} />
       </Flex>
     </Flex>
   );

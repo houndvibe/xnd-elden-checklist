@@ -8,10 +8,10 @@ export default function Footer() {
       style={{
         textAlign: "center",
         background: "#1f1f1f",
-        color: "#999",
+        height: 20,
       }}
     >
-      © {new Date().getFullYear()} Xnd. Elden Ring Checklist
+      {`© ${new Date().getFullYear()} Xnd. Elden Ring Checklist`}
     </AppFooter>
   );
 }

@@ -1,5 +1,5 @@
 import { Layout, Input, Flex } from "antd";
-import { SettingOutlined } from "@ant-design/icons";
+import { SettingOutlined, QuestionCircleOutlined } from "@ant-design/icons";
 
 const { Header: AppHeader } = Layout;
 
@@ -10,6 +10,7 @@ export default function Header() {
         background: "#1f1f1f",
         padding: "0 20px",
         position: "sticky",
+        color: "",
       }}
     >
       <Flex align="center" justify="space-between">
@@ -17,7 +18,6 @@ export default function Header() {
           style={{
             fontSize: 20,
             fontWeight: "bold",
-            color: "#fff",
             display: "flex",
             fontFamily: "Cinzel",
             flex: 1,
@@ -29,7 +29,15 @@ export default function Header() {
         <div style={{ display: "flex", flex: 1, justifyContent: "center" }}>
           <Input.Search placeholder="Поиск..." allowClear />
         </div>
-        <div style={{ display: "flex", flex: 1, justifyContent: "flex-end" }}>
+        <div
+          style={{
+            display: "flex",
+            flex: 1,
+            justifyContent: "flex-end",
+            gap: 20,
+          }}
+        >
+          <QuestionCircleOutlined style={{ fontSize: 20, color: "#fff" }} />
           <SettingOutlined style={{ fontSize: 20, color: "#fff" }} />
         </div>
       </Flex>
