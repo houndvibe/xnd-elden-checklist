@@ -14,14 +14,24 @@ $bg-light: #1f1f1f;
   background-color: $success-green;
 }
 
-//Обоина
-.background {
-  background: url("../assets/bg-2.jpeg") center/cover no-repeat;
+//Обои
+.container {
+  background: url("../assets/bg-1.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
 }
 
-//Иконка стрелки слева в коллапсе подкатегории
-.ant-collapse-expand-icon {
-  margin-top: 12px;
+//Обои категории
+.category_wallpaper {
+  border-radius: 10px 10px 0px 0px;
+  background: url("../assets/bg-1.png") center/cover no-repeat;
+  width: 100%;
+}
+
+//Рабочая зона
+.layout {
+  max-width: 1400px;
+  height: 100vh;
 }
 
 //Scrollbar

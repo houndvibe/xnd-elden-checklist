@@ -8,19 +8,8 @@ import "./styles/global.scss";
 const App = () => {
   return (
     <ConfigProvider theme={{ algorithm: theme.darkAlgorithm }}>
-      <div
-        className="background"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Layout
-          style={{
-            maxWidth: 1400,
-            height: "100vh",
-          }}
-        >
+      <div className="container">
+        <Layout className="layout">
           <Header />
           <Content />
           <Footer />

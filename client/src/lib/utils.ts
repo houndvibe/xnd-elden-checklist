@@ -1,13 +1,16 @@
-import type { DataType, Shields } from "../components/categories/shields/data";
+import type {
+  ShieldCategoryMap,
+  ShieldItem,
+} from "../components/categories/shields/types";
 
 //Получить статистику категории ('Оружие')
-export function getCategoryStats(data: Shields) {
+export function getCategoryStats(data: ShieldCategoryMap) {
   let total = 0;
   let collected = 0;
 
   for (const category of Object.values(data)) {
     total += category.length;
-    collected += category.filter((item: DataType) => item.collected).length;
+    collected += category.filter((item: ShieldItem) => item.collected).length;
   }
 
   const percentage = total === 0 ? 0 : Math.round((collected / total) * 100);

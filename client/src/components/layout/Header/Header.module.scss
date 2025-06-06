@@ -1,5 +1,7 @@
+@use "../../../styles/global.scss" as *;
+
 .header {
-  background: #1f1f1f;
+  background: $bg-light;
   padding: 0 20px;
   position: sticky;
 }
@@ -11,7 +13,6 @@
   font-family: Cinzel, serif;
   flex: 1;
   justify-content: flex-start;
-  color: #fff;
 }
 
 .searchWrapper {
@@ -25,10 +26,8 @@
   flex: 1;
   justify-content: flex-end;
   gap: 20px;
-  color: #fff;
 }
 
 .icon {
   font-size: 20px;
-  color: #fff;
 }

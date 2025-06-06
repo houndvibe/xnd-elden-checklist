@@ -1,6 +1,8 @@
+@use "../../../styles/global.scss" as *;
+
 .content {
   flex-grow: 1;
   padding: 20px;
-  background: #141414;
+  background: $bg-dark;
   overflow-y: scroll;
 }

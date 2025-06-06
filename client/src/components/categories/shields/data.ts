@@ -1,19 +1,6 @@
-export interface DataType {
-  name: string;
-  collected: boolean;
-  link: string;
-  dlc: boolean;
-  imgUrl?: string;
-}
+import type { ShieldCategoryMap } from "./types";
 
-export interface Shields {
-  smallShields: DataType[];
-  mediumShields: DataType[];
-  greatShields: DataType[];
-  thurstingShields: DataType[];
-}
-
-export const shieldsData: Shields = {
+export const shieldsData: ShieldCategoryMap = {
   smallShields: [
     {
       name: "Rickety Shield",
@@ -530,7 +517,7 @@ export const shieldsData: Shields = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/verdigris_greatshield_greatshields_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
   ],
-  thurstingShields: [
+  thrustingShields: [
     {
       name: "Dueling Shield",
       collected: false,

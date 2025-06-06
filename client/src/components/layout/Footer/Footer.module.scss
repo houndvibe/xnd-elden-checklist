@@ -1,8 +1,10 @@
+@use "../../../styles/global.scss" as *;
+
 .footer {
   text-align: center;
-  background: #1f1f1f;
+  color: $text-primary;
+  background: $bg-light;
+  font-size: 15px;
   height: 20px;
-  color: #fff;
-  font-size: 12px;
-  line-height: 20px;
+  line-height: 2px;
 }

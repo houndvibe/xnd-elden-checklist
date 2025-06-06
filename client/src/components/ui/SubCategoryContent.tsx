@@ -1,22 +1,26 @@
 import { Checkbox, Flex, Image, Table, type TableProps } from "antd";
 import Link from "antd/es/typography/Link";
 import { useState } from "react";
-import type { DataType, Shields } from "../categories/shields/data";
+
 import { useAppDispatch } from "../../store/typedDispatch";
 import { toggleShieldCollected } from "../categories/shields/slice";
 import { convertToWikiImageUrl } from "../../lib/utils";
+import type {
+  ShieldCategoryMap,
+  ShieldItem,
+} from "../categories/shields/types";
 
 export default function SubCategoryContent({
   dataSource,
   category,
 }: {
-  dataSource: DataType[];
-  category: keyof Shields;
+  dataSource: ShieldItem[];
+  category: keyof ShieldCategoryMap;
 }) {
   const [hoveredImg, setHoveredImg] = useState<string | undefined>(undefined);
   const dispatch = useAppDispatch();
 
-  const columns: TableProps<DataType>["columns"] = [
+  const columns: TableProps<ShieldItem>["columns"] = [
     {
       title: "Name",
       dataIndex: "name",
@@ -26,7 +30,7 @@ export default function SubCategoryContent({
       title: "Collected",
       dataIndex: "collected",
       key: "collected",
-      render: (_value: boolean, record: DataType) => (
+      render: (_value: boolean, record: ShieldItem) => (
         <Flex gap={5} align="baseline">
           <Checkbox checked={record.collected} />
           {record.dlc && "SOTE"}
@@ -87,10 +91,23 @@ export default function SubCategoryContent({
           alignItems: "center",
         }}
       >
-        <Image height={600} src={hoveredImg} preview={false} alt={"no image"} />
-        {
-          "Starting equipment for the Prophet class. Dropped by Demi-Humans that wield it. A good location to find them is going north from South of the Lookout Tower site of grace in the Weeping Peninsula. There should be a group of four of them carrying this shield."
-        }
+        {hoveredImg ? (
+          <>
+            <Image
+              height={600}
+              src={hoveredImg}
+              preview={false}
+              alt={"no image"}
+            />
+            <>
+              {
+                "Starting equipment for the Prophet class. Dropped by Demi-Humans that wield it. A good location to find them is going north from South of the Lookout Tower site of grace in the Weeping Peninsula. There should be a group of four of them carrying this shield."
+              }
+            </>
+          </>
+        ) : (
+          <div style={{ height: 600 }}></div>
+        )}
       </Flex>
     </Flex>
   );

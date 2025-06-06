@@ -1,21 +1,20 @@
 import { Collapse, Flex } from "antd";
 import SubCategoryLabel from "../../ui/SubCategoryLabel";
 import SubCategoryContent from "../../ui/SubCategoryContent";
-import CategoryInfo from "../../ui/CategoryInfo";
+import CategoryInfo from "../../ui/CategotyInfo/CategoryInfo";
 import { useAppSelector } from "../../../store/typedDispatch";
-import type { Shields } from "./data";
-import "./style.scss";
+import type { ShieldCategoryMap } from "./types";
 
 export default function Shields() {
   const shieldsData = useAppSelector((state) => state.shields.shieldsData);
 
-  const mapShieldsDataToCollapseItems = (shieldsData: Shields) => {
-    const keys = Object.keys(shieldsData) as (keyof Shields)[];
+  const mapShieldsDataToCollapseItems = (shieldsData: ShieldCategoryMap) => {
+    const keys = Object.keys(shieldsData) as (keyof ShieldCategoryMap)[];
     const readableTitles: Record<string, string> = {
       smallShields: "Small Shields",
       mediumShields: "Medium Shields",
       greatShields: "Great Shields",
-      thurstingShields: "Thrusting Shields",
+      thrustingShields: "Thrusting Shields",
     };
 
     return keys.map((key, index) => ({
@@ -36,9 +35,9 @@ export default function Shields() {
 
   return (
     <Flex vertical align="center">
-      <div className="category_wallpaper">
+      <Flex className="category_wallpaper" align="center" justify="center">
         <CategoryInfo items={shieldsData} />
-      </div>
+      </Flex>
 
       <div style={{ width: "100%" }}>
         <Collapse items={shieldItems} defaultActiveKey={1} />
