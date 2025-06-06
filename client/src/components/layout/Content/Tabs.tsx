@@ -3,14 +3,22 @@ import Shields from "../../categories/shields/Shields";
 import { APP_PALETTE } from "../../../lib/consts";
 import SpiritAshes from "../../categories/spirit-ashes/SpiritAshes";
 import type { ItemCategory } from "../../../global-types";
+import Dashboard from "../../dashboard/Dashboard";
+
+type ExtendedTabKey = ItemCategory | "dashboard";
 
 interface CustomTabItem {
-  key: ItemCategory;
-  label: string;
+  key: ExtendedTabKey;
+  label: string | React.ReactNode;
   children: React.ReactNode;
 }
 
 const items: CustomTabItem[] = [
+  {
+    key: "dashboard",
+    label: "PROGRESS",
+    children: <Dashboard />,
+  },
   {
     key: "weapons",
     label: "Weapons",

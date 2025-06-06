@@ -17,6 +17,15 @@ $bg-light: #1f1f1f;
   background-color: $success-green;
 }
 
+//сброс цвета сортированного столбца
+.ant-table-column-sort {
+  background: transparent !important;
+}
+
+.ant-table-column-sort:hover {
+  background: $bg-light !important;
+}
+
 //Обои
 .container {
   background: url("../assets/bg-1.png") center/cover no-repeat;
