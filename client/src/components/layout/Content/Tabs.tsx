@@ -47,9 +47,9 @@ const items: CustomTabItem[] = [
     children: "Sorceries",
   },
   {
-    key: "incontations",
-    label: "Incontations",
-    children: "Incontations",
+    key: "incantations",
+    label: "incantations",
+    children: "incantations",
   },
   {
     key: "tears",

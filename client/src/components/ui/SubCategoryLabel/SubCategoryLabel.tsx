@@ -1,8 +1,8 @@
 import { Flex, Progress } from "antd";
 import { PROGRESSBAR_COLORS } from "../../../lib/consts";
-import { getSubCategoryStats } from "../../../lib/utils";
 import styles from "./SubCategoryInfo.module.scss";
 import type { Item } from "../../../global-types";
+import { getSubCategoryStats } from "../../../lib/utils/stats";
 
 export default function SubCategoryLabel({
   title,

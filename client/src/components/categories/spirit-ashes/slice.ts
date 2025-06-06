@@ -1,8 +1,8 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import { loadFromStorage, saveToStorage } from "../../../lib/utils";
 import { STORAGE_KEY } from "../../../lib/consts";
 import { spiritAshesData } from "./data";
 import type { SpiritAshesSubCategoryMap } from "../../../global-types";
+import { loadFromStorage, saveToStorage } from "../../../lib/utils/localStore";
 
 const initialState = {
   spiritAshesData: loadFromStorage(STORAGE_KEY, spiritAshesData),

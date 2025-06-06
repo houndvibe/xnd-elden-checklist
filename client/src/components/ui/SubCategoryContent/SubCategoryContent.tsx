@@ -3,10 +3,7 @@ import Link from "antd/es/typography/Link";
 import { useState } from "react";
 import { useAppDispatch } from "../../../store/typedDispatch";
 import { toggleShieldCollected } from "../../categories/shields/slice";
-import {
-  convertShieldNameToWikiImageUrl,
-  convertSpiritNameToWikiImageUrl,
-} from "../../../lib/utils";
+
 import { toggleSpiritAshesCollected } from "../../categories/spirit-ashes/slice";
 import styles from "./SubCategoryContent.module.scss";
 import { APP_PALETTE } from "../../../lib/consts";
@@ -17,6 +14,12 @@ import type {
   ShieldSubCategoryMap,
   SpiritAshesSubCategoryMap,
 } from "../../../global-types";
+import dlcIcon from "../../../assets/dlc-icon.png";
+import type { TablePaginationConfig, SortOrder } from "antd/es/table/interface";
+import type { FilterValue, SorterResult } from "antd/es/table/interface";
+import { getNextSortStep, smartNameSort } from "../../../lib/utils/sorters";
+import { checkIsLegendary } from "../../../lib/utils/misc";
+import { convertShieldNameToWikiImageUrl, convertSpiritNameToWikiImageUrl } from "../../../lib/utils/converters";
 
 export default function SubCategoryContent({
   dataSource,
@@ -28,28 +31,37 @@ export default function SubCategoryContent({
   const dispatch = useAppDispatch();
   const [hoveredImg, setHoveredImg] = useState<string | undefined>(undefined);
 
+  const [sortStep, setSortStep] = useState<number>(0);
+  const [sortColumn, setSortColumn] = useState<string | null>(null);
+  const [sortOrder, setSortOrder] = useState<"ascend" | "descend" | null>(null);
+
   const columns: TableProps<Item>["columns"] = [
     {
       title: "Name",
       dataIndex: "name",
       key: "name",
+      sortOrder: sortColumn === "name" ? "ascend" : null,
+      sorter: (a, b) => smartNameSort(sortStep, a, b),
       render: (value, record) => {
         return (
-          <Flex>
-            {record.type === "spiritAshes" && record.legendary && (
-              <Tooltip title={"Legendary Item"}>
-                <ThunderboltTwoTone twoToneColor={APP_PALETTE.textPrimary} />
+          <Flex gap={10}>
+            {checkIsLegendary(record) ? (
+              <>
+                <Tooltip title={"Legendary Item"}>
+                  <ThunderboltTwoTone twoToneColor={APP_PALETTE.textPrimary} />
+                </Tooltip>
+                <div style={{ color: APP_PALETTE.textHighlighted }}>
+                  {value}
+                </div>
+              </>
+            ) : (
+              value
+            )}
+            {record.dlc && (
+              <Tooltip title={"Shadow of the Erdtree Dlc content"}>
+                <Image src={dlcIcon} height={20} />
               </Tooltip>
             )}
-            <div
-              style={
-                record.type === "spiritAshes" && record.legendary
-                  ? { color: APP_PALETTE.textHighlighted }
-                  : {}
-              }
-            >
-              {value}
-            </div>
           </Flex>
         );
       },
@@ -58,12 +70,12 @@ export default function SubCategoryContent({
       title: "Collected",
       dataIndex: "collected",
       key: "collected",
+      sortOrder: sortColumn === "collected" ? sortOrder : null,
+      sorter: (a, b) =>
+        a.collected === b.collected ? 0 : a.collected ? -1 : 1,
       render: (_value: boolean, record: Item) => (
         <Flex gap={5} align="baseline">
           <Checkbox checked={record.collected} />
-          {record.dlc && (
-            <Tooltip title={"Shadow of the Erdtree Dlc content"}>SOTE</Tooltip>
-          )}
         </Flex>
       ),
     },
@@ -79,11 +91,33 @@ export default function SubCategoryContent({
           onClick={(e) => e.stopPropagation()}
           style={{ color: "#8b7c3b", fontStyle: "italic" }}
         >
-          FextraLife
+          {"FextraLife"}
         </Link>
       ),
     },
   ];
+
+  function onChangeTable(
+    _pagination: TablePaginationConfig,
+    _filters: Record<string, FilterValue | null>,
+    sorter: SorterResult<Item> | SorterResult<Item>[]
+  ) {
+    const currentSorter = Array.isArray(sorter) ? sorter[0] : sorter;
+
+    if (currentSorter.columnKey === "name") {
+      setSortStep((prev) => getNextSortStep(dataSource, prev));
+      setSortColumn("name");
+      setSortOrder("ascend");
+    } else if (currentSorter.columnKey === "collected") {
+      setSortStep(0);
+      setSortColumn("collected");
+      setSortOrder((currentSorter.order ?? null) as SortOrder);
+    } else {
+      setSortStep(0);
+      setSortColumn(null);
+      setSortOrder(null);
+    }
+  }
 
   return (
     <Flex gap={20}>
@@ -98,6 +132,7 @@ export default function SubCategoryContent({
         rowClassName={(record) =>
           record.collected ? "row-collected" : "row-missing"
         }
+        onChange={onChangeTable}
         onRow={(record) => ({
           onMouseEnter: () => {
             return record.type == "shields"

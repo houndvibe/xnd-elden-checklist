@@ -6,7 +6,7 @@ export type ItemCategory =
   | "ashesOfWar"
   | "spiritAshes"
   | "sorceries"
-  | "incontations"
+  | "incantations"
   | "tears"
   | "gestures"
   | "tools"

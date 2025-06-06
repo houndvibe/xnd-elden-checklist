@@ -1,6 +1,15 @@
 import type { ProgressProps } from "antd";
+import type { ItemCategory } from "../global-types";
 
 export const STORAGE_KEY = "xnd.eldenring.shields";
+
+export const legendaryEligibleItemCategories: ItemCategory[] = [
+  "weapons",
+  "talismans",
+  "spiritAshes",
+  "sorceries",
+  "incantations",
+];
 
 //Палитра приложения дублированная для использования с Antd ConfigProvider
 export const APP_PALETTE = {

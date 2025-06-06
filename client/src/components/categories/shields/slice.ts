@@ -1,8 +1,9 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import { loadFromStorage, saveToStorage } from "../../../lib/utils";
+
 import { STORAGE_KEY } from "../../../lib/consts";
 import { shieldsData } from "./data";
 import type { ShieldSubCategoryMap } from "../../../global-types";
+import { loadFromStorage, saveToStorage } from "../../../lib/utils/localStore";
 
 const initialState = {
   shieldsData: loadFromStorage(STORAGE_KEY, shieldsData),

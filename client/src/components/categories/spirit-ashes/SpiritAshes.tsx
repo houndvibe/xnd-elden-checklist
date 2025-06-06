@@ -2,9 +2,10 @@ import { Collapse, Flex } from "antd";
 import SubCategoryContent from "../../ui/SubCategoryContent/SubCategoryContent";
 import CategoryInfo from "../../ui/CategotyInfo/CategoryInfo";
 import { useAppSelector } from "../../../store/typedDispatch";
-import { toTitleCaseFromCamel } from "../../../lib/utils";
+
 import SubCategoryLabel from "../../ui/SubCategoryLabel/SubCategoryLabel";
 import type { SpiritAshesSubCategoryMap } from "../../../global-types";
+import { toTitleCaseFromCamel } from "../../../lib/utils/converters";
 
 export default function SpiritAshes() {
   const spiritAshesData = useAppSelector(

@@ -1,8 +1,8 @@
 import { Flex, Progress, Typography } from "antd";
-import { getCategoryStats } from "../../../lib/utils";
 import { PROGRESSBAR_COLORS } from "../../../lib/consts";
 import styles from "./CategoryInfo.module.scss";
 import type { ItemSubCategoryMap } from "../../../global-types";
+import { getCategoryStats } from "../../../lib/utils/stats";
 
 export default function CategoryInfo({
   items,
