@@ -2,9 +2,12 @@ import type {
   ShieldCategoryMap,
   ShieldItem,
 } from "../components/categories/shields/types";
+import type { SpiritAshesCategoryMap } from "../components/categories/spirit-ashes/types";
 
 //Получить статистику категории ('Оружие')
-export function getCategoryStats(data: ShieldCategoryMap) {
+export function getCategoryStats(
+  data: ShieldCategoryMap | SpiritAshesCategoryMap
+) {
   let total = 0;
   let collected = 0;
 
@@ -28,7 +31,10 @@ export function getSubCategoryStats(items: { collected: boolean }[]) {
 }
 
 //Конвертирует название предмета в ссылку на fextralife wiki
-export function convertToWikiImageUrl(itemName: string, isDlc: boolean) {
+export function convertShieldNameToWikiImageUrl(
+  itemName: string,
+  isDlc: boolean
+) {
   const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
@@ -39,6 +45,30 @@ export function convertToWikiImageUrl(itemName: string, isDlc: boolean) {
   return `${baseUrl}${formattedName}_elden_ring_${
     isDlc ? "shadow_of_the_erdtree_dlc_" : ""
   }wiki_guide_200px.png`;
+}
+
+export function convertSpiritNameToWikiImageUrl(
+  itemName: string,
+  isDlc: boolean
+) {
+  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
+  const formattedName = itemName
+    .trim()
+    .toLowerCase()
+    .replace(/ /g, "_")
+    .replace(/[^a-z0-9_-]/g, "");
+
+  return `${baseUrl}${formattedName}_ashes${
+    isDlc ? "_spirit_ash" : ""
+  }_elden_ring_${
+    isDlc ? "shadow_of_the_erdtree_dlc_" : ""
+  }wiki_guide_200px.png`;
+}
+
+export function toTitleCaseFromCamel(str: string): string {
+  return str
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/^./, (s) => s.toUpperCase());
 }
 
 //Загрузка данных из localstorage

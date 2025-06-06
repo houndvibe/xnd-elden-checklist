@@ -1,14 +1,17 @@
-import { Layout, Input, Flex } from "antd";
+import { Layout, Input, Image } from "antd";
 import { SettingOutlined, QuestionCircleOutlined } from "@ant-design/icons";
 import styles from "./Header.module.scss";
+import logo from "../../../assets/logo.png";
 
 const { Header: AppHeader } = Layout;
 
 export default function Header() {
   return (
     <AppHeader className={styles.header}>
-      <Flex align="center" justify="space-between">
-        <div className={styles.title}>{"Xnd. Elden Ring Checklist"}</div>
+      <div className={styles.wrapper}>
+        <div className={styles.title}>
+          <Image src={logo} height={50} preview={false} />
+        </div>
         <div className={styles.searchWrapper}>
           <Input.Search placeholder="Поиск..." allowClear />
         </div>
@@ -16,7 +19,7 @@ export default function Header() {
           <QuestionCircleOutlined className={styles.icon} />
           <SettingOutlined className={styles.icon} />
         </div>
-      </Flex>
+      </div>
     </AppHeader>
   );
 }

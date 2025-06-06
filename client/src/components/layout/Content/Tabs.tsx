@@ -1,6 +1,7 @@
 import { Tabs as AntdTabs, ConfigProvider, type TabsProps } from "antd";
 import Shields from "../../categories/shields/Shields";
 import { APP_PALETTE } from "../../../lib/consts";
+import SpiritAshes from "../../categories/spirit-ashes/SpiritAshes";
 
 const items: TabsProps["items"] = [
   {
@@ -31,7 +32,7 @@ const items: TabsProps["items"] = [
   {
     key: "spiritAshes",
     label: "Spirit Ashes",
-    children: "Spirit Ashes",
+    children: <SpiritAshes />,
   },
   {
     key: "sorceries",

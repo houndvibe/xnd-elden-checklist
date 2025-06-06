@@ -1,29 +1,30 @@
 import { Collapse, Flex } from "antd";
-
 import SubCategoryContent from "../../ui/SubCategoryContent/SubCategoryContent";
 import CategoryInfo from "../../ui/CategotyInfo/CategoryInfo";
 import { useAppSelector } from "../../../store/typedDispatch";
-import type { ShieldCategoryMap } from "./types";
 import { toTitleCaseFromCamel } from "../../../lib/utils";
 import SubCategoryLabel from "../../ui/SubCategoryLabel/SubCategoryLabel";
+import type { SpiritAshesCategoryMap } from "./types";
 
-export default function Shields() {
-  const shieldsData = useAppSelector((state) => state.shields.shieldsData);
+export default function SpiritAshes() {
+  const spiritAshesData = useAppSelector(
+    (state) => state.spiritAshes.spiritAshesData
+  );
 
-  const shildsSubcategoryItems = Object.entries(shieldsData).map(
+  const spiritAshesSubcategoryItems = Object.entries(spiritAshesData).map(
     ([key, data], index) => ({
       key: `${index + 1}`,
       label: (
         <SubCategoryLabel
-          title={toTitleCaseFromCamel(key as keyof ShieldCategoryMap)}
+          title={toTitleCaseFromCamel(key as keyof SpiritAshesCategoryMap)}
           data={data}
         />
       ),
       children: (
         <SubCategoryContent
-          type={"shields"}
+          type={"spiritAshes"}
           dataSource={data}
-          category={key as keyof ShieldCategoryMap}
+          category={key as keyof SpiritAshesCategoryMap}
         />
       ),
     })
@@ -31,11 +32,11 @@ export default function Shields() {
 
   return (
     <Flex vertical align="center">
-      <Flex className="category_wallpaper shields_wallpaper">
-        <CategoryInfo title={"Shields"} items={shieldsData} />
+      <Flex className="category_wallpaper ashes_wallpaper">
+        <CategoryInfo title={"Spirit Ashes"} items={spiritAshesData} />
       </Flex>
       <div className="collapse_wpapper">
-        <Collapse items={shildsSubcategoryItems} defaultActiveKey={1} />
+        <Collapse items={spiritAshesSubcategoryItems} defaultActiveKey={1} />
       </div>
     </Flex>
   );

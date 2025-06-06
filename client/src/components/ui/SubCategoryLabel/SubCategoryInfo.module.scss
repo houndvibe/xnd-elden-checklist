@@ -1,0 +1,38 @@
+@use "../../../styles/global.scss" as *;
+
+.wrapper {
+  display: flex;
+  gap: 10px;
+
+  :global {
+    .ant-progress-text {
+      font-size: 30px;
+      font-family: "IM Fell English SC", serif;
+      margin-left: 20px !important;
+      color: $text-primary !important;
+    }
+  }
+}
+
+.title {
+  font-family: "IM Fell English SC", serif;
+  font-size: 30px;
+  flex: 1;
+}
+
+.count {
+  font-family: "IM Fell English SC", serif;
+  flex: 0.2;
+  font-size: 30px;
+  text-align: right;
+}
+
+.progress {
+  flex: 2.5;
+  font-size: 20px;
+}
+
+.ant-progress-text {
+  margin-left: 20px !important;
+  color: $text-primary !important;
+}

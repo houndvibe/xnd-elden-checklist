@@ -1,13 +1,24 @@
 @use "../../../styles/global.scss" as *;
 
 .card {
+  :global {
+    .ant-progress-text {
+      font-family: "IM Fell English SC", serif;
+      color: $text-highlighted !important;
+    }
+  }
+
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 20px;
   margin: 20px;
-  width: 300px;
-
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .title {
+    font-family: "Cinzel", serif;
+    /*    color: $text-highlighted; */
+  }
 }

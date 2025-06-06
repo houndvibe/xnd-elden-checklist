@@ -1,11 +1,17 @@
 import { Flex, Progress, Typography } from "antd";
 import { getCategoryStats } from "../../../lib/utils";
 import { PROGRESSBAR_COLORS } from "../../../lib/consts";
-
-import styles from "./CategoryInfo.module.scss";
 import type { ShieldCategoryMap } from "../../categories/shields/types";
+import styles from "./CategoryInfo.module.scss";
+import type { SpiritAshesCategoryMap } from "../../categories/spirit-ashes/types";
 
-export default function CategoryInfo({ items }: { items: ShieldCategoryMap }) {
+export default function CategoryInfo({
+  items,
+  title,
+}: {
+  items: ShieldCategoryMap | SpiritAshesCategoryMap;
+  title: string;
+}) {
   const { total, collected, percentage } = getCategoryStats(items);
 
   return (
@@ -15,8 +21,8 @@ export default function CategoryInfo({ items }: { items: ShieldCategoryMap }) {
         percent={percentage}
         strokeColor={PROGRESSBAR_COLORS}
       />
-      <Typography.Title>
-        Shields <>{collected + "/" + total}</>
+      <Typography.Title className={styles.title}>
+        <>{title + " " + collected + "/" + total}</>
       </Typography.Title>
     </Flex>
   );

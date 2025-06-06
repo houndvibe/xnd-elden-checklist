@@ -4,6 +4,9 @@ $success-green: #112123;
 $bg-dark: #141414;
 $bg-light: #1f1f1f;
 
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap");
+
 * {
   color: $text-primary;
   font-family: "Cinzel";
@@ -23,15 +26,41 @@ $bg-light: #1f1f1f;
 
 //Обои категории
 .category_wallpaper {
+  justify-content: center;
+  align-items: center;
   border-radius: 10px 10px 0px 0px;
-  background: url("../assets/bg-1.png") center/cover no-repeat;
   width: 100%;
+}
+.shields_wallpaper {
+  background: url("../assets/bg-shields.jpeg") center/cover no-repeat;
+}
+.ashes_wallpaper {
+  background: url("../assets/bg-ashes.jpg") center/cover no-repeat;
+}
+
+//чекбоксы
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: $text-primary;
+  border-color: $text-primary;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  border-color: $bg-dark;
 }
 
 //Рабочая зона
 .layout {
   max-width: 1400px;
   height: 100vh;
+}
+
+.ant-collapse-expand-icon {
+  padding-top: 20px;
+}
+
+.collapse_wpapper {
+  width: 100%;
 }
 
 //Scrollbar

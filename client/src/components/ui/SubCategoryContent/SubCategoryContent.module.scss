@@ -1,0 +1,9 @@
+@use "../../../styles/global.scss" as *;
+
+.table {
+  :global {
+    .legendary {
+      color: $text-highlighted !important;
+    }
+  }
+}

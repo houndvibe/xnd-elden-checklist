@@ -1,5 +1,12 @@
 @use "../../../styles/global.scss" as *;
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 .header {
   background: $bg-light;
   padding: 0 20px;
@@ -7,7 +14,6 @@
 }
 
 .title {
-  font-size: 20px;
   font-weight: bold;
   display: flex;
   font-family: Cinzel, serif;
