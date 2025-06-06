@@ -1,11 +1,10 @@
 import { Checkbox, Flex, Image, Table, type TableProps } from "antd";
 import Link from "antd/es/typography/Link";
-import "../../styles/main.scss";
 import { useState } from "react";
-import { toWikiImageUrl } from "../../lib";
 import type { DataType, Shields } from "../categories/shields/data";
 import { useAppDispatch } from "../../store/typedDispatch";
 import { toggleShieldCollected } from "../categories/shields/slice";
+import { convertToWikiImageUrl } from "../../lib/utils";
 
 export default function SubCategoryContent({
   dataSource,
@@ -67,7 +66,7 @@ export default function SubCategoryContent({
         onRow={(record) => ({
           onMouseEnter: () =>
             setHoveredImg(
-              record.imgUrl || toWikiImageUrl(record.name, record.dlc)
+              record.imgUrl || convertToWikiImageUrl(record.name, record.dlc)
             ),
           onClick: () =>
             dispatch(
@@ -79,6 +78,8 @@ export default function SubCategoryContent({
         })}
       />
       <Flex
+        vertical
+        gap={50}
         style={{
           padding: 50,
           width: "100%",
@@ -87,6 +88,9 @@ export default function SubCategoryContent({
         }}
       >
         <Image height={600} src={hoveredImg} preview={false} alt={"no image"} />
+        {
+          "Starting equipment for the Prophet class. Dropped by Demi-Humans that wield it. A good location to find them is going north from South of the Lookout Tower site of grace in the Weeping Peninsula. There should be a group of four of them carrying this shield."
+        }
       </Flex>
     </Flex>
   );

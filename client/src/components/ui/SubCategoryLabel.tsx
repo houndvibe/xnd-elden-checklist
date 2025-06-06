@@ -1,7 +1,7 @@
 import { Flex, Progress } from "antd";
+import { getSubCategoryStats } from "../../lib/utils";
 import type { DataType } from "../categories/shields/data";
-import { getSubCategoryStats } from "../../lib";
-import { conicColors } from "./CategoryInfo";
+import { progressbarColors } from "../../lib/consts";
 
 export default function SubCategoryLabel({
   title,
@@ -20,7 +20,7 @@ export default function SubCategoryLabel({
       </span>
       <Progress
         percent={percentage}
-        strokeColor={conicColors}
+        strokeColor={progressbarColors}
         style={{ flex: 3, fontSize: 20 }}
       />
     </Flex>

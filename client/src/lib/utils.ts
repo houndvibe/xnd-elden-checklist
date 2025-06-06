@@ -1,5 +1,6 @@
-import type { DataType, Shields } from "./components/categories/shields/data";
+import type { DataType, Shields } from "../components/categories/shields/data";
 
+//Получить статистику категории ('Оружие')
 export function getCategoryStats(data: Shields) {
   let total = 0;
   let collected = 0;
@@ -14,6 +15,7 @@ export function getCategoryStats(data: Shields) {
   return { total, collected, percentage };
 }
 
+//Получить статистику подкатегории ('Кинжалы')
 export function getSubCategoryStats(items: { collected: boolean }[]) {
   const total = items.length;
   const collected = items.filter((item) => item.collected).length;
@@ -22,7 +24,8 @@ export function getSubCategoryStats(items: { collected: boolean }[]) {
   return { total, collected, percentage };
 }
 
-export function toWikiImageUrl(itemName: string, isDlc: boolean) {
+//Конвертирует название предмета в ссылку на fextralife wiki
+export function convertToWikiImageUrl(itemName: string, isDlc: boolean) {
   const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
@@ -35,6 +38,7 @@ export function toWikiImageUrl(itemName: string, isDlc: boolean) {
   }wiki_guide_200px.png`;
 }
 
+//Загрузка данных из localstorage
 export function loadFromStorage<T>(key: string, fallback: T): T {
   try {
     const item = localStorage.getItem(key);
@@ -44,6 +48,7 @@ export function loadFromStorage<T>(key: string, fallback: T): T {
   }
 }
 
+//Сохранение данных в localstorage
 export function saveToStorage<T>(key: string, value: T) {
   try {
     localStorage.setItem(key, JSON.stringify(value));

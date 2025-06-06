@@ -1,0 +1,45 @@
+$text-primary: #aa7714;
+$text-highlighted: #e8b339;
+$success-green: #112123;
+$bg-dark: #141414;
+$bg-light: #1f1f1f;
+
+* {
+  color: $text-primary;
+  font-family: "Cinzel";
+}
+
+//Подсветка собранных предметов
+.row-collected {
+  background-color: $success-green;
+}
+
+//Обоина
+.background {
+  background: url("../assets/bg-2.jpeg") center/cover no-repeat;
+}
+
+//Иконка стрелки слева в коллапсе подкатегории
+.ant-collapse-expand-icon {
+  margin-top: 12px;
+}
+
+//Scrollbar
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $bg-light $bg-dark;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: $bg-dark;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: $bg-light;
+  border-radius: 4px;
+  border: 2px solid $bg-dark;
+}
+*::-webkit-scrollbar-thumb :hover {
+  background-color: $bg-light;
+}

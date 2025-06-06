@@ -1,6 +1,6 @@
-import { Tabs as AntdTabs } from "antd";
-import type { TabsProps } from "antd";
-import Shields from "./categories/shields/Shields";
+import { Tabs as AntdTabs, ConfigProvider, type TabsProps } from "antd";
+import Shields from "../../categories/shields/Shields";
+import { appPalette } from "../../../lib/consts";
 
 const items: TabsProps["items"] = [
   {
@@ -81,5 +81,20 @@ const items: TabsProps["items"] = [
 ];
 
 export default function Tabs() {
-  return <AntdTabs items={items} />;
+  return (
+    <ConfigProvider
+      theme={{
+        components: {
+          Tabs: {
+            inkBarColor: appPalette.textHighlighted,
+            itemActiveColor: appPalette.textHighlighted,
+            itemHoverColor: appPalette.textHighlighted,
+            itemSelectedColor: appPalette.textHighlighted,
+          },
+        },
+      }}
+    >
+      <AntdTabs items={items} />
+    </ConfigProvider>
+  );
 }

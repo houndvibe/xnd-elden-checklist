@@ -1,6 +1,6 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import { shieldsData, type Shields } from "./data";
-import { loadFromStorage, saveToStorage } from "../../../lib";
+import { loadFromStorage, saveToStorage } from "../../../lib/utils";
 
 const STORAGE_KEY = "xnd.eldenring.shields";
 

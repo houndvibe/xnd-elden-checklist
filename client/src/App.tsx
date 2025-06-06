@@ -1,9 +1,9 @@
 import { Layout, ConfigProvider, theme } from "antd";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Content from "./components/Content";
+import Header from "./components/layout/Header/Header";
+import Footer from "./components/layout/Footer/Footer";
+import Content from "./components/layout/Content/Content";
 import "./styles/reset.scss";
-import "./styles/main.scss";
+import "./styles/global.scss";
 
 const App = () => {
   return (

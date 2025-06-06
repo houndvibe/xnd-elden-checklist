@@ -34,27 +34,6 @@ export default function Shields() {
 
   const shieldItems = mapShieldsDataToCollapseItems(shieldsData);
 
-  /*   const [items, setItems] = useState([]);
-  useEffect(() => {
-    fetch("https://eldenring.fanapis.com/api/shields?limit=400")
-      .then((res) => res.json())
-      .then((data) => {
-        setItems(data.data);
-      });
-  }, []);
-
-  return items.map((item) => {
-    return (
-      <>
-        <br />
-        {item.name}
-        <Image src={item.image} />
-        <br />
-        {item.description}
-      </>
-    );
-  }); */
-
   return (
     <Flex vertical align="center">
       <div className="category_wallpaper">
