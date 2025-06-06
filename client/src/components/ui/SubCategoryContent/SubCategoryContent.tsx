@@ -19,7 +19,10 @@ import type { TablePaginationConfig, SortOrder } from "antd/es/table/interface";
 import type { FilterValue, SorterResult } from "antd/es/table/interface";
 import { getNextSortStep, smartNameSort } from "../../../lib/utils/sorters";
 import { checkIsLegendary } from "../../../lib/utils/misc";
-import { convertShieldNameToWikiImageUrl, convertSpiritNameToWikiImageUrl } from "../../../lib/utils/converters";
+import {
+  convertShieldNameToWikiImageUrl,
+  convertSpiritNameToWikiImageUrl,
+} from "../../../lib/utils/converters";
 
 export default function SubCategoryContent({
   dataSource,
@@ -50,9 +53,7 @@ export default function SubCategoryContent({
                 <Tooltip title={"Legendary Item"}>
                   <ThunderboltTwoTone twoToneColor={APP_PALETTE.textPrimary} />
                 </Tooltip>
-                <div style={{ color: APP_PALETTE.textHighlighted }}>
-                  {value}
-                </div>
+                <div className={styles.legendary}>{value}</div>
               </>
             ) : (
               value
@@ -89,9 +90,8 @@ export default function SubCategoryContent({
           target="_blank"
           rel="noopener noreferrer"
           onClick={(e) => e.stopPropagation()}
-          style={{ color: "#8b7c3b", fontStyle: "italic" }}
         >
-          {"FextraLife"}
+          <span className={styles.link}>{"FextraLife"}</span>
         </Link>
       ),
     },
@@ -125,7 +125,6 @@ export default function SubCategoryContent({
         className={styles.table}
         columns={columns}
         dataSource={dataSource}
-        style={{ width: 1000 }}
         pagination={false}
         size="small"
         rowKey="name"
@@ -161,14 +160,11 @@ export default function SubCategoryContent({
         })}
       />
       <Flex
+        className={styles.preview}
         vertical
+        justify="center"
+        align="center"
         gap={50}
-        style={{
-          padding: 50,
-          width: "100%",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
       >
         {hoveredImg ? (
           <>
@@ -185,7 +181,7 @@ export default function SubCategoryContent({
             </>
           </>
         ) : (
-          <div style={{ height: 600 }}></div>
+          <div className={styles.placeholder}></div>
         )}
       </Flex>
     </Flex>

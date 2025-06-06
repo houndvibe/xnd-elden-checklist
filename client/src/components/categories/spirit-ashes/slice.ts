@@ -1,11 +1,11 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import { STORAGE_KEY } from "../../../lib/consts";
+import { STORAGE_KEYS } from "../../../lib/consts";
 import { spiritAshesData } from "./data";
 import type { SpiritAshesSubCategoryMap } from "../../../global-types";
 import { loadFromStorage, saveToStorage } from "../../../lib/utils/localStore";
 
 const initialState = {
-  spiritAshesData: loadFromStorage(STORAGE_KEY, spiritAshesData),
+  spiritAshesData: loadFromStorage(STORAGE_KEYS.spiritAshes, spiritAshesData),
 };
 
 export const spiritAshesSlice = createSlice({
@@ -25,7 +25,7 @@ export const spiritAshesSlice = createSlice({
       );
       if (spiritAsh) {
         spiritAsh.collected = !spiritAsh.collected;
-        saveToStorage(STORAGE_KEY, state.spiritAshesData);
+        saveToStorage(STORAGE_KEYS.spiritAshes, state.spiritAshesData);
       }
     },
   },

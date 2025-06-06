@@ -1,12 +1,12 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 
-import { STORAGE_KEY } from "../../../lib/consts";
 import { shieldsData } from "./data";
 import type { ShieldSubCategoryMap } from "../../../global-types";
 import { loadFromStorage, saveToStorage } from "../../../lib/utils/localStore";
+import { STORAGE_KEYS } from "../../../lib/consts";
 
 const initialState = {
-  shieldsData: loadFromStorage(STORAGE_KEY, shieldsData),
+  shieldsData: loadFromStorage(STORAGE_KEYS.shields, shieldsData),
 };
 
 export const shieldsSlice = createSlice({
@@ -24,7 +24,7 @@ export const shieldsSlice = createSlice({
       const shield = state.shieldsData[category].find((s) => s.name === name);
       if (shield) {
         shield.collected = !shield.collected;
-        saveToStorage(STORAGE_KEY, state.shieldsData);
+        saveToStorage(STORAGE_KEYS.shields, state.shieldsData);
       }
     },
   },

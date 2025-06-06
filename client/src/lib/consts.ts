@@ -1,7 +1,10 @@
 import type { ProgressProps } from "antd";
 import type { ItemCategory } from "../global-types";
 
-export const STORAGE_KEY = "xnd.eldenring.shields";
+export enum STORAGE_KEYS {
+  shields = "xnd.eldenring.shields",
+  spiritAshes = "xnd.eldenring.spiritAshes",
+}
 
 export const legendaryEligibleItemCategories: ItemCategory[] = [
   "weapons",
