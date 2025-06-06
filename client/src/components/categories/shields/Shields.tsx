@@ -3,9 +3,9 @@ import { Collapse, Flex } from "antd";
 import SubCategoryContent from "../../ui/SubCategoryContent/SubCategoryContent";
 import CategoryInfo from "../../ui/CategotyInfo/CategoryInfo";
 import { useAppSelector } from "../../../store/typedDispatch";
-import type { ShieldCategoryMap } from "./types";
 import { toTitleCaseFromCamel } from "../../../lib/utils";
 import SubCategoryLabel from "../../ui/SubCategoryLabel/SubCategoryLabel";
+import type { ShieldSubCategoryMap } from "../../../global-types";
 
 export default function Shields() {
   const shieldsData = useAppSelector((state) => state.shields.shieldsData);
@@ -15,15 +15,14 @@ export default function Shields() {
       key: `${index + 1}`,
       label: (
         <SubCategoryLabel
-          title={toTitleCaseFromCamel(key as keyof ShieldCategoryMap)}
+          title={toTitleCaseFromCamel(key as keyof ShieldSubCategoryMap)}
           data={data}
         />
       ),
       children: (
         <SubCategoryContent
-          type={"shields"}
           dataSource={data}
-          category={key as keyof ShieldCategoryMap}
+          category={key as keyof ShieldSubCategoryMap}
         />
       ),
     })

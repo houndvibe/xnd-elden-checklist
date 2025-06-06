@@ -4,7 +4,7 @@ import CategoryInfo from "../../ui/CategotyInfo/CategoryInfo";
 import { useAppSelector } from "../../../store/typedDispatch";
 import { toTitleCaseFromCamel } from "../../../lib/utils";
 import SubCategoryLabel from "../../ui/SubCategoryLabel/SubCategoryLabel";
-import type { SpiritAshesCategoryMap } from "./types";
+import type { SpiritAshesSubCategoryMap } from "../../../global-types";
 
 export default function SpiritAshes() {
   const spiritAshesData = useAppSelector(
@@ -16,15 +16,14 @@ export default function SpiritAshes() {
       key: `${index + 1}`,
       label: (
         <SubCategoryLabel
-          title={toTitleCaseFromCamel(key as keyof SpiritAshesCategoryMap)}
+          title={toTitleCaseFromCamel(key as keyof SpiritAshesSubCategoryMap)}
           data={data}
         />
       ),
       children: (
         <SubCategoryContent
-          type={"spiritAshes"}
           dataSource={data}
-          category={key as keyof SpiritAshesCategoryMap}
+          category={key as keyof SpiritAshesSubCategoryMap}
         />
       ),
     })

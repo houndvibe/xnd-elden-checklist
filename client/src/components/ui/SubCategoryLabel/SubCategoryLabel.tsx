@@ -1,15 +1,15 @@
 import { Flex, Progress } from "antd";
 import { PROGRESSBAR_COLORS } from "../../../lib/consts";
-import type { ShieldItem } from "../../categories/shields/types";
 import { getSubCategoryStats } from "../../../lib/utils";
 import styles from "./SubCategoryInfo.module.scss";
+import type { Item } from "../../../global-types";
 
 export default function SubCategoryLabel({
   title,
   data,
 }: {
   title: string;
-  data: ShieldItem[];
+  data: Item[];
 }) {
   const { total, collected, percentage } = getSubCategoryStats(data);
 

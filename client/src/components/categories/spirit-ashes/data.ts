@@ -1,8 +1,9 @@
-import type { SpiritAshesCategoryMap } from "./types";
+import type { SpiritAshesSubCategoryMap } from "../../../global-types";
 
-export const spiritAshesData: SpiritAshesCategoryMap = {
+export const spiritAshesData: SpiritAshesSubCategoryMap = {
   irrationalSpirits: [
     {
+      type: "spiritAshes",
       name: "Wandering Nobles",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Wandering+Noble+Ashes",
@@ -12,6 +13,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/wandering_noble_ashes_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Noble Sorcerer",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Noble+Sorcerer+Ashes",
@@ -19,6 +21,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Nomad",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Nomad+Ashes",
@@ -26,6 +29,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Putrid Corpse",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Putrid+Corpse+Ashes",
@@ -33,6 +37,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Skeletal Militiaman",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Skeletal+Militiaman+Ashes",
@@ -40,6 +45,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Skeletal Bandit",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Skeletal+Bandit+Ashes",
@@ -47,6 +53,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Albinauric",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Albinauric+Ashes",
@@ -54,6 +61,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Winged Misbegotten",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Winged+Misbegotten+Ashes",
@@ -61,6 +69,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Demi-Human",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Demi-Human+Ashes",
@@ -68,6 +77,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Clayman",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Clayman+Ashes",
@@ -75,6 +85,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Oracle Envoy",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Oracle+Envoy+Ashes",
@@ -82,6 +93,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Man-Fly",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Man-Fly+Ashes",
@@ -89,6 +101,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: true,
     },
     {
+      type: "spiritAshes",
       name: "Lone Wolf",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Lone+Wolf+Ashes",
@@ -96,6 +109,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Rotten Stray",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Rotten+Stray+Ashes",
@@ -103,6 +117,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Giant Rat",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Giant+Rat+Ashes",
@@ -110,6 +125,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Warhawk",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Warhawk+Ashes",
@@ -117,6 +133,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Land Squirt",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Land+Squirt+Ashes",
@@ -124,6 +141,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Spirit Jellyfish",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Spirit+Jellyfish+Ashes",
@@ -131,6 +149,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Miranda Sprout",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Miranda+Sprout+Ashes",
@@ -138,6 +157,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Spider Scorpion",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Spider+Scorpion+Ashes",
@@ -145,6 +165,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: true,
     },
     {
+      type: "spiritAshes",
       name: "Fingercreeper",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Fingercreeper+Ashes",
@@ -152,6 +173,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: true,
     },
     {
+      type: "spiritAshes",
       name: "Fanged Imp",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Fanged+Imp+Ashes",
@@ -159,6 +181,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Bigmouth Imp",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Bigmouth+Imp+Ashes",
@@ -166,6 +189,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: true,
     },
     {
+      type: "spiritAshes",
       name: "Gravebird",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Gravebird+Ashes",
@@ -173,6 +197,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: true,
     },
     {
+      type: "spiritAshes",
       name: "Soldjars of Fortune",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Soldjars+of+Fortune+Ashes",
@@ -182,6 +207,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
   ],
   rationalSpirits: [
     {
+      type: "spiritAshes",
       name: "Archer",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Archer+Ashes",
@@ -189,6 +215,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Greatshield Soldier",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Greatshield+Soldier+Ashes",
@@ -196,6 +223,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Page",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Page+Ashes",
@@ -203,6 +231,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Vulgar Militia",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Vulgar+Militia+Ashes",
@@ -210,6 +239,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Marionette Soldier",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Marionette+Soldier+Ashes",
@@ -217,6 +247,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Avionette Soldier",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Avionette+Soldier+Ashes",
@@ -224,6 +255,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Kaiden Sellsword",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Kaiden+Sellsword+Ashes",
@@ -231,6 +263,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Mad Pumpkin Head",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Mad+Pumpkin+Head+Ashes",
@@ -238,6 +271,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Fire Monk",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Fire+Monk+Ashes",
@@ -245,6 +279,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Ancestral Follower",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ancestral+Follower+Ashes",
@@ -252,6 +287,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Horned Warrior",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Horned+Warrior+Ashes",
@@ -259,6 +295,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: true,
     },
     {
+      type: "spiritAshes",
       name: "Azula Beastman",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Azula+Beastman+Ashes",
@@ -266,6 +303,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Man-Serpent",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Man-Serpent+Ashes",
@@ -273,6 +311,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Crystalian",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Crystalian+Ashes",
@@ -280,6 +319,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Kindred of Rot",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Kindred+of+Rot+Ashes",
@@ -287,6 +327,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Bloodfiend Hexer",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Bloodfiend+Hexer+Ashes",
@@ -294,6 +335,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: true,
     },
     {
+      type: "spiritAshes",
       name: "Glintstone Sorcerer",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Glintstone+Sorcerer+Ashes",
@@ -301,6 +343,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Twinsage Sorcerer",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Twinsage+Sorcerer+Ashes",
@@ -308,6 +351,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Inquisitor",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Inquisitor+Ashes",
@@ -315,6 +359,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: true,
     },
     {
+      type: "spiritAshes",
       name: "Godrick Soldier",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Godrick+Soldier+Ashes",
@@ -322,6 +367,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Raya Lucaria Soldier",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Raya+Lucaria+Soldier+Ashes",
@@ -329,6 +375,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Leyndell Soldier",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Leyndell+Soldier+Ashes",
@@ -336,6 +383,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Radahn Soldier",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Radahn+Soldier+Ashes",
@@ -343,6 +391,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Haligtree Soldier",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Haligtree+Soldier+Ashes",
@@ -350,6 +399,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Mausoleum Soldier",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Mausoleum+Soldier+Ashes",
@@ -357,6 +407,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Messmer Soldier",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Messmer+Soldier+Ashes",
@@ -366,6 +417,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
   ],
   eliteSpirits: [
     {
+      type: "spiritAshes",
       name: "Stormhawk Deenh",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Stormhawk+Deenh",
@@ -375,6 +427,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/stormhawk_deenh_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Banished Knight Oleg",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Banished+Knight+Oleg",
@@ -382,6 +435,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Banished Knight Engvall",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Banished+Knight+Engvall+Ashes",
@@ -389,6 +443,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Bloodhound Knight Floh",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Floh",
@@ -398,6 +453,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound_knight_floh_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Black Knight Captain Huw",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Black+Knight+Captain+Huw",
@@ -407,6 +463,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knight_captain_huw_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Black Knight Commander Andreas",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Black+Knight+Commander+Andreas",
@@ -416,6 +473,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knight_commander_andreas_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Fire Knight Queelign",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Fire+Knight+Queelign",
@@ -425,6 +483,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_knight_queelign_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Fire Knight Hilde",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Fire+Knight+Hilde",
@@ -434,6 +493,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_knight_hilde_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Swordhand of Night Jolán",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Swordhand+of+Night+Jolán",
@@ -443,6 +503,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/swordhand_of_night_jolan_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Jolán and Anna",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Jolán+and+Anna",
@@ -452,6 +513,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/jolan_and_anna_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Battlemage Hugues",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Battlemage+Hugues+Ashes",
@@ -459,6 +521,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Latenna the Albinauric",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Latenna+the+Albinauric",
@@ -468,6 +531,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/latenna_the_albinauric_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Perfumer Tricia",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Perfumer+Tricia+Ashes",
@@ -477,6 +541,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer_tricia_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Depraved Perfumer Carmaan",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Carmaan+Ashes",
@@ -484,6 +549,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Omenkiller Rollo",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Omenkiller+Rollo",
@@ -493,6 +559,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/omenkiller_rollo_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Blackflame Monk Amon",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Blackflame+Monk+Amon+Ashes",
@@ -500,6 +567,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
       dlc: false,
     },
     {
+      type: "spiritAshes",
       name: "Curseblade Meera",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Curseblade+Meera",
@@ -509,6 +577,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/curseblade_meera_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Demi-Human Swordsman Yosh",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Demi-Human+Swordsman+Yosh",
@@ -518,6 +587,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human_swordsman_yosh_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Ancient Dragon Knight Kristoff",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Knight+Kristoff",
@@ -527,6 +597,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_knight_kristoff_ashes_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Redmane Knight Ogha",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Redmane+Knight+Ogha+Ashes",
@@ -536,6 +607,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/redmane_knight_ogha_ashes_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Lhutel the Headless",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Lhutel+the+Headless",
@@ -545,6 +617,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lhutel_the_headless_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Cleanrot Knight Finlay",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Cleanrot+Knight+Finlay+Ashes",
@@ -554,6 +627,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot_knight_finlay_ashes_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Black Knife Tiche",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Black+Knife+Tiche",
@@ -563,6 +637,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knife_tiche_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Divine Bird Warrior Ornis",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Divine+Bird+Warrior+Ornis",
@@ -572,6 +647,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_warrior_ornis_spirit_ash_elden_ring_sote_wiki_guide200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Taylew the Golem Smith",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Taylew+the+Golem+Smith",
@@ -581,6 +657,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/taylew_the_golem_smith_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Ancient Dragon Florissax",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Florissax",
@@ -590,6 +667,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_florissax_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Mimic Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Mimic+Tear+Ashes",
@@ -599,6 +677,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
   ],
   puppets: [
     {
+      type: "spiritAshes",
       name: "Finger Maiden Therolina",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Finger+Maiden+Therolina+Puppet",
@@ -608,6 +687,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/finger_maiden_therolina_puppet_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Jarwight",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Jarwight+Puppet",
@@ -617,6 +697,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/jarwight_puppet_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Dolores the Sleeping Arrow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Dolores+the+Sleeping+Arrow+Puppet",
@@ -626,6 +707,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dolores_the_sleeping_arrow_puppet_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Nightmaiden & Swordstress",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Nightmaiden+&+Swordstress+Puppets",
@@ -635,6 +717,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nightmaiden-&-swordstress-puppets-spirit-ashes-elden-ring-wiki-guide.png",
     },
     {
+      type: "spiritAshes",
       name: "Nepheli Loux",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Nepheli+Loux+Puppet",
@@ -644,6 +727,7 @@ export const spiritAshesData: SpiritAshesCategoryMap = {
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nepheli_loux_puppet_elden_ring_wiki_guide_200px.png",
     },
     {
+      type: "spiritAshes",
       name: "Dung Eater",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Dung+Eater+Puppet",

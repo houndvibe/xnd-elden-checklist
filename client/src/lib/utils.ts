@@ -1,19 +1,13 @@
-import type {
-  ShieldCategoryMap,
-  ShieldItem,
-} from "../components/categories/shields/types";
-import type { SpiritAshesCategoryMap } from "../components/categories/spirit-ashes/types";
+import type { Item, ItemCategory, ItemSubCategoryMap } from "../global-types";
 
 //Получить статистику категории ('Оружие')
-export function getCategoryStats(
-  data: ShieldCategoryMap | SpiritAshesCategoryMap
-) {
+export function getCategoryStats(data: ItemSubCategoryMap) {
   let total = 0;
   let collected = 0;
 
   for (const category of Object.values(data)) {
     total += category.length;
-    collected += category.filter((item: ShieldItem) => item.collected).length;
+    collected += category.filter((item: Item) => item.collected).length;
   }
 
   const percentage = total === 0 ? 0 : Math.round((collected / total) * 100);
@@ -88,4 +82,8 @@ export function saveToStorage<T>(key: string, value: T) {
   } catch (err) {
     console.warn("Storage write failed", err);
   }
+}
+
+export function canBeLegendary(type: ItemCategory) {
+  return type === "spiritAshes";
 }

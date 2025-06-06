@@ -1,9 +1,16 @@
-import { Tabs as AntdTabs, ConfigProvider, type TabsProps } from "antd";
+import { Tabs as AntdTabs, ConfigProvider } from "antd";
 import Shields from "../../categories/shields/Shields";
 import { APP_PALETTE } from "../../../lib/consts";
 import SpiritAshes from "../../categories/spirit-ashes/SpiritAshes";
+import type { ItemCategory } from "../../../global-types";
 
-const items: TabsProps["items"] = [
+interface CustomTabItem {
+  key: ItemCategory;
+  label: string;
+  children: React.ReactNode;
+}
+
+const items: CustomTabItem[] = [
   {
     key: "weapons",
     label: "Weapons",

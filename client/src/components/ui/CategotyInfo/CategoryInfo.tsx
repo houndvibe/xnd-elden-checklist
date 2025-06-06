@@ -1,15 +1,14 @@
 import { Flex, Progress, Typography } from "antd";
 import { getCategoryStats } from "../../../lib/utils";
 import { PROGRESSBAR_COLORS } from "../../../lib/consts";
-import type { ShieldCategoryMap } from "../../categories/shields/types";
 import styles from "./CategoryInfo.module.scss";
-import type { SpiritAshesCategoryMap } from "../../categories/spirit-ashes/types";
+import type { ItemSubCategoryMap } from "../../../global-types";
 
 export default function CategoryInfo({
   items,
   title,
 }: {
-  items: ShieldCategoryMap | SpiritAshesCategoryMap;
+  items: ItemSubCategoryMap;
   title: string;
 }) {
   const { total, collected, percentage } = getCategoryStats(items);

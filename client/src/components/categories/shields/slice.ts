@@ -2,7 +2,7 @@ import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import { loadFromStorage, saveToStorage } from "../../../lib/utils";
 import { STORAGE_KEY } from "../../../lib/consts";
 import { shieldsData } from "./data";
-import type { ShieldCategoryMap } from "./types";
+import type { ShieldSubCategoryMap } from "../../../global-types";
 
 const initialState = {
   shieldsData: loadFromStorage(STORAGE_KEY, shieldsData),
@@ -14,7 +14,10 @@ export const shieldsSlice = createSlice({
   reducers: {
     toggleShieldCollected: (
       state,
-      action: PayloadAction<{ category: keyof ShieldCategoryMap; name: string }>
+      action: PayloadAction<{
+        category: keyof ShieldSubCategoryMap;
+        name: string;
+      }>
     ) => {
       const { category, name } = action.payload;
       const shield = state.shieldsData[category].find((s) => s.name === name);

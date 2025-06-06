@@ -7,32 +7,28 @@ import {
   convertShieldNameToWikiImageUrl,
   convertSpiritNameToWikiImageUrl,
 } from "../../../lib/utils";
-import type {
-  ShieldCategoryMap,
-  ShieldItem,
-} from "../../categories/shields/types";
-import type {
-  SpiritAshesCategoryMap,
-  SpiritAshItem,
-} from "../../categories/spirit-ashes/types";
 import { toggleSpiritAshesCollected } from "../../categories/spirit-ashes/slice";
 import styles from "./SubCategoryContent.module.scss";
 import { APP_PALETTE } from "../../../lib/consts";
 import { ThunderboltTwoTone } from "@ant-design/icons";
+import type {
+  Item,
+  ItemSubCategory,
+  ShieldSubCategoryMap,
+  SpiritAshesSubCategoryMap,
+} from "../../../global-types";
 
 export default function SubCategoryContent({
   dataSource,
   category,
-  type,
 }: {
-  dataSource: ShieldItem[] | SpiritAshItem[];
-  category: keyof ShieldCategoryMap | keyof SpiritAshesCategoryMap;
-  type: string;
+  dataSource: Item[];
+  category: ItemSubCategory;
 }) {
-  const [hoveredImg, setHoveredImg] = useState<string | undefined>(undefined);
   const dispatch = useAppDispatch();
+  const [hoveredImg, setHoveredImg] = useState<string | undefined>(undefined);
 
-  const columns: TableProps<ShieldItem | SpiritAshItem>["columns"] = [
+  const columns: TableProps<Item>["columns"] = [
     {
       title: "Name",
       dataIndex: "name",
@@ -40,14 +36,16 @@ export default function SubCategoryContent({
       render: (value, record) => {
         return (
           <Flex>
-            {record.legendary && (
+            {record.type === "spiritAshes" && record.legendary && (
               <Tooltip title={"Legendary Item"}>
                 <ThunderboltTwoTone twoToneColor={APP_PALETTE.textPrimary} />
               </Tooltip>
             )}
             <div
               style={
-                record.legendary ? { color: APP_PALETTE.textHighlighted } : {}
+                record.type === "spiritAshes" && record.legendary
+                  ? { color: APP_PALETTE.textHighlighted }
+                  : {}
               }
             >
               {value}
@@ -60,7 +58,7 @@ export default function SubCategoryContent({
       title: "Collected",
       dataIndex: "collected",
       key: "collected",
-      render: (_value: boolean, record: ShieldItem | SpiritAshItem) => (
+      render: (_value: boolean, record: Item) => (
         <Flex gap={5} align="baseline">
           <Checkbox checked={record.collected} />
           {record.dlc && (
@@ -93,7 +91,7 @@ export default function SubCategoryContent({
         className={styles.table}
         columns={columns}
         dataSource={dataSource}
-        style={{ width: 1200 }}
+        style={{ width: 1000 }}
         pagination={false}
         size="small"
         rowKey="name"
@@ -102,7 +100,7 @@ export default function SubCategoryContent({
         }
         onRow={(record) => ({
           onMouseEnter: () => {
-            return type == "shields"
+            return record.type == "shields"
               ? setHoveredImg(
                   record.imgUrl ||
                     convertShieldNameToWikiImageUrl(record.name, record.dlc)
@@ -114,13 +112,13 @@ export default function SubCategoryContent({
           },
           onClick: () => {
             dispatch(
-              type === "shields"
+              record.type === "shields"
                 ? toggleShieldCollected({
-                    category: category as keyof ShieldCategoryMap,
+                    category: category as keyof ShieldSubCategoryMap,
                     name: record.name,
                   })
                 : toggleSpiritAshesCollected({
-                    category: category as keyof SpiritAshesCategoryMap,
+                    category: category as keyof SpiritAshesSubCategoryMap,
                     name: record.name,
                   })
             );
