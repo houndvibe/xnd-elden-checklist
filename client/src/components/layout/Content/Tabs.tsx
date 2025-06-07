@@ -4,6 +4,7 @@ import { APP_PALETTE } from "../../../lib/consts";
 import SpiritAshes from "../../categories/spirit-ashes/SpiritAshes";
 import type { ItemCategory } from "../../../global-types";
 import Dashboard from "../../dashboard/Dashboard";
+import Talismans from "../../categories/talismans/Talismans";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -37,7 +38,7 @@ const items: CustomTabItem[] = [
   {
     key: "talismans",
     label: "Talismans",
-    children: "Talismans",
+    children: <Talismans />,
   },
   {
     key: "ashesOfWar",

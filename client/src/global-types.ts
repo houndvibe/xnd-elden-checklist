@@ -48,12 +48,43 @@ export interface SpiritAshesSubCategoryMap {
   puppets: SpiritAshItem[];
 }
 
+export interface TalismanVersions {
+  tier: 0 | 1 | 2 | 3;
+  collected: boolean;
+  legendary?: boolean;
+  dlc?: true;
+}
+
+export interface TalismanItem {
+  type: "talismans";
+  name: string;
+  collected: boolean;
+  link: string;
+  dlc: boolean;
+  legendary: boolean;
+  imgUrl?: string;
+  versions?: TalismanVersions[];
+}
+
+export interface TalismansSubCategoryMap {
+  category1: TalismanItem[];
+  category2: TalismanItem[];
+  category3: TalismanItem[];
+  category4: TalismanItem[];
+  category5: TalismanItem[];
+  category6: TalismanItem[];
+  category7: TalismanItem[];
+  category8: TalismanItem[];
+}
+
 export type ItemSubCategoryMap =
   | ShieldSubCategoryMap
-  | SpiritAshesSubCategoryMap;
+  | SpiritAshesSubCategoryMap
+  | TalismansSubCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldSubCategoryMap
-  | keyof SpiritAshesSubCategoryMap;
+  | keyof SpiritAshesSubCategoryMap
+  | keyof TalismansSubCategoryMap;
 
-export type Item = ShieldItem | SpiritAshItem;
+export type Item = ShieldItem | SpiritAshItem | TalismanItem;

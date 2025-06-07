@@ -6,12 +6,15 @@
 
 .link {
   color: $text-primary;
+}
+.link:hover {
+  color: $text-highlighted;
   font-style: italic;
   text-decoration: underline;
 }
 
 .table {
-  width: 1000px;
+  width: 600px;
 }
 .preview {
   padding: 50px;

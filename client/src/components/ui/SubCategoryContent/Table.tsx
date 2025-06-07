@@ -4,12 +4,14 @@ import type {
   ItemSubCategory,
   ShieldSubCategoryMap,
   SpiritAshesSubCategoryMap,
+  TalismansSubCategoryMap,
 } from "../../../global-types";
 import {
   convertShieldNameToWikiImageUrl,
   convertSpiritNameToWikiImageUrl,
 } from "../../../lib/utils/converters";
 import { useAppDispatch } from "../../../store/typedDispatch";
+import { CheckOutlined } from "@ant-design/icons";
 
 import styles from "./SubCategoryContent.module.scss";
 import {
@@ -22,7 +24,7 @@ import {
   type TableProps,
 } from "antd";
 import { getNextSortStep, smartNameSort } from "../../../lib/utils/sorters";
-import { checkIsLegendary } from "../../../lib/utils/misc";
+import { checkIsLegendary, hasVersionsProperty } from "../../../lib/utils/misc";
 import { APP_PALETTE } from "../../../lib/consts";
 import Link from "antd/es/typography/Link";
 import type {
@@ -35,6 +37,7 @@ import dlcIcon from "../../../assets/dlc-icon.png";
 import {
   toggleShieldCollected,
   toggleSpiritAshCollected,
+  toggleTalismanCollected,
 } from "../../../store/collectionSlice";
 
 export default function Table({
@@ -57,6 +60,7 @@ export default function Table({
       title: "Name",
       dataIndex: "name",
       key: "name",
+      width: "90%",
       sortOrder: sortColumn === "name" ? "ascend" : null,
       sorter: (a, b) => smartNameSort(sortStep, a, b),
       render: (value, record) => {
@@ -70,7 +74,14 @@ export default function Table({
                 <div className={styles.legendary}>{value}</div>
               </>
             ) : (
-              value
+              <Link
+                href={record.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <span className={styles.link}>{value}</span>
+              </Link>
             )}
             {record.dlc && (
               <Tooltip title={"Shadow of the Erdtree Dlc content"}>
@@ -82,32 +93,87 @@ export default function Table({
       },
     },
     {
-      title: "Collected",
+      title: <CheckOutlined />,
       dataIndex: "collected",
       key: "collected",
+      width: "60%",
       sortOrder: sortColumn === "collected" ? sortOrder : null,
       sorter: (a, b) =>
         a.collected === b.collected ? 0 : a.collected ? -1 : 1,
-      render: (_value: boolean, record: Item) => (
-        <Flex gap={5} align="baseline">
-          <Checkbox checked={record.collected} />
-        </Flex>
-      ),
-    },
-    {
-      title: "Link",
-      dataIndex: "link",
-      key: "link",
-      render: (value: string) => (
-        <Link
-          href={value}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <span className={styles.link}>{"FextraLife"}</span>
-        </Link>
-      ),
+      render: (_value: boolean, record: Item) => {
+        return hasVersionsProperty(record) ? (
+          <Flex vertical gap={1}>
+            {record.versions.map((item) => (
+              <Flex key={item.tier} align="center" gap={4}>
+                <Checkbox
+                  checked={item.collected}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    dispatch(
+                      toggleTalismanCollected({
+                        category: category as keyof TalismansSubCategoryMap,
+                        name: record.name,
+                        tier: item.tier,
+                      })
+                    );
+                  }}
+                />
+                {item.legendary ? (
+                  <>
+                    <div className={styles.legendary}>
+                      {item.tier > 0 && `+${item.tier}`}
+                    </div>
+                    <Tooltip title={"Legendary Item"}>
+                      <ThunderboltTwoTone
+                        twoToneColor={APP_PALETTE.textPrimary}
+                      />
+                    </Tooltip>
+                  </>
+                ) : (
+                  item.tier > 0 && `+${item.tier}`
+                )}
+
+                {item.dlc && (
+                  <Tooltip title={"Shadow of the Erdtree Dlc content"}>
+                    <Image src={dlcIcon} height={12} preview={false} />
+                  </Tooltip>
+                )}
+              </Flex>
+            ))}
+          </Flex>
+        ) : (
+          <Flex gap={5} align="baseline">
+            <Checkbox
+              checked={record.collected}
+              onClick={(e) => {
+                e.stopPropagation();
+                if (record.type === "shields") {
+                  dispatch(
+                    toggleShieldCollected({
+                      category: category as keyof ShieldSubCategoryMap,
+                      name: record.name,
+                    })
+                  );
+                } else if (record.type === "spiritAshes") {
+                  dispatch(
+                    toggleSpiritAshCollected({
+                      category: category as keyof SpiritAshesSubCategoryMap,
+                      name: record.name,
+                    })
+                  );
+                } else if (record.type === "talismans") {
+                  dispatch(
+                    toggleTalismanCollected({
+                      category: category as keyof TalismansSubCategoryMap,
+                      name: record.name,
+                    })
+                  );
+                }
+              }}
+            />
+          </Flex>
+        );
+      },
     },
   ];
 
@@ -158,17 +224,32 @@ export default function Table({
               );
         },
         onClick: () => {
-          dispatch(
-            record.type === "shields"
-              ? toggleShieldCollected({
-                  category: category as keyof ShieldSubCategoryMap,
+          if (record.type === "shields") {
+            dispatch(
+              toggleShieldCollected({
+                category: category as keyof ShieldSubCategoryMap,
+                name: record.name,
+              })
+            );
+          } else if (record.type === "spiritAshes") {
+            dispatch(
+              toggleSpiritAshCollected({
+                category: category as keyof SpiritAshesSubCategoryMap,
+                name: record.name,
+              })
+            );
+          } else if (record.type === "talismans") {
+            // Только если нет versions, переключаем весь talisman
+            if (!("versions" in record) || record.versions?.length === 0) {
+              dispatch(
+                toggleTalismanCollected({
+                  category: category as keyof TalismansSubCategoryMap,
                   name: record.name,
                 })
-              : toggleSpiritAshCollected({
-                  category: category as keyof SpiritAshesSubCategoryMap,
-                  name: record.name,
-                })
-          );
+              );
+            }
+            // Ничего не делаем при клике по строке, если есть versions
+          }
         },
       })}
     />

@@ -1,4 +1,4 @@
-import type { Item } from "../../global-types";
+import type { Item, TalismanVersions } from "../../global-types";
 import { legendaryEligibleItemCategories } from "../consts";
 
 //Проверка на возможное наличие поля legendary у категории предмета
@@ -15,4 +15,11 @@ export function checkIsLegendary(item: Item) {
     hasLegendaryProperty(item) &&
     item.legendary
   );
+}
+
+//Проверка на возможное наличие поля versions у категории предмета
+export function hasVersionsProperty(
+  item: Item
+): item is Item & { versions: TalismanVersions[] } {
+  return "versions" in item;
 }

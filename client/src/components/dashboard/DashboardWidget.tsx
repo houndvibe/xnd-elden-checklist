@@ -18,7 +18,7 @@ export default function DashboardWidget({
   subData: ItemSubCategoryMap;
 }) {
   return (
-    <Card title={toTitleCaseFromCamel(dataType)} style={{ width: "50vw" }}>
+    <Card title={toTitleCaseFromCamel(dataType)} style={{ width: "50%" }}>
       <Flex>
         <Flex vertical flex={1} align="center">
           <Progress
