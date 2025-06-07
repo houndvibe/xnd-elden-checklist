@@ -37,7 +37,7 @@ export default function Dashboard() {
         </Flex>
       </Card>
 
-      <Flex gap={21}>
+      <Flex gap={20}>
         <DashboardWidget
           dataType="shields"
           data={shieldsStats}
@@ -49,7 +49,7 @@ export default function Dashboard() {
           subData={spiritAshesData}
         />
       </Flex>
-      <Flex>
+      <Flex gap={20}>
         <DashboardWidget
           dataType="talismans"
           data={talismansStats}

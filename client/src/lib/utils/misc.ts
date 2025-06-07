@@ -23,3 +23,7 @@ export function hasVersionsProperty(
 ): item is Item & { versions: TalismanVersions[] } {
   return "versions" in item;
 }
+
+export function truncateText(text: string, maxLength: number = 20): string {
+  return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+}

@@ -3,6 +3,7 @@ import type { ItemCategory, ItemSubCategoryMap } from "../../global-types";
 import { toTitleCaseFromCamel } from "../../lib/utils/converters";
 import { PROGRESSBAR_COLORS } from "../../lib/consts";
 import { getSubCategoryStats } from "../../lib/utils/stats";
+import { truncateText } from "../../lib/utils/misc";
 
 export default function DashboardWidget({
   dataType,
@@ -17,9 +18,6 @@ export default function DashboardWidget({
   };
   subData: ItemSubCategoryMap;
 }) {
-  function truncateText(text: string, maxLength: number = 25): string {
-    return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
-  }
   return (
     <Card title={toTitleCaseFromCamel(dataType)} style={{ width: "50vw" }}>
       <Flex>
