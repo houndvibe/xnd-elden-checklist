@@ -2,6 +2,7 @@ import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type {
   AshesOfWarSubCategoryMap,
   ShieldSubCategoryMap,
+  SorceriesSubCategoryMap,
   SpiritAshesSubCategoryMap,
   TalismansSubCategoryMap,
 } from "../global-types";
@@ -10,6 +11,7 @@ import { shieldsData } from "../components/categories/shields/data";
 import { spiritAshesData } from "../components/categories/spirit-ashes/data";
 import { talismansData } from "../components/categories/talismans/data";
 import { ashesOfWarData } from "../components/categories/ashes-of-war/data";
+import { sorceriesData } from "../components/categories/sorceries/data";
 
 const initialState = {
   collectionData: loadFromStorage("xnd.collection", {
@@ -17,6 +19,7 @@ const initialState = {
     spiritAshesData: spiritAshesData,
     talismansData: talismansData,
     ashesOfWarData: ashesOfWarData,
+    sorceriesData: sorceriesData,
   }),
 };
 
@@ -37,6 +40,22 @@ export const collectionSlice = createSlice({
       );
       if (shield) {
         shield.collected = !shield.collected;
+        saveToStorage("xnd.collection", state.collectionData);
+      }
+    },
+    toggleSorceryCollected: (
+      state,
+      action: PayloadAction<{
+        category: keyof SorceriesSubCategoryMap;
+        name: string;
+      }>
+    ) => {
+      const { category, name } = action.payload;
+      const sorcery = state.collectionData.sorceriesData[category].find(
+        (s) => s.name === name
+      );
+      if (sorcery) {
+        sorcery.collected = !sorcery.collected;
         saveToStorage("xnd.collection", state.collectionData);
       }
     },
@@ -109,6 +128,7 @@ export const collectionSlice = createSlice({
 export const {
   toggleShieldCollected,
   toggleAshOfWarCollected,
+  toggleSorceryCollected,
   toggleSpiritAshCollected,
   toggleTalismanCollected,
 } = collectionSlice.actions;

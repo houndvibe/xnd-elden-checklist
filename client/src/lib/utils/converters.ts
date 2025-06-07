@@ -69,3 +69,19 @@ export function convertAshOfWarNameToWikiImageUrl(
     isDlc ? "ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_" : ""
   }wiki_guide_200px.png`;
 }
+
+export function convertSorceryNameToWikiImageUrl(
+  itemName: string,
+  isDlc: boolean
+) {
+  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
+  const formattedName = itemName
+    .trim()
+    .toLowerCase()
+    .replace(/ /g, "_")
+    .replace(/[^a-z0-9_-]/g, "");
+
+  return `${baseUrl}${formattedName}_sorcery_elden_ring_${
+    isDlc ? "shadow_of_the_erdtree_dlc_" : ""
+  }wiki_guide_200px.png`;
+}

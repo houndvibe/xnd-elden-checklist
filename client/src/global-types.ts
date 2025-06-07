@@ -80,6 +80,7 @@ export interface TalismansSubCategoryMap {
   category8: TalismanItem[];
 }
 
+//Пеплы войны
 export interface AshOfWarItem {
   type: "ashesOfWar";
   name: string;
@@ -103,17 +104,44 @@ export interface AshesOfWarSubCategoryMap {
   noAffinityShield: AshOfWarItem[];
 }
 
+//Магия
+export interface SorceryItem {
+  type: "sorceries";
+  name: string;
+  collected: boolean;
+  link: string;
+  legendary: boolean;
+  dlc: boolean;
+  imgUrl?: string;
+}
+
+export interface SorceriesSubCategoryMap {
+  academyOfRayaLucaria: SorceryItem[];
+  carianRoyalFamily: SorceryItem[];
+  "sellia&Gelmir": SorceryItem[];
+  "snow&Crystal": SorceryItem[];
+  gravityFingersBriars: SorceryItem[];
+  servantsOfDeath: SorceryItem[];
+}
+
 //общее
 export type ItemSubCategoryMap =
   | ShieldSubCategoryMap
   | SpiritAshesSubCategoryMap
   | TalismansSubCategoryMap
-  | AshesOfWarSubCategoryMap;
+  | AshesOfWarSubCategoryMap
+  | SorceriesSubCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldSubCategoryMap
   | keyof SpiritAshesSubCategoryMap
   | keyof TalismansSubCategoryMap
-  | keyof AshesOfWarSubCategoryMap;
+  | keyof AshesOfWarSubCategoryMap
+  | keyof SorceriesSubCategoryMap;
 
-export type Item = ShieldItem | SpiritAshItem | TalismanItem | AshOfWarItem;
+export type Item =
+  | ShieldItem
+  | SpiritAshItem
+  | TalismanItem
+  | AshOfWarItem
+  | SorceryItem;

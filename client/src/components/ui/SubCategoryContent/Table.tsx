@@ -4,12 +4,14 @@ import type {
   Item,
   ItemSubCategory,
   ShieldSubCategoryMap,
+  SorceriesSubCategoryMap,
   SpiritAshesSubCategoryMap,
   TalismansSubCategoryMap,
 } from "../../../global-types";
 import {
   convertAshOfWarNameToWikiImageUrl,
   convertShieldNameToWikiImageUrl,
+  convertSorceryNameToWikiImageUrl,
   convertSpiritNameToWikiImageUrl,
   convertTalismanNameToWikiImageUrl,
 } from "../../../lib/utils/converters";
@@ -40,6 +42,7 @@ import dlcIcon from "../../../assets/dlc-icon.png";
 import {
   toggleAshOfWarCollected,
   toggleShieldCollected,
+  toggleSorceryCollected,
   toggleSpiritAshCollected,
   toggleTalismanCollected,
 } from "../../../store/collectionSlice";
@@ -179,6 +182,13 @@ export default function Table({
                       name: record.name,
                     })
                   );
+                } else if (record.type === "sorceries") {
+                  dispatch(
+                    toggleSorceryCollected({
+                      category: category as keyof SorceriesSubCategoryMap,
+                      name: record.name,
+                    })
+                  );
                 } else if (record.type === "ashesOfWar") {
                   dispatch(
                     toggleAshOfWarCollected({
@@ -261,6 +271,13 @@ export default function Table({
                   record.dlc
                 );
                 break;
+              case "sorceries":
+                //TODO
+                imgUrl = convertSorceryNameToWikiImageUrl(
+                  record.name,
+                  record.dlc
+                );
+                break;
             }
           }
 
@@ -299,6 +316,13 @@ export default function Table({
               );
             }
             // Ничего не делаем при клике по строке, если есть versions
+          } else if (record.type === "sorceries") {
+            dispatch(
+              toggleSorceryCollected({
+                category: category as keyof SorceriesSubCategoryMap,
+                name: record.name,
+              })
+            );
           }
         },
       })}
