@@ -130,9 +130,9 @@ export const talismansData: TalismansSubCategoryMap = {
     },
     {
       type: "talismans",
-      name: "Erdtree's Favour",
+      name: "Erdtree's Favor",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Erdtree's+Favour",
+      link: "https://eldenring.wiki.fextralife.com/Erdtree's+Favor",
       dlc: false,
       legendary: false,
       versions: [
@@ -503,6 +503,8 @@ export const talismansData: TalismansSubCategoryMap = {
       dlc: true,
       legendary: false,
       versions: [{ tier: 0, collected: false }],
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/retaliatory_crossed-tree_1_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "talismans",
@@ -512,6 +514,8 @@ export const talismansData: TalismansSubCategoryMap = {
       dlc: true,
       legendary: false,
       versions: [{ tier: 0, collected: false }],
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lacerating_crossed-tree_1_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "talismans",
@@ -836,11 +840,11 @@ export const talismansData: TalismansSubCategoryMap = {
     },
     {
       type: "talismans",
-      name: "Fine Crucible Feather",
+      name: "Fine Crucible Feather Talisman",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Fine+Crucible+Feather",
-      dlc: false,
-      legendary: true,
+      link: "https://eldenring.wiki.fextralife.com/Fine+Crucible+Feather+Talisman",
+      dlc: true,
+      legendary: false,
       versions: [{ tier: 0, collected: false }],
     },
     {
@@ -975,10 +979,12 @@ export const talismansData: TalismansSubCategoryMap = {
       type: "talismans",
       name: "St Trina's Smile",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/St+Trina%27s+Smile",
+      link: "https://eldenring.wiki.fextralife.com/St.+Trina's+Smile",
       dlc: true,
       legendary: false,
       versions: [{ tier: 0, collected: false }],
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/st._trinas_smile_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "talismans",

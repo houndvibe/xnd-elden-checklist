@@ -14,7 +14,7 @@ export default function SubCategoryContent({
   const [hoveredImg, setHoveredImg] = useState<string | undefined>(undefined);
 
   return (
-    <Flex gap={20}>
+    <Flex gap={20} style={{ maxHeight: 800 }}>
       <Table
         setHoveredImg={setHoveredImg}
         dataSource={dataSource}

@@ -9,6 +9,7 @@ import type {
 import {
   convertShieldNameToWikiImageUrl,
   convertSpiritNameToWikiImageUrl,
+  convertTalismanNameToWikiImageUrl,
 } from "../../../lib/utils/converters";
 import { useAppDispatch } from "../../../store/typedDispatch";
 import { CheckOutlined } from "@ant-design/icons";
@@ -71,7 +72,14 @@ export default function Table({
                 <Tooltip title={"Legendary Item"}>
                   <ThunderboltTwoTone twoToneColor={APP_PALETTE.textPrimary} />
                 </Tooltip>
-                <div className={styles.legendary}>{value}</div>
+                <Link
+                  href={record.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <div className={styles.legendary}>{value}</div>
+                </Link>
               </>
             ) : (
               <Link
@@ -213,15 +221,35 @@ export default function Table({
       onChange={onChangeTable}
       onRow={(record) => ({
         onMouseEnter: () => {
-          return record.type == "shields"
-            ? setHoveredImg(
-                record.imgUrl ||
-                  convertShieldNameToWikiImageUrl(record.name, record.dlc)
-              )
-            : setHoveredImg(
-                record.imgUrl ||
-                  convertSpiritNameToWikiImageUrl(record.name, record.dlc)
-              );
+          let imgUrl;
+
+          if (record.imgUrl) {
+            imgUrl = record.imgUrl;
+          } else {
+            switch (record.type) {
+              case "shields":
+                imgUrl = convertShieldNameToWikiImageUrl(
+                  record.name,
+                  record.dlc
+                );
+                break;
+              case "spiritAshes":
+                imgUrl = convertSpiritNameToWikiImageUrl(
+                  record.name,
+                  record.dlc
+                );
+                break;
+              case "talismans":
+                imgUrl = convertTalismanNameToWikiImageUrl(
+                  record.name,
+                  record.dlc
+                );
+                console.log(imgUrl);
+                break;
+            }
+          }
+
+          setHoveredImg(imgUrl);
         },
         onClick: () => {
           if (record.type === "shields") {

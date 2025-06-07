@@ -3,6 +3,10 @@
 .legendary {
   color: $text-highlighted !important;
 }
+.legendary:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
 
 .link {
   color: $text-primary;
@@ -15,6 +19,8 @@
 
 .table {
   width: 600px;
+  height: 800px;
+  overflow-y: scroll;
 }
 .preview {
   padding: 50px;
