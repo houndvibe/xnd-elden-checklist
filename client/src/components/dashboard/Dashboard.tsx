@@ -5,9 +5,8 @@ import DashboardWidget from "./DashboardWidget";
 import { PROGRESSBAR_COLORS } from "../../lib/consts";
 
 export default function Dashboard() {
-  const shieldsData = useAppSelector((state) => state.shields.shieldsData);
-  const spiritAshesData = useAppSelector(
-    (state) => state.spiritAshes.spiritAshesData
+  const { shieldsData, spiritAshesData } = useAppSelector(
+    (state) => state.collection.collectionData
   );
 
   const shieldsStats = getCategoryStats(shieldsData);

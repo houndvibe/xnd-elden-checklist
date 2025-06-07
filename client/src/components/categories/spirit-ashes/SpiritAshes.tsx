@@ -9,7 +9,7 @@ import { toTitleCaseFromCamel } from "../../../lib/utils/converters";
 
 export default function SpiritAshes() {
   const spiritAshesData = useAppSelector(
-    (state) => state.spiritAshes.spiritAshesData
+    (state) => state.collection.collectionData.spiritAshesData
   );
 
   const spiritAshesSubcategoryItems = Object.entries(spiritAshesData).map(

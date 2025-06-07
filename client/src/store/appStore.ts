@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import shieldsReducer from "../components/categories/shields/slice";
-import spiritAshesReducer from "../components/categories/spirit-ashes/slice";
+
+import  collectionSlice  from "./collectionSlice";
 
 const store = configureStore({
-  reducer: { shields: shieldsReducer, spiritAshes: spiritAshesReducer },
+  reducer: { collection: collectionSlice },
 });
 
 export type RootState = ReturnType<typeof store.getState>;

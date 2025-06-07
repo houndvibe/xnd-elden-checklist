@@ -8,7 +8,9 @@ import type { ShieldSubCategoryMap } from "../../../global-types";
 import { toTitleCaseFromCamel } from "../../../lib/utils/converters";
 
 export default function Shields() {
-  const shieldsData = useAppSelector((state) => state.shields.shieldsData);
+  const shieldsData = useAppSelector(
+    (state) => state.collection.collectionData.shieldsData
+  );
 
   const shildsSubcategoryItems = Object.entries(shieldsData).map(
     ([key, data], index) => ({

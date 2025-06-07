@@ -10,8 +10,7 @@ import {
   convertSpiritNameToWikiImageUrl,
 } from "../../../lib/utils/converters";
 import { useAppDispatch } from "../../../store/typedDispatch";
-import { toggleShieldCollected } from "../../categories/shields/slice";
-import { toggleSpiritAshesCollected } from "../../categories/spirit-ashes/slice";
+
 import styles from "./SubCategoryContent.module.scss";
 import {
   Table as AntdTable,
@@ -33,6 +32,10 @@ import type {
 } from "antd/es/table/interface";
 import { ThunderboltTwoTone } from "@ant-design/icons";
 import dlcIcon from "../../../assets/dlc-icon.png";
+import {
+  toggleShieldCollected,
+  toggleSpiritAshCollected,
+} from "../../../store/collectionSlice";
 
 export default function Table({
   setHoveredImg,
@@ -161,7 +164,7 @@ export default function Table({
                   category: category as keyof ShieldSubCategoryMap,
                   name: record.name,
                 })
-              : toggleSpiritAshesCollected({
+              : toggleSpiritAshCollected({
                   category: category as keyof SpiritAshesSubCategoryMap,
                   name: record.name,
                 })
