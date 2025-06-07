@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type {
+  AshesOfWarSubCategoryMap,
   Item,
   ItemSubCategory,
   ShieldSubCategoryMap,
@@ -7,6 +8,7 @@ import type {
   TalismansSubCategoryMap,
 } from "../../../global-types";
 import {
+  convertAshOfWarNameToWikiImageUrl,
   convertShieldNameToWikiImageUrl,
   convertSpiritNameToWikiImageUrl,
   convertTalismanNameToWikiImageUrl,
@@ -36,6 +38,7 @@ import type {
 import { ThunderboltTwoTone } from "@ant-design/icons";
 import dlcIcon from "../../../assets/dlc-icon.png";
 import {
+  toggleAshOfWarCollected,
   toggleShieldCollected,
   toggleSpiritAshCollected,
   toggleTalismanCollected,
@@ -176,6 +179,13 @@ export default function Table({
                       name: record.name,
                     })
                   );
+                } else if (record.type === "ashesOfWar") {
+                  dispatch(
+                    toggleAshOfWarCollected({
+                      category: category as keyof AshesOfWarSubCategoryMap,
+                      name: record.name,
+                    })
+                  );
                 }
               }}
             />
@@ -244,7 +254,12 @@ export default function Table({
                   record.name,
                   record.dlc
                 );
-                console.log(imgUrl);
+                break;
+              case "ashesOfWar":
+                imgUrl = convertAshOfWarNameToWikiImageUrl(
+                  record.name,
+                  record.dlc
+                );
                 break;
             }
           }
@@ -263,6 +278,13 @@ export default function Table({
             dispatch(
               toggleSpiritAshCollected({
                 category: category as keyof SpiritAshesSubCategoryMap,
+                name: record.name,
+              })
+            );
+          } else if (record.type === "ashesOfWar") {
+            dispatch(
+              toggleAshOfWarCollected({
+                category: category as keyof AshesOfWarSubCategoryMap,
                 name: record.name,
               })
             );

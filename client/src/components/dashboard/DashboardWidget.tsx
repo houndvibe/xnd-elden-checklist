@@ -17,8 +17,11 @@ export default function DashboardWidget({
   };
   subData: ItemSubCategoryMap;
 }) {
+  function truncateText(text: string, maxLength: number = 25): string {
+    return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+  }
   return (
-    <Card title={toTitleCaseFromCamel(dataType)} style={{ width: "50%" }}>
+    <Card title={toTitleCaseFromCamel(dataType)} style={{ width: "50vw" }}>
       <Flex>
         <Flex vertical flex={1} align="center">
           <Progress
@@ -28,7 +31,6 @@ export default function DashboardWidget({
           />
 
           <span style={{ fontSize: 20 }}>
-            {" "}
             {data.collected + "/" + data.total}
           </span>
         </Flex>
@@ -38,7 +40,7 @@ export default function DashboardWidget({
 
             return (
               <Flex key={subclassName} gap={10} justify="flex-end">
-                <span>{toTitleCaseFromCamel(subclassName)}</span>
+                <span>{truncateText(toTitleCaseFromCamel(subclassName))}</span>
                 <span>{`${stats.collected}/${stats.total}`}</span>
                 <Progress
                   style={{ width: 200 }}

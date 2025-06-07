@@ -15,6 +15,7 @@ export type ItemCategory =
   | "bellBearings"
   | "cookbooks";
 
+//Щиты
 export interface ShieldItem {
   type: "shields";
   name: string;
@@ -31,6 +32,7 @@ export interface ShieldSubCategoryMap {
   thrustingShields: ShieldItem[];
 }
 
+//Духи
 export interface SpiritAshItem {
   type: "spiritAshes";
   name: string;
@@ -48,6 +50,7 @@ export interface SpiritAshesSubCategoryMap {
   puppets: SpiritAshItem[];
 }
 
+//Талисманы
 export interface TalismanVersions {
   tier: 0 | 1 | 2 | 3;
   collected: boolean;
@@ -77,14 +80,40 @@ export interface TalismansSubCategoryMap {
   category8: TalismanItem[];
 }
 
+export interface AshOfWarItem {
+  type: "ashesOfWar";
+  name: string;
+  collected: boolean;
+  link: string;
+  dlc: boolean;
+  imgUrl?: string;
+}
+
+export interface AshesOfWarSubCategoryMap {
+  heavy: AshOfWarItem[];
+  keen: AshOfWarItem[];
+  quality: AshOfWarItem[];
+  magic: AshOfWarItem[];
+  flameLightning: AshOfWarItem[];
+  sacred: AshOfWarItem[];
+  poisonBloodCold: AshOfWarItem[];
+  occult: AshOfWarItem[];
+  noAffinityHandToHandAndPerfume: AshOfWarItem[];
+  noAffinityRanged: AshOfWarItem[];
+  noAffinityShield: AshOfWarItem[];
+}
+
+//общее
 export type ItemSubCategoryMap =
   | ShieldSubCategoryMap
   | SpiritAshesSubCategoryMap
-  | TalismansSubCategoryMap;
+  | TalismansSubCategoryMap
+  | AshesOfWarSubCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldSubCategoryMap
   | keyof SpiritAshesSubCategoryMap
-  | keyof TalismansSubCategoryMap;
+  | keyof TalismansSubCategoryMap
+  | keyof AshesOfWarSubCategoryMap;
 
-export type Item = ShieldItem | SpiritAshItem | TalismanItem;
+export type Item = ShieldItem | SpiritAshItem | TalismanItem | AshOfWarItem;

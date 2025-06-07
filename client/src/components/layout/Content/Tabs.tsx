@@ -5,6 +5,7 @@ import SpiritAshes from "../../categories/spirit-ashes/SpiritAshes";
 import type { ItemCategory } from "../../../global-types";
 import Dashboard from "../../dashboard/Dashboard";
 import Talismans from "../../categories/talismans/Talismans";
+import AshesOfWar from "../../categories/ashes-of-war/AshesOfWar";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -43,7 +44,7 @@ const items: CustomTabItem[] = [
   {
     key: "ashesOfWar",
     label: "Ashes of war",
-    children: "Ashes of war",
+    children: <AshesOfWar />,
   },
   {
     key: "spiritAshes",

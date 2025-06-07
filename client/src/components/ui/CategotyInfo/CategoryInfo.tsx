@@ -15,14 +15,14 @@ export default function CategoryInfo({
 
   return (
     <Flex vertical className={styles.card}>
-      <Progress
-        type="dashboard"
-        percent={percentage}
-        strokeColor={PROGRESSBAR_COLORS}
-      />
       <Typography.Title className={styles.title}>
         <>{title + " " + collected + "/" + total}</>
       </Typography.Title>
+      <Progress
+        percent={percentage}
+        size={{ height: 20 }}
+        strokeColor={PROGRESSBAR_COLORS}
+      />
     </Flex>
   );
 }

@@ -5,21 +5,24 @@ import DashboardWidget from "./DashboardWidget";
 import { PROGRESSBAR_COLORS } from "../../lib/consts";
 
 export default function Dashboard() {
-  const { shieldsData, spiritAshesData, talismansData } = useAppSelector(
-    (state) => state.collection.collectionData
-  );
+  const { shieldsData, spiritAshesData, talismansData, ashesOfWarData } =
+    useAppSelector((state) => state.collection.collectionData);
 
   const shieldsStats = getCategoryStats(shieldsData);
   const spiritAshesStats = getCategoryStats(spiritAshesData);
   const talismansStats = getCategoryStats(talismansData);
-  console.log(talismansStats);
+  const ashesOfWarStats = getCategoryStats(ashesOfWarData);
 
   const generalCollected =
     shieldsStats.collected +
     spiritAshesStats.collected +
-    talismansStats.collected;
+    talismansStats.collected +
+    ashesOfWarStats.collected;
   const generalTotal =
-    shieldsStats.total + spiritAshesStats.total + talismansStats.total;
+    shieldsStats.total +
+    spiritAshesStats.total +
+    talismansStats.total +
+    ashesOfWarStats.total;
   const generalPercentage = Math.round((generalCollected / generalTotal) * 100);
 
   return (
@@ -51,6 +54,11 @@ export default function Dashboard() {
           dataType="talismans"
           data={talismansStats}
           subData={talismansData}
+        />
+        <DashboardWidget
+          dataType="ashesOfWar"
+          data={ashesOfWarStats}
+          subData={ashesOfWarData}
         />
       </Flex>
     </Flex>
