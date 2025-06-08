@@ -14,6 +14,7 @@ import InfoItems from "../../categories/info-items/InfoItems";
 import ShieldsAndTorches from "../../categories/shields/Shields";
 import ToolsAndBells from "../../categories/tools-and-bells/ToolsAndBells";
 import TearsAndUpgrades from "../../categories/tears-and-upgrades/TearsAndUpgrades";
+import Craft from "../../categories/craft/Craft";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -95,6 +96,11 @@ const items: CustomTabItem[] = [
     key: "infoItems",
     label: "Info Items",
     children: <InfoItems />,
+  },
+  {
+    key: "craft",
+    label: "Craft",
+    children: <Craft />,
   },
 ];
 

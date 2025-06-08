@@ -11,10 +11,9 @@ export type ItemCategory =
   | "infoItems"
   | "toolsAndBellBearings"
   | "tearsAndUpgrades"
-
-  
   | "armour"
-  | "craftAndCookbooks" //сюда еще и материалы
+  
+  | "craft" //сюда еще и материалы
   | "remembrances" //Тут и души и оружие/магия с боссов
   | "consumablesAndMultiplayer"
   | "keyItems "; //Ключи карты великие руны и квестовые предметы
@@ -269,7 +268,7 @@ export interface ToolsOrBellBearingsCategoryMap {
   bellBearings: ToolOrBellBearingItems[];
 }
 
-//Инструменты и колокольные сферы
+//Слезы, апгрейды и материалы для апгрейдов
 
 export interface TearsOrUpgradesItem {
   type: Extract<ItemCategory, "tearsAndUpgrades">;
@@ -287,6 +286,23 @@ export interface TearsOrUpgradesCategoryMap {
   gloveworts: TearsOrUpgradesItem[];
 }
 
+//Крафт, рецепты и материалы для крафта
+
+export interface CraftItem {
+  type: Extract<ItemCategory, "craft">;
+  name: string;
+  collected: boolean;
+  link: string;
+  dlc: boolean;
+  imgUrl?: string;
+}
+
+export interface CraftItemsCategoryMap {
+  instruments: CraftItem[];
+  cookbooks: CraftItem[];
+  materials: CraftItem[];
+}
+
 //общее
 export type ItemSubCategoryMap =
   | ShieldAndTorchesSubCategoryMap
@@ -300,7 +316,8 @@ export type ItemSubCategoryMap =
   | RangedWeaponsSubCategoryMap
   | InfoItemsSubCategoryMap
   | ToolsOrBellBearingsCategoryMap
-  | TearsOrUpgradesCategoryMap;
+  | TearsOrUpgradesCategoryMap
+  | CraftItemsCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldAndTorchesSubCategoryMap
@@ -314,7 +331,8 @@ export type ItemSubCategory =
   | keyof RangedWeaponsSubCategoryMap
   | keyof InfoItemsSubCategoryMap
   | keyof ToolsOrBellBearingsCategoryMap
-  | keyof TearsOrUpgradesCategoryMap;
+  | keyof TearsOrUpgradesCategoryMap
+  | keyof CraftItemsCategoryMap;
 
 export type Item =
   | ShieldOrTorchItem
@@ -328,4 +346,5 @@ export type Item =
   | RangedWeaponItem
   | InfoItems
   | ToolOrBellBearingItems
-  | TearsOrUpgradesItem;
+  | TearsOrUpgradesItem
+  | CraftItem;

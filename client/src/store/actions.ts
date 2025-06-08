@@ -1,5 +1,6 @@
 import {
   AshesOfWarSubCategoryMap,
+  CraftItemsCategoryMap,
   GesturesSubCategoryMap,
   IncantationsSubCategoryMap,
   InfoItemsSubCategoryMap,
@@ -17,6 +18,7 @@ import {
 import { AppDispatch } from "./appStore";
 import {
   toggleAshOfWarCollected,
+  toggleCraftItemCollected,
   toggleGestureCollected,
   toggleIncantationCollected,
   toggleInfoItemCollected,
@@ -117,6 +119,13 @@ export function getStoreAction(
     dispatch(
       toggleTearOrUpgradeCollected({
         category: category as keyof TearsOrUpgradesCategoryMap,
+        name: name,
+      })
+    );
+  } else if (type === "craft") {
+    dispatch(
+      toggleCraftItemCollected({
+        category: category as keyof CraftItemsCategoryMap,
         name: name,
       })
     );
