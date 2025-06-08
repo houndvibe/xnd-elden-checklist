@@ -1,30 +1,10 @@
 import { useState } from "react";
 import type {
-  AshesOfWarSubCategoryMap,
-  GesturesSubCategoryMap,
-  IncantationsSubCategoryMap,
-  InfoItemsSubCategoryMap,
   Item,
   ItemSubCategory,
-  MeleWeaponsSubCategoryMap,
-  RangedWeaponsSubCategoryMap,
-  ShieldSubCategoryMap,
-  SorceriesSubCategoryMap,
-  SpiritAshesSubCategoryMap,
   TalismansSubCategoryMap,
 } from "../../../global-types";
-import {
-  convertAshOfWarNameToWikiImageUrl,
-  convertGestureNameToWikiImageUrl,
-  convertIncantationNameToWikiImageUrl,
-  convertInfoItemNameToWikiImageUrl,
-  convertMeleWeaponNameToWikiImageUrl,
-  convertRangedWeaponNameToWikiImageUrl,
-  convertShieldNameToWikiImageUrl,
-  convertSorceryNameToWikiImageUrl,
-  convertSpiritNameToWikiImageUrl,
-  convertTalismanNameToWikiImageUrl,
-} from "../../../lib/utils/converters";
+import { getNameToImgUrlConverter } from "../../../lib/utils/converters";
 import { useAppDispatch } from "../../../store/typedDispatch";
 import { CheckOutlined } from "@ant-design/icons";
 
@@ -49,18 +29,8 @@ import type {
 } from "antd/es/table/interface";
 import { ThunderboltTwoTone } from "@ant-design/icons";
 import dlcIcon from "../../../assets/dlc-icon.png";
-import {
-  toggleAshOfWarCollected,
-  toggleGestureCollected,
-  toggleIncantationCollected,
-  toggleInfoItemCollected,
-  toggleMeleWeaponCollected,
-  toggleRangedWeaponCollected,
-  toggleShieldCollected,
-  toggleSorceryCollected,
-  toggleSpiritAshCollected,
-  toggleTalismanCollected,
-} from "../../../store/collectionSlice";
+import { toggleTalismanCollected } from "../../../store/collectionSlice";
+import { getStoreAction } from "../../../store/actions";
 
 export default function Table({
   setHoveredImg,
@@ -181,77 +151,7 @@ export default function Table({
               checked={record.collected}
               onClick={(e) => {
                 e.stopPropagation();
-                if (record.type === "shields") {
-                  dispatch(
-                    toggleShieldCollected({
-                      category: category as keyof ShieldSubCategoryMap,
-                      name: record.name,
-                    })
-                  );
-                } else if (record.type === "spiritAshes") {
-                  dispatch(
-                    toggleSpiritAshCollected({
-                      category: category as keyof SpiritAshesSubCategoryMap,
-                      name: record.name,
-                    })
-                  );
-                } else if (record.type === "talismans") {
-                  dispatch(
-                    toggleTalismanCollected({
-                      category: category as keyof TalismansSubCategoryMap,
-                      name: record.name,
-                    })
-                  );
-                } else if (record.type === "sorceries") {
-                  dispatch(
-                    toggleSorceryCollected({
-                      category: category as keyof SorceriesSubCategoryMap,
-                      name: record.name,
-                    })
-                  );
-                } else if (record.type === "ashesOfWar") {
-                  dispatch(
-                    toggleAshOfWarCollected({
-                      category: category as keyof AshesOfWarSubCategoryMap,
-                      name: record.name,
-                    })
-                  );
-                } else if (record.type === "incantations") {
-                  dispatch(
-                    toggleIncantationCollected({
-                      category: category as keyof IncantationsSubCategoryMap,
-                      name: record.name,
-                    })
-                  );
-                } else if (record.type === "gestures") {
-                  dispatch(
-                    toggleGestureCollected({
-                      category: category as keyof GesturesSubCategoryMap,
-                      name: record.name,
-                    })
-                  );
-                } else if (record.type === "meleWeapons") {
-                  dispatch(
-                    toggleMeleWeaponCollected({
-                      category: category as keyof MeleWeaponsSubCategoryMap,
-                      name: record.name,
-                    })
-                  );
-                } else if (record.type === "rangedWeapons") {
-                  dispatch(
-                    toggleRangedWeaponCollected({
-                      category: category as keyof RangedWeaponsSubCategoryMap,
-                      name: record.name,
-                    })
-                  );
-                } else if (record.type === "infoItems") {
-                  dispatch(
-                    toggleInfoItemCollected({
-                      category: category as keyof InfoItemsSubCategoryMap,
-                      name: record.name,
-                    })
-                  );
-                }
+                getStoreAction(record.type, record.name, category, dispatch);
               }}
             />
           </Flex>
@@ -296,104 +196,14 @@ export default function Table({
       onChange={onChangeTable}
       onRow={(record) => ({
         onMouseEnter: () => {
-          let imgUrl;
-
-          if (record.imgUrl) {
-            imgUrl = record.imgUrl;
-          } else {
-            switch (record.type) {
-              case "shields":
-                imgUrl = convertShieldNameToWikiImageUrl(
-                  record.name,
-                  record.dlc
-                );
-                break;
-              case "spiritAshes":
-                imgUrl = convertSpiritNameToWikiImageUrl(
-                  record.name,
-                  record.dlc
-                );
-                break;
-              case "talismans":
-                imgUrl = convertTalismanNameToWikiImageUrl(
-                  record.name,
-                  record.dlc
-                );
-                break;
-              case "ashesOfWar":
-                imgUrl = convertAshOfWarNameToWikiImageUrl(
-                  record.name,
-                  record.dlc
-                );
-                break;
-              case "sorceries":
-                imgUrl = convertSorceryNameToWikiImageUrl(
-                  record.name,
-                  record.dlc
-                );
-                break;
-              case "incantations":
-                imgUrl = convertIncantationNameToWikiImageUrl(
-                  record.name,
-                  record.dlc
-                );
-                break;
-              case "gestures":
-                imgUrl = convertGestureNameToWikiImageUrl(
-                  record.name,
-                  record.dlc
-                );
-                break;
-              case "meleWeapons":
-                imgUrl = convertMeleWeaponNameToWikiImageUrl(
-                  record.name,
-                  record.dlc,
-                  //TODO сюда надо добавить сабкатегорию
-                  "dagger"
-                );
-                break;
-              case "rangedWeapons":
-                imgUrl = convertRangedWeaponNameToWikiImageUrl(
-                  record.name,
-                  record.dlc,
-                  //TODO сюда надо добавить сабкатегорию
-                  "bow"
-                );
-                break;
-              case "infoItems":
-                imgUrl = convertInfoItemNameToWikiImageUrl(
-                  record.name,
-                  record.dlc
-                );
-                break;
-            }
-          }
+          const imgUrl = record.imgUrl
+            ? record.imgUrl
+            : getNameToImgUrlConverter(record);
 
           setHoveredImg({ url: imgUrl, name: record.name });
         },
         onClick: () => {
-          if (record.type === "shields") {
-            dispatch(
-              toggleShieldCollected({
-                category: category as keyof ShieldSubCategoryMap,
-                name: record.name,
-              })
-            );
-          } else if (record.type === "spiritAshes") {
-            dispatch(
-              toggleSpiritAshCollected({
-                category: category as keyof SpiritAshesSubCategoryMap,
-                name: record.name,
-              })
-            );
-          } else if (record.type === "ashesOfWar") {
-            dispatch(
-              toggleAshOfWarCollected({
-                category: category as keyof AshesOfWarSubCategoryMap,
-                name: record.name,
-              })
-            );
-          } else if (record.type === "talismans") {
+          if (record.type === "talismans") {
             // Только если нет versions, переключаем весь talisman
             if (!("versions" in record) || record.versions?.length === 0) {
               dispatch(
@@ -403,49 +213,8 @@ export default function Table({
                 })
               );
             }
-            // Ничего не делаем при клике по строке, если есть versions
-          } else if (record.type === "sorceries") {
-            dispatch(
-              toggleSorceryCollected({
-                category: category as keyof SorceriesSubCategoryMap,
-                name: record.name,
-              })
-            );
-          } else if (record.type === "incantations") {
-            dispatch(
-              toggleIncantationCollected({
-                category: category as keyof IncantationsSubCategoryMap,
-                name: record.name,
-              })
-            );
-          } else if (record.type === "gestures") {
-            dispatch(
-              toggleGestureCollected({
-                category: category as keyof GesturesSubCategoryMap,
-                name: record.name,
-              })
-            );
-          } else if (record.type === "meleWeapons") {
-            dispatch(
-              toggleMeleWeaponCollected({
-                category: category as keyof MeleWeaponsSubCategoryMap,
-                name: record.name,
-              })
-            );
-          } else if (record.type === "rangedWeapons") {
-            dispatch(
-              toggleRangedWeaponCollected({
-                category: category as keyof RangedWeaponsSubCategoryMap,
-                name: record.name,
-              })
-            );
-          } else if (record.type === "infoItems") {
-            dispatch(
-              toggleInfoItemCollected({
-                category: category as keyof InfoItemsSubCategoryMap,
-                name: record.name,
-              })
-            );
+          } else {
+            getStoreAction(record.type, record.name, category, dispatch);
           }
         },
       })}

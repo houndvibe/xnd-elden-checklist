@@ -1,3 +1,49 @@
+import { Item } from "../../global-types";
+
+export function getNameToImgUrlConverter(record: Item) {
+  switch (record.type) {
+    case "shields":
+      return convertShieldNameToWikiImageUrl(record.name, record.dlc);
+
+    case "spiritAshes":
+      return convertSpiritNameToWikiImageUrl(record.name, record.dlc);
+
+    case "talismans":
+      return convertTalismanNameToWikiImageUrl(record.name, record.dlc);
+
+    case "ashesOfWar":
+      return convertAshOfWarNameToWikiImageUrl(record.name, record.dlc);
+
+    case "sorceries":
+      return convertSorceryNameToWikiImageUrl(record.name, record.dlc);
+
+    case "incantations":
+      return convertIncantationNameToWikiImageUrl(record.name, record.dlc);
+
+    case "gestures":
+      return convertGestureNameToWikiImageUrl(record.name, record.dlc);
+
+    case "meleWeapons":
+      return convertMeleWeaponNameToWikiImageUrl(
+        record.name,
+        record.dlc,
+        //TODO сюда надо добавить сабкатегорию
+        "dagger"
+      );
+
+    case "rangedWeapons":
+      return convertRangedWeaponNameToWikiImageUrl(
+        record.name,
+        record.dlc,
+        //TODO сюда надо добавить сабкатегорию
+        "bow"
+      );
+
+    case "infoItems":
+      return convertInfoItemNameToWikiImageUrl(record.name, record.dlc);
+  }
+}
+
 export function convertShieldNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
