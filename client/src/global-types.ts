@@ -2,7 +2,7 @@ export type ItemCategory =
   | "meleWeapons"
   | "rangedWeapons"
   | "armour"
-  | "shields"
+  | "shieldsAndTorches"
   | "talismans"
   | "ashesOfWar"
   | "spiritAshes"
@@ -18,8 +18,8 @@ export type ItemCategory =
   | "infoItems";
 
 //Щиты
-export interface ShieldItem {
-  type: Extract<ItemCategory, "shields">;
+export interface ShieldOrTorchItem {
+  type: Extract<ItemCategory, "shieldsAndTorches">;
   name: string;
   collected: boolean;
   link: string;
@@ -27,11 +27,12 @@ export interface ShieldItem {
   imgUrl?: string;
 }
 
-export interface ShieldSubCategoryMap {
-  smallShields: ShieldItem[];
-  mediumShields: ShieldItem[];
-  greatShields: ShieldItem[];
-  thrustingShields: ShieldItem[];
+export interface ShieldAndTorchesSubCategoryMap {
+  torches: ShieldOrTorchItem[];
+  smallShields: ShieldOrTorchItem[];
+  mediumShields: ShieldOrTorchItem[];
+  greatShields: ShieldOrTorchItem[];
+  thrustingShields: ShieldOrTorchItem[];
 }
 
 //Духи
@@ -249,7 +250,7 @@ export interface InfoItemsSubCategoryMap {
 
 //общее
 export type ItemSubCategoryMap =
-  | ShieldSubCategoryMap
+  | ShieldAndTorchesSubCategoryMap
   | SpiritAshesSubCategoryMap
   | TalismansSubCategoryMap
   | AshesOfWarSubCategoryMap
@@ -261,7 +262,7 @@ export type ItemSubCategoryMap =
   | InfoItemsSubCategoryMap;
 
 export type ItemSubCategory =
-  | keyof ShieldSubCategoryMap
+  | keyof ShieldAndTorchesSubCategoryMap
   | keyof SpiritAshesSubCategoryMap
   | keyof TalismansSubCategoryMap
   | keyof AshesOfWarSubCategoryMap
@@ -273,7 +274,7 @@ export type ItemSubCategory =
   | keyof InfoItemsSubCategoryMap;
 
 export type Item =
-  | ShieldItem
+  | ShieldOrTorchItem
   | SpiritAshItem
   | TalismanItem
   | AshOfWarItem

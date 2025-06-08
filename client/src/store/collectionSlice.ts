@@ -6,13 +6,13 @@ import type {
   InfoItemsSubCategoryMap,
   MeleWeaponsSubCategoryMap,
   RangedWeaponsSubCategoryMap,
-  ShieldSubCategoryMap,
+  ShieldAndTorchesSubCategoryMap,
   SorceriesSubCategoryMap,
   SpiritAshesSubCategoryMap,
   TalismansSubCategoryMap,
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
-import { shieldsData } from "../components/categories/shields/data";
+
 import { spiritAshesData } from "../components/categories/spirit-ashes/data";
 import { talismansData } from "../components/categories/talismans/data";
 import { ashesOfWarData } from "../components/categories/ashes-of-war/data";
@@ -22,10 +22,11 @@ import { gesturesData } from "../components/categories/gestures/data";
 import { meleWeaponsData } from "../components/categories/mele-weapons/data";
 import { rangedWeaponsData } from "../components/categories/ranged-weapons/data";
 import { infoItemsData } from "../components/categories/info-items/data";
+import { shieldsAndTorchesData } from "../components/categories/shields/data";
 
 const initialState = {
   collectionData: loadFromStorage("xnd.collection", {
-    shieldsData: shieldsData,
+    shieldsAndTorchesData: shieldsAndTorchesData,
     spiritAshesData: spiritAshesData,
     talismansData: talismansData,
     ashesOfWarData: ashesOfWarData,
@@ -42,15 +43,15 @@ export const collectionSlice = createSlice({
   name: "collection",
   initialState,
   reducers: {
-    toggleShieldCollected: (
+    toggleShieldOrTorchCollected: (
       state,
       action: PayloadAction<{
-        category: keyof ShieldSubCategoryMap;
+        category: keyof ShieldAndTorchesSubCategoryMap;
         name: string;
       }>
     ) => {
       const { category, name } = action.payload;
-      const shield = state.collectionData.shieldsData[category].find(
+      const shield = state.collectionData.shieldsAndTorchesData[category].find(
         (s) => s.name === name
       );
       if (shield) {
@@ -221,7 +222,7 @@ export const collectionSlice = createSlice({
 });
 
 export const {
-  toggleShieldCollected,
+  toggleShieldOrTorchCollected,
   toggleMeleWeaponCollected,
   toggleRangedWeaponCollected,
   toggleAshOfWarCollected,

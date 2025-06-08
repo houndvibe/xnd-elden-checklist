@@ -44,3 +44,22 @@
   width: 100%;
   height: 600px;
 }
+
+.dropInfo {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-family: "IM Fell English SC";
+}
+
+.title {
+  color: $text-highlighted;
+  font-family: "IM Fell English SC";
+  font-size: 30px;
+}
+
+.info {
+  color: $text-highlighted;
+  font-family: "IM Fell English SC";
+  font-size: 20px;
+}

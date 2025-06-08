@@ -1,5 +1,4 @@
 import { Tabs as AntdTabs, ConfigProvider } from "antd";
-import Shields from "../../categories/shields/Shields";
 import { APP_PALETTE } from "../../../lib/consts";
 import SpiritAshes from "../../categories/spirit-ashes/SpiritAshes";
 import type { ItemCategory } from "../../../global-types";
@@ -12,6 +11,7 @@ import Gestures from "../../categories/gestures/Gestures";
 import MeleWeapons from "../../categories/mele-weapons/MeleWeapons";
 import RangedWeapons from "../../categories/ranged-weapons/RangedWeapons";
 import InfoItems from "../../categories/info-items/InfoItems";
+import ShieldsAndTorches from "../../categories/shields/Shields";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -43,9 +43,9 @@ const items: CustomTabItem[] = [
     children: "Armour",
   },
   {
-    key: "shields",
-    label: "Shields",
-    children: <Shields />,
+    key: "shieldsAndTorches",
+    label: "Shields & Torches",
+    children: <ShieldsAndTorches />,
   },
   {
     key: "spiritAshes",

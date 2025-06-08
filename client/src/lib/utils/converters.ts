@@ -2,7 +2,7 @@ import { Item } from "../../global-types";
 
 export function getNameToImgUrlConverter(record: Item) {
   switch (record.type) {
-    case "shields":
+    case "shieldsAndTorches":
       return convertShieldNameToWikiImageUrl(record.name, record.dlc);
 
     case "spiritAshes":

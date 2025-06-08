@@ -4,27 +4,29 @@ import SubCategoryContent from "../../ui/SubCategoryContent/SubCategoryContent";
 import CategoryInfo from "../../ui/CategotyInfo/CategoryInfo";
 import { useAppSelector } from "../../../store/typedDispatch";
 import SubCategoryLabel from "../../ui/SubCategoryLabel/SubCategoryLabel";
-import type { ShieldSubCategoryMap } from "../../../global-types";
+import type { ShieldAndTorchesSubCategoryMap } from "../../../global-types";
 import { toTitleCaseFromCamel } from "../../../lib/utils/converters";
 
-export default function Shields() {
-  const shieldsData = useAppSelector(
-    (state) => state.collection.collectionData.shieldsData
+export default function ShieldsAndTorches() {
+  const shieldsAndTorchesData = useAppSelector(
+    (state) => state.collection.collectionData.shieldsAndTorchesData
   );
 
-  const shildsSubcategoryItems = Object.entries(shieldsData).map(
+  const shildsSubcategoryItems = Object.entries(shieldsAndTorchesData).map(
     ([key, data], index) => ({
       key: `${index + 1}`,
       label: (
         <SubCategoryLabel
-          title={toTitleCaseFromCamel(key as keyof ShieldSubCategoryMap)}
+          title={toTitleCaseFromCamel(
+            key as keyof ShieldAndTorchesSubCategoryMap
+          )}
           data={data}
         />
       ),
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof ShieldSubCategoryMap}
+          category={key as keyof ShieldAndTorchesSubCategoryMap}
         />
       ),
     })
@@ -33,7 +35,7 @@ export default function Shields() {
   return (
     <Flex vertical align="center">
       <Flex className="category_wallpaper shields_wallpaper">
-        <CategoryInfo title={"Shields"} items={shieldsData} />
+        <CategoryInfo title={"Shields"} items={shieldsAndTorchesData} />
       </Flex>
       <div className="collapse_wpapper">
         <Collapse items={shildsSubcategoryItems} defaultActiveKey={1} />

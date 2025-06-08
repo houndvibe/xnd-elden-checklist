@@ -7,7 +7,7 @@ import { PROGRESSBAR_COLORS } from "../../lib/consts";
 import { ItemCategory } from "../../global-types";
 
 const categoryTypes: ItemCategory[] = [
-  "shields",
+  "shieldsAndTorches",
   "spiritAshes",
   "talismans",
   "ashesOfWar",

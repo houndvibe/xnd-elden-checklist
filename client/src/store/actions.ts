@@ -7,7 +7,7 @@ import {
   ItemSubCategory,
   MeleWeaponsSubCategoryMap,
   RangedWeaponsSubCategoryMap,
-  ShieldSubCategoryMap,
+  ShieldAndTorchesSubCategoryMap,
   SorceriesSubCategoryMap,
   SpiritAshesSubCategoryMap,
   TalismansSubCategoryMap,
@@ -20,7 +20,7 @@ import {
   toggleInfoItemCollected,
   toggleMeleWeaponCollected,
   toggleRangedWeaponCollected,
-  toggleShieldCollected,
+  toggleShieldOrTorchCollected,
   toggleSorceryCollected,
   toggleSpiritAshCollected,
   toggleTalismanCollected,
@@ -32,10 +32,10 @@ export function getStoreAction(
   category: ItemSubCategory,
   dispatch: AppDispatch
 ) {
-  if (type === "shields") {
+  if (type === "shieldsAndTorches") {
     dispatch(
-      toggleShieldCollected({
-        category: category as keyof ShieldSubCategoryMap,
+      toggleShieldOrTorchCollected({
+        category: category as keyof ShieldAndTorchesSubCategoryMap,
         name: name,
       })
     );
