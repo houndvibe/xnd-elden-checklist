@@ -1,6 +1,6 @@
 /* $text-primary: #aa7714; */
 $text-primary: #856a51;
-$text-highlighted: #e8b339;
+$text-highlighted: #aa7714;
 $success-green: #112123;
 $bg-dark: #141414;
 $bg-light: #1f1f1f;
@@ -68,6 +68,9 @@ $bg-light: #1f1f1f;
 }
 .rangeWeapons_wallpaper {
   background: url("../assets/bg-range.jpg") center/cover no-repeat;
+}
+.infoItems_wallpaper {
+  background: url("../assets/bg-infoItems.jpg") center/cover no-repeat;
 }
 
 //чекбоксы

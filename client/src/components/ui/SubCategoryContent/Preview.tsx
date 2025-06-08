@@ -1,7 +1,21 @@
 import { Flex, Image } from "antd";
 import styles from "./SubCategoryContent.module.scss";
+import { Item } from "../../../global-types";
 
-export default function Preview({ img }: { img: string | undefined }) {
+export default function Preview({
+  img,
+  dataSource,
+}: {
+  img: {
+    url: string | undefined;
+    name: string;
+  };
+  dataSource: Item[];
+}) {
+  const currentItem = dataSource.find((item) => item.name == img.name);
+  const info =
+    currentItem && currentItem.type === "infoItems" ? currentItem.info : null;
+
   return (
     <Flex
       className={styles.preview}
@@ -10,14 +24,10 @@ export default function Preview({ img }: { img: string | undefined }) {
       align="center"
       gap={50}
     >
-      {img ? (
+      {img.url ? (
         <>
-          <Image height={600} src={img} preview={false} alt={"no image"} />
-          <>
-            {
-              "Starting equipment for the Prophet class. Dropped by Demi-Humans that wield it. A good location to find them is going north from South of the Lookout Tower site of grace in the Weeping Peninsula. There should be a group of four of them carrying this shield."
-            }
-          </>
+          <Image height={600} src={img.url} preview={false} alt={"no image"} />
+          <div style={{ minHeight: 100, textAlign: "center" }}> {info}</div>
         </>
       ) : (
         <div className={styles.placeholder}></div>

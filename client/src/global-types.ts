@@ -14,7 +14,8 @@ export type ItemCategory =
   | "craft"
   | "upgrades"
   | "bellBearings"
-  | "cookbooks";
+  | "cookbooks"
+  | "infoItems";
 
 //Щиты
 export interface ShieldItem {
@@ -228,6 +229,24 @@ export interface RangedWeaponsSubCategoryMap {
   sacredSeals: RangedWeaponItem[];
 }
 
+//Бумажки
+export interface InfoItems {
+  type: Extract<ItemCategory, "infoItems">;
+  name: string;
+  collected: boolean;
+  link: string;
+  dlc: boolean;
+  info: string;
+  location: string;
+  imgUrl?: string;
+}
+
+export interface InfoItemsSubCategoryMap {
+  guides: InfoItems[];
+  paintings: InfoItems[];
+  tutorials: InfoItems[];
+}
+
 //общее
 export type ItemSubCategoryMap =
   | ShieldSubCategoryMap
@@ -238,7 +257,8 @@ export type ItemSubCategoryMap =
   | IncantationsSubCategoryMap
   | GesturesSubCategoryMap
   | MeleWeaponsSubCategoryMap
-  | RangedWeaponsSubCategoryMap;
+  | RangedWeaponsSubCategoryMap
+  | InfoItemsSubCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldSubCategoryMap
@@ -249,7 +269,8 @@ export type ItemSubCategory =
   | keyof IncantationsSubCategoryMap
   | keyof GesturesSubCategoryMap
   | keyof MeleWeaponsSubCategoryMap
-  | keyof RangedWeaponsSubCategoryMap;
+  | keyof RangedWeaponsSubCategoryMap
+  | keyof InfoItemsSubCategoryMap;
 
 export type Item =
   | ShieldItem
@@ -260,4 +281,5 @@ export type Item =
   | IncantationsItem
   | GestureItem
   | MeleWeaponItem
-  | RangedWeaponItem;
+  | RangedWeaponItem
+  | InfoItems;

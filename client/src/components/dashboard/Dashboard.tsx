@@ -15,6 +15,8 @@ const categoryTypes: ItemCategory[] = [
   "incantations",
   "gestures",
   "meleWeapons",
+  "rangedWeapons",
+  "infoItems",
 ] as const;
 
 export default function Dashboard() {

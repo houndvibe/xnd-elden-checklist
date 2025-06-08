@@ -3,9 +3,11 @@ import type {
   AshesOfWarSubCategoryMap,
   GesturesSubCategoryMap,
   IncantationsSubCategoryMap,
+  InfoItemsSubCategoryMap,
   Item,
   ItemSubCategory,
   MeleWeaponsSubCategoryMap,
+  RangedWeaponsSubCategoryMap,
   ShieldSubCategoryMap,
   SorceriesSubCategoryMap,
   SpiritAshesSubCategoryMap,
@@ -15,7 +17,9 @@ import {
   convertAshOfWarNameToWikiImageUrl,
   convertGestureNameToWikiImageUrl,
   convertIncantationNameToWikiImageUrl,
+  convertInfoItemNameToWikiImageUrl,
   convertMeleWeaponNameToWikiImageUrl,
+  convertRangedWeaponNameToWikiImageUrl,
   convertShieldNameToWikiImageUrl,
   convertSorceryNameToWikiImageUrl,
   convertSpiritNameToWikiImageUrl,
@@ -49,7 +53,9 @@ import {
   toggleAshOfWarCollected,
   toggleGestureCollected,
   toggleIncantationCollected,
+  toggleInfoItemCollected,
   toggleMeleWeaponCollected,
+  toggleRangedWeaponCollected,
   toggleShieldCollected,
   toggleSorceryCollected,
   toggleSpiritAshCollected,
@@ -61,7 +67,12 @@ export default function Table({
   dataSource,
   category,
 }: {
-  setHoveredImg: React.Dispatch<React.SetStateAction<string | undefined>>;
+  setHoveredImg: React.Dispatch<
+    React.SetStateAction<{
+      url: string | undefined;
+      name: string;
+    }>
+  >;
   dataSource: Item[];
   category: ItemSubCategory;
 }) {
@@ -226,6 +237,20 @@ export default function Table({
                       name: record.name,
                     })
                   );
+                } else if (record.type === "rangedWeapons") {
+                  dispatch(
+                    toggleRangedWeaponCollected({
+                      category: category as keyof RangedWeaponsSubCategoryMap,
+                      name: record.name,
+                    })
+                  );
+                } else if (record.type === "infoItems") {
+                  dispatch(
+                    toggleInfoItemCollected({
+                      category: category as keyof InfoItemsSubCategoryMap,
+                      name: record.name,
+                    })
+                  );
                 }
               }}
             />
@@ -320,7 +345,6 @@ export default function Table({
                 );
                 break;
               case "meleWeapons":
-                console.log(record);
                 imgUrl = convertMeleWeaponNameToWikiImageUrl(
                   record.name,
                   record.dlc,
@@ -328,10 +352,24 @@ export default function Table({
                   "dagger"
                 );
                 break;
+              case "rangedWeapons":
+                imgUrl = convertRangedWeaponNameToWikiImageUrl(
+                  record.name,
+                  record.dlc,
+                  //TODO сюда надо добавить сабкатегорию
+                  "bow"
+                );
+                break;
+              case "infoItems":
+                imgUrl = convertInfoItemNameToWikiImageUrl(
+                  record.name,
+                  record.dlc
+                );
+                break;
             }
           }
 
-          setHoveredImg(imgUrl);
+          setHoveredImg({ url: imgUrl, name: record.name });
         },
         onClick: () => {
           if (record.type === "shields") {
@@ -391,6 +429,20 @@ export default function Table({
             dispatch(
               toggleMeleWeaponCollected({
                 category: category as keyof MeleWeaponsSubCategoryMap,
+                name: record.name,
+              })
+            );
+          } else if (record.type === "rangedWeapons") {
+            dispatch(
+              toggleRangedWeaponCollected({
+                category: category as keyof RangedWeaponsSubCategoryMap,
+                name: record.name,
+              })
+            );
+          } else if (record.type === "infoItems") {
+            dispatch(
+              toggleInfoItemCollected({
+                category: category as keyof InfoItemsSubCategoryMap,
                 name: record.name,
               })
             );

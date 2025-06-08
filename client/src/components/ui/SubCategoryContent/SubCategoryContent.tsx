@@ -11,7 +11,13 @@ export default function SubCategoryContent({
   dataSource: Item[];
   category: ItemSubCategory;
 }) {
-  const [hoveredImg, setHoveredImg] = useState<string | undefined>(undefined);
+  const [hoveredImg, setHoveredImg] = useState<{
+    url: string | undefined;
+    name: string;
+  }>({
+    url: undefined,
+    name: "",
+  });
 
   return (
     <Flex gap={20} style={{ maxHeight: 800 }}>
@@ -20,7 +26,7 @@ export default function SubCategoryContent({
         dataSource={dataSource}
         category={category}
       />
-      <Preview img={hoveredImg} />
+      <Preview dataSource={dataSource} img={hoveredImg} />
     </Flex>
   );
 }

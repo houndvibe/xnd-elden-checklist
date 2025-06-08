@@ -3,7 +3,9 @@ import type {
   AshesOfWarSubCategoryMap,
   GesturesSubCategoryMap,
   IncantationsSubCategoryMap,
+  InfoItemsSubCategoryMap,
   MeleWeaponsSubCategoryMap,
+  RangedWeaponsSubCategoryMap,
   ShieldSubCategoryMap,
   SorceriesSubCategoryMap,
   SpiritAshesSubCategoryMap,
@@ -18,6 +20,8 @@ import { sorceriesData } from "../components/categories/sorceries/data";
 import { incantationsData } from "../components/categories/incantations/data";
 import { gesturesData } from "../components/categories/gestures/data";
 import { meleWeaponsData } from "../components/categories/mele-weapons/data";
+import { rangedWeaponsData } from "../components/categories/ranged-weapons/data";
+import { infoItemsData } from "../components/categories/info-items/data";
 
 const initialState = {
   collectionData: loadFromStorage("xnd.collection", {
@@ -29,6 +33,8 @@ const initialState = {
     incantationsData: incantationsData,
     gesturesData: gesturesData,
     meleWeaponsData: meleWeaponsData,
+    rangedWeaponsData: rangedWeaponsData,
+    infoItemsData: infoItemsData,
   }),
 };
 
@@ -65,6 +71,22 @@ export const collectionSlice = createSlice({
       );
       if (meleWeapon) {
         meleWeapon.collected = !meleWeapon.collected;
+        saveToStorage("xnd.collection", state.collectionData);
+      }
+    },
+    toggleRangedWeaponCollected: (
+      state,
+      action: PayloadAction<{
+        category: keyof RangedWeaponsSubCategoryMap;
+        name: string;
+      }>
+    ) => {
+      const { category, name } = action.payload;
+      const rangedWeapon = state.collectionData.rangedWeaponsData[
+        category
+      ].find((s) => s.name === name);
+      if (rangedWeapon) {
+        rangedWeapon.collected = !rangedWeapon.collected;
         saveToStorage("xnd.collection", state.collectionData);
       }
     },
@@ -179,17 +201,35 @@ export const collectionSlice = createSlice({
 
       saveToStorage("xnd.collection", state.collectionData);
     },
+    toggleInfoItemCollected: (
+      state,
+      action: PayloadAction<{
+        category: keyof InfoItemsSubCategoryMap;
+        name: string;
+      }>
+    ) => {
+      const { category, name } = action.payload;
+      const infoItem = state.collectionData.infoItemsData[category].find(
+        (s) => s.name === name
+      );
+      if (infoItem) {
+        infoItem.collected = !infoItem.collected;
+        saveToStorage("xnd.collection", state.collectionData);
+      }
+    },
   },
 });
 
 export const {
   toggleShieldCollected,
   toggleMeleWeaponCollected,
+  toggleRangedWeaponCollected,
   toggleAshOfWarCollected,
   toggleSorceryCollected,
   toggleIncantationCollected,
   toggleSpiritAshCollected,
   toggleTalismanCollected,
   toggleGestureCollected,
+  toggleInfoItemCollected,
 } = collectionSlice.actions;
 export default collectionSlice.reducer;

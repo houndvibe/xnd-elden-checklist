@@ -56,7 +56,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Fire+Knight's+Shortsword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -72,7 +72,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Main-gauche",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -154,7 +154,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithscript+Dagger",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   straightSwords: [
@@ -220,7 +220,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Stone-Sheathed+Sword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -300,7 +300,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Velvet+Sword+of+St+Trina",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -323,7 +323,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       name: "Sword of Night and Flame",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Sword+of+Night+and+Flame",
-      legendary: false,
+      legendary: true,
       dlc: false,
     },
     {
@@ -332,7 +332,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Sword+of+Darkness",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -340,7 +340,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Sword+of+Light",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
 
@@ -351,7 +351,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Milady",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -359,7 +359,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Leda's+Sword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -367,7 +367,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Rellana's+Twinblade",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   greatswords: [
@@ -425,7 +425,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Lizard+Greatsword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -480,7 +480,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       name: "Marais Excutioner's Sword",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Marais+Excutioner's+Sword",
-      legendary: false,
+      legendary: true,
       dlc: false,
     },
     {
@@ -489,7 +489,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Greatsword+of+Solitude",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -536,7 +536,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       name: "Golden Order Greatsword",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Golden+Order+Greatsword",
-      legendary: false,
+      legendary: true,
       dlc: false,
     },
     {
@@ -544,7 +544,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       name: "Dark Moon Greatsword",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Dark+Moon+Greatsword",
-      legendary: false,
+      legendary: true,
       dlc: false,
     },
     {
@@ -553,7 +553,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Greatsword+of+Damnation",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -595,7 +595,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Fire+Knight's+Greatsword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -619,7 +619,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Moonrithyll's+Knight+Sword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -634,7 +634,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       name: "Grafted Blade Greatsword",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Grafted+Blade+Greatsword",
-      legendary: false,
+      legendary: true,
       dlc: false,
     },
     {
@@ -642,7 +642,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       name: "Ruins Greatsword",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ruins+Greatsword",
-      legendary: false,
+      legendary: true,
       dlc: false,
     },
     {
@@ -651,7 +651,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ancient+Metoric+Ore+Greatsword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -667,7 +667,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Greatsword+of+Radahn+(Lord)",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -675,7 +675,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Greatsword+of+Radahn+(Light)",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -757,7 +757,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Carian+Sorcery+Sword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   heavyThrustingSwords: [
@@ -775,7 +775,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Queelign's+Greatsword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -807,7 +807,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Sword+Lance",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   curvedSwords: [
@@ -913,7 +913,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Spirit+Sword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -937,7 +937,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Falx",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -945,7 +945,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Dancing+Blade+of+Ranah",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -953,14 +953,14 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Horned+Warrior's+Sword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
       name: "Eclipse Shotel",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Eclipse+Shotel",
-      legendary: false,
+      legendary: true,
       dlc: false,
     },
   ],
@@ -1003,7 +1003,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Freyja's+Greatsword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1043,7 +1043,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Horned+Warrior's+Greatsword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1061,7 +1061,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Backhand+Blade",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1069,7 +1069,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithscript+Cirque",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1077,7 +1077,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Curseblade's+Cirque",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   katanas: [
@@ -1127,7 +1127,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Sword_of_Night",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1151,7 +1151,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Star-Lined_Sword",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1169,7 +1169,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Great_Katana",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1177,7 +1177,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Dragon_Hunter's_Great_Katana",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1185,7 +1185,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Rakshasa's_Great_Katana",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   twinblades: [
@@ -1211,7 +1211,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Black_Steel_Twinblade",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1251,7 +1251,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Euporia",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   axes: [
@@ -1277,7 +1277,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Forked-Tongue_Hatchet",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1293,7 +1293,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Mesmmer_Soldier's_Axe",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1333,7 +1333,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithscript_Axe",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1389,7 +1389,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Death_Knight's_Twin_Axes",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   greatAxes: [
@@ -1455,7 +1455,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Bonny_Butchering_Knife",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1479,7 +1479,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Death_Knight's_Longhaft_Axe",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1503,7 +1503,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Putrescence_Cleaver",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   hammers: [
@@ -1625,7 +1625,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Flowerstone_Gavel",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1675,7 +1675,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Serpent_Flail",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1765,7 +1765,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Black_Steel_Greathammer",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1773,7 +1773,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithscript_Greathammer",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1812,7 +1812,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       name: "Devourer's Scepter",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Devourer's_Scepter",
-      legendary: false,
+      legendary: true,
       dlc: false,
     },
   ],
@@ -1887,7 +1887,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Bloodfiend's_Arm",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1943,7 +1943,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Anvil_Hammer",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1951,7 +1951,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Devonia's_Hammer",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1967,7 +1967,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Shadow_Sunflower_Blossom",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -1975,7 +1975,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Gazing_Finger",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   spears: [
@@ -2025,7 +2025,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Swift_Spear",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2057,7 +2057,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Bloodfiend's_Fork",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2065,7 +2065,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithscript_Spear",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2128,7 +2128,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       name: "Bolt of Gransax",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Bolt_of_Gransax",
-      legendary: false,
+      legendary: true,
       dlc: false,
     },
   ],
@@ -2147,7 +2147,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Messmer_Soldier's_Spear",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2187,7 +2187,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Barbed_Staff-Spear",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2195,7 +2195,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Bloodfiend's_Sacred_Spear",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2211,7 +2211,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Spear_of_the_Impaler",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   helberds: [
@@ -2349,7 +2349,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Spirit_Glaive",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2357,7 +2357,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Poleblade_of_the_Bud",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   reapers: [
@@ -2399,7 +2399,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Obsidian_Lamina",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   whips: [
@@ -2441,7 +2441,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Tooth_Whip",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2491,7 +2491,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Pata",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2539,7 +2539,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Poisoned_Hand",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2547,7 +2547,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Madding_Hand",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2555,7 +2555,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Golem_Fist",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2563,7 +2563,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Thiollier's_Hidden_Needle",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2581,7 +2581,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Dryleaf_Arts",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2589,7 +2589,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Dane's_Footwork",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   claws: [
@@ -2631,7 +2631,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Claws_of_Night",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   beastClaws: [
@@ -2641,7 +2641,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Beast_Claw",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2649,7 +2649,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Red_Bear's_Claw",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
   perfumeBottles: [
@@ -2659,7 +2659,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Firespark",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2667,7 +2667,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Lightning",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2675,7 +2675,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Chilling",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2683,7 +2683,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Frenzyflame",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
     {
       type: "meleWeapons",
@@ -2691,7 +2691,7 @@ export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Deadly_Poison",
       legendary: false,
-      dlc: false,
+      dlc: true,
     },
   ],
 };

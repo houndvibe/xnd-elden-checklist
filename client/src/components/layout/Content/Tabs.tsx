@@ -10,6 +10,8 @@ import Sorceries from "../../categories/sorceries/Sorceries";
 import Incantations from "../../categories/incantations/Incantations";
 import Gestures from "../../categories/gestures/Gestures";
 import MeleWeapons from "../../categories/mele-weapons/MeleWeapons";
+import RangedWeapons from "../../categories/ranged-weapons/RangedWeapons";
+import InfoItems from "../../categories/info-items/InfoItems";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -33,7 +35,7 @@ const items: CustomTabItem[] = [
   {
     key: "rangedWeapons",
     label: "Ranged Weapons",
-    children: "RangedWeapons",
+    children: <RangedWeapons />,
   },
   {
     key: "armour",
@@ -104,6 +106,11 @@ const items: CustomTabItem[] = [
     key: "cookbooks",
     label: "Cookbooks",
     children: "Cookbooks",
+  },
+  {
+    key: "infoItems",
+    label: "Info Items",
+    children: <InfoItems />,
   },
 ];
 
