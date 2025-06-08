@@ -7,6 +7,7 @@ import Dashboard from "../../dashboard/Dashboard";
 import Talismans from "../../categories/talismans/Talismans";
 import AshesOfWar from "../../categories/ashes-of-war/AshesOfWar";
 import Sorceries from "../../categories/sorceries/Sorceries";
+import Incantations from "../../categories/incantations/Incantations";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -60,7 +61,7 @@ const items: CustomTabItem[] = [
   {
     key: "incantations",
     label: "incantations",
-    children: "incantations",
+    children: <Incantations />,
   },
   {
     key: "tears",

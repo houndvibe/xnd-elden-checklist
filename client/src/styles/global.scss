@@ -1,4 +1,5 @@
-$text-primary: #aa7714;
+/* $text-primary: #aa7714; */
+$text-primary: #856a51;
 $text-highlighted: #e8b339;
 $success-green: #112123;
 $bg-dark: #141414;
@@ -54,6 +55,9 @@ $bg-light: #1f1f1f;
 }
 .sorceries_wallpaper {
   background: url("../assets/bg-sorceries.jpeg") center/cover no-repeat;
+}
+.incantations_wallpaper {
+  background: url("../assets/bg-incantations.jpg") center/cover no-repeat;
 }
 
 //чекбоксы

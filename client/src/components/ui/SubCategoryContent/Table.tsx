@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type {
   AshesOfWarSubCategoryMap,
+  IncantationsSubCategoryMap,
   Item,
   ItemSubCategory,
   ShieldSubCategoryMap,
@@ -10,6 +11,7 @@ import type {
 } from "../../../global-types";
 import {
   convertAshOfWarNameToWikiImageUrl,
+  convertIncantationNameToWikiImageUrl,
   convertShieldNameToWikiImageUrl,
   convertSorceryNameToWikiImageUrl,
   convertSpiritNameToWikiImageUrl,
@@ -41,6 +43,7 @@ import { ThunderboltTwoTone } from "@ant-design/icons";
 import dlcIcon from "../../../assets/dlc-icon.png";
 import {
   toggleAshOfWarCollected,
+  toggleIncantationCollected,
   toggleShieldCollected,
   toggleSorceryCollected,
   toggleSpiritAshCollected,
@@ -196,6 +199,13 @@ export default function Table({
                       name: record.name,
                     })
                   );
+                } else if (record.type === "incantations") {
+                  dispatch(
+                    toggleIncantationCollected({
+                      category: category as keyof IncantationsSubCategoryMap,
+                      name: record.name,
+                    })
+                  );
                 }
               }}
             />
@@ -272,8 +282,13 @@ export default function Table({
                 );
                 break;
               case "sorceries":
-                //TODO
                 imgUrl = convertSorceryNameToWikiImageUrl(
+                  record.name,
+                  record.dlc
+                );
+                break;
+              case "incantations":
+                imgUrl = convertIncantationNameToWikiImageUrl(
                   record.name,
                   record.dlc
                 );
@@ -320,6 +335,13 @@ export default function Table({
             dispatch(
               toggleSorceryCollected({
                 category: category as keyof SorceriesSubCategoryMap,
+                name: record.name,
+              })
+            );
+          } else if (record.type === "incantations") {
+            dispatch(
+              toggleIncantationCollected({
+                category: category as keyof IncantationsSubCategoryMap,
                 name: record.name,
               })
             );

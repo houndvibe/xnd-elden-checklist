@@ -124,24 +124,52 @@ export interface SorceriesSubCategoryMap {
   servantsOfDeath: SorceryItem[];
 }
 
+//Молитвы
+export interface IncantationsItem {
+  type: "incantations";
+  name: string;
+  collected: boolean;
+  link: string;
+  legendary: boolean;
+  dlc: boolean;
+  imgUrl?: string;
+}
+
+export interface IncantationsSubCategoryMap {
+  twoFingers: IncantationsItem[];
+  "erdtree&GoldenOrder": IncantationsItem[];
+  miquella: IncantationsItem[];
+  dragonCult: IncantationsItem[];
+  shadowRealm: IncantationsItem[];
+  "fireMonk&FireGiant": IncantationsItem[];
+  messmer: IncantationsItem[];
+  "godskin&Gurranq": IncantationsItem[];
+  "blood&Rot": IncantationsItem[];
+  threeFingers: IncantationsItem[];
+  dragonCommunion: IncantationsItem[];
+}
+
 //общее
 export type ItemSubCategoryMap =
   | ShieldSubCategoryMap
   | SpiritAshesSubCategoryMap
   | TalismansSubCategoryMap
   | AshesOfWarSubCategoryMap
-  | SorceriesSubCategoryMap;
+  | SorceriesSubCategoryMap
+  | IncantationsSubCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldSubCategoryMap
   | keyof SpiritAshesSubCategoryMap
   | keyof TalismansSubCategoryMap
   | keyof AshesOfWarSubCategoryMap
-  | keyof SorceriesSubCategoryMap;
+  | keyof SorceriesSubCategoryMap
+  | keyof IncantationsSubCategoryMap;
 
 export type Item =
   | ShieldItem
   | SpiritAshItem
   | TalismanItem
   | AshOfWarItem
-  | SorceryItem;
+  | SorceryItem
+  | IncantationsItem;

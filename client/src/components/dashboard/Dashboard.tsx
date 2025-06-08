@@ -11,6 +11,7 @@ export default function Dashboard() {
     talismansData,
     ashesOfWarData,
     sorceriesData,
+    incantationsData,
   } = useAppSelector((state) => state.collection.collectionData);
 
   const shieldsStats = getCategoryStats(shieldsData);
@@ -18,19 +19,22 @@ export default function Dashboard() {
   const talismansStats = getCategoryStats(talismansData);
   const ashesOfWarStats = getCategoryStats(ashesOfWarData);
   const sorceriesStats = getCategoryStats(sorceriesData);
+  const incantationsStats = getCategoryStats(incantationsData);
 
   const generalCollected =
     shieldsStats.collected +
     spiritAshesStats.collected +
     talismansStats.collected +
     ashesOfWarStats.collected +
-    sorceriesStats.collected;
+    sorceriesStats.collected +
+    incantationsStats.collected;
   const generalTotal =
     shieldsStats.total +
     spiritAshesStats.total +
     talismansStats.total +
     ashesOfWarStats.total +
-    sorceriesStats.total;
+    sorceriesStats.total +
+    incantationsStats.total;
   const generalPercentage = Math.round((generalCollected / generalTotal) * 100);
 
   return (
@@ -74,6 +78,11 @@ export default function Dashboard() {
           dataType="sorceries"
           data={sorceriesStats}
           subData={sorceriesData}
+        />
+        <DashboardWidget
+          dataType="incantations"
+          data={incantationsStats}
+          subData={incantationsData}
         />
       </Flex>
     </Flex>
