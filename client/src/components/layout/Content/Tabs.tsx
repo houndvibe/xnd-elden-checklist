@@ -8,6 +8,8 @@ import Talismans from "../../categories/talismans/Talismans";
 import AshesOfWar from "../../categories/ashes-of-war/AshesOfWar";
 import Sorceries from "../../categories/sorceries/Sorceries";
 import Incantations from "../../categories/incantations/Incantations";
+import Gestures from "../../categories/gestures/Gestures";
+import MeleWeapons from "../../categories/mele-weapons/MeleWeapons";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -24,9 +26,14 @@ const items: CustomTabItem[] = [
     children: <Dashboard />,
   },
   {
-    key: "weapons",
-    label: "Weapons",
-    children: "Weapons",
+    key: "meleWeapons",
+    label: "Mele Weapons",
+    children: <MeleWeapons />,
+  },
+  {
+    key: "rangedWeapons",
+    label: "Ranged Weapons",
+    children: "RangedWeapons",
   },
   {
     key: "armour",
@@ -37,16 +44,6 @@ const items: CustomTabItem[] = [
     key: "shields",
     label: "Shields",
     children: <Shields />,
-  },
-  {
-    key: "talismans",
-    label: "Talismans",
-    children: <Talismans />,
-  },
-  {
-    key: "ashesOfWar",
-    label: "Ashes of war",
-    children: <AshesOfWar />,
   },
   {
     key: "spiritAshes",
@@ -64,6 +61,16 @@ const items: CustomTabItem[] = [
     children: <Incantations />,
   },
   {
+    key: "ashesOfWar",
+    label: "Ashes of war",
+    children: <AshesOfWar />,
+  },
+  {
+    key: "talismans",
+    label: "Talismans",
+    children: <Talismans />,
+  },
+  {
     key: "tears",
     label: "Tears",
     children: "Tears",
@@ -71,7 +78,7 @@ const items: CustomTabItem[] = [
   {
     key: "gestures",
     label: "Gestures",
-    children: "Gestures",
+    children: <Gestures />,
   },
   {
     key: "tools",

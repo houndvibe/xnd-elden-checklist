@@ -101,3 +101,36 @@ export function convertIncantationNameToWikiImageUrl(
     isDlc ? "shadow_of_the_erdtree_dlc_" : ""
   }wiki_guide_200px.png`;
 }
+
+export function convertGestureNameToWikiImageUrl(
+  itemName: string,
+  isDlc: boolean
+) {
+  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
+  const formattedName = itemName
+    .trim()
+    .toLowerCase()
+    .replace(/ /g, "_")
+    .replace(/[^a-z0-9_-]/g, "");
+
+  return `${baseUrl}${formattedName}_gesture_elden_ring_${
+    isDlc ? "shadow_of_the_erdtree_dlc_" : ""
+  }wiki_guide_200px.png`;
+}
+
+export function convertMeleWeaponNameToWikiImageUrl(
+  itemName: string,
+  isDlc: boolean,
+  weaponSubcategory: string
+) {
+  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
+  const formattedName = itemName
+    .trim()
+    .toLowerCase()
+    .replace(/ /g, "_")
+    .replace(/[^a-z0-9_-]/g, "");
+
+  return `${baseUrl}${formattedName}_${weaponSubcategory}_weapon_elden_ring_${
+    isDlc ? "shadow_of_the_erdtree_dlc_" : ""
+  }wiki_guide_200px.png`;
+}

@@ -7,7 +7,8 @@ export enum STORAGE_KEYS {
 }
 
 export const legendaryEligibleItemCategories: ItemCategory[] = [
-  "weapons",
+  "meleWeapons",
+  "rangedWeapons",
   "talismans",
   "spiritAshes",
   "sorceries",

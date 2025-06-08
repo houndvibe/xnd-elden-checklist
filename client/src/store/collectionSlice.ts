@@ -1,7 +1,9 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type {
   AshesOfWarSubCategoryMap,
+  GesturesSubCategoryMap,
   IncantationsSubCategoryMap,
+  MeleWeaponsSubCategoryMap,
   ShieldSubCategoryMap,
   SorceriesSubCategoryMap,
   SpiritAshesSubCategoryMap,
@@ -14,6 +16,8 @@ import { talismansData } from "../components/categories/talismans/data";
 import { ashesOfWarData } from "../components/categories/ashes-of-war/data";
 import { sorceriesData } from "../components/categories/sorceries/data";
 import { incantationsData } from "../components/categories/incantations/data";
+import { gesturesData } from "../components/categories/gestures/data";
+import { meleWeaponsData } from "../components/categories/mele-weapons/data";
 
 const initialState = {
   collectionData: loadFromStorage("xnd.collection", {
@@ -23,6 +27,8 @@ const initialState = {
     ashesOfWarData: ashesOfWarData,
     sorceriesData: sorceriesData,
     incantationsData: incantationsData,
+    gesturesData: gesturesData,
+    meleWeaponsData: meleWeaponsData,
   }),
 };
 
@@ -46,6 +52,22 @@ export const collectionSlice = createSlice({
         saveToStorage("xnd.collection", state.collectionData);
       }
     },
+    toggleMeleWeaponCollected: (
+      state,
+      action: PayloadAction<{
+        category: keyof MeleWeaponsSubCategoryMap;
+        name: string;
+      }>
+    ) => {
+      const { category, name } = action.payload;
+      const meleWeapon = state.collectionData.meleWeaponsData[category].find(
+        (s) => s.name === name
+      );
+      if (meleWeapon) {
+        meleWeapon.collected = !meleWeapon.collected;
+        saveToStorage("xnd.collection", state.collectionData);
+      }
+    },
     toggleSorceryCollected: (
       state,
       action: PayloadAction<{
@@ -59,6 +81,22 @@ export const collectionSlice = createSlice({
       );
       if (sorcery) {
         sorcery.collected = !sorcery.collected;
+        saveToStorage("xnd.collection", state.collectionData);
+      }
+    },
+    toggleGestureCollected: (
+      state,
+      action: PayloadAction<{
+        category: keyof GesturesSubCategoryMap;
+        name: string;
+      }>
+    ) => {
+      const { category, name } = action.payload;
+      const gesture = state.collectionData.gesturesData[category].find(
+        (s) => s.name === name
+      );
+      if (gesture) {
+        gesture.collected = !gesture.collected;
         saveToStorage("xnd.collection", state.collectionData);
       }
     },
@@ -146,10 +184,12 @@ export const collectionSlice = createSlice({
 
 export const {
   toggleShieldCollected,
+  toggleMeleWeaponCollected,
   toggleAshOfWarCollected,
   toggleSorceryCollected,
   toggleIncantationCollected,
   toggleSpiritAshCollected,
   toggleTalismanCollected,
+  toggleGestureCollected,
 } = collectionSlice.actions;
 export default collectionSlice.reducer;

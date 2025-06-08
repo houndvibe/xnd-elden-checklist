@@ -1,5 +1,6 @@
 export type ItemCategory =
-  | "weapons"
+  | "meleWeapons"
+  | "rangedWeapons"
   | "armour"
   | "shields"
   | "talismans"
@@ -17,7 +18,7 @@ export type ItemCategory =
 
 //Щиты
 export interface ShieldItem {
-  type: "shields";
+  type: Extract<ItemCategory, "shields">;
   name: string;
   collected: boolean;
   link: string;
@@ -34,7 +35,7 @@ export interface ShieldSubCategoryMap {
 
 //Духи
 export interface SpiritAshItem {
-  type: "spiritAshes";
+  type: Extract<ItemCategory, "spiritAshes">;
   name: string;
   collected: boolean;
   link: string;
@@ -59,7 +60,7 @@ export interface TalismanVersions {
 }
 
 export interface TalismanItem {
-  type: "talismans";
+  type: Extract<ItemCategory, "talismans">;
   name: string;
   collected: boolean;
   link: string;
@@ -82,7 +83,7 @@ export interface TalismansSubCategoryMap {
 
 //Пеплы войны
 export interface AshOfWarItem {
-  type: "ashesOfWar";
+  type: Extract<ItemCategory, "ashesOfWar">;
   name: string;
   collected: boolean;
   link: string;
@@ -106,7 +107,7 @@ export interface AshesOfWarSubCategoryMap {
 
 //Магия
 export interface SorceryItem {
-  type: "sorceries";
+  type: Extract<ItemCategory, "sorceries">;
   name: string;
   collected: boolean;
   link: string;
@@ -126,7 +127,7 @@ export interface SorceriesSubCategoryMap {
 
 //Молитвы
 export interface IncantationsItem {
-  type: "incantations";
+  type: Extract<ItemCategory, "incantations">;
   name: string;
   collected: boolean;
   link: string;
@@ -149,6 +150,84 @@ export interface IncantationsSubCategoryMap {
   dragonCommunion: IncantationsItem[];
 }
 
+//Жесты
+export interface GestureItem {
+  type: Extract<ItemCategory, "gestures">;
+  name: string;
+  collected: boolean;
+  link: string;
+  dlc: boolean;
+  imgUrl?: string;
+}
+
+export interface GesturesSubCategoryMap {
+  gestures: GestureItem[];
+}
+
+//Оружие
+export interface MeleWeaponItem {
+  type: Extract<ItemCategory, "meleWeapons">;
+  name: string;
+  collected: boolean;
+  link: string;
+  legendary: boolean;
+  dlc: boolean;
+  imgUrl?: string;
+}
+
+export interface MeleWeaponsSubCategoryMap {
+  daggers: MeleWeaponItem[];
+  throwingBlades: MeleWeaponItem[];
+  straightSwords: MeleWeaponItem[];
+  lightGreatswords: MeleWeaponItem[];
+  greatswords: MeleWeaponItem[];
+  colossalSwords: MeleWeaponItem[];
+  thrustingSwords: MeleWeaponItem[];
+  heavyThrustingSwords: MeleWeaponItem[];
+  curvedSwords: MeleWeaponItem[];
+  curvedGreatswords: MeleWeaponItem[];
+  backhandBlades: MeleWeaponItem[];
+  katanas: MeleWeaponItem[];
+  greatKatanas: MeleWeaponItem[];
+  twinblades: MeleWeaponItem[];
+  axes: MeleWeaponItem[];
+  greatAxes: MeleWeaponItem[];
+  hammers: MeleWeaponItem[];
+  flails: MeleWeaponItem[];
+  greatHammers: MeleWeaponItem[];
+  colossalWeapons: MeleWeaponItem[];
+  spears: MeleWeaponItem[];
+  greatSpears: MeleWeaponItem[];
+  helberds: MeleWeaponItem[];
+  reapers: MeleWeaponItem[];
+  whips: MeleWeaponItem[];
+  fists: MeleWeaponItem[];
+  handToHand: MeleWeaponItem[];
+  claws: MeleWeaponItem[];
+  beastClaws: MeleWeaponItem[];
+  perfumeBottles: MeleWeaponItem[];
+}
+
+export interface RangedWeaponItem {
+  type: Extract<ItemCategory, "rangedWeapons">;
+  name: string;
+  collected: boolean;
+  link: string;
+  legendary: boolean;
+  dlc: boolean;
+  imgUrl?: string;
+}
+
+export interface RangedWeaponsSubCategoryMap {
+  lightBows: RangedWeaponItem[];
+  bows: RangedWeaponItem[];
+  greatbows: RangedWeaponItem[];
+  crossbows: RangedWeaponItem[];
+  ballistae: RangedWeaponItem[];
+  glintstoneStaves: RangedWeaponItem[];
+  sacredSeals: RangedWeaponItem[];
+}
+
 //общее
 export type ItemSubCategoryMap =
   | ShieldSubCategoryMap
@@ -156,7 +235,10 @@ export type ItemSubCategoryMap =
   | TalismansSubCategoryMap
   | AshesOfWarSubCategoryMap
   | SorceriesSubCategoryMap
-  | IncantationsSubCategoryMap;
+  | IncantationsSubCategoryMap
+  | GesturesSubCategoryMap
+  | MeleWeaponsSubCategoryMap
+  | RangedWeaponsSubCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldSubCategoryMap
@@ -164,7 +246,10 @@ export type ItemSubCategory =
   | keyof TalismansSubCategoryMap
   | keyof AshesOfWarSubCategoryMap
   | keyof SorceriesSubCategoryMap
-  | keyof IncantationsSubCategoryMap;
+  | keyof IncantationsSubCategoryMap
+  | keyof GesturesSubCategoryMap
+  | keyof MeleWeaponsSubCategoryMap
+  | keyof RangedWeaponsSubCategoryMap;
 
 export type Item =
   | ShieldItem
@@ -172,4 +257,7 @@ export type Item =
   | TalismanItem
   | AshOfWarItem
   | SorceryItem
-  | IncantationsItem;
+  | IncantationsItem
+  | GestureItem
+  | MeleWeaponItem
+  | RangedWeaponItem;

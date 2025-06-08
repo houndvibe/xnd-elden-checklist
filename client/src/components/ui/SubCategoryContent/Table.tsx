@@ -1,9 +1,11 @@
 import { useState } from "react";
 import type {
   AshesOfWarSubCategoryMap,
+  GesturesSubCategoryMap,
   IncantationsSubCategoryMap,
   Item,
   ItemSubCategory,
+  MeleWeaponsSubCategoryMap,
   ShieldSubCategoryMap,
   SorceriesSubCategoryMap,
   SpiritAshesSubCategoryMap,
@@ -11,7 +13,9 @@ import type {
 } from "../../../global-types";
 import {
   convertAshOfWarNameToWikiImageUrl,
+  convertGestureNameToWikiImageUrl,
   convertIncantationNameToWikiImageUrl,
+  convertMeleWeaponNameToWikiImageUrl,
   convertShieldNameToWikiImageUrl,
   convertSorceryNameToWikiImageUrl,
   convertSpiritNameToWikiImageUrl,
@@ -43,7 +47,9 @@ import { ThunderboltTwoTone } from "@ant-design/icons";
 import dlcIcon from "../../../assets/dlc-icon.png";
 import {
   toggleAshOfWarCollected,
+  toggleGestureCollected,
   toggleIncantationCollected,
+  toggleMeleWeaponCollected,
   toggleShieldCollected,
   toggleSorceryCollected,
   toggleSpiritAshCollected,
@@ -206,6 +212,20 @@ export default function Table({
                       name: record.name,
                     })
                   );
+                } else if (record.type === "gestures") {
+                  dispatch(
+                    toggleGestureCollected({
+                      category: category as keyof GesturesSubCategoryMap,
+                      name: record.name,
+                    })
+                  );
+                } else if (record.type === "meleWeapons") {
+                  dispatch(
+                    toggleMeleWeaponCollected({
+                      category: category as keyof MeleWeaponsSubCategoryMap,
+                      name: record.name,
+                    })
+                  );
                 }
               }}
             />
@@ -293,6 +313,21 @@ export default function Table({
                   record.dlc
                 );
                 break;
+              case "gestures":
+                imgUrl = convertGestureNameToWikiImageUrl(
+                  record.name,
+                  record.dlc
+                );
+                break;
+              case "meleWeapons":
+                console.log(record);
+                imgUrl = convertMeleWeaponNameToWikiImageUrl(
+                  record.name,
+                  record.dlc,
+                  //TODO сюда надо добавить сабкатегорию
+                  "dagger"
+                );
+                break;
             }
           }
 
@@ -342,6 +377,20 @@ export default function Table({
             dispatch(
               toggleIncantationCollected({
                 category: category as keyof IncantationsSubCategoryMap,
+                name: record.name,
+              })
+            );
+          } else if (record.type === "gestures") {
+            dispatch(
+              toggleGestureCollected({
+                category: category as keyof GesturesSubCategoryMap,
+                name: record.name,
+              })
+            );
+          } else if (record.type === "meleWeapons") {
+            dispatch(
+              toggleMeleWeaponCollected({
+                category: category as keyof MeleWeaponsSubCategoryMap,
                 name: record.name,
               })
             );

@@ -4,37 +4,39 @@ import { useAppSelector } from "../../store/typedDispatch";
 import DashboardWidget from "./DashboardWidget";
 import { PROGRESSBAR_COLORS } from "../../lib/consts";
 
+import { ItemCategory } from "../../global-types";
+
+const categoryTypes: ItemCategory[] = [
+  "shields",
+  "spiritAshes",
+  "talismans",
+  "ashesOfWar",
+  "sorceries",
+  "incantations",
+  "gestures",
+  "meleWeapons",
+] as const;
+
 export default function Dashboard() {
-  const {
-    shieldsData,
-    spiritAshesData,
-    talismansData,
-    ashesOfWarData,
-    sorceriesData,
-    incantationsData,
-  } = useAppSelector((state) => state.collection.collectionData);
+  const collectionData = useAppSelector(
+    (state) => state.collection.collectionData
+  );
 
-  const shieldsStats = getCategoryStats(shieldsData);
-  const spiritAshesStats = getCategoryStats(spiritAshesData);
-  const talismansStats = getCategoryStats(talismansData);
-  const ashesOfWarStats = getCategoryStats(ashesOfWarData);
-  const sorceriesStats = getCategoryStats(sorceriesData);
-  const incantationsStats = getCategoryStats(incantationsData);
+  const stats = categoryTypes.map((type) => {
+    const key = `${type}Data` as keyof typeof collectionData;
+    const data = collectionData[key];
+    return {
+      type,
+      data,
+      stats: getCategoryStats(data),
+    };
+  });
 
-  const generalCollected =
-    shieldsStats.collected +
-    spiritAshesStats.collected +
-    talismansStats.collected +
-    ashesOfWarStats.collected +
-    sorceriesStats.collected +
-    incantationsStats.collected;
-  const generalTotal =
-    shieldsStats.total +
-    spiritAshesStats.total +
-    talismansStats.total +
-    ashesOfWarStats.total +
-    sorceriesStats.total +
-    incantationsStats.total;
+  const generalCollected = stats.reduce(
+    (sum, item) => sum + item.stats.collected,
+    0
+  );
+  const generalTotal = stats.reduce((sum, item) => sum + item.stats.total, 0);
   const generalPercentage = Math.round((generalCollected / generalTotal) * 100);
 
   return (
@@ -49,42 +51,22 @@ export default function Dashboard() {
         </Flex>
       </Card>
 
-      <Flex gap={20}>
-        <DashboardWidget
-          dataType="shields"
-          data={shieldsStats}
-          subData={shieldsData}
-        />
-        <DashboardWidget
-          dataType="spiritAshes"
-          data={spiritAshesStats}
-          subData={spiritAshesData}
-        />
-      </Flex>
-      <Flex gap={20}>
-        <DashboardWidget
-          dataType="talismans"
-          data={talismansStats}
-          subData={talismansData}
-        />
-        <DashboardWidget
-          dataType="ashesOfWar"
-          data={ashesOfWarStats}
-          subData={ashesOfWarData}
-        />
-      </Flex>
-      <Flex gap={20}>
-        <DashboardWidget
-          dataType="sorceries"
-          data={sorceriesStats}
-          subData={sorceriesData}
-        />
-        <DashboardWidget
-          dataType="incantations"
-          data={incantationsStats}
-          subData={incantationsData}
-        />
-      </Flex>
+      {Array.from({ length: Math.ceil(stats.length / 2) }).map(
+        (_, rowIndex) => (
+          <Flex key={rowIndex} gap={20}>
+            {stats
+              .slice(rowIndex * 2, rowIndex * 2 + 2)
+              .map(({ type, data, stats }) => (
+                <DashboardWidget
+                  key={type}
+                  dataType={type}
+                  data={stats}
+                  subData={data}
+                />
+              ))}
+          </Flex>
+        )
+      )}
     </Flex>
   );
 }
