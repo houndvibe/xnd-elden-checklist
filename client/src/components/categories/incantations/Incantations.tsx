@@ -35,7 +35,7 @@ export default function Incantations() {
         <CategoryInfo title={"Incantations"} items={incantationsData} />
       </Flex>
       <div className="collapse_wpapper">
-        <Collapse items={incantationsSubcategoryItems} defaultActiveKey={1} />
+        <Collapse items={incantationsSubcategoryItems} />
       </div>
     </Flex>
   );

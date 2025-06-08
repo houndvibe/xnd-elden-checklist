@@ -36,7 +36,7 @@ export default function SpiritAshes() {
         <CategoryInfo title={"Spirit Ashes"} items={spiritAshesData} />
       </Flex>
       <div className="collapse_wpapper">
-        <Collapse items={spiritAshesSubcategoryItems} defaultActiveKey={1} />
+        <Collapse items={spiritAshesSubcategoryItems} />
       </div>
     </Flex>
   );

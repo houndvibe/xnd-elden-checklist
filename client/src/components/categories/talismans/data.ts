@@ -1,7 +1,7 @@
 import { TalismansSubCategoryMap } from "../../../global-types";
 
 export const talismansData: TalismansSubCategoryMap = {
-  category1: [
+  statsAmplifiers: [
     {
       type: "talismans",
       name: "Crimson Amber Medallion",
@@ -214,7 +214,7 @@ export const talismansData: TalismansSubCategoryMap = {
       legendary: false,
     },
   ],
-  category2: [
+  resistsAmplifiers: [
     {
       type: "talismans",
       name: "Dragoncrest Shield Talisman",
@@ -395,7 +395,7 @@ export const talismansData: TalismansSubCategoryMap = {
       versions: [{ tier: 0, collected: false }],
     },
   ],
-  category3: [
+  weaponAmplifiers: [
     {
       type: "talismans",
       name: "Dagger Talisman",
@@ -554,7 +554,7 @@ export const talismansData: TalismansSubCategoryMap = {
       versions: [{ tier: 0, collected: false }],
     },
   ],
-  category4: [
+  magicAmplifiers: [
     {
       type: "talismans",
       name: "Graven-School Talisman",
@@ -637,7 +637,7 @@ export const talismansData: TalismansSubCategoryMap = {
       versions: [{ tier: 0, collected: false }],
     },
   ],
-  category5: [
+  "abilities & consumables": [
     {
       type: "talismans",
       name: "Roar Medallion",
@@ -747,7 +747,7 @@ export const talismansData: TalismansSubCategoryMap = {
       versions: [{ tier: 0, collected: false }],
     },
   ],
-  category6: [
+  damageAmplifiers: [
     {
       type: "talismans",
       name: "Bull-Goat's Talisman",
@@ -857,7 +857,7 @@ export const talismansData: TalismansSubCategoryMap = {
       versions: [{ tier: 0, collected: false }],
     },
   ],
-  category7: [
+  conditionalAmplifiers: [
     {
       type: "talismans",
       name: "Red-Feathered Branchsword",
@@ -1050,7 +1050,7 @@ export const talismansData: TalismansSubCategoryMap = {
       versions: [{ tier: 0, collected: false }],
     },
   ],
-  category8: [
+  other: [
     {
       type: "talismans",
       name: "Crepus's Vial",

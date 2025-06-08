@@ -35,7 +35,7 @@ export default function RangedWeapons() {
         <CategoryInfo title={"ranged Weapons"} items={rangedWeaponsData} />
       </Flex>
       <div className="collapse_wpapper">
-        <Collapse items={rangedWeaponsSubcategoryItems} defaultActiveKey={1} />
+        <Collapse items={rangedWeaponsSubcategoryItems} />
       </div>
     </Flex>
   );

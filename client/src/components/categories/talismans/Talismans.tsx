@@ -36,7 +36,7 @@ export default function Talismans() {
         <CategoryInfo title={"Talismans"} items={talismansData} />
       </Flex>
       <div className="collapse_wpapper">
-        <Collapse items={talismansSubcategoryItems} defaultActiveKey={1} />
+        <Collapse items={talismansSubcategoryItems} />
       </div>
     </Flex>
   );

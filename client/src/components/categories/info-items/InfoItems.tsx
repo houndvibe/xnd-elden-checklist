@@ -35,7 +35,7 @@ export default function InfoItems() {
         <CategoryInfo title={"Info items"} items={infoItemsData} />
       </Flex>
       <div className="collapse_wpapper">
-        <Collapse items={infoItemsDataSubcategoryItems} defaultActiveKey={1} />
+        <Collapse items={infoItemsDataSubcategoryItems} />
       </div>
     </Flex>
   );

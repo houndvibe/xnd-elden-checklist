@@ -36,7 +36,7 @@ export default function AshesOfWar() {
         <CategoryInfo title={"Ashes of War"} items={ashesOfWarData} />
       </Flex>
       <div className="collapse_wpapper">
-        <Collapse items={ashesOfWarSubcategoryItems} defaultActiveKey={1} />
+        <Collapse items={ashesOfWarSubcategoryItems} />
       </div>
     </Flex>
   );

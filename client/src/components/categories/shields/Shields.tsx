@@ -38,7 +38,7 @@ export default function ShieldsAndTorches() {
         <CategoryInfo title={"Shields"} items={shieldsAndTorchesData} />
       </Flex>
       <div className="collapse_wpapper">
-        <Collapse items={shildsSubcategoryItems} defaultActiveKey={1} />
+        <Collapse items={shildsSubcategoryItems} />
       </div>
     </Flex>
   );

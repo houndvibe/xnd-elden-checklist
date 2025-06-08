@@ -73,14 +73,14 @@ export interface TalismanItem {
 }
 
 export interface TalismansSubCategoryMap {
-  category1: TalismanItem[];
-  category2: TalismanItem[];
-  category3: TalismanItem[];
-  category4: TalismanItem[];
-  category5: TalismanItem[];
-  category6: TalismanItem[];
-  category7: TalismanItem[];
-  category8: TalismanItem[];
+  statsAmplifiers: TalismanItem[];
+  resistsAmplifiers: TalismanItem[];
+  weaponAmplifiers: TalismanItem[];
+  magicAmplifiers: TalismanItem[];
+  "abilities & consumables": TalismanItem[];
+  damageAmplifiers: TalismanItem[];
+  conditionalAmplifiers: TalismanItem[];
+  other: TalismanItem[];
 }
 
 //Пеплы войны

@@ -35,7 +35,7 @@ export default function MeleWeapons() {
         <CategoryInfo title={"Mele Weapons"} items={meleWeaponsData} />
       </Flex>
       <div className="collapse_wpapper">
-        <Collapse items={meleWeaponsSubcategoryItems} defaultActiveKey={1} />
+        <Collapse items={meleWeaponsSubcategoryItems} />
       </div>
     </Flex>
   );

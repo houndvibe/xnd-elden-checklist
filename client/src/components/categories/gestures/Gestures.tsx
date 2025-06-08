@@ -35,7 +35,7 @@ export default function Gestures() {
         <CategoryInfo title={"Gestures"} items={gesturesData} />
       </Flex>
       <div className="collapse_wpapper">
-        <Collapse items={gesturesSubcategoryItems} defaultActiveKey={1} />
+        <Collapse items={gesturesSubcategoryItems} />
       </div>
     </Flex>
   );

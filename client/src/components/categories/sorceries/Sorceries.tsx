@@ -35,7 +35,7 @@ export default function Sorceries() {
         <CategoryInfo title={"Sorceries"} items={sorceriesData} />
       </Flex>
       <div className="collapse_wpapper">
-        <Collapse items={sorceriesSubcategoryItems} defaultActiveKey={1} />
+        <Collapse items={sorceriesSubcategoryItems} />
       </div>
     </Flex>
   );
