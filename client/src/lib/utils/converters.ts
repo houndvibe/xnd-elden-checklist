@@ -23,6 +23,15 @@ export function getNameToImgUrlConverter(record: Item) {
     case "gestures":
       return convertGestureNameToWikiImageUrl(record.name, record.dlc);
 
+    case "infoItems":
+      return convertInfoItemNameToWikiImageUrl(record.name, record.dlc);
+
+    case "toolsAndBellBearings":
+      return convertToolOrBellNameToWikiImageUrl(record.name, record.dlc);
+
+    case "tearsAndUpgrades":
+      return convertTearOrUpgradeNameToWikiImageUrl(record.name, record.dlc);
+
     case "meleWeapons":
       return convertMeleWeaponNameToWikiImageUrl(
         record.name,
@@ -38,11 +47,6 @@ export function getNameToImgUrlConverter(record: Item) {
         //TODO сюда надо добавить сабкатегорию
         "bow"
       );
-
-    case "infoItems":
-      return convertInfoItemNameToWikiImageUrl(record.name, record.dlc);
-    case "toolsAndBellBearings":
-      return convertToolOrBellNameToWikiImageUrl(record.name, record.dlc);
   }
 }
 
@@ -229,6 +233,23 @@ export function convertToolOrBellNameToWikiImageUrl(
     .replace(/\s+/g, "_"); // Replace spaces with underscores
 
   return `${baseUrl}tool-or-bell_${formattedName}-${
+    isDlc ? "shadow_of_the_erdtree_dlc_" : ""
+  }elden-ring-wiki-guide-200px.png`;
+}
+
+export function convertTearOrUpgradeNameToWikiImageUrl(
+  itemName: string,
+  isDlc: boolean
+) {
+  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
+  const formattedName = itemName
+    .trim()
+    .toLowerCase()
+    .replace(/^note:\s*/i, "") // Remove "Note:" prefix if present
+    .replace(/[^a-z0-9 ]/g, "") // Remove all non-alphanumeric characters except space
+    .replace(/\s+/g, "_"); // Replace spaces with underscores
+
+  return `${baseUrl}tear_${formattedName}-${
     isDlc ? "shadow_of_the_erdtree_dlc_" : ""
   }elden-ring-wiki-guide-200px.png`;
 }

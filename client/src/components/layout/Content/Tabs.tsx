@@ -13,6 +13,7 @@ import RangedWeapons from "../../categories/ranged-weapons/RangedWeapons";
 import InfoItems from "../../categories/info-items/InfoItems";
 import ShieldsAndTorches from "../../categories/shields/Shields";
 import ToolsAndBells from "../../categories/tools-and-bells/ToolsAndBells";
+import TearsAndUpgrades from "../../categories/tears-and-upgrades/TearsAndUpgrades";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -77,6 +78,11 @@ const items: CustomTabItem[] = [
     key: "toolsAndBellBearings",
     label: "Tools & Bell Bearings",
     children: <ToolsAndBells />,
+  },
+  {
+    key: "tearsAndUpgrades",
+    label: "Tears & Upgrades",
+    children: <TearsAndUpgrades />,
   },
 
   {

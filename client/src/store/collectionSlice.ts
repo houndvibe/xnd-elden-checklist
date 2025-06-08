@@ -10,6 +10,7 @@ import type {
   SorceriesSubCategoryMap,
   SpiritAshesSubCategoryMap,
   TalismansSubCategoryMap,
+  TearsOrUpgradesCategoryMap,
   ToolsOrBellBearingsCategoryMap,
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
@@ -25,6 +26,7 @@ import { rangedWeaponsData } from "../components/categories/ranged-weapons/data"
 import { infoItemsData } from "../components/categories/info-items/data";
 import { shieldsAndTorchesData } from "../components/categories/shields/data";
 import { toolsAndBellBearingsData } from "../components/categories/tools-and-bells/data";
+import { tearsAndUpgradesData } from "../components/categories/tears-and-upgrades/data";
 
 const initialState = {
   collectionData: loadFromStorage("xnd.collection", {
@@ -39,6 +41,7 @@ const initialState = {
     rangedWeaponsData: rangedWeaponsData,
     infoItemsData: infoItemsData,
     toolsAndBellBearingsData: toolsAndBellBearingsData,
+    tearsAndUpgradesData: tearsAndUpgradesData,
   }),
 };
 
@@ -237,6 +240,22 @@ export const collectionSlice = createSlice({
         saveToStorage("xnd.collection", state.collectionData);
       }
     },
+    toggleTearOrUpgradeCollected: (
+      state,
+      action: PayloadAction<{
+        category: keyof TearsOrUpgradesCategoryMap;
+        name: string;
+      }>
+    ) => {
+      const { category, name } = action.payload;
+      const tearOrUpgradeItem = state.collectionData.tearsAndUpgradesData[
+        category
+      ].find((s) => s.name === name);
+      if (tearOrUpgradeItem) {
+        tearOrUpgradeItem.collected = !tearOrUpgradeItem.collected;
+        saveToStorage("xnd.collection", state.collectionData);
+      }
+    },
   },
 });
 
@@ -252,5 +271,6 @@ export const {
   toggleGestureCollected,
   toggleInfoItemCollected,
   toggleToolOrBellCollected,
+  toggleTearOrUpgradeCollected,
 } = collectionSlice.actions;
 export default collectionSlice.reducer;

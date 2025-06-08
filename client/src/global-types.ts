@@ -1,7 +1,6 @@
 export type ItemCategory =
   | "meleWeapons"
   | "rangedWeapons"
-  | "armour"
   | "shieldsAndTorches"
   | "talismans"
   | "ashesOfWar"
@@ -11,10 +10,16 @@ export type ItemCategory =
   | "gestures"
   | "infoItems"
   | "toolsAndBellBearings"
+  | "tearsAndUpgrades"
+
+  
+  | "armour"
   | "craftAndCookbooks" //сюда еще и материалы
   | "remembrances" //Тут и души и оружие/магия с боссов
-  | "upgradesAndTears" //сюда еще и материалы для апгрейда
-  | "consumablesAndMultiplayer";
+  | "consumablesAndMultiplayer"
+  | "keyItems "; //Ключи карты великие руны и квестовые предметы
+//https://eldenring.wiki.fextralife.com/Key+Items
+
 //И еще решить куда боеприпасы
 
 //Щиты
@@ -264,6 +269,24 @@ export interface ToolsOrBellBearingsCategoryMap {
   bellBearings: ToolOrBellBearingItems[];
 }
 
+//Инструменты и колокольные сферы
+
+export interface TearsOrUpgradesItem {
+  type: Extract<ItemCategory, "tearsAndUpgrades">;
+  name: string;
+  collected: boolean;
+  link: string;
+  dlc: boolean;
+  imgUrl?: string;
+}
+
+export interface TearsOrUpgradesCategoryMap {
+  crystalTears: TearsOrUpgradesItem[];
+  upgrades: TearsOrUpgradesItem[];
+  smithingStones: TearsOrUpgradesItem[];
+  gloveworts: TearsOrUpgradesItem[];
+}
+
 //общее
 export type ItemSubCategoryMap =
   | ShieldAndTorchesSubCategoryMap
@@ -276,7 +299,8 @@ export type ItemSubCategoryMap =
   | MeleWeaponsSubCategoryMap
   | RangedWeaponsSubCategoryMap
   | InfoItemsSubCategoryMap
-  | ToolsOrBellBearingsCategoryMap;
+  | ToolsOrBellBearingsCategoryMap
+  | TearsOrUpgradesCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldAndTorchesSubCategoryMap
@@ -289,7 +313,8 @@ export type ItemSubCategory =
   | keyof MeleWeaponsSubCategoryMap
   | keyof RangedWeaponsSubCategoryMap
   | keyof InfoItemsSubCategoryMap
-  | keyof ToolsOrBellBearingsCategoryMap;
+  | keyof ToolsOrBellBearingsCategoryMap
+  | keyof TearsOrUpgradesCategoryMap;
 
 export type Item =
   | ShieldOrTorchItem
@@ -302,4 +327,5 @@ export type Item =
   | MeleWeaponItem
   | RangedWeaponItem
   | InfoItems
-  | ToolOrBellBearingItems;
+  | ToolOrBellBearingItems
+  | TearsOrUpgradesItem;

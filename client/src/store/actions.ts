@@ -11,6 +11,7 @@ import {
   SorceriesSubCategoryMap,
   SpiritAshesSubCategoryMap,
   TalismansSubCategoryMap,
+  TearsOrUpgradesCategoryMap,
   ToolsOrBellBearingsCategoryMap,
 } from "../global-types";
 import { AppDispatch } from "./appStore";
@@ -25,6 +26,7 @@ import {
   toggleSorceryCollected,
   toggleSpiritAshCollected,
   toggleTalismanCollected,
+  toggleTearOrUpgradeCollected,
   toggleToolOrBellCollected,
 } from "./collectionSlice";
 
@@ -108,6 +110,13 @@ export function getStoreAction(
     dispatch(
       toggleToolOrBellCollected({
         category: category as keyof ToolsOrBellBearingsCategoryMap,
+        name: name,
+      })
+    );
+  } else if (type === "tearsAndUpgrades") {
+    dispatch(
+      toggleTearOrUpgradeCollected({
+        category: category as keyof TearsOrUpgradesCategoryMap,
         name: name,
       })
     );

@@ -12,6 +12,7 @@ export default function Preview({
   };
   dataSource: Item[];
 }) {
+  console.log(img);
   const currentItem = dataSource.find((item) => item.name == img.name);
   const info =
     currentItem && currentItem.type === "infoItems"
