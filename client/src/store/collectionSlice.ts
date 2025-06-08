@@ -10,6 +10,7 @@ import type {
   SorceriesSubCategoryMap,
   SpiritAshesSubCategoryMap,
   TalismansSubCategoryMap,
+  ToolsOrBellBearingsCategoryMap,
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 
@@ -23,6 +24,7 @@ import { meleWeaponsData } from "../components/categories/mele-weapons/data";
 import { rangedWeaponsData } from "../components/categories/ranged-weapons/data";
 import { infoItemsData } from "../components/categories/info-items/data";
 import { shieldsAndTorchesData } from "../components/categories/shields/data";
+import { toolsAndBellBearingsData } from "../components/categories/tools-and-bells/data";
 
 const initialState = {
   collectionData: loadFromStorage("xnd.collection", {
@@ -36,6 +38,7 @@ const initialState = {
     meleWeaponsData: meleWeaponsData,
     rangedWeaponsData: rangedWeaponsData,
     infoItemsData: infoItemsData,
+    toolsAndBellBearingsData: toolsAndBellBearingsData,
   }),
 };
 
@@ -218,6 +221,22 @@ export const collectionSlice = createSlice({
         saveToStorage("xnd.collection", state.collectionData);
       }
     },
+    toggleToolOrBellCollected: (
+      state,
+      action: PayloadAction<{
+        category: keyof ToolsOrBellBearingsCategoryMap;
+        name: string;
+      }>
+    ) => {
+      const { category, name } = action.payload;
+      const toolOrBellItem = state.collectionData.toolsAndBellBearingsData[
+        category
+      ].find((s) => s.name === name);
+      if (toolOrBellItem) {
+        toolOrBellItem.collected = !toolOrBellItem.collected;
+        saveToStorage("xnd.collection", state.collectionData);
+      }
+    },
   },
 });
 
@@ -232,5 +251,6 @@ export const {
   toggleTalismanCollected,
   toggleGestureCollected,
   toggleInfoItemCollected,
+  toggleToolOrBellCollected,
 } = collectionSlice.actions;
 export default collectionSlice.reducer;

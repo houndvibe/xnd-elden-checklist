@@ -11,6 +11,7 @@ import {
   SorceriesSubCategoryMap,
   SpiritAshesSubCategoryMap,
   TalismansSubCategoryMap,
+  ToolsOrBellBearingsCategoryMap,
 } from "../global-types";
 import { AppDispatch } from "./appStore";
 import {
@@ -24,6 +25,7 @@ import {
   toggleSorceryCollected,
   toggleSpiritAshCollected,
   toggleTalismanCollected,
+  toggleToolOrBellCollected,
 } from "./collectionSlice";
 
 export function getStoreAction(
@@ -99,6 +101,13 @@ export function getStoreAction(
     dispatch(
       toggleInfoItemCollected({
         category: category as keyof InfoItemsSubCategoryMap,
+        name: name,
+      })
+    );
+  } else if (type === "toolsAndBellBearings") {
+    dispatch(
+      toggleToolOrBellCollected({
+        category: category as keyof ToolsOrBellBearingsCategoryMap,
         name: name,
       })
     );

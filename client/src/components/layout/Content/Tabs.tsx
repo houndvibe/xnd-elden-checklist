@@ -12,6 +12,7 @@ import MeleWeapons from "../../categories/mele-weapons/MeleWeapons";
 import RangedWeapons from "../../categories/ranged-weapons/RangedWeapons";
 import InfoItems from "../../categories/info-items/InfoItems";
 import ShieldsAndTorches from "../../categories/shields/Shields";
+import ToolsAndBells from "../../categories/tools-and-bells/ToolsAndBells";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -73,40 +74,17 @@ const items: CustomTabItem[] = [
     children: <Talismans />,
   },
   {
-    key: "tears",
-    label: "Tears",
-    children: "Tears",
+    key: "toolsAndBellBearings",
+    label: "Tools & Bell Bearings",
+    children: <ToolsAndBells />,
   },
+
   {
     key: "gestures",
     label: "Gestures",
     children: <Gestures />,
   },
-  {
-    key: "tools",
-    label: "Tools",
-    children: "Tools",
-  },
-  {
-    key: "craft",
-    label: "Craft",
-    children: "Craft",
-  },
-  {
-    key: "upgrades",
-    label: "Upgrades",
-    children: "Upgrades",
-  },
-  {
-    key: "bellBearings",
-    label: "Bell Bearings",
-    children: "Bell Bearings",
-  },
-  {
-    key: "cookbooks",
-    label: "Cookbooks",
-    children: "Cookbooks",
-  },
+
   {
     key: "infoItems",
     label: "Info Items",

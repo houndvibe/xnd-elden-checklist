@@ -8,14 +8,14 @@ export type ItemCategory =
   | "spiritAshes"
   | "sorceries"
   | "incantations"
-  | "tears"
   | "gestures"
-  | "tools"
-  | "craft"
-  | "upgrades"
-  | "bellBearings"
-  | "cookbooks"
-  | "infoItems";
+  | "infoItems"
+  | "toolsAndBellBearings"
+  | "craftAndCookbooks" //сюда еще и материалы
+  | "remembrances" //Тут и души и оружие/магия с боссов
+  | "upgradesAndTears" //сюда еще и материалы для апгрейда
+  | "consumablesAndMultiplayer";
+//И еще решить куда боеприпасы
 
 //Щиты
 export interface ShieldOrTorchItem {
@@ -248,6 +248,22 @@ export interface InfoItemsSubCategoryMap {
   tutorials: InfoItems[];
 }
 
+//Инструменты и колокольные сферы
+
+export interface ToolOrBellBearingItems {
+  type: Extract<ItemCategory, "toolsAndBellBearings">;
+  name: string;
+  collected: boolean;
+  link: string;
+  dlc: boolean;
+  imgUrl?: string;
+}
+
+export interface ToolsOrBellBearingsCategoryMap {
+  tools: ToolOrBellBearingItems[];
+  bellBearings: ToolOrBellBearingItems[];
+}
+
 //общее
 export type ItemSubCategoryMap =
   | ShieldAndTorchesSubCategoryMap
@@ -259,7 +275,8 @@ export type ItemSubCategoryMap =
   | GesturesSubCategoryMap
   | MeleWeaponsSubCategoryMap
   | RangedWeaponsSubCategoryMap
-  | InfoItemsSubCategoryMap;
+  | InfoItemsSubCategoryMap
+  | ToolsOrBellBearingsCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldAndTorchesSubCategoryMap
@@ -271,7 +288,8 @@ export type ItemSubCategory =
   | keyof GesturesSubCategoryMap
   | keyof MeleWeaponsSubCategoryMap
   | keyof RangedWeaponsSubCategoryMap
-  | keyof InfoItemsSubCategoryMap;
+  | keyof InfoItemsSubCategoryMap
+  | keyof ToolsOrBellBearingsCategoryMap;
 
 export type Item =
   | ShieldOrTorchItem
@@ -283,4 +301,5 @@ export type Item =
   | GestureItem
   | MeleWeaponItem
   | RangedWeaponItem
-  | InfoItems;
+  | InfoItems
+  | ToolOrBellBearingItems;
