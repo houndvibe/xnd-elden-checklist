@@ -37,7 +37,7 @@ import {
 export default function HierarchyTable({
   setHoveredImg,
   dataSource,
-  category,
+  subcategory,
 }: {
   setHoveredImg: React.Dispatch<
     React.SetStateAction<{
@@ -46,7 +46,7 @@ export default function HierarchyTable({
     }>
   >;
   dataSource: Item[];
-  category: ItemSubCategory;
+  subcategory: ItemSubCategory;
 }) {
   const dispatch = useAppDispatch();
 
@@ -114,7 +114,12 @@ export default function HierarchyTable({
               onClick={(e) => {
                 /*   console.log(record); */
                 e.stopPropagation();
-                getStoreAction(record.type, record.name, category, dispatch);
+                getStoreAction({
+                  name: record.name,
+                  category: record.type,
+                  subcategory: subcategory,
+                  dispatch: dispatch,
+                });
               }}
             />
           </Flex>
@@ -185,7 +190,7 @@ export default function HierarchyTable({
                   },
                   onClick: () => {
                     toggleArmourItemCollected({
-                      category: category as keyof ArmourSubCategoryMap,
+                      subcategory: subcategory as keyof ArmourSubCategoryMap,
                       name: record.name,
                     });
                   },
@@ -210,9 +215,11 @@ export default function HierarchyTable({
           setHoveredImg({ url: imgUrl, name: record.name });
         },
         onClick: () => {
-          toggleArmourItemCollected({
-            category: category as keyof ArmourSubCategoryMap,
+          getStoreAction({
             name: record.name,
+            category: record.type,
+            subcategory: subcategory,
+            dispatch: dispatch,
           });
         },
       })}

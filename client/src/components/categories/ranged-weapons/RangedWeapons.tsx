@@ -23,7 +23,7 @@ export default function RangedWeapons() {
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof RangedWeaponsSubCategoryMap}
+          subcategory={key as keyof RangedWeaponsSubCategoryMap}
         />
       ),
     })

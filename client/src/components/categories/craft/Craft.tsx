@@ -24,7 +24,7 @@ export default function Craft() {
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof CraftItemsCategoryMap}
+          subcategory={key as keyof CraftItemsCategoryMap}
         />
       ),
     })

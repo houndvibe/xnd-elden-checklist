@@ -23,7 +23,7 @@ export default function Incantations() {
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof IncantationsSubCategoryMap}
+          subcategory={key as keyof IncantationsSubCategoryMap}
         />
       ),
     })

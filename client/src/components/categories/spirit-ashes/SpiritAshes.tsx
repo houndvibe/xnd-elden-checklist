@@ -24,7 +24,7 @@ export default function SpiritAshes() {
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof SpiritAshesSubCategoryMap}
+          subcategory={key as keyof SpiritAshesSubCategoryMap}
         />
       ),
     })

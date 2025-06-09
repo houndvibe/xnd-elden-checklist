@@ -23,7 +23,7 @@ export default function InfoItems() {
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof InfoItemsSubCategoryMap}
+          subcategory={key as keyof InfoItemsSubCategoryMap}
         />
       ),
     })

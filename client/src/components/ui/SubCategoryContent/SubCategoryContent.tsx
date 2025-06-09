@@ -12,11 +12,11 @@ import HierarchyTable from "./HierarchyTable";
 export default function SubCategoryContent({
   type,
   dataSource,
-  category,
+  subcategory,
 }: {
   type?: ItemCategory;
   dataSource: Item[];
-  category: ItemSubCategory;
+  subcategory: ItemSubCategory;
 }) {
   const [hoveredImg, setHoveredImg] = useState<{
     url: string | undefined;
@@ -32,13 +32,13 @@ export default function SubCategoryContent({
         <HierarchyTable
           setHoveredImg={setHoveredImg}
           dataSource={dataSource}
-          category={category}
+          subcategory={subcategory}
         />
       ) : (
         <Table
           setHoveredImg={setHoveredImg}
           dataSource={dataSource}
-          category={category}
+          subcategory={subcategory}
         />
       )}
 

@@ -26,7 +26,7 @@ export default function ShieldsAndTorches() {
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof ShieldAndTorchesSubCategoryMap}
+          subcategory={key as keyof ShieldAndTorchesSubCategoryMap}
         />
       ),
     })

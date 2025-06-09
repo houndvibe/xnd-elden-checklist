@@ -23,7 +23,7 @@ export default function Gestures() {
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof GesturesSubCategoryMap}
+          subcategory={key as keyof GesturesSubCategoryMap}
         />
       ),
     })

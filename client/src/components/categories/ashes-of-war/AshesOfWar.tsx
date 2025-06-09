@@ -24,7 +24,7 @@ export default function AshesOfWar() {
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof AshesOfWarSubCategoryMap}
+          subcategory={key as keyof AshesOfWarSubCategoryMap}
         />
       ),
     })

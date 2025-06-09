@@ -26,7 +26,7 @@ export default function ToolsAndBells() {
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof ToolsOrBellBearingsCategoryMap}
+          subcategory={key as keyof ToolsOrBellBearingsCategoryMap}
         />
       ),
     })

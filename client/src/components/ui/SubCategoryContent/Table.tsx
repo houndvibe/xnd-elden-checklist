@@ -35,7 +35,7 @@ import { getStoreAction } from "../../../store/actions";
 export default function Table({
   setHoveredImg,
   dataSource,
-  category,
+  subcategory,
 }: {
   setHoveredImg: React.Dispatch<
     React.SetStateAction<{
@@ -44,7 +44,7 @@ export default function Table({
     }>
   >;
   dataSource: Item[];
-  category: ItemSubCategory;
+  subcategory: ItemSubCategory;
 }) {
   const dispatch = useAppDispatch();
 
@@ -115,7 +115,8 @@ export default function Table({
                     e.stopPropagation();
                     dispatch(
                       toggleTalismanCollected({
-                        category: category as keyof TalismansSubCategoryMap,
+                        subcategory:
+                          subcategory as keyof TalismansSubCategoryMap,
                         name: record.name,
                         tier: item.tier,
                       })
@@ -151,7 +152,12 @@ export default function Table({
               checked={record.collected}
               onClick={(e) => {
                 e.stopPropagation();
-                getStoreAction(record.type, record.name, category, dispatch);
+                getStoreAction({
+                  name: record.name,
+                  category: record.type,
+                  subcategory: subcategory,
+                  dispatch: dispatch,
+                });
               }}
             />
           </Flex>
@@ -208,13 +214,18 @@ export default function Table({
             if (!("versions" in record) || record.versions?.length === 0) {
               dispatch(
                 toggleTalismanCollected({
-                  category: category as keyof TalismansSubCategoryMap,
+                  subcategory: subcategory as keyof TalismansSubCategoryMap,
                   name: record.name,
                 })
               );
             }
           } else {
-            getStoreAction(record.type, record.name, category, dispatch);
+            getStoreAction({
+              name: record.name,
+              category: record.type,
+              subcategory: subcategory,
+              dispatch: dispatch,
+            });
           }
         },
       })}

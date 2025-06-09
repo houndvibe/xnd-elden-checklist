@@ -23,7 +23,7 @@ export default function Sorceries() {
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof SorceriesSubCategoryMap}
+          subcategory={key as keyof SorceriesSubCategoryMap}
         />
       ),
     })

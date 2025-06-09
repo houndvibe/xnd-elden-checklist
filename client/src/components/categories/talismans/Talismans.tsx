@@ -24,7 +24,7 @@ export default function Talismans() {
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof TalismansSubCategoryMap}
+          subcategory={key as keyof TalismansSubCategoryMap}
         />
       ),
     })

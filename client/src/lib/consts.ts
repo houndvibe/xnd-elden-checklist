@@ -26,10 +26,13 @@ export const APP_PALETTE = {
 
 //Цвета прогрессбара
 export const PROGRESSBAR_COLORS: ProgressProps["strokeColor"] = {
-  "0%": "#5d5445",
+  /*  "0%": "#5d5445",
   "20%": "#41473e",
   "40%": "#263937",
   "60%": "#14292b",
   "80%": "#0a2227",
-  "100%": "#00121c",
+  "100%": "#00121c", */
+
+  "0%": APP_PALETTE.textPrimary,
+  "100%": APP_PALETTE.textPrimary,
 };

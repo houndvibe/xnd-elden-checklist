@@ -23,7 +23,7 @@ export default function MeleWeapons() {
       children: (
         <SubCategoryContent
           dataSource={data}
-          category={key as keyof MeleWeaponsSubCategoryMap}
+          subcategory={key as keyof MeleWeaponsSubCategoryMap}
         />
       ),
     })

@@ -25,7 +25,7 @@ export default function Armour() {
         <SubCategoryContent
           type="armour"
           dataSource={data}
-          category={key as keyof ArmourSubCategoryMap}
+          subcategory={key as keyof ArmourSubCategoryMap}
         />
       ),
     })

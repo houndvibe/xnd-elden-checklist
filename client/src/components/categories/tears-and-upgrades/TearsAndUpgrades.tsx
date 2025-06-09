@@ -25,7 +25,7 @@ export default function TearsAndUpgrades() {
     children: (
       <SubCategoryContent
         dataSource={data}
-        category={key as keyof TearsOrUpgradesCategoryMap}
+        subcategory={key as keyof TearsOrUpgradesCategoryMap}
       />
     ),
   }));
