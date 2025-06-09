@@ -32,7 +32,7 @@ export default function TearsAndUpgrades() {
 
   return (
     <Flex vertical align="center">
-      <Flex className="category_wallpaper tearsAndUpgrades_wallpaper">
+      <Flex className="category_wallpaper tears_wallpaper">
         <CategoryInfo title={"Tears & Upgrades"} items={tearsAndUpgradesData} />
       </Flex>
       <div className="collapse_wpapper">

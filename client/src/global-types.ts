@@ -11,9 +11,8 @@ export type ItemCategory =
   | "infoItems"
   | "toolsAndBellBearings"
   | "tearsAndUpgrades"
-  | "armour"
-  
   | "craft" //сюда еще и материалы
+  | "armour"
   | "remembrances" //Тут и души и оружие/магия с боссов
   | "consumablesAndMultiplayer"
   | "keyItems "; //Ключи карты великие руны и квестовые предметы
