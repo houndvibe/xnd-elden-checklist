@@ -9,6 +9,7 @@ export default function DashboardWidget({
   dataType,
   data,
   subData,
+  mode,
 }: {
   dataType: ItemCategory;
   data: {
@@ -17,53 +18,68 @@ export default function DashboardWidget({
     percentage: number;
   };
   subData: ItemSubCategoryMap;
+  mode: boolean;
 }) {
   return (
     <ConfigProvider
       theme={{
         components: {
           Card: {
-            headerBg: APP_PALETTE.bgLight, // your desired background color
+            headerBg: APP_PALETTE.bgLight,
             headerFontSize: 16,
           },
         },
       }}
     >
       <Card
-        title={<div>{toTitleCaseFromCamel(dataType)}</div>}
-        style={{ width: "50vw" }}
+        title={
+          <div style={{ textAlign: mode ? "start" : "center" }}>
+            {toTitleCaseFromCamel(dataType)}
+          </div>
+        }
+        style={{ width: mode ? "50vw" : "18%" }}
       >
         <Flex>
-          <Flex vertical flex={1} align="center">
+          <Flex
+            vertical
+            flex={1}
+            align="center"
+            justify="center"
+            style={{ padding: "1rem 0" }}
+          >
             <Progress
               type="dashboard"
               percent={data.percentage}
               strokeColor={PROGRESSBAR_COLORS}
             />
-
             <span style={{ fontSize: 20 }}>
               {data.collected + "/" + data.total}
             </span>
           </Flex>
-          <Flex vertical gap={20} flex={3}>
-            {Object.entries(subData).map(([subclassName, subItems]) => {
-              const stats = getSubCategoryStats(subItems);
+          {mode ? (
+            <Flex vertical gap={20} flex={3}>
+              {Object.entries(subData).map(([subclassName, subItems]) => {
+                const stats = getSubCategoryStats(subItems);
 
-              return (
-                <Flex key={subclassName} gap={10} justify="flex-end">
-                  <span>
-                    {truncateText(toTitleCaseFromCamel(subclassName))}
-                  </span>
-                  <span>{`${stats.collected}/${stats.total}`}</span>
-                  <Progress
-                    style={{ width: 200 }}
-                    percent={stats.percentage}
-                    strokeColor={PROGRESSBAR_COLORS}
-                  />
-                </Flex>
-              );
-            })}
-          </Flex>
+                return (
+                  <Flex key={subclassName} gap={10} justify="flex-end">
+                    <>
+                      {" "}
+                      <span>
+                        {truncateText(toTitleCaseFromCamel(subclassName))}
+                      </span>
+                      <span>{`${stats.collected}/${stats.total}`}</span>
+                      <Progress
+                        style={{ width: 200 }}
+                        percent={stats.percentage}
+                        strokeColor={PROGRESSBAR_COLORS}
+                      />
+                    </>
+                  </Flex>
+                );
+              })}
+            </Flex>
+          ) : null}
         </Flex>
       </Card>
     </ConfigProvider>
