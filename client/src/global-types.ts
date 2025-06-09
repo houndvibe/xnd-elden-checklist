@@ -11,11 +11,11 @@ export type ItemCategory =
   | "infoItems"
   | "toolsAndBellBearings"
   | "tearsAndUpgrades"
-  | "craft" //сюда еще и материалы
   | "armour"
-  | "remembrances" //Тут и души и оружие/магия с боссов
+  | "craft"
   | "consumablesAndMultiplayer"
-  | "keyItems "; //Ключи карты великие руны и квестовые предметы
+  | "remembrances" //Тут и души и оружие/магия с боссов
+  | "keyItems"; //Ключи карты великие руны и квестовые предметы
 //https://eldenring.wiki.fextralife.com/Key+Items
 
 //И еще решить куда боеприпасы
@@ -338,6 +338,26 @@ export interface ArmourSubCategoryMap {
   pieces: ArmourItem[];
 }
 
+//Расходники и мультиплеер
+
+export interface СonsumableAndMultiplayerItem {
+  type: Extract<ItemCategory, "consumablesAndMultiplayer">;
+  name: string;
+  collected: boolean;
+  link: string;
+  legendary: boolean;
+  dlc: boolean;
+  imgUrl?: string;
+}
+
+export interface СonsumablesAndMultiplayerItemsCategoryMap {
+  food: СonsumableAndMultiplayerItem[];
+  greases: СonsumableAndMultiplayerItem[];
+  throwables: СonsumableAndMultiplayerItem[];
+  other: СonsumableAndMultiplayerItem[];
+  multiplayer: СonsumableAndMultiplayerItem[];
+}
+
 //общее
 export type ItemSubCategoryMap =
   | ShieldAndTorchesSubCategoryMap
@@ -353,7 +373,8 @@ export type ItemSubCategoryMap =
   | ToolsOrBellBearingsCategoryMap
   | TearsOrUpgradesCategoryMap
   | CraftItemsCategoryMap
-  | ArmourSubCategoryMap;
+  | ArmourSubCategoryMap
+  | СonsumablesAndMultiplayerItemsCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldAndTorchesSubCategoryMap
@@ -369,7 +390,8 @@ export type ItemSubCategory =
   | keyof ToolsOrBellBearingsCategoryMap
   | keyof TearsOrUpgradesCategoryMap
   | keyof CraftItemsCategoryMap
-  | keyof ArmourSubCategoryMap;
+  | keyof ArmourSubCategoryMap
+  | keyof СonsumablesAndMultiplayerItemsCategoryMap;
 
 export type Item =
   | ShieldOrTorchItem
@@ -385,4 +407,5 @@ export type Item =
   | ToolOrBellBearingItems
   | TearsOrUpgradesItem
   | CraftItem
-  | ArmourItem;
+  | ArmourItem
+  | СonsumableAndMultiplayerItem;

@@ -16,6 +16,7 @@ import ToolsAndBells from "../../categories/tools-and-bells/ToolsAndBells";
 import TearsAndUpgrades from "../../categories/tears-and-upgrades/TearsAndUpgrades";
 import Craft from "../../categories/craft/Craft";
 import Armour from "../../categories/armour/Armour";
+import ConsumablesAndMultiplayer from "../../categories/consumables-and-multiplayer/ConsumablesAndMultiplayer";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -77,31 +78,34 @@ const items: CustomTabItem[] = [
     children: <Talismans />,
   },
   {
-    key: "toolsAndBellBearings",
-    label: "Tools & Bell Bearings",
-    children: <ToolsAndBells />,
+    key: "craft",
+    label: "Craft",
+    children: <Craft />,
   },
   {
     key: "tearsAndUpgrades",
     label: "Tears & Upgrades",
     children: <TearsAndUpgrades />,
   },
-
+  {
+    key: "toolsAndBellBearings",
+    label: "Tools & Bell Bearings",
+    children: <ToolsAndBells />,
+  },
+  {
+    key: "consumablesAndMultiplayer",
+    label: "Consumables & Multiplayer",
+    children: <ConsumablesAndMultiplayer />,
+  },
   {
     key: "gestures",
     label: "Gestures",
     children: <Gestures />,
   },
-
   {
     key: "infoItems",
     label: "Info Items",
     children: <InfoItems />,
-  },
-  {
-    key: "craft",
-    label: "Craft",
-    children: <Craft />,
   },
 ];
 

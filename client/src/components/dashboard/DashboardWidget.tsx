@@ -37,7 +37,7 @@ export default function DashboardWidget({
             {toTitleCaseFromCamel(dataType)}
           </div>
         }
-        style={{ width: mode ? "50vw" : "18%" }}
+        style={{ width: mode ? "50vw" : "15%" }}
       >
         <Flex>
           <Flex
