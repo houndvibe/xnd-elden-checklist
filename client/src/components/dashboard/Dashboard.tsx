@@ -9,21 +9,22 @@ import { useState } from "react";
 import styles from "./Dashboard.module.scss";
 
 const categoryTypes: ItemCategory[] = [
-  "shieldsAndTorches",
-  "spiritAshes",
-  "talismans",
-  "ashesOfWar",
-  "sorceries",
-  "incantations",
-  "gestures",
   "meleWeapons",
   "rangedWeapons",
-  "infoItems",
-  "toolsAndBellBearings",
-  "tearsAndUpgrades",
-  "craft",
   "armour",
+  "shieldsAndTorches",
+  "talismans",
+  "sorceries",
+  "incantations",
+  "spiritAshes",
+  "ashesOfWar",
+  "craft",
+  "tearsAndUpgrades",
+  "toolsAndBellBearings",
   "consumablesAndAmmo",
+  "gestures",
+  "infoItems",
+  "keyItems",
 ] as const;
 
 export default function Dashboard() {

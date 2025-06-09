@@ -8,6 +8,7 @@ import type {
   InfoItemsSubCategoryMap,
   ItemCategory,
   ItemSubCategory,
+  KeyItemsSubCategoryMap,
   MeleWeaponsSubCategoryMap,
   RangedWeaponsSubCategoryMap,
   ShieldAndTorchesSubCategoryMap,
@@ -35,6 +36,7 @@ import { tearsAndUpgradesData } from "../components/categories/tears-and-upgrade
 import { craftData } from "../components/categories/craft/data";
 import { armourData } from "../components/categories/armour/data";
 import { consumablesAndAmmoData } from "../components/categories/consumables-and-ammo/data";
+import { keyItemsData } from "../components/categories/key-items/data";
 
 interface Collection {
   shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap;
@@ -52,6 +54,7 @@ interface Collection {
   craftData: CraftItemsCategoryMap;
   armourData: ArmourSubCategoryMap;
   consumablesAndAmmoData: СonsumablesAndAmmoItemsCategoryMap;
+  keyItemsData: KeyItemsSubCategoryMap;
 }
 
 interface State {
@@ -75,6 +78,7 @@ const initialState: State = {
     craftData: craftData,
     armourData: armourData,
     consumablesAndAmmoData: consumablesAndAmmoData,
+    keyItemsData: keyItemsData,
   }),
 };
 

@@ -2,7 +2,6 @@ import { Layout, Input, Image } from "antd";
 import { SettingOutlined, QuestionCircleOutlined } from "@ant-design/icons";
 import styles from "./Header.module.scss";
 import logo from "../../../assets/logo.png";
-
 const { Header: AppHeader } = Layout;
 
 export default function Header() {

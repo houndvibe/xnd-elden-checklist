@@ -17,6 +17,7 @@ import TearsAndUpgrades from "../../categories/tears-and-upgrades/TearsAndUpgrad
 import Craft from "../../categories/craft/Craft";
 import Armour from "../../categories/armour/Armour";
 import ConsumablesAndAmmo from "../../categories/consumables-and-ammo/ConsumablesAndAmmo";
+import KeyItems from "../../categories/key-items/KeyItems";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -108,6 +109,11 @@ const items: CustomTabItem[] = [
     key: "infoItems",
     label: "Info Items",
     children: <InfoItems />,
+  },
+  {
+    key: "keyItems",
+    label: "Key Items",
+    children: <KeyItems />,
   },
 ];
 

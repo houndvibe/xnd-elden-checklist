@@ -34,7 +34,7 @@ export default function ConsumablesAndAmmo() {
 
   return (
     <Flex vertical align="center">
-      <Flex className="category_wallpaper consumablesA">
+      <Flex className="category_wallpaper consumables_wallpaper">
         <CategoryInfo
           title={"ConsumablesA & Ammo"}
           items={consumablesAndAmmoData}

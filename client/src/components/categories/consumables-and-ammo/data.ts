@@ -21,6 +21,7 @@ export const consumablesAndAmmoData: СonsumablesAndAmmoItemsCategoryMap = {
     },
   ],
   throwables: [],
+  souls: [],
   ammo: [],
   other: [],
 };

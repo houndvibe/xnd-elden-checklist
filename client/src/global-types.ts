@@ -18,8 +18,6 @@ export type ItemCategory =
   | "keyItems"; //Ключи карты великие руны и квестовые предметы
 //https://eldenring.wiki.fextralife.com/Key+Items
 
-//И еще решить куда боеприпасы
-
 //Щиты
 export interface ShieldOrTorchItem {
   type: Extract<ItemCategory, "shieldsAndTorches">;
@@ -354,8 +352,30 @@ export interface СonsumablesAndAmmoItemsCategoryMap {
   food: СonsumableAndAmmoItem[];
   greases: СonsumableAndAmmoItem[];
   throwables: СonsumableAndAmmoItem[];
+  souls: СonsumableAndAmmoItem[];
   other: СonsumableAndAmmoItem[];
   ammo: СonsumableAndAmmoItem[];
+}
+
+//Ключевые
+
+export interface KeyItem {
+  type: Extract<ItemCategory, "keyItems">;
+  name: string;
+  collected: boolean;
+  link: string;
+  legendary: boolean;
+  dlc: boolean;
+  imgUrl?: string;
+}
+
+export interface KeyItemsSubCategoryMap {
+  keys: KeyItem[];
+  quests: KeyItem[];
+  spellbooks: KeyItem[];
+  maps: KeyItem[];
+  greatRunes: KeyItem[];
+  remembrences: KeyItem[];
 }
 
 //общее
@@ -374,7 +394,8 @@ export type ItemSubCategoryMap =
   | TearsOrUpgradesCategoryMap
   | CraftItemsCategoryMap
   | ArmourSubCategoryMap
-  | СonsumablesAndAmmoItemsCategoryMap;
+  | СonsumablesAndAmmoItemsCategoryMap
+  | KeyItemsSubCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldAndTorchesSubCategoryMap
@@ -391,7 +412,8 @@ export type ItemSubCategory =
   | keyof TearsOrUpgradesCategoryMap
   | keyof CraftItemsCategoryMap
   | keyof ArmourSubCategoryMap
-  | keyof СonsumablesAndAmmoItemsCategoryMap;
+  | keyof СonsumablesAndAmmoItemsCategoryMap
+  | keyof KeyItemsSubCategoryMap;
 
 export type Item =
   | ShieldOrTorchItem
@@ -408,4 +430,5 @@ export type Item =
   | TearsOrUpgradesItem
   | CraftItem
   | ArmourItem
-  | СonsumableAndAmmoItem;
+  | СonsumableAndAmmoItem
+  | KeyItem;
