@@ -38,7 +38,7 @@ export function getNameToImgUrlConverter(record: Item) {
     case "armour":
       return convertArmourItemNameToWikiImageUrl(record.name, record.dlc);
 
-    case "consumablesAndMultiplayer":
+    case "consumablesAndAmmo":
       return convertConsumableOrMultiplayerItemNameToWikiImageUrl(
         record.name,
         record.dlc

@@ -6,6 +6,7 @@ import { APP_PALETTE, PROGRESSBAR_COLORS } from "../../lib/consts";
 
 import { ItemCategory } from "../../global-types";
 import { useState } from "react";
+import styles from "./Dashboard.module.scss";
 
 const categoryTypes: ItemCategory[] = [
   "shieldsAndTorches",
@@ -22,7 +23,7 @@ const categoryTypes: ItemCategory[] = [
   "tearsAndUpgrades",
   "craft",
   "armour",
-  "consumablesAndMultiplayer",
+  "consumablesAndAmmo",
 ] as const;
 
 export default function Dashboard() {
@@ -49,7 +50,7 @@ export default function Dashboard() {
 
   const [mode, setMod] = useState<boolean>(false);
   return (
-    <Flex vertical gap={20}>
+    <Flex vertical gap={20} className={styles.dashboard}>
       <ConfigProvider
         theme={{
           components: {
@@ -66,7 +67,7 @@ export default function Dashboard() {
               {"General stats"}
               <>
                 <Button onClick={() => setMod(!mode)}>
-                  {mode ? "to full mode" : "to compact mode"}{" "}
+                  {mode ? "to compact mode" : "to full mode"}{" "}
                 </Button>
               </>
             </Flex>

@@ -1,19 +1,19 @@
 export type ItemCategory =
   | "meleWeapons"
   | "rangedWeapons"
+  | "armour"
   | "shieldsAndTorches"
   | "talismans"
-  | "ashesOfWar"
-  | "spiritAshes"
   | "sorceries"
   | "incantations"
+  | "spiritAshes"
+  | "ashesOfWar"
+  | "craft"
+  | "tearsAndUpgrades"
+  | "toolsAndBellBearings"
+  | "consumablesAndAmmo"
   | "gestures"
   | "infoItems"
-  | "toolsAndBellBearings"
-  | "tearsAndUpgrades"
-  | "armour"
-  | "craft"
-  | "consumablesAndMultiplayer"
   | "remembrances" //Тут и души и оружие/магия с боссов
   | "keyItems"; //Ключи карты великие руны и квестовые предметы
 //https://eldenring.wiki.fextralife.com/Key+Items
@@ -340,8 +340,8 @@ export interface ArmourSubCategoryMap {
 
 //Расходники и мультиплеер
 
-export interface СonsumableAndMultiplayerItem {
-  type: Extract<ItemCategory, "consumablesAndMultiplayer">;
+export interface СonsumableAndAmmoItem {
+  type: Extract<ItemCategory, "consumablesAndAmmo">;
   name: string;
   collected: boolean;
   link: string;
@@ -350,12 +350,12 @@ export interface СonsumableAndMultiplayerItem {
   imgUrl?: string;
 }
 
-export interface СonsumablesAndMultiplayerItemsCategoryMap {
-  food: СonsumableAndMultiplayerItem[];
-  greases: СonsumableAndMultiplayerItem[];
-  throwables: СonsumableAndMultiplayerItem[];
-  other: СonsumableAndMultiplayerItem[];
-  multiplayer: СonsumableAndMultiplayerItem[];
+export interface СonsumablesAndAmmoItemsCategoryMap {
+  food: СonsumableAndAmmoItem[];
+  greases: СonsumableAndAmmoItem[];
+  throwables: СonsumableAndAmmoItem[];
+  other: СonsumableAndAmmoItem[];
+  ammo: СonsumableAndAmmoItem[];
 }
 
 //общее
@@ -374,7 +374,7 @@ export type ItemSubCategoryMap =
   | TearsOrUpgradesCategoryMap
   | CraftItemsCategoryMap
   | ArmourSubCategoryMap
-  | СonsumablesAndMultiplayerItemsCategoryMap;
+  | СonsumablesAndAmmoItemsCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldAndTorchesSubCategoryMap
@@ -391,7 +391,7 @@ export type ItemSubCategory =
   | keyof TearsOrUpgradesCategoryMap
   | keyof CraftItemsCategoryMap
   | keyof ArmourSubCategoryMap
-  | keyof СonsumablesAndMultiplayerItemsCategoryMap;
+  | keyof СonsumablesAndAmmoItemsCategoryMap;
 
 export type Item =
   | ShieldOrTorchItem
@@ -408,4 +408,4 @@ export type Item =
   | TearsOrUpgradesItem
   | CraftItem
   | ArmourItem
-  | СonsumableAndMultiplayerItem;
+  | СonsumableAndAmmoItem;

@@ -1,0 +1,19 @@
+.dashboard {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding: 30px;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../assets/bg-ashesOfWar.jpg") center/cover no-repeat;
+    opacity: 0.09;
+    z-index: -1;
+    height: 100%;
+  }
+}

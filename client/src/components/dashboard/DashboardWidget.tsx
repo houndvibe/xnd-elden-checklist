@@ -1,9 +1,10 @@
-import { Card, ConfigProvider, Flex, Progress } from "antd";
+import { Card, ConfigProvider, Flex, Image, Progress } from "antd";
 import type { ItemCategory, ItemSubCategoryMap } from "../../global-types";
 import { toTitleCaseFromCamel } from "../../lib/utils/converters";
 import { APP_PALETTE, PROGRESSBAR_COLORS } from "../../lib/consts";
 import { getSubCategoryStats } from "../../lib/utils/stats";
 import { truncateText } from "../../lib/utils/misc";
+import logoIcon from "../../assets/dlc-icon.png";
 
 export default function DashboardWidget({
   dataType,
@@ -51,6 +52,12 @@ export default function DashboardWidget({
               type="dashboard"
               percent={data.percentage}
               strokeColor={PROGRESSBAR_COLORS}
+              format={(percent) => {
+                if (percent === 100) {
+                  return <Image src={logoIcon} height={80} />;
+                }
+                return percent + "%";
+              }}
             />
             <span style={{ fontSize: 20 }}>
               {data.collected + "/" + data.total}

@@ -16,7 +16,7 @@ import ToolsAndBells from "../../categories/tools-and-bells/ToolsAndBells";
 import TearsAndUpgrades from "../../categories/tears-and-upgrades/TearsAndUpgrades";
 import Craft from "../../categories/craft/Craft";
 import Armour from "../../categories/armour/Armour";
-import ConsumablesAndMultiplayer from "../../categories/consumables-and-multiplayer/ConsumablesAndMultiplayer";
+import ConsumablesAndAmmo from "../../categories/consumables-and-ammo/ConsumablesAndAmmo";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -53,9 +53,9 @@ const items: CustomTabItem[] = [
     children: <ShieldsAndTorches />,
   },
   {
-    key: "spiritAshes",
-    label: "Spirit Ashes",
-    children: <SpiritAshes />,
+    key: "talismans",
+    label: "Talismans",
+    children: <Talismans />,
   },
   {
     key: "sorceries",
@@ -68,15 +68,17 @@ const items: CustomTabItem[] = [
     children: <Incantations />,
   },
   {
+    key: "spiritAshes",
+    label: "Spirit Ashes",
+    children: <SpiritAshes />,
+  },
+
+  {
     key: "ashesOfWar",
     label: "Ashes of war",
     children: <AshesOfWar />,
   },
-  {
-    key: "talismans",
-    label: "Talismans",
-    children: <Talismans />,
-  },
+
   {
     key: "craft",
     label: "Craft",
@@ -93,9 +95,9 @@ const items: CustomTabItem[] = [
     children: <ToolsAndBells />,
   },
   {
-    key: "consumablesAndMultiplayer",
-    label: "Consumables & Multiplayer",
-    children: <ConsumablesAndMultiplayer />,
+    key: "consumablesAndAmmo",
+    label: "Consumables & Ammo",
+    children: <ConsumablesAndAmmo />,
   },
   {
     key: "gestures",

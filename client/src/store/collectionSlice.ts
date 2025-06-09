@@ -16,7 +16,7 @@ import type {
   TalismansSubCategoryMap,
   TearsOrUpgradesCategoryMap,
   ToolsOrBellBearingsCategoryMap,
-  СonsumablesAndMultiplayerItemsCategoryMap,
+  СonsumablesAndAmmoItemsCategoryMap,
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 
@@ -34,7 +34,7 @@ import { toolsAndBellBearingsData } from "../components/categories/tools-and-bel
 import { tearsAndUpgradesData } from "../components/categories/tears-and-upgrades/data";
 import { craftData } from "../components/categories/craft/data";
 import { armourData } from "../components/categories/armour/data";
-import { consumablesAndMultiplayerData } from "../components/categories/consumables-and-multiplayer/data";
+import { consumablesAndAmmoData } from "../components/categories/consumables-and-ammo/data";
 
 interface Collection {
   shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap;
@@ -51,7 +51,7 @@ interface Collection {
   tearsAndUpgradesData: TearsOrUpgradesCategoryMap;
   craftData: CraftItemsCategoryMap;
   armourData: ArmourSubCategoryMap;
-  consumablesAndMultiplayerData: СonsumablesAndMultiplayerItemsCategoryMap;
+  consumablesAndAmmoData: СonsumablesAndAmmoItemsCategoryMap;
 }
 
 interface State {
@@ -74,7 +74,7 @@ const initialState: State = {
     tearsAndUpgradesData: tearsAndUpgradesData,
     craftData: craftData,
     armourData: armourData,
-    consumablesAndMultiplayerData: consumablesAndMultiplayerData,
+    consumablesAndAmmoData: consumablesAndAmmoData,
   }),
 };
 
