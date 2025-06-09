@@ -35,6 +35,9 @@ export function getNameToImgUrlConverter(record: Item) {
     case "craft":
       return convertCraftItemNameToWikiImageUrl(record.name, record.dlc);
 
+    case "armour":
+      return convertArmourItemNameToWikiImageUrl(record.name, record.dlc);
+
     case "meleWeapons":
       return convertMeleWeaponNameToWikiImageUrl(
         record.name,
@@ -270,6 +273,23 @@ export function convertCraftItemNameToWikiImageUrl(
     .replace(/\s+/g, "_"); // Replace spaces with underscores
 
   return `${baseUrl}craft_${formattedName}-${
+    isDlc ? "shadow_of_the_erdtree_dlc_" : ""
+  }elden-ring-wiki-guide-200px.png`;
+}
+
+export function convertArmourItemNameToWikiImageUrl(
+  itemName: string,
+  isDlc: boolean
+) {
+  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
+  const formattedName = itemName
+    .trim()
+    .toLowerCase()
+    .replace(/^note:\s*/i, "") // Remove "Note:" prefix if present
+    .replace(/[^a-z0-9 ]/g, "") // Remove all non-alphanumeric characters except space
+    .replace(/\s+/g, "_"); // Replace spaces with underscores
+
+  return `${baseUrl}armour_${formattedName}-${
     isDlc ? "shadow_of_the_erdtree_dlc_" : ""
   }elden-ring-wiki-guide-200px.png`;
 }

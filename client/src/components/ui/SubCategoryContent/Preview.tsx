@@ -12,8 +12,33 @@ export default function Preview({
   };
   dataSource: Item[];
 }) {
-  console.log(img);
-  const currentItem = dataSource.find((item) => item.name == img.name);
+  const getCurrentItem = (): Item | undefined => {
+    // 1. Поиск на верхнем уровне
+    const directMatch = dataSource.find((item) => item.name === img.name);
+    if (directMatch) return directMatch;
+
+    // 2. Поиск в armour -> items -> children
+    for (const item of dataSource) {
+      if (item.type !== "armour" || !("items" in item)) continue;
+
+      for (const subItem of item.items) {
+        if (subItem.name === img.name) return subItem;
+
+        const children = subItem?.children;
+        if (children) {
+          const match = Object.values(children).find(
+            (child) => child.name === img.name
+          );
+          if (match) return match;
+        }
+      }
+    }
+
+    return undefined;
+  };
+
+  const currentItem: Item | undefined = getCurrentItem();
+
   const info =
     currentItem && currentItem.type === "infoItems"
       ? currentItem.info
@@ -23,7 +48,7 @@ export default function Preview({
       ? currentItem.location
       : "Staff of the Academy of Raya Lucaria,embedded with a turquoise glintstone.Only a recognized sorcerer is permitted to wield this staff.";
 
-  const name = currentItem ? currentItem.name : "";
+  const name = currentItem ? currentItem.name : "123";
 
   return (
     <>

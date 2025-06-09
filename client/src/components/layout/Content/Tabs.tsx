@@ -15,6 +15,7 @@ import ShieldsAndTorches from "../../categories/shields/Shields";
 import ToolsAndBells from "../../categories/tools-and-bells/ToolsAndBells";
 import TearsAndUpgrades from "../../categories/tears-and-upgrades/TearsAndUpgrades";
 import Craft from "../../categories/craft/Craft";
+import Armour from "../../categories/armour/Armour";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -43,7 +44,7 @@ const items: CustomTabItem[] = [
   {
     key: "armour",
     label: "Armour",
-    children: "Armour",
+    children: <Armour />,
   },
   {
     key: "shieldsAndTorches",

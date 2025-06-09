@@ -20,6 +20,7 @@ const categoryTypes: ItemCategory[] = [
   "toolsAndBellBearings",
   "tearsAndUpgrades",
   "craft",
+  "armour",
 ] as const;
 
 export default function Dashboard() {

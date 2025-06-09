@@ -1,5 +1,6 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type {
+  ArmourSubCategoryMap,
   AshesOfWarSubCategoryMap,
   CraftItemsCategoryMap,
   GesturesSubCategoryMap,
@@ -29,6 +30,7 @@ import { shieldsAndTorchesData } from "../components/categories/shields/data";
 import { toolsAndBellBearingsData } from "../components/categories/tools-and-bells/data";
 import { tearsAndUpgradesData } from "../components/categories/tears-and-upgrades/data";
 import { craftData } from "../components/categories/craft/data";
+import { armourData } from "../components/categories/armour/data";
 
 const initialState = {
   collectionData: loadFromStorage("xnd.collection", {
@@ -45,6 +47,7 @@ const initialState = {
     toolsAndBellBearingsData: toolsAndBellBearingsData,
     tearsAndUpgradesData: tearsAndUpgradesData,
     craftData: craftData,
+    armourData: armourData,
   }),
 };
 
@@ -275,6 +278,23 @@ export const collectionSlice = createSlice({
         saveToStorage("xnd.collection", state.collectionData);
       }
     },
+
+    toggleArmourItemCollected: (
+      state,
+      action: PayloadAction<{
+        category: keyof ArmourSubCategoryMap;
+        name: string;
+      }>
+    ) => {
+      const { category, name } = action.payload;
+      const armourItem = state.collectionData.armourData[category].find(
+        (s) => s.name === name
+      );
+      if (armourItem) {
+        armourItem.collected = !armourItem.collected;
+        saveToStorage("xnd.collection", state.collectionData);
+      }
+    },
   },
 });
 
@@ -292,5 +312,6 @@ export const {
   toggleToolOrBellCollected,
   toggleTearOrUpgradeCollected,
   toggleCraftItemCollected,
+  toggleArmourItemCollected,
 } = collectionSlice.actions;
 export default collectionSlice.reducer;

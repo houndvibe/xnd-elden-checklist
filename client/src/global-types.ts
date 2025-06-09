@@ -302,6 +302,42 @@ export interface CraftItemsCategoryMap {
   materials: CraftItem[];
 }
 
+//Армор
+
+export interface ArmorBase {
+  type: Extract<ItemCategory, "armour">;
+  pieceType: "set" | "helm" | "gloves" | "chest" | "boots";
+  name: string;
+  collected: boolean;
+  link: string;
+  dlc: boolean;
+  imgUrl?: string;
+}
+
+export interface ArmourPiece extends ArmorBase {
+  children?: ArmorBase[];
+}
+
+export interface ArmourSet extends ArmourPiece {
+  items: ArmourPiece[];
+}
+
+export type ArmourItem = ArmourSet | ArmourPiece;
+
+export interface ArmourSubCategoryMap {
+  "Commonfolk&Wanderers": ArmourSet[];
+  "Scholars&Seers": ArmourSet[];
+  "Cultists&Nobles": ArmourSet[];
+  "Rogues&Outcasts": ArmourSet[];
+  "Militia&FringeWarriors": ArmourSet[];
+  RankedSoldiers: ArmourSet[];
+  "EliteKnights&Legends": ArmourSet[];
+  KnightlyOrders: ArmourSet[];
+  NamedChampions: ArmourSet[];
+  "Warlords & Colossi": ArmourSet[];
+  pieces: ArmourItem[];
+}
+
 //общее
 export type ItemSubCategoryMap =
   | ShieldAndTorchesSubCategoryMap
@@ -316,7 +352,8 @@ export type ItemSubCategoryMap =
   | InfoItemsSubCategoryMap
   | ToolsOrBellBearingsCategoryMap
   | TearsOrUpgradesCategoryMap
-  | CraftItemsCategoryMap;
+  | CraftItemsCategoryMap
+  | ArmourSubCategoryMap;
 
 export type ItemSubCategory =
   | keyof ShieldAndTorchesSubCategoryMap
@@ -331,7 +368,8 @@ export type ItemSubCategory =
   | keyof InfoItemsSubCategoryMap
   | keyof ToolsOrBellBearingsCategoryMap
   | keyof TearsOrUpgradesCategoryMap
-  | keyof CraftItemsCategoryMap;
+  | keyof CraftItemsCategoryMap
+  | keyof ArmourSubCategoryMap;
 
 export type Item =
   | ShieldOrTorchItem
@@ -346,4 +384,5 @@ export type Item =
   | InfoItems
   | ToolOrBellBearingItems
   | TearsOrUpgradesItem
-  | CraftItem;
+  | CraftItem
+  | ArmourItem;
