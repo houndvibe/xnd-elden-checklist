@@ -66,7 +66,10 @@ export default function Dashboard() {
             <Flex justify="space-between" align="center">
               {"General stats"}
               <>
-                <Button onClick={() => setMod(!mode)}>
+                <Button
+                  onClick={() => setMod(!mode)}
+                  style={{ background: APP_PALETTE.successGreen }}
+                >
                   {mode ? "to compact mode" : "to full mode"}{" "}
                 </Button>
               </>

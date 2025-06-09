@@ -27,7 +27,7 @@ export default function SubCategoryContent({
   });
 
   return (
-    <Flex gap={20} style={{ maxHeight: 800 }}>
+    <Flex style={{ maxHeight: 800 }}>
       {type === "armour" ? (
         <HierarchyTable
           setHoveredImg={setHoveredImg}
@@ -42,7 +42,7 @@ export default function SubCategoryContent({
         />
       )}
 
-      <Preview dataSource={dataSource} img={hoveredImg} />
+      {hoveredImg ? <Preview dataSource={dataSource} img={hoveredImg} /> : null}
     </Flex>
   );
 }
