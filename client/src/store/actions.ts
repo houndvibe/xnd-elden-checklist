@@ -1,4 +1,5 @@
 import {
+  ArmourSubCategoryMap,
   AshesOfWarSubCategoryMap,
   CraftItemsCategoryMap,
   GesturesSubCategoryMap,
@@ -17,6 +18,7 @@ import {
 } from "../global-types";
 import { AppDispatch } from "./appStore";
 import {
+  toggleArmourItemCollected,
   toggleAshOfWarCollected,
   toggleCraftItemCollected,
   toggleGestureCollected,
@@ -126,6 +128,13 @@ export function getStoreAction(
     dispatch(
       toggleCraftItemCollected({
         category: category as keyof CraftItemsCategoryMap,
+        name: name,
+      })
+    );
+  } else if (type === "armour") {
+    dispatch(
+      toggleArmourItemCollected({
+        category: category as keyof ArmourSubCategoryMap,
         name: name,
       })
     );

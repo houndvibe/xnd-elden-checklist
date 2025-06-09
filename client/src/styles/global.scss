@@ -18,6 +18,10 @@ $bg-light: #1f1f1f;
   background-color: $success-green;
 }
 
+.row-pieces-missing {
+  background-color: $bg-light;
+}
+
 //сброс цвета сортированного столбца
 .ant-table-column-sort {
   background: transparent !important;
@@ -79,6 +83,9 @@ $bg-light: #1f1f1f;
 }
 .craft_wallpaper {
   background: url("../assets/bg-craft.jpg") center/cover no-repeat;
+}
+.armour_wallpaper {
+  background: url("../assets/bg-armour.jpg") center/cover no-repeat;
 }
 
 //чекбоксы

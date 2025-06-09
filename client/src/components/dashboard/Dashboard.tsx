@@ -1,8 +1,8 @@
-import { Card, Flex, Progress } from "antd";
+import { Card, ConfigProvider, Flex, Progress } from "antd";
 import { getCategoryStats } from "../../lib/utils/stats";
 import { useAppSelector } from "../../store/typedDispatch";
 import DashboardWidget from "./DashboardWidget";
-import { PROGRESSBAR_COLORS } from "../../lib/consts";
+import { APP_PALETTE, PROGRESSBAR_COLORS } from "../../lib/consts";
 
 import { ItemCategory } from "../../global-types";
 
@@ -47,15 +47,26 @@ export default function Dashboard() {
 
   return (
     <Flex vertical gap={20}>
-      <Card title="General stats">
-        <Flex vertical gap={10}>
-          <span>{`${generalCollected}/${generalTotal}`}</span>
-          <Progress
-            percent={generalPercentage}
-            strokeColor={PROGRESSBAR_COLORS}
-          />
-        </Flex>
-      </Card>
+      <ConfigProvider
+        theme={{
+          components: {
+            Card: {
+              headerBg: APP_PALETTE.bgLight, // your desired background color
+              headerFontSize: 16,
+            },
+          },
+        }}
+      >
+        <Card title="General stats">
+          <Flex vertical gap={10}>
+            <span>{`${generalCollected}/${generalTotal}`}</span>
+            <Progress
+              percent={generalPercentage}
+              strokeColor={PROGRESSBAR_COLORS}
+            />
+          </Flex>
+        </Card>
+      </ConfigProvider>
 
       {Array.from({ length: Math.ceil(stats.length / 2) }).map(
         (_, rowIndex) => (

@@ -111,10 +111,10 @@ export default function Tabs() {
       theme={{
         components: {
           Tabs: {
-            inkBarColor: APP_PALETTE.textHighlighted,
-            itemActiveColor: APP_PALETTE.textHighlighted,
-            itemHoverColor: APP_PALETTE.textHighlighted,
-            itemSelectedColor: APP_PALETTE.textHighlighted,
+            inkBarColor: APP_PALETTE.textPrimary,
+            itemActiveColor: APP_PALETTE.textPrimary,
+            itemHoverColor: APP_PALETTE.textPrimary,
+            itemSelectedColor: APP_PALETTE.textPrimary,
           },
         },
       }}

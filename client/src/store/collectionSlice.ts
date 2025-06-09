@@ -183,37 +183,7 @@ export const collectionSlice = createSlice({
         saveToStorage("xnd.collection", state.collectionData);
       }
     },
-    toggleTalismanCollected: (
-      state,
-      action: PayloadAction<{
-        category: keyof TalismansSubCategoryMap;
-        name: string;
-        tier?: 0 | 1 | 2 | 3;
-      }>
-    ) => {
-      const { category, name, tier } = action.payload;
-      const talisman = state.collectionData.talismansData[category].find(
-        (t) => t.name === name
-      );
 
-      if (!talisman) return;
-
-      // Есть версии — переключаем конкретную
-      if (talisman.versions && tier !== undefined) {
-        const version = talisman.versions.find((v) => v.tier === tier);
-        if (version) {
-          version.collected = !version.collected;
-
-          // Если после переключения все версии собраны — выставляем collected = true
-          talisman.collected = talisman.versions.every((v) => v.collected);
-        }
-      } else {
-        // Нет версий — просто переключаем collected
-        talisman.collected = !talisman.collected;
-      }
-
-      saveToStorage("xnd.collection", state.collectionData);
-    },
     toggleInfoItemCollected: (
       state,
       action: PayloadAction<{
@@ -279,6 +249,38 @@ export const collectionSlice = createSlice({
       }
     },
 
+    toggleTalismanCollected: (
+      state,
+      action: PayloadAction<{
+        category: keyof TalismansSubCategoryMap;
+        name: string;
+        tier?: 0 | 1 | 2 | 3;
+      }>
+    ) => {
+      const { category, name, tier } = action.payload;
+      const talisman = state.collectionData.talismansData[category].find(
+        (t) => t.name === name
+      );
+
+      if (!talisman) return;
+
+      // Есть версии — переключаем конкретную
+      if (talisman.versions && tier !== undefined) {
+        const version = talisman.versions.find((v) => v.tier === tier);
+        if (version) {
+          version.collected = !version.collected;
+
+          // Если после переключения все версии собраны — выставляем collected = true
+          talisman.collected = talisman.versions.every((v) => v.collected);
+        }
+      } else {
+        // Нет версий — просто переключаем collected
+        talisman.collected = !talisman.collected;
+      }
+
+      saveToStorage("xnd.collection", state.collectionData);
+    },
+
     toggleArmourItemCollected: (
       state,
       action: PayloadAction<{
@@ -287,12 +289,76 @@ export const collectionSlice = createSlice({
       }>
     ) => {
       const { category, name } = action.payload;
-      const armourItem = state.collectionData.armourData[category].find(
-        (s) => s.name === name
-      );
-      if (armourItem) {
-        armourItem.collected = !armourItem.collected;
+      const items = state.collectionData.armourData[category];
+
+      const toggleAndPropagate = (item: any, newValue: boolean): boolean => {
+        // Если есть вложенные children — рекурсивно применяем к ним
+        if ("children" in item && item.children) {
+          const children = Object.values(item.children);
+          children.forEach((child) => toggleAndPropagate(child, newValue));
+        }
+
+        // Если есть под-элементы внутри items (например, части сета)
+        if ("items" in item && Array.isArray(item.items)) {
+          item.items.forEach((sub: any) => toggleAndPropagate(sub, newValue));
+        }
+
+        item.collected = newValue;
+        return item.collected;
+      };
+
+      const updateParentCollectedStatus = (item: any) => {
+        if ("children" in item && item.children) {
+          const allCollected = Object.values(item.children).every(
+            (child) => child.collected
+          );
+          item.collected = allCollected;
+        }
+
+        if ("items" in item && Array.isArray(item.items)) {
+          const allCollected = item.items.every((i) => i.collected);
+          item.collected = allCollected;
+        }
+      };
+
+      // Поиск на верхнем уровне
+      const topItem = items.find((s) => s.name === name);
+      if (topItem) {
+        const newValue = !topItem.collected;
+        toggleAndPropagate(topItem, newValue);
         saveToStorage("xnd.collection", state.collectionData);
+        return;
+      }
+
+      // Поиск на вложенных уровнях
+      for (const item of items) {
+        if (!("items" in item)) continue;
+
+        for (const subItem of item.items) {
+          if (subItem.name === name) {
+            const newValue = !subItem.collected;
+            toggleAndPropagate(subItem, newValue);
+            updateParentCollectedStatus(item); // Обновляем родителя
+            saveToStorage("xnd.collection", state.collectionData);
+            return;
+          }
+
+          if (subItem.children) {
+            const matchKey = Object.keys(subItem.children).find(
+              (key) => subItem.children?.[key]?.name === name
+            );
+
+            if (matchKey) {
+              const match = subItem.children[matchKey];
+              const newValue = !match.collected;
+              toggleAndPropagate(match, newValue);
+              updateParentCollectedStatus(subItem); // Обновляем parent
+              updateParentCollectedStatus(item); // Обновляем ещё выше
+              saveToStorage("xnd.collection", state.collectionData);
+              return;
+            }
+          }
+        }
       }
     },
   },

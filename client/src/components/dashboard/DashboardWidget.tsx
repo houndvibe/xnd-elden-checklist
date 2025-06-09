@@ -1,7 +1,7 @@
-import { Card, Flex, Progress } from "antd";
+import { Card, ConfigProvider, Flex, Progress } from "antd";
 import type { ItemCategory, ItemSubCategoryMap } from "../../global-types";
 import { toTitleCaseFromCamel } from "../../lib/utils/converters";
-import { PROGRESSBAR_COLORS } from "../../lib/consts";
+import { APP_PALETTE, PROGRESSBAR_COLORS } from "../../lib/consts";
 import { getSubCategoryStats } from "../../lib/utils/stats";
 import { truncateText } from "../../lib/utils/misc";
 
@@ -19,37 +19,53 @@ export default function DashboardWidget({
   subData: ItemSubCategoryMap;
 }) {
   return (
-    <Card title={toTitleCaseFromCamel(dataType)} style={{ width: "50vw" }}>
-      <Flex>
-        <Flex vertical flex={1} align="center">
-          <Progress
-            type="dashboard"
-            percent={data.percentage}
-            strokeColor={PROGRESSBAR_COLORS}
-          />
+    <ConfigProvider
+      theme={{
+        components: {
+          Card: {
+            headerBg: APP_PALETTE.bgLight, // your desired background color
+            headerFontSize: 16,
+          },
+        },
+      }}
+    >
+      <Card
+        title={<div>{toTitleCaseFromCamel(dataType)}</div>}
+        style={{ width: "50vw" }}
+      >
+        <Flex>
+          <Flex vertical flex={1} align="center">
+            <Progress
+              type="dashboard"
+              percent={data.percentage}
+              strokeColor={PROGRESSBAR_COLORS}
+            />
 
-          <span style={{ fontSize: 20 }}>
-            {data.collected + "/" + data.total}
-          </span>
-        </Flex>
-        <Flex vertical gap={20} flex={3}>
-          {Object.entries(subData).map(([subclassName, subItems]) => {
-            const stats = getSubCategoryStats(subItems);
+            <span style={{ fontSize: 20 }}>
+              {data.collected + "/" + data.total}
+            </span>
+          </Flex>
+          <Flex vertical gap={20} flex={3}>
+            {Object.entries(subData).map(([subclassName, subItems]) => {
+              const stats = getSubCategoryStats(subItems);
 
-            return (
-              <Flex key={subclassName} gap={10} justify="flex-end">
-                <span>{truncateText(toTitleCaseFromCamel(subclassName))}</span>
-                <span>{`${stats.collected}/${stats.total}`}</span>
-                <Progress
-                  style={{ width: 200 }}
-                  percent={stats.percentage}
-                  strokeColor={PROGRESSBAR_COLORS}
-                />
-              </Flex>
-            );
-          })}
+              return (
+                <Flex key={subclassName} gap={10} justify="flex-end">
+                  <span>
+                    {truncateText(toTitleCaseFromCamel(subclassName))}
+                  </span>
+                  <span>{`${stats.collected}/${stats.total}`}</span>
+                  <Progress
+                    style={{ width: 200 }}
+                    percent={stats.percentage}
+                    strokeColor={PROGRESSBAR_COLORS}
+                  />
+                </Flex>
+              );
+            })}
+          </Flex>
         </Flex>
-      </Flex>
-    </Card>
+      </Card>
+    </ConfigProvider>
   );
 }

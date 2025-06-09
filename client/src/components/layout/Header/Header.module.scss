@@ -11,6 +11,8 @@
   background: $bg-light;
   padding: 0 20px;
   position: sticky;
+  border-left: 1px solid $bg-dark;
+  border-right: 1px solid $bg-dark;
 }
 
 .title {
