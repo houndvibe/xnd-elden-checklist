@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import  collectionSlice  from "./collectionSlice";
+import collectionSlice from "./collectionSlice";
+import discoverySlice from "./discoverySlice";
 
 const store = configureStore({
-  reducer: { collection: collectionSlice },
+  reducer: { collection: collectionSlice, discovery: discoverySlice },
 });
 
 export type RootState = ReturnType<typeof store.getState>;

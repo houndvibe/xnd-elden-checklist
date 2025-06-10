@@ -6,8 +6,9 @@ import type { ItemCategory } from "../../../global-types";
 import { transformCategoryToName } from "../../../lib/utils/misc";
 import Dashboard from "../../dashboard/Dashboard";
 import CategoryTab from "../../ui/CatrgoryTab/CategoryTab";
+import DiscoveryCalculator from "../../discovery-calculator/DiscoveryCalculator";
 
-type ExtendedTabKey = ItemCategory | "dashboard";
+type ExtendedTabKey = ItemCategory | "dashboard" | "discoveryCalculator";
 
 interface CustomTabItem {
   key: ExtendedTabKey;
@@ -25,6 +26,11 @@ const itemTabs: CustomTabItem[] = itemCategories.map((category) => {
 
 const tabs: CustomTabItem[] = [
   { key: "dashboard", label: "PROGRESS", children: <Dashboard /> },
+  {
+    key: "discoveryCalculator",
+    label: "Discovery Calculator",
+    children: <DiscoveryCalculator />,
+  },
   ...itemTabs,
 ];
 

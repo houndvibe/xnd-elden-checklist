@@ -162,3 +162,26 @@ $bg-light: #1f1f1f;
   border-color: $text-highlighted !important;
   box-shadow: 0 0 0 2px rgba($text-highlighted, 0.1) !important;
 }
+
+// Override Ant Design Switch styles
+.ant-switch {
+  // Custom styles for the switch container
+  background-color: $text-primary;
+
+  // Handle (circle) styles
+  .ant-switch-handle {
+    &::before {
+      background-color: $bg-dark;
+    }
+  }
+
+  // Checked state
+  &.ant-switch-checked {
+    background-color: $text-highlighted;
+    .ant-switch-handle {
+      &::before {
+        background-color: $bg-dark;
+      }
+    }
+  }
+}

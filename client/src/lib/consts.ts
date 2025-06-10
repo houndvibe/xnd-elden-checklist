@@ -1,6 +1,8 @@
 import type { ProgressProps } from "antd";
 import type { ItemCategory } from "../global-types";
 
+export const BASE_DISCOVERY = 100;
+
 // Теперь создаём массив:
 export const itemCategories: ItemCategory[] = [
   "meleWeapons",
