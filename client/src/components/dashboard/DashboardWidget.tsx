@@ -35,7 +35,9 @@ export default function DashboardWidget({
       <Card
         title={
           <div style={{ textAlign: mode ? "start" : "center" }}>
-            {toTitleCaseFromCamel(dataType)}
+            {mode
+              ? toTitleCaseFromCamel(dataType)
+              : truncateText(toTitleCaseFromCamel(dataType), 12)}
           </div>
         }
         style={{ width: mode ? "50vw" : "15%" }}

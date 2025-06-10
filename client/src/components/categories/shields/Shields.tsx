@@ -35,7 +35,10 @@ export default function ShieldsAndTorches() {
   return (
     <Flex vertical align="center">
       <Flex className="category_wallpaper shields_wallpaper">
-        <CategoryInfo title={"Shields"} items={shieldsAndTorchesData} />
+        <CategoryInfo
+          title={"Shields & Torches"}
+          items={shieldsAndTorchesData}
+        />
       </Flex>
       <div className="collapse_wpapper">
         <Collapse items={shildsSubcategoryItems} />

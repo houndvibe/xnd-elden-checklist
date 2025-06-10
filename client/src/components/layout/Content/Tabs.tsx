@@ -96,6 +96,11 @@ const items: CustomTabItem[] = [
     children: <ToolsAndBells />,
   },
   {
+    key: "keyItems",
+    label: "Key Items",
+    children: <KeyItems />,
+  },
+  {
     key: "consumablesAndAmmo",
     label: "Consumables & Ammo",
     children: <ConsumablesAndAmmo />,
@@ -109,11 +114,6 @@ const items: CustomTabItem[] = [
     key: "infoItems",
     label: "Info Items",
     children: <InfoItems />,
-  },
-  {
-    key: "keyItems",
-    label: "Key Items",
-    children: <KeyItems />,
   },
 ];
 

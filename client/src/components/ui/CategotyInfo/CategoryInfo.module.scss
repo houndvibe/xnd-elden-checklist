@@ -4,13 +4,14 @@
   :global {
     .ant-progress-text {
       font-family: "IM Fell English SC", serif;
-      color: $text-highlighted !important;
+      color: $text-primary !important;
+      font-size: 30px;
     }
   }
 
   height: 120px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
   padding: 20px;
   margin: 20px;
 
