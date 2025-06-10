@@ -1,6 +1,11 @@
 import React, { useState } from "react";
-import { Input, AutoComplete } from "antd";
+import { Input, AutoComplete, Image, Flex } from "antd";
 import type { AutoCompleteProps } from "antd";
+import { itemsData } from "../../../data/data-index";
+import { Collection } from "../../../store/collectionSlice";
+import { Item, ItemSubCategoryMap } from "../../../global-types";
+import { useNavigate } from "react-router-dom";
+import { flattenCollectionItems } from "../../../lib/utils/search";
 
 const { Search } = Input;
 
@@ -10,47 +15,68 @@ type SuggestionOption = {
 };
 
 const SearchWithSuggestions = () => {
+  const navigate = useNavigate();
   const [options, setOptions] = useState<SuggestionOption[]>([]);
   const [searchText, setSearchText] = useState<string>("");
 
   const handleSearch = (value: string): void => {
-    // Здесь обычно бы запрос к API для выполнения поиска
-    console.log("Searching for:", value);
-    // Ваша логика поиска
+    for (const category in itemsData) {
+      for (const subcategory in itemsData[category as keyof Collection]) {
+        const subject = (
+          itemsData[category as keyof Collection][
+            subcategory as keyof ItemSubCategoryMap
+          ] as Item[]
+        ).find((item: Item) => {
+          return item.name
+            .toLocaleLowerCase()
+            .includes(value.toLocaleLowerCase());
+        });
+
+        if (subject) {
+          /*  navigate(`/${subject.type}?open=${subject.subcategory}`); */
+          navigate(`/${subject.type}?`);
+        }
+      }
+    }
   };
 
   const handleChange = (value: string): void => {
     setSearchText(value);
-
-    // Имитация получения подсказок (в реальном приложении здесь был бы API-запрос)
-    const mockSuggestions = generateMockSuggestions(value);
-
     setOptions(
-      mockSuggestions.map((suggestion) => ({
-        value: suggestion,
-        label: <div>{suggestion}</div>,
+      generateSuggestions(value).map((suggestion: Item) => ({
+        value: suggestion.name,
+        label: (
+          <Flex justify="space-between">
+            {suggestion.name}{" "}
+            <Image
+              height={20}
+              src={
+                "https://eldenring.wiki.fextralife.com/file/Elden-Ring/steel-wire_torch_weapon_elden_ring_wiki_guide_200px.png"
+              }
+            />
+          </Flex>
+        ),
       }))
     );
   };
 
-  // Функция для генерации тестовых подсказок
-  const generateMockSuggestions = (query: string): string[] => {
+  const generateSuggestions = (query: string): Item[] => {
     if (!query) return [];
 
-    const mockData = [
-      "Apple",
-      "Banana",
-      "Cherry",
-      "Date",
-      "Elderberry",
-      "Fig",
-      "Grape",
-      "Honeydew",
-    ];
+    const itemsFlatMap = flattenCollectionItems(itemsData);
 
-    return mockData.filter((item) =>
-      item.toLowerCase().includes(query.toLowerCase())
+    const filtered = Object.values(
+      itemsFlatMap
+        .filter((item) => item.name.toLowerCase().includes(query.toLowerCase()))
+        .reduce((acc, item) => {
+          if (!acc[item.name]) {
+            acc[item.name] = item;
+          }
+          return acc;
+        }, {} as Record<string, (typeof itemsFlatMap)[0]>)
     );
+
+    return filtered;
   };
 
   const onSelect: AutoCompleteProps["onSelect"] = (value: string) => {

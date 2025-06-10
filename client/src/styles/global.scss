@@ -147,3 +147,18 @@ $bg-light: #1f1f1f;
   margin-block: -8px;
   margin-inline: 4px -8px;
 }
+
+/* Строка поиска*/
+.ant-input {
+  color: $text-primary;
+  font-family: "Cinzel";
+}
+
+.ant-input:hover {
+  border-color: $text-highlighted;
+}
+
+.ant-input:focus {
+  border-color: $text-highlighted !important;
+  box-shadow: 0 0 0 2px rgba($text-highlighted, 0.1) !important;
+}
