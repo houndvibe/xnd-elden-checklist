@@ -7,6 +7,7 @@ import { BASE_DISCOVERY } from "../../lib/consts";
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "../../store/typedDispatch";
 import { setCalculatedDiscovery } from "../../store/discoverySlice";
+import ExamplesTable from "./ExamplesTable";
 
 type SelectComponentProps = {
   value: string | null;
@@ -81,6 +82,8 @@ export default function DiscoveryCalculator() {
       label: "Arcane",
       component: (
         <InputNumber
+          min={0}
+          max={99}
           value={arcane}
           onChange={(value) => setArcane(value || 0)}
           className={styles.inputNumber}
@@ -127,9 +130,12 @@ export default function DiscoveryCalculator() {
           ))}
         </Flex>
 
-        <Flex vertical align="center" className={styles.resultsContainer}>
+        <Flex vertical className={styles.resultsContainer}>
           <div className={styles.totalLabel}>Total discovery:</div>
           <div className={styles.totalValue}>{storedDiscovery}</div>
+        </Flex>
+        <Flex vertical gap={10}>
+          <ExamplesTable calculatedDiscovery={storedDiscovery} />
         </Flex>
       </Flex>
     </div>

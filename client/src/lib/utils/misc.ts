@@ -75,7 +75,8 @@ export function calculateItemDropChance(
   const discoveryRate = calculatedDiscovery / 100;
 
   const calculatedDropChance =
-    (dropRate * discoveryRate) / (1 - dropRate + dropRate * discoveryRate);
+    ((dropRate * discoveryRate) / (1 - dropRate + dropRate * discoveryRate)) *
+    100;
 
-  return calculatedDropChance;
+  return calculatedDropChance.toFixed(2);
 }

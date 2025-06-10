@@ -15,6 +15,44 @@ export interface Discovery {
   consumables: DiscoveryItem[];
 }
 
+export interface ItemDropTable {
+  key: string;
+  name: string;
+  base: number;
+  imgUrl: string;
+}
+
+export const EXAMPLE_ITEM_DROPS: ItemDropTable[] = [
+  {
+    key: "1",
+    name: "Black Dumpling",
+    base: 0.5,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_dumpling_elden_ring_wiki_guide_200px.png",
+  },
+  {
+    key: "2",
+    name: "Magma Blade",
+    base: 1,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/magma_blade_curved_sword_weapon_elden_ring_wiki_guide_200px.png",
+  },
+  {
+    key: "3",
+    name: "Bandit's Curved Sword",
+    base: 1.5,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bandits_curved_sword_curved_sword_weapon_elden_ring_wiki_guide_200px.png",
+  },
+  {
+    key: "4",
+    name: "Pest's Glaive",
+    base: 4,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/pests_glaive_halberd_weapon_elden_ring_wiki_guide_200px.png",
+  },
+];
+
 export const discoveryData: Discovery = {
   arcane: 10,
   rune: false,
@@ -100,7 +138,7 @@ export const discoveryData: Discovery = {
     },
     {
       name: "Silver Horn Tender",
-      effect: { arcaneGain: 3, discoveryGain: 60 },
+      effect: { arcaneGain: 0, discoveryGain: 60 },
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/silver_horn_tender_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
       time: 180,
