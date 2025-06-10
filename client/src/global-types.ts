@@ -212,12 +212,30 @@ export interface MeleWeaponsSubCategoryMap {
 
 export interface RangedWeaponItem {
   type: Extract<ItemCategory, "rangedWeapons">;
+  subcategory: keyof RangedWeaponsSubCategoryMap;
+  description: string;
   name: string;
   collected: boolean;
   link: string;
   legendary: boolean;
   dlc: boolean;
   imgUrl?: string;
+  dropFrom: {
+    name: string;
+    dropRatte: number;
+    link: string;
+    imgUrl: string;
+  } | null;
+  vendor: {
+    name: string;
+    link: string;
+    imgUrl: string;
+  } | null;
+  placement?: {
+    description: string;
+    link: string;
+    imgUrl: string;
+  } | null;
 }
 
 export interface RangedWeaponsSubCategoryMap {

@@ -17,6 +17,28 @@
   text-decoration: underline;
 }
 
+.prviewLinkVendor {
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.prviewLinkVendor:hover {
+  color: $text-highlighted;
+  text-decoration: underline;
+}
+
+.prviewLinkEnemy {
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.prviewLinkEnemy:hover {
+  color: $text-highlighted;
+  text-decoration: underline;
+}
+
 .table {
   width: 60%;
   height: 800px;
@@ -72,5 +94,9 @@
 .info {
   color: $text-highlighted;
   font-family: "IM Fell English SC";
-  font-size: 20px;
+  font-size: 30px;
+}
+
+.text {
+  font-size: 16px;
 }

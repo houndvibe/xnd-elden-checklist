@@ -4,115 +4,267 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
   lightBows: [
     {
       type: "rangedWeapons",
+      subcategory: "lightBows",
       name: "Shortbow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Shortbow",
+      description:
+        "Small bow made to fire arrows over great distances. Other than its ability to fire off arrows in rapid succession, it is also well-suited for use on horseback.",
+      dropFrom: {
+        name: "Marionette Soldier",
+        dropRatte: 2,
+        link: "https://eldenring.wiki.fextralife.com/Marionette+Soldier",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/marionette_soldier_1_enemies_elden_ring_wiki_600px.jpg",
+      },
+      vendor: {
+        name: "Nomadic Merchant (West Limgrave)",
+        link: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant+West+Limgrave",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic-merchant-npc-elden-ring-wiki-guide.jpg",
+      },
+      placement: null,
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/shortbow_lightbow_weapon_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "rangedWeapons",
+      subcategory: "lightBows",
       name: "Composite Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Composite+Bow",
+      description:
+        "Bow composited from a mix of Materials.  Demands high attributes, and is tricky to wield, but is a fearsome tool when mastered.",
+      dropFrom: null,
+      vendor: {
+        name: "Nomadic Merchant (Liurnia of the Lakes)",
+        link: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant+Liurnia+of+the+Lakes",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic-merchant-npc-elden-ring-wiki-guide.jpg",
+      },
+      placement: null,
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/composite_bow_light_bow_weapon_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "rangedWeapons",
+      subcategory: "lightBows",
       name: "Red Branch Shortbow",
       collected: false,
+      description:
+        "Shortbow of polished red wood. Fashioned by a master craftsman and wielded by pages. A bow which requires dexterity rather than strength to master. ",
       link: "https://eldenring.wiki.fextralife.com/Red+Branch+Shortbow",
+      dropFrom: {
+        name: "Page enemies",
+        dropRatte: 1.5,
+        link: "https://eldenring.wiki.fextralife.com/Page",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/red_branch_shortbow_elden_ring_wiki_guide_200px.png",
+      },
+      vendor: null,
+      placement: null,
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/red_branch_shortbow_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "rangedWeapons",
+      subcategory: "lightBows",
       name: "Misbegotten Shortbow",
+      description:
+        "Shortbow wielded by Winged Misbegotten. Fine fur clings to it. Designed to inflict additional damage by sacrificing range.",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Misbegotten+Shortbow",
+      dropFrom: {
+        name: "Winged Misbegotten",
+        dropRatte: 2,
+        link: "https://eldenring.wiki.fextralife.com/Misbegotten",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/winged-misbegotten-elden-ring-wiki-guide.jpg",
+      },
+      vendor: null,
+      placement: null,
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/misbegotten_shortbow_light_bow_weapon_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "rangedWeapons",
+      subcategory: "lightBows",
       name: "Harp Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Harp+Bow",
+      dropFrom: null,
+      description:
+        "Bow fashioned from a minstrel's harp. Sonorous tones still resound when firing arrows.Troubadours sing tales of champions, both in the honorable service of the Erdtree, and the one who spurns honor for blasphemy.",
+      vendor: null,
+      placement: {
+        description: "Champion’s Song Painting puzzle in The Shaded Castle.",
+        link: "https://eldenring.wiki.fextralife.com/The+Shaded+Castle",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/the-shaded-castle-elden-ring-wiki-guide.jpg",
+      },
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/harp_bow_light_bow_weapon_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "rangedWeapons",
+      subcategory: "lightBows",
       name: "Bone Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Bone+Bow",
+      description:
+        "A crude shortbow fashioned from sickly bone. A medium for spirit-calling, and a product of the ancient hexing arts of the tower.",
+      dropFrom: null,
+      vendor: null,
+      placement: {
+        description:
+          "Found in Belurat Tower Settlement, on a corpse in a dead-end room.",
+        link: "https://eldenring.wiki.fextralife.com/Belurat+Tower+Settlement",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/belurat-tower-settlement-elden-ring-wiki-guide.jpg",
+      },
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bone_bow_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
   ],
   bows: [
     {
       type: "rangedWeapons",
+      subcategory: "bows",
       name: "Longbow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Longbow",
+      dropFrom: null,
+      vendor: {
+        name: "Twin Husks (Roundtable Hold)",
+        link: "https://eldenring.wiki.fextralife.com/Twin+Husks",
+        imgUrl: "",
+      },
+      placement: null,
       legendary: false,
       dlc: false,
     },
     {
       type: "rangedWeapons",
+      subcategory: "bows",
       name: "Albinauric Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Albinauric+Bow",
+      dropFrom: null,
+      vendor: null,
+      placement: {
+        description: "Found in caves in Moonlight Altar area.",
+        link: "https://eldenring.wiki.fextralife.com/Moonlight+Altar",
+        imgUrl: "",
+      },
       legendary: false,
       dlc: false,
     },
     {
       type: "rangedWeapons",
+      subcategory: "bows",
       name: "Black Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Black+Bow",
+      dropFrom: null,
+      vendor: null,
+      placement: {
+        description:
+          "On a corpse on rooftops of lower Leyndell, Royal Capital.",
+        link: "https://eldenring.wiki.fextralife.com/Leyndell,+Royal+Capital",
+        imgUrl: "",
+      },
       legendary: false,
       dlc: false,
     },
     {
       type: "rangedWeapons",
-      name: "Ansbach's Longbow",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Ansbach's+Longbow",
-      legendary: false,
-      dlc: true,
-    },
-    {
-      type: "rangedWeapons",
+      subcategory: "bows",
       name: "Pulley Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Pulley+Bow",
+      dropFrom: null,
+      vendor: null,
+      placement: {
+        description: "Chest in Fringefolk Hero’s Grave.",
+        link: "https://eldenring.wiki.fextralife.com/Fringefolk+Hero%27s+Grave",
+        imgUrl: "",
+      },
       legendary: false,
       dlc: false,
     },
     {
       type: "rangedWeapons",
+      subcategory: "bows",
       name: "Horn Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Horn+Bow",
+      dropFrom: null,
+      vendor: null,
+      placement: {
+        description: "Reward from quest at Astel Church of Consciousness.",
+        link: "https://eldenring.wiki.fextralife.com/Astel+Church+of+Consciousness",
+        imgUrl: "",
+      },
       legendary: false,
       dlc: false,
     },
     {
       type: "rangedWeapons",
+      subcategory: "bows",
       name: "Serpent Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Serpent+Bow",
+      dropFrom: null,
+      vendor: null,
+      placement: {
+        description: "Found near pool of rot inside Abandoned Cave (Caelid).",
+        link: "https://eldenring.wiki.fextralife.com/Abandoned+Cave",
+        imgUrl: "",
+      },
       legendary: false,
       dlc: false,
     },
     {
       type: "rangedWeapons",
+      subcategory: "bows",
       name: "Erdtree Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Erdtree+Bow",
+      dropFrom: null,
+      vendor: null,
+      placement: {
+        description: "Chest in Erdtree Sanctuary building, Leyndell.",
+        link: "https://eldenring.wiki.fextralife.com/Leyndell,+Royal+Capital",
+        imgUrl: "",
+      },
+      legendary: false,
+      dlc: false,
+    },
+    {
+      type: "rangedWeapons",
+      subcategory: "bows",
+      name: "Composite Bow",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Composite+Bow",
+      dropFrom: null,
+      vendor: {
+        name: "Nomadic Merchant (Liurnia)",
+        link: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant+Liurnia+of+the+Lakes",
+        imgUrl: "",
+      },
+      placement: null,
       legendary: false,
       dlc: false,
     },
@@ -120,41 +272,90 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
   greatbows: [
     {
       type: "rangedWeapons",
-      name: "Greatbow",
+      subcategory: "greatbows",
+      name: "Dragon Slayer Greatbow",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Greatbow",
-      legendary: false,
+      link: "https://eldenring.wiki.fextralife.com/Dragonslayer+Greatbow",
+      dropFrom: null,
+      vendor: null,
+      placement: {
+        description:
+          "Found in a chest in Dragonbarrow East, near the Dragonkin Soldier boss.",
+        link: "https://eldenring.wiki.fextralife.com/Dragonbarrow",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonbarrow-map-elden-ring-wiki-guide.jpg",
+      },
+      legendary: true,
       dlc: false,
     },
     {
       type: "rangedWeapons",
-      name: "Golem Greatbow",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Golem+Greatbow",
-      legendary: false,
-      dlc: false,
-    },
-    {
-      type: "rangedWeapons",
-      name: "Erdtree Greatbow",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Erdtree+Greatbow",
-      legendary: false,
-      dlc: false,
-    },
-    {
-      type: "rangedWeapons",
-      name: "Igon's Greatbow",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Igon's+Greatbow",
-      legendary: false,
-      dlc: true,
-    },
-    {
-      type: "rangedWeapons",
+      subcategory: "greatbows",
       name: "Lion Greatbow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Lion+Greatbow",
+      dropFrom: null,
+      vendor: null,
+      placement: {
+        description:
+          "Reward from the Lion Greatbow questline in the Caelid region.",
+        link: "https://eldenring.wiki.fextralife.com/Caelid",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/caelid-map-elden-ring-wiki-guide.jpg",
+      },
+      legendary: true,
+      dlc: false,
+    },
+    {
+      type: "rangedWeapons",
+      subcategory: "greatbows",
+      name: "Greatbow",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Greatbow",
+      dropFrom: null,
+      vendor: null,
+      placement: {
+        description:
+          "Found in a chest in the Cathedral of Dragon Communion in Dragonbarrow.",
+        link: "https://eldenring.wiki.fextralife.com/Cathedral+of+Dragon+Communion",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cathedral-of-dragon-communion-elden-ring-wiki-guide.jpg",
+      },
+      legendary: false,
+      dlc: false,
+    },
+    {
+      type: "rangedWeapons",
+      subcategory: "greatbows",
+      name: "Black Greatbow",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Black+Greatbow",
+      dropFrom: null,
+      vendor: null,
+      placement: {
+        description:
+          "Found in Leyndell, Royal Capital, on a corpse on the rooftops.",
+        link: "https://eldenring.wiki.fextralife.com/Leyndell,+Royal+Capital",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell-royal-capital-elden-ring-wiki-guide.jpg",
+      },
+      legendary: false,
+      dlc: false,
+    },
+    {
+      type: "rangedWeapons",
+      subcategory: "greatbows",
+      name: "Ruined Greatbow",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Ruined+Greatbow",
+      dropFrom: null,
+      vendor: null,
+      placement: {
+        description: "Found in a chest in the ruins of Castle Morne in Caelid.",
+        link: "https://eldenring.wiki.fextralife.com/Castle+Morne",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/castle-morne-elden-ring-wiki-guide.jpg",
+      },
       legendary: false,
       dlc: false,
     },

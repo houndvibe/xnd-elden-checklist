@@ -1,93 +1,107 @@
-import { Flex, Image } from "antd";
+import { Flex, Image, Popover } from "antd";
 import styles from "./SubCategoryContent.module.scss";
 import { Item } from "../../../global-types";
+import Link from "antd/es/typography/Link";
+import { calculateItemDropChance } from "../../../lib/utils/misc";
+import { useAppSelector } from "../../../store/typedDispatch";
 
-export default function Preview({
-  img,
-  dataSource,
-}: {
+interface PreviewProps {
   img: {
     url: string | undefined;
     name: string;
   };
   dataSource: Item[];
-}) {
-  const getCurrentItem = (): Item | undefined => {
-    // 1. Поиск на верхнем уровне
-    const directMatch = dataSource.find((item) => item.name === img.name);
+}
+
+export default function Preview({ img, dataSource }: PreviewProps) {
+  const storedDiscovery = useAppSelector(
+    (state) => state.discovery.calculatedDiscovery
+  );
+
+  const findItemByName = (name: string): Item | undefined => {
+    const directMatch = dataSource.find((item) => item.name === name);
     if (directMatch) return directMatch;
 
-    // 2. Поиск в armour -> items -> children
     for (const item of dataSource) {
       if (item.type !== "armour" || !("items" in item)) continue;
 
       for (const subItem of item.items) {
-        if (subItem.name === img.name) return subItem;
+        if (subItem.name === name) return subItem;
 
-        const children = subItem?.children;
-        if (children) {
-          const match = Object.values(children).find(
-            (child) => child.name === img.name
-          );
-          if (match) return match;
-        }
+        const childMatch = subItem.children
+          ? Object.values(subItem.children).find((child) => child.name === name)
+          : undefined;
+
+        if (childMatch) return childMatch;
       }
     }
 
     return undefined;
   };
 
-  const currentItem: Item | undefined = getCurrentItem();
+  const currentItem = findItemByName(img.name);
+  const {
+    name = "123",
+    description = "",
+    dropFrom,
+    vendor,
+    placement,
+  } = currentItem || {};
 
-  const info =
-    currentItem && currentItem.type === "infoItems"
-      ? currentItem.info
-      : "Staff fashioned from the tail-fingers of Metyr, the Mother of Fingersand the microcosm raised aloft over the crux they form.Catalyst for casting both sorceries and incantations.The Mother received signs from the Greater Will from the beyond of the microcosmDespite being broken and abandoned,she kept waiting for another message to come.";
-  const location =
-    currentItem && currentItem.type === "infoItems"
-      ? currentItem.location
-      : "Staff of the Academy of Raya Lucaria,embedded with a turquoise glintstone.Only a recognized sorcerer is permitted to wield this staff.";
+  const dropRate = dropFrom?.dropRatte ?? 100;
+  const calculatedDropRate = calculateItemDropChance(dropRate, storedDiscovery);
 
-  const name = currentItem ? currentItem.name : "123";
+  const renderDropInfo = () => (
+    <div className={styles.dropInfo} style={{ textAlign: "right" }}>
+      <div>Drop chance:</div>
+      <Popover content={<Image src={dropFrom?.imgUrl} />}>
+        <Link href={dropFrom?.link}>
+          <span className={styles.prviewLinkEnemy}>{dropFrom?.name}</span>
+        </Link>
+      </Popover>
+      <div>{`Base: ${dropRate}%`}</div>
+      <div>{`My setup: ${calculatedDropRate}%`}</div>
+    </div>
+  );
 
-  return (
+  const renderMainContent = () => (
     <>
-      <Flex className={styles.preview} vertical align="center" gap={30}>
-        {img.url && (
-          <div className={styles.dropInfo} style={{ textAlign: "right" }}>
-            <div>Drop chance:</div>
-            <div>{`Base: ${10}%`}</div>
-            <div>{`My setup: ${18}%`}</div>
+      <Flex vertical align="center" gap={15}>
+        <span className={styles.title}>{name}</span>
+        <Image height={400} src={img.url} preview={false} alt="no image" />
+      </Flex>
+
+      <Flex vertical gap={30}>
+        <div>
+          <span className={styles.info}>Description: </span>
+          <span className={styles.text}>{description}</span>
+        </div>
+
+        {vendor && (
+          <div>
+            <span className={styles.info}>Vendor: </span>
+            <Popover content={<Image src={vendor?.imgUrl} />}>
+              <Link href={vendor?.link}>
+                <span className={styles.prviewLinkVendor}>{vendor?.name}</span>
+              </Link>
+            </Popover>
           </div>
         )}
 
-        {img.url ? (
-          <>
-            <Flex vertical align="center" gap={15}>
-              <span className={styles.title}>{name}</span>
-              <Image
-                height={400}
-                src={img.url}
-                preview={false}
-                alt={"no image"}
-              />
-            </Flex>
-
-            <Flex vertical gap={30}>
-              <div>
-                <span className={styles.info}>Description: </span>
-                {info}
-              </div>
-              <div>
-                <span className={styles.info}>Location: </span>
-                {location}
-              </div>
-            </Flex>
-          </>
-        ) : (
-          <div className={styles.placeholder}></div>
+        {placement && (
+          <div>
+            <span className={styles.info}>Placement: </span>
+            <span className={styles.text}>{placement?.description}</span>
+          </div>
         )}
       </Flex>
     </>
+  );
+
+  return (
+    <Flex className={styles.preview} vertical align="center" gap={30}>
+      {img.url && dropFrom && renderDropInfo()}
+      {img.url ? renderMainContent() : <div className={styles.placeholder} />}
+    </Flex>
   );
 }
