@@ -3,21 +3,49 @@
 .wrapper {
   display: flex;
   gap: 10px;
+  transition: all 0.3s ease;
 
+  &:hover {
+    .title {
+      transform: translateX(5px);
+      color: $text-highlighted;
+    }
+
+    .count {
+      transform: translateX(-20px) scale(1.05);
+      color: $text-highlighted;
+    }
+
+    .progress {
+      transform: scaleX(1.02);
+    }
+  }
+
+  // глобальные стили для анtd текста прогресс-бара
   :global {
     .ant-progress-text {
       font-size: 30px;
       font-family: "IM Fell English SC", serif;
       margin-left: 20px !important;
       color: $text-primary !important;
+      transition: transform 0.3s ease;
     }
   }
 }
 
+.title,
+.count,
+.progress {
+  transition: transform 0.3s ease;
+}
 .title {
   font-family: "IM Fell English SC", serif;
   font-size: 30px;
   flex: 1;
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: translateX(10px);
+  }
 }
 
 .count {
@@ -30,6 +58,7 @@
 .progress {
   flex: 2.5;
   font-size: 20px;
+  transition: transform 0.3s ease;
 }
 
 .ant-progress-text {
