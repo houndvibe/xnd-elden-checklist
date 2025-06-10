@@ -66,3 +66,16 @@ export function transformCategoryToName(category: ItemCategory) {
       return "";
   }
 }
+
+export function calculateItemDropChance(
+  baseItemDropChance: number,
+  calculatedDiscovery: number
+) {
+  const dropRate = baseItemDropChance / 100;
+  const discoveryRate = calculatedDiscovery / 100;
+
+  const calculatedDropChance =
+    (dropRate * discoveryRate) / (1 - dropRate + dropRate * discoveryRate);
+
+  return calculatedDropChance;
+}
