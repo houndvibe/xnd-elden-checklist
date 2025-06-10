@@ -57,7 +57,7 @@ export default function Table({
       title: "Name",
       dataIndex: "name",
       key: "name",
-      width: "90%",
+      width: "85%",
       sortOrder: sortColumn === "name" ? "ascend" : null,
       sorter: (a, b) => smartNameSort(sortStep, a, b),
       render: (value, record) => {
@@ -100,7 +100,7 @@ export default function Table({
       title: <CheckOutlined />,
       dataIndex: "collected",
       key: "collected",
-      width: "60%",
+
       sortOrder: sortColumn === "collected" ? sortOrder : null,
       sorter: (a, b) =>
         a.collected === b.collected ? 0 : a.collected ? -1 : 1,

@@ -1,7 +1,8 @@
 import { Tabs as AntdTabs, ConfigProvider } from "antd";
 import { APP_PALETTE } from "../../../lib/consts";
-import SpiritAshes from "../../categories/spirit-ashes/SpiritAshes";
+import { useNavigate, useParams } from "react-router-dom";
 import type { ItemCategory } from "../../../global-types";
+import SpiritAshes from "../../categories/spirit-ashes/SpiritAshes";
 import Dashboard from "../../dashboard/Dashboard";
 import Talismans from "../../categories/talismans/Talismans";
 import AshesOfWar from "../../categories/ashes-of-war/AshesOfWar";
@@ -118,6 +119,13 @@ const items: CustomTabItem[] = [
 ];
 
 export default function Tabs() {
+  const navigate = useNavigate();
+  const { tabKey } = useParams<{ tabKey?: string }>();
+
+  const activeKey = items.some((item) => item.key === tabKey)
+    ? tabKey
+    : "dashboard";
+
   return (
     <ConfigProvider
       theme={{
@@ -131,7 +139,11 @@ export default function Tabs() {
         },
       }}
     >
-      <AntdTabs items={items} />
+      <AntdTabs
+        items={items}
+        activeKey={activeKey}
+        onChange={(key) => navigate(`/${key}`)}
+      />
     </ConfigProvider>
   );
 }

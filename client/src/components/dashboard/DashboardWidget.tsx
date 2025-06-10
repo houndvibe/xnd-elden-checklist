@@ -5,6 +5,8 @@ import { APP_PALETTE, PROGRESSBAR_COLORS } from "../../lib/consts";
 import { getSubCategoryStats } from "../../lib/utils/stats";
 import { truncateText } from "../../lib/utils/misc";
 import logoIcon from "../../assets/dlc-icon.png";
+import { useNavigate } from "react-router-dom";
+import styles from "./Dashboard.module.scss";
 
 export default function DashboardWidget({
   dataType,
@@ -21,6 +23,7 @@ export default function DashboardWidget({
   subData: ItemSubCategoryMap;
   mode: boolean;
 }) {
+  const navigate = useNavigate();
   return (
     <ConfigProvider
       theme={{
@@ -40,7 +43,8 @@ export default function DashboardWidget({
               : truncateText(toTitleCaseFromCamel(dataType), 12)}
           </div>
         }
-        style={{ width: mode ? "50vw" : "15%" }}
+        className={`${styles.widget} ${styles[mode ? "full" : "compact"]}`}
+        onClick={() => navigate(`/${dataType}`)}
       >
         <Flex>
           <Flex

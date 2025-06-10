@@ -1,3 +1,5 @@
+@use "../../styles/global.scss" as *;
+
 .dashboard {
   position: relative;
   width: 100%;
@@ -16,4 +18,20 @@
     z-index: -1;
     height: 100%;
   }
+}
+
+.widget {
+  cursor: pointer;
+  &:hover {
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+.full {
+  width: 50vw;
+}
+
+.compact {
+  width: 15%;
 }
