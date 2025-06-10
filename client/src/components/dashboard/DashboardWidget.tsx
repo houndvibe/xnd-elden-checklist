@@ -5,7 +5,7 @@ import { APP_PALETTE, PROGRESSBAR_COLORS } from "../../lib/consts";
 import { getSubCategoryStats } from "../../lib/utils/stats";
 import { truncateText } from "../../lib/utils/misc";
 import logoIcon from "../../assets/dlc-icon.png";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./Dashboard.module.scss";
 
 export default function DashboardWidget({
@@ -75,9 +75,12 @@ export default function DashboardWidget({
                 const stats = getSubCategoryStats(subItems);
 
                 return (
-                  <Flex key={subclassName} gap={10} justify="flex-end">
-                    <>
-                      {" "}
+                  <NavLink
+                    to={`/${dataType}?open=${subclassName}`}
+                    onClick={(e) => e.stopPropagation()}
+                    className={styles.link}
+                  >
+                    <Flex key={subclassName} gap={10} justify="flex-end">
                       <span>
                         {truncateText(toTitleCaseFromCamel(subclassName))}
                       </span>
@@ -87,8 +90,8 @@ export default function DashboardWidget({
                         percent={stats.percentage}
                         strokeColor={PROGRESSBAR_COLORS}
                       />
-                    </>
-                  </Flex>
+                    </Flex>
+                  </NavLink>
                 );
               })}
             </Flex>
