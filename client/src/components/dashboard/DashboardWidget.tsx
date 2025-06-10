@@ -76,6 +76,7 @@ export default function DashboardWidget({
 
                 return (
                   <NavLink
+                    key={subclassName}
                     to={`/${dataType}?open=${subclassName}`}
                     onClick={(e) => e.stopPropagation()}
                     className={styles.link}

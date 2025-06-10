@@ -1,24 +1,10 @@
 import { Tabs as AntdTabs, ConfigProvider } from "antd";
-import { APP_PALETTE } from "../../../lib/consts";
+import { APP_PALETTE, itemCategories } from "../../../lib/consts";
 import { useNavigate, useParams } from "react-router-dom";
 import type { ItemCategory } from "../../../global-types";
-import SpiritAshes from "../../categories/spirit-ashes/SpiritAshes";
+import CategoryTab from "../../categories/CategoryTab";
+import { transformCategoryToName } from "../../../lib/utils/misc";
 import Dashboard from "../../dashboard/Dashboard";
-import Talismans from "../../categories/talismans/Talismans";
-import AshesOfWar from "../../categories/ashes-of-war/AshesOfWar";
-import Sorceries from "../../categories/sorceries/Sorceries";
-import Incantations from "../../categories/incantations/Incantations";
-import Gestures from "../../categories/gestures/Gestures";
-import MeleWeapons from "../../categories/mele-weapons/MeleWeapons";
-import RangedWeapons from "../../categories/ranged-weapons/RangedWeapons";
-import InfoItems from "../../categories/info-items/InfoItems";
-import ShieldsAndTorches from "../../categories/shields/Shields";
-import ToolsAndBells from "../../categories/tools-and-bells/ToolsAndBells";
-import TearsAndUpgrades from "../../categories/tears-and-upgrades/TearsAndUpgrades";
-import Craft from "../../categories/craft/Craft";
-import Armour from "../../categories/armour/Armour";
-import ConsumablesAndAmmo from "../../categories/consumables-and-ammo/ConsumablesAndAmmo";
-import KeyItems from "../../categories/key-items/KeyItems";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 
@@ -28,101 +14,24 @@ interface CustomTabItem {
   children: React.ReactNode;
 }
 
-const items: CustomTabItem[] = [
-  {
-    key: "dashboard",
-    label: "PROGRESS",
-    children: <Dashboard />,
-  },
-  {
-    key: "meleWeapons",
-    label: "Mele Weapons",
-    children: <MeleWeapons />,
-  },
-  {
-    key: "rangedWeapons",
-    label: "Ranged Weapons",
-    children: <RangedWeapons />,
-  },
-  {
-    key: "armour",
-    label: "Armour",
-    children: <Armour />,
-  },
-  {
-    key: "shieldsAndTorches",
-    label: "Shields & Torches",
-    children: <ShieldsAndTorches />,
-  },
-  {
-    key: "talismans",
-    label: "Talismans",
-    children: <Talismans />,
-  },
-  {
-    key: "sorceries",
-    label: "Sorceries",
-    children: <Sorceries />,
-  },
-  {
-    key: "incantations",
-    label: "incantations",
-    children: <Incantations />,
-  },
-  {
-    key: "spiritAshes",
-    label: "Spirit Ashes",
-    children: <SpiritAshes />,
-  },
+const itemTabs: CustomTabItem[] = itemCategories.map((category) => {
+  return {
+    key: category,
+    label: transformCategoryToName(category),
+    children: <CategoryTab category={category} />,
+  };
+});
 
-  {
-    key: "ashesOfWar",
-    label: "Ashes of war",
-    children: <AshesOfWar />,
-  },
-
-  {
-    key: "craft",
-    label: "Craft",
-    children: <Craft />,
-  },
-  {
-    key: "tearsAndUpgrades",
-    label: "Tears & Upgrades",
-    children: <TearsAndUpgrades />,
-  },
-  {
-    key: "toolsAndBellBearings",
-    label: "Tools & Bell Bearings",
-    children: <ToolsAndBells />,
-  },
-  {
-    key: "keyItems",
-    label: "Key Items",
-    children: <KeyItems />,
-  },
-  {
-    key: "consumablesAndAmmo",
-    label: "Consumables & Ammo",
-    children: <ConsumablesAndAmmo />,
-  },
-  {
-    key: "gestures",
-    label: "Gestures",
-    children: <Gestures />,
-  },
-  {
-    key: "infoItems",
-    label: "Info Items",
-    children: <InfoItems />,
-  },
+const tabs: CustomTabItem[] = [
+  { key: "dashboard", label: "PROGRESS", children: <Dashboard /> },
+  ...itemTabs,
 ];
 
 export default function Tabs() {
   const navigate = useNavigate();
   const { tabKey } = useParams<{ tabKey?: string }>();
 
-  const activeKey = items.some((item) => item.key === tabKey)
+  const activeKey = tabs.some((item) => item.key === tabKey)
     ? tabKey
     : "dashboard";
 
@@ -140,7 +49,7 @@ export default function Tabs() {
       }}
     >
       <AntdTabs
-        items={items}
+        items={tabs}
         activeKey={activeKey}
         onChange={(key) => navigate(`/${key}`)}
       />

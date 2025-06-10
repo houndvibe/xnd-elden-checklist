@@ -62,6 +62,9 @@ export function getNameToImgUrlConverter(record: Item) {
   }
 }
 
+
+
+
 export function convertShieldNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean

@@ -1,4 +1,4 @@
-import type { Item, TalismanVersions } from "../../global-types";
+import type { Item, ItemCategory, TalismanVersions } from "../../global-types";
 import { legendaryEligibleItemCategories } from "../consts";
 
 //Проверка на возможное наличие поля legendary у категории предмета
@@ -26,4 +26,43 @@ export function hasVersionsProperty(
 
 export function truncateText(text: string, maxLength: number = 20): string {
   return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+}
+
+export function transformCategoryToName(category: ItemCategory) {
+  switch (category) {
+    case "meleWeapons":
+      return "Mele Weapons";
+    case "rangedWeapons":
+      return "Ranged Weapons";
+    case "armour":
+      return "Armour";
+    case "shieldsAndTorches":
+      return "Shields & Torches";
+    case "talismans":
+      return "Talismans";
+    case "sorceries":
+      return "Sorceries";
+    case "incantations":
+      return "Incantations";
+    case "spiritAshes":
+      return "Spirit Ashes";
+    case "ashesOfWar":
+      return "Ashes of war";
+    case "craft":
+      return "Craft";
+    case "tearsAndUpgrades":
+      return "Tears & Upgrades";
+    case "toolsAndBellBearings":
+      return "Tools & Bell Bearings";
+    case "keyItems":
+      return "Key Items";
+    case "consumablesAndAmmo":
+      return "Consumables & Ammo";
+    case "gestures":
+      return "Gestures";
+    case "infoItems":
+      return "Info Items";
+    default:
+      return "";
+  }
 }

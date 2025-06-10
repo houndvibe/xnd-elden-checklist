@@ -1,10 +1,25 @@
 import type { ProgressProps } from "antd";
 import type { ItemCategory } from "../global-types";
 
-export enum STORAGE_KEYS {
-  shields = "xnd.eldenring.shields",
-  spiritAshes = "xnd.eldenring.spiritAshes",
-}
+// Теперь создаём массив:
+export const itemCategories: ItemCategory[] = [
+  "meleWeapons",
+  "rangedWeapons",
+  "armour",
+  "shieldsAndTorches",
+  "talismans",
+  "sorceries",
+  "incantations",
+  "spiritAshes",
+  "ashesOfWar",
+  "craft",
+  "tearsAndUpgrades",
+  "toolsAndBellBearings",
+  "consumablesAndAmmo",
+  "gestures",
+  "infoItems",
+  "keyItems",
+];
 
 export const legendaryEligibleItemCategories: ItemCategory[] = [
   "meleWeapons",

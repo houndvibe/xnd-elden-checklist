@@ -38,7 +38,7 @@ import { armourData } from "../components/categories/armour/data";
 import { consumablesAndAmmoData } from "../components/categories/consumables-and-ammo/data";
 import { keyItemsData } from "../components/categories/key-items/data";
 
-interface Collection {
+export interface Collection {
   shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap;
   spiritAshesData: SpiritAshesSubCategoryMap;
   talismansData: TalismansSubCategoryMap;
@@ -57,7 +57,7 @@ interface Collection {
   keyItemsData: KeyItemsSubCategoryMap;
 }
 
-interface State {
+export interface State {
   collectionData: Collection;
 }
 

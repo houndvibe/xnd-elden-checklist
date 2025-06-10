@@ -14,9 +14,8 @@ export type ItemCategory =
   | "consumablesAndAmmo"
   | "gestures"
   | "infoItems"
-  | "remembrances" //Тут и души и оружие/магия с боссов
-  | "keyItems"; //Ключи карты великие руны и квестовые предметы
-//https://eldenring.wiki.fextralife.com/Key+Items
+  | "keyItems";
+//Тут и души и оружие/магия с боссов
 
 //Щиты
 export interface ShieldOrTorchItem {
