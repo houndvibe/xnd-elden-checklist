@@ -37,6 +37,7 @@ export default function CategoryTab({ category }: { category: ItemCategory }) {
       <SubCategoryContent
         dataSource={data}
         subcategory={key as ItemSubCategory}
+        type={category}
       />
     ),
   }));

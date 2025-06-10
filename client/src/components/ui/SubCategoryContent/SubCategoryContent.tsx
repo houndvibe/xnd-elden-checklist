@@ -14,7 +14,7 @@ export default function SubCategoryContent({
   dataSource,
   subcategory,
 }: {
-  type?: ItemCategory;
+  type: ItemCategory;
   dataSource: Item[];
   subcategory: ItemSubCategory;
 }) {
