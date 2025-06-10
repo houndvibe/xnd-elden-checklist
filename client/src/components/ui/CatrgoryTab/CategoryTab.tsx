@@ -1,16 +1,17 @@
 import { Collapse, Flex } from "antd";
-import { useAppSelector } from "../../store/typedDispatch";
-import SubCategoryLabel from "../ui/SubCategoryLabel/SubCategoryLabel";
-import { toTitleCaseFromCamel } from "../../lib/utils/converters";
-import { ItemCategory, ItemSubCategory } from "../../global-types";
-import SubCategoryContent from "../ui/SubCategoryContent/SubCategoryContent";
-import CategoryInfo from "../ui/CategotyInfo/CategoryInfo";
-import { Collection } from "../../store/collectionSlice";
+import { ItemCategory, ItemSubCategory } from "../../../global-types";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useMemo } from "react";
-import { transformCategoryToName } from "../../lib/utils/misc";
+import { useAppSelector } from "../../../store/typedDispatch";
+import { Collection } from "../../../store/collectionSlice";
+import SubCategoryLabel from "../SubCategoryLabel/SubCategoryLabel";
+import { toTitleCaseFromCamel } from "../../../lib/utils/converters";
+import SubCategoryContent from "../SubCategoryContent/SubCategoryContent";
+import CategoryInfo from "../CategotyInfo/CategoryInfo";
+import { transformCategoryToName } from "../../../lib/utils/misc";
 
-export default function CategoryTab({ category }: { category: ItemCategory }) {
+
+export default function CategoryTab({ category }: { category: ItemCategory}) {
   const location = useLocation();
   const navigate = useNavigate();
   const searchParams = new URLSearchParams(location.search);

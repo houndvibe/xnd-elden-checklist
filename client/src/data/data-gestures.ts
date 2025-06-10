@@ -1,4 +1,4 @@
-import type { GesturesSubCategoryMap } from "../../../global-types";
+import type { GesturesSubCategoryMap } from "../global-types";
 
 export const gesturesData: GesturesSubCategoryMap = {
   gestures: [

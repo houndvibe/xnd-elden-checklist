@@ -1,4 +1,4 @@
-import { KeyItemsSubCategoryMap } from "../../../global-types";
+import { KeyItemsSubCategoryMap } from "../global-types";
 
 export const keyItemsData: KeyItemsSubCategoryMap = {
   keys: [],

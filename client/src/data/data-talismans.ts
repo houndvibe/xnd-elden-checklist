@@ -1,4 +1,4 @@
-import { TalismansSubCategoryMap } from "../../../global-types";
+import { TalismansSubCategoryMap } from "../global-types";
 
 export const talismansData: TalismansSubCategoryMap = {
   statsAmplifiers: [

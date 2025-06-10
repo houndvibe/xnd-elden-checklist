@@ -1,4 +1,4 @@
-import type { SpiritAshesSubCategoryMap } from "../../../global-types";
+import type { SpiritAshesSubCategoryMap } from "../global-types";
 
 export const spiritAshesData: SpiritAshesSubCategoryMap = {
   irrationalSpirits: [

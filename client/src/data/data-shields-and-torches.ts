@@ -1,4 +1,4 @@
-import type { ShieldAndTorchesSubCategoryMap } from "../../../global-types";
+import type { ShieldAndTorchesSubCategoryMap } from "../global-types";
 
 export const shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap = {
   torches: [

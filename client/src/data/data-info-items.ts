@@ -1,4 +1,4 @@
-import { InfoItemsSubCategoryMap } from "../../../global-types";
+import { InfoItemsSubCategoryMap } from "../global-types";
 
 export const infoItemsData: InfoItemsSubCategoryMap = {
   guides: [

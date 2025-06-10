@@ -1,4 +1,4 @@
-import { CraftItemsCategoryMap } from "../../../global-types";
+import { CraftItemsCategoryMap } from "../global-types";
 
 export const craftData: CraftItemsCategoryMap = {
   instruments: [

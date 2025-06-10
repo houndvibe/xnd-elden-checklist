@@ -2,9 +2,10 @@ import { Tabs as AntdTabs, ConfigProvider } from "antd";
 import { APP_PALETTE, itemCategories } from "../../../lib/consts";
 import { useNavigate, useParams } from "react-router-dom";
 import type { ItemCategory } from "../../../global-types";
-import CategoryTab from "../../categories/CategoryTab";
+
 import { transformCategoryToName } from "../../../lib/utils/misc";
 import Dashboard from "../../dashboard/Dashboard";
+import CategoryTab from "../../ui/CatrgoryTab/CategoryTab";
 
 type ExtendedTabKey = ItemCategory | "dashboard";
 

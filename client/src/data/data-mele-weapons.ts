@@ -1,4 +1,4 @@
-import { MeleWeaponsSubCategoryMap } from "../../../global-types";
+import { MeleWeaponsSubCategoryMap } from "../global-types";
 
 export const meleWeaponsData: MeleWeaponsSubCategoryMap = {
   daggers: [

@@ -1,4 +1,4 @@
-import type { SorceriesSubCategoryMap } from "../../../global-types";
+import type { SorceriesSubCategoryMap } from "../global-types";
 
 export const sorceriesData: SorceriesSubCategoryMap = {
   academyOfRayaLucaria: [

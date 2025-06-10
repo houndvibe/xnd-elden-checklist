@@ -1,4 +1,4 @@
-import { IncantationsSubCategoryMap } from "../../../global-types";
+import { IncantationsSubCategoryMap } from "../global-types";
 
 export const incantationsData: IncantationsSubCategoryMap = {
   twoFingers: [

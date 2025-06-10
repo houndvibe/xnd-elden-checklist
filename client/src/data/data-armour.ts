@@ -1,4 +1,4 @@
-import { ArmourSubCategoryMap } from "../../../global-types";
+import { ArmourSubCategoryMap } from "../global-types";
 
 export const armourData: ArmourSubCategoryMap = {
   "Commonfolk&Wanderers": [

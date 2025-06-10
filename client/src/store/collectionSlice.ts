@@ -21,22 +21,23 @@ import type {
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 
-import { spiritAshesData } from "../components/categories/spirit-ashes/data";
-import { talismansData } from "../components/categories/talismans/data";
-import { ashesOfWarData } from "../components/categories/ashes-of-war/data";
-import { sorceriesData } from "../components/categories/sorceries/data";
-import { incantationsData } from "../components/categories/incantations/data";
-import { gesturesData } from "../components/categories/gestures/data";
-import { meleWeaponsData } from "../components/categories/mele-weapons/data";
-import { rangedWeaponsData } from "../components/categories/ranged-weapons/data";
-import { infoItemsData } from "../components/categories/info-items/data";
-import { shieldsAndTorchesData } from "../components/categories/shields/data";
-import { toolsAndBellBearingsData } from "../components/categories/tools-and-bells/data";
-import { tearsAndUpgradesData } from "../components/categories/tears-and-upgrades/data";
-import { craftData } from "../components/categories/craft/data";
-import { armourData } from "../components/categories/armour/data";
-import { consumablesAndAmmoData } from "../components/categories/consumables-and-ammo/data";
-import { keyItemsData } from "../components/categories/key-items/data";
+import { spiritAshesData } from "../data/data-spirit-ashes";
+import { talismansData } from "../data/data-talismans";
+
+import { sorceriesData } from "../data/data-sorceries";
+import { incantationsData } from "../data/data-incantations";
+import { gesturesData } from "../data/data-gestures";
+import { meleWeaponsData } from "../data/data-mele-weapons";
+import { rangedWeaponsData } from "../data/data-ranged-weapons";
+import { infoItemsData } from "../data/data-info-items";
+import { shieldsAndTorchesData } from "../data/data-shields-and-torches";
+import { toolsAndBellBearingsData } from "../data/data-tools-and-bells";
+import { tearsAndUpgradesData } from "../data/data-tears-and-upgrades";
+import { craftData } from "../data/data-craft";
+import { armourData } from "../data/data-armour";
+import { consumablesAndAmmoData } from "../data/data-consumables-and-ammo";
+import { keyItemsData } from "../data/data-key-items";
+import { ashesOfWarData } from "../data/data-ashes-of-war";
 
 export interface Collection {
   shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap;

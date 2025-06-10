@@ -1,4 +1,4 @@
-import type { AshesOfWarSubCategoryMap } from "../../../global-types";
+import { AshesOfWarSubCategoryMap } from "../global-types";
 
 export const ashesOfWarData: AshesOfWarSubCategoryMap = {
   heavy: [

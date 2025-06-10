@@ -1,4 +1,4 @@
-import { RangedWeaponsSubCategoryMap } from "../../../global-types";
+import { RangedWeaponsSubCategoryMap } from "../global-types";
 
 export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
   lightBows: [

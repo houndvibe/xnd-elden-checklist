@@ -1,4 +1,4 @@
-import { TearsOrUpgradesCategoryMap } from "../../../global-types";
+import { TearsOrUpgradesCategoryMap } from "../global-types";
 
 export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
   crystalTears: [

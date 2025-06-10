@@ -1,4 +1,4 @@
-import type { СonsumablesAndAmmoItemsCategoryMap } from "../../../global-types";
+import type { СonsumablesAndAmmoItemsCategoryMap } from "../global-types";
 export const consumablesAndAmmoData: СonsumablesAndAmmoItemsCategoryMap = {
   food: [
     {

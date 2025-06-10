@@ -1,4 +1,4 @@
-import { ToolsOrBellBearingsCategoryMap } from "../../../global-types";
+import { ToolsOrBellBearingsCategoryMap } from "../global-types";
 
 export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
   tools: [
