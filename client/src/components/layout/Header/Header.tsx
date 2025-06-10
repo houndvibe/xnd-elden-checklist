@@ -1,8 +1,9 @@
-import { Layout, Input, Image } from "antd";
+import { Layout, Image } from "antd";
 import { SettingOutlined, QuestionCircleOutlined } from "@ant-design/icons";
 import styles from "./Header.module.scss";
 import logo from "../../../assets/logo.png";
 import { NavLink } from "react-router-dom";
+import SearchWithSuggestions from "../../ui/Search/Search";
 const { Header: AppHeader } = Layout;
 
 export default function Header() {
@@ -15,7 +16,7 @@ export default function Header() {
           </div>
         </NavLink>
         <div className={styles.searchWrapper}>
-          <Input.Search placeholder="Поиск..." allowClear />
+          <SearchWithSuggestions />
         </div>
         <div className={styles.icons}>
           <QuestionCircleOutlined className={styles.icon} />
