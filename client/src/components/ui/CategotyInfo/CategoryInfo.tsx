@@ -18,6 +18,7 @@ export default function CategoryInfo({
       <Typography.Title className={styles.title}>
         <>{title + " " + collected + "/" + total}</>
       </Typography.Title>
+
       <Progress
         percent={percentage}
         size={{ height: 20 }}

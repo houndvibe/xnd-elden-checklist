@@ -9,17 +9,18 @@
     }
   }
 
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 16px;
-  padding: 20px;
-  margin: 20px;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba($bg-dark, 0.9);
+  border: 10px solid rgba($bg-light, 0.2);
+  border-radius: 10px;
+  margin: 10px 10px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
 
   .title {
+    font-size: 50px;
     font-family: "Cinzel", serif;
   }
 }
