@@ -1,4 +1,4 @@
-import { Flex, Image, Popover, Switch } from "antd";
+import { Flex, Image, Popover } from "antd";
 import styles from "./SubCategoryContent.module.scss";
 import { Item } from "../../../global-types";
 import Link from "antd/es/typography/Link";

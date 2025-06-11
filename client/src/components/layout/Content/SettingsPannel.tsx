@@ -4,9 +4,11 @@ import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
 
 export default function SettingsPannel() {
   const dispatch = useAppDispatch();
+  const { spoilers } = useAppSelector((state) => state.settings);
   const storedDiscovery = useAppSelector(
     (state) => state.discovery.calculatedDiscovery
   );
+
   return (
     <>
       <Flex gap={10}>
@@ -17,7 +19,11 @@ export default function SettingsPannel() {
         {"| "}
         <Flex gap={10}>
           <>{"spoilers"}</>
-          <Switch size="small" onChange={(v) => dispatch(setSpoilers(v))} />
+          <Switch
+            checked={spoilers}
+            size="small"
+            onChange={(v) => dispatch(setSpoilers(v))}
+          />
         </Flex>
         {"| "}
       </Flex>
