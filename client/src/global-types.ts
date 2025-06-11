@@ -222,7 +222,7 @@ export interface RangedWeaponItem {
   imgUrl?: string;
   droppedBy: {
     name: string;
-    dropRatte: number;
+    dropRate: number;
     link: string;
     imgUrl: string;
   } | null;
@@ -239,7 +239,7 @@ export interface RangedWeaponsSubCategoryMap {
   bows: RangedWeaponItem[];
   greatbows: RangedWeaponItem[];
   crossbows: RangedWeaponItem[];
-  ballistae: RangedWeaponItem[];
+  ballistas: RangedWeaponItem[];
   glintstoneStaves: RangedWeaponItem[];
   sacredSeals: RangedWeaponItem[];
 }

@@ -2,7 +2,7 @@ import { Flex, Image, Popover } from "antd";
 import styles from "./SubCategoryContent.module.scss";
 import { Item } from "../../../global-types";
 import Link from "antd/es/typography/Link";
-import { calculateItemDropChance } from "../../../lib/utils/misc";
+import { calculateItemDropChance, truncateText } from "../../../lib/utils/misc";
 import { useAppSelector } from "../../../store/typedDispatch";
 
 interface PreviewProps {
@@ -49,7 +49,7 @@ export default function Preview({ img, dataSource }: PreviewProps) {
     placementDescription,
   } = currentItem || {};
 
-  const dropRate = droppedBy?.dropRatte ?? 100;
+  const dropRate = droppedBy?.dropRate ?? 100;
   const calculatedDropRate = calculateItemDropChance(dropRate, storedDiscovery);
 
   const renderDropInfo = () => (
@@ -63,7 +63,9 @@ export default function Preview({ img, dataSource }: PreviewProps) {
         content={<Image src={droppedBy?.imgUrl} style={{ maxHeight: 400 }} />}
       >
         <Link href={droppedBy?.link} target="_blank" rel="noopener noreferrer">
-          <span className={styles.linkEnemy}>{droppedBy?.name}</span>
+          <span className={styles.linkEnemy}>
+            {truncateText(droppedBy?.name, 17)}
+          </span>
         </Link>
       </Popover>
       <div>{`Base: ${dropRate}%`}</div>

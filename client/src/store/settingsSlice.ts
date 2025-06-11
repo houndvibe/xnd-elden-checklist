@@ -8,7 +8,7 @@ interface SettingsState {
 
 const initialState: SettingsState = loadFromStorage("xnd.settings", {
   showSettings: false,
-  spoilers: true,
+  spoilers: false,
 });
 
 export const settingsSlice = createSlice({
