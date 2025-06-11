@@ -20,11 +20,26 @@ export type ItemCategory =
 //Щиты
 export interface ShieldOrTorchItem {
   type: Extract<ItemCategory, "shieldsAndTorches">;
+  subcategory: keyof ShieldAndTorchesSubCategoryMap;
   name: string;
-  collected: boolean;
+  description: string;
   link: string;
+  collected: boolean;
+  legendary: boolean;
   dlc: boolean;
   imgUrl?: string;
+  droppedBy: {
+    name: string;
+    dropRate: number;
+    link: string;
+    imgUrl: string;
+  } | null;
+  vendor: {
+    name: string;
+    link: string;
+    imgUrl: string;
+  } | null;
+  placementDescription?: string | null;
 }
 
 export interface ShieldAndTorchesSubCategoryMap {
@@ -156,6 +171,7 @@ export interface IncantationsSubCategoryMap {
 export interface GestureItem {
   type: Extract<ItemCategory, "gestures">;
   name: string;
+  description: string;
   collected: boolean;
   link: string;
   dlc: boolean;
