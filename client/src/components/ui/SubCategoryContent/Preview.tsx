@@ -46,7 +46,7 @@ export default function Preview({ img, dataSource }: PreviewProps) {
     description = "",
     droppedBy,
     vendor,
-    placement,
+    placementDescription,
   } = currentItem || {};
 
   const dropRate = droppedBy?.dropRatte ?? 100;
@@ -59,7 +59,7 @@ export default function Preview({ img, dataSource }: PreviewProps) {
     >
       <div>Drop chance:</div>
       <Popover placement={"left"} content={<Image src={droppedBy?.imgUrl} />}>
-        <Link href={droppedBy?.link}>
+        <Link href={droppedBy?.link} target="_blank" rel="noopener noreferrer">
           <span className={styles.linkEnemy}>{droppedBy?.name}</span>
         </Link>
       </Popover>
@@ -80,7 +80,7 @@ export default function Preview({ img, dataSource }: PreviewProps) {
       <div className={spoilers ? "block-spoiler" : ""}>
         <span className={styles.subtitle}>Vendor: </span>
         <Popover content={<Image src={vendor.imgUrl} />}>
-          <Link href={vendor.link}>
+          <Link href={vendor.link} target="_blank" rel="noopener noreferrer">
             <span
               className={`${styles.linkVendor} spoilers ? "text-spoiler" : ""`}
             >
@@ -92,10 +92,10 @@ export default function Preview({ img, dataSource }: PreviewProps) {
     );
 
   const renderPlacementBlock = () =>
-    placement && (
+    placementDescription && (
       <div className={spoilers ? "block-spoiler" : ""}>
         <span className={styles.subtitle}>Placement: </span>
-        <span className={styles.text}>{placement.description}</span>
+        <span className={styles.text}>{placementDescription}</span>
       </div>
     );
 
