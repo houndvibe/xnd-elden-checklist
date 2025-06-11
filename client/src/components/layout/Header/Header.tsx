@@ -1,9 +1,5 @@
 import { Layout, Image } from "antd";
-import {
-  SettingOutlined,
-  QuestionCircleOutlined,
-  TranslationOutlined,
-} from "@ant-design/icons";
+import { QuestionCircleOutlined, TranslationOutlined } from "@ant-design/icons";
 import styles from "./Header.module.scss";
 import logo from "../../../assets/logo.png";
 import { NavLink } from "react-router-dom";
@@ -24,7 +20,6 @@ export default function Header() {
         </div>
         <div className={styles.icons}>
           <QuestionCircleOutlined className={styles.icon} />
-          <SettingOutlined className={styles.icon} />
           <TranslationOutlined className={styles.icon} />
         </div>
       </div>

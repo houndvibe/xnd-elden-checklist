@@ -5,6 +5,12 @@ $success-green: #112123;
 $bg-dark: #141414;
 $bg-light: #1f1f1f;
 
+/* $link-color: #6b568c; */
+
+$link-color: #4a6a8a;
+$link-color-hover: lighten($link-color, 15%);
+/* $link-color: #5a7f5a; */
+
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap");
 
@@ -183,5 +189,32 @@ $bg-light: #1f1f1f;
         background-color: $bg-dark;
       }
     }
+  }
+}
+
+.text-spoiler {
+  color: transparent;
+  border-left: none;
+  text-shadow: 0 0 8px $link-color; /* light glow effect */
+  transition: color 0.4s ease, text-shadow 0.2s ease;
+  cursor: pointer;
+  font-size: 20px;
+  &:hover {
+    color: $link-color;
+    text-shadow: none;
+  }
+}
+
+.block-spoiler {
+  color: transparent;
+  text-shadow: 0 0 8px $link-color; /* light glow effect */
+  transition: color 0.4s ease, text-shadow 0.2s ease;
+  filter: blur(4px);
+  cursor: pointer;
+
+  &:hover {
+    color: inherit;
+    text-shadow: none;
+    filter: none;
   }
 }

@@ -102,7 +102,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Harp+Bow",
       dropFrom: null,
       description:
-        "Bow fashioned from a minstrel's harp. Sonorous tones still resound when firing arrows.Troubadours sing tales of champions, both in the honorable service of the Erdtree, and the one who spurns honor for blasphemy.",
+        "Bow fashioned from a minstrel's harp . Sonorous tones still resound when firing arrows.Troubadours sing tales of champions, both in the honorable service of the Erdtree, and the one who spurns honor for blasphemy.",
       vendor: null,
       placement: {
         description: "Champion’s Song Painting puzzle in The Shaded Castle.",

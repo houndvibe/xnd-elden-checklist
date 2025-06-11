@@ -7,6 +7,7 @@ import { transformCategoryToName } from "../../../lib/utils/misc";
 import Dashboard from "../../dashboard/Dashboard";
 import CategoryTab from "../../ui/CatrgoryTab/CategoryTab";
 import DiscoveryCalculator from "../../discovery-calculator/DiscoveryCalculator";
+import SettingsPannel from "./SettingsPannel";
 
 type ExtendedTabKey = ItemCategory | "dashboard" | "discoveryCalculator";
 
@@ -55,6 +56,7 @@ export default function Tabs() {
         },
       }}
     >
+      <SettingsPannel />
       <AntdTabs
         items={tabs}
         activeKey={activeKey}

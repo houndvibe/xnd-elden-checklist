@@ -1,49 +1,44 @@
 @use "../../../styles/global.scss" as *;
 
-.legendary {
-  color: $text-highlighted !important;
-}
-.legendary:hover {
-  font-style: italic;
-  text-decoration: underline;
-}
+// ===== Links & Interactions =====
 
 .link {
   color: $text-primary;
-}
-.link:hover {
-  color: $text-highlighted;
-  font-style: italic;
-  text-decoration: underline;
+  &:hover {
+    color: $link-color-hover;
+  }
 }
 
-.prviewLinkVendor {
-  font-style: italic;
-  text-decoration: underline;
+.legendary {
+  color: $text-highlighted !important;
+
+  &:hover {
+    font-style: italic;
+    text-decoration: underline;
+  }
+}
+
+.linkVendor {
+  color: $link-color;
+  font-family: "IM Fell English SC";
+  font-size: 22px;
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+.linkEnemy {
+  color: $link-color;
+  font-family: "IM Fell English SC";
   font-size: 20px;
+
+  &:hover {
+    color: $link-color-hover;
+  }
 }
 
-.prviewLinkVendor:hover {
-  color: $text-highlighted;
-  text-decoration: underline;
-}
+// ===== Layout & Containers =====
 
-.prviewLinkEnemy {
-  font-style: italic;
-  text-decoration: underline;
-  font-size: 16px;
-}
-
-.prviewLinkEnemy:hover {
-  color: $text-highlighted;
-  text-decoration: underline;
-}
-
-.table {
-  width: 60%;
-  height: 800px;
-  overflow-y: scroll;
-}
 .preview {
   position: relative;
   padding: 50px;
@@ -59,17 +54,6 @@
     opacity: 0.09;
     z-index: -1;
   }
-
-  /*   img {
-    transition: transform 0.2s ease;
-  }
-
-  &:hover {
-    img {
-      transform: scale(1.1);
-      color: $text-highlighted;
-    }
-  } */
 }
 
 .placeholder {
@@ -78,12 +62,19 @@
   height: 600px;
 }
 
+.table {
+  width: 60%;
+  height: 800px;
+  overflow-y: scroll;
+}
+
 .dropInfo {
   position: absolute;
   top: 30px;
   right: 30px;
-  font-family: "IM Fell English SC";
 }
+
+// ===== Typography =====
 
 .title {
   color: $text-highlighted;
@@ -91,12 +82,12 @@
   font-size: 30px;
 }
 
-.info {
+.subtitle {
   color: $text-highlighted;
   font-family: "IM Fell English SC";
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .text {
-  font-size: 16px;
+  font-size: 17px;
 }
