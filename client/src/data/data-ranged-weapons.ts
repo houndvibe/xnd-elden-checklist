@@ -6,10 +6,14 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       type: "rangedWeapons",
       subcategory: "lightBows",
       name: "Shortbow",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Shortbow",
       description:
         "Small bow made to fire arrows over great distances. Other than its ability to fire off arrows in rapid succession, it is also well-suited for use on horseback.",
+      link: "https://eldenring.wiki.fextralife.com/Shortbow",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/shortbow_lightbow_weapon_elden_ring_wiki_guide_200px.png",
       dropFrom: {
         name: "Marionette Soldier",
         dropRatte: 2,
@@ -23,54 +27,50 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
         imgUrl:
           "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic-merchant-npc-elden-ring-wiki-guide.jpg",
       },
-      placement: null,
-      legendary: false,
-      dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/shortbow_lightbow_weapon_elden_ring_wiki_guide_200px.png",
+      placementDescription: null,
     },
     {
       type: "rangedWeapons",
       subcategory: "lightBows",
       name: "Composite Bow",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Composite+Bow",
       description:
         "Bow composited from a mix of Materials.  Demands high attributes, and is tricky to wield, but is a fearsome tool when mastered.",
+      link: "https://eldenring.wiki.fextralife.com/Composite+Bow",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/composite_bow_light_bow_weapon_elden_ring_wiki_guide_200px.png",
       dropFrom: null,
       vendor: {
         name: "Nomadic Merchant (Liurnia of the Lakes)",
         link: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant+Liurnia+of+the+Lakes",
         imgUrl:
-          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic-merchant-npc-elden-ring-wiki-guide.jpg",
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchant_npc_elden_ring_wiki_guide_300px.jpg",
       },
-      placement: null,
-      legendary: false,
-      dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/composite_bow_light_bow_weapon_elden_ring_wiki_guide_200px.png",
+      placementDescription: null,
     },
     {
       type: "rangedWeapons",
       subcategory: "lightBows",
       name: "Red Branch Shortbow",
-      collected: false,
       description:
         "Shortbow of polished red wood. Fashioned by a master craftsman and wielded by pages. A bow which requires dexterity rather than strength to master. ",
       link: "https://eldenring.wiki.fextralife.com/Red+Branch+Shortbow",
-      dropFrom: {
-        name: "Page enemies",
-        dropRatte: 1.5,
-        link: "https://eldenring.wiki.fextralife.com/Page",
-        imgUrl:
-          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/red_branch_shortbow_elden_ring_wiki_guide_200px.png",
-      },
-      vendor: null,
-      placement: null,
+      collected: false,
       legendary: false,
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/red_branch_shortbow_elden_ring_wiki_guide_200px.png",
+      dropFrom: {
+        name: "Page",
+        dropRatte: 4,
+        link: "https://eldenring.wiki.fextralife.com/Page",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/page_infobox_enemies_elden_ring_wiki_600px.jpg",
+      },
+      vendor: null,
+      placementDescription: null,
     },
     {
       type: "rangedWeapons",
@@ -78,64 +78,55 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Misbegotten Shortbow",
       description:
         "Shortbow wielded by Winged Misbegotten. Fine fur clings to it. Designed to inflict additional damage by sacrificing range.",
-      collected: false,
       link: "https://eldenring.wiki.fextralife.com/Misbegotten+Shortbow",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/misbegotten_shortbow_light_bow_weapon_elden_ring_wiki_guide_200px.png",
       dropFrom: {
         name: "Winged Misbegotten",
         dropRatte: 2,
         link: "https://eldenring.wiki.fextralife.com/Misbegotten",
         imgUrl:
-          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/winged-misbegotten-elden-ring-wiki-guide.jpg",
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/misbegotten_alt_enemies_elden_ring_wiki_600px.jpg",
       },
       vendor: null,
-      placement: null,
-      legendary: false,
-      dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/misbegotten_shortbow_light_bow_weapon_elden_ring_wiki_guide_200px.png",
+      placementDescription: null,
     },
     {
       type: "rangedWeapons",
       subcategory: "lightBows",
       name: "Harp Bow",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Harp+Bow",
-      dropFrom: null,
       description:
         "Bow fashioned from a minstrel's harp . Sonorous tones still resound when firing arrows.Troubadours sing tales of champions, both in the honorable service of the Erdtree, and the one who spurns honor for blasphemy.",
-      vendor: null,
-      placement: {
-        description: "Champion’s Song Painting puzzle in The Shaded Castle.",
-        link: "https://eldenring.wiki.fextralife.com/The+Shaded+Castle",
-        imgUrl:
-          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/the-shaded-castle-elden-ring-wiki-guide.jpg",
-      },
+      link: "https://eldenring.wiki.fextralife.com/Harp+Bow",
+      collected: false,
       legendary: false,
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/harp_bow_light_bow_weapon_elden_ring_wiki_guide_200px.png",
+      dropFrom: null,
+      vendor: null,
+      placementDescription:
+        "Champion’s Song Painting puzzle in The Shaded Castle.",
     },
     {
       type: "rangedWeapons",
       subcategory: "lightBows",
       name: "Bone Bow",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Bone+Bow",
       description:
         "A crude shortbow fashioned from sickly bone. A medium for spirit-calling, and a product of the ancient hexing arts of the tower.",
-      dropFrom: null,
-      vendor: null,
-      placement: {
-        description:
-          "Found in Belurat Tower Settlement, on a corpse in a dead-end room.",
-        link: "https://eldenring.wiki.fextralife.com/Belurat+Tower+Settlement",
-        imgUrl:
-          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/belurat-tower-settlement-elden-ring-wiki-guide.jpg",
-      },
+      link: "https://eldenring.wiki.fextralife.com/Bone+Bow",
+      collected: false,
       legendary: false,
       dlc: true,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bone_bow_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+      dropFrom: null,
+      vendor: null,
+      placementDescription:
+        "Found in Belurat Tower Settlement, on a corpse in a dead-end room.",
     },
   ],
   bows: [
