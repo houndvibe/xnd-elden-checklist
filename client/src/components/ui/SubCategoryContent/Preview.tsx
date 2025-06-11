@@ -58,7 +58,10 @@ export default function Preview({ img, dataSource }: PreviewProps) {
       style={{ textAlign: "right" }}
     >
       <div>Drop chance:</div>
-      <Popover placement={"left"} content={<Image src={droppedBy?.imgUrl} />}>
+      <Popover
+        placement={"left"}
+        content={<Image src={droppedBy?.imgUrl} style={{ maxHeight: 400 }} />}
+      >
         <Link href={droppedBy?.link} target="_blank" rel="noopener noreferrer">
           <span className={styles.linkEnemy}>{droppedBy?.name}</span>
         </Link>
@@ -79,7 +82,9 @@ export default function Preview({ img, dataSource }: PreviewProps) {
     vendor && (
       <div className={spoilers ? "block-spoiler" : ""}>
         <span className={styles.subtitle}>Vendor: </span>
-        <Popover content={<Image src={vendor.imgUrl} />}>
+        <Popover
+          content={<Image src={vendor.imgUrl} style={{ maxHeight: 400 }} />}
+        >
           <Link href={vendor.link} target="_blank" rel="noopener noreferrer">
             <span
               className={`${styles.linkVendor} spoilers ? "text-spoiler" : ""`}
