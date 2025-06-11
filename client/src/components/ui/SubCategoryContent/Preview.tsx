@@ -58,7 +58,7 @@ export default function Preview({ img, dataSource }: PreviewProps) {
       style={{ textAlign: "right" }}
     >
       <div>Drop chance:</div>
-      <Popover content={<Image src={dropFrom?.imgUrl} />}>
+      <Popover placement={"left"} content={<Image src={dropFrom?.imgUrl} />}>
         <Link href={dropFrom?.link}>
           <span className={styles.linkEnemy}>{dropFrom?.name}</span>
         </Link>

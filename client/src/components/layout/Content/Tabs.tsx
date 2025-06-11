@@ -8,6 +8,7 @@ import Dashboard from "../../dashboard/Dashboard";
 import CategoryTab from "../../ui/CatrgoryTab/CategoryTab";
 import DiscoveryCalculator from "../../discovery-calculator/DiscoveryCalculator";
 import SettingsPannel from "./SettingsPannel";
+import { useAppSelector } from "../../../store/typedDispatch";
 
 type ExtendedTabKey = ItemCategory | "dashboard" | "discoveryCalculator";
 
@@ -36,6 +37,7 @@ const tabs: CustomTabItem[] = [
 ];
 
 export default function Tabs() {
+  const { showSettings } = useAppSelector((state) => state.settings);
   const navigate = useNavigate();
   const { tabKey } = useParams<{ tabKey?: string }>();
 
@@ -56,7 +58,8 @@ export default function Tabs() {
         },
       }}
     >
-      <SettingsPannel />
+      {showSettings ? <SettingsPannel /> : null}
+
       <AntdTabs
         items={tabs}
         activeKey={activeKey}
