@@ -44,12 +44,12 @@ export default function Preview({ img, dataSource }: PreviewProps) {
   const {
     name = "Unknown Item",
     description = "",
-    dropFrom,
+    droppedBy,
     vendor,
     placement,
   } = currentItem || {};
 
-  const dropRate = dropFrom?.dropRatte ?? 100;
+  const dropRate = droppedBy?.dropRatte ?? 100;
   const calculatedDropRate = calculateItemDropChance(dropRate, storedDiscovery);
 
   const renderDropInfo = () => (
@@ -58,9 +58,9 @@ export default function Preview({ img, dataSource }: PreviewProps) {
       style={{ textAlign: "right" }}
     >
       <div>Drop chance:</div>
-      <Popover placement={"left"} content={<Image src={dropFrom?.imgUrl} />}>
-        <Link href={dropFrom?.link}>
-          <span className={styles.linkEnemy}>{dropFrom?.name}</span>
+      <Popover placement={"left"} content={<Image src={droppedBy?.imgUrl} />}>
+        <Link href={droppedBy?.link}>
+          <span className={styles.linkEnemy}>{droppedBy?.name}</span>
         </Link>
       </Popover>
       <div>{`Base: ${dropRate}%`}</div>
@@ -116,7 +116,7 @@ export default function Preview({ img, dataSource }: PreviewProps) {
 
   return (
     <Flex className={styles.preview} vertical align="center" gap={30}>
-      {img.url && dropFrom && renderDropInfo()}
+      {img.url && droppedBy && renderDropInfo()}
       {img.url ? renderMainContent() : <div className={styles.placeholder} />}
     </Flex>
   );

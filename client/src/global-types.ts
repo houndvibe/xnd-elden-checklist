@@ -220,7 +220,7 @@ export interface RangedWeaponItem {
   legendary: boolean;
   dlc: boolean;
   imgUrl?: string;
-  dropFrom: {
+  droppedBy: {
     name: string;
     dropRatte: number;
     link: string;

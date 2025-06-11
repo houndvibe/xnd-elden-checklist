@@ -14,7 +14,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/shortbow_lightbow_weapon_elden_ring_wiki_guide_200px.png",
-      dropFrom: {
+      droppedBy: {
         name: "Marionette Soldier",
         dropRatte: 2,
         link: "https://eldenring.wiki.fextralife.com/Marionette+Soldier",
@@ -41,7 +41,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/composite_bow_light_bow_weapon_elden_ring_wiki_guide_200px.png",
-      dropFrom: null,
+      droppedBy: null,
       vendor: {
         name: "Nomadic Merchant (Liurnia of the Lakes)",
         link: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant+Liurnia+of+the+Lakes",
@@ -62,7 +62,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/red_branch_shortbow_elden_ring_wiki_guide_200px.png",
-      dropFrom: {
+      droppedBy: {
         name: "Page",
         dropRatte: 4,
         link: "https://eldenring.wiki.fextralife.com/Page",
@@ -84,7 +84,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/misbegotten_shortbow_light_bow_weapon_elden_ring_wiki_guide_200px.png",
-      dropFrom: {
+      droppedBy: {
         name: "Winged Misbegotten",
         dropRatte: 2,
         link: "https://eldenring.wiki.fextralife.com/Misbegotten",
@@ -106,7 +106,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/harp_bow_light_bow_weapon_elden_ring_wiki_guide_200px.png",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placementDescription:
         "Champion’s Song Painting puzzle in The Shaded Castle.",
@@ -123,7 +123,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       dlc: true,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bone_bow_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placementDescription:
         "Found in Belurat Tower Settlement, on a corpse in a dead-end room.",
@@ -136,7 +136,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Longbow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Longbow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: {
         name: "Twin Husks (Roundtable Hold)",
         link: "https://eldenring.wiki.fextralife.com/Twin+Husks",
@@ -152,7 +152,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Albinauric Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Albinauric+Bow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placement: {
         description: "Found in caves in Moonlight Altar area.",
@@ -168,7 +168,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Black Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Black+Bow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placement: {
         description:
@@ -185,7 +185,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Pulley Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Pulley+Bow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placement: {
         description: "Chest in Fringefolk Hero’s Grave.",
@@ -201,7 +201,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Horn Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Horn+Bow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placement: {
         description: "Reward from quest at Astel Church of Consciousness.",
@@ -217,7 +217,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Serpent Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Serpent+Bow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placement: {
         description: "Found near pool of rot inside Abandoned Cave (Caelid).",
@@ -233,7 +233,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Erdtree Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Erdtree+Bow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placement: {
         description: "Chest in Erdtree Sanctuary building, Leyndell.",
@@ -249,7 +249,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Composite Bow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Composite+Bow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: {
         name: "Nomadic Merchant (Liurnia)",
         link: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant+Liurnia+of+the+Lakes",
@@ -267,7 +267,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Dragon Slayer Greatbow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Dragonslayer+Greatbow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placement: {
         description:
@@ -285,7 +285,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Lion Greatbow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Lion+Greatbow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placement: {
         description:
@@ -303,7 +303,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Greatbow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Greatbow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placement: {
         description:
@@ -321,7 +321,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Black Greatbow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Black+Greatbow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placement: {
         description:
@@ -339,7 +339,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Ruined Greatbow",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ruined+Greatbow",
-      dropFrom: null,
+      droppedBy: null,
       vendor: null,
       placement: {
         description: "Found in a chest in the ruins of Castle Morne in Caelid.",
