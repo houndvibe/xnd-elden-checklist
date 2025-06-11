@@ -237,7 +237,7 @@ export const shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap = {
       legendary: false,
       dlc: false,
       imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/red_thorn_roundshield_small_shield_weapon_elden_ring_wiki_guide_200px.png",
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/red_thorn_roundshield_elden_ring_wiki_guide_200px.png",
       droppedBy: null,
       vendor: {
         name: "Nomadic Merchant (Castle Morne Rampart)",
