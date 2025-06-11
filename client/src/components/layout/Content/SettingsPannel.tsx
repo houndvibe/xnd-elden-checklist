@@ -1,6 +1,8 @@
 import { Divider, Flex, Switch } from "antd";
 import { setSpoilers } from "../../../store/settingsSlice";
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
+import { APP_PALETTE } from "../../../lib/consts";
+import { NavLink } from "react-router-dom";
 
 export default function SettingsPannel() {
   const dispatch = useAppDispatch();
@@ -13,8 +15,14 @@ export default function SettingsPannel() {
     <>
       <Flex gap={10}>
         <Flex gap={10}>
-          <div>{"discovery:"}</div>
-          <div>{storedDiscovery}</div>
+          <NavLink to={"/discoveryCalculator"}>
+            <Flex gap={10}>
+              {"discovery:"}
+              <span style={{ color: APP_PALETTE.textPrimary }}>
+                {storedDiscovery}
+              </span>
+            </Flex>
+          </NavLink>
         </Flex>
         {"| "}
         <Flex gap={10}>
