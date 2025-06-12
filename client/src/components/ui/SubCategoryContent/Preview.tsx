@@ -1,9 +1,9 @@
-import { Flex, Image, Popover, Spin } from "antd";
+import { Flex, Image, /* Popover,  */ Spin } from "antd";
 import styles from "./SubCategoryContent.module.scss";
 import { Item } from "../../../global-types";
-import Link from "antd/es/typography/Link";
+/* import Link from "antd/es/typography/Link";
 import { calculateItemDropChance, truncateText } from "../../../lib/utils/misc";
-import { useAppSelector } from "../../../store/typedDispatch";
+import { useAppSelector } from "../../../store/typedDispatch"; */
 
 interface PreviewProps {
   img: {
@@ -14,11 +14,11 @@ interface PreviewProps {
 }
 
 export default function Preview({ img, dataSource }: PreviewProps) {
-  const storedDiscovery = useAppSelector(
+  /*   const storedDiscovery = useAppSelector(
     (state) => state.discovery.calculatedDiscovery
   );
   const { spoilers } = useAppSelector((state) => state.settings);
-
+ */
   const findItemByName = (name: string): Item | undefined => {
     const directMatch = dataSource.find((item) => item.name === name);
     if (directMatch) return directMatch;
@@ -110,10 +110,10 @@ export default function Preview({ img, dataSource }: PreviewProps) {
 
   const renderMainContent = () => (
     <>
-      <Flex vertical align="center" gap={15}>
+      <Flex vertical align="center" gap={0}>
         <span className={styles.title}>{name}</span>
         <Image
-          height={400}
+          height={700}
           src={img.url!}
           alt="no image"
           preview={false}
