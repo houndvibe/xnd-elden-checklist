@@ -43,16 +43,17 @@ export default function Preview({ img, dataSource }: PreviewProps) {
   const currentItem = findItemByName(img.name);
   const {
     name = "Unknown Item",
-    description = "",
+
+    /*  description = "",
     droppedBy,
     vendor,
-    placementDescription,
+    placementDescription, */
   } = currentItem || {};
 
-  const dropRate = droppedBy?.dropRate ?? 100;
-  const calculatedDropRate = calculateItemDropChance(dropRate, storedDiscovery);
+  /*  const dropRate = droppedBy?.dropRate ?? 100;
+  const calculatedDropRate = calculateItemDropChance(dropRate, storedDiscovery); */
 
-  const renderDropInfo = () => (
+  /*   const renderDropInfo = () => (
     <div
       className={`${styles.dropInfo} ${spoilers ? "block-spoiler" : ""}`}
       style={{ textAlign: "right" }}
@@ -72,7 +73,7 @@ export default function Preview({ img, dataSource }: PreviewProps) {
       <div>{`My setup: ${calculatedDropRate}%`}</div>
     </div>
   );
-
+  
   const renderDescriptionBlock = () =>
     description && (
       <div>
@@ -105,7 +106,7 @@ export default function Preview({ img, dataSource }: PreviewProps) {
         <span className={styles.subtitle}>Placement: </span>
         <span className={styles.text}>{placementDescription}</span>
       </div>
-    );
+    ); */
 
   const renderMainContent = () => (
     <>
@@ -133,17 +134,17 @@ export default function Preview({ img, dataSource }: PreviewProps) {
         />
       </Flex>
 
-      <Flex vertical gap={30}>
+      {/*  <Flex vertical gap={30}>
         {renderDescriptionBlock()}
         {renderVendorBlock()}
         {renderPlacementBlock()}
-      </Flex>
+      </Flex> */}
     </>
   );
 
   return (
     <Flex className={styles.preview} vertical align="center" gap={30}>
-      {img.url && droppedBy && renderDropInfo()}
+      {/*   {img.url && droppedBy && renderDropInfo()} */}
       {img.url ? renderMainContent() : <div className={styles.placeholder} />}
     </Flex>
   );
