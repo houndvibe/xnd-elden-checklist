@@ -398,8 +398,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       collected: false,
       legendary: false,
       dlc: true,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/repeating_crossbow_crossbow_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+      imgUrl: "./images/crossbows/Repeating Crossbow.png",
       droppedBy: null,
       vendor: null,
       placementDescription:
@@ -415,8 +414,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       collected: false,
       legendary: false,
       dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/spread_crossbow_crossbow_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+      imgUrl: `./images/crossbows/Spread Crossbow.png`,
       droppedBy: null,
       vendor: null,
       placementDescription:

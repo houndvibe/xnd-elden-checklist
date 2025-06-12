@@ -113,10 +113,10 @@ export default function Preview({ img, dataSource }: PreviewProps) {
       <Flex vertical align="center" gap={0}>
         <span className={styles.title}>{name}</span>
         <Image
-          height={700}
+          height={600}
           src={img.url!}
           alt="no image"
-          preview={false}
+          /*   preview={false} */
           placeholder={
             <div
               className={styles.spin}
