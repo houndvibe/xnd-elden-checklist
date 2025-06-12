@@ -432,9 +432,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       collected: false,
       legendary: false,
       dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/soldiers_crossbow_weapon_elden_ring_wiki_guide_200px.png",
-      /*       imgUrl: "../assets/crossbows/SoldiersCrossbow.png", */
+      imgUrl: "./images/crossbows/SoldiersCrossbow.png",
       droppedBy: {
         name: "Foot Soldier (Crossbow)",
         dropRate: 4,
@@ -455,8 +453,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       collected: false,
       legendary: false,
       dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/light_crossbow_weapon_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/crossbows/Light Crossbow.png",
       droppedBy: null,
       vendor: {
         name: "Nomadic Merchant (Castle Morne Rampart)",
@@ -477,8 +474,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       collected: false,
       legendary: false,
       dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/heavy_crossbow_weapon_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/crossbows/Heavy Crossbow.png",
       droppedBy: {
         name: "Godrick Soldier (crossbow)",
         dropRate: 3,
@@ -499,8 +495,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       collected: false,
       legendary: false,
       dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/arbalest_weapon_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/crossbows/Arbalest.png",
       droppedBy: null,
       vendor: null,
       placementDescription:
@@ -516,8 +511,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       collected: false,
       legendary: false,
       dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crepuss_black-key_crossbow_weapon_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/crossbows/Crepus's Black-Key Crossbow.png",
       droppedBy: null,
       vendor: null,
       placementDescription:
@@ -533,8 +527,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       collected: false,
       legendary: false,
       dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/pulley_crossbow_weapon_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/crossbows/Pulley Crossbow.png",
       droppedBy: null,
       vendor: null,
       placementDescription:
@@ -550,8 +543,7 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       collected: false,
       legendary: false,
       dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/full_moon_crossbow_weapon_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/crossbows/Full Moon Crossbow.png",
       droppedBy: null,
       vendor: null,
       placementDescription:
