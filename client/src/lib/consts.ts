@@ -5,19 +5,21 @@ export const BASE_DISCOVERY = 100;
 
 // Теперь создаём массив:
 export const itemCategories: ItemCategory[] = [
-  "meleWeapons",
-  "rangedWeapons",
-  "armour",
   "shieldsAndTorches",
-  "talismans",
+  "rangedWeapons",
   "sorceries",
-  "incantations",
   "spiritAshes",
+
+  "incantations",
   "ashesOfWar",
+  "talismans",
+
   "craft",
   "tearsAndUpgrades",
   "toolsAndBellBearings",
   "consumablesAndAmmo",
+  "meleWeapons",
+  "armour",
   "gestures",
   "infoItems",
   "keyItems",

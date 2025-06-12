@@ -316,6 +316,7 @@ export interface TearsOrUpgradesCategoryMap {
 
 export interface CraftItem {
   type: Extract<ItemCategory, "craft">;
+  subcategory: keyof CraftItemsCategoryMap
   name: string;
   collected: boolean;
   link: string;

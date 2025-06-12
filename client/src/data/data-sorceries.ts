@@ -153,6 +153,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Terra+Magica",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/terra_magicus_sorcery_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -259,6 +261,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Rennala's+Full+Moon",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rennalas_full_moon_sorcery-icon_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -275,6 +279,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Rellana's+Twin+Moons",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rellanas_twin_moons_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -463,6 +469,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Shattering+Crystal",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/shatterlng_crystal_sorcery_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -505,6 +513,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Gravitational+Missile",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/gravitational_missile_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -521,6 +531,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Blades+of+Stone",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/blades_of_stone_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -545,6 +557,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Glintstone+Nail",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_nail_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -553,6 +567,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Glintstone+Nails",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_nails_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -561,6 +577,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Fleeting+Microcosm",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fleeting_microcosm_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -569,6 +587,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Cherishing+Fingers",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cherishing_fingers_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -577,6 +597,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Oracle+Bubbles",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/magic_bubble_sorcery_elden_ring_wiki_guide_200px-icon.png",
     },
     {
       type: "sorceries",
@@ -609,6 +631,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Mantle+of+Thorns",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mantle_of_thorns_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -617,6 +641,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Impenetrable+Thorns",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/impenetrable_thorns_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
   ],
   servantsOfDeath: [
@@ -635,6 +661,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Ancient+Death+Rancor",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_death_of_rancor_sorcery_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -643,6 +671,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Mass+of+Putrescence",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mass_of_putrescence.png",
     },
     {
       type: "sorceries",
@@ -659,6 +689,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Rings+of+Spectral+Light",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rings_of_spectral_light_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "sorceries",
@@ -683,6 +715,8 @@ export const sorceriesData: SorceriesSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Vortex+of+Putrescence",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/vortex_of_putrescence_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide.png",
     },
   ],
 };

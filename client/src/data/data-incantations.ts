@@ -41,6 +41,8 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Cure+Poison",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cure_poison_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "incantations",
@@ -49,6 +51,8 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Lord's+Aid",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lord's_aid_incantation_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "incantations",
@@ -155,6 +159,8 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Protection+of+the+Erdtree",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/protection_of_the%20erdtree_incantation_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "incantations",
@@ -163,14 +169,18 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Wrath+of+Gold",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/wrath%20of%20gold_incantation_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "incantations",
-      name: "Wrath from Far",
+      name: "Wrath from Afar",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Wrath+from+Far",
+      link: "https://eldenring.wiki.fextralife.com/Wrath+from+Afar",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/wrath_from_afar_incantation_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "incantations",
@@ -219,6 +229,8 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Breath",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/aspect_of_the_crucible_breath_incantation_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "incantations",
@@ -227,6 +239,8 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Horns",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/aspect_crucible_horns.png",
     },
     {
       type: "incantations",
@@ -399,22 +413,28 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Honed+Bolt",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/honed%20bolt_incantation_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "incantations",
       name: "Ancient Dragon's Lightning Spear",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon's+Lightning+Spear",
+      link: "https://eldenring.wiki.fextralife.com/Ancient+Dragons'+Lightning+Spear",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragons_%20lightning_spear_incantation_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "incantations",
       name: "Ancient Dragon's Lightning Strike",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon's+Lightning+Strike",
+      link: "https://eldenring.wiki.fextralife.com/Ancient+Dragons'+Lightning+Strike",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragons_%20lightning_strike_incantation_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "incantations",
@@ -497,6 +517,8 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Golden+Arcs",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/golden_arcs_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "incantations",
@@ -505,6 +527,8 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Giant+Golden+Arc",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/giant_golden_arc_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "incantations",
@@ -513,6 +537,8 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Spira",
       legendary: false,
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/spira_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "incantations",
@@ -563,6 +589,8 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Flame+Sling",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/feast_upon_flame_incantation_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "incantations",
@@ -587,6 +615,8 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Flame+of+the+Fell+God",
       legendary: true,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/flame_of_the_fell%20_god_incantation_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "incantations",
@@ -643,6 +673,8 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Fire's+Deadly+Sin",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fires_%20deadly_sin_incantation_elden_ring_wiki_guide_200px.png",
     },
   ],
   messmer: [
@@ -735,6 +767,8 @@ export const incantationsData: IncantationsSubCategoryMap = {
       link: "https://eldenring.wiki.fextralife.com/Gurranq's+Beast+Claw",
       legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/gurrangs_beast_claw_incantation_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "incantations",

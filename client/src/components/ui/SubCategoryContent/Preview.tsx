@@ -73,12 +73,13 @@ export default function Preview({ img, dataSource }: PreviewProps) {
     </div>
   );
 
-  const renderDescriptionBlock = () => (
-    <div>
-      <span className={styles.subtitle}>Description: </span>
-      <span className={styles.text}>{description}</span>
-    </div>
-  );
+  const renderDescriptionBlock = () =>
+    description && (
+      <div>
+        <span className={styles.subtitle}>Description: </span>
+        <span className={styles.text}>{description}</span>
+      </div>
+    );
 
   const renderVendorBlock = () =>
     vendor && (
@@ -123,6 +124,7 @@ export default function Preview({ img, dataSource }: PreviewProps) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                color: "red",
               }}
             >
               <Spin size="large" />

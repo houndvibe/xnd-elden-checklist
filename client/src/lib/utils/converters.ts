@@ -33,7 +33,11 @@ export function getNameToImgUrlConverter(record: Item) {
       return convertTearOrUpgradeNameToWikiImageUrl(record.name, record.dlc);
 
     case "craft":
-      return convertCraftItemNameToWikiImageUrl(record.name, record.dlc);
+      return convertCraftItemNameToWikiImageUrl(
+        record.name,
+        record.dlc,
+        record.subcategory
+      );
 
     case "armour":
       return convertArmourItemNameToWikiImageUrl(record.name, record.dlc);
@@ -62,14 +66,12 @@ export function getNameToImgUrlConverter(record: Item) {
   }
 }
 
-
-
+const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
 
 export function convertShieldNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -85,7 +87,6 @@ export function convertSpiritNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -103,7 +104,6 @@ export function convertTalismanNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -125,7 +125,6 @@ export function convertAshOfWarNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -141,7 +140,6 @@ export function convertSorceryNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -157,7 +155,6 @@ export function convertIncantationNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -173,7 +170,6 @@ export function convertGestureNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -190,7 +186,6 @@ export function convertMeleWeaponNameToWikiImageUrl(
   isDlc: boolean,
   weaponSubcategory: string
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -206,7 +201,6 @@ export function convertRangedWeaponNameToWikiImageUrl(
   isDlc: boolean,
   weaponSubcategory: string
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -222,7 +216,6 @@ export function convertInfoItemNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -239,7 +232,6 @@ export function convertToolOrBellNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -256,7 +248,6 @@ export function convertTearOrUpgradeNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -271,26 +262,39 @@ export function convertTearOrUpgradeNameToWikiImageUrl(
 
 export function convertCraftItemNameToWikiImageUrl(
   itemName: string,
-  isDlc: boolean
+  isDlc: boolean,
+  subcategory: string
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
-  const formattedName = itemName
-    .trim()
-    .toLowerCase()
-    .replace(/^note:\s*/i, "") // Remove "Note:" prefix if present
-    .replace(/[^a-z0-9 ]/g, "") // Remove all non-alphanumeric characters except space
-    .replace(/\s+/g, "_"); // Replace spaces with underscores
+  if (subcategory === "instriments") {
+    const formatted = itemName
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9 ]/g, "")
+      .replace(/\s+/g, "_");
+    return `${baseUrl}${formatted}elden_ring_wiki_guide_200px.png`;
+  }
 
-  return `${baseUrl}craft_${formattedName}-${
-    isDlc ? "shadow_of_the_erdtree_dlc_" : ""
-  }elden-ring-wiki-guide-200px.png`;
+  if (subcategory === "cookbooks") {
+    const formatted = itemName
+      .trim()
+      .toLowerCase()
+      .replace(/\[.*?\]/g, "")
+      .replace(/[^a-z0-9 ]/g, "")
+      .replace(/\s+/g, "_");
+
+    return `${baseUrl}${formatted}elden_ring_wiki_guide_200px.png`;
+  }
+
+  const formattedName = itemName.trim().toLowerCase().replace(/\s+/g, "_");
+  return isDlc
+    ? `${baseUrl}${formattedName}_crafting_material_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png`
+    : `${baseUrl}${formattedName}_elden_ring_wiki_guide_200px.png`;
 }
 
 export function convertArmourItemNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()
@@ -307,7 +311,6 @@ export function convertConsumableOrMultiplayerItemNameToWikiImageUrl(
   itemName: string,
   isDlc: boolean
 ) {
-  const baseUrl = "https://eldenring.wiki.fextralife.com/file/Elden-Ring/";
   const formattedName = itemName
     .trim()
     .toLowerCase()

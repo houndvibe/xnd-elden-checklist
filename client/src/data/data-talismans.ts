@@ -943,7 +943,7 @@ export const talismansData: TalismansSubCategoryMap = {
       type: "talismans",
       name: "Godskin Swadlling Cloth",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Godskin+Swadlling+Cloth",
+      link: "https://eldenring.wiki.fextralife.com/Godskin+Swaddling+Cloth",
       dlc: false,
       legendary: false,
       versions: [{ tier: 0, collected: false }],
