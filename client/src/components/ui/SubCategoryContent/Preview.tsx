@@ -1,4 +1,4 @@
-import { Flex, Image, Popover } from "antd";
+import { Flex, Image, Popover, Spin } from "antd";
 import styles from "./SubCategoryContent.module.scss";
 import { Item } from "../../../global-types";
 import Link from "antd/es/typography/Link";
@@ -110,7 +110,25 @@ export default function Preview({ img, dataSource }: PreviewProps) {
     <>
       <Flex vertical align="center" gap={15}>
         <span className={styles.title}>{name}</span>
-        <Image height={400} src={img.url!} preview={false} alt="no image" />
+        <Image
+          height={400}
+          src={img.url!}
+          alt="no image"
+          preview={false}
+          placeholder={
+            <div
+              className={styles.spin}
+              style={{
+                height: 400,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Spin size="large" />
+            </div>
+          }
+        />
       </Flex>
 
       <Flex vertical gap={30}>
