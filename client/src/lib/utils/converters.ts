@@ -33,7 +33,11 @@ export function getNameToImgUrlConverter(record: Item) {
       return convertInfoItemNameToWikiImageUrl(record.name, record.dlc);
 
     case "toolsAndBellBearings":
-      return convertToolOrBellNameToWikiImageUrl(record.name, record.dlc);
+      return convertToolOrBellNameToWikiImageUrl(
+        record.name,
+        record.dlc,
+        record.subcategory
+      );
 
     case "tearsAndUpgrades":
       return convertTearOrUpgradeNameToWikiImageUrl(
@@ -234,7 +238,8 @@ export function convertInfoItemNameToWikiImageUrl(
 
 export function convertToolOrBellNameToWikiImageUrl(
   itemName: string,
-  isDlc: boolean
+  isDlc: boolean,
+  subcategory: string
 ) {
   const formattedName = itemName
     .trim()
@@ -243,9 +248,13 @@ export function convertToolOrBellNameToWikiImageUrl(
     .replace(/[^a-z0-9 ]/g, "") // Remove all non-alphanumeric characters except space
     .replace(/\s+/g, "_"); // Replace spaces with underscores
 
-  return `${baseUrl}tool-or-bell_${formattedName}-${
-    isDlc ? "shadow_of_the_erdtree_dlc_" : ""
-  }elden-ring-wiki-guide-200px.png`;
+  if (subcategory === "tools") {
+    if (isDlc) {
+      return `${baseUrl}${formattedName}_tool_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png`;
+    }
+    return `${baseUrl}${formattedName}_elden_ring_wiki_guide_200px.png`;
+  }
+  return "";
 }
 
 export function convertTearOrUpgradeNameToWikiImageUrl(
@@ -257,7 +266,7 @@ export function convertTearOrUpgradeNameToWikiImageUrl(
     .trim()
     .toLowerCase()
     .replace(/^note:\s*/i, "") // Remove "Note:" prefix if present
-    .replace(/[^a-z0-9 \-]/g, "") // Allow hyphens for DLC naming
+    .replace(/[^a-z0-9 -]/g, "") // Allow hyphens for DLC naming
     .replace(/\s+/g, "_"); // Replace spaces with underscores
 
   if (subcategory === "crystalTears") {

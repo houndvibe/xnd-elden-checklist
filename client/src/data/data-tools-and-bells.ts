@@ -4,6 +4,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
   tools: [
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Wraith Calling Bell",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Wraith+Calling+Bell",
@@ -11,6 +12,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Ancestral Infant's Head",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ancestral+Infant's+Head",
@@ -18,6 +20,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Omen Bairn",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Omen+Bairn",
@@ -25,6 +28,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Regal Omen Bairn",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Regal+Omen+Bairn",
@@ -32,6 +36,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Horned Bairn",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Horned+Bairn",
@@ -39,13 +44,17 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Perfumed Oil of Ranah",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Perfumed+Oil+of+Ranah",
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumed_oil_of_ranah_tool_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Bondstone",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Bondstone",
@@ -53,6 +62,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Mimic's Veil",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Mimic's+Veil",
@@ -60,6 +70,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Margit's Shackle",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Margit's+Shackle",
@@ -67,6 +78,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Mohg's Shackle",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Mohg's+Shackle",
@@ -74,6 +86,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Blasphemous Claw",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Blasphemous+Claw",
@@ -81,6 +94,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Lantern",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Lantern",
@@ -88,6 +102,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Telescope",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Telescope",
@@ -95,6 +110,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: 'Prattling Pate "Hello"',
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Hello%22",
@@ -102,6 +118,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: 'Prattling Pate "Thank You"',
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Thank+You%22",
@@ -109,6 +126,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: 'Prattling Pate "Apologies"',
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Apologies%22",
@@ -116,6 +134,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: 'Prattling Pate "Wonderful"',
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Wonderful%22",
@@ -123,6 +142,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: 'Prattling Pate "Please Help"',
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Please+Help%22",
@@ -130,6 +150,7 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: 'Prattling Pate "My Beloved"',
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22My+Beloved%22",
@@ -137,20 +158,27 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: 'Prattling Pate "Let\'s Get To It"',
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Let's+Get+To+It%22",
+      link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+Let's+get+to+it",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/prattling_pate_let's_get_to_it_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: 'Prattling Pate "You\'re Beautiful"',
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22You're+Beautiful%22",
+      link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+You're+Beautiful",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/prattling_pate_you're_beautiful_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: 'Prattling Pate "Lamentation"',
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Lamentation%22",
@@ -158,138 +186,374 @@ export const toolsAndBellBearingsData: ToolsOrBellBearingsCategoryMap = {
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Rock Heart",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Rock+Heart",
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rock_heart_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Priestess Heart",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Priestess+Heart",
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/priestess_heart_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Lamenter's Mask",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Lamenter's+Mask",
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lamenters_mask_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "toolsAndBellBearings",
+      subcategory: "tools",
       name: "Spirit Calling Bell",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Spirit+Calling+Bell",
       dlc: false,
     },
   ],
+
   bellBearings: [
     {
       type: "toolsAndBellBearings",
-      name: "Bone Peddler's",
+      subcategory: "bellBearings",
+      name: "Kalé's Bell Bearing",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Bone+Peddler's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Kal%C3%A9%27s%2BBell%2BBearing",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Meat Peddler's",
+      subcategory: "bellBearings",
+      name: "Smithing-Stone Miner's Bell Bearing [1]",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Meat+Peddler's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Smithing-Stone%2BMiner%27s%2BB,ell%2BBearing%2B%5B1%5D",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Medicine Peddler's",
+      subcategory: "bellBearings",
+      name: "Somberstone Miner's Bell Bearing [1]",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Medicine+Peddler's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Somberstone%2BMiner%27s%2BBell,%2BBearing%2B%5B1%5D",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Gravity Stone Peddler's",
+      subcategory: "bellBearings",
+      name: "Glovewort Picker's Bell Bearing [1]",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Gravity+Stone+Peddler's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B1%5D",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Smithing-Stone Miner's",
+      subcategory: "bellBearings",
+      name: "Ghost-Glovewort Picker's Bell Bearing [1]",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Smithing-Stone+Miner's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Ghost-Glovewort%2BPicker%27s%2,BBell%2BBearing%2B%5B1%5D",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Somberstone Miner's",
+      subcategory: "bellBearings",
+      name: "Bone Peddler's Bell Bearing",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Somberstone+Miner's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Bone%2BPeddler%27s%2BBell%2BBearing",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Glovewort Picker's",
+      subcategory: "bellBearings",
+      name: "Meat Peddler's Bell Bearing",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Glovewort+Picker's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Meat%2BPeddler%27s%2BBell%2BBearing",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Ghost-Glovewort Picker's",
+      subcategory: "bellBearings",
+      name: "Medicine Peddler's Bell Bearing",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Ghost-Glovewort+Picker's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Medicine%2BPeddler%27s%2BBell%2BBearing",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Herbalist's",
+      subcategory: "bellBearings",
+      name: "Gravity Stone Peddler's Bell Bearing",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Herbalist's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Gravity%2BStone%2BPeddler%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Sellen's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Sellen%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/specialized_bell_bearing_(sorceries).png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Seluvis's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Seluvis%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/seluviss_bell_bearing_elden_ring_wiki_guide_200px.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Thops's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Thops%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/thopss_bell_bearing_elden_ring_wiki_guide_200px.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Corhyn's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Corhyn%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/specialized_bell_bearing_1.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Miriel's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Miriel%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/specialized_bell_bearing_1.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "D's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/D%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/specialized_bell_bearing_1.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Gowry's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Gowry%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/specialized_bell_bearing_(sorceries).png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Rogier's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Rogier%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rogiers-bell-bearing-key-items-elden-ring-wiki-guide-200.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Bernahl's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Bernahl%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Iji's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Iji%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ijis_bell_bearings_elden_ring_wiki_guide_200px.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Gostoc's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Gostoc%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Pidia's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Pidia%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Patches' Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Patches%27%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Blackguard's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Blackguard%27s%2BBell%2BBearing",
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Moore's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Moore%27s%2BBell%2BBearing",
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Mushroom-Seller's [1]",
+      subcategory: "bellBearings",
+      name: "Ymir's Bell Bearing",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Mushroom-Seller's+Bearing+%5B1%5D",
+      link: "https://eldenring.wiki.fextralife.com/Ymir%27s%2BBell%2BBearing",
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Mushroom-Seller's [2]",
+      subcategory: "bellBearings",
+      name: "Herbalist's Bell Bearing",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Mushroom-Seller's+Bearing+%5B2%5D",
+      link: "https://eldenring.wiki.fextralife.com/Herbalist%27s%2BBell%2BBearing",
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Greasemonger's",
+      subcategory: "bellBearings",
+      name: "Mushroom-Seller's Bell Bearing (1)",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Greasemonger's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Mushroom-Seller%27s%2BBell%2BBearing%2B%281%29",
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Moldmonger's",
+      subcategory: "bellBearings",
+      name: "Mushroom-Seller's Bell Bearing (2)",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Moldmonger's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Mushroom-Seller%27s%2BBell%2BBearing%2B%282%29",
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "Spellmachinist's",
+      subcategory: "bellBearings",
+      name: "Greasemonger's Bell Bearing",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Spellmachinist's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Greasemonger%27s%2BBell%2BBearing",
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
     {
       type: "toolsAndBellBearings",
-      name: "String-Seller's",
+      subcategory: "bellBearings",
+      name: "Moldmonger's Bell Bearing",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/String-Seller's+Bearing",
+      link: "https://eldenring.wiki.fextralife.com/Moldmonger%27s%2BBell%2BBearing",
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Igon's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Igon%27s%2BBell%2BBearing",
+      dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "Spellmachinist's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/Spellmachinist%27s%2BBell%2BBearing",
+      dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
+    },
+    {
+      type: "toolsAndBellBearings",
+      subcategory: "bellBearings",
+      name: "String-Seller's Bell Bearing",
+      collected: false,
+      link: "https://eldenring.wiki.fextralife.com/String-Seller%27s%2BBell%2BBearing",
+      dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kales_bell_bearing-elden-ring-wiki-guide-200.png",
     },
   ],
 };

@@ -282,6 +282,7 @@ export interface InfoItemsSubCategoryMap {
 
 export interface ToolOrBellBearingItems {
   type: Extract<ItemCategory, "toolsAndBellBearings">;
+  subcategory: keyof ToolsOrBellBearingsCategoryMap;
   name: string;
   collected: boolean;
   link: string;
