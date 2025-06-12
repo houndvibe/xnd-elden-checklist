@@ -517,447 +517,1150 @@ export const shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap = {
   mediumShields: [
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
+      name: "Golden Lion Shield",
+      description:
+        "Medium shield with a stylized lion motif. Scales primarily with Strength and offers balanced protection with moderate weight.",
+      link: "https://eldenring.wiki.fextralife.com/Golden+Lion+Shield",
+      collected: false,
+      legendary: false,
+      dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/golden_lion_shield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Reward from Ansbach's invasion quest in Shadow Keep (DLC). Can be acquired after siding with him or defeating him in the arena.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "mediumShields",
+      name: "Serpent Crest Shield",
+      description:
+        "Medium shield with serpent crest motif. Useful for guarding against poison and scaling with Strength.",
+      link: "https://eldenring.wiki.fextralife.com/Serpent+Crest+Shield",
+      collected: false,
+      legendary: false,
+      dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/serpent_crest_shield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Found during Shadow of the Erdtree DLC questline—interact with the ghost in the DLC map to obtain it.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "mediumShields",
+      name: "Wolf Crest Shield",
+      description:
+        "Medium shield with a wolf under the moon motif. Excels at negating sorceries and can be infused with Ashes of War.",
+      link: "https://eldenring.wiki.fextralife.com/Wolf+Crest+Shield",
+      collected: false,
+      legendary: false,
+      dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/wolf_crest_shield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Found in a chest in Castle Ensis, Realm of Shadow—downstairs from the chapel entrance guarded by Moonrithyll.",
+    },
+
+    {
+      type: "shieldsAndTorches",
+      subcategory: "mediumShields",
+      name: "Messmer Soldier Shield",
+      description:
+        "Large medium shield carried by Messmer’s soldiers. Offers very high physical defense for its class.",
+      link: "https://eldenring.wiki.fextralife.com/Messmer+Soldier+Shield",
+      collected: false,
+      legendary: false,
+      dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_soldier_shield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Messmer's Soldiers",
+        dropRate: 2,
+        link: "https://eldenring.wiki.fextralife.com/Messmer+Soldier",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_soldier_enemies_elden_ring_wiki_300px.jpg",
+      },
+      vendor: null,
+      placementDescription:
+        "Dropped (~2 %) by Messmer's Soldiers near Church of Consolation (Shadow of the Erdtree DLC).",
+    },
+
+    {
+      type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Hawk Crest Wooden Shield",
-      collected: false,
+      description:
+        "Tall wooden medium shield with hawk crest. Light for its type and features Parry skill.",
       link: "https://eldenring.wiki.fextralife.com/Hawk+Crest+Wooden+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/hawk_crest_wooden_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Found in Stormveil Castle in a room behind a Stonesword Key near Grafted Scion.",
     },
+
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Horse Crest Wooden Shield",
-      collected: false,
+      description:
+        "Tall wooden shield with horse head motif. Light and easy to handle, scales with Strength and Dexterity.",
       link: "https://eldenring.wiki.fextralife.com/Horse+Crest+Wooden+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/horse_crest_wooden_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: {
+        name: "Patches",
+        link: "https://eldenring.wiki.fextralife.com/Patches",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/patches-npc-photo-elden-ring-wiki-guide-300px-min.jpg",
+      },
+      placementDescription:
+        "Purchased from Patches in Murkwater Cave (Limgrave) for 1 000 Runes.",
     },
+
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Candletree Wooden Shield",
-      collected: false,
+      description:
+        "Tall wooden shield with candletree motif. Light nuance and lore-rich design.",
       link: "https://eldenring.wiki.fextralife.com/Candletree+Wooden+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/candletree_wooden_shield_medium_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Found in the world; lore tied to burning Erdtree imagery.",
     },
+
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Flame Crest Wooden Shield",
-      collected: false,
+      description:
+        "Wooden medium shield with flame crest symbol. Carries frenzy imagery.",
       link: "https://eldenring.wiki.fextralife.com/Flame+Crest+Wooden+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/flame_crest_wooden_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Found on a corpse at Ailing Village in Weeping Peninsula.",
     },
+
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Marred Wooden Shield",
-      collected: false,
+      description: "Wooden shield marred by thorns—used by Stormveil soldiers.",
       link: "https://eldenring.wiki.fextralife.com/Marred+Wooden+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/marred_wooden_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Used by Stormveil Castle soldiers; location in Stormveil.",
     },
+
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Sun Realm Shield",
-      collected: false,
+      description:
+        "Medium shield featuring a city crowned by the sun. Pure Strength scaling.",
       link: "https://eldenring.wiki.fextralife.com/Sun+Realm+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/sun_realm_shield_medium_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Skeleton Swordsmans",
+        dropRate: 2,
+        link: "https://eldenring.wiki.fextralife.com/Skeletons",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/skeleton_scimitar_1.jpg",
+      },
+      vendor: null,
+      placementDescription:
+        "Dropped (~2 %) by Skeleton Knights in Limgrave (Silver Scarab talisman increases chance).",
     },
+
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Round Shield",
-      collected: false,
+      description:
+        "Basic medium round shield. No skill; reliable all-round protection.",
       link: "https://eldenring.wiki.fextralife.com/Round+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/round_shield_medium_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Commonly found throughout the world; simple and dependable.",
     },
+
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Large Leather Shield",
-      collected: false,
+      description:
+        "Medium leather-covered roundshield. Scales with Strength, includes Parry skill. Reliable and accessible early-game shield.",
       link: "https://eldenring.wiki.fextralife.com/Large+Leather+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/large_leather_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: {
+        name: "Merchant Kale",
+        link: "hhttps://eldenring.wiki.fextralife.com/Merchant+Kale",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/merchant-kale-npc-elden-ring-wiki-guide.jpg",
+      },
+      placementDescription:
+        "Starting equipment for Hero class; buy from Merchant Kale (600 Runes) or Twin Maiden Husks.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Black Leather Shield",
-      collected: false,
+      description:
+        "Round medium shield with polar star design and fur lining. Provides Frostbite resistance.",
       link: "https://eldenring.wiki.fextralife.com/Black+Leather+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_leather_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: {
+        name: "Pidia, Carian Servant",
+        link: "https://eldenring.wiki.fextralife.com/Pidia,+Carian+Servant",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/pidia_carian_servant_elden_ring_wiki_guide_300px.jpg",
+      },
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Marred Leather Shield",
-      collected: false,
+      description:
+        "Leather medium shield used by Stormveil soldiers. Str/ Dex scaling and innate bleed buildup.",
       link: "https://eldenring.wiki.fextralife.com/Marred+Leather+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/marred_leather_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Looted from Stormveil Castle exterior wooden stairs past Cliffside Site of Grace.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Heater Shield",
-      collected: false,
+      description:
+        "Metal medium shield that scales with Strength. Equipped with Parry skill.",
       link: "https://eldenring.wiki.fextralife.com/Heater+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/heater_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: {
+        name: "Twin Maiden Husks",
+        link: "https://eldenring.wiki.fextralife.com/Twin+Maiden+Husks",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/twin_maiden_husks_npcs_elden_ring_wiki_300px.jpg",
+      },
+      placementDescription:
+        "Starting equipment for Vagabond class; also purchased at Roundtable Hold for 1 500 Runes.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Blue Crest Heater Shield",
-      collected: false,
+      description:
+        "Metal medium shield with blue-forest crest. Scales with Strength and grants Parry skill.",
       link: "https://eldenring.wiki.fextralife.com/Blue+Crest+Heater+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue_crest_heater_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: {
+        name: "Nomadic Merchant (Liurnia)",
+        link: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant+Liurnia+of+the+Lakes",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchant_npc_elden_ring_wiki_guide_300px.jpg",
+      },
+      placementDescription:
+        "Starting shield for Confessor class; available from merchant near Bellum Church for 1 500 Runes.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Red Crest Heater Shield",
-      collected: false,
+      description:
+        "Metal medium shield with red-winged crest. Strength scaling and Parry skill.",
       link: "https://eldenring.wiki.fextralife.com/Red+Crest+Heater+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/red_crest_heater_shield_medium_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: {
+        name: "Hermit Merchant (Altus Plateau)",
+        link: "https://eldenring.wiki.fextralife.com/Hermit+Merchant's+Shack",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/eldenring_hermit_merchants_shack.jpg",
+      },
+      placementDescription:
+        "Available for purchase from Nomadic Merchant (Liurnia) for ~2 500 Runes.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Beast Crest Heater Shield",
-      collected: false,
+      description:
+        "Metal medium shield with beast crest. Strength/Dex scaling and equipped with Parry skill.",
       link: "https://eldenring.wiki.fextralife.com/Beast+Crest+Heater+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/beast_crest_heater_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Inside a chest at a camp along the road west of the Saintsbridge site of grace in east Stormhill, protected by Godrick Foot Soldiers, Godrick Soldiers, and a Godrick Knight",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Inverted Hawk Heater Shield",
-      collected: false,
+      description:
+        "Metal medium shield with inverted hawk emblem. Provides Parry skill and balanced stats.",
       link: "https://eldenring.wiki.fextralife.com/Inverted+Hawk+Heater+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/inverted_hawk_heater_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Looted from a corpse on a hill near Siofra River Bank Site of Grace.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Eclipse Crest Heater Shield",
-      collected: false,
+      description:
+        "Medium metal shield featuring eclipse crest. Strength scaling, easy to wield.",
       link: "https://eldenring.wiki.fextralife.com/Eclipse+Crest+Heater+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/eclipse_crest_heater_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Found on a stone platform attached to the cliffside southwest of the Tombsward Catacombs Site of Grace, northwest of the minor Erdtree in Weeping Peninsula.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Kite Shield",
-      collected: false,
+      description:
+        "Standard medium-sized metal shield. Reliable physical protection, scales with Strength, no skill.",
       link: "https://eldenring.wiki.fextralife.com/Kite+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kite_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: {
+        name: "Nomadic Merchant (Liurnia Lake Shore)",
+        link: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant+Liurnia+of+the+Lakes",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchant_npc_elden_ring_wiki_guide_300px.jpg",
+      },
+      placementDescription:
+        "Bow-able from Nomadic Merchant by Liurnia Lake Shore for about 1000 Runes.",
     },
     {
       type: "shieldsAndTorches",
-      name: "Blue-Gold Kite Shield",
-      collected: false,
+      subcategory: "mediumShields",
+      name: "Blue‑Gold Kite Shield",
+      description:
+        "Medium metal shield with Erdtree motif. Strength/Dex scaling, Parry skill, reliable and popular choice.",
       link: "https://eldenring.wiki.fextralife.com/Blue-Gold+Kite+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue-gold_kite_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: {
+        name: "Nomadic Merchant (Limgrave)",
+        link: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant+East+Limgrave",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic-merchant-east-limgrave-npcs-elden-ring-wiki-guide-300px.jpg",
+      },
+      placementDescription:
+        "Purchased early from merchant near Fort Haight for 1000 Runes.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Scorpion Kite Shield",
-      collected: false,
+      description:
+        "Medium metal shield with scorpion motif. Strength/Dex scaling, Parry skill, solid defense.",
       link: "https://eldenring.wiki.fextralife.com/Scorpion+Kite+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/scorpion_kite_shield_medium_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: {
+        name: "Nomadic Merchant (Greatbridge)",
+        link: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant+West+Altus+Plateau",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchant_npc_elden_ring_wiki_guide_300px.jpg",
+      },
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Twinbird Kite Shield",
-      collected: false,
+      description:
+        "Medium metal kite shield. Strength scaling, no skill—good weight-to-defense balance.",
       link: "https://eldenring.wiki.fextralife.com/Twinbird+Kite+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/twinbird_kite_shield_medium_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Deathbird",
+        link: "https://eldenring.wiki.fextralife.com/Deathbird",
+        dropRate: 100,
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/deathbird_elden_ring_wiki_300px.jpg",
+      },
+      vendor: null,
+      placementDescription:
+        "Dropped by the Deathbird which spawns at night in Leyndell to the east of the Hermit Merchant's Shack Site of Grace overlooking the Minor Erdtree near some skeletal snail enemies.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Brass Shield",
-      collected: false,
+      description:
+        "Heavy medium metal shield. High guard boost, scales with Strength.",
       link: "https://eldenring.wiki.fextralife.com/Brass+Shield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Messmer Soldier Shield",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Messmer+Soldier+Shield",
-      dlc: true,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/brass_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Godrick Soldiers",
+        dropRate: 2,
+        link: "https://eldenring.wiki.fextralife.com/Godrick+Soldier",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_soldier_enemies_elden_ring_wiki_600px.jpg",
+      },
+      vendor: null,
+      placementDescription:
+        "Dropped by Godrick Soldiers, Raya Lucaria Soldiers, Radahn Soldiers, or Leyndell Soldiers, which are seen carrying this shield.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Banished Knight's Shield",
-      collected: false,
+      description:
+        "Tall medium shield dropped by Banished Knights. Strength scaling, no skill—excellent guard boost.",
       link: "https://eldenring.wiki.fextralife.com/Banished+Knight's+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished_knights_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Banished Knights",
+        dropRate: 4,
+        link: "https://eldenring.wiki.fextralife.com/Banished+Knight",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished-knight-2-enemy-elden-ring-wiki.jpg",
+      },
+      vendor: null,
+      placementDescription:
+        "Approximately 4% drop from shield-wielding Banished Knights.",
     },
     {
       type: "shieldsAndTorches",
-      name: "Wolf Crest Shield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Wolf+Crest+Shield",
-      dlc: true,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Serpent Crest Shield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Serpent+Crest+Shield",
-      dlc: true,
-    },
-    {
-      type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Albinauric Shield",
-      collected: false,
+      description:
+        "Metal medium shield with Albinauric motif. Strength scaling, Parry skill—balanced mag & phys defense.",
       link: "https://eldenring.wiki.fextralife.com/Albinauric+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/albinauric_shield_small_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription: "Common in Limgrave; warrior-class equipment.",
     },
     {
       type: "shieldsAndTorches",
-      name: "Beastman's Jar-Shield",
-      collected: false,
+      subcategory: "mediumShields",
+      name: "Beastman's Jar‑Shield",
+      description:
+        "Medium metal-and-jar hybrid shield. Strength scaling, no skill—unique aesthetics.",
       link: "https://eldenring.wiki.fextralife.com/Beastman's+Jar-Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/beastmans-jar-shield_12006_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Azula Beastman",
+        link: "https://eldenring.wiki.fextralife.com/Azula+Beastman",
+        dropRate: 2,
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/azula_beastman_2_enemies_elden_ring_wiki_600px.jpg",
+      },
+      vendor: null,
+      placementDescription: "Dropped by Beastmen in open-world encounters.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Carian Knight's Shield",
-      collected: false,
+      description:
+        "Medium metal shield with Carian knight crest. Strength and Intelligence scaling, no skill.",
       link: "https://eldenring.wiki.fextralife.com/Carian+Knight's+Shield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/carian_knights_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Found early near Caria Manor; often compared with Silver Mirrorshield.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Silver Mirrorshield",
-      collected: false,
+      description:
+        "Medium metal mirror-like shield. Scales with Strength & Intelligence; high magic defense.",
       link: "https://eldenring.wiki.fextralife.com/Silver+Mirrorshield",
+      collected: false,
+      legendary: false,
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/silver_mirrorshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Found in Apostate Derelict (Consecrated Snowfield), near giant Albinauric woman.",
     },
     {
       type: "shieldsAndTorches",
+      subcategory: "mediumShields",
       name: "Great Turtle Shell",
-      collected: false,
+      description:
+        "Medium shield crafted from a turtle shell. Strength scaling, Skill: Barricade Shield; grants stamina regen buff.",
       link: "https://eldenring.wiki.fextralife.com/Great+Turtle+Shell",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Golden Lion Shield",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Golden+Lion+Shield",
-      dlc: true,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/great_turtle_shell_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Found on top of tower near Castle Morne Rampart via spiritspring.",
     },
   ],
   greatShields: [
     {
       type: "shieldsAndTorches",
-      name: "Wooden Greatshield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Wooden+Greatshield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Lordsworn's Shield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Lordsworn's+Shield",
-      dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lordsworns_shield_greatshield_elden_ring_wiki_guide_200px.png",
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Briar Greatshield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Briar+Greatshield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Spiked Palisade Shield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Spiked+Palisade+Shield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Icon Shield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Icon+Shield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Golden Beast Crest Shield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Golden+Beast+Crest+Shield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Manor Towershield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Manor+Towershield",
-      dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/manor_towershield_greatshield_elden_ring_wiki_guide_200px.png",
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Crossed-Tree Towershield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Crossed-Tree+Towershield",
-      dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crossed-tree_towershield_greatshield_elden_ring_wiki_guide_200px.png",
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Inverted Hawk Towershield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Inverted+Hawk+Towershield",
-      dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/invert_hawk_towershield_greatshield_elden_ring_wiki_guide_200px.png",
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Dragon Towershield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Dragon+Towershield",
-      dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragon_towershield_greatshield_elden_ring_wiki_guide_200px.png",
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Distinguished Greatshield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Distinguished+Greatshield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Gilded Greatshield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Gilded+Greatshield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Cuckoo Greatshield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Cuckoo+Greatshield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Redmane Greatshield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Redmane+Greatshield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Golden Greatshield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Golden+Greatshield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Haligtree Crest Greatshield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Haligtree+Crest+Greatshield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Black Steel Greatshield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Black+Steel+Greatshield",
-      dlc: true,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_steel_greatshield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Crucible Hornshield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Crucible+Hornshield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Dragonclaw Shield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Dragonclaw+Shield",
-      dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonclaw__shield_elden_ring_wiki_guide_200px.png",
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Fingerprint Stone Shield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Fingerprint+Stone+Shield",
-      dlc: false,
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fingerprint_stone_shield_greatshield_elden_ring_wiki_guide_200px.png",
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Eclipse Crest Greatshield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Eclipse+Crest+Greatshield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Ant's Skull Plate",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Ant's+Skull+Plate",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Erdtree Greatshield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Erdtree+Greatshield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Jellyfish Shield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Jellyfish+Shield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "Visage Shield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Visage+Shield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
-      name: "One-Eyed Shield",
-      collected: false,
-      link: "https://eldenring.wiki.fextralife.com/One-Eyed+Shield",
-      dlc: false,
-    },
-    {
-      type: "shieldsAndTorches",
+      subcategory: "greatShields",
       name: "Verdigris Greatshield",
-      collected: false,
+      description:
+        "Massive greatshield forged from verdigris metal. Offers highest guard boost in game. Skill: Moore’s Charge — powerful crowd-control bash, but deals no damage.",
       link: "https://eldenring.wiki.fextralife.com/Verdigris+Greatshield",
+      collected: false,
+      legendary: false,
       dlc: true,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/verdigris_greatshield_greatshields_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Sir Moore",
+        dropRate: 100,
+        link: "https://eldenring.wiki.fextralife.com/Moore",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/moore.png",
+      },
+      vendor: null,
+      placementDescription:
+        "Reward for defeating Sir Moore during Shadow of the Erdtree DLC questline.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Black Steel Greatshield",
+      description:
+        "Weighty shields carried by the Black Knights, servants of Messmer the Impaler. Made of black steel with decorative embellishments in gold. Symbolic of their iron conviction in their crusade, the Black Knights will never yield. Nor will they ever doubt their purpose.",
+      link: "https://eldenring.wiki.fextralife.com/Black+Steel+Greatshield",
+      collected: false,
+      legendary: false,
+      dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_steel_greatshield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Black Knight Garrew",
+        dropRate: 100,
+        link: "https://eldenring.wiki.fextralife.com/Black+Knight+Garrew",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/garrew.png",
+      },
+      vendor: null,
+      placementDescription:
+        "Dropped by Black Knight Garrew at Fog Rift Fort in Scadew.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Wooden Greatshield",
+      description:
+        "Wooden greatshield reinforced with a metal ornamentation. Greatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",
+      link: "https://eldenring.wiki.fextralife.com/Wooden+Greatshield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/wooden_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription: "Stormveil Castle",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Lordsworn's Shield",
+      description:
+        "Wooden tower shield. Lightweight for a greatshield and easy to handle. Commonly used in the Shattering. Greatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",
+      link: "https://eldenring.wiki.fextralife.com/Lordsworn's+Shield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lordsworns_shield_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Godrick Soldiers",
+        dropRate: 1.5,
+        link: "https://eldenring.wiki.fextralife.com/Godrick+Soldier",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_soldier_enemies_elden_ring_wiki_600px.jpg",
+      },
+      vendor: null,
+      placementDescription: "Dropped by tree knights in Haligtree, Shadow DLC.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Briar Greatshield",
+      description:
+        "Greatshield from a foreign land, used by Elemer of the Briar. Attacks with this armament utilize the iron thorns that have been wound around its frame. Originates from Eochaid, a land of proudly solitary ascetics.",
+      link: "https://eldenring.wiki.fextralife.com/Briar+Greatshield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/briar_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Elemer of the Briar",
+        dropRate: 100,
+        link: "https://eldenring.wiki.fextralife.com/Elemer+of+the+Briar",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/element_of_the_briar_bosses_elden_ring_wiki_guide_300px.jpg",
+      },
+      vendor: null,
+      placementDescription: "100% loot from Elemer of the Briar",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Spiked Palisade Shield",
+      description:
+        "Designed to perform shield bashes, these attacks riddle the enemy with holes, earning it the nickname of 'pard shield'",
+      link: "https://eldenring.wiki.fextralife.com/Spiked+Palisade+Shield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/spiked_palisade_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "On dead body under a Golem, west of Deep Siofra Well, Caelid.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Icon Shield",
+      description:
+        "Greatshield with holy iconography. No skill; high holy defense.",
+      link: "https://eldenring.wiki.fextralife.com/Icon+Shield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/icon_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Found inside a crumbling building at Woodfolk Ruins. Beware of the enemies inside.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Golden Beast Crest Shield",
+      description:
+        "Greatshield with beast emblem. Parry skill; resistant to bestial attacks.",
+      link: "https://eldenring.wiki.fextralife.com/Golden+Beast+Crest+Shield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/golden_beast_crest_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Grafted Scion",
+        link: "https://eldenring.wiki.fextralife.com/Grafted+Scion",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/er_grafted_scion_300px.jpg",
+        dropRate: 100,
+      },
+      vendor: null,
+      placementDescription: "Dropped by beast knights in Caelid.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Manor Towershield",
+      description:
+        "An iron greatshield large enough to cover the entire body. Depicts the Roundtable Hold, gathering place of champions. Greatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",
+      link: "https://eldenring.wiki.fextralife.com/Manor+Towershield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/manor_towershield_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription: "Stormveil Castle",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Crossed‑Tree Towershield",
+      description:
+        "An iron greatshield large enough to cover the entire body. Emblazoned with an old, interleaving tree. Greatshields boast high damage negation and guard capacity, making enemy attacks easy to repel",
+      link: "https://eldenring.wiki.fextralife.com/Crossed-Tree+Towershield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crossed-tree_towershield_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: {
+        name: "Nomadic Merchant West Altus Plateau",
+        link: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant+West+Altus+Plateau",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchant_npc_elden_ring_wiki_guide_300px.jpg",
+      },
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Inverted Hawk Towershield",
+      description:
+        "An iron greatshield large enough to cover the entire body. Features an inverted hawk crest.Greatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",
+      link: "https://eldenring.wiki.fextralife.com/Inverted+Hawk+Towershield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/invert_hawk_towershield_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Fallen Hawks Soldier",
+        link: "https://eldenring.wiki.fextralife.com/Fallen+Hawks+Soldier",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fallen-soldier.jpg",
+        dropRate: 100,
+      },
+      vendor: null,
+      placementDescription:
+        "Dropped by Fallen Hawks Soldiers which carry this greatshield.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Dragon Towershield",
+      description:
+        "Tower shield engraved with a dragon, symbol of protection. Heavy even among greatshields, it possesses exceptional guarding ability. The ancient dragons, who ruled in the prehistoric era before the Erdtree, would protect their lord as a wall of living rock.",
+      link: "https://eldenring.wiki.fextralife.com/Dragon+Towershield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragon_towershield_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription: "Crumbling Farum Azula,",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Distinguished Greatshield",
+      description:
+        "Greatshield featuring sumptuous ornamentation used by the scions of great families. Due to their excessive size, these shields were at times seen as the hallmark of little lordlings who were too timid to earn a few nicks and scratches.",
+      link: "https://eldenring.wiki.fextralife.com/Distinguished+Greatshield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/distinguished_greatshield_shields_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: {
+        name: "Hermit Merchant",
+        link: "https://eldenring.wiki.fextralife.com/Hermit+Merchant",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/hermit_merchant_npcs_elden_ring_wiki_guide.png",
+      },
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Gilded Greatshield",
+      description:
+        "Metal greatshield coated with gold. Carried by knights loyal to Godrick. The red tinge in the gold coat mirrors the primordial matter that became the Erdtree. The color of homeward yearning.",
+      link: "https://eldenring.wiki.fextralife.com/Gilded+Greatshield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/gilded_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Godrick Knight",
+        link: "https://eldenring.wiki.fextralife.com/Godrick+Knight",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_knight_enemies_elden_ring_wiki_600px.jpg",
+        dropRate: 4,
+      },
+      vendor: null,
+      placementDescription: null,
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Cuckoo Greatshield",
+      description:
+        " Metal Greatshield painted with a peering cuckoo. Carried by the enchanted knights sworn to the academy. Boasting high magic damage negation, this shield is used to hunt down mages. “Our enemy is none other than Caria itself.”",
+      link: "https://eldenring.wiki.fextralife.com/Cuckoo+Greatshield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cuckoo_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Cuckoo Knight",
+        link: "https://eldenring.wiki.fextralife.com/Raya+Lucaria+Knight",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rayalucariaknight2.jpg",
+        dropRate: 4,
+      },
+      vendor: null,
+      placementDescription: "Небольшие шансы в области Haligtree.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Redmane Greatshield",
+      description:
+        "Greatshield shaped like a fang, featuring the crest of red-maned lion. Carried by the Redmane Knights who fought alongside Radahn.",
+      link: "https://eldenring.wiki.fextralife.com/Redmane+Greatshield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/redmane_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Redmane Knights",
+        link: "https://eldenring.wiki.fextralife.com/Redmane+Knight",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/radhan-knight-1-enemy-elden-ring-wiki.jpg",
+        dropRate: 4,
+      },
+      vendor: null,
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Golden Greatshield",
+      description:
+        "Oval greatshield made of gold, carried by knights who protect the Royal Capital of Leyndell.Knights of Leyndell are reputed for their sturdiness, exemplified by this shield's exceptional guard capacity.",
+      link: "https://eldenring.wiki.fextralife.com/Golden+Greatshield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/golden_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Leyndell Knights",
+        dropRate: 4,
+        link: "https://eldenring.wiki.fextralife.com/Leyndell+Knight",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_knight_1_enemies_elden_ring_wiki_600px.jpg",
+      },
+      vendor: null,
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Haligtree Crest Greatshield",
+      description:
+        "Metal greatshield depicting the Haligtree with unalloyed gold. Carried by knights who have vowed to serve Miquella's Haligtree. Possesses high holy damage negation. Yet now, with the Haligtree misshapen, this wondrous rendition is a fleeting fantasy.",
+      link: "https://eldenring.wiki.fextralife.com/Haligtree+Crest+Greatshield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_crest_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Haligtree Knight",
+        dropRate: 4,
+        link: "https://eldenring.wiki.fextralife.com/Haligtree+Knight",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_knight_enemies_elden_ring_wiki_guide.jpg",
+      },
+      vendor: null,
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Crucible Hornshield",
+      description:
+        "Greatshield of red-tinged gold carried by Crucible Knights.Features a great horn.An ancient holiness dwells within. The crucible horn skewers foes when performing shield bashes.",
+      link: "https://eldenring.wiki.fextralife.com/Crucible+Hornshield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_hornshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Crucible Knight patrolling the bridges of the Siofra Aqueduct",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Dragonclaw Shield",
+      description:
+        "Greatshield carved from the claw of an ancient dragon. Scales with Strength & Dexterity. Skill: Shield Bash.",
+      link: "https://eldenring.wiki.fextralife.com/Dragonclaw+Shield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonclaw__shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Draconic Tree Sentinel",
+        dropRate: 100,
+        link: "https://eldenring.wiki.fextralife.com/Draconic+Tree+Sentinel",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/draconic-tree-sentinel-2-elden-ring-wiki-guide.jpg",
+      },
+      vendor: null,
+      placementDescription:
+        "Dropped by the Draconic Tree Sentinel boss in Altus Plateau outside Leyndell.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Fingerprint Stone Shield",
+      description:
+        "A great stone shield with an intricately carved fingerprint design. One of the heaviest of all greatshields. Part of the tomb of an ancient god, the Readerless Fingers relayed their message through these imprints, said to be the very seeds from which frenzy first sprouted.",
+      link: "https://eldenring.wiki.fextralife.com/Fingerprint+Stone+Shield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fingerprint_stone_shield_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription: "Cathedral of the Forsaken",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Eclipse Crest Greatshield",
+      description:
+        "Metal greatshield painted with an eclipsed sun motif. No skill, lighter than many greatshields. Passive: +50 to Immunity, Robustness, Focus.",
+      link: "https://eldenring.wiki.fextralife.com/Eclipse+Crest+Greatshield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/eclipse_crest_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Mausoleum Knight",
+        dropRate: 4,
+        link: "https://eldenring.wiki.fextralife.com/Mausoleum+Knight",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mauseleoum-knight-1-enemy-elden-ring-wiki.jpg",
+      },
+      vendor: null,
+      placementDescription: "Carried by Headless Mausoleum Knights.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Ant's Skull Plate",
+      description:
+        "Huge head of one of the giant ants which inhabit the two underground rivers, used without modification as a shield. Excels at repeling enemy attacks. Giant ants are venomous creatures, granting a boost to immunity when wielding the shield. ",
+      link: "https://eldenring.wiki.fextralife.com/Ant's+Skull+Plate",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ants_skull_plate_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Found in Nokstella, Eternal City in a chest after defeating the Nox Swordstress.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Erdtree Greatshield",
+      description:
+        "Weighty greatshield forged of gold carried by the order of Tree Sentinels, heavily equipped knights. Blessed by an old incantation of protection. The living rampart of the Erdtree, the Tree Sentinels are the standard to which all defenders of the Erdtree aspire.",
+      link: "https://eldenring.wiki.fextralife.com/Erdtree+Greatshield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree_greatshield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription: "Can be acquired by Killing Tree Sentinel Duo",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Jellyfish Shield",
+      description:
+        "The head of a spirit jellyfish, commonly found floating above sacred ground throughout the Lands Between, wielded without modification as a shield.",
+      link: "https://eldenring.wiki.fextralife.com/Jellyfish+Shield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/jellyfish_shield_elden_ring_wiki_guide_200.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "On a broken wagon next to a corpse surrounded by four Jellyfish, directly north of the Foot of the Four Belfries Site of Grace in Liurnia of the Lakes.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "Visage Shield",
+      description:
+        "ricksome bronze shield depicting the face of a Fire Giant. Several tongues leap from its open mouth. The dreadful visage and burning flames are designed to remind one of the horror of facing a Fire Giant. In other words, this shield has an instructional function.",
+      link: "https://eldenring.wiki.fextralife.com/Visage+Shield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/visage_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: null,
+      vendor: null,
+      placementDescription:
+        "Looted in northeast Caelid—chest in Caelem Ruins after defeating Pumpkin Head duo.",
+    },
+    {
+      type: "shieldsAndTorches",
+      subcategory: "greatShields",
+      name: "One‑Eyed Shield",
+      description:
+        "Greatshield that scales with Strength. No skill. High guard boost; strong resistances.",
+      link: "https://eldenring.wiki.fextralife.com/One-Eyed+Shield",
+      collected: false,
+      legendary: false,
+      dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/one-eyed_shield_elden_ring_wiki_guide_200px.png",
+      droppedBy: {
+        name: "Chief Guardian Arghanthy",
+        dropRate: 100,
+        link: "https://eldenring.wiki.fextralife.com/Chief+Guardian+Arghanthy",
+        imgUrl:
+          "https://eldenring.wiki.fextralife.com/file/Elden-Ring/chief_guardian_arghanthy_enemies_elden_ring_wiki_600px.jpg",
+      },
+      vendor: null,
+      placementDescription:
+        "Dropped by Chief Guardian Arghanthy in the Guardian's Garrison (Mountaintops of the Giants).",
     },
   ],
+
   thrustingShields: [
     {
       type: "shieldsAndTorches",

@@ -45,6 +45,7 @@
   width: 100%;
   z-index: 1;
   overflow: hidden;
+  background: url("../../../assets/fx.png") center/cover no-repeat;
 
   &::before {
     content: "";

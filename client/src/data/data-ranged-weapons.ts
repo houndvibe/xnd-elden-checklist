@@ -428,12 +428,13 @@ export const rangedWeaponsData: RangedWeaponsSubCategoryMap = {
       name: "Soldier's Crossbow",
       description:
         "A simple, mass-produced crossbow issued to soldiers. Fires standard bolts with moderate damage and reliability.",
-      link: "https://eldenring.wiki.fextralife.com/Soldier's+Crossbow",
+      link: "../..",
       collected: false,
       legendary: false,
       dlc: false,
       imgUrl:
         "https://eldenring.wiki.fextralife.com/file/Elden-Ring/soldiers_crossbow_weapon_elden_ring_wiki_guide_200px.png",
+      /*       imgUrl: "../assets/crossbows/SoldiersCrossbow.png", */
       droppedBy: {
         name: "Foot Soldier (Crossbow)",
         dropRate: 4,
