@@ -58,9 +58,10 @@ export default function Table({
   const handleMouseEnter = useCallback((record: Item) => {
     const imgUrl = record.imgUrl || getNameToImgUrlConverter(record);
 
-    hoverTimeoutRef.current = setTimeout(() => {
+    /*  hoverTimeoutRef.current = setTimeout(() => {
       setHoveredImg({ url: imgUrl, name: record.name });
-    }, 100);
+    }, 100); */
+    setHoveredImg({ url: imgUrl, name: record.name });
   }, []);
 
   const handleMouseLeave = useCallback(() => {

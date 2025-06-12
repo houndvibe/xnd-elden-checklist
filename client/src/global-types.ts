@@ -298,6 +298,7 @@ export interface ToolsOrBellBearingsCategoryMap {
 
 export interface TearsOrUpgradesItem {
   type: Extract<ItemCategory, "tearsAndUpgrades">;
+  subcategory: keyof TearsOrUpgradesCategoryMap;
   name: string;
   collected: boolean;
   link: string;
@@ -316,7 +317,7 @@ export interface TearsOrUpgradesCategoryMap {
 
 export interface CraftItem {
   type: Extract<ItemCategory, "craft">;
-  subcategory: keyof CraftItemsCategoryMap
+  subcategory: keyof CraftItemsCategoryMap;
   name: string;
   collected: boolean;
   link: string;

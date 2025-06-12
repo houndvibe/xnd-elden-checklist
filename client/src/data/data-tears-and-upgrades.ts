@@ -4,20 +4,27 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
   crystalTears: [
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Crimson Crystal Tear (Left)",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Crimson+Crystal+Tear",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_crystal_tear_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Crimson Crystal Tear (Right)",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Crimson+Crystal+Tear",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_crystal_tear_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Crimsonspill Crystal Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Crimsonspill+Crystal+Tear",
@@ -25,6 +32,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Crimsonburst Crystal Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Crimsonburst+Crystal+Tear",
@@ -32,6 +40,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Crimsonburst Dried Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Crimsonburst+Dried+Tear",
@@ -39,20 +48,27 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Cerulean Crystal Tear (Left)",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Cerulean+Crystal+Tear+(Left)",
+      link: "https://eldenring.wiki.fextralife.com/Cerulean+Crystal+Tear",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_crystal_tear_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Cerulean Crystal Tear (Right)",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Cerulean+Crystal+Tear+(Right)",
+      link: "https://eldenring.wiki.fextralife.com/Cerulean+Crystal+Tear",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_crystal_tear_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Greenspill Crystal Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Greenspill+Crystal+Tear",
@@ -60,6 +76,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Greenburst Crystal Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Greenburst+Crystal+Tear",
@@ -67,6 +84,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Strength-Knot Crystal Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Strength-Knot+Crystal+Tear",
@@ -74,13 +92,17 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Dexterity-Knot Crystal Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Dexterity-Knot+Crystal+Tear",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dexterity-knot_crystal_tear2_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Intelligence-Knot Crystal Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Intelligence-Knot+Crystal+Tear",
@@ -88,6 +110,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Faith-Knot Crystal Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Faith-Knot+Crystal+Tear",
@@ -95,6 +118,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Opaline Hardtear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Opaline+Hardtear",
@@ -102,6 +126,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Speckled Hardtear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Speckled+Hardtear",
@@ -109,6 +134,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Leaden Hardtear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Leaden+Hardtear",
@@ -116,6 +142,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Deflecting Hardtear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Deflecting+Hardtear",
@@ -123,6 +150,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Magic-Shrouding Cracked Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Magic-Shrouding+Cracked+Tear",
@@ -130,6 +158,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Flame-Shrouding Cracked Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Flame-Shrouding+Cracked+Tear",
@@ -137,6 +166,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Lightning-Shrouding Cracked Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Lightning-Shrouding+Cracked+Tear",
@@ -144,6 +174,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Holy-Shrouding Cracked Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Holy-Shrouding+Cracked+Tear",
@@ -151,6 +182,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Stonebarb Cracked Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Stonebarb+Cracked+Tear",
@@ -158,6 +190,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Spiked Cracked Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Spiked+Cracked+Tear",
@@ -165,6 +198,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Thorny Cracked Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Thorny+Cracked+Tear",
@@ -172,6 +206,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Crimson-Sapping Cracked Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Crimson-Sapping+Cracked+Tear",
@@ -179,6 +214,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Cerulean-Sapping Cracked Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Cerulean-Sapping+Cracked+Tear",
@@ -186,6 +222,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Bloodsucking Cracked Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Bloodsucking+Cracked+Tear",
@@ -193,6 +230,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Twiggy Cracked Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Twiggy+Cracked+Tear",
@@ -200,6 +238,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Winged Crystal Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Winged+Crystal+Tear",
@@ -207,6 +246,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Windy Crystal Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Windy+Crystal+Tear",
@@ -214,6 +254,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Glovewort Crystal Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Glovewort+Crystal+Tear",
@@ -221,6 +262,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Crimson Bubbletear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Crimson+Bubbletear",
@@ -228,6 +270,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Crimsonwhorl Bubbletear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Crimsonwhorl+Bubbletear",
@@ -235,6 +278,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Opaline Bubbletear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Opaline+Bubbletear",
@@ -242,6 +286,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Cerulean Hidden Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Cerulean+Hidden+Tear",
@@ -249,6 +294,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Viridian Hidden Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Viridian+Hidden+Tear",
@@ -256,6 +302,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Purifying Crystal Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Purifying+Crystal+Tear",
@@ -263,20 +310,27 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Ruptured Crystal Tear (Left)",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Ruptured+Crystal+Tear+(Left)",
+      link: "https://eldenring.wiki.fextralife.com/Ruptured+Crystal+Tear",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ruptured_crystal_tear_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Ruptured Crystal Tear (Right)",
       collected: false,
-      link: "https://eldenring.wiki.fextralife.com/Ruptured+Crystal+Tear+(Right)",
+      link: "https://eldenring.wiki.fextralife.com/Ruptured+Crystal+Tear",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ruptured_crystal_tear_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "crystalTears",
       name: "Oil-Soaked Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Oil-Soaked+Tear",
@@ -286,6 +340,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
   upgrades: [
     {
       type: "tearsAndUpgrades",
+      subcategory: "upgrades",
       name: "Golden Seed",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Golden+Seed",
@@ -293,6 +348,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "upgrades",
       name: "Sacred Tear",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Sacred+Tear",
@@ -300,20 +356,27 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "upgrades",
       name: "Scadutree Fragment",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Scadutree+Fragment",
-      dlc: false,
+      dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/scadutree_fragment_bolstering_material_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "upgrades",
       name: "Revered Spirit Ash",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Revered+Spirit+Ash",
-      dlc: false,
+      dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/revered_spirit_ash_bolstering_material_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "upgrades",
       name: "Cracked Pot",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Cracked+Pot",
@@ -321,6 +384,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "upgrades",
       name: "Ritual Pot",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ritual+Pot",
@@ -328,13 +392,17 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "upgrades",
       name: "Hefty Cracked Pot",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Hefty+Cracked+Pot",
-      dlc: false,
+      dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/hefty_cracked_pot_container_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "upgrades",
       name: "Perfume Bottle",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Perfume+Bottle",
@@ -342,6 +410,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "upgrades",
       name: "Memory Stone",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Memory+Stone",
@@ -349,6 +418,7 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "upgrades",
       name: "Talisman Pouch",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Talisman+Pouch",
@@ -358,278 +428,395 @@ export const tearsAndUpgradesData: TearsOrUpgradesCategoryMap = {
   smithingStones: [
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Smithing Stone [1]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithing+Stone+(1)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/smithing_stone_1_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Smithing Stone [2]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithing+Stone+(2)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/smithing_stone_2_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Smithing Stone [3]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithing+Stone+(3)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/smithing_stone_3_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Smithing Stone [4]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithing+Stone+(4)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/smithing_stone_4_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Smithing Stone [5]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithing+Stone+(5)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/smithing_stone_5_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Smithing Stone [6]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithing+Stone+(6)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/smithing_stone_6_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Smithing Stone [7]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithing+Stone+(7)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/smithing_stone_7_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Smithing Stone [8]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Smithing+Stone+(8)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/smithing_stone_8_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Ancient Dragon Smithing Stone",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Smithing+Stone",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_smithing_stone_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Somber Smithing Stone [1]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Somber+Smithing+Stone+(1)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/somber_smithing_stone_1_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Somber Smithing Stone [2]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Somber+Smithing+Stone+(2)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/somber_smithing_stone_2_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Somber Smithing Stone [3]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Somber+Smithing+Stone+(3)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/somber_smithing_stone_3_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Somber Smithing Stone [4]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Somber+Smithing+Stone+(4)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/somber_smithing_stone_4_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Somber Smithing Stone [5]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Somber+Smithing+Stone+(5)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/somber_smithing_stone_5_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Somber Smithing Stone [6]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Somber+Smithing+Stone+(6)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/somber_smithing_stone_6_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Somber Smithing Stone [7]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Somber+Smithing+Stone+(7)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/somber_smithing_stone_7_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Somber Smithing Stone [8]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Somber+Smithing+Stone+(8)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/somber_smithing_stone_8_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Somber Smithing Stone [9]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Somber+Smithing+Stone+(9)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/somber_smithing_stone_9_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "smithingStones",
       name: "Somber Ancient Dragon Smithing Stone",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Somber+Ancient+Dragon+Smithing+Stone",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/somber_ancient_dragon_smithing_stone_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
   ],
   gloveworts: [
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Grave Glovewort [1]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Grave+Glovewort+(1)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-glovewort-1-upgrade-material-elden-ring-wiki-guide.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Grave Glovewort [2]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Grave+Glovewort+(2)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-glovewort-2-upgrade-material-elden-ring-wiki-guide.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Grave Glovewort [3]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Grave+Glovewort+(3)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-glovewort-3-upgrade-material-elden-ring-wiki-guide.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Grave Glovewort [4]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Grave+Glovewort+(4)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-glovewort-4-upgrade-material-elden-ring-wiki-guide.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Grave Glovewort [5]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Grave+Glovewort+(5)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-glovewort-5-upgrade-material-elden-ring-wiki-guide.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Grave Glovewort [6]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Grave+Glovewort+(6)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-glovewort-6-upgrade-material-elden-ring-wiki-guide.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Grave Glovewort [7]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Grave+Glovewort+(7)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-glovewort-7-upgrade-material-elden-ring-wiki-guide.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Grave Glovewort [8]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Grave+Glovewort+(8)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-glovewort-8-upgrade-material-elden-ring-wiki-guide.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Grave Glovewort [9]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Grave+Glovewort+(9)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-glovewort-9-upgrade-material-elden-ring-wiki-guide.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Great Grave Glovewort",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Great+Grave+Glovewort",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/great_grave_glovewort_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Ghost Glovewort [1]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ghost+Glovewort+(1)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghost_glovewort_1_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Ghost Glovewort [2]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ghost+Glovewort+(2)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghost_glovewort_2_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Ghost Glovewort [3]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ghost+Glovewort+(3)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghost_glovewort_3_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Ghost Glovewort [4]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ghost+Glovewort+(4)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghost_glovewort_4_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Ghost Glovewort [5]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ghost+Glovewort+(5)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghost_glovewort_5_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Ghost Glovewort [6]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ghost+Glovewort+(6)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghost_glovewort_6_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Ghost Glovewort [7]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ghost+Glovewort+(7)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghost_glovewort_7_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Ghost Glovewort [8]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ghost+Glovewort+(8)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghost_glovewort_8_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Ghost Glovewort [9]",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Ghost+Glovewort+(9)",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghost_glovewort_9_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "tearsAndUpgrades",
+      subcategory: "gloveworts",
       name: "Great Ghost Glovewort",
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Great+Ghost+Glovewort",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/great_ghost_glovewort_upgrade_material_elden_ring_wiki_guide_200px.png",
     },
   ],
 };

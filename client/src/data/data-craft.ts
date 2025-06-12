@@ -1112,6 +1112,8 @@ export const craftData: CraftItemsCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Beast%2BBlood",
       dlc: false,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/beast_blode_elden_ring_wiki_guide_200px.png",
     },
     {
       type: "craft",
@@ -1812,6 +1814,8 @@ export const craftData: CraftItemsCategoryMap = {
       collected: false,
       link: "https://eldenring.wiki.fextralife.com/Grave%2BKeeper%27s%2BBrainpan",
       dlc: true,
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave_keepers_brainpan_crafting_material_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     },
     {
       type: "craft",

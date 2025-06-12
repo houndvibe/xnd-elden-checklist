@@ -1,5 +1,11 @@
 import { Item } from "../../global-types";
 
+export function toTitleCaseFromCamel(str: string): string {
+  return str
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/^./, (s) => s.toUpperCase());
+}
+
 export function getNameToImgUrlConverter(record: Item) {
   switch (record.type) {
     case "shieldsAndTorches":
@@ -30,7 +36,11 @@ export function getNameToImgUrlConverter(record: Item) {
       return convertToolOrBellNameToWikiImageUrl(record.name, record.dlc);
 
     case "tearsAndUpgrades":
-      return convertTearOrUpgradeNameToWikiImageUrl(record.name, record.dlc);
+      return convertTearOrUpgradeNameToWikiImageUrl(
+        record.name,
+        record.dlc,
+        record.subcategory
+      );
 
     case "craft":
       return convertCraftItemNameToWikiImageUrl(
@@ -113,12 +123,6 @@ export function convertTalismanNameToWikiImageUrl(
   return `${baseUrl}${formattedName}_talisman_elden_ring_${
     isDlc ? "shadow_of_the_erdtree_dlc_" : ""
   }wiki_guide_200px.png`;
-}
-//тайтл из типа
-export function toTitleCaseFromCamel(str: string): string {
-  return str
-    .replace(/([a-z])([A-Z])/g, "$1 $2")
-    .replace(/^./, (s) => s.toUpperCase());
 }
 
 export function convertAshOfWarNameToWikiImageUrl(
@@ -246,14 +250,27 @@ export function convertToolOrBellNameToWikiImageUrl(
 
 export function convertTearOrUpgradeNameToWikiImageUrl(
   itemName: string,
-  isDlc: boolean
+  isDlc: boolean,
+  subcategory: string
 ) {
   const formattedName = itemName
     .trim()
     .toLowerCase()
     .replace(/^note:\s*/i, "") // Remove "Note:" prefix if present
-    .replace(/[^a-z0-9 ]/g, "") // Remove all non-alphanumeric characters except space
+    .replace(/[^a-z0-9 \-]/g, "") // Allow hyphens for DLC naming
     .replace(/\s+/g, "_"); // Replace spaces with underscores
+
+  if (subcategory === "crystalTears") {
+    if (isDlc) {
+      return `https://eldenring.wiki.fextralife.com/file/Elden-Ring/${formattedName}_crystal_tear_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png`;
+    } else {
+      return `https://eldenring.wiki.fextralife.com/file/Elden-Ring/${formattedName}_elden_ring_wiki_guide_200px.png`;
+    }
+  }
+
+  if (subcategory === "upgrades") {
+    return `https://eldenring.wiki.fextralife.com/file/Elden-Ring/${formattedName}_elden_ring_wiki_guide_200px.png`;
+  }
 
   return `${baseUrl}tear_${formattedName}-${
     isDlc ? "shadow_of_the_erdtree_dlc_" : ""
