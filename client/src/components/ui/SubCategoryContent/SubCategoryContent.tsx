@@ -45,6 +45,7 @@ export default function SubCategoryContent({
       {hoveredImg ? (
         <Preview
           dataSource={dataSource}
+          categoty={type}
           subcategory={subcategory}
           img={hoveredImg}
         />

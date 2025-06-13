@@ -1,6 +1,6 @@
 import { Flex, Image, /* Popover,  */ Spin } from "antd";
 import styles from "./SubCategoryContent.module.scss";
-import { Item, ItemSubCategory } from "../../../global-types";
+import { Item, ItemCategory, ItemSubCategory } from "../../../global-types";
 /* import Link from "antd/es/typography/Link";
 import { calculateItemDropChance, truncateText } from "../../../lib/utils/misc";
 import { useAppSelector } from "../../../store/typedDispatch"; */
@@ -11,12 +11,14 @@ interface PreviewProps {
     name: string;
   };
   dataSource: Item[];
+  categoty: ItemCategory;
   subcategory: ItemSubCategory;
 }
 
 export default function Preview({
   img,
   dataSource,
+  categoty,
   subcategory,
 }: PreviewProps) {
   /*   const storedDiscovery = useAppSelector(
@@ -114,7 +116,7 @@ export default function Preview({
     ); */
 
   const transformNameToImgUrl = (name: string) => {
-    return `./images/rangedWeapon/${subcategory}/${name}.png`;
+    return `./images/${categoty}/${subcategory}/${name}.png`;
   };
 
   const renderMainContent = () => (
