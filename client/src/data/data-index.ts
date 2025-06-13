@@ -7,13 +7,14 @@ import { incantationsData } from "./data-incantations";
 import { infoItemsData } from "./data-info-items";
 import { keyItemsData } from "./data-key-items";
 import { meleWeaponsData } from "./data-mele-weapons";
-import { sorceriesData } from "./data-sorceries";
-import { spiritAshesData } from "./data-spirit-ashes";
+
 import { tearsAndUpgradesData } from "./data-tears-and-upgrades";
 import { toolsAndBellBearingsData } from "./data-tools-and-bells";
 import { gesturesData } from "./gestures/gestures";
 import { rangedWeaponData } from "./rangedWeapon";
 import { shieldsAndTorchesData } from "./shieldsAndTorches";
+import { sorceriesData } from "./sorceries/indext";
+import { spiritAshesData } from "./spiritAshes";
 import { talismansData } from "./talismans";
 
 export const itemsData: Collection = {

@@ -21,10 +21,6 @@ import type {
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 
-import { spiritAshesData } from "../data/data-spirit-ashes";
-import { talismansData } from "../data/data-talismans";
-
-import { sorceriesData } from "../data/data-sorceries";
 import { incantationsData } from "../data/data-incantations";
 import { meleWeaponsData } from "../data/data-mele-weapons";
 import { infoItemsData } from "../data/data-info-items";
@@ -63,10 +59,10 @@ export interface State {
 const initialState: State = {
   collectionData: loadFromStorage("xnd.collection", {
     shieldsAndTorchesData: itemsDataNew.shieldsAndTorchesData,
-    spiritAshesData: spiritAshesData,
+    spiritAshesData: itemsDataNew.spiritAshesData,
     talismansData: itemsDataNew.talismansData,
     ashesOfWarData: ashesOfWarData,
-    sorceriesData: sorceriesData,
+    sorceriesData: itemsDataNew.sorceriesData,
     incantationsData: incantationsData,
     gesturesData: itemsDataNew.gesturesData,
     meleWeaponsData: meleWeaponsData,

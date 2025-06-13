@@ -1,0 +1,158 @@
+import { SorceryItem } from "../../global-types";
+
+export const gravityFingersBriars: SorceryItem[] = [
+  {
+    type: "sorceries",
+    name: "Gravity Well",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Gravity+Well",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "sorceries",
+    name: "Collapsing Stars",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Collapsing+Stars",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "sorceries",
+    name: "Gravitational Missile",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Gravitational+Missile",
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/gravitational_missile_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "sorceries",
+    name: "Rock Sling",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Rock+Sling",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "sorceries",
+    name: "Blades of Stone",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Blades+of+Stone",
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/blades_of_stone_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "sorceries",
+    name: "Meteorite",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Meteorite",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "sorceries",
+    name: "Meteorite of Astel",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Meteorite+of+Astel",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "sorceries",
+    name: "Glintstone Nail",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Glintstone+Nail",
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_nail_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "sorceries",
+    name: "Glintstone Nails",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Glintstone+Nails",
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_nails_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "sorceries",
+    name: "Fleeting Microcosm",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Fleeting+Microcosm",
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fleeting_microcosm_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "sorceries",
+    name: "Cherishing Fingers",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Cherishing+Fingers",
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cherishing_fingers_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "sorceries",
+    name: "Oracle Bubbles",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Oracle+Bubbles",
+    legendary: false,
+    dlc: false,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/magic_bubble_sorcery_elden_ring_wiki_guide_200px-icon.png",
+  },
+  {
+    type: "sorceries",
+    name: "Great Oracular Bubble",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Great+Oracular+Bubble",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "sorceries",
+    name: "Briars of Sin",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Briars+of+Sin",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "sorceries",
+    name: "Briars of Punishment",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Briars+of+Punishment",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "sorceries",
+    name: "Mantle of Thorns",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Mantle+of+Thorns",
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mantle_of_thorns_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "sorceries",
+    name: "Impenetrable Thorns",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Impenetrable+Thorns",
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/impenetrable_thorns_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+];
