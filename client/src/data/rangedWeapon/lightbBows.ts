@@ -1,4 +1,6 @@
-export const lightBows = [
+import { RangedWeaponItem } from "../../global-types";
+
+export const lightBows: RangedWeaponItem[] = [
   {
     type: "rangedWeapons",
     subcategory: "lightBows",

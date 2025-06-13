@@ -65,8 +65,7 @@ export interface State {
 
 const initialState: State = {
   collectionData: loadFromStorage("xnd.collection", {
-    shieldsAndTorchesData:
-      shieldsAndTorchesData /*       */,
+    shieldsAndTorchesData: itemsDataNew.shieldsAndTorchesData,
     spiritAshesData: spiritAshesData,
     talismansData: talismansData,
     ashesOfWarData: ashesOfWarData,

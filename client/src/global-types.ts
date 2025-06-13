@@ -22,13 +22,13 @@ export interface ShieldOrTorchItem {
   type: Extract<ItemCategory, "shieldsAndTorches">;
   subcategory: keyof ShieldAndTorchesSubCategoryMap;
   name: string;
-  description: string;
+  /*   description: string; */
   link: string;
   collected: boolean;
   legendary: boolean;
   dlc: boolean;
   imgUrl?: string;
-  droppedBy: {
+  /*   droppedBy: {
     name: string;
     dropRate: number;
     link: string;
@@ -39,7 +39,7 @@ export interface ShieldOrTorchItem {
     link: string;
     imgUrl: string;
   } | null;
-  placementDescription?: string | null;
+  placementDescription?: string | null; */
 }
 
 export interface ShieldAndTorchesSubCategoryMap {
@@ -230,13 +230,13 @@ export interface RangedWeaponItem {
   type: Extract<ItemCategory, "rangedWeapons">;
   subcategory: keyof RangedWeaponsSubCategoryMap;
   name: string;
-  description: string;
+  /*   description: string; */
   link: string;
   collected: boolean;
   legendary: boolean;
   dlc: boolean;
   imgUrl?: string;
-  droppedBy: {
+  /*   droppedBy: {
     name: string;
     dropRate: number;
     link: string;
@@ -247,7 +247,7 @@ export interface RangedWeaponItem {
     link: string;
     imgUrl: string;
   } | null;
-  placementDescription?: string | null;
+  placementDescription?: string | null; */
 }
 
 export interface RangedWeaponsSubCategoryMap {

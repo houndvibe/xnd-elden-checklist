@@ -1,4 +1,6 @@
-export const torches = [
+import { ShieldOrTorchItem } from "../../global-types";
+
+export const torches: ShieldOrTorchItem[] = [
   {
     type: "shieldsAndTorches",
     subcategory: "torches",

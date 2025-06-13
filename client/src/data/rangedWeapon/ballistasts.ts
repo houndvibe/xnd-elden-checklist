@@ -1,4 +1,6 @@
-export const ballistas = [
+import { RangedWeaponItem } from "../../global-types";
+
+export const ballistas: RangedWeaponItem[] = [
   {
     type: "rangedWeapons",
     subcategory: "ballistas",
