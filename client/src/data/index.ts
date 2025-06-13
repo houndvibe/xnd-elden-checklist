@@ -1,4 +1,5 @@
 import { Collection } from "../store/collectionSlice";
+import { ashesOfWarData } from "./ashesOfWar";
 import { gesturesData } from "./gestures/gestures";
 import { incantationsData } from "./incantations";
 import { rangedWeaponData } from "./rangedWeapon";
@@ -15,4 +16,5 @@ export const itemsDataNew: Collection = {
   spiritAshesData: spiritAshesData,
   incantationsData: incantationsData,
   tearsAndUpgradesData: tearsAndUpgradesData,
+  ashesOfWarData: ashesOfWarData,
 };

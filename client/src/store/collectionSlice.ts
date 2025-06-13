@@ -24,12 +24,12 @@ import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 import { meleWeaponsData } from "../data/data-mele-weapons";
 import { infoItemsData } from "../data/data-info-items";
 import { toolsAndBellBearingsData } from "../data/data-tools-and-bells";
-import { tearsAndUpgradesData } from "../data/data-tears-and-upgrades";
+
 import { craftData } from "../data/data-craft";
 import { armourData } from "../data/data-armour";
 import { consumablesAndAmmoData } from "../data/data-consumables-and-ammo";
 import { keyItemsData } from "../data/data-key-items";
-import { ashesOfWarData } from "../data/data-ashes-of-war";
+
 import { itemsDataNew } from "../data";
 
 export interface Collection {
@@ -60,7 +60,7 @@ const initialState: State = {
     shieldsAndTorchesData: itemsDataNew.shieldsAndTorchesData,
     spiritAshesData: itemsDataNew.spiritAshesData,
     talismansData: itemsDataNew.talismansData,
-    ashesOfWarData: ashesOfWarData,
+    ashesOfWarData: itemsDataNew.ashesOfWarData,
     sorceriesData: itemsDataNew.sorceriesData,
     incantationsData: itemsDataNew.incantationsData,
     gesturesData: itemsDataNew.gesturesData,

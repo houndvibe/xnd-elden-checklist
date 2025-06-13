@@ -1,6 +1,6 @@
 import { Collection } from "../store/collectionSlice";
+import { ashesOfWarData } from "./ashesOfWar";
 import { armourData } from "./data-armour";
-import { ashesOfWarData } from "./data-ashes-of-war";
 import { consumablesAndAmmoData } from "./data-consumables-and-ammo";
 import { craftData } from "./data-craft";
 

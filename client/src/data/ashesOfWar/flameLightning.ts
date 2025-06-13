@@ -1,0 +1,87 @@
+import { AshOfWarItem } from "../../global-types";
+
+export const flameLightning: AshOfWarItem[] = [
+  {
+    type: "ashesOfWar",
+    name: "Flaming Strike",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flaming+Strike",
+    dlc: false,
+  },
+  {
+    type: "ashesOfWar",
+    name: "Flame of the Redmanes",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+of+the+Redmanes",
+    dlc: false,
+  },
+  {
+    type: "ashesOfWar",
+    name: "Eruption",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Eruption",
+    dlc: false,
+  },
+  {
+    type: "ashesOfWar",
+    name: "Prelate's Charge",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Prelate's+Charge",
+    dlc: false,
+  },
+  {
+    type: "ashesOfWar",
+    name: "Black Flame Tornado",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Black+Flame+Tornado",
+    dlc: false,
+  },
+  {
+    type: "ashesOfWar",
+    name: "Flame Skewer",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+Skewer",
+    dlc: false,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_flame_skewer_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "ashesOfWar",
+    name: "Flame Spear",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+Spear",
+    dlc: false,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_flame_spear_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "ashesOfWar",
+    name: "Thunderbolt",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Thunderbolt",
+    dlc: false,
+  },
+  {
+    type: "ashesOfWar",
+    name: "Lightning Slash",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Lightning+Slash",
+    dlc: false,
+  },
+  {
+    type: "ashesOfWar",
+    name: "Blinkbolt",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Blinkbolt",
+    dlc: false,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_blinkbolt_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "ashesOfWar",
+    name: "Lightning Ram",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Lightning+Ram",
+    dlc: false,
+  },
+];
