@@ -26,11 +26,8 @@ import { talismansData } from "../data/data-talismans";
 
 import { sorceriesData } from "../data/data-sorceries";
 import { incantationsData } from "../data/data-incantations";
-import { gesturesData } from "../data/data-gestures";
 import { meleWeaponsData } from "../data/data-mele-weapons";
-import { rangedWeaponsData } from "../data/data-ranged-weapons";
 import { infoItemsData } from "../data/data-info-items";
-import { shieldsAndTorchesData } from "../data/data-shields-and-torches";
 import { toolsAndBellBearingsData } from "../data/data-tools-and-bells";
 import { tearsAndUpgradesData } from "../data/data-tears-and-upgrades";
 import { craftData } from "../data/data-craft";
@@ -71,7 +68,7 @@ const initialState: State = {
     ashesOfWarData: ashesOfWarData,
     sorceriesData: sorceriesData,
     incantationsData: incantationsData,
-    gesturesData: gesturesData,
+    gesturesData: itemsDataNew.gesturesData,
     meleWeaponsData: meleWeaponsData,
     rangedWeaponsData: itemsDataNew.rangedWeaponsData,
     infoItemsData: infoItemsData,
