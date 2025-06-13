@@ -8,7 +8,6 @@ import { infoItemsData } from "./data-info-items";
 import { keyItemsData } from "./data-key-items";
 import { meleWeaponsData } from "./data-mele-weapons";
 
-import { tearsAndUpgradesData } from "./data-tears-and-upgrades";
 import { toolsAndBellBearingsData } from "./data-tools-and-bells";
 import { gesturesData } from "./gestures/gestures";
 import { incantationsData } from "./incantations";
@@ -17,6 +16,7 @@ import { shieldsAndTorchesData } from "./shieldsAndTorches";
 import { sorceriesData } from "./sorceries/indext";
 import { spiritAshesData } from "./spiritAshes";
 import { talismansData } from "./talismans";
+import { tearsAndUpgradesData } from "./tearsAndUpgrades";
 
 export const itemsData: Collection = {
   shieldsAndTorchesData: shieldsAndTorchesData,

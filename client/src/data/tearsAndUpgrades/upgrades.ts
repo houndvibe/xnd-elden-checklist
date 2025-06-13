@@ -1,0 +1,90 @@
+import { TearsOrUpgradesItem } from "../../global-types";
+
+export const upgrades: TearsOrUpgradesItem[] = [
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Golden Seed",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Golden+Seed",
+    dlc: false,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Sacred Tear",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Sacred+Tear",
+    dlc: false,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Scadutree Fragment",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Scadutree+Fragment",
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/scadutree_fragment_bolstering_material_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Revered Spirit Ash",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Revered+Spirit+Ash",
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/revered_spirit_ash_bolstering_material_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Cracked Pot",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Cracked+Pot",
+    dlc: false,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Ritual Pot",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ritual+Pot",
+    dlc: false,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Hefty Cracked Pot",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Hefty+Cracked+Pot",
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/hefty_cracked_pot_container_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Perfume Bottle",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Perfume+Bottle",
+    dlc: false,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Memory Stone",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Memory+Stone",
+    dlc: false,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Talisman Pouch",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Talisman+Pouch",
+    dlc: false,
+  },
+];

@@ -68,7 +68,7 @@ const initialState: State = {
     rangedWeaponsData: itemsDataNew.rangedWeaponsData,
     infoItemsData: infoItemsData,
     toolsAndBellBearingsData: toolsAndBellBearingsData,
-    tearsAndUpgradesData: tearsAndUpgradesData,
+    tearsAndUpgradesData: itemsDataNew.tearsAndUpgradesData,
     craftData: craftData,
     armourData: armourData,
     consumablesAndAmmoData: consumablesAndAmmoData,
