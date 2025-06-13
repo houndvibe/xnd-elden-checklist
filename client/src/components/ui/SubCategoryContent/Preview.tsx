@@ -1,6 +1,6 @@
 import { Flex, Image, /* Popover,  */ Spin } from "antd";
 import styles from "./SubCategoryContent.module.scss";
-import { Item } from "../../../global-types";
+import { Item, ItemSubCategory } from "../../../global-types";
 /* import Link from "antd/es/typography/Link";
 import { calculateItemDropChance, truncateText } from "../../../lib/utils/misc";
 import { useAppSelector } from "../../../store/typedDispatch"; */
@@ -11,9 +11,14 @@ interface PreviewProps {
     name: string;
   };
   dataSource: Item[];
+  subcategory: ItemSubCategory;
 }
 
-export default function Preview({ img, dataSource }: PreviewProps) {
+export default function Preview({
+  img,
+  dataSource,
+  subcategory,
+}: PreviewProps) {
   /*   const storedDiscovery = useAppSelector(
     (state) => state.discovery.calculatedDiscovery
   );
@@ -108,13 +113,17 @@ export default function Preview({ img, dataSource }: PreviewProps) {
       </div>
     ); */
 
+  const transformNameToImgUrl = (name: string) => {
+    return `./images/rangedWeapon/${subcategory}/${name}.png`;
+  };
+
   const renderMainContent = () => (
     <>
       <Flex vertical align="center" gap={0}>
         <span className={styles.title}>{name}</span>
         <Image
           height={600}
-          src={img.url!}
+          src={transformNameToImgUrl(img.name)}
           alt="no image"
           /*   preview={false} */
           placeholder={

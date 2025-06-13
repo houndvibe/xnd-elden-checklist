@@ -42,7 +42,13 @@ export default function SubCategoryContent({
         />
       )}
 
-      {hoveredImg ? <Preview dataSource={dataSource} img={hoveredImg} /> : null}
+      {hoveredImg ? (
+        <Preview
+          dataSource={dataSource}
+          subcategory={subcategory}
+          img={hoveredImg}
+        />
+      ) : null}
     </Flex>
   );
 }

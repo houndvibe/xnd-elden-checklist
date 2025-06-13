@@ -38,6 +38,7 @@ import { armourData } from "../data/data-armour";
 import { consumablesAndAmmoData } from "../data/data-consumables-and-ammo";
 import { keyItemsData } from "../data/data-key-items";
 import { ashesOfWarData } from "../data/data-ashes-of-war";
+import { itemsDataNew } from "../data";
 
 export interface Collection {
   shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap;
@@ -72,7 +73,7 @@ const initialState: State = {
     incantationsData: incantationsData,
     gesturesData: gesturesData,
     meleWeaponsData: meleWeaponsData,
-    rangedWeaponsData: rangedWeaponsData,
+    rangedWeaponsData: itemsDataNew.rangedWeaponsData,
     infoItemsData: infoItemsData,
     toolsAndBellBearingsData: toolsAndBellBearingsData,
     tearsAndUpgradesData: tearsAndUpgradesData,
