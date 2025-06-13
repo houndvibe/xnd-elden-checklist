@@ -3,7 +3,7 @@ import { armourData } from "./data-armour";
 import { ashesOfWarData } from "./data-ashes-of-war";
 import { consumablesAndAmmoData } from "./data-consumables-and-ammo";
 import { craftData } from "./data-craft";
-import { incantationsData } from "./data-incantations";
+
 import { infoItemsData } from "./data-info-items";
 import { keyItemsData } from "./data-key-items";
 import { meleWeaponsData } from "./data-mele-weapons";
@@ -11,6 +11,7 @@ import { meleWeaponsData } from "./data-mele-weapons";
 import { tearsAndUpgradesData } from "./data-tears-and-upgrades";
 import { toolsAndBellBearingsData } from "./data-tools-and-bells";
 import { gesturesData } from "./gestures/gestures";
+import { incantationsData } from "./incantations";
 import { rangedWeaponData } from "./rangedWeapon";
 import { shieldsAndTorchesData } from "./shieldsAndTorches";
 import { sorceriesData } from "./sorceries/indext";

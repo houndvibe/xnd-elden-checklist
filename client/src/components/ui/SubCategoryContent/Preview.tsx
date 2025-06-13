@@ -116,8 +116,10 @@ export default function Preview({
     ); */
 
   const transformNameToImgUrl = (name: string) => {
-    /*     console.log(`./images/${categoty}/${subcategory}/${name}.png`); */
-    return `./images/${categoty}/${subcategory}/${name}.png`;
+    console.log(
+      `./images/${categoty}/${subcategory}/${name.replace(/:/g, "")}.png`
+    );
+    return `./images/${categoty}/${subcategory}/${name.replace(/:/g, "")}.png`;
   };
 
   const renderMainContent = () => (
