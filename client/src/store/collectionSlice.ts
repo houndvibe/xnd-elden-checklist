@@ -64,7 +64,7 @@ const initialState: State = {
   collectionData: loadFromStorage("xnd.collection", {
     shieldsAndTorchesData: itemsDataNew.shieldsAndTorchesData,
     spiritAshesData: spiritAshesData,
-    talismansData: talismansData,
+    talismansData: itemsDataNew.talismansData,
     ashesOfWarData: ashesOfWarData,
     sorceriesData: sorceriesData,
     incantationsData: incantationsData,
