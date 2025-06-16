@@ -1,0 +1,68 @@
+import { MeleWeaponItem } from "../../global-types";
+
+export const thrustingSwords: MeleWeaponItem[] = [
+  {
+    type: "meleWeapons",
+    name: "Rapier",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Rapier",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Estoc",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Estoc",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Noble's Estoc",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Noble's+Estoc",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Cleanrot Knight's Sword",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Cleanrot+Knight's+Sword",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Rogier's Rapier",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Rogier's+Rapier",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Antspur Rapier",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Antspur+Rapier",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Frozen Needle",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Frozen+Needle",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Carian Sorcery Sword",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Carian+Sorcery+Sword",
+    legendary: false,
+    dlc: true,
+  },
+];

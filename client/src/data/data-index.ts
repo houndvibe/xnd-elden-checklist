@@ -6,11 +6,11 @@ import { craftData } from "./data-craft";
 
 import { infoItemsData } from "./data-info-items";
 import { keyItemsData } from "./data-key-items";
-import { meleWeaponsData } from "./data-mele-weapons";
 
 import { toolsAndBellBearingsData } from "./data-tools-and-bells";
 import { gesturesData } from "./gestures/gestures";
 import { incantationsData } from "./incantations";
+import { meleWeaponsData } from "./meleWeapons";
 import { rangedWeaponData } from "./rangedWeapon";
 import { shieldsAndTorchesData } from "./shieldsAndTorches";
 import { sorceriesData } from "./sorceries/indext";

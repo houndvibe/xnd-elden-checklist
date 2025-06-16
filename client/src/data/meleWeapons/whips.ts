@@ -1,0 +1,60 @@
+import { MeleWeaponItem } from "../../global-types";
+
+export const whips: MeleWeaponItem[] = [
+  {
+    type: "meleWeapons",
+    name: "Whip",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Whip",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Thorned Whip",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Thorned_Whip",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Urumi",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Urumi",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Hoslow's Petal Whip",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Hoslow's_Petal_Whip",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Tooth Whip",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Tooth_Whip",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "meleWeapons",
+    name: "Magma Whip Candlestick",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Magma_Whip_Candlestick",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Giant's Red Braid",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Giant's_Red_Braid",
+    legendary: false,
+    dlc: false,
+  },
+];

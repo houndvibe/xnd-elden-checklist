@@ -1,0 +1,68 @@
+import { MeleWeaponItem } from "../../global-types";
+
+export const twinblades: MeleWeaponItem[] = [
+  {
+    type: "meleWeapons",
+    name: "Twinblade",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Twinblade",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Twinned Knight Swords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Twinned_Knight_Swords",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Black Steel Twinblade",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Black_Steel_Twinblade",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "meleWeapons",
+    name: "Godskin Peeler",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Godskin_Peeler",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Gargoyle's Twinblade",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Gargoyle's_Twinblade",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Gargoyle's Black Blades",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Gargoyle's_Black_Blades",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Eleonora's Poleblade",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Eleonora's_Poleblade",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Euporia",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Euporia",
+    legendary: false,
+    dlc: true,
+  },
+];

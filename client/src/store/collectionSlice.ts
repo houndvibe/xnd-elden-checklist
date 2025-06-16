@@ -21,7 +21,6 @@ import type {
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 
-import { meleWeaponsData } from "../data/data-mele-weapons";
 import { infoItemsData } from "../data/data-info-items";
 import { toolsAndBellBearingsData } from "../data/data-tools-and-bells";
 
@@ -64,7 +63,7 @@ const initialState: State = {
     sorceriesData: itemsDataNew.sorceriesData,
     incantationsData: itemsDataNew.incantationsData,
     gesturesData: itemsDataNew.gesturesData,
-    meleWeaponsData: meleWeaponsData,
+    meleWeaponsData: itemsDataNew.meleWeaponsData,
     rangedWeaponsData: itemsDataNew.rangedWeaponsData,
     infoItemsData: infoItemsData,
     toolsAndBellBearingsData: toolsAndBellBearingsData,
