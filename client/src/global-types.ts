@@ -374,6 +374,7 @@ export interface ArmourSubCategoryMap {
 export interface СonsumableAndAmmoItem {
   type: Extract<ItemCategory, "consumablesAndAmmo">;
   name: string;
+  subcategory: keyof СonsumablesAndAmmoItemsCategoryMap;
   collected: boolean;
   link: string;
   legendary: boolean;
