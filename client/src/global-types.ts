@@ -385,9 +385,10 @@ export interface СonsumablesAndAmmoItemsCategoryMap {
   food: СonsumableAndAmmoItem[];
   greases: СonsumableAndAmmoItem[];
   throwables: СonsumableAndAmmoItem[];
-  souls: СonsumableAndAmmoItem[];
+  runes: СonsumableAndAmmoItem[];
   other: СonsumableAndAmmoItem[];
   ammo: СonsumableAndAmmoItem[];
+  remembrances: СonsumableAndAmmoItem[];
 }
 
 //Ключевые
