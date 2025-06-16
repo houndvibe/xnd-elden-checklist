@@ -1,8 +1,8 @@
 import { Collection } from "../store/collectionSlice";
 import { ashesOfWarData } from "./ashesOfWar";
+import { craftData } from "./craft";
 import { armourData } from "./data-armour";
 import { consumablesAndAmmoData } from "./data-consumables-and-ammo";
-import { craftData } from "./data-craft";
 import { infoItemsData } from "./data-info-items";
 import { keyItemsData } from "./data-key-items";
 import { gesturesData } from "./gestures/gestures";

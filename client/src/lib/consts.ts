@@ -15,13 +15,13 @@ export const itemCategories: ItemCategory[] = [
   "tearsAndUpgrades",
   "meleWeapons",
   "gestures",
-
-  "craft",
   "toolsAndBellBearings",
-  "consumablesAndAmmo",
-  "armour",
+  "craft",
+
   "infoItems",
+  "consumablesAndAmmo",
   "keyItems",
+  "armour",
 ];
 
 export const legendaryEligibleItemCategories: ItemCategory[] = [

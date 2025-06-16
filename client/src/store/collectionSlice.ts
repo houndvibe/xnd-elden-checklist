@@ -23,7 +23,6 @@ import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 
 import { infoItemsData } from "../data/data-info-items";
 
-import { craftData } from "../data/data-craft";
 import { armourData } from "../data/data-armour";
 import { consumablesAndAmmoData } from "../data/data-consumables-and-ammo";
 import { keyItemsData } from "../data/data-key-items";
@@ -66,8 +65,8 @@ const initialState: State = {
     rangedWeaponsData: itemsDataNew.rangedWeaponsData,
     toolsAndBellBearingsData: itemsDataNew.toolsAndBellBearingsData,
     tearsAndUpgradesData: itemsDataNew.tearsAndUpgradesData,
+    craftData: itemsDataNew.craftData,
     infoItemsData: infoItemsData,
-    craftData: craftData,
     armourData: armourData,
     consumablesAndAmmoData: consumablesAndAmmoData,
     keyItemsData: keyItemsData,

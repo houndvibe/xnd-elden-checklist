@@ -123,6 +123,7 @@ export default function Preview({
     //исключение
     //тут много одинаковых, берем их напрямую
     if (subcategory === "bellBearings") return undefined;
+    if (subcategory === "cookbooks") return undefined;
     else
       return `./images/${categoty}/${subcategory}/${name.replace(
         /: |"/g,

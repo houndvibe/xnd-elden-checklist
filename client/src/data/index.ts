@@ -1,5 +1,6 @@
 import { Collection } from "../store/collectionSlice";
 import { ashesOfWarData } from "./ashesOfWar";
+import { craftData } from "./craft";
 import { gesturesData } from "./gestures/gestures";
 import { incantationsData } from "./incantations";
 import { meleWeaponsData } from "./meleWeapons";
@@ -23,4 +24,5 @@ export const itemsDataNew: Collection = {
   ashesOfWarData: ashesOfWarData,
   meleWeaponsData: meleWeaponsData,
   toolsAndBellBearingsData: toolsAndBellBearingsData,
+  craftData: craftData,
 };

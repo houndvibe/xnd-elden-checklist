@@ -8,11 +8,12 @@ export type ItemCategory =
   | "incantations"
   | "spiritAshes"
   | "ashesOfWar"
-  | "craft"
   | "tearsAndUpgrades"
   | "toolsAndBellBearings"
-  | "consumablesAndAmmo"
   | "gestures"
+  
+  | "craft"
+  | "consumablesAndAmmo"
   | "infoItems"
   | "keyItems";
 //Тут и души и оружие/магия с боссов
