@@ -8,6 +8,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Kal%C3%A9%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -16,6 +17,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -24,6 +26,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -32,6 +35,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -40,6 +44,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B4%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -48,6 +53,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B5%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -56,6 +62,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B6%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -64,6 +71,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B7%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -72,6 +80,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B8%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -80,6 +89,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B9%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -88,6 +98,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Isolated%2BMerchant%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -96,6 +107,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Isolated%2BMerchant%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -104,6 +116,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Isolated%2BMerchant%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -112,6 +125,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Hermit%2BMerchant%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -120,6 +134,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Hermit%2BMerchant%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -128,15 +143,9 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Hermit%2BMerchant%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
-  {
-    type: "toolsAndBellBearings",
-    subcategory: "bellBearings",
-    name: "Bell Bearing [3] Abandoned Merchant's Bell Bearing",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Bell%2BBearing%2B%5B3%5D%2BAbandoned%2BMerchant%27s%2BBell%2BBearing",
-    dlc: false,
-  },
+
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
@@ -144,6 +153,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Abandoned%2BMerchant%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -152,6 +162,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Imprisoned%2BMerchant%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -160,6 +171,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smithing-Stone%2BMiner%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -168,6 +180,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smithing-Stone%2BMiner%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -176,6 +189,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smithing-Stone%2BMiner%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -184,6 +198,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smithing-Stone%2BMiner%27s%2BBell%2BBearing%2B%5B4%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -192,6 +207,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Somberstone%2BMiner%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -200,6 +216,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Somberstone%2BMiner%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -208,6 +225,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Somberstone%2BMiner%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -216,6 +234,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Somberstone%2BMiner%27s%2BBell%2BBearing%2B%5B4%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -224,6 +243,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Somberstone%2BMiner%27s%2BBell%2BBearing%2B%5B5%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -232,6 +252,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -240,6 +261,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -248,6 +270,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -256,6 +279,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ghost-Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -264,6 +288,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ghost-Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -272,14 +297,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ghost-Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
-  },
-  {
-    type: "toolsAndBellBearings",
-    subcategory: "bellBearings",
-    name: "Bell Bearing [3] Bone Peddler's Bell Bearing",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Bell%2BBearing%2B%5B3%5D%2BBone%2BPeddler%27s%2BBell%2BBearing",
-    dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -288,6 +306,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bone%2BPeddler%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -296,6 +315,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Meat%2BPeddler%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -304,6 +324,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Medicine%2BPeddler%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -312,6 +333,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gravity%2BStone%2BPeddler%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -320,6 +342,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sellen%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/MagicBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -328,6 +351,8 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Seluvis%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl:
+      "./images/toolsAndBellBearings/bellBearings/Seluvis's Bell Bearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -336,6 +361,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Thops%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/MagicBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -344,6 +370,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Corhyn%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/SacredBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -352,6 +379,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Miriel%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/SacredBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -360,6 +388,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/D%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/SacredBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -368,6 +397,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gowry%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/MagicBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -376,6 +406,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rogier%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/DarkBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -384,6 +415,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bernahl%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -392,6 +424,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Iji%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/DarkBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -400,6 +433,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gostoc%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -408,6 +442,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Pidia%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -416,6 +451,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Patches%27%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -424,15 +460,9 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Blackguard%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png",
   },
-  {
-    type: "toolsAndBellBearings",
-    subcategory: "bellBearings",
-    name: "Shadow of the Erdtree Herbalist's Bell Bearing",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Shadow%2Bof%2Bthe%2BErdtree%2BHerbalist%27s%2BBell%2BBearing",
-    dlc: true,
-  },
+
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
@@ -440,6 +470,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Herbalist%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/DlcBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -448,6 +479,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mushroom-Seller%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/DlcBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -456,23 +488,19 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mushroom-Seller%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
-  },
-  {
-    type: "toolsAndBellBearings",
-    subcategory: "bellBearings",
-    name: "Bell Bearing [2] Moldmonger's Bell Bearing",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Bell%2BBearing%2B%5B2%5D%2BMoldmonger%27s%2BBell%2BBearing",
-    dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/DlcBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
     name: "Moldmonger's Bell Bearing",
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Moldmonger%27s%2BBell%2BBearing",
+    link: "https://eldenring.wiki.fextralife.com/Bell%2BBearing%2B%5B2%5D%2BMoldmonger%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl:
+      "./images/toolsAndBellBearings/bellBearings/Moldmonger's Bell Bearing.png",
   },
+
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
@@ -480,6 +508,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greasemonger%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/DlcBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -488,6 +517,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/String-Seller%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/DlcBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -496,6 +526,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spellmachinist%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl: "./images/toolsAndBellBearings/bellBearings/MagicBellBearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -504,6 +535,8 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Moore%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl:
+      "./images/toolsAndBellBearings/bellBearings/Moore's Bell Bearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -512,6 +545,8 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ymir%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl:
+      "./images/toolsAndBellBearings/bellBearings/Ymir's Bell Bearing.png",
   },
   {
     type: "toolsAndBellBearings",
@@ -520,5 +555,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Igon%27s%2BBell%2BBearing",
     dlc: false,
+    imgUrl:
+      "./images/toolsAndBellBearings/bellBearings/Igon's Bell Bearing.png",
   },
 ];

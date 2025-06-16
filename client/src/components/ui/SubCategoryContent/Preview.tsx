@@ -116,13 +116,18 @@ export default function Preview({
     ); */
 
   const transformNameToImgUrl = (name: string) => {
-    console.log(
+    /*     console.log(
       `./images/${categoty}/${subcategory}/${name.replace(/:/g, "")}.png`
     );
-    return `./images/${categoty}/${subcategory}/${name.replace(
-      /: |"/g,
-      ""
-    )}.png`;
+ */
+    //исключение
+    //тут много одинаковых, берем их напрямую
+    if (subcategory === "bellBearings") return undefined;
+    else
+      return `./images/${categoty}/${subcategory}/${name.replace(
+        /: |"/g,
+        ""
+      )}.png`;
   };
 
   const renderMainContent = () => (
@@ -131,9 +136,8 @@ export default function Preview({
         <span className={styles.title}>{name}</span>
         <Image
           height={600}
-          src={transformNameToImgUrl(img.name)}
+          src={transformNameToImgUrl(img.name) || img.url}
           alt="no image"
-          /*   preview={false} */
           placeholder={
             <div
               className={styles.spin}
@@ -162,7 +166,7 @@ export default function Preview({
   return (
     <Flex className={styles.preview} vertical align="center" gap={30}>
       {/*   {img.url && droppedBy && renderDropInfo()} */}
-      {img.url ? renderMainContent() : <div className={styles.placeholder} />}
+      {img.name ? renderMainContent() : <div className={styles.placeholder} />}
     </Flex>
   );
 }
