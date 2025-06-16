@@ -3,7 +3,7 @@ import type {
   ArmourSubCategoryMap,
   AshesOfWarSubCategoryMap,
   CraftItemsCategoryMap,
-  GesturesSubCategoryMap,
+  GesturesAndMultiplayerSubCategoryMap,
   IncantationsSubCategoryMap,
   InfoItemsSubCategoryMap,
   ItemCategory,
@@ -20,14 +20,11 @@ import type {
   СonsumablesAndAmmoItemsCategoryMap,
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
-
-import { infoItemsData } from "../data/data-info-items";
-
 import { armourData } from "../data/data-armour";
 import { consumablesAndAmmoData } from "../data/data-consumables-and-ammo";
 import { keyItemsData } from "../data/data-key-items";
-
 import { itemsDataNew } from "../data";
+import { infoItemsData } from "../data/infoItems";
 
 export interface Collection {
   shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap;
@@ -36,7 +33,7 @@ export interface Collection {
   ashesOfWarData: AshesOfWarSubCategoryMap;
   sorceriesData: SorceriesSubCategoryMap;
   incantationsData: IncantationsSubCategoryMap;
-  gesturesData: GesturesSubCategoryMap;
+  gesturesAndMultiplayerData: GesturesAndMultiplayerSubCategoryMap;
   meleWeaponsData: MeleWeaponsSubCategoryMap;
   rangedWeaponsData: RangedWeaponsSubCategoryMap;
   infoItemsData: InfoItemsSubCategoryMap;
@@ -60,7 +57,7 @@ const initialState: State = {
     ashesOfWarData: itemsDataNew.ashesOfWarData,
     sorceriesData: itemsDataNew.sorceriesData,
     incantationsData: itemsDataNew.incantationsData,
-    gesturesData: itemsDataNew.gesturesData,
+    gesturesAndMultiplayerData: itemsDataNew.gesturesAndMultiplayerData,
     meleWeaponsData: itemsDataNew.meleWeaponsData,
     rangedWeaponsData: itemsDataNew.rangedWeaponsData,
     toolsAndBellBearingsData: itemsDataNew.toolsAndBellBearingsData,

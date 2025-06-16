@@ -10,8 +10,7 @@ export type ItemCategory =
   | "ashesOfWar"
   | "tearsAndUpgrades"
   | "toolsAndBellBearings"
-  | "gestures"
-  
+  | "gesturesAndMultiplayer"
   | "craft"
   | "consumablesAndAmmo"
   | "infoItems"
@@ -169,8 +168,8 @@ export interface IncantationsSubCategoryMap {
 }
 
 //Жесты
-export interface GestureItem {
-  type: Extract<ItemCategory, "gestures">;
+export interface GestureOrMultiplayerItem {
+  type: Extract<ItemCategory, "gesturesAndMultiplayer">;
   name: string;
   description: string;
   collected: boolean;
@@ -179,8 +178,9 @@ export interface GestureItem {
   imgUrl?: string;
 }
 
-export interface GesturesSubCategoryMap {
-  gestures: GestureItem[];
+export interface GesturesAndMultiplayerSubCategoryMap {
+  gestures: GestureOrMultiplayerItem[];
+  multiplayer: GestureOrMultiplayerItem[];
 }
 
 //Оружие
@@ -264,19 +264,19 @@ export interface RangedWeaponsSubCategoryMap {
 //Бумажки
 export interface InfoItems {
   type: Extract<ItemCategory, "infoItems">;
+  subcategory: keyof InfoItemsSubCategoryMap;
   name: string;
   collected: boolean;
   link: string;
   dlc: boolean;
-  info: string;
-  location: string;
   imgUrl?: string;
 }
 
 export interface InfoItemsSubCategoryMap {
-  guides: InfoItems[];
+  notes: InfoItems[];
   paintings: InfoItems[];
   tutorials: InfoItems[];
+  maps: InfoItems[];
 }
 
 //Инструменты и колокольные сферы
@@ -419,7 +419,7 @@ export type ItemSubCategoryMap =
   | AshesOfWarSubCategoryMap
   | SorceriesSubCategoryMap
   | IncantationsSubCategoryMap
-  | GesturesSubCategoryMap
+  | GesturesAndMultiplayerSubCategoryMap
   | MeleWeaponsSubCategoryMap
   | RangedWeaponsSubCategoryMap
   | InfoItemsSubCategoryMap
@@ -437,7 +437,7 @@ export type ItemSubCategory =
   | keyof AshesOfWarSubCategoryMap
   | keyof SorceriesSubCategoryMap
   | keyof IncantationsSubCategoryMap
-  | keyof GesturesSubCategoryMap
+  | keyof GesturesAndMultiplayerSubCategoryMap
   | keyof MeleWeaponsSubCategoryMap
   | keyof RangedWeaponsSubCategoryMap
   | keyof InfoItemsSubCategoryMap
@@ -455,7 +455,7 @@ export type Item =
   | AshOfWarItem
   | SorceryItem
   | IncantationsItem
-  | GestureItem
+  | GestureOrMultiplayerItem
   | MeleWeaponItem
   | RangedWeaponItem
   | InfoItems

@@ -14,7 +14,7 @@ export const itemCategories: ItemCategory[] = [
   "talismans",
   "tearsAndUpgrades",
   "meleWeapons",
-  "gestures",
+  "gesturesAndMultiplayer",
   "toolsAndBellBearings",
   "craft",
 

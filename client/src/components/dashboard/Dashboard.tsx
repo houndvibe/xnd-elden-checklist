@@ -23,7 +23,7 @@ const categoryTypes: ItemCategory[] = [
   "toolsAndBellBearings",
   "keyItems",
   "consumablesAndAmmo",
-  "gestures",
+  "gesturesAndMultiplayer",
   "infoItems",
 ] as const;
 

@@ -92,9 +92,12 @@ export function flattenCollectionItems(collection: Collection): Item[] {
       }
     }
     // Обработка gesturesData
-    else if (categoryKey === "gesturesData") {
-      if (categoryData.gestures && Array.isArray(categoryData.gestures)) {
-        result.push(...categoryData.gestures);
+    else if (categoryKey === "gesturesAndMultiplayerData") {
+      if (
+        categoryData.gestures &&
+        Array.isArray(categoryData.gesturesAndMultiplayer)
+      ) {
+        result.push(...categoryData.gesturesAndMultiplayer);
       }
     }
     // Обработка meleWeaponsData и rangedWeaponsData

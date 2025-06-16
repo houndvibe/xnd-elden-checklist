@@ -58,8 +58,8 @@ export function transformCategoryToName(category: ItemCategory) {
       return "Key Items";
     case "consumablesAndAmmo":
       return "Consumables & Ammo";
-    case "gestures":
-      return "Gestures";
+    case "gesturesAndMultiplayer":
+      return "Gestures & Multiplayer";
     case "infoItems":
       return "Info Items";
     default:

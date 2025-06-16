@@ -3,10 +3,11 @@ import { ashesOfWarData } from "./ashesOfWar";
 import { craftData } from "./craft";
 import { armourData } from "./data-armour";
 import { consumablesAndAmmoData } from "./data-consumables-and-ammo";
-import { infoItemsData } from "./data-info-items";
+
 import { keyItemsData } from "./data-key-items";
-import { gesturesData } from "./gestures/gestures";
+import { gesturesAndMultiplayerData } from "./gesturesAndMultiplayer";
 import { incantationsData } from "./incantations";
+import { infoItemsData } from "./infoItems";
 import { meleWeaponsData } from "./meleWeapons";
 import { rangedWeaponData } from "./rangedWeapon";
 import { shieldsAndTorchesData } from "./shieldsAndTorches";
@@ -23,7 +24,7 @@ export const itemsData: Collection = {
   ashesOfWarData: ashesOfWarData,
   sorceriesData: sorceriesData,
   incantationsData: incantationsData,
-  gesturesData: gesturesData,
+  gesturesAndMultiplayerData: gesturesAndMultiplayerData,
   meleWeaponsData: meleWeaponsData,
   rangedWeaponsData: rangedWeaponData,
   infoItemsData: infoItemsData,

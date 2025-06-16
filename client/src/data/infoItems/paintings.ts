@@ -1,0 +1,60 @@
+import { InfoItems } from "../../global-types";
+
+export const paintings: InfoItems[] = [
+  {
+    type: "infoItems",
+    subcategory: "paintings",
+    name: "Homing Instinct",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Homing+Instinct",
+    dlc: false,
+  },
+  {
+    type: "infoItems",
+    subcategory: "paintings",
+    name: "Flightless Bird",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Flightless+Bird",
+    dlc: false,
+  },
+  {
+    type: "infoItems",
+    subcategory: "paintings",
+    name: "Resurrection",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Resurrection",
+    dlc: false,
+  },
+  {
+    type: "infoItems",
+    subcategory: "paintings",
+    name: "Prophecy",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Prophecy",
+    dlc: false,
+  },
+  {
+    type: "infoItems",
+    subcategory: "paintings",
+    name: "Champion's Song",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Champion's+Song",
+    dlc: false,
+  },
+  {
+    type: "infoItems",
+    subcategory: "paintings",
+    name: "Redmane",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Redmane",
+    dlc: false,
+  },
+  {
+    type: "infoItems",
+    subcategory: "paintings",
+    name: "Sorcerer",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Sorcerer",
+    dlc: false,
+  },
+];

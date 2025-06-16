@@ -26,7 +26,7 @@ export function getNameToImgUrlConverter(record: Item) {
     case "incantations":
       return convertIncantationNameToWikiImageUrl(record.name, record.dlc);
 
-    case "gestures":
+    case "gesturesAndMultiplayer":
       return convertGestureNameToWikiImageUrl(record.name, record.dlc);
 
     case "infoItems":

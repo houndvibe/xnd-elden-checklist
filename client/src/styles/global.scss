@@ -69,8 +69,9 @@ $link-color-hover: lighten($link-color, 15%);
 .incantations_wallpaper {
   background: url("../assets/bg-incantations.png") center/cover no-repeat;
 }
-.gestures_wallpaper {
-  background: url("../assets/bg-gestures.jpg") center/cover no-repeat;
+.gesturesAndMultiplayer_wallpaper {
+  background: url("../assets/bg-gesturesAndMultiplayer.jpg") center/cover
+    no-repeat;
 }
 .meleWeapons_wallpaper {
   background: url("../assets/bg-mele.jpg") center/cover no-repeat;
