@@ -9,6 +9,7 @@ import { sorceriesData } from "./sorceries/indext";
 import { spiritAshesData } from "./spiritAshes";
 import { talismansData } from "./talismans";
 import { tearsAndUpgradesData } from "./tearsAndUpgrades";
+import { toolsAndBellBearingsData } from "./toolsAndBellBearings";
 
 export const itemsDataNew: Collection = {
   rangedWeaponsData: rangedWeaponData,
@@ -21,4 +22,5 @@ export const itemsDataNew: Collection = {
   tearsAndUpgradesData: tearsAndUpgradesData,
   ashesOfWarData: ashesOfWarData,
   meleWeaponsData: meleWeaponsData,
+  toolsAndBellBearingsData: toolsAndBellBearingsData,
 };

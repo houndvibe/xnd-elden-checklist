@@ -9,18 +9,17 @@ export const itemCategories: ItemCategory[] = [
   "rangedWeapons",
   "sorceries",
   "spiritAshes",
-
   "incantations",
   "ashesOfWar",
   "talismans",
+  "tearsAndUpgrades",
+  "meleWeapons",
+  "gestures",
 
   "craft",
-  "tearsAndUpgrades",
   "toolsAndBellBearings",
   "consumablesAndAmmo",
-  "meleWeapons",
   "armour",
-  "gestures",
   "infoItems",
   "keyItems",
 ];

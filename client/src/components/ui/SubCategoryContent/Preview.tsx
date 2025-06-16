@@ -119,7 +119,10 @@ export default function Preview({
     console.log(
       `./images/${categoty}/${subcategory}/${name.replace(/:/g, "")}.png`
     );
-    return `./images/${categoty}/${subcategory}/${name.replace(/:/g, "")}.png`;
+    return `./images/${categoty}/${subcategory}/${name.replace(
+      /: |"/g,
+      ""
+    )}.png`;
   };
 
   const renderMainContent = () => (

@@ -10,8 +10,7 @@ import SubCategoryContent from "../SubCategoryContent/SubCategoryContent";
 import CategoryInfo from "../CategotyInfo/CategoryInfo";
 import { transformCategoryToName } from "../../../lib/utils/misc";
 
-
-export default function CategoryTab({ category }: { category: ItemCategory}) {
+export default function CategoryTab({ category }: { category: ItemCategory }) {
   const location = useLocation();
   const navigate = useNavigate();
   const searchParams = new URLSearchParams(location.search);

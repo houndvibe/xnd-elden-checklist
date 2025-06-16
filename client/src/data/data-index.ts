@@ -3,11 +3,8 @@ import { ashesOfWarData } from "./ashesOfWar";
 import { armourData } from "./data-armour";
 import { consumablesAndAmmoData } from "./data-consumables-and-ammo";
 import { craftData } from "./data-craft";
-
 import { infoItemsData } from "./data-info-items";
 import { keyItemsData } from "./data-key-items";
-
-import { toolsAndBellBearingsData } from "./data-tools-and-bells";
 import { gesturesData } from "./gestures/gestures";
 import { incantationsData } from "./incantations";
 import { meleWeaponsData } from "./meleWeapons";
@@ -17,6 +14,7 @@ import { sorceriesData } from "./sorceries/indext";
 import { spiritAshesData } from "./spiritAshes";
 import { talismansData } from "./talismans";
 import { tearsAndUpgradesData } from "./tearsAndUpgrades";
+import { toolsAndBellBearingsData } from "./toolsAndBellBearings";
 
 export const itemsData: Collection = {
   shieldsAndTorchesData: shieldsAndTorchesData,
