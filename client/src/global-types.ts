@@ -396,6 +396,7 @@ export interface СonsumablesAndAmmoItemsCategoryMap {
 
 export interface KeyItem {
   type: Extract<ItemCategory, "keyItems">;
+  subcategory: keyof KeyItemsSubCategoryMap;
   name: string;
   collected: boolean;
   link: string;
@@ -407,10 +408,8 @@ export interface KeyItem {
 export interface KeyItemsSubCategoryMap {
   keys: KeyItem[];
   quests: KeyItem[];
-  spellbooks: KeyItem[];
-  maps: KeyItem[];
+  spellBooks: KeyItem[];
   greatRunes: KeyItem[];
-  remembrences: KeyItem[];
 }
 
 //общее

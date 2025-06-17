@@ -21,10 +21,10 @@ import type {
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 import { armourData } from "../data/data-armour";
-import { keyItemsData } from "../data/data-key-items";
 import { itemsDataNew } from "../data";
 import { infoItemsData } from "../data/infoItems";
 import { consumablesAndAmmoData } from "../data/consumablesAndAmmo";
+import { keyItemsData } from "../data/keyItems";
 
 export interface Collection {
   shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap;

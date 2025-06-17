@@ -5,6 +5,7 @@ import { craftData } from "./craft";
 import { gesturesAndMultiplayerData } from "./gesturesAndMultiplayer";
 import { incantationsData } from "./incantations";
 import { infoItemsData } from "./infoItems";
+import { keyItemsData } from "./keyItems";
 import { meleWeaponsData } from "./meleWeapons";
 import { rangedWeaponData } from "./rangedWeapon";
 import { shieldsAndTorchesData } from "./shieldsAndTorches";
@@ -29,4 +30,5 @@ export const itemsDataNew: Collection = {
   craftData: craftData,
   infoItemsData: infoItemsData,
   consumablesAndAmmoData: consumablesAndAmmoData,
+  keyItemsData: keyItemsData,
 };
