@@ -1,3 +1,4 @@
+@use "sass:color";
 /* $text-primary: #aa7714; */
 $text-primary: #856a51;
 $text-highlighted: #aa7714;
@@ -8,7 +9,7 @@ $bg-light: #1f1f1f;
 /* $link-color: #6b568c; */
 
 $link-color: #4a6a8a;
-$link-color-hover: lighten($link-color, 15%);
+$link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
 /* $link-color: #5a7f5a; */
 
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");

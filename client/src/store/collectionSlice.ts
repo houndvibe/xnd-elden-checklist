@@ -20,7 +20,6 @@ import type {
   СonsumablesAndAmmoItemsCategoryMap,
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
-import { armourData } from "../data/data-armour";
 import { itemsDataNew } from "../data";
 import { infoItemsData } from "../data/infoItems";
 import { consumablesAndAmmoData } from "../data/consumablesAndAmmo";
@@ -64,7 +63,7 @@ const initialState: State = {
     tearsAndUpgradesData: itemsDataNew.tearsAndUpgradesData,
     craftData: itemsDataNew.craftData,
     infoItemsData: infoItemsData,
-    armourData: armourData,
+    armourData: itemsDataNew.armourData,
     consumablesAndAmmoData: consumablesAndAmmoData,
     keyItemsData: keyItemsData,
   }),

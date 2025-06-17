@@ -1,4 +1,5 @@
 import { Collection } from "../store/collectionSlice";
+import { armourData } from "./armour";
 import { ashesOfWarData } from "./ashesOfWar";
 import { consumablesAndAmmoData } from "./consumablesAndAmmo";
 import { craftData } from "./craft";
@@ -31,4 +32,5 @@ export const itemsDataNew: Collection = {
   infoItemsData: infoItemsData,
   consumablesAndAmmoData: consumablesAndAmmoData,
   keyItemsData: keyItemsData,
+  armourData: armourData,
 };

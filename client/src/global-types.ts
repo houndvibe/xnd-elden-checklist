@@ -337,6 +337,7 @@ export interface CraftItemsCategoryMap {
 
 export interface ArmorBase {
   type: Extract<ItemCategory, "armour">;
+  subcategory: keyof ArmourSubCategoryMap;
   pieceType: "set" | "helm" | "gloves" | "chest" | "boots";
   name: string;
   collected: boolean;
@@ -356,16 +357,17 @@ export interface ArmourSet extends ArmourPiece {
 export type ArmourItem = ArmourSet | ArmourPiece;
 
 export interface ArmourSubCategoryMap {
-  "Commonfolk&Wanderers": ArmourSet[];
-  "Scholars&Seers": ArmourSet[];
-  "Cultists&Nobles": ArmourSet[];
-  "Rogues&Outcasts": ArmourSet[];
-  "Militia&FringeWarriors": ArmourSet[];
-  RankedSoldiers: ArmourSet[];
-  "EliteKnights&Legends": ArmourSet[];
-  KnightlyOrders: ArmourSet[];
-  NamedChampions: ArmourSet[];
-  "Warlords & Colossi": ArmourSet[];
+  commonfolkAndWanderers: ArmourSet[];
+  scholarsAndSeers: ArmourSet[];
+  cultistsAndNobles: ArmourSet[];
+  roguesAndOutcasts: ArmourSet[];
+  militiaAndFringeWarriors: ArmourSet[];
+  rankedSoldiers: ArmourSet[];
+  eliteKnightsAndLegends: ArmourSet[];
+  knightlyOrders: ArmourSet[];
+  namedChampions: ArmourSet[];
+  warlords: ArmourSet[];
+  juggernouts: ArmourSet[];
   pieces: ArmourItem[];
 }
 
