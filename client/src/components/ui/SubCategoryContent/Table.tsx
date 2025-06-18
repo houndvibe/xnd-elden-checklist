@@ -5,7 +5,7 @@ import type {
   TalismansSubCategoryMap,
 } from "../../../global-types";
 import { getNameToImgUrlConverter } from "../../../lib/utils/converters";
-import { useAppDispatch } from "../../../store/typedDispatch";
+import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
 import { CheckOutlined } from "@ant-design/icons";
 
 import styles from "./SubCategoryContent.module.scss";
@@ -31,6 +31,7 @@ import { ThunderboltTwoTone } from "@ant-design/icons";
 import dlcIcon from "../../../assets/dlc-icon.png";
 import { toggleTalismanCollected } from "../../../store/collectionSlice";
 import { getStoreAction } from "../../../store/actions";
+import { setGlobalSearchItem } from "../../../store/serviceSlice";
 
 export default function Table({
   setHoveredImg,
@@ -48,6 +49,9 @@ export default function Table({
 }) {
   const dispatch = useAppDispatch();
 
+  const { globalSearchItem } = useAppSelector((state) => state.service);
+  console.log(globalSearchItem);
+
   const [sortStep, setSortStep] = useState<number>(0);
   const [sortColumn, setSortColumn] = useState<string | null>(null);
   const [sortOrder, setSortOrder] = useState<"ascend" | "descend" | null>(null);
@@ -58,10 +62,12 @@ export default function Table({
   const handleMouseEnter = useCallback((record: Item) => {
     const imgUrl = record.imgUrl || getNameToImgUrlConverter(record);
 
-    /*  hoverTimeoutRef.current = setTimeout(() => {
+    if (record.name === globalSearchItem) {
+      dispatch(setGlobalSearchItem(null));
+    }
+    hoverTimeoutRef.current = setTimeout(() => {
       setHoveredImg({ url: imgUrl, name: record.name });
-    }, 100); */
-    setHoveredImg({ url: imgUrl, name: record.name });
+    }, 50);
   }, []);
 
   const handleMouseLeave = useCallback(() => {
@@ -215,9 +221,11 @@ export default function Table({
       pagination={false}
       size="small"
       rowKey="name"
-      rowClassName={(record) =>
-        record.collected ? "row-collected" : "row-missing"
-      }
+      rowClassName={(record) => {
+        if (record.collected) return "row-collected";
+        if (globalSearchItem === record.name) return "row-searchTarget";
+        return "row-missing";
+      }}
       onChange={onChangeTable}
       onRow={(record) => ({
         onMouseEnter: () => handleMouseEnter(record),

@@ -22,7 +22,12 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
 
 //Подсветка собранных предметов
 .row-collected {
-  background-color: $success-green;
+  background-color: $success-green !important;
+}
+
+.row-searchTarget * {
+  background-color: $text-highlighted !important;
+  color: $bg-dark;
 }
 
 .row-pieces-missing {

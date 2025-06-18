@@ -6,6 +6,8 @@ import { Collection } from "../../../store/collectionSlice";
 import { Item, ItemSubCategoryMap } from "../../../global-types";
 import { useNavigate } from "react-router-dom";
 import { flattenCollectionItems } from "../../../lib/utils/search";
+import { useAppDispatch } from "../../../store/typedDispatch";
+import { setGlobalSearchItem } from "../../../store/serviceSlice";
 
 const { Search } = Input;
 
@@ -15,6 +17,7 @@ type SuggestionOption = {
 };
 
 const SearchWithSuggestions = () => {
+  const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const [options, setOptions] = useState<SuggestionOption[]>([]);
   const [searchText, setSearchText] = useState<string>("");
@@ -27,14 +30,12 @@ const SearchWithSuggestions = () => {
             subcategory as keyof ItemSubCategoryMap
           ] as Item[]
         ).find((item: Item) => {
-          return item.name
-            .toLocaleLowerCase()
-            .includes(value.toLocaleLowerCase());
+          return item.name.toLocaleLowerCase() === value.toLocaleLowerCase();
         });
 
         if (subject) {
-          /*  navigate(`/${subject.type}?open=${subject.subcategory}`); */
-          navigate(`/${subject.type}?open=${subject}`);
+          dispatch(setGlobalSearchItem(subject.name));
+          navigate(`/${subject.type}?open=${subject.subcategory}`);
         }
       }
     }
@@ -42,6 +43,7 @@ const SearchWithSuggestions = () => {
 
   const handleChange = (value: string): void => {
     setSearchText(value);
+
     setOptions(
       generateSuggestions(value).map((suggestion: Item) => ({
         value: suggestion.name,
@@ -50,9 +52,7 @@ const SearchWithSuggestions = () => {
             {suggestion.name}{" "}
             <Image
               height={20}
-              src={
-                "https://eldenring.wiki.fextralife.com/file/Elden-Ring/steel-wire_torch_weapon_elden_ring_wiki_guide_200px.png"
-              }
+              src={`./images/${suggestion.type}/${suggestion.subcategory}/${suggestion.name}.png`}
             />
           </Flex>
         ),
