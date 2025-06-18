@@ -116,20 +116,19 @@ export default function Preview({
     ); */
 
   const transformNameToImgUrl = (name: string) => {
-    console.log(
-      `./images/${categoty}/${subcategory}/${name.replace(/:/g, "")}.png`
-    );
+    const commonImgPath = `./images/${categoty}/${subcategory}/${name.replace(
+      /:|"/g,
+      ""
+    )}.png`;
 
     //исключение
     //тут много одинаковых, берем их напрямую
     if (subcategory === "bellBearings") return undefined;
     if (subcategory === "cookbooks") return undefined;
     if (subcategory === "notes") return undefined;
-    else
-      return `./images/${categoty}/${subcategory}/${name.replace(
-        /:|"/g,
-        ""
-      )}.png`;
+    if (img.name.includes(" Set")) {
+      return `./images/${categoty}/placeholder.png`;
+    } else return commonImgPath;
   };
 
   const renderMainContent = () => (
