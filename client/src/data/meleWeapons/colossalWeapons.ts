@@ -4,6 +4,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Duelist Greataxe",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Duelist_Greataxe",
     legendary: false,
@@ -12,6 +13,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Rotten Greataxe",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rotten_Greataxe",
     legendary: false,
@@ -20,6 +22,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Golem's Halberd",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Golem's_Halberd",
     legendary: false,
@@ -28,6 +31,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Giant-Crusher",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Giant-Crusher",
     legendary: false,
@@ -36,6 +40,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Prelate's Inferno Crozier",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Prelate's_Inferno_Crozier",
     legendary: false,
@@ -44,6 +49,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Great Club",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Great_Club",
     legendary: false,
@@ -52,6 +58,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Troll's Hammer",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Troll's_Hammer",
     legendary: false,
@@ -60,6 +67,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Dragon Greatclaw",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dragon_Greatclaw",
     legendary: false,
@@ -68,6 +76,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Bloodfiend's Arm",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bloodfiend's_Arm",
     legendary: false,
@@ -76,6 +85,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Watchdog's Staff",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Watchdog's_Staff",
     legendary: false,
@@ -84,6 +94,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Staff of the Avatar",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Staff_of_the_Avatar",
     legendary: false,
@@ -92,6 +103,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Rotten Staff",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rotten_Staff",
     legendary: false,
@@ -100,6 +112,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Envoy's Greathorn",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Envoy's_Greathorn",
     legendary: false,
@@ -108,6 +121,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Ghiza's Wheel",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ghiza's_Wheel",
     legendary: false,
@@ -116,6 +130,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Fallingstar Beast Jaw",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fallingstar_Beast_Jaw",
     legendary: false,
@@ -124,6 +139,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Anvil Hammer",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Anvil_Hammer",
     legendary: false,
@@ -132,6 +148,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Devonia's Hammer",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Devonia's_Hammer",
     legendary: false,
@@ -140,6 +157,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Axe of Godfrey",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Axe_of_Godfrey",
     legendary: false,
@@ -148,6 +166,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Shadow Sunflower Blossom",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Shadow_Sunflower_Blossom",
     legendary: false,
@@ -156,6 +175,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Gazing Finger",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gazing_Finger",
     legendary: false,

@@ -34,7 +34,7 @@ const SearchWithSuggestions = () => {
 
         if (subject) {
           /*  navigate(`/${subject.type}?open=${subject.subcategory}`); */
-          navigate(`/${subject.type}?`);
+          navigate(`/${subject.type}?open=${subject}`);
         }
       }
     }

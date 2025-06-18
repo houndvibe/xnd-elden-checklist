@@ -4,6 +4,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Archer",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Archer+Ashes",
     legendary: false,
@@ -12,6 +13,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Greatshield Soldier",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greatshield+Soldier+Ashes",
     legendary: false,
@@ -20,6 +22,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Page",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Page+Ashes",
     legendary: false,
@@ -28,6 +31,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Vulgar Militia",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Vulgar+Militia+Ashes",
     legendary: false,
@@ -36,6 +40,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Marionette Soldier",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Marionette+Soldier+Ashes",
     legendary: false,
@@ -44,6 +49,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Avionette Soldier",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Avionette+Soldier+Ashes",
     legendary: false,
@@ -52,6 +58,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Kaiden Sellsword",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Kaiden+Sellsword+Ashes",
     legendary: false,
@@ -60,6 +67,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Mad Pumpkin Head",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mad+Pumpkin+Head+Ashes",
     legendary: false,
@@ -68,6 +76,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Fire Monk",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fire+Monk+Ashes",
     legendary: false,
@@ -76,6 +85,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Ancestral Follower",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancestral+Follower+Ashes",
     legendary: false,
@@ -84,6 +94,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Horned Warrior",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Horned+Warrior+Ashes",
     legendary: false,
@@ -92,6 +103,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Azula Beastman",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Azula+Beastman+Ashes",
     legendary: false,
@@ -100,6 +112,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Man-Serpent",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Man-Serpent+Ashes",
     legendary: false,
@@ -108,6 +121,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Crystalian",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crystalian+Ashes",
     legendary: false,
@@ -116,6 +130,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Kindred of Rot",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Kindred+of+Rot+Ashes",
     legendary: false,
@@ -124,6 +139,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Bloodfiend Hexer",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bloodfiend+Hexer+Ashes",
     legendary: false,
@@ -132,6 +148,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Glintstone Sorcerer",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Sorcerer+Ashes",
     legendary: false,
@@ -140,6 +157,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Twinsage Sorcerer",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Twinsage+Sorcerer+Ashes",
     legendary: false,
@@ -148,6 +166,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Inquisitor",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Inquisitor+Ashes",
     legendary: false,
@@ -156,6 +175,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Godrick Soldier",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Godrick+Soldier+Ashes",
     legendary: false,
@@ -164,6 +184,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Raya Lucaria Soldier",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Raya+Lucaria+Soldier+Ashes",
     legendary: false,
@@ -172,6 +193,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Leyndell Soldier",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Leyndell+Soldier+Ashes",
     legendary: false,
@@ -180,6 +202,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Radahn Soldier",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Radahn+Soldier+Ashes",
     legendary: false,
@@ -188,6 +211,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Haligtree Soldier",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Haligtree+Soldier+Ashes",
     legendary: false,
@@ -196,6 +220,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Mausoleum Soldier",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mausoleum+Soldier+Ashes",
     legendary: false,
@@ -204,6 +229,7 @@ export const rationalSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Messmer Soldier",
+    subcategory: "rationalSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Messmer+Soldier+Ashes",
     legendary: false,

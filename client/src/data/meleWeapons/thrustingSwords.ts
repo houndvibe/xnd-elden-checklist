@@ -4,6 +4,7 @@ export const thrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Rapier",
+    subcategory: "thrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rapier",
     legendary: false,
@@ -12,6 +13,7 @@ export const thrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Estoc",
+    subcategory: "thrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Estoc",
     legendary: false,
@@ -20,6 +22,7 @@ export const thrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Noble's Estoc",
+    subcategory: "thrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Noble's+Estoc",
     legendary: false,
@@ -28,6 +31,7 @@ export const thrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Cleanrot Knight's Sword",
+    subcategory: "thrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Cleanrot+Knight's+Sword",
     legendary: false,
@@ -36,6 +40,7 @@ export const thrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Rogier's Rapier",
+    subcategory: "thrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rogier's+Rapier",
     legendary: false,
@@ -44,6 +49,7 @@ export const thrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Antspur Rapier",
+    subcategory: "thrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Antspur+Rapier",
     legendary: false,
@@ -52,6 +58,7 @@ export const thrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Frozen Needle",
+    subcategory: "thrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Frozen+Needle",
     legendary: false,
@@ -60,6 +67,7 @@ export const thrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Carian Sorcery Sword",
+    subcategory: "thrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Carian+Sorcery+Sword",
     legendary: false,

@@ -4,6 +4,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Stormhawk Deenh",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Stormhawk+Deenh",
     legendary: false,
@@ -14,6 +15,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Banished Knight Oleg",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Banished+Knight+Oleg",
     legendary: false,
@@ -22,6 +24,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Banished Knight Engvall",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Banished+Knight+Engvall+Ashes",
     legendary: false,
@@ -30,6 +33,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Bloodhound Knight Floh",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Floh",
     legendary: false,
@@ -40,6 +44,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Black Knight Captain Huw",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Black+Knight+Captain+Huw",
     legendary: false,
@@ -50,6 +55,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Black Knight Commander Andreas",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Black+Knight+Commander+Andreas",
     legendary: false,
@@ -60,6 +66,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Fire Knight Queelign",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fire+Knight+Queelign",
     legendary: false,
@@ -70,6 +77,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Fire Knight Hilde",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fire+Knight+Hilde",
     legendary: false,
@@ -80,6 +88,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Swordhand of Night Jolán",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Swordhand+of+Night+Jolán",
     legendary: false,
@@ -90,6 +99,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Jolán and Anna",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Jolán+and+Anna",
     legendary: false,
@@ -100,6 +110,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Battlemage Hugues",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Battlemage+Hugues+Ashes",
     legendary: false,
@@ -108,6 +119,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Latenna the Albinauric",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Latenna+the+Albinauric",
     legendary: false,
@@ -118,6 +130,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Perfumer Tricia",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Perfumer+Tricia+Ashes",
     legendary: false,
@@ -128,6 +141,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Depraved Perfumer Carmaan",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Carmaan+Ashes",
     legendary: false,
@@ -136,6 +150,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Omenkiller Rollo",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Omenkiller+Rollo",
     legendary: false,
@@ -146,6 +161,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Blackflame Monk Amon",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Blackflame+Monk+Amon+Ashes",
     legendary: false,
@@ -154,6 +170,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Curseblade Meera",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Curseblade+Meera",
     legendary: false,
@@ -164,6 +181,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Demi-Human Swordsman Yosh",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Demi-Human+Swordsman+Yosh",
     legendary: false,
@@ -174,6 +192,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Ancient Dragon Knight Kristoff",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Knight+Kristoff",
     legendary: true,
@@ -184,6 +203,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Redmane Knight Ogha",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Redmane+Knight+Ogha+Ashes",
     legendary: true,
@@ -194,6 +214,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Lhutel the Headless",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lhutel+the+Headless",
     legendary: true,
@@ -204,6 +225,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Cleanrot Knight Finlay",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Cleanrot+Knight+Finlay+Ashes",
     legendary: true,
@@ -214,6 +236,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Black Knife Tiche",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Black+Knife+Tiche",
     legendary: true,
@@ -224,6 +247,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Divine Bird Warrior Ornis",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Divine+Bird+Warrior+Ornis",
     legendary: false,
@@ -234,6 +258,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Taylew the Golem Smith",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Taylew+the+Golem+Smith",
     legendary: false,
@@ -244,6 +269,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Ancient Dragon Florissax",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Florissax",
     legendary: false,
@@ -254,6 +280,7 @@ export const eliteSpirits: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Mimic Tear",
+    subcategory: "eliteSpirits",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mimic+Tear+Ashes",
     legendary: true,

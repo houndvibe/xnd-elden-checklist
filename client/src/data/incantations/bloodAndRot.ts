@@ -4,6 +4,7 @@ export const bloodAndRot: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Swarm of Flies",
+    subcategory: "blood&Rot",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Swarm+of+Flies",
     legendary: false,
@@ -12,6 +13,7 @@ export const bloodAndRot: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Rotten Butterflies",
+    subcategory: "blood&Rot",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rotten+Butterflies",
     legendary: false,
@@ -20,6 +22,7 @@ export const bloodAndRot: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Bloodflame Talons",
+    subcategory: "blood&Rot",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bloodflame+Talons",
     legendary: false,
@@ -28,6 +31,7 @@ export const bloodAndRot: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Furious Blade of Ansbach",
+    subcategory: "blood&Rot",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Furious+Blade+of+Ansbach",
     legendary: false,
@@ -36,6 +40,7 @@ export const bloodAndRot: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Bloodboon",
+    subcategory: "blood&Rot",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bloodboon",
     legendary: false,
@@ -44,6 +49,7 @@ export const bloodAndRot: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Bloodflame Blade",
+    subcategory: "blood&Rot",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bloodflame+Blade",
     legendary: false,
@@ -52,6 +58,7 @@ export const bloodAndRot: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Poison Mist",
+    subcategory: "blood&Rot",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Poison+Mist",
     legendary: false,
@@ -60,6 +67,7 @@ export const bloodAndRot: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Poison Armament",
+    subcategory: "blood&Rot",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Poison+Armament",
     legendary: false,
@@ -68,6 +76,7 @@ export const bloodAndRot: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Pest Threads",
+    subcategory: "blood&Rot",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Pest+Threads",
     legendary: false,
@@ -76,6 +85,7 @@ export const bloodAndRot: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Pest-Thread Spears",
+    subcategory: "blood&Rot",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Pest-Thread+Spears",
     legendary: false,
@@ -84,6 +94,7 @@ export const bloodAndRot: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Scarlet Aeonia",
+    subcategory: "blood&Rot",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Scarlet+Aeonia",
     legendary: false,

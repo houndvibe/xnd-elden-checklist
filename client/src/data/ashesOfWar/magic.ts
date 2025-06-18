@@ -4,6 +4,7 @@ export const magic: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Glintstone Pebble",
+    subcategory: "magic",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Glintstone+Pebble",
     dlc: false,
@@ -11,6 +12,7 @@ export const magic: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Glintblade Phalanx",
+    subcategory: "magic",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Glintblade+Phalanx",
     dlc: false,
@@ -18,6 +20,7 @@ export const magic: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Carian Greatsword",
+    subcategory: "magic",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Greatsword",
     dlc: false,
@@ -25,6 +28,7 @@ export const magic: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Carian Grandeur",
+    subcategory: "magic",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Grandeur",
     dlc: false,
@@ -32,6 +36,7 @@ export const magic: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Carian Sovereignty",
+    subcategory: "magic",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Sovereignty",
     dlc: false,
@@ -41,6 +46,7 @@ export const magic: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Spinning Weapon",
+    subcategory: "magic",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Spinning+Weapon",
     dlc: false,
@@ -48,6 +54,7 @@ export const magic: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Loretta's Slash",
+    subcategory: "magic",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Loretta's+Slash",
     dlc: false,
@@ -55,6 +62,7 @@ export const magic: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Gravitas",
+    subcategory: "magic",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Gravitas",
     dlc: false,
@@ -64,6 +72,7 @@ export const magic: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Spinning Gravity Thrust",
+    subcategory: "magic",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Spinning+Gravity+Thrust",
     dlc: false,
@@ -73,6 +82,7 @@ export const magic: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Waves of Darkness",
+    subcategory: "magic",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Waves+of+Darkness",
     dlc: false,

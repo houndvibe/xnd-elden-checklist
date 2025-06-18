@@ -4,6 +4,7 @@ export const flails: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Flail",
+    subcategory: "flails",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flail",
     legendary: false,
@@ -12,6 +13,7 @@ export const flails: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Nightrider Flail",
+    subcategory: "flails",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nightrider_Flail",
     legendary: false,
@@ -20,6 +22,7 @@ export const flails: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Chainlink Flail",
+    subcategory: "flails",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Chainlink_Flail",
     legendary: false,
@@ -28,6 +31,7 @@ export const flails: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Family Heads",
+    subcategory: "flails",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Family_Heads",
     legendary: false,
@@ -36,6 +40,7 @@ export const flails: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Serpent Flail",
+    subcategory: "flails",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Serpent_Flail",
     legendary: false,
@@ -44,6 +49,7 @@ export const flails: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Bastard's Stars",
+    subcategory: "flails",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bastard's_Stars",
     legendary: false,

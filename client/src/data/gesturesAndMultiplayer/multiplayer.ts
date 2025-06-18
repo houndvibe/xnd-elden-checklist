@@ -4,6 +4,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Furlcalling Finger Remedy",
+    subcategory: "multiplayer",
     description: "Reveals co-op and hostile summoning signs.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Furlcalling+Finger+Remedy",
@@ -12,6 +13,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Tarnished's Furled Finger",
+    subcategory: "multiplayer",
     description: "Creates cooperative multiplayer summon sign.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Tarnished's+Furled+Finger",
@@ -20,6 +22,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Small Golden Effigy",
+    subcategory: "multiplayer",
     description: "Sends a co-op sign to summoning pools.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Small+Golden+Effigy",
@@ -28,6 +31,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Duelist's Furled Finger",
+    subcategory: "multiplayer",
     description: "Creates competitive multiplayer summon sign.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Duelist's+Furled+Finger",
@@ -36,6 +40,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Small Red Effigy",
+    subcategory: "multiplayer",
     description: "Sends a hostile sign to summoning pools.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Small+Red+Effigy",
@@ -44,6 +49,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Bloody Finger",
+    subcategory: "multiplayer",
     description:
       "Attempts invasion of other player's world. Replaces Festering Bloody Finger in Multiplayer menu.",
     collected: false,
@@ -53,6 +59,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Recusant Finger",
+    subcategory: "multiplayer",
     description: "Attempts an invasion of another player's world.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Recusant+Finger",
@@ -61,6 +68,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Festering Bloody Finger",
+    subcategory: "multiplayer",
     description:
       "Attempts invasion of other player's world. Made obsolete after obtaining Bloody Finger.",
     collected: false,
@@ -70,6 +78,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Phantom Bloody Finger",
+    subcategory: "multiplayer",
     description: "Attempts repeat invasion of last targeted world.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Phantom+Bloody+Finger",
@@ -78,6 +87,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Phantom Great Rune",
+    subcategory: "multiplayer",
     description: "Give blessing of blood to enemies in invaded world.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Phantom+Great+Rune",
@@ -86,6 +96,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "White Cipher Ring",
+    subcategory: "multiplayer",
     description: "When invaded, request the aid of a hunter.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/White+Cipher+Ring",
@@ -94,6 +105,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Blue Cipher Ring",
+    subcategory: "multiplayer",
     description: "Answers requests for summoning from hunters.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Blue+Cipher+Ring",
@@ -102,6 +114,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Taunter's Tongue",
+    subcategory: "multiplayer",
     description:
       "Lures in invaders. Can be used after using a Furlcalling Finger Remedy.",
     collected: false,
@@ -111,6 +124,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Finger Severer",
+    subcategory: "multiplayer",
     description: "Sends another, or oneself, home.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Finger+Severer",
@@ -119,6 +133,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Tarnished's Wizened Finger",
+    subcategory: "multiplayer",
     description: "Used to write messages to other worlds.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Tarnished's+Wizened+Finger",
@@ -127,6 +142,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Scriptstone",
+    subcategory: "multiplayer",
     description: "Reveals more messages from other worlds.",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Scriptstone",
@@ -135,6 +151,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Grace Mimic",
+    subcategory: "multiplayer",
     description: "Light shows the path, but without order",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Grace+Mimic",

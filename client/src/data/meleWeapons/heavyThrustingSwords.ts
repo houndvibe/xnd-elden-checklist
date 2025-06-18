@@ -4,6 +4,7 @@ export const heavyThrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Great Epee",
+    subcategory: "heavyThrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Great+Epee",
     legendary: false,
@@ -12,6 +13,7 @@ export const heavyThrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Queelign's Greatsword",
+    subcategory: "heavyThrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Queelign's+Greatsword",
     legendary: false,
@@ -20,6 +22,7 @@ export const heavyThrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Godskin Stitcher",
+    subcategory: "heavyThrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Godskin+Stitcher",
     legendary: false,
@@ -28,6 +31,7 @@ export const heavyThrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Bloody Helice",
+    subcategory: "heavyThrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bloody+Helice",
     legendary: false,
@@ -36,6 +40,7 @@ export const heavyThrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Dragon King's Cragblade",
+    subcategory: "heavyThrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dragon+King's+Cragblade",
     legendary: false,
@@ -44,6 +49,7 @@ export const heavyThrustingSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Sword Lance",
+    subcategory: "heavyThrustingSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sword+Lance",
     legendary: false,

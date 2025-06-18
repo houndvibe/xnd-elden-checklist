@@ -4,6 +4,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Short Spear",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Short_Spear",
     legendary: false,
@@ -12,6 +13,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Iron Spear",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Iron_Spear",
     legendary: false,
@@ -20,6 +22,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Spear",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spear",
     legendary: false,
@@ -28,6 +31,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Partisan",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Partisan",
     legendary: false,
@@ -36,6 +40,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Pike",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Pike",
     legendary: false,
@@ -44,6 +49,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Swift Spear",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Swift_Spear",
     legendary: false,
@@ -52,6 +58,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Spiked Spear",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spiked_Spear",
     legendary: false,
@@ -60,6 +67,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Cross-Naginata",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Cross-Naginata",
     legendary: false,
@@ -68,6 +76,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Clayman's Harpoon",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Clayman's_Harpoon",
     legendary: false,
@@ -76,6 +85,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Bloodfiend's Fork",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bloodfiend's_Fork",
     legendary: false,
@@ -84,6 +94,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Smithscript Spear",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smithscript_Spear",
     legendary: false,
@@ -92,6 +103,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Celebrant's Rib-Rake",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Celebrant's_Rib-Rake",
     legendary: false,
@@ -100,6 +112,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Torchpole",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Torchpole",
     legendary: false,
@@ -108,6 +121,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Inquisitor's Girandole",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Inquisitor's_Girandole",
     legendary: false,
@@ -116,6 +130,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Crystal Spear",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crystal_Spear",
     legendary: false,
@@ -124,6 +139,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Rotten Crystal Spear",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rotten_Crystal_Spear",
     legendary: false,
@@ -132,6 +148,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Cleanrot Spear",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Cleanrot_Spear",
     legendary: false,
@@ -140,6 +157,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Death Ritual Spear",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Death_Ritual_Spear",
     legendary: false,
@@ -148,6 +166,7 @@ export const spears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Bolt of Gransax",
+    subcategory: "spears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bolt_of_Gransax",
     legendary: true,

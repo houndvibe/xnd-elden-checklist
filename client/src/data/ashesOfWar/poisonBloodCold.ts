@@ -4,6 +4,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Poisonous Mist",
+    subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Poisonous+Mist",
     dlc: false,
@@ -11,6 +12,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Poison Moth Flight",
+    subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Poison+Moth+Flight",
     dlc: false,
@@ -18,6 +20,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "The Poison Flower Blooms Twice",
+    subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+The+Poison+Flower+Blooms+Twice",
     dlc: false,
@@ -27,6 +30,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Blood Blade",
+    subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Blood+Blade",
     dlc: false,
@@ -34,6 +38,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Bloody Slash",
+    subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Bloody+Slash",
     dlc: false,
@@ -41,6 +46,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Blood Tax",
+    subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Blood+Tax",
     dlc: false,
@@ -48,6 +54,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Seppuku",
+    subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Seppuku",
     dlc: false,
@@ -55,6 +62,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Ice Spear",
+    subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Ice+Spear",
     dlc: false,
@@ -62,6 +70,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Chilling Mist",
+    subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Chilling+Mist",
     dlc: false,
@@ -69,6 +78,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Ghostflame Call",
+    subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Ghostflame+Call",
     dlc: false,
@@ -78,6 +88,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Hoarfrost Stomp",
+    subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Hoarfrost+Stomp",
     dlc: false,
@@ -85,6 +96,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Divine Beast Frost Stomp",
+    subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Divine+Beast+Frost+Stomp",
     dlc: false,

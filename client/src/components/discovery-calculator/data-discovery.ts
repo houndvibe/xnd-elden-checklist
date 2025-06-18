@@ -27,29 +27,25 @@ export const EXAMPLE_ITEM_DROPS: ItemDropTable[] = [
     key: "1",
     name: "Black Dumpling",
     base: 0.5,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_dumpling_elden_ring_wiki_guide_200px.png",
+    imgUrl: "./images/armour/pieces/Black Dumpling.png",
   },
   {
     key: "2",
     name: "Magma Blade",
     base: 1,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/magma_blade_curved_sword_weapon_elden_ring_wiki_guide_200px.png",
+    imgUrl: "./images/meleWeapons/curvedSwords/Magma Blade.png",
   },
   {
     key: "3",
     name: "Bandit's Curved Sword",
     base: 1.5,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bandits_curved_sword_curved_sword_weapon_elden_ring_wiki_guide_200px.png",
+    imgUrl: "./images/meleWeapons/curvedSwords/Bandit's Curved Sword.png",
   },
   {
     key: "4",
     name: "Pest's Glaive",
     base: 4,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/pests_glaive_halberd_weapon_elden_ring_wiki_guide_200px.png",
+    imgUrl: "./images/meleWeapons/helberds/Pest's Glaive.png",
   },
 ];
 

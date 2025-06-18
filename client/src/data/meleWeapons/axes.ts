@@ -4,6 +4,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Hand Axe",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Hand_Axe",
     legendary: false,
@@ -12,6 +13,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Forked Hatchet",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Forked_Hatchet",
     legendary: false,
@@ -20,6 +22,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Forked-Tongue Hatchet",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Forked-Tongue_Hatchet",
     legendary: false,
@@ -28,6 +31,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Battle Axe",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Battle_Axe",
     legendary: false,
@@ -36,6 +40,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Messmer Soldier's Axe",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mesmmer_Soldier's_Axe",
     legendary: false,
@@ -44,6 +49,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Warped Axe",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Warped_Axe",
     legendary: false,
@@ -52,6 +58,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Jawbone Axe",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Jawbone_Axe",
     legendary: false,
@@ -60,6 +67,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Iron Cleaver",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Iron_Cleaver",
     legendary: false,
@@ -68,6 +76,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Highland Axe",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Highland_Axe",
     legendary: false,
@@ -76,6 +85,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Smithscript Axe",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smithscript_Axe",
     legendary: false,
@@ -84,6 +94,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Celebrant's Cleaver",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Celebrant's_Cleaver",
     legendary: false,
@@ -92,6 +103,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Sacrificial Axe",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sacrificial_Axe",
     legendary: false,
@@ -100,6 +112,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Icerind Hatchet",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Icerind_Hatchet",
     legendary: false,
@@ -108,6 +121,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Ripple Blade",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ripple_Blade",
     legendary: false,
@@ -116,6 +130,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Stormhawk Axe",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Stormhawk_Axe",
     legendary: false,
@@ -124,6 +139,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Rosus Axe",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rosus_Axe",
     legendary: false,
@@ -132,6 +148,7 @@ export const axes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Death Knight's Twin Axes",
+    subcategory: "axes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Death_Knight's_Twin_Axes",
     legendary: false,

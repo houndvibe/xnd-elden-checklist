@@ -4,6 +4,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Zweihander",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Zweihander",
     legendary: false,
@@ -12,6 +13,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Greatsword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greatsword",
     legendary: false,
@@ -20,6 +22,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Watchdog's Greatsword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Watchdog's+Greatsword",
     legendary: false,
@@ -28,6 +31,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Fire Knight's Greatsword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fire+Knight's+Greatsword",
     legendary: false,
@@ -36,6 +40,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Troll's Golden Sword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Troll's+Golden+Sword",
     legendary: false,
@@ -44,6 +49,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Troll Knight's Sword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Troll+Knight's+Sword",
     legendary: false,
@@ -52,6 +58,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Moonrithyll's Knight Sword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Moonrithyll's+Knight+Sword",
     legendary: false,
@@ -60,6 +67,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Royal Greatsword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Royal+Greatsword",
     legendary: false,
@@ -68,6 +76,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Grafted Blade Greatsword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Grafted+Blade+Greatsword",
     legendary: true,
@@ -76,6 +85,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Ruins Greatsword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ruins+Greatsword",
     legendary: true,
@@ -84,6 +94,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Ancient Meteoric Ore Greatsword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Metoric+Ore+Greatsword",
     legendary: false,
@@ -92,6 +103,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Starscourge Greatsword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Starscourge+Greatsword",
     legendary: false,
@@ -100,6 +112,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Greatsword of Radahn (Lord)",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greatsword+of+Radahn+(Lord)",
     legendary: false,
@@ -108,6 +121,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Greatsword of Radahn (Light)",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greatsword+of+Radahn+(Light)",
     legendary: false,
@@ -116,6 +130,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Godslayer's Greatsword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Godslayer's+Greatsword",
     legendary: false,
@@ -124,6 +139,7 @@ export const colossalSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Maliketh's Black Blade",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Maliketh's+Black+Blade",
     legendary: false,

@@ -4,6 +4,7 @@ export const snowAndCrystal: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Glintstone Icecrag",
+    subcategory: "snow&Crystal",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Icecrag",
     legendary: false,
@@ -12,6 +13,7 @@ export const snowAndCrystal: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Freezing Mist",
+    subcategory: "snow&Crystal",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Freezing+Mist",
     legendary: false,
@@ -20,6 +22,7 @@ export const snowAndCrystal: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Frozen Armament",
+    subcategory: "snow&Crystal",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Frozen+Armament",
     legendary: false,
@@ -28,6 +31,7 @@ export const snowAndCrystal: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Zamor Ice Storm",
+    subcategory: "snow&Crystal",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Zamor+Ice+Storm",
     legendary: false,
@@ -36,6 +40,7 @@ export const snowAndCrystal: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Shattering Crystal",
+    subcategory: "snow&Crystal",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Shattering+Crystal",
     legendary: false,
@@ -46,6 +51,7 @@ export const snowAndCrystal: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Crystal Torrent",
+    subcategory: "snow&Crystal",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crystal+Torrent",
     legendary: false,
@@ -54,6 +60,7 @@ export const snowAndCrystal: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Crystal Release",
+    subcategory: "snow&Crystal",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crystal+Release",
     legendary: false,

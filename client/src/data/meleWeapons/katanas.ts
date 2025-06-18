@@ -4,6 +4,7 @@ export const katanas: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Uchigatana",
+    subcategory: "katanas",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Uchigatana",
     legendary: false,
@@ -12,6 +13,7 @@ export const katanas: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Nagakiba",
+    subcategory: "katanas",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nagakiba",
     legendary: false,
@@ -20,6 +22,7 @@ export const katanas: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Serpentbone Blade",
+    subcategory: "katanas",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Serpentbone+Blade",
     legendary: false,
@@ -28,6 +31,7 @@ export const katanas: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Meteoric Ore Blade",
+    subcategory: "katanas",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Meteoric_Ore_Blade",
     legendary: false,
@@ -36,6 +40,7 @@ export const katanas: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Moonveil",
+    subcategory: "katanas",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Moonveil",
     legendary: false,
@@ -44,6 +49,7 @@ export const katanas: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Sword of Night",
+    subcategory: "katanas",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sword_of_Night",
     legendary: false,
@@ -52,6 +58,7 @@ export const katanas: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Rivers of Blood",
+    subcategory: "katanas",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rivers_of_Blood",
     legendary: false,
@@ -60,6 +67,7 @@ export const katanas: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Dragonscale Blade",
+    subcategory: "katanas",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dragonscale_Blade",
     legendary: false,
@@ -68,6 +76,7 @@ export const katanas: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Star-Lined Sword",
+    subcategory: "katanas",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Star-Lined_Sword",
     legendary: false,
@@ -76,6 +85,7 @@ export const katanas: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Hand of Malenia",
+    subcategory: "katanas",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Hand_of_Malenia",
     legendary: false,

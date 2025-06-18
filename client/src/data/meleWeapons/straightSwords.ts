@@ -4,6 +4,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Short Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Short+Sword",
     legendary: false,
@@ -12,6 +13,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Longsword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Longsword",
     legendary: false,
@@ -20,6 +22,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Broadsword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Broadsword",
     legendary: false,
@@ -28,6 +31,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Weathered Straight Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Weathered+Straight+Sword",
     legendary: false,
@@ -36,6 +40,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Lordsworn's Straight Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lordsworn's+Straight+Sword",
     legendary: false,
@@ -44,6 +49,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Noble's Slender Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Noble's+Slender+Sword",
     legendary: false,
@@ -52,6 +58,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Cane Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Cane+Sword",
     legendary: false,
@@ -60,6 +67,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Stone-Sheathed Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Stone-Sheathed+Sword",
     legendary: false,
@@ -68,6 +76,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Warhawk's Talon",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Warhawk's+Talon",
     legendary: false,
@@ -76,6 +85,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Lazuli Glintstone Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lazuli+Glintstone+Sword",
     legendary: false,
@@ -84,6 +94,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Carian Knight's Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Carian+Knight's+Sword",
     legendary: false,
@@ -92,6 +103,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Crystal Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crystal+Sword",
     legendary: false,
@@ -100,6 +112,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Rotten Crystal Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rotten+Crystal+Sword",
     legendary: false,
@@ -108,6 +121,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Miquellan Knight's Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Miquellan+Knight's+Sword",
     legendary: false,
@@ -116,6 +130,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Ornamental Straight Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ornamental+Straight+Sword",
     legendary: false,
@@ -124,6 +139,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Golden Epitaph",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Golden+Epitaph",
     legendary: false,
@@ -132,6 +148,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Sword of St Trina",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sword+of+St+Trina",
     legendary: false,
@@ -140,6 +157,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Velvet Sword of St Trina",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Velvet+Sword+of+St+Trina",
     legendary: false,
@@ -148,6 +166,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Regalia of Eochaid",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Regalia+of+Eochaid",
     legendary: false,
@@ -156,6 +175,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Coded Sword",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Coded+Sword",
     legendary: false,
@@ -164,6 +184,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Sword of Night and Flame",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sword+of+Night+and+Flame",
     legendary: true,
@@ -172,6 +193,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Sword of Darkness",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sword+of+Darkness",
     legendary: false,
@@ -180,6 +202,7 @@ export const straightSwords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Sword of Light",
+    subcategory: "straightSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sword+of+Light",
     legendary: false,

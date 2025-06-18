@@ -4,6 +4,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Golden Vow",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Golden+Vow",
     legendary: false,
@@ -12,6 +13,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Barrier of Gold",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Barrier+of+Gold",
     legendary: false,
@@ -20,6 +22,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Golden Lightning Fortification",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Golden+Lightning+Fortification",
     legendary: false,
@@ -28,6 +31,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Protection of the Erdtree",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Protection+of+the+Erdtree",
     legendary: false,
@@ -38,6 +42,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Wrath of Gold",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Wrath+of+Gold",
     legendary: false,
@@ -48,6 +53,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Wrath from Afar",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Wrath+from+Afar",
     legendary: false,
@@ -58,6 +64,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Heal from Afar",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Heal+from+Afar",
     legendary: false,
@@ -66,6 +73,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Erdtree Heal",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Erdtree+Heal",
     legendary: false,
@@ -74,6 +82,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Blessing's Boon",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Blessing's+Boon",
     legendary: false,
@@ -82,6 +91,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Blessing of the Erdtree",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Blessing+of+the+Erdtree",
     legendary: false,
@@ -90,6 +100,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Minor Erdtree",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Minor+Erdtree",
     legendary: false,
@@ -98,6 +109,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Aspects of the Crucible: Breath",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Breath",
     legendary: false,
@@ -108,6 +120,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Aspects of the Crucible: Horns",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Horns",
     legendary: false,
@@ -118,6 +131,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Aspects of the Crucible: Tail",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Tail",
     legendary: false,
@@ -126,6 +140,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Aspects of the Crucible: Thorns",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Thorns",
     legendary: false,
@@ -134,6 +149,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Aspects of the Crucible: Bloom",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Bloom",
     legendary: false,
@@ -142,6 +158,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Land of Shadow",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Land+of+Shadow",
     legendary: false,
@@ -150,6 +167,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Elden Stars",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Elden+Stars",
     legendary: true,
@@ -158,6 +176,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Black Blade",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Black+Blade",
     legendary: false,
@@ -166,6 +185,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Discus of Light",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Discus+of+Light",
     legendary: false,
@@ -174,6 +194,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Triple Rings of Light",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Triple+Rings+of+Light",
     legendary: false,
@@ -182,6 +203,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Radagon's Rings of Light",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Radagon's+Rings+of+Light",
     legendary: false,
@@ -190,6 +212,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Multilayered Ring of Light",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Multilayered+Ring+of+Light",
     legendary: false,
@@ -198,6 +221,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Litany of Proper Death",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Litany+of+Proper+Death",
     legendary: false,
@@ -206,6 +230,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Order Healing",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Order+Healing",
     legendary: false,
@@ -214,6 +239,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Order's Blade",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Order's+Blade",
     legendary: false,
@@ -222,6 +248,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Immutable Shield",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Immutable+Shield",
     legendary: false,
@@ -230,6 +257,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Law of Causality",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Law+of+Causality",
     legendary: false,
@@ -238,6 +266,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Law of Regression",
+    subcategory: "erdtree&GoldenOrder",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Law+of+Regression",
     legendary: false,

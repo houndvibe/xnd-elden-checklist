@@ -4,6 +4,7 @@ export const damageAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Bull-Goat's Talisman",
+    subcategory: "damageAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bull-Goat%27s+Talisman",
     dlc: false,
@@ -13,6 +14,7 @@ export const damageAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Blue Dancer Charm",
+    subcategory: "damageAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Blue+Dancer+Charm",
     dlc: false,
@@ -22,6 +24,7 @@ export const damageAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Verdigris Discus",
+    subcategory: "damageAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Verdigris+Discus",
     dlc: true,
@@ -31,6 +34,7 @@ export const damageAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Fire Scorpion Charm",
+    subcategory: "damageAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fire+Scorpion+Charm",
     dlc: false,
@@ -40,6 +44,7 @@ export const damageAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Lightning Scorpion Charm",
+    subcategory: "damageAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lightning+Scorpion+Charm",
     dlc: false,
@@ -49,6 +54,7 @@ export const damageAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Magic Scorpion Charm",
+    subcategory: "damageAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Magic+Scorpion+Charm",
     dlc: false,
@@ -58,6 +64,7 @@ export const damageAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Sacred Scorpion Charm",
+    subcategory: "damageAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sacred+Scorpion+Charm",
     dlc: false,
@@ -67,6 +74,7 @@ export const damageAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Crucible Scale Talisman",
+    subcategory: "damageAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crucible+Scale+Talisman",
     dlc: false,
@@ -76,6 +84,7 @@ export const damageAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Crucible Feather Talisman",
+    subcategory: "damageAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crucible+Feather+Talisman",
     dlc: false,
@@ -85,6 +94,7 @@ export const damageAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Crucible Knot Talisman",
+    subcategory: "damageAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crucible+Knot+Talisman",
     dlc: false,
@@ -94,6 +104,7 @@ export const damageAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Fine Crucible Feather Talisman",
+    subcategory: "damageAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fine+Crucible+Feather+Talisman",
     dlc: true,
@@ -103,6 +114,7 @@ export const damageAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Talisman of all Crucibles",
+    subcategory: "damageAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Talisman+of+all+Crucibles",
     dlc: true,

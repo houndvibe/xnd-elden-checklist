@@ -4,6 +4,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Dagger",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dagger",
     legendary: false,
@@ -12,6 +13,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Parrying Dagger",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Parrying+Dagger",
     legendary: false,
@@ -20,6 +22,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Misericorde",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Misericorde",
     legendary: false,
@@ -28,6 +31,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Great Knife",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Great+Knife",
     legendary: false,
@@ -36,6 +40,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Bloodstained Dagger",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bloodstained+Dagger",
     legendary: false,
@@ -44,6 +49,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Erdsteel Dagger",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Erdsteel+Dagger",
     legendary: false,
@@ -52,6 +58,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Fire Knight's Shortsword",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fire+Knight's+Shortsword",
     legendary: false,
@@ -60,6 +67,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Wakizashi",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Wakizashi",
     legendary: false,
@@ -68,6 +76,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Main-gauche",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Main-gauche",
     legendary: false,
@@ -76,6 +85,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Celebrant's Sickle",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Celebrant's+Sickle",
     legendary: false,
@@ -84,6 +94,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Ivory Sickle",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ivory+Sickle",
     legendary: false,
@@ -92,6 +103,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Crystal Knife",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crystal+Knife",
     legendary: false,
@@ -100,6 +112,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Scorpion's Stinger",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Scorpion's+Stinger",
     legendary: false,
@@ -108,6 +121,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Cinquedea",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Cinquedea",
     legendary: false,
@@ -116,6 +130,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Glintstone Kris",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Kris",
     legendary: false,
@@ -124,6 +139,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Reduvia",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Reduvia",
     legendary: false,
@@ -132,6 +148,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Blade of Calling",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Blade+of+Calling",
     legendary: false,
@@ -140,6 +157,7 @@ export const daggers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Black Knife",
+    subcategory: "daggers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Black+Knife",
     legendary: false,

@@ -4,6 +4,7 @@ export const greatSpears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Lance",
+    subcategory: "greatSpears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lance",
     legendary: false,
@@ -12,6 +13,7 @@ export const greatSpears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Messmer Soldier's Spear",
+    subcategory: "greatSpears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Messmer_Soldier's_Spear",
     legendary: false,
@@ -20,6 +22,7 @@ export const greatSpears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Treespear",
+    subcategory: "greatSpears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Treespear",
     legendary: false,
@@ -28,6 +31,7 @@ export const greatSpears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Serpent-Hunter",
+    subcategory: "greatSpears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Serpent-Hunter",
     legendary: false,
@@ -36,6 +40,7 @@ export const greatSpears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Siluria's Tree",
+    subcategory: "greatSpears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Siluria's_Tree",
     legendary: false,
@@ -44,6 +49,7 @@ export const greatSpears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Vyke's War Spear",
+    subcategory: "greatSpears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Vyke's_War_Spear",
     legendary: false,
@@ -52,6 +58,7 @@ export const greatSpears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Barbed Staff-Spear",
+    subcategory: "greatSpears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Barbed_Staff-Spear",
     legendary: false,
@@ -60,6 +67,7 @@ export const greatSpears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Bloodfiend's Sacred Spear",
+    subcategory: "greatSpears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bloodfiend's_Sacred_Spear",
     legendary: false,
@@ -68,6 +76,7 @@ export const greatSpears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Mohgwyn's Sacred Spear",
+    subcategory: "greatSpears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mohgwyn's_Sacred_Spear",
     legendary: false,
@@ -76,6 +85,7 @@ export const greatSpears: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Spear of the Impaler",
+    subcategory: "greatSpears",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spear_of_the_Impaler",
     legendary: false,

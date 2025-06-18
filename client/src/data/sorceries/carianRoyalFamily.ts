@@ -4,6 +4,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Magic Glintblade",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Magic+Glintblade",
     legendary: false,
@@ -12,6 +13,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Glintblade Trio",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintblade+Trio",
     legendary: false,
@@ -20,6 +22,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Glintblade Phalanx",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintblade+Phalanx",
     legendary: false,
@@ -28,6 +31,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Carian Phalanx",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Carian+Phalanx",
     legendary: false,
@@ -36,6 +40,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Greatblade Phalanx",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greatblade+Phalanx",
     legendary: false,
@@ -44,6 +49,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Magic Downpour",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Magic+Downpour",
     legendary: false,
@@ -52,6 +58,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Loretta's Greatbow",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Loretta's+Greatbow",
     legendary: false,
@@ -60,6 +67,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Loretta's Mastery",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Loretta's+Mastery",
     legendary: false,
@@ -68,6 +76,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Rennala's Full Moon",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rennala's+Full+Moon",
     legendary: false,
@@ -78,6 +87,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Ranni's Dark Moon",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ranni's+Dark+Moon",
     legendary: true,
@@ -86,6 +96,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Rellana's Twin Moons",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rellana's+Twin+Moons",
     legendary: false,
@@ -96,6 +107,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Carian Slicer",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Carian+Slicer",
     legendary: false,
@@ -104,6 +116,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Carian Greatsword",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Carian+Greatsword",
     legendary: false,
@@ -112,6 +125,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Carian Piercer",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Carian+Piercer",
     legendary: false,
@@ -120,6 +134,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Adula's Moonblade",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Adula's+Moonblade",
     legendary: false,
@@ -128,6 +143,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Lucidity",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lucidity",
     legendary: false,
@@ -136,6 +152,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Carian Retaliation",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Carian+Retaliation",
     legendary: false,
@@ -144,6 +161,7 @@ export const carianRoyalFamily: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Miriam's Vanishing",
+    subcategory: "carianRoyalFamily",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Miriam's+Vanishing",
     legendary: false,

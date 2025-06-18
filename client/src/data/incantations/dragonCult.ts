@@ -4,6 +4,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Lightning Spear",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lightning+Spear",
     legendary: false,
@@ -12,6 +13,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Knight's Lightning Spear",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Knight's+Lightning+Spear",
     legendary: false,
@@ -20,6 +22,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Lightning Strike",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lightning+Strike",
     legendary: false,
@@ -28,6 +31,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Honed Bolt",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Honed+Bolt",
     legendary: false,
@@ -38,6 +42,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Ancient Dragon's Lightning Spear",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragons'+Lightning+Spear",
     legendary: false,
@@ -48,6 +53,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Ancient Dragon's Lightning Strike",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragons'+Lightning+Strike",
     legendary: false,
@@ -58,6 +64,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Lansseax's Glaive",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lansseax's+Glaive",
     legendary: false,
@@ -66,6 +73,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Fortissax's Lightning Spear",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fortissax's+Lightning+Spear",
     legendary: false,
@@ -74,6 +82,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Frozen Lightning Spear",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Frozen+Lightning+Spear",
     legendary: false,
@@ -82,6 +91,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Death Lightning",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Death+Lightning",
     legendary: false,
@@ -90,6 +100,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Electrify Armament",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Electrify+Armament",
     legendary: false,
@@ -98,6 +109,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Electrocharge",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Electrocharge",
     legendary: false,
@@ -106,6 +118,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Dragonbolt Blessing",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dragonbolt+Blessing",
     legendary: false,
@@ -114,6 +127,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Vyke's Dragonbolt",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Vyke's+Dragonbolt",
     legendary: false,
@@ -122,6 +136,7 @@ export const dragonCult: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Dragonbolt of Florissax",
+    subcategory: "dragonCult",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dragonbolt+of+Florissax",
     legendary: false,

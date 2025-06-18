@@ -4,6 +4,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Catch Flame",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Catch+Flame",
     legendary: false,
@@ -12,6 +13,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "O, Flame!",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/O,+Flame!",
     legendary: false,
@@ -20,6 +22,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Flame Sling",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flame+Sling",
     legendary: false,
@@ -30,6 +33,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Giantsflame Take Thee",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Giantsflame+Take+Thee",
     legendary: false,
@@ -38,6 +42,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Flame, Fall Upon Them",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flame,+Fall+Upon+Them",
     legendary: false,
@@ -46,6 +51,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Flame of the Fell God",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flame+of+the+Fell+God",
     legendary: true,
@@ -56,6 +62,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Surge, O Flame!",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Surge,+O+Flame!",
     legendary: false,
@@ -64,6 +71,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Whirl, O Flame!",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Whirl,+O+Flame!",
     legendary: false,
@@ -72,6 +80,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Burn, O Flame!",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Burn,+O+Flame!",
     legendary: false,
@@ -80,6 +89,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Flame, Cleanse Me",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flame,+Cleanse+Me",
     legendary: false,
@@ -88,6 +98,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Flame, Protect Me",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flame,+Protect+Me",
     legendary: false,
@@ -96,6 +107,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Flame, Grant Me Strength",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flame,+Grant+Me+Strength",
     legendary: false,
@@ -104,6 +116,7 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Fire's Deadly Sin",
+    subcategory: "fireMonk&FireGiant",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fire's+Deadly+Sin",
     legendary: false,

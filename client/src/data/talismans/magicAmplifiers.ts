@@ -4,6 +4,7 @@ export const magicAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Graven-School Talisman",
+    subcategory: "magicAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Graven-School+Talisman",
     dlc: false,
@@ -13,6 +14,7 @@ export const magicAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Graven-Mass Talisman",
+    subcategory: "magicAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Graven-Mass+Talisman",
     dlc: false,
@@ -22,6 +24,7 @@ export const magicAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Fathful Canvas Talisman",
+    subcategory: "magicAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fathful+Canvas+Talisman",
     dlc: false,
@@ -31,6 +34,7 @@ export const magicAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Flock's Canvas Talisman",
+    subcategory: "magicAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flock%27s+Canvas+Talisman",
     dlc: false,
@@ -40,6 +44,7 @@ export const magicAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Primal Glinstone Blade",
+    subcategory: "magicAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Primal+Glinstone+Blade",
     dlc: false,
@@ -49,6 +54,7 @@ export const magicAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Moon of Nokstella",
+    subcategory: "magicAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Moon+of+Nokstella",
     dlc: false,
@@ -58,6 +64,7 @@ export const magicAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Old Lord's Talisman",
+    subcategory: "magicAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Old+Lord%27s+Talisman",
     dlc: false,
@@ -67,6 +74,7 @@ export const magicAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Radagon Icon",
+    subcategory: "magicAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Radagon+Icon",
     dlc: false,
@@ -76,6 +84,7 @@ export const magicAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Beloved Stardust",
+    subcategory: "magicAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Beloved+Stardust",
     dlc: true,

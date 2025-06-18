@@ -4,6 +4,7 @@ export const noAffinityShield: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Parry",
+    subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Parry",
     dlc: false,
@@ -11,6 +12,7 @@ export const noAffinityShield: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Golden Parry",
+    subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Golden+Parry",
     dlc: false,
@@ -18,6 +20,7 @@ export const noAffinityShield: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Storm Wall",
+    subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Storm+Wall",
     dlc: false,
@@ -25,6 +28,7 @@ export const noAffinityShield: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Shield Bash",
+    subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Shield+Bash",
     dlc: false,
@@ -32,6 +36,7 @@ export const noAffinityShield: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Shield Crash",
+    subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Shield+Crash",
     dlc: false,
@@ -39,6 +44,7 @@ export const noAffinityShield: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Barricade Shield",
+    subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Barricade+Shield",
     dlc: false,
@@ -46,6 +52,7 @@ export const noAffinityShield: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Thops's Barrier",
+    subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Thops's+Barrier",
     dlc: false,
@@ -53,6 +60,7 @@ export const noAffinityShield: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Carian Retaliation",
+    subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Retaliation",
     dlc: false,
@@ -60,6 +68,7 @@ export const noAffinityShield: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Shield Strike",
+    subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Shield+Strike",
     dlc: false,
@@ -69,6 +78,7 @@ export const noAffinityShield: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "No Skill",
+    subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+No+Skill",
     dlc: false,

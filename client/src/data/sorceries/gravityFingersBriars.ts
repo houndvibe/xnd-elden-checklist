@@ -4,6 +4,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Gravity Well",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gravity+Well",
     legendary: false,
@@ -12,6 +13,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Collapsing Stars",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Collapsing+Stars",
     legendary: false,
@@ -20,6 +22,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Gravitational Missile",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gravitational+Missile",
     legendary: false,
@@ -30,6 +33,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Rock Sling",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rock+Sling",
     legendary: false,
@@ -38,6 +42,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Blades of Stone",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Blades+of+Stone",
     legendary: false,
@@ -48,6 +53,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Meteorite",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Meteorite",
     legendary: false,
@@ -56,6 +62,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Meteorite of Astel",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Meteorite+of+Astel",
     legendary: false,
@@ -64,6 +71,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Glintstone Nail",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Nail",
     legendary: false,
@@ -74,6 +82,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Glintstone Nails",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Nails",
     legendary: false,
@@ -84,6 +93,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Fleeting Microcosm",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fleeting+Microcosm",
     legendary: false,
@@ -94,6 +104,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Cherishing Fingers",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Cherishing+Fingers",
     legendary: false,
@@ -104,6 +115,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Oracle Bubbles",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Oracle+Bubbles",
     legendary: false,
@@ -114,6 +126,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Great Oracular Bubble",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Great+Oracular+Bubble",
     legendary: false,
@@ -122,6 +135,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Briars of Sin",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Briars+of+Sin",
     legendary: false,
@@ -130,6 +144,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Briars of Punishment",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Briars+of+Punishment",
     legendary: false,
@@ -138,6 +153,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Mantle of Thorns",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mantle+of+Thorns",
     legendary: false,
@@ -148,6 +164,7 @@ export const gravityFingersBriars: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Impenetrable Thorns",
+    subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Impenetrable+Thorns",
     legendary: false,

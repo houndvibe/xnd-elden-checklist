@@ -4,6 +4,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Spinning Slash",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Spinning+Slash",
     dlc: false,
@@ -11,6 +12,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Impaling Thrust",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Impaling+Thrust",
     dlc: false,
@@ -18,6 +20,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Blind Spot",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Blind+Spot",
     dlc: false,
@@ -27,6 +30,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Swift Slash",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Swift+Slash",
     dlc: false,
@@ -36,6 +40,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Piercing Fang",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Piercing+Fang",
     dlc: false,
@@ -43,6 +48,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Repeating Thrust",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Repeating+Thrust",
     dlc: false,
@@ -50,6 +56,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Double Slash",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Double+Slash",
     dlc: false,
@@ -57,6 +64,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Sword Dance",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Sword+Dance",
     dlc: false,
@@ -64,6 +72,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Unsheathe",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Unsheathe",
     dlc: false,
@@ -71,6 +80,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Overhead Stance",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Overhead+Stance",
     dlc: false,
@@ -80,6 +90,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Quickstep",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Quickstep",
     dlc: false,
@@ -87,6 +98,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Bloodhound Step",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Bloodhound+Step",
     dlc: false,
@@ -96,6 +108,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Raptor of the Mists",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Raptor+of+the+Mists",
     dlc: false,
@@ -103,6 +116,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Beast's Roar",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Beast's+Roar",
     dlc: false,
@@ -110,6 +124,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Savage Claws",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Savage+Claws",
     dlc: false,
@@ -119,6 +134,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Raging Beast",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Raging+Beast",
     dlc: false,
@@ -128,6 +144,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Piercing Throw",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Piercing+Throw",
     dlc: false,
@@ -137,6 +154,7 @@ export const keen: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Scattershot Throw",
+    subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Scattershot+Throw",
     dlc: false,

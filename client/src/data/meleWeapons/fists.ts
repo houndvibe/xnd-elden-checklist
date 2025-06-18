@@ -4,6 +4,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Caestus",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Caestus",
     legendary: false,
@@ -12,6 +13,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Spiked Caestus",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spiked_Caestus",
     legendary: false,
@@ -20,6 +22,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Katar",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Katar",
     legendary: false,
@@ -28,6 +31,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Pata",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Pata",
     legendary: false,
@@ -36,6 +40,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Iron Ball",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Iron_Ball",
     legendary: false,
@@ -44,6 +49,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Star Fist",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Star_Fist",
     legendary: false,
@@ -52,6 +58,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Clinging Bone",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Clinging_Bone",
     legendary: false,
@@ -60,6 +67,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Veteran's Prosthesis",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Veteran's_Prosthesis",
     legendary: false,
@@ -68,6 +76,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Cipher Pata",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Cipher_Pata",
     legendary: false,
@@ -76,6 +85,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Poisoned Hand",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Poisoned_Hand",
     legendary: false,
@@ -84,6 +94,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Madding Hand",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Madding_Hand",
     legendary: false,
@@ -92,6 +103,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Golem Fist",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Golem_Fist",
     legendary: false,
@@ -100,6 +112,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Thiollier's Hidden Needle",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Thiollier's_Hidden_Needle",
     legendary: false,
@@ -108,6 +121,7 @@ export const fists: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Grafted Dragon",
+    subcategory: "fists",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Grafted_Dragon",
     legendary: false,

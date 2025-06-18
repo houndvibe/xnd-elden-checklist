@@ -4,6 +4,7 @@ export const twinblades: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Twinblade",
+    subcategory: "twinblades",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Twinblade",
     legendary: false,
@@ -12,6 +13,7 @@ export const twinblades: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Twinned Knight Swords",
+    subcategory: "twinblades",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Twinned_Knight_Swords",
     legendary: false,
@@ -20,6 +22,7 @@ export const twinblades: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Black Steel Twinblade",
+    subcategory: "twinblades",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Black_Steel_Twinblade",
     legendary: false,
@@ -28,6 +31,7 @@ export const twinblades: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Godskin Peeler",
+    subcategory: "twinblades",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Godskin_Peeler",
     legendary: false,
@@ -36,6 +40,7 @@ export const twinblades: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Gargoyle's Twinblade",
+    subcategory: "twinblades",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gargoyle's_Twinblade",
     legendary: false,
@@ -44,6 +49,7 @@ export const twinblades: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Gargoyle's Black Blades",
+    subcategory: "twinblades",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gargoyle's_Black_Blades",
     legendary: false,
@@ -52,6 +58,7 @@ export const twinblades: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Eleonora's Poleblade",
+    subcategory: "twinblades",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Eleonora's_Poleblade",
     legendary: false,
@@ -60,6 +67,7 @@ export const twinblades: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Euporia",
+    subcategory: "twinblades",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Euporia",
     legendary: false,

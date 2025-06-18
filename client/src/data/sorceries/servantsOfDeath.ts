@@ -4,6 +4,7 @@ export const servantsOfDeath: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Rancorcall",
+    subcategory: "servantsOfDeath",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rancorcall",
     legendary: false,
@@ -12,6 +13,7 @@ export const servantsOfDeath: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Ancient Death Rancor",
+    subcategory: "servantsOfDeath",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Death+Rancor",
     legendary: false,
@@ -22,6 +24,7 @@ export const servantsOfDeath: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Mass of Putrescence",
+    subcategory: "servantsOfDeath",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mass+of+Putrescence",
     legendary: false,
@@ -32,6 +35,7 @@ export const servantsOfDeath: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Explosive Ghostflame",
+    subcategory: "servantsOfDeath",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Explosive+Ghostflame",
     legendary: false,
@@ -40,6 +44,7 @@ export const servantsOfDeath: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Rings of Spectral Light",
+    subcategory: "servantsOfDeath",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rings+of+Spectral+Light",
     legendary: false,
@@ -50,6 +55,7 @@ export const servantsOfDeath: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Fia's Mist",
+    subcategory: "servantsOfDeath",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fia's+Mist",
     legendary: false,
@@ -58,6 +64,7 @@ export const servantsOfDeath: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Tibia's Summons",
+    subcategory: "servantsOfDeath",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Tibia's+Summons",
     legendary: false,
@@ -66,6 +73,7 @@ export const servantsOfDeath: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Vortex of Putrescence",
+    subcategory: "servantsOfDeath",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Vortex+of+Putrescence",
     legendary: false,

@@ -4,6 +4,7 @@ export const beastClaws: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Beast Claw",
+    subcategory: "beastClaws",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Beast_Claw",
     legendary: false,
@@ -12,6 +13,7 @@ export const beastClaws: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Red Bear's Claw",
+    subcategory: "beastClaws",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Red_Bear's_Claw",
     legendary: false,

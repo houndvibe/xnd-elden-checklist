@@ -4,6 +4,7 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Dismounter",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dismounter",
     legendary: false,
@@ -12,6 +13,7 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Omen Cleaver",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Omen+Cleaver",
     legendary: false,
@@ -20,6 +22,7 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Monk's Flameblade",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Monk's+Flameblade",
     legendary: false,
@@ -28,6 +31,7 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Beastman's Cleaver",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Beastman's+Cleaver",
     legendary: false,
@@ -36,6 +40,7 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Freyja's Greatsword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Freyja's+Greatsword",
     legendary: false,
@@ -44,6 +49,7 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Bloodhound's Fang",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bloodhound's+Fang",
     legendary: false,
@@ -52,6 +58,7 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Onyx Lord's Greatsword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Onyx+Lord's+Greatsword",
     legendary: false,
@@ -60,6 +67,7 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Zamor Curved Sword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Zamor+Curved+Sword",
     legendary: false,
@@ -68,6 +76,7 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Magma Wyrm's Scalesword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Magma+Wyrm's+Scalesword",
     legendary: false,
@@ -76,6 +85,7 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Horned Warrior's Greatsword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Horned+Warrior's+Greatsword",
     legendary: false,
@@ -84,6 +94,7 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Morgott's Cursed Sword",
+    subcategory: "colossalSwords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Morgott's+Cursed+Sword",
     legendary: false,

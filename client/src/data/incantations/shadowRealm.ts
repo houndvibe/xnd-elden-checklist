@@ -4,6 +4,7 @@ export const shadowRealm: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Golden Arcs",
+    subcategory: "shadowRealm",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Golden+Arcs",
     legendary: false,
@@ -14,6 +15,7 @@ export const shadowRealm: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Giant Golden Arc",
+    subcategory: "shadowRealm",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Giant+Golden+Arc",
     legendary: false,
@@ -24,6 +26,7 @@ export const shadowRealm: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Spira",
+    subcategory: "shadowRealm",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spira",
     legendary: false,
@@ -34,6 +37,7 @@ export const shadowRealm: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Watchful Spirit",
+    subcategory: "shadowRealm",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Watchful+Spirit",
     legendary: false,
@@ -42,6 +46,7 @@ export const shadowRealm: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Divine Bird Feathers",
+    subcategory: "shadowRealm",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Divine+Bird+Feathers",
     legendary: false,
@@ -50,6 +55,7 @@ export const shadowRealm: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Divine Beast Tornado",
+    subcategory: "shadowRealm",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Divine+Beast+Tornado",
     legendary: false,

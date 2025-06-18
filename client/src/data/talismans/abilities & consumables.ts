@@ -4,6 +4,7 @@ export const abilitiesAndConsumables: TalismanItem[] = [
   {
     type: "talismans",
     name: "Roar Medallion",
+    subcategory: "abilities & consumables",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Roar+Medallion",
     dlc: false,
@@ -13,6 +14,7 @@ export const abilitiesAndConsumables: TalismanItem[] = [
   {
     type: "talismans",
     name: "Companion Jar",
+    subcategory: "abilities & consumables",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Companion+Jar",
     dlc: false,
@@ -22,6 +24,7 @@ export const abilitiesAndConsumables: TalismanItem[] = [
   {
     type: "talismans",
     name: "Perfumer's Talisman",
+    subcategory: "abilities & consumables",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Perfumer%27s+Talisman",
     dlc: false,
@@ -31,6 +34,7 @@ export const abilitiesAndConsumables: TalismanItem[] = [
   {
     type: "talismans",
     name: "Carian Filigreed Crest",
+    subcategory: "abilities & consumables",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Carian+Filigreed+Crest",
     dlc: false,
@@ -40,6 +44,7 @@ export const abilitiesAndConsumables: TalismanItem[] = [
   {
     type: "talismans",
     name: "Warrior Jar Shard",
+    subcategory: "abilities & consumables",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Warrior+Jar+Shard",
     dlc: false,
@@ -49,6 +54,7 @@ export const abilitiesAndConsumables: TalismanItem[] = [
   {
     type: "talismans",
     name: "Shard of Alexander",
+    subcategory: "abilities & consumables",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Shard+of+Alexander",
     dlc: false,
@@ -58,6 +64,7 @@ export const abilitiesAndConsumables: TalismanItem[] = [
   {
     type: "talismans",
     name: "Godfrey Icon",
+    subcategory: "abilities & consumables",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Godfrey+Icon",
     dlc: false,
@@ -67,6 +74,7 @@ export const abilitiesAndConsumables: TalismanItem[] = [
   {
     type: "talismans",
     name: "Rellana's Cameo",
+    subcategory: "abilities & consumables",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rellana%27s+Cameo",
     dlc: true,
@@ -76,6 +84,7 @@ export const abilitiesAndConsumables: TalismanItem[] = [
   {
     type: "talismans",
     name: "Shattered Stone Talisman",
+    subcategory: "abilities & consumables",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Shattered+Stone+Talisman",
     dlc: true,
@@ -85,6 +94,7 @@ export const abilitiesAndConsumables: TalismanItem[] = [
   {
     type: "talismans",
     name: "Smithing Talisman",
+    subcategory: "abilities & consumables",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smithing+Talisman",
     dlc: true,
@@ -94,6 +104,7 @@ export const abilitiesAndConsumables: TalismanItem[] = [
   {
     type: "talismans",
     name: "Enraged Divine Beast",
+    subcategory: "abilities & consumables",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Enraged+Divine+Beast",
     dlc: true,
@@ -103,6 +114,7 @@ export const abilitiesAndConsumables: TalismanItem[] = [
   {
     type: "talismans",
     name: "Talisman of the Dread",
+    subcategory: "abilities & consumables",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Talisman+of+the+Dread",
     dlc: true,

@@ -4,6 +4,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Stamp (Upward Cut)",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Ash+of+War:+Stamp+(Upward+Cut)",
     dlc: false,
@@ -11,6 +12,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Stamp (Sweep)",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Stamp+(Sweep)",
     dlc: false,
@@ -18,6 +20,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Wild Strikes",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_braggart's_roar_elden_ring_wiki_guide_200px.png",
     dlc: false,
@@ -25,6 +28,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Lion's Claw",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Lion's+Claw",
     dlc: false,
@@ -34,6 +38,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Savage Lion's Claw",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Savage+Lion's+Claw",
     dlc: false,
@@ -43,6 +48,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Cragblade",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Cragblade",
     dlc: false,
@@ -50,6 +56,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Kick",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Kick",
     dlc: false,
@@ -57,6 +64,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Endure",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Endure",
     dlc: false,
@@ -64,6 +72,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Ground Slam",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Ground+Slam",
     dlc: false,
@@ -71,6 +80,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Earthshaker",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Earthshaker",
     dlc: false,
@@ -78,6 +88,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Hoarah Loux's Earthshaker",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Hoarah+Loux's+Earthshaker",
     dlc: false,
@@ -85,6 +96,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "War Cry",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+War+Cry",
     dlc: false,
@@ -92,6 +104,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Barbaric Roar",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Barbaric+Roar",
     dlc: false,
@@ -99,6 +112,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Braggart's Roar",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Braggart's+Roar",
     dlc: false,
@@ -108,6 +122,7 @@ export const heavy: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Troll's Roar",
+    subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Troll's+Roar",
     dlc: false,

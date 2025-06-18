@@ -4,6 +4,7 @@ export const flameLightning: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Flaming Strike",
+    subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flaming+Strike",
     dlc: false,
@@ -11,6 +12,7 @@ export const flameLightning: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Flame of the Redmanes",
+    subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+of+the+Redmanes",
     dlc: false,
@@ -18,6 +20,7 @@ export const flameLightning: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Eruption",
+    subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Eruption",
     dlc: false,
@@ -25,6 +28,7 @@ export const flameLightning: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Prelate's Charge",
+    subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Prelate's+Charge",
     dlc: false,
@@ -32,6 +36,7 @@ export const flameLightning: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Black Flame Tornado",
+    subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Black+Flame+Tornado",
     dlc: false,
@@ -39,6 +44,7 @@ export const flameLightning: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Flame Skewer",
+    subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+Skewer",
     dlc: false,
@@ -48,6 +54,7 @@ export const flameLightning: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Flame Spear",
+    subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+Spear",
     dlc: false,
@@ -57,6 +64,7 @@ export const flameLightning: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Thunderbolt",
+    subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Thunderbolt",
     dlc: false,
@@ -64,6 +72,7 @@ export const flameLightning: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Lightning Slash",
+    subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Lightning+Slash",
     dlc: false,
@@ -71,6 +80,7 @@ export const flameLightning: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Blinkbolt",
+    subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Blinkbolt",
     dlc: false,
@@ -80,6 +90,7 @@ export const flameLightning: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Lightning Ram",
+    subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Lightning+Ram",
     dlc: false,

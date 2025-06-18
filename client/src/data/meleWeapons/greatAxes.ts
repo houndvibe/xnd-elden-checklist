@@ -4,6 +4,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Greataxe",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greataxe",
     legendary: false,
@@ -12,6 +13,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Crescent Moon Axe",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crescent_Moon_Axe",
     legendary: false,
@@ -20,6 +22,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Longhaft Axe",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Longhaft_Axe",
     legendary: false,
@@ -28,6 +31,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Executioner's Greataxe",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Executioner's_Greataxe",
     legendary: false,
@@ -36,6 +40,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Great Omenkiller Cleaver",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Great_Omenkiller_Cleaver",
     legendary: false,
@@ -44,6 +49,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Rusted Anchor",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rusted_Anchor",
     legendary: false,
@@ -52,6 +58,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Butchering Knife",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Butchering_Knife",
     legendary: false,
@@ -60,6 +67,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Bonny Butchering Knife",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bonny_Butchering_Knife",
     legendary: false,
@@ -68,6 +76,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Gargoyle's Great Axe",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gargoyle's_Great_Axe",
     legendary: false,
@@ -76,6 +85,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Gargoyle's Black Axe",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gargoyle's_Black_Axe",
     legendary: false,
@@ -84,6 +94,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Death Knight's Longhaft Axe",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Death_Knight's_Longhaft_Axe",
     legendary: false,
@@ -92,6 +103,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Winged Greathorn",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Winged_Greathorn",
     legendary: false,
@@ -100,6 +112,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Axe of Godrick",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Axe_of_Godrick",
     legendary: false,
@@ -108,6 +121,7 @@ export const greatAxes: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Putrescence Cleaver",
+    subcategory: "greatAxes",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Putrescence_Cleaver",
     legendary: false,

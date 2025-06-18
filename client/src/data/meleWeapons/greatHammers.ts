@@ -4,6 +4,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Large Club",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Large_Club",
     legendary: false,
@@ -12,6 +13,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Curved Great Club",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Curved_Great_Club",
     legendary: false,
@@ -20,6 +22,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Great Mace",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Great_Mace",
     legendary: false,
@@ -28,6 +31,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Pickaxe",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Pickaxe",
     legendary: false,
@@ -36,6 +40,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Brick Hammer",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Brick_Hammer",
     legendary: false,
@@ -44,6 +49,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Battle Hammer",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Battle_Hammer",
     legendary: false,
@@ -52,6 +58,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Rotten Battle Hammer",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rotten_Battle_Hammer",
     legendary: false,
@@ -60,6 +67,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Celebrant's Skull",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Celebrant's_Skull",
     legendary: false,
@@ -68,6 +76,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Great Stars",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Great_Stars",
     legendary: false,
@@ -76,6 +85,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Black Steel Greathammer",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Black_Steel_Greathammer",
     legendary: false,
@@ -84,6 +94,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Smithscript Greathammer",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smithscript_Greathammer",
     legendary: false,
@@ -92,6 +103,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Greathorn Hammer",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greathorn_Hammer",
     legendary: false,
@@ -100,6 +112,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Envoy's Long Horn",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Envoy's_Long_Horn",
     legendary: false,
@@ -108,6 +121,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Cranial Vessel Candlestand",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Cranial_Vessel_Candlestand",
     legendary: false,
@@ -116,6 +130,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Beastclaw Greathammer",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Beastclaw_Greathammer",
     legendary: false,
@@ -124,6 +139,7 @@ export const greatHammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Devourer's Scepter",
+    subcategory: "greatHammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Devourer's_Scepter",
     legendary: true,

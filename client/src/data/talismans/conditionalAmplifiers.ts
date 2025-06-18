@@ -4,6 +4,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Red-Feathered Branchsword",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Red-Feathered+Branchsword",
     dlc: false,
@@ -13,6 +14,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Blue-Feathered Branchsword",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Blue-Feathered+Branchsword",
     dlc: false,
@@ -22,6 +24,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Ritual Sword Talisman",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ritual+Sword+Talisman",
     dlc: false,
@@ -31,6 +34,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Ritual Shield Talisman",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ritual+Shield+Talisman",
     dlc: false,
@@ -40,6 +44,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Assassin's Crimson Dagger",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Assassin%27s+Crimson+Dagger",
     dlc: false,
@@ -49,6 +54,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Assassin's Cerulean Dagger",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Assassin%27s+Cerulean+Dagger",
     dlc: false,
@@ -58,6 +64,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Winged Sword Insignia",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Winged+Sword+Insignia",
     dlc: false,
@@ -67,6 +74,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Rotten Winged Sword Insignia",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rotten+Winged+Sword+Insignia",
     dlc: false,
@@ -76,6 +84,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Millicent's Prosthesis",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Millicent%27s+Prosthesis",
     dlc: false,
@@ -85,6 +94,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Godskin Swadlling Cloth",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Godskin+Swaddling+Cloth",
     dlc: false,
@@ -94,6 +104,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Kindred of Rot's Exultation",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Kindred+of+Rot%27s+Exultation",
     dlc: false,
@@ -103,6 +114,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Lord of Blood's Exultation",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lord+of+Blood%27s+Exultation",
     dlc: false,
@@ -112,6 +124,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Aged One's Exultation",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Aged+One%27s+Exultation",
     dlc: true,
@@ -121,6 +134,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "St. Trina's Smile",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/St.+Trina's+Smile",
     dlc: true,
@@ -132,6 +146,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Blade of Mercy",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Blade+of+Mercy",
     dlc: true,
@@ -141,6 +156,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Taker's Cameo",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Taker%27s+Cameo",
     dlc: false,
@@ -150,6 +166,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Ancestral Spirit's Horn",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancestral+Spirit%27s+Horn",
     dlc: false,
@@ -159,6 +176,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Crusade Insignia",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crusade+Insignia",
     dlc: true,
@@ -168,6 +186,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Dried Bouquet",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dried+Bouquet",
     dlc: true,
@@ -177,6 +196,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Gold Scarab",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gold+Scarab",
     dlc: false,
@@ -186,6 +206,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Silver Scarab",
+    subcategory: "conditionalAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Silver+Scarab",
     dlc: false,

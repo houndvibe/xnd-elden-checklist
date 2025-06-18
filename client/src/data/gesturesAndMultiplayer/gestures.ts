@@ -4,6 +4,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Point Forwards",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -13,6 +14,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Point Upwards",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -22,6 +24,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Point Downwards",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -31,6 +34,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Wait!",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -40,6 +44,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Calm Down!",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -49,6 +54,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Wave",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -58,6 +64,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Beckon",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -67,6 +74,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Casual Greeting",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -76,6 +84,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Warm Welcome",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -85,6 +94,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Bravo!",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -94,6 +104,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Strength!",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -103,6 +114,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Jump for Joy",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -112,6 +124,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Triumphant Delight",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -121,6 +134,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Fancy Spin",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -130,6 +144,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Nod in Thought",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -139,6 +154,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Finger Snap",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -148,6 +164,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Rallying Cry",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -157,6 +174,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Heartening Cry",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -166,6 +184,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Bow",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -175,6 +194,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Polite Bow",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -184,6 +204,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "As You Wish",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -193,6 +214,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "My Thanks",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -202,6 +224,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Curtsy",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -211,6 +234,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Reverential Bow",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -220,6 +244,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "My Lord",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -229,6 +254,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "What Do You Want?",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -238,6 +264,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "By My Sword",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -247,6 +274,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Hoslow’s Oath",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -256,6 +284,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Fire Spur Me",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -265,6 +294,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "The Ring",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -274,6 +304,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Erudition",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -283,6 +314,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Prayer",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -292,6 +324,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Desperate Prayer",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -301,6 +334,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Rapture",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -310,6 +344,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Inner Order",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -319,6 +354,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Outer Order",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -328,6 +364,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Extreme Repentance",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -337,6 +374,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Grovel for Mercy",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -346,6 +384,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Crossed Legs",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -355,6 +394,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Dozing Cross-Legged",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -364,6 +404,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Rest",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -373,6 +414,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Sitting Sideways",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -382,6 +424,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Dejection",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -391,6 +434,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Patches’ Crouch",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -400,6 +444,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Balled Up",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -409,6 +454,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Spread Out",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -419,6 +465,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Let Us Go Together",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -428,6 +475,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "May the Best Win",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -437,6 +485,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "O Mother",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -446,6 +495,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "Ring of Miquella",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",
@@ -455,6 +505,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   {
     type: "gesturesAndMultiplayer",
     name: "The Two Fingers",
+    subcategory: "gestures",
     description: "",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gestures",

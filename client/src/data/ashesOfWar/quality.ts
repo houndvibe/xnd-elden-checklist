@@ -4,6 +4,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Square Off",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Square+Off",
     dlc: false,
@@ -11,6 +12,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Wing Stance",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Wing+Stance",
     dlc: false,
@@ -20,6 +22,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Charge Forth",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Charge+Forth",
     dlc: false,
@@ -27,6 +30,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Giant Hunt",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Giant+Hunt",
     dlc: false,
@@ -36,6 +40,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Storm Blade",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Storm+Blade",
     dlc: false,
@@ -43,6 +48,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Storm Assault",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Storm+Assault",
     dlc: false,
@@ -50,6 +56,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Stormcaller",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Stormcaller",
     dlc: false,
@@ -57,6 +64,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Storm Stomp",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Storm+Stomp",
     dlc: false,
@@ -64,6 +72,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Vacuum Slice",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Vacuum+Slice",
     dlc: false,
@@ -71,6 +80,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Phantom Slash",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Phantom+Slash",
     dlc: false,
@@ -78,6 +88,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Determination",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Determination",
     dlc: false,
@@ -85,6 +96,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Royal Knight's Resolve",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Royal+Knight's+Resolve",
     dlc: false,
@@ -92,6 +104,7 @@ export const quality: AshOfWarItem[] = [
   {
     type: "ashesOfWar",
     name: "Spinning Strikes",
+    subcategory: "quality",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Spinning+Strikes",
     dlc: false,

@@ -4,6 +4,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Dagger Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dagger+Talisman",
     dlc: false,
@@ -13,6 +14,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Curved Sword Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Curved+Sword+Talisman",
     dlc: false,
@@ -22,6 +24,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Twinblade Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Twinblade+Talisman",
     dlc: false,
@@ -31,6 +34,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Axe Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Axe+Talisman",
     dlc: false,
@@ -40,6 +44,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Hammer Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Hammer+Talisman",
     dlc: false,
@@ -49,6 +54,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Spear Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spear+Talisman",
     dlc: false,
@@ -58,6 +64,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Lance Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lance+Talisman",
     dlc: false,
@@ -67,6 +74,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Claw Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Claw+Talisman",
     dlc: false,
@@ -76,6 +84,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Two-Handed Sword Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Two-Handed+Sword+Talisman",
     dlc: true,
@@ -85,6 +94,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Greatshield Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greatshield+Talisman",
     dlc: false,
@@ -94,6 +104,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Pearl Shield Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Pearl+Shield+Talisman",
     dlc: true,
@@ -103,6 +114,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Retaliatory Crossed-Tree",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Retaliatory+Crossed-Tree",
     dlc: true,
@@ -114,6 +126,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Lacerating Crossed-Tree",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lacerating+Crossed-Tree",
     dlc: true,
@@ -125,6 +138,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Arrow's Sting Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Arrow%27s+Sting+Talisman",
     dlc: false,
@@ -134,6 +148,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Arrow's Reach Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Arrow%27s+Reach+Talisman",
     dlc: false,
@@ -143,6 +158,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Arrow's Soaring Sting Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Arrow%27s+Soaring+Sting+Talisman",
     dlc: true,
@@ -152,6 +168,7 @@ export const weaponAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Sharpshot Talisman",
+    subcategory: "weaponAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sharpshot+Talisman",
     dlc: true,

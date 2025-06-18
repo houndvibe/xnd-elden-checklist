@@ -4,6 +4,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Dragonfire",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dragonfire",
     legendary: false,
@@ -12,6 +13,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Agheel's Flame",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Agheel's+Flame",
     legendary: false,
@@ -20,6 +22,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Magma Breath",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Magma+Breath",
     legendary: false,
@@ -28,6 +31,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Theodorix's Magma",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Theodorix's+Magma",
     legendary: false,
@@ -36,6 +40,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Glintstone Breath",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Breath",
     legendary: false,
@@ -44,6 +49,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Smarag's Glintstone Breath",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smarag's+Glintstone+Breath",
     legendary: false,
@@ -52,6 +58,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Rotten Breath",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rotten+Breath",
     legendary: false,
@@ -60,6 +67,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Ekzykes's Decay",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ekzykes's+Decay",
     legendary: false,
@@ -68,6 +76,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Dragonice",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dragonice",
     legendary: false,
@@ -76,6 +85,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Borealis's Mist",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Borealis's+Mist",
     legendary: false,
@@ -84,6 +94,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Ghostflame Breath",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ghostflame+Breath",
     legendary: false,
@@ -92,6 +103,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Placidusax's Ruin",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Placidusax's+Ruin",
     legendary: false,
@@ -100,6 +112,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Dragonclaw",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dragonclaw",
     legendary: false,
@@ -108,6 +121,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Dragonmaw",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dragonmaw",
     legendary: false,
@@ -116,6 +130,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Greyoll's Roar",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greyoll's+Roar",
     legendary: true,
@@ -124,6 +139,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Bayle's Flame Lightning",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bayle's+Flame+Lightning",
     legendary: false,
@@ -132,6 +148,7 @@ export const dragonCommunion: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Bayle's Tyranny",
+    subcategory: "dragonCommunion",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bayle's+Tyranny",
     legendary: false,

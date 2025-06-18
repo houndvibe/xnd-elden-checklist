@@ -53,6 +53,7 @@ export interface ShieldAndTorchesSubCategoryMap {
 //Духи
 export interface SpiritAshItem {
   type: Extract<ItemCategory, "spiritAshes">;
+  subcategory: keyof SpiritAshesSubCategoryMap;
   name: string;
   collected: boolean;
   link: string;
@@ -78,6 +79,7 @@ export interface TalismanVersions {
 
 export interface TalismanItem {
   type: Extract<ItemCategory, "talismans">;
+  subcategory: keyof TalismansSubCategoryMap;
   name: string;
   collected: boolean;
   link: string;
@@ -101,6 +103,7 @@ export interface TalismansSubCategoryMap {
 //Пеплы войны
 export interface AshOfWarItem {
   type: Extract<ItemCategory, "ashesOfWar">;
+  subcategory: keyof AshesOfWarSubCategoryMap;
   name: string;
   collected: boolean;
   link: string;
@@ -125,6 +128,7 @@ export interface AshesOfWarSubCategoryMap {
 //Магия
 export interface SorceryItem {
   type: Extract<ItemCategory, "sorceries">;
+  subcategory: keyof SorceriesSubCategoryMap;
   name: string;
   collected: boolean;
   link: string;
@@ -145,6 +149,7 @@ export interface SorceriesSubCategoryMap {
 //Молитвы
 export interface IncantationsItem {
   type: Extract<ItemCategory, "incantations">;
+  subcategory: keyof IncantationsSubCategoryMap;
   name: string;
   collected: boolean;
   link: string;
@@ -170,6 +175,7 @@ export interface IncantationsSubCategoryMap {
 //Жесты
 export interface GestureOrMultiplayerItem {
   type: Extract<ItemCategory, "gesturesAndMultiplayer">;
+  subcategory: keyof GesturesAndMultiplayerSubCategoryMap;
   name: string;
   description: string;
   collected: boolean;
@@ -186,6 +192,7 @@ export interface GesturesAndMultiplayerSubCategoryMap {
 //Оружие
 export interface MeleWeaponItem {
   type: Extract<ItemCategory, "meleWeapons">;
+  subcategory: keyof MeleWeaponsSubCategoryMap;
   name: string;
   collected: boolean;
   link: string;

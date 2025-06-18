@@ -4,6 +4,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Halberd",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Halberd",
     legendary: false,
@@ -12,6 +13,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Banished Knight's Halberd",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Banished_Knight's_Halberd",
     legendary: false,
@@ -20,6 +22,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Lucerne",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lucerne",
     legendary: false,
@@ -28,6 +31,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Glaive",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glaive",
     legendary: false,
@@ -36,6 +40,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Vulgar Militia Shotel",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Vulgar_Militia_Shotel",
     legendary: false,
@@ -44,6 +49,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Vulgar Militia Saw",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Vulgar_Militia_Saw",
     legendary: false,
@@ -52,6 +58,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Guardian's Swordspear",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Guardian's_Swordspear",
     legendary: false,
@@ -60,6 +67,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Gargoyle's Halberd",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gargoyle's_Halberd",
     legendary: false,
@@ -68,6 +76,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Gargoyle's Black Halberd",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gargoyle's_Black_Halberd",
     legendary: false,
@@ -76,6 +85,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Nightrider Glaive",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nightrider_Glaive",
     legendary: false,
@@ -84,6 +94,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Pest's Glaive",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Pest's_Glaive",
     legendary: false,
@@ -92,6 +103,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Ripple Crescent Halberd",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ripple_Crescent_Halberd",
     legendary: false,
@@ -100,6 +112,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Golden Halberd",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Golden_Halberd",
     legendary: false,
@@ -108,6 +121,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Dragon Halberd",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dragon_Halberd",
     legendary: false,
@@ -116,6 +130,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Loretta's War Sickle",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Loretta's_War_Sickle",
     legendary: false,
@@ -124,6 +139,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Commander's Standard",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Commander's_Standard",
     legendary: false,
@@ -132,6 +148,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Spirit Glaive",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spirit_Glaive",
     legendary: false,
@@ -140,6 +157,7 @@ export const helberds: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Poleblade of the Bud",
+    subcategory: "helberds",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Poleblade_of_the_Bud",
     legendary: false,

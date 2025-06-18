@@ -4,6 +4,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Urgent Heal",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Urgent+Heal",
     legendary: false,
@@ -12,6 +13,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Heal",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Heal",
     legendary: false,
@@ -20,6 +22,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Great Heal",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Great+Heal",
     legendary: false,
@@ -28,6 +31,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Lord's Heal",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lord's+Heal",
     legendary: false,
@@ -36,6 +40,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Cure Poison",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Cure+Poison",
     legendary: false,
@@ -46,6 +51,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Lord's Aid",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lord's+Aid",
     legendary: false,
@@ -56,6 +62,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Magic Fortification",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Magic+Fortification",
     legendary: false,
@@ -64,6 +71,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Flame Fortification",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flame+Fortification",
     legendary: false,
@@ -72,6 +80,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Lightning Fortification",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lightning+Fortification",
     legendary: false,
@@ -80,6 +89,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Divine Fortification",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Divine+Fortification",
     legendary: false,
@@ -88,6 +98,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Lord's Divine Fortification",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lord's+Divine+Fortification",
     legendary: false,
@@ -96,6 +107,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Rejection",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rejection",
     legendary: false,
@@ -104,6 +116,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Shadow Bait",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Shadow+Bait",
     legendary: false,
@@ -112,6 +125,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Darkness",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Darkness",
     legendary: false,
@@ -120,6 +134,7 @@ export const twoFingers: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Assassin's Approach",
+    subcategory: "twoFingers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Assassin's+Approach",
     legendary: false,

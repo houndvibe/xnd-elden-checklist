@@ -4,6 +4,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Club",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Club",
     legendary: false,
@@ -12,6 +13,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Curved Club",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Curved_Club",
     legendary: false,
@@ -20,6 +22,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Spiked Club",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spiked_Club",
     legendary: false,
@@ -28,6 +31,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Stone Club",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Stone_Club",
     legendary: false,
@@ -36,6 +40,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Mace",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mace",
     legendary: false,
@@ -44,6 +49,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Morning Star",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Morning_Star",
     legendary: false,
@@ -52,6 +58,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Warpick",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Warpick",
     legendary: false,
@@ -60,6 +67,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Hammer",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Hammer",
     legendary: false,
@@ -68,6 +76,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Monk's Flamemace",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Monk's_Flamemace",
     legendary: false,
@@ -76,6 +85,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Varre's Bouquet",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Varre's_Bouquet",
     legendary: false,
@@ -84,6 +94,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Envoy's Horn",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Envoy's_Horn",
     legendary: false,
@@ -92,6 +103,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Nox Flowing Hammer",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nox_Flowing_Hammer",
     legendary: false,
@@ -100,6 +112,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Ringed Finger",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ringed_Finger",
     legendary: false,
@@ -108,6 +121,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Scepter of the All-Knowing",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Scepter_of_the_All-Knowing",
     legendary: false,
@@ -116,6 +130,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Flowerstone Gavel",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flowerstone_Gavel",
     legendary: false,
@@ -124,6 +139,7 @@ export const hammers: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Marika's Hammer",
+    subcategory: "hammers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Marika's_Hammer",
     legendary: false,

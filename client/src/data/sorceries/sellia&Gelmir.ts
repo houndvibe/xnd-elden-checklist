@@ -4,6 +4,7 @@ export const selliaAndGelmir: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Ambush Shard",
+    subcategory: "sellia&Gelmir",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ambush+Shard",
     legendary: false,
@@ -12,6 +13,7 @@ export const selliaAndGelmir: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Night Shard",
+    subcategory: "sellia&Gelmir",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Night+Shard",
     legendary: false,
@@ -20,6 +22,7 @@ export const selliaAndGelmir: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Night Comet",
+    subcategory: "sellia&Gelmir",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Night+Comet",
     legendary: false,
@@ -28,6 +31,7 @@ export const selliaAndGelmir: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Night Maiden's Mist",
+    subcategory: "sellia&Gelmir",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Night+Maiden's+Mist",
     legendary: false,
@@ -36,6 +40,7 @@ export const selliaAndGelmir: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Unseen Blade",
+    subcategory: "sellia&Gelmir",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Unseen+Blade",
     legendary: false,
@@ -44,6 +49,7 @@ export const selliaAndGelmir: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Unseen Form",
+    subcategory: "sellia&Gelmir",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Unseen+Form",
     legendary: false,
@@ -52,6 +58,7 @@ export const selliaAndGelmir: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Eternal Darkness",
+    subcategory: "sellia&Gelmir",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Eternal+Darkness",
     legendary: false,
@@ -60,6 +67,7 @@ export const selliaAndGelmir: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Magma Shot",
+    subcategory: "sellia&Gelmir",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Magma+Shot",
     legendary: false,
@@ -68,6 +76,7 @@ export const selliaAndGelmir: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Roiling Magma",
+    subcategory: "sellia&Gelmir",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Roiling+Magma",
     legendary: false,
@@ -76,6 +85,7 @@ export const selliaAndGelmir: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Gelmir's Fury",
+    subcategory: "sellia&Gelmir",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gelmir's+Fury",
     legendary: false,
@@ -84,6 +94,7 @@ export const selliaAndGelmir: SorceryItem[] = [
   {
     type: "sorceries",
     name: "Rykard's Rancor",
+    subcategory: "sellia&Gelmir",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rykard's+Rancor",
     legendary: false,

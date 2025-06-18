@@ -4,6 +4,7 @@ export const puppets: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Finger Maiden Therolina",
+    subcategory: "puppets",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Finger+Maiden+Therolina+Puppet",
     legendary: false,
@@ -14,6 +15,7 @@ export const puppets: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Jarwight",
+    subcategory: "puppets",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Jarwight+Puppet",
     legendary: false,
@@ -24,6 +26,7 @@ export const puppets: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Dolores the Sleeping Arrow",
+    subcategory: "puppets",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dolores+the+Sleeping+Arrow+Puppet",
     legendary: false,
@@ -34,6 +37,7 @@ export const puppets: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Nightmaiden & Swordstress",
+    subcategory: "puppets",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nightmaiden+&+Swordstress+Puppets",
     legendary: false,
@@ -44,6 +48,7 @@ export const puppets: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Nepheli Loux",
+    subcategory: "puppets",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nepheli+Loux+Puppet",
     legendary: false,
@@ -54,6 +59,7 @@ export const puppets: SpiritAshItem[] = [
   {
     type: "spiritAshes",
     name: "Dung Eater",
+    subcategory: "puppets",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dung+Eater+Puppet",
     legendary: false,

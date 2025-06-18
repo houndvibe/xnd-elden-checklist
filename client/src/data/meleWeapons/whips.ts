@@ -4,6 +4,7 @@ export const whips: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Whip",
+    subcategory: "whips",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Whip",
     legendary: false,
@@ -12,6 +13,7 @@ export const whips: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Thorned Whip",
+    subcategory: "whips",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Thorned_Whip",
     legendary: false,
@@ -20,6 +22,7 @@ export const whips: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Urumi",
+    subcategory: "whips",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Urumi",
     legendary: false,
@@ -28,6 +31,7 @@ export const whips: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Hoslow's Petal Whip",
+    subcategory: "whips",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Hoslow's_Petal_Whip",
     legendary: false,
@@ -36,6 +40,7 @@ export const whips: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Tooth Whip",
+    subcategory: "whips",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Tooth_Whip",
     legendary: false,
@@ -44,6 +49,7 @@ export const whips: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Magma Whip Candlestick",
+    subcategory: "whips",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Magma_Whip_Candlestick",
     legendary: false,
@@ -52,6 +58,7 @@ export const whips: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Giant's Red Braid",
+    subcategory: "whips",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Giant's_Red_Braid",
     legendary: false,

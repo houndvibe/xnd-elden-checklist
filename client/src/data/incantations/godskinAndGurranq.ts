@@ -4,6 +4,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Black Flame",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Black+Flame",
     legendary: false,
@@ -12,6 +13,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Scouring Black Flame",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Scouring+Black+Flame",
     legendary: false,
@@ -20,6 +22,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Black Flame Ritual",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Black+Flame+Ritual",
     legendary: false,
@@ -28,6 +31,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Black Flame Blade",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Black+Flame+Blade",
     legendary: false,
@@ -36,6 +40,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Black Flame's Protection",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Black+Flame's+Protection",
     legendary: false,
@@ -44,6 +49,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Noble Presence",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Noble+Presence",
     legendary: false,
@@ -52,6 +58,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Beast Claw",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Beast+Claw",
     legendary: false,
@@ -60,6 +67,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Gurranq's Beast Claw",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gurranq's+Beast+Claw",
     legendary: false,
@@ -70,6 +78,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Bestial Sling",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bestial+Sling",
     legendary: false,
@@ -78,6 +87,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Stone of Gurranq",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Stone+of+Gurranq",
     legendary: false,
@@ -86,6 +96,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Bestial Constitution",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bestial+Constitution",
     legendary: false,
@@ -94,6 +105,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Bestial Vitality",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bestial+Vitality",
     legendary: false,
@@ -102,6 +114,7 @@ export const godskinAndGurranq: IncantationsItem[] = [
   {
     type: "incantations",
     name: "Roar of Rugalea",
+    subcategory: "godskin&Gurranq",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Roar+of+Rugalea",
     legendary: false,

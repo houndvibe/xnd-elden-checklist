@@ -4,6 +4,7 @@ export const other: TalismanItem[] = [
   {
     type: "talismans",
     name: "Crepus's Vial",
+    subcategory: "other",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crepus%27s+Vial",
     dlc: false,
@@ -13,6 +14,7 @@ export const other: TalismanItem[] = [
   {
     type: "talismans",
     name: "Concealing Veil",
+    subcategory: "other",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Concealing+Veil",
     dlc: false,
@@ -22,6 +24,7 @@ export const other: TalismanItem[] = [
   {
     type: "talismans",
     name: "Longtail Cat Talisman",
+    subcategory: "other",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Longtail+Cat+Talisman",
     dlc: false,
@@ -31,6 +34,7 @@ export const other: TalismanItem[] = [
   {
     type: "talismans",
     name: "Furled Finger's Trick-Mirror",
+    subcategory: "other",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Furled+Finger%27s+Trick-Mirror",
     dlc: false,
@@ -40,6 +44,7 @@ export const other: TalismanItem[] = [
   {
     type: "talismans",
     name: "Host's Trick-Mirror",
+    subcategory: "other",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Host%27s+Trick-Mirror",
     dlc: false,
@@ -49,6 +54,7 @@ export const other: TalismanItem[] = [
   {
     type: "talismans",
     name: "Shabriri's Woe",
+    subcategory: "other",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Shabriri%27s+Woe",
     dlc: false,
@@ -58,6 +64,7 @@ export const other: TalismanItem[] = [
   {
     type: "talismans",
     name: "Daedicar's Woe",
+    subcategory: "other",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Daedicar%27s+Woe",
     dlc: false,
@@ -67,6 +74,7 @@ export const other: TalismanItem[] = [
   {
     type: "talismans",
     name: "Sacrificial Twig",
+    subcategory: "other",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sacrificial+Twig",
     dlc: false,

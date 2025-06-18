@@ -4,6 +4,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Bastard Sword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Bastard+Sword",
     legendary: false,
@@ -12,6 +13,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Claymore",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Claymore",
     legendary: false,
@@ -20,6 +22,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Iron Greatsword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Iron+Greatsword",
     legendary: false,
@@ -28,6 +31,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Lordsworn's Greatsword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lordsworn's+Greatsword",
     legendary: false,
@@ -36,6 +40,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Knight's Greatsword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Knight's+Greatsword",
     legendary: false,
@@ -44,6 +49,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Banished Knight's Greatsword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Banished+Knight's+Greatsword",
     legendary: false,
@@ -52,6 +58,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Lizard Greatsword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lizard+Greatsword",
     legendary: false,
@@ -60,6 +67,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Forked Greatsword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Forked+Greatsword",
     legendary: false,
@@ -68,6 +76,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Flamberge",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flamberge",
     legendary: false,
@@ -76,6 +85,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Gargoyle's Greatsword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gargoyle's+Greatsword",
     legendary: false,
@@ -84,6 +94,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Gargoyle's Blackblade",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gargoyle's+Blackblade",
     legendary: false,
@@ -92,6 +103,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Inseperable Sword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Inseperable+Sword",
     legendary: false,
@@ -100,6 +112,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Sword of Milos",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sword+of+Milos",
     legendary: false,
@@ -108,6 +121,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Marais Executioner's Sword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Marais+Executioner's+Sword",
     legendary: true,
@@ -116,6 +130,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Greatsword of Solitude",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greatsword+of+Solitude",
     legendary: false,
@@ -124,6 +139,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Ordovis's Greatsword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ordovis's+Greatsword",
     legendary: false,
@@ -132,6 +148,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Alabaster Lord's Sword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Alabaster+Lord's+Sword",
     legendary: false,
@@ -140,6 +157,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Death's Poker",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Death's+Poker",
     legendary: false,
@@ -148,6 +166,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Helphen's Steeple",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Helphen's+Steeple",
     legendary: false,
@@ -156,6 +175,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Blasphemous Blade",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Blasphemous+Blade",
     legendary: false,
@@ -164,6 +184,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Golden Order Greatsword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Golden+Order+Greatsword",
     legendary: true,
@@ -172,6 +193,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Dark Moon Greatsword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dark+Moon+Greatsword",
     legendary: true,
@@ -180,6 +202,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Greatsword of Damnation",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greatsword+of+Damnation",
     legendary: false,
@@ -188,6 +211,7 @@ export const greatswords: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
     name: "Sacred Relic Sword",
+    subcategory: "greatswords",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sacred+Relic+Sword",
     legendary: false,

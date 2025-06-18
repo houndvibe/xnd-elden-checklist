@@ -4,6 +4,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Dragoncrest Shield Talisman",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dragoncrest+Shield+Talisman",
     dlc: false,
@@ -17,6 +18,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Dragoncrest Greatshield Talisman",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Dragoncrest+Greatshield+Talisman",
     dlc: false,
@@ -26,6 +28,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Spelldrake Talisman",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spelldrake+Talisman",
     dlc: false,
@@ -40,6 +43,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Flamedrake Talisman",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flamedrake+Talisman",
     dlc: false,
@@ -54,6 +58,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Boltdrake Talisman",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Boltdrake+Talisman",
     dlc: false,
@@ -68,6 +73,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Haligdrake Talisman",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Haligdrake+Talisman",
     dlc: false,
@@ -81,6 +87,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Golden Braid",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Golden+Braid",
     dlc: true,
@@ -90,6 +97,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Pearldrake Talisman",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Pearldrake+Talisman",
     dlc: false,
@@ -104,6 +112,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Immunizing Horn Charm",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Immunizing+Horn+Charm",
     dlc: false,
@@ -117,6 +126,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Stalwart Horn Charm",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Stalwart+Horn+Charm",
     dlc: false,
@@ -130,6 +140,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Clarifying Horn Charm",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Clarifying+Horn+Charm",
     dlc: false,
@@ -143,6 +154,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Mottled Necklace",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mottled+Necklace",
     dlc: false,
@@ -156,6 +168,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Prince of Death's Pustule",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Prince+of+Death%27s+Pustule",
     dlc: false,
@@ -165,6 +178,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Prince of Death's Cyst",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Prince+of+Death%27s+Cyst",
     dlc: false,
@@ -174,6 +188,7 @@ export const resistsAmplifiers: TalismanItem[] = [
   {
     type: "talismans",
     name: "Ailment Talisman",
+    subcategory: "resistsAmplifiers",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ailment+Talisman",
     dlc: true,
