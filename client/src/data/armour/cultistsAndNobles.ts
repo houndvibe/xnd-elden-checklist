@@ -212,7 +212,7 @@ export const cultistsAndNobles: ArmourSet[] = [
     name: "Consort's Set",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Consort's+Set",
-    dlc: true,
+    dlc: false,
     items: [
       {
         type: "armour",
@@ -221,7 +221,7 @@ export const cultistsAndNobles: ArmourSet[] = [
         name: "Consort's Robe",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Consort's+Robe",
-        dlc: true,
+        dlc: false,
       },
       {
         type: "armour",
@@ -230,7 +230,7 @@ export const cultistsAndNobles: ArmourSet[] = [
         name: "Consort's Mask",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Consort's+Mask",
-        dlc: true,
+        dlc: false,
       },
       {
         type: "armour",
@@ -239,7 +239,7 @@ export const cultistsAndNobles: ArmourSet[] = [
         name: "Consort's Trousers",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Consort's+Trousers",
-        dlc: true,
+        dlc: false,
       },
     ],
   },
