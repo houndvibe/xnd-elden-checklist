@@ -27,7 +27,7 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
 
 .row-searchTarget * {
   background-color: $text-highlighted !important;
-  color: $bg-dark;
+  color: $bg-dark !important;
 }
 
 .row-pieces-missing {
@@ -216,7 +216,7 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
   color: transparent;
   text-shadow: 0 0 8px $link-color; /* light glow effect */
   transition: color 0.4s ease, text-shadow 0.2s ease;
-  filter: blur(4px);
+  filter: blur(50px);
   cursor: pointer;
 
   &:hover {

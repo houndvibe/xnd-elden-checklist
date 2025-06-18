@@ -26,6 +26,8 @@ export default function SubCategoryContent({
     name: "",
   });
 
+  
+
   return (
     <Flex style={{ maxHeight: 800 }}>
       {type === "armour" && subcategory !== "pieces" ? (

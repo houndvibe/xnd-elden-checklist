@@ -2,8 +2,8 @@ import { Flex, Image, /* Popover,  */ Spin } from "antd";
 import styles from "./SubCategoryContent.module.scss";
 import { Item, ItemCategory, ItemSubCategory } from "../../../global-types";
 /* import Link from "antd/es/typography/Link";
-import { calculateItemDropChance, truncateText } from "../../../lib/utils/misc";
-import { useAppSelector } from "../../../store/typedDispatch"; */
+import { calculateItemDropChance, truncateText } from "../../../lib/utils/misc"; */
+import { useAppSelector } from "../../../store/typedDispatch";
 
 interface PreviewProps {
   img: {
@@ -21,11 +21,11 @@ export default function Preview({
   categoty,
   subcategory,
 }: PreviewProps) {
-  /*   const storedDiscovery = useAppSelector(
+  /* const storedDiscovery = useAppSelector(
     (state) => state.discovery.calculatedDiscovery
-  );
+  ); */
   const { spoilers } = useAppSelector((state) => state.settings);
- */
+
   const findItemByName = (name: string): Item | undefined => {
     const directMatch = dataSource.find((item) => item.name === name);
     if (directMatch) return directMatch;
@@ -136,6 +136,7 @@ export default function Preview({
       <Flex vertical align="center" gap={0}>
         <span className={styles.title}>{name}</span>
         <Image
+          className={spoilers && !currentItem?.collected ? "block-spoiler" : ""}
           height={600}
           src={transformNameToImgUrl(img.name) || img.url}
           alt="no image"

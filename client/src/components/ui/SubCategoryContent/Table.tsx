@@ -50,7 +50,6 @@ export default function Table({
   const dispatch = useAppDispatch();
 
   const { globalSearchItem } = useAppSelector((state) => state.service);
-  console.log(globalSearchItem);
 
   const [sortStep, setSortStep] = useState<number>(0);
   const [sortColumn, setSortColumn] = useState<string | null>(null);
