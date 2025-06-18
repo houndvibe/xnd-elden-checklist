@@ -16,7 +16,7 @@ export function getItemStats(item: Item): {
   }
 
   // Armour с вложенными уровнями
-  if (item.type === "armour") {
+  if (item.type === "armour" && item.subcategory !== "pieces") {
     if ("items" in item && Array.isArray(item.items)) {
       let total = 0;
       let collected = 0;

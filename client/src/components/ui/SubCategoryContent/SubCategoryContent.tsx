@@ -28,7 +28,7 @@ export default function SubCategoryContent({
 
   return (
     <Flex style={{ maxHeight: 800 }}>
-      {type === "armour" ? (
+      {type === "armour" && subcategory !== "pieces" ? (
         <HierarchyTable
           setHoveredImg={setHoveredImg}
           dataSource={dataSource}
