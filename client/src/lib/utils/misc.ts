@@ -28,6 +28,20 @@ export function truncateText(text: string, maxLength: number = 20): string {
   return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
 }
 
+export function toTitleCaseFromCamel(
+  str: string,
+  maxLength: number = 20
+): string {
+  const result = str
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/^./, (s) => s.toUpperCase());
+
+  if (result.length > maxLength) {
+    return result.slice(0, maxLength).trimEnd() + "...";
+  }
+  return result;
+}
+
 export function transformCategoryToName(category: ItemCategory) {
   switch (category) {
     case "meleWeapons":
@@ -80,3 +94,27 @@ export function calculateItemDropChance(
 
   return calculatedDropChance.toFixed(2);
 }
+
+export const findItemByName = (
+  dataSource: Item[],
+  name: string
+): Item | undefined => {
+  const directMatch = dataSource.find((item) => item.name === name);
+  if (directMatch) return directMatch;
+
+  for (const item of dataSource) {
+    if (item.type !== "armour" || !("items" in item)) continue;
+
+    for (const subItem of item.items) {
+      if (subItem.name === name) return subItem;
+
+      const childMatch = subItem.children
+        ? Object.values(subItem.children).find((child) => child.name === name)
+        : undefined;
+
+      if (childMatch) return childMatch;
+    }
+  }
+
+  return undefined;
+};

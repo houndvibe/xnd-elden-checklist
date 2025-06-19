@@ -4,7 +4,6 @@ import type {
   ItemSubCategory,
   TalismansSubCategoryMap,
 } from "../../../global-types";
-import { getNameToImgUrlConverter } from "../../../lib/utils/converters";
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
 import { CheckOutlined } from "@ant-design/icons";
 
@@ -34,16 +33,11 @@ import { getStoreAction } from "../../../store/actions";
 import { setGlobalSearchItem } from "../../../store/serviceSlice";
 
 export default function Table({
-  setHoveredImg,
+  setHoveredItemName,
   dataSource,
   subcategory,
 }: {
-  setHoveredImg: React.Dispatch<
-    React.SetStateAction<{
-      url: string | undefined;
-      name: string;
-    }>
-  >;
+  setHoveredItemName: React.Dispatch<React.SetStateAction<string>>;
   dataSource: Item[];
   subcategory: ItemSubCategory;
 }) {
@@ -59,14 +53,12 @@ export default function Table({
   const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const handleMouseEnter = (record: Item) => {
-    const imgUrl = record.imgUrl || getNameToImgUrlConverter(record);
-
     if (record.name === globalSearchItem) {
       dispatch(setGlobalSearchItem(null));
     }
 
     hoverTimeoutRef.current = setTimeout(() => {
-      setHoveredImg({ url: imgUrl, name: record.name });
+      setHoveredItemName(record.name);
     }, 50);
   };
 

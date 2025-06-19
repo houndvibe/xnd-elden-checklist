@@ -9,49 +9,35 @@ import Preview from "./Preview";
 import Table from "./Table";
 import HierarchyTable from "./HierarchyTable";
 
+interface Props {
+  type: ItemCategory;
+  dataSource: Item[];
+  subcategory: ItemSubCategory;
+}
+
 export default function SubCategoryContent({
   type,
   dataSource,
   subcategory,
-}: {
-  type: ItemCategory;
-  dataSource: Item[];
-  subcategory: ItemSubCategory;
-}) {
-  const [hoveredImg, setHoveredImg] = useState<{
-    url: string | undefined;
-    name: string;
-  }>({
-    url: undefined,
-    name: "",
-  });
+}: Props) {
+  const [hoveredItemName, setHoveredItemName] = useState("");
 
-  
+  const isItArmorSet = type === "armour" && subcategory !== "pieces";
+  const TableComponent = isItArmorSet ? HierarchyTable : Table;
 
   return (
     <Flex style={{ maxHeight: 800 }}>
-      {type === "armour" && subcategory !== "pieces" ? (
-        <HierarchyTable
-          setHoveredImg={setHoveredImg}
-          dataSource={dataSource}
-          subcategory={subcategory}
-        />
-      ) : (
-        <Table
-          setHoveredImg={setHoveredImg}
-          dataSource={dataSource}
-          subcategory={subcategory}
-        />
-      )}
-
-      {hoveredImg ? (
-        <Preview
-          dataSource={dataSource}
-          categoty={type}
-          subcategory={subcategory}
-          img={hoveredImg}
-        />
-      ) : null}
+      <TableComponent
+        setHoveredItemName={setHoveredItemName}
+        dataSource={dataSource}
+        subcategory={subcategory}
+      />
+      <Preview
+        dataSource={dataSource}
+        categoty={type}
+        subcategory={subcategory}
+        hoveredItemName={hoveredItemName}
+      />
     </Flex>
   );
 }

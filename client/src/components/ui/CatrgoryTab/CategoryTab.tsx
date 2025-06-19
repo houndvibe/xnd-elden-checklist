@@ -5,10 +5,12 @@ import { useMemo } from "react";
 import { useAppSelector } from "../../../store/typedDispatch";
 import { Collection } from "../../../store/collectionSlice";
 import SubCategoryLabel from "../SubCategoryLabel/SubCategoryLabel";
-import { toTitleCaseFromCamel } from "../../../lib/utils/converters";
 import SubCategoryContent from "../SubCategoryContent/SubCategoryContent";
 import CategoryInfo from "../CategotyInfo/CategoryInfo";
-import { transformCategoryToName } from "../../../lib/utils/misc";
+import {
+  toTitleCaseFromCamel,
+  transformCategoryToName,
+} from "../../../lib/utils/misc";
 
 export default function CategoryTab({ category }: { category: ItemCategory }) {
   const location = useLocation();

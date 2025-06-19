@@ -3,10 +3,7 @@ import type {
   Item,
   ItemSubCategory,
 } from "../../../global-types";
-import {
-  convertArmourItemNameToWikiImageUrl,
-  getNameToImgUrlConverter,
-} from "../../../lib/utils/converters";
+
 import { useAppDispatch } from "../../../store/typedDispatch";
 import { CheckOutlined, ThunderboltTwoTone } from "@ant-design/icons";
 
@@ -35,16 +32,11 @@ import {
 } from "antd/es/table/interface";
 
 export default function HierarchyTable({
-  setHoveredImg,
+  setHoveredItemName,
   dataSource,
   subcategory,
 }: {
-  setHoveredImg: React.Dispatch<
-    React.SetStateAction<{
-      url: string | undefined;
-      name: string;
-    }>
-  >;
+  setHoveredItemName: React.Dispatch<React.SetStateAction<string>>;
   dataSource: Item[];
   subcategory: ItemSubCategory;
 }) {
@@ -179,14 +171,7 @@ export default function HierarchyTable({
                 }
                 onRow={(record) => ({
                   onMouseEnter: () => {
-                    const imgUrl = record.imgUrl
-                      ? record.imgUrl
-                      : convertArmourItemNameToWikiImageUrl(
-                          record.name,
-                          record.dlc
-                        );
-
-                    setHoveredImg({ url: imgUrl, name: record.name });
+                    setHoveredItemName(record.name);
                   },
                   onClick: () => {
                     toggleArmourItemCollected({
@@ -208,11 +193,7 @@ export default function HierarchyTable({
       }
       onRow={(record) => ({
         onMouseEnter: () => {
-          const imgUrl = record.imgUrl
-            ? record.imgUrl
-            : getNameToImgUrlConverter(record);
-
-          setHoveredImg({ url: imgUrl, name: record.name });
+          setHoveredItemName(record.name);
         },
         onClick: () => {
           getStoreAction({

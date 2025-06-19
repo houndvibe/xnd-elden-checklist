@@ -54,3 +54,6 @@ export const PROGRESSBAR_COLORS: ProgressProps["strokeColor"] = {
   "0%": APP_PALETTE.textPrimary,
   "100%": APP_PALETTE.textPrimary,
 };
+
+//категории где много предметов с ощдинаковыми изображениями
+export const exceptionalSubcategories = ["bellBearings", "cookbooks", "notes"];

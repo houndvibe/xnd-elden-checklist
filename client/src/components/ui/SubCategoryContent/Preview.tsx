@@ -1,174 +1,63 @@
-import { Flex, Image, /* Popover,  */ Spin } from "antd";
+import { Flex, Image, Spin } from "antd";
 import styles from "./SubCategoryContent.module.scss";
 import { Item, ItemCategory, ItemSubCategory } from "../../../global-types";
-/* import Link from "antd/es/typography/Link";
-import { calculateItemDropChance, truncateText } from "../../../lib/utils/misc"; */
 import { useAppSelector } from "../../../store/typedDispatch";
+import { exceptionalSubcategories } from "../../../lib/consts";
+import { findItemByName } from "../../../lib/utils/misc";
 
 interface PreviewProps {
-  img: {
-    url: string | undefined;
-    name: string;
-  };
+  hoveredItemName: string;
   dataSource: Item[];
   categoty: ItemCategory;
   subcategory: ItemSubCategory;
 }
 
 export default function Preview({
-  img,
+  hoveredItemName,
   dataSource,
   categoty,
   subcategory,
 }: PreviewProps) {
-  /* const storedDiscovery = useAppSelector(
-    (state) => state.discovery.calculatedDiscovery
-  ); */
   const { spoilers } = useAppSelector((state) => state.settings);
 
-  const findItemByName = (name: string): Item | undefined => {
-    const directMatch = dataSource.find((item) => item.name === name);
-    if (directMatch) return directMatch;
+  const currentItem = findItemByName(dataSource, hoveredItemName);
+  const { name = "Unknown Item" } = currentItem || {};
 
-    for (const item of dataSource) {
-      if (item.type !== "armour" || !("items" in item)) continue;
-
-      for (const subItem of item.items) {
-        if (subItem.name === name) return subItem;
-
-        const childMatch = subItem.children
-          ? Object.values(subItem.children).find((child) => child.name === name)
-          : undefined;
-
-        if (childMatch) return childMatch;
-      }
+  const getImageUrl = (): string | undefined => {
+    if (exceptionalSubcategories.includes(subcategory)) {
+      return currentItem?.imgUrl;
     }
 
-    return undefined;
-  };
-
-  const currentItem = findItemByName(img.name);
-  const {
-    name = "Unknown Item",
-
-    /*  description = "",
-    droppedBy,
-    vendor,
-    placementDescription, */
-  } = currentItem || {};
-
-  /*  const dropRate = droppedBy?.dropRate ?? 100;
-  const calculatedDropRate = calculateItemDropChance(dropRate, storedDiscovery); */
-
-  /*   const renderDropInfo = () => (
-    <div
-      className={`${styles.dropInfo} ${spoilers ? "block-spoiler" : ""}`}
-      style={{ textAlign: "right" }}
-    >
-      <div>Drop chance:</div>
-      <Popover
-        placement={"left"}
-        content={<Image src={droppedBy?.imgUrl} style={{ maxHeight: 400 }} />}
-      >
-        <Link href={droppedBy?.link} target="_blank" rel="noopener noreferrer">
-          <span className={styles.linkEnemy}>
-            {truncateText(droppedBy?.name, 17)}
-          </span>
-        </Link>
-      </Popover>
-      <div>{`Base: ${dropRate}%`}</div>
-      <div>{`My setup: ${calculatedDropRate}%`}</div>
-    </div>
-  );
-  
-  const renderDescriptionBlock = () =>
-    description && (
-      <div>
-        <span className={styles.subtitle}>Description: </span>
-        <span className={styles.text}>{description}</span>
-      </div>
-    );
-
-  const renderVendorBlock = () =>
-    vendor && (
-      <div className={spoilers ? "block-spoiler" : ""}>
-        <span className={styles.subtitle}>Vendor: </span>
-        <Popover
-          content={<Image src={vendor.imgUrl} style={{ maxHeight: 400 }} />}
-        >
-          <Link href={vendor.link} target="_blank" rel="noopener noreferrer">
-            <span
-              className={`${styles.linkVendor} spoilers ? "text-spoiler" : ""`}
-            >
-              {vendor.name}
-            </span>
-          </Link>
-        </Popover>
-      </div>
-    );
-
-  const renderPlacementBlock = () =>
-    placementDescription && (
-      <div className={spoilers ? "block-spoiler" : ""}>
-        <span className={styles.subtitle}>Placement: </span>
-        <span className={styles.text}>{placementDescription}</span>
-      </div>
-    ); */
-
-  const transformNameToImgUrl = (name: string) => {
-    const commonImgPath = `./images/${categoty}/${subcategory}/${name.replace(
-      /:|"/g,
-      ""
-    )}.png`;
-
-    //исключение
-    //тут много одинаковых, берем их напрямую
-    if (subcategory === "bellBearings") return undefined;
-    if (subcategory === "cookbooks") return undefined;
-    if (subcategory === "notes") return undefined;
-    if (img.name.includes(" Set")) {
+    if (hoveredItemName.includes(" Set")) {
       return `./images/${categoty}/placeholder.png`;
-    } else return commonImgPath;
+    }
+
+    const sanitized = name.replace(/:|"/g, "");
+    return `./images/${categoty}/${subcategory}/${sanitized}.png`;
   };
-
-  const renderMainContent = () => (
-    <>
-      <Flex vertical align="center" gap={0}>
-        <span className={styles.title}>{name}</span>
-        <Image
-          className={spoilers && !currentItem?.collected ? "block-spoiler" : ""}
-          height={600}
-          src={transformNameToImgUrl(img.name) || img.url}
-          alt="no image"
-          placeholder={
-            <div
-              className={styles.spin}
-              style={{
-                height: 400,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "red",
-              }}
-            >
-              <Spin size="large" />
-            </div>
-          }
-        />
-      </Flex>
-
-      {/*  <Flex vertical gap={30}>
-        {renderDescriptionBlock()}
-        {renderVendorBlock()}
-        {renderPlacementBlock()}
-      </Flex> */}
-    </>
-  );
 
   return (
     <Flex className={styles.preview} vertical align="center" gap={30}>
-      {/*   {img.url && droppedBy && renderDropInfo()} */}
-      {img.name ? renderMainContent() : <div className={styles.placeholder} />}
+      {hoveredItemName ? (
+        <Flex vertical align="center" gap={0}>
+          <span className={styles.title}>{name}</span>
+          <Image
+            className={
+              spoilers && !currentItem?.collected ? "block-spoiler" : ""
+            }
+            height={600}
+            src={getImageUrl()}
+            alt="no image"
+            placeholder={
+              <div className={styles.spin}>
+                <Spin size="large" />
+              </div>
+            }
+          />
+        </Flex>
+      ) : (
+        <div className={styles.placeholder} />
+      )}
     </Flex>
   );
 }

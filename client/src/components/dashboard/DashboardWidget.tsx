@@ -1,9 +1,8 @@
 import { Card, ConfigProvider, Flex, Image, Progress } from "antd";
 import type { ItemCategory, ItemSubCategoryMap } from "../../global-types";
-import { toTitleCaseFromCamel } from "../../lib/utils/converters";
 import { APP_PALETTE, PROGRESSBAR_COLORS } from "../../lib/consts";
 import { getSubCategoryStats } from "../../lib/utils/stats";
-import { truncateText } from "../../lib/utils/misc";
+import { toTitleCaseFromCamel, truncateText } from "../../lib/utils/misc";
 import logoIcon from "../../assets/dlc-icon.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./Dashboard.module.scss";
