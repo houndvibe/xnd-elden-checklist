@@ -1,9 +1,17 @@
 import { Item } from "../../global-types";
 
-export function toTitleCaseFromCamel(str: string): string {
-  return str
+export function toTitleCaseFromCamel(
+  str: string,
+  maxLength: number = 20
+): string {
+  const result = str
     .replace(/([a-z])([A-Z])/g, "$1 $2")
     .replace(/^./, (s) => s.toUpperCase());
+
+  if (result.length > maxLength) {
+    return result.slice(0, maxLength).trimEnd() + "...";
+  }
+  return result;
 }
 
 export function getNameToImgUrlConverter(record: Item) {

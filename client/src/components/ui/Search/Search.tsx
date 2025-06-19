@@ -36,7 +36,9 @@ const SearchWithSuggestions = () => {
 
         if (subject) {
           dispatch(setGlobalSearchItem(subject.name));
-          navigate(`/${subject.type}?open=${subject.subcategory}`);
+          navigate(
+            `/${subject.type}?open=${encodeURIComponent(subject.subcategory)}`
+          );
         }
       }
     }

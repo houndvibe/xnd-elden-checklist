@@ -13,12 +13,11 @@ import { transformCategoryToName } from "../../../lib/utils/misc";
 export default function CategoryTab({ category }: { category: ItemCategory }) {
   const location = useLocation();
   const navigate = useNavigate();
-  const searchParams = new URLSearchParams(location.search);
+  const openParam = new URLSearchParams(location.search).get("open");
 
-  const openParam = searchParams.get("open");
   const activeKeys = useMemo(() => {
     if (!openParam) return [];
-    return openParam.split(",");
+    return openParam.split(",").map((k) => decodeURIComponent(k));
   }, [openParam]);
   const data = useAppSelector(
     (state) =>
@@ -47,7 +46,8 @@ export default function CategoryTab({ category }: { category: ItemCategory }) {
     const newParams = new URLSearchParams(location.search);
 
     if (keysArray.length > 0) {
-      newParams.set("open", keysArray.join(","));
+      const encodedKeys = keysArray.map((key) => encodeURIComponent(key));
+      newParams.set("open", encodedKeys.join(","));
     } else {
       newParams.delete("open");
     }
