@@ -12,10 +12,11 @@ interface CategoryInfoProps {
 
 export default function CategoryInfo({ items, title }: CategoryInfoProps) {
   const { total, collected, percentage } = getCategoryStats(items);
+  const titleClassname = total == collected ? "titleDone" : "title";
 
   return (
     <Flex vertical className={styles.card}>
-      <Typography.Title level={4} className={styles.title}>
+      <Typography.Title level={4} className={styles[titleClassname]}>
         {`${title} ${collected}/${total}`}
       </Typography.Title>
 

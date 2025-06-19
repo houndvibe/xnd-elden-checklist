@@ -1,16 +1,16 @@
-
-
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 
 interface SettingsState {
   showSettings: boolean;
   spoilers: boolean;
+  showWelcome: boolean;
 }
 
 const initialState: SettingsState = loadFromStorage("xnd.settings", {
   showSettings: false,
   spoilers: false,
+  showWelcome: true,
 });
 
 export const settingsSlice = createSlice({
@@ -25,8 +25,13 @@ export const settingsSlice = createSlice({
       state.showSettings = action.payload;
       saveToStorage("xnd.settings", state);
     },
+    setStopWelcome: (state) => {
+      state.showWelcome = false;
+      saveToStorage("xnd.settings", state);
+    },
   },
 });
 
-export const { setSpoilers, setShowSettings } = settingsSlice.actions;
+export const { setSpoilers, setShowSettings, setStopWelcome } =
+  settingsSlice.actions;
 export default settingsSlice.reducer;

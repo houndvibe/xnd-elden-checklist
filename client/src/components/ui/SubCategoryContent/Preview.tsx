@@ -3,7 +3,11 @@ import styles from "./SubCategoryContent.module.scss";
 import { Item, ItemCategory, ItemSubCategory } from "../../../global-types";
 import { useAppSelector } from "../../../store/typedDispatch";
 import { exceptionalSubcategories } from "../../../lib/consts";
-import { findItemByName, isArmourSet } from "../../../lib/utils/misc";
+import {
+  findItemByName,
+  isArmourSet,
+  isMultiVersionTalisman,
+} from "../../../lib/utils/misc";
 
 interface PreviewProps {
   hoveredItemName: string;
@@ -19,45 +23,84 @@ export default function Preview({
   subcategory,
 }: PreviewProps) {
   const { spoilers } = useAppSelector((state) => state.settings);
-
   const currentItem = findItemByName(dataSource, hoveredItemName);
   const { name = "Unknown Item" } = currentItem || {};
 
-  const getImageUrl = (): string | undefined => {
+  const getImageUrls = (): string[] => {
+    if (!currentItem) return [];
+
     if (exceptionalSubcategories.includes(subcategory)) {
-      return currentItem?.imgUrl;
+      return currentItem.imgUrl ? [currentItem.imgUrl] : [];
     }
 
-    const sanitized = name.replace(/:|"/g, "");
+    const sanitize = (str: string) => str.replace(/:|"/g, "");
 
     if (isArmourSet(currentItem)) {
       const [firstItem] = currentItem.items;
-      if (firstItem) {
-        return `./images/${categoty}/${subcategory}/${firstItem.name}.png`;
-      }
+      return firstItem
+        ? [
+            `./images/${categoty}/${subcategory}/${sanitize(
+              firstItem.name
+            )}.png`,
+          ]
+        : [];
     }
 
-    return `./images/${categoty}/${subcategory}/${sanitized}.png`;
+    if (isMultiVersionTalisman(currentItem)) {
+      return currentItem.versions.map((version) => {
+        const versionName = `${name}${
+          version.tier > 0 ? " +" + version.tier : ""
+        }`;
+        return `./images/${categoty}/${subcategory}/${sanitize(
+          versionName
+        )}.png`;
+      });
+    }
+
+    return [`./images/${categoty}/${subcategory}/${sanitize(name)}.png`];
+  };
+
+  const imageUrls = getImageUrls();
+
+  const getImgSize = () => {
+    if (!isMultiVersionTalisman(currentItem!)) return 600;
+    if (currentItem.versions.length == 2) return 330;
+    if (currentItem.versions.length >= 2) return 300;
   };
 
   return (
     <Flex className={styles.preview} vertical align="center" gap={30}>
       {hoveredItemName ? (
-        <Flex vertical align="center" gap={0}>
+        <Flex vertical align="center" gap={10}>
           <span className={styles.title}>{name}</span>
-          <Image
-            className={
-              spoilers && !currentItem?.collected ? "block-spoiler" : ""
-            }
-            height={600}
-            src={getImageUrl()}
-            alt="no image"
-            placeholder={
-              <div className={styles.spin}>
-                <Spin size="large" />
-              </div>
-            }
-          />
+          <Flex wrap="wrap" justify="center" gap={12}>
+            {imageUrls.map((url, index) => (
+              <>
+                <Image
+                  style={{ marginTop: imageUrls.length == 2 ? "30%" : 0 }}
+                  key={index}
+                  width={getImgSize()}
+                  className={
+                    spoilers && !currentItem?.collected ? "block-spoiler" : ""
+                  }
+                  src={url}
+                  alt={`version-${index}`}
+                  placeholder={
+                    <div className={styles.spin}>
+                      <Spin size="large" />
+                    </div>
+                  }
+                />
+                <span
+                  style={{
+                    fontSize: 30,
+                  }}
+                >
+                  {index > 0 && `+${index}`}
+                </span>
+              </>
+            ))}
+          </Flex>
         </Flex>
       ) : (
         <div className={styles.placeholder} />

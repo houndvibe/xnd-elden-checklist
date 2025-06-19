@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Layout, Image } from "antd";
 import {
   QuestionCircleOutlined,
@@ -7,21 +8,37 @@ import {
 import { NavLink } from "react-router-dom";
 
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
-import { setShowSettings } from "../../../store/settingsSlice";
+import { setShowSettings, setStopWelcome } from "../../../store/settingsSlice";
 
 import SearchWithSuggestions from "../../ui/Search/Search";
 
 import logo from "../../../assets/logo.png";
 import styles from "./Header.module.scss";
 
+import {} from "antd";
+import InfoModal from "./InfoModal";
+
 const { Header: AppHeader } = Layout;
 
 export default function Header() {
   const dispatch = useAppDispatch();
-  const showSettings = useAppSelector((state) => state.settings.showSettings);
+  const { showSettings, showWelcome } = useAppSelector(
+    (state) => state.settings
+  );
+
+  const [isHelpModalOpen, setIsHelpModalOpen] = useState(showWelcome);
 
   const handleToggleSettings = () => {
     dispatch(setShowSettings(!showSettings));
+  };
+
+  const openHelpModal = () => {
+    setIsHelpModalOpen(true);
+  };
+
+  const closeHelpModal = () => {
+    dispatch(setStopWelcome());
+    setIsHelpModalOpen(false);
   };
 
   return (
@@ -41,10 +58,15 @@ export default function Header() {
             onClick={handleToggleSettings}
             title="Settings"
           />
-          <QuestionCircleOutlined className={styles.icon} title="Help" />
+          <QuestionCircleOutlined
+            className={styles.icon}
+            title="Help"
+            onClick={openHelpModal}
+          />
           <TranslationOutlined className={styles.icon} title="Language" />
         </div>
       </div>
+      <InfoModal isOpen={isHelpModalOpen} onCancel={closeHelpModal} />
     </AppHeader>
   );
 }
