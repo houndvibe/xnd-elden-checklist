@@ -1,74 +1,79 @@
-import { Flex, InputNumber, Switch } from "antd";
-import styles from "./DiscoveryCalculator.module.scss";
-import { discoveryData, DiscoveryItem } from "./data-discovery";
-import { DiscoveryItemSelect } from "./DiscoveryItemsSelect";
 import { useEffect, useMemo, useState } from "react";
-import { BASE_DISCOVERY } from "../../lib/consts";
+import { Flex, InputNumber, Switch } from "antd";
+
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "../../store/typedDispatch";
 import { setCalculatedDiscovery } from "../../store/discoverySlice";
+
+import { DiscoveryItemSelect } from "./DiscoveryItemsSelect";
 import ExamplesTable from "./ExamplesTable";
 
-type SelectComponentProps = {
-  value: string | null;
-  onChange: React.Dispatch<React.SetStateAction<string | null>>;
+import { discoveryData, DiscoveryItem } from "./data-discovery";
+import { BASE_DISCOVERY } from "../../lib/consts";
+
+import styles from "./DiscoveryCalculator.module.scss";
+
+type NullableString = string | null;
+type SelectorProps = {
+  value: NullableString;
+  onChange: React.Dispatch<React.SetStateAction<NullableString>>;
 };
+
+const AmuletSelect = ({ value, onChange }: SelectorProps) => (
+  <DiscoveryItemSelect
+    items={discoveryData.amulets}
+    placeholder="Select an amulet"
+    value={value}
+    onChange={onChange}
+  />
+);
+
+const HelmetSelect = ({ value, onChange }: SelectorProps) => (
+  <DiscoveryItemSelect
+    items={discoveryData.helmets}
+    placeholder="Select a helmet"
+    value={value}
+    onChange={onChange}
+  />
+);
+
+const ConsumableSelect = ({ value, onChange }: SelectorProps) => (
+  <DiscoveryItemSelect
+    items={discoveryData.consumables}
+    placeholder="Select a consumable"
+    value={value}
+    onChange={onChange}
+  />
+);
 
 export default function DiscoveryCalculator() {
   const dispatch = useDispatch();
   const storedDiscovery = useAppSelector(
     (state) => state.discovery.calculatedDiscovery
   );
-  const [arcane, setArcane] = useState<number>(0);
-  const [rune, setRune] = useState<boolean>(false);
-  const [oath, setOath] = useState<boolean>(false);
-  const [chest, setChest] = useState<boolean>(false);
-  const [amulet, setAmulet] = useState<string | null>(null);
-  const [helm, setHelm] = useState<string | null>(null);
-  const [consumable, setConsumable] = useState<string | null>(null);
 
-  const AmuletSelect = ({ value, onChange }: SelectComponentProps) => (
-    <DiscoveryItemSelect
-      items={discoveryData.amulets}
-      placeholder="Select an amulet"
-      value={value}
-      onChange={onChange}
-    />
-  );
+  const [arcane, setArcane] = useState(0);
+  const [rune, setRune] = useState(false);
+  const [oath, setOath] = useState(false);
+  const [chest, setChest] = useState(false);
+  const [amulet, setAmulet] = useState<NullableString>(null);
+  const [helm, setHelm] = useState<NullableString>(null);
+  const [consumable, setConsumable] = useState<NullableString>(null);
 
-  const HelmetSelect = ({ value, onChange }: SelectComponentProps) => (
-    <DiscoveryItemSelect
-      items={discoveryData.helmets}
-      placeholder="Select a helmet"
-      value={value}
-      onChange={onChange}
-    />
-  );
-
-  const ConsumableSelect = ({ value, onChange }: SelectComponentProps) => (
-    <DiscoveryItemSelect
-      items={discoveryData.consumables}
-      placeholder="Select a consumable"
-      value={value}
-      onChange={onChange}
-    />
-  );
+  const getItemEffect = (name: NullableString, source: DiscoveryItem[]) => {
+    const item = source.find((i) => i.name === name);
+    return item ? item.effect.arcaneGain + item.effect.discoveryGain : 0;
+  };
 
   const calculatedDiscovery = useMemo(() => {
-    const getItemEffect = (itemName: string | null, items: DiscoveryItem[]) => {
-      if (!itemName) return 0;
-      const item = items.find((item) => item.name === itemName);
-      return item ? item.effect.arcaneGain + item.effect.discoveryGain : 0;
-    };
-
     return (
       BASE_DISCOVERY +
       arcane +
       getItemEffect(amulet, discoveryData.amulets) +
       getItemEffect(helm, discoveryData.helmets) +
       getItemEffect(consumable, discoveryData.consumables) +
-      (oath ? 5 : 0) +
       (rune ? 5 : 0) +
+      (oath ? 5 : 0) +
       (chest ? 2 : 0)
     );
   }, [arcane, rune, oath, chest, amulet, helm, consumable]);
@@ -85,7 +90,7 @@ export default function DiscoveryCalculator() {
           min={0}
           max={99}
           value={arcane}
-          onChange={(value) => setArcane(value || 0)}
+          onChange={(v) => setArcane(v ?? 0)}
           className={styles.inputNumber}
         />
       ),
@@ -122,10 +127,10 @@ export default function DiscoveryCalculator() {
     <div className={styles.calculator}>
       <Flex className={styles.mainFlex}>
         <Flex vertical className={styles.formContainer}>
-          {formFields.map((field, index) => (
-            <div key={index} className={styles.formRow}>
-              <label className={styles.label}>{field.label}</label>
-              {field.component}
+          {formFields.map(({ label, component }, idx) => (
+            <div key={idx} className={styles.formRow}>
+              <label className={styles.label}>{label}</label>
+              {component}
             </div>
           ))}
         </Flex>
@@ -134,6 +139,7 @@ export default function DiscoveryCalculator() {
           <div className={styles.totalLabel}>Total discovery:</div>
           <div className={styles.totalValue}>{storedDiscovery}</div>
         </Flex>
+
         <Flex vertical gap={10}>
           <ExamplesTable calculatedDiscovery={storedDiscovery} />
         </Flex>

@@ -1,7 +1,6 @@
 import type { Item } from "../../global-types";
 import { isLegendaryItem } from "./misc";
 
-//умная сортировка
 function getSortSteps(dataSource: Item[]): number[] {
   const steps = [0];
   const hasLegendary = dataSource.some(isLegendaryItem);
@@ -19,15 +18,15 @@ export function getNextSortStep(dataSource: Item[], current: number): number {
 
 export function smartNameSort(sortStep: number, a: Item, b: Item) {
   switch (sortStep) {
-    case 1: // DLC вверх
+    case 1: // DLC a
       return Number(b.dlc) - Number(a.dlc);
-    case 2: // DLC вниз
+    case 2: // DLC b
       return Number(a.dlc) - Number(b.dlc);
-    case 3: // Legendary вверх
+    case 3: // Legendary a
       return Number(isLegendaryItem(b)) - Number(isLegendaryItem(a));
-    case 4: // Legendary вниз
+    case 4: // Legendary b
       return Number(isLegendaryItem(a)) - Number(isLegendaryItem(b));
-    case 0: // алфавит
+    case 0: // alpabet
     default:
       return a.name.localeCompare(b.name);
   }

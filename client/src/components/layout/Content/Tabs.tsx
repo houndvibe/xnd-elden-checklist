@@ -1,14 +1,17 @@
 import { Tabs as AntdTabs, ConfigProvider } from "antd";
-import { APP_PALETTE, itemCategories } from "../../../lib/consts";
 import { useNavigate, useParams } from "react-router-dom";
-import type { ItemCategory } from "../../../global-types";
 
+import { useAppSelector } from "../../../store/typedDispatch";
+
+import { APP_PALETTE, itemCategories } from "../../../lib/consts";
 import { transformCategoryToName } from "../../../lib/utils/misc";
+
 import Dashboard from "../../dashboard/Dashboard";
 import CategoryTab from "../../ui/CatrgoryTab/CategoryTab";
 import DiscoveryCalculator from "../../discovery-calculator/DiscoveryCalculator";
 import SettingsPannel from "./SettingsPannel";
-import { useAppSelector } from "../../../store/typedDispatch";
+
+import type { ItemCategory } from "../../../global-types";
 
 type ExtendedTabKey = ItemCategory | "dashboard" | "discoveryCalculator";
 
@@ -18,31 +21,31 @@ interface CustomTabItem {
   children: React.ReactNode;
 }
 
-const itemTabs: CustomTabItem[] = itemCategories.map((category) => {
-  return {
+const createItemTabs = (): CustomTabItem[] =>
+  itemCategories.map((category) => ({
     key: category,
     label: transformCategoryToName(category),
     children: <CategoryTab category={category} />,
-  };
-});
+  }));
 
-const tabs: CustomTabItem[] = [
+const baseTabs: CustomTabItem[] = [
   { key: "dashboard", label: "PROGRESS", children: <Dashboard /> },
   {
     key: "discoveryCalculator",
     label: "Discovery Calculator",
     children: <DiscoveryCalculator />,
   },
-  ...itemTabs,
 ];
 
+const tabs: CustomTabItem[] = [...baseTabs, ...createItemTabs()];
+
 export default function Tabs() {
-  const { showSettings } = useAppSelector((state) => state.settings);
   const navigate = useNavigate();
   const { tabKey } = useParams<{ tabKey?: string }>();
+  const showSettings = useAppSelector((state) => state.settings.showSettings);
 
-  const activeKey = tabs.some((item) => item.key === tabKey)
-    ? tabKey
+  const activeKey: ExtendedTabKey = tabs.some((item) => item.key === tabKey)
+    ? (tabKey as ExtendedTabKey)
     : "dashboard";
 
   return (
@@ -58,7 +61,7 @@ export default function Tabs() {
         },
       }}
     >
-      {showSettings ? <SettingsPannel /> : null}
+      {showSettings && <SettingsPannel />}
 
       <AntdTabs
         items={tabs}

@@ -1,14 +1,12 @@
 import type { Item, ItemCategory, TalismanVersions } from "../../global-types";
 import { legendaryEligibleItemCategories } from "../consts";
 
-//Проверка на возможное наличие поля legendary у категории предмета
 function hasLegendaryProperty(
   item: Item
 ): item is Item & { legendary: boolean } {
   return "legendary" in item;
 }
 
-//Проверка на легендарность
 export function isLegendaryItem(item: Item) {
   return (
     legendaryEligibleItemCategories.includes(item.type) &&
@@ -17,15 +15,10 @@ export function isLegendaryItem(item: Item) {
   );
 }
 
-//Проверка на возможное наличие поля versions у категории предмета
 export function isMultiVersionTalisman(
   item: Item
 ): item is Item & { versions: TalismanVersions[] } {
   return "versions" in item;
-}
-
-export function truncateText(text: string, maxLength: number = 20): string {
-  return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
 }
 
 export function toTitleCaseFromCamel(

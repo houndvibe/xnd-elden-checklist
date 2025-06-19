@@ -4,7 +4,7 @@ export function getItemStats(item: Item): {
   itemTotal: number;
   itemCollected: number;
 } {
-  // Talisman с версиями
+  // Talisman versions
   if (
     item.type === "talismans" &&
     "versions" in item &&
@@ -15,20 +15,18 @@ export function getItemStats(item: Item): {
     return { itemTotal, itemCollected };
   }
 
-  // Armour с вложенными уровнями
+  // Armour
   if (item.type === "armour" && item.subcategory !== "pieces") {
     if ("items" in item && Array.isArray(item.items)) {
       let total = 0;
       let collected = 0;
 
       for (const subItem of item.items) {
-        // Если есть children — считаем их
         if ("children" in subItem && subItem.children) {
           const children = Object.values(subItem.children);
           total += children.length;
           collected += children.filter((c) => c.collected).length;
         } else {
-          // Иначе считаем сам subItem
           total += 1;
           if (subItem.collected) collected += 1;
         }
@@ -37,15 +35,13 @@ export function getItemStats(item: Item): {
       return { itemTotal: total, itemCollected: collected };
     }
 
-    // Если нет items — считаем сам item
     return { itemTotal: 1, itemCollected: item.collected ? 1 : 0 };
   }
 
-  // Всё остальное (shields, spirit ashes, talismans без версий и пр.)
+  //Shields, spirit ashes, talismans no versions etc.
   return { itemTotal: 1, itemCollected: item.collected ? 1 : 0 };
 }
 
-//Получить статистику категории ('Оружие')
 export function getCategoryStats(data: ItemSubCategoryMap) {
   let total = 0;
   let collected = 0;
@@ -62,7 +58,6 @@ export function getCategoryStats(data: ItemSubCategoryMap) {
   return { total, collected, percentage };
 }
 
-//Получить статистику подкатегории ('Кинжалы')
 export function getSubCategoryStats(items: Item[]) {
   let total = 0;
   let collected = 0;

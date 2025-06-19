@@ -1,38 +1,26 @@
-import { Button, Card, ConfigProvider, Flex, Progress } from "antd";
-import { getCategoryStats } from "../../lib/utils/stats";
-import { useAppSelector } from "../../store/typedDispatch";
-import DashboardWidget from "./DashboardWidget";
-import { APP_PALETTE, PROGRESSBAR_COLORS } from "../../lib/consts";
-
-import { ItemCategory } from "../../global-types";
 import { useState } from "react";
+import { Button, Card, ConfigProvider, Flex, Progress } from "antd";
+
+import { useAppSelector } from "../../store/typedDispatch";
+import { getCategoryStats } from "../../lib/utils/stats";
+
+import DashboardWidget from "./DashboardWidget";
+
+import {
+  APP_PALETTE,
+  itemCategories,
+  PROGRESSBAR_COLORS,
+} from "../../lib/consts";
+
 import styles from "./Dashboard.module.scss";
 
-const categoryTypes: ItemCategory[] = [
-  "meleWeapons",
-  "rangedWeapons",
-  "armour",
-  "shieldsAndTorches",
-  "talismans",
-  "sorceries",
-  "incantations",
-  "spiritAshes",
-  "ashesOfWar",
-  "craft",
-  "tearsAndUpgrades",
-  "toolsAndBellBearings",
-  "keyItems",
-  "consumablesAndAmmo",
-  "gesturesAndMultiplayer",
-  "infoItems",
-] as const;
-
 export default function Dashboard() {
+  const [isCompactMode, setIsCompactMode] = useState(false);
   const collectionData = useAppSelector(
     (state) => state.collection.collectionData
   );
 
-  const stats = categoryTypes.map((type) => {
+  const stats = itemCategories.map((type) => {
     const key = `${type}Data` as keyof typeof collectionData;
     const data = collectionData[key];
     return {
@@ -42,21 +30,56 @@ export default function Dashboard() {
     };
   });
 
-  const generalCollected = stats.reduce(
-    (sum, item) => sum + item.stats.collected,
+  const totalCollected = stats.reduce(
+    (acc, { stats }) => acc + stats.collected,
     0
   );
-  const generalTotal = stats.reduce((sum, item) => sum + item.stats.total, 0);
-  const generalPercentage = Math.round((generalCollected / generalTotal) * 100);
+  const totalItems = stats.reduce((acc, { stats }) => acc + stats.total, 0);
+  const totalPercentage = Math.round((totalCollected / totalItems) * 100);
 
-  const [mode, setMod] = useState<boolean>(false);
+  const renderCompactMode = () => (
+    <>
+      {Array.from({ length: Math.ceil(stats.length / 2) }).map(
+        (_, rowIndex) => (
+          <Flex key={rowIndex} gap={20}>
+            {stats
+              .slice(rowIndex * 2, rowIndex * 2 + 2)
+              .map(({ type, data, stats }) => (
+                <DashboardWidget
+                  key={type}
+                  dataType={type}
+                  data={stats}
+                  subData={data}
+                  mode={true}
+                />
+              ))}
+          </Flex>
+        )
+      )}
+    </>
+  );
+
+  const renderFullMode = () => (
+    <Flex wrap gap={20} justify="space-between">
+      {stats.map(({ type, data, stats }) => (
+        <DashboardWidget
+          key={type}
+          dataType={type}
+          data={stats}
+          subData={data}
+          mode={false}
+        />
+      ))}
+    </Flex>
+  );
+
   return (
     <Flex vertical gap={20} className={styles.dashboard}>
       <ConfigProvider
         theme={{
           components: {
             Card: {
-              headerBg: APP_PALETTE.bgLight, // your desired background color
+              headerBg: APP_PALETTE.bgLight,
               headerFontSize: 16,
             },
           },
@@ -65,62 +88,27 @@ export default function Dashboard() {
         <Card
           title={
             <Flex justify="space-between" align="center">
-              {"General stats"}
-              <>
-                <Button
-                  onClick={() => setMod(!mode)}
-                  style={{ background: APP_PALETTE.successGreen }}
-                >
-                  {mode ? "to compact mode" : "to full mode"}{" "}
-                </Button>
-              </>
+              <span>General stats</span>
+              <Button
+                onClick={() => setIsCompactMode((prev) => !prev)}
+                style={{ background: APP_PALETTE.successGreen }}
+              >
+                {isCompactMode ? "To full mode" : "To compact mode"}
+              </Button>
             </Flex>
           }
         >
           <Flex vertical gap={10}>
-            <span>{`${generalCollected}/${generalTotal}`}</span>
+            <span>{`${totalCollected}/${totalItems}`}</span>
             <Progress
-              percent={generalPercentage}
+              percent={totalPercentage}
               strokeColor={PROGRESSBAR_COLORS}
             />
           </Flex>
         </Card>
       </ConfigProvider>
-      <>
-        {mode ? (
-          <>
-            {Array.from({ length: Math.ceil(stats.length / 2) }).map(
-              (_, rowIndex) => (
-                <Flex key={rowIndex} gap={20}>
-                  {stats
-                    .slice(rowIndex * 2, rowIndex * 2 + 2)
-                    .map(({ type, data, stats }) => (
-                      <DashboardWidget
-                        key={type}
-                        dataType={type}
-                        data={stats}
-                        subData={data}
-                        mode={mode}
-                      />
-                    ))}
-                </Flex>
-              )
-            )}
-          </>
-        ) : (
-          <Flex wrap gap={20} justify="space-between">
-            {stats.map(({ type, data, stats }) => (
-              <DashboardWidget
-                key={type}
-                dataType={type}
-                data={stats}
-                subData={data}
-                mode={mode}
-              />
-            ))}
-          </Flex>
-        )}
-      </>
+
+      {isCompactMode ? renderCompactMode() : renderFullMode()}
     </Flex>
   );
 }

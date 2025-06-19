@@ -1,22 +1,22 @@
 import { Flex, Progress, Typography } from "antd";
-import { PROGRESSBAR_COLORS } from "../../../lib/consts";
 import styles from "./CategoryInfo.module.scss";
-import type { ItemSubCategoryMap } from "../../../global-types";
-import { getCategoryStats } from "../../../lib/utils/stats";
 
-export default function CategoryInfo({
-  items,
-  title,
-}: {
+import { PROGRESSBAR_COLORS } from "../../../lib/consts";
+import { getCategoryStats } from "../../../lib/utils/stats";
+import type { ItemSubCategoryMap } from "../../../global-types";
+
+interface CategoryInfoProps {
   items: ItemSubCategoryMap;
   title: string;
-}) {
+}
+
+export default function CategoryInfo({ items, title }: CategoryInfoProps) {
   const { total, collected, percentage } = getCategoryStats(items);
 
   return (
     <Flex vertical className={styles.card}>
-      <Typography.Title className={styles.title}>
-        <>{title + " " + collected + "/" + total}</>
+      <Typography.Title level={4} className={styles.title}>
+        {`${title} ${collected}/${total}`}
       </Typography.Title>
 
       <Progress

@@ -3,25 +3,23 @@ import type { ItemCategory } from "../global-types";
 
 export const BASE_DISCOVERY = 100;
 
-// Теперь создаём массив:
 export const itemCategories: ItemCategory[] = [
-  "shieldsAndTorches",
-  "rangedWeapons",
-  "sorceries",
-  "spiritAshes",
-  "incantations",
-  "ashesOfWar",
-  "talismans",
-  "tearsAndUpgrades",
   "meleWeapons",
-  "gesturesAndMultiplayer",
-  "toolsAndBellBearings",
-  "craft",
-
-  "infoItems",
-  "consumablesAndAmmo",
-  "keyItems",
+  "rangedWeapons",
   "armour",
+  "shieldsAndTorches",
+  "talismans",
+  "sorceries",
+  "incantations",
+  "spiritAshes",
+  "ashesOfWar",
+  "craft",
+  "tearsAndUpgrades",
+  "toolsAndBellBearings",
+  "keyItems",
+  "consumablesAndAmmo",
+  "gesturesAndMultiplayer",
+  "infoItems",
 ];
 
 export const legendaryEligibleItemCategories: ItemCategory[] = [
@@ -44,13 +42,6 @@ export const APP_PALETTE = {
 
 //Цвета прогрессбара
 export const PROGRESSBAR_COLORS: ProgressProps["strokeColor"] = {
-  /*  "0%": "#5d5445",
-  "20%": "#41473e",
-  "40%": "#263937",
-  "60%": "#14292b",
-  "80%": "#0a2227",
-  "100%": "#00121c", */
-
   "0%": APP_PALETTE.textPrimary,
   "100%": APP_PALETTE.textPrimary,
 };

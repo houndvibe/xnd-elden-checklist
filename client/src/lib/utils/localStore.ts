@@ -1,4 +1,3 @@
-//Загрузка данных из localstorage
 export function loadFromStorage<T>(key: string, fallback: T): T {
   try {
     const item = localStorage.getItem(key);
@@ -8,7 +7,6 @@ export function loadFromStorage<T>(key: string, fallback: T): T {
   }
 }
 
-//Сохранение данных в localstorage
 export function saveToStorage<T>(key: string, value: T) {
   try {
     localStorage.setItem(key, JSON.stringify(value));

@@ -1,39 +1,43 @@
 import { Divider, Flex, Switch } from "antd";
-import { setSpoilers } from "../../../store/settingsSlice";
-import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
-import { APP_PALETTE } from "../../../lib/consts";
 import { NavLink } from "react-router-dom";
+
+import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
+import { setSpoilers } from "../../../store/settingsSlice";
+
+import { APP_PALETTE } from "../../../lib/consts";
 
 export default function SettingsPannel() {
   const dispatch = useAppDispatch();
-  const { spoilers } = useAppSelector((state) => state.settings);
+
+  const spoilers = useAppSelector((state) => state.settings.spoilers);
   const storedDiscovery = useAppSelector(
     (state) => state.discovery.calculatedDiscovery
   );
 
   return (
     <>
-      <Flex gap={10}>
-        <Flex gap={10}>
-          <NavLink to={"/discoveryCalculator"}>
-            <Flex gap={10}>
-              {"discovery:"}
-              <span style={{ color: APP_PALETTE.textPrimary }}>
-                {storedDiscovery}
-              </span>
-            </Flex>
-          </NavLink>
-        </Flex>
-        {"| "}
-        <Flex gap={10}>
-          <>{"spoilers"}</>
+      <Flex gap={10} align="center">
+        <NavLink to="/discoveryCalculator">
+          <Flex gap={6} align="center">
+            <span>discovery:</span>
+            <span style={{ color: APP_PALETTE.textPrimary }}>
+              {storedDiscovery}
+            </span>
+          </Flex>
+        </NavLink>
+
+        <span>|</span>
+
+        <Flex gap={6}>
+          <span>spoilers</span>
           <Switch
-            checked={spoilers}
             size="small"
-            onChange={(v) => dispatch(setSpoilers(v))}
+            checked={spoilers}
+            onChange={(checked) => dispatch(setSpoilers(checked))}
           />
         </Flex>
-        {"| "}
+
+        <span>|</span>
       </Flex>
 
       <Divider size="small" />

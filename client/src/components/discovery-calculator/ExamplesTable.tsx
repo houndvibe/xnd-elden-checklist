@@ -1,11 +1,17 @@
 import { Flex, Image, Table } from "antd";
+import type { ColumnsType } from "antd/es/table";
+
 import { calculateItemDropChance } from "../../lib/utils/misc";
 import { EXAMPLE_ITEM_DROPS, ItemDropTable } from "./data-discovery";
 
-const renderNameColumn = (name: string, { imgUrl }: ItemDropTable) => (
+interface ExamplesTableProps {
+  calculatedDiscovery: number;
+}
+
+const renderNameColumn = (name: string, record: ItemDropTable) => (
   <Flex align="center" gap={10}>
     {name}
-    <Image src={imgUrl} height={50} preview={false} />
+    <Image src={record.imgUrl} height={50} preview={false} />
   </Flex>
 );
 
@@ -14,7 +20,9 @@ const renderBaseColumn = (base: number) => `${base}%`;
 const renderCalculatedColumn = (base: number, calculatedDiscovery: number) =>
   `${calculateItemDropChance(base, calculatedDiscovery)}%`;
 
-const getTableColumns = (calculatedDiscovery: number) => [
+const getTableColumns = (
+  calculatedDiscovery: number
+): ColumnsType<ItemDropTable> => [
   {
     title: "Name",
     dataIndex: "name",
@@ -31,19 +39,14 @@ const getTableColumns = (calculatedDiscovery: number) => [
     title: "Your",
     dataIndex: "your",
     key: "your",
-    //@ts-ignore
-    render: (_, record: ItemDrop) =>
+    render: (_: number, record) =>
       renderCalculatedColumn(record.base, calculatedDiscovery),
   },
 ];
 
-interface ExamplesTableProps {
-  calculatedDiscovery: number;
-}
-
 const ExamplesTable = ({ calculatedDiscovery }: ExamplesTableProps) => (
-  <>
-    {"Rare items drop rate change examples:"}
+  <div>
+    <div style={{ marginBottom: 8 }}>Rare items drop rate change examples:</div>
     <Table<ItemDropTable>
       style={{ width: 400 }}
       dataSource={EXAMPLE_ITEM_DROPS}
@@ -51,8 +54,9 @@ const ExamplesTable = ({ calculatedDiscovery }: ExamplesTableProps) => (
       pagination={false}
       size="small"
       showHeader={false}
+      rowKey="name"
     />
-  </>
+  </div>
 );
 
 export default ExamplesTable;

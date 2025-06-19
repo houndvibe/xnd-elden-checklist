@@ -1,4 +1,5 @@
 import { Flex, Image, Select } from "antd";
+import type { SelectProps } from "antd";
 import { DiscoveryItem } from "./data-discovery";
 import styles from "./DiscoveryCalculator.module.scss";
 
@@ -6,11 +7,11 @@ interface DiscoveryItemSelectProps {
   items: DiscoveryItem[];
   placeholder?: string;
   value: string | null;
-  onChange: React.Dispatch<React.SetStateAction<string | null>>;
+  onChange: (value: string | null) => void;
 }
 
-const renderItemDetails = (item: DiscoveryItem) => {
-  const details = [];
+const renderItemDetails = (item: DiscoveryItem): string => {
+  const details: string[] = [];
 
   if (item.effect.arcaneGain > 0) {
     details.push(`Arcane: +${item.effect.arcaneGain}`);
@@ -43,14 +44,18 @@ export const DiscoveryItemSelect = ({
   value,
   onChange,
 }: DiscoveryItemSelectProps) => {
+  const handleChange: SelectProps<string>["onChange"] = (val) => {
+    onChange(val ?? null);
+  };
+
   return (
     <Select
       allowClear
       className={styles.select}
       placeholder={placeholder}
       optionLabelProp="label"
-      value={value}
-      onChange={onChange}
+      value={value ?? undefined}
+      onChange={handleChange}
     >
       {items.map((item) => (
         <Select.Option key={item.name} value={item.name} label={item.name}>
