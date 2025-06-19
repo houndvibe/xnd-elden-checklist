@@ -70,6 +70,7 @@ export default function Table({
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
       hoverTimeoutRef.current = null;
+      /*   setHoveredItemName(""); */
     }
   };
 
