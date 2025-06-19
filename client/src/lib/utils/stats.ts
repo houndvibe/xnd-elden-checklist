@@ -22,24 +22,28 @@ export function getItemStats(item: Item): {
       let collected = 0;
 
       for (const subItem of item.items) {
-        if ("children" in subItem && subItem.children) {
-          const children = Object.values(subItem.children);
-          total += children.length;
-          collected += children.filter((c) => c.collected).length;
-        } else {
-          total += 1;
-          if (subItem.collected) collected += 1;
+        total += 1;
+        if (subItem.collected) collected += 1;
+
+        if ("children" in subItem && Array.isArray(subItem.children)) {
+          total += subItem.children.length;
+          collected += subItem.children.filter((c) => c.collected).length;
         }
       }
 
       return { itemTotal: total, itemCollected: collected };
     }
 
-    return { itemTotal: 1, itemCollected: item.collected ? 1 : 0 };
+    return {
+      itemTotal: 1,
+      itemCollected: item.collected ? 1 : 0,
+    };
   }
 
-  //Shields, spirit ashes, talismans no versions etc.
-  return { itemTotal: 1, itemCollected: item.collected ? 1 : 0 };
+  return {
+    itemTotal: 1,
+    itemCollected: item.collected ? 1 : 0,
+  };
 }
 
 export function getCategoryStats(data: ItemSubCategoryMap) {

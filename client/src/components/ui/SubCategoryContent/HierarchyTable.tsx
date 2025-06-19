@@ -4,15 +4,10 @@ import { CheckOutlined } from "@ant-design/icons";
 import Link from "antd/es/typography/Link";
 import dlcIcon from "../../../assets/dlc-icon.png";
 import { getStoreAction } from "../../../store/actions";
-import { toggleArmourItemCollected } from "../../../store/collectionSlice";
 import { getNextSortStep, smartNameSort } from "../../../lib/utils/sorters";
 import { useEffect } from "react";
 import styles from "./SubCategoryContent.module.scss";
-import type {
-  ArmourSubCategoryMap,
-  Item,
-  ItemSubCategory,
-} from "../../../global-types";
+import type { Item, ItemSubCategory } from "../../../global-types";
 import {
   Table as AntdTable,
   Checkbox,
@@ -204,9 +199,11 @@ export default function Table({
                   onMouseEnter: () => handleMouseEnter(record),
                   onMouseLeave: handleMouseLeave,
                   onClick: () => {
-                    toggleArmourItemCollected({
-                      subcategory: subcategory as keyof ArmourSubCategoryMap,
+                    getStoreAction({
                       name: record.name,
+                      category: record.type,
+                      subcategory,
+                      dispatch,
                     });
                   },
                 })}
