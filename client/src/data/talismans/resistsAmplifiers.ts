@@ -23,7 +23,6 @@ export const resistsAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Dragoncrest+Greatshield+Talisman",
     dlc: false,
     legendary: true,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -92,7 +91,6 @@ export const resistsAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Golden+Braid",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -173,7 +171,6 @@ export const resistsAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Prince+of+Death%27s+Pustule",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -183,7 +180,6 @@ export const resistsAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Prince+of+Death%27s+Cyst",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -193,6 +189,5 @@ export const resistsAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Ailment+Talisman",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
 ];

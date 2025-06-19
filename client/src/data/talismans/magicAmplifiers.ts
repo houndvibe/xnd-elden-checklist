@@ -9,7 +9,6 @@ export const magicAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Graven-School+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -19,7 +18,6 @@ export const magicAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Graven-Mass+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -29,7 +27,6 @@ export const magicAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Fathful+Canvas+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -39,7 +36,6 @@ export const magicAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Flock%27s+Canvas+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -49,7 +45,6 @@ export const magicAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Primal+Glinstone+Blade",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -59,7 +54,6 @@ export const magicAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Moon+of+Nokstella",
     dlc: false,
     legendary: true,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -69,7 +63,6 @@ export const magicAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Old+Lord%27s+Talisman",
     dlc: false,
     legendary: true,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -79,7 +72,6 @@ export const magicAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Radagon+Icon",
     dlc: false,
     legendary: true,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -89,6 +81,5 @@ export const magicAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Beloved+Stardust",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
 ];

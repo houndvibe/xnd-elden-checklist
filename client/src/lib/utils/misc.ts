@@ -9,7 +9,7 @@ function hasLegendaryProperty(
 }
 
 //Проверка на легендарность
-export function checkIsLegendary(item: Item) {
+export function isLegendaryItem(item: Item) {
   return (
     legendaryEligibleItemCategories.includes(item.type) &&
     hasLegendaryProperty(item) &&
@@ -18,7 +18,7 @@ export function checkIsLegendary(item: Item) {
 }
 
 //Проверка на возможное наличие поля versions у категории предмета
-export function hasVersionsProperty(
+export function isMultiVersionTalisman(
   item: Item
 ): item is Item & { versions: TalismanVersions[] } {
   return "versions" in item;

@@ -9,7 +9,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Dagger+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -19,7 +18,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Curved+Sword+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -29,7 +27,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Twinblade+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -39,7 +36,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Axe+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -49,7 +45,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Hammer+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -59,7 +54,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Spear+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -69,7 +63,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Lance+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -79,7 +72,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Claw+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -89,7 +81,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Two-Handed+Sword+Talisman",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -99,7 +90,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Greatshield+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -109,7 +99,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Pearl+Shield+Talisman",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -119,7 +108,7 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Retaliatory+Crossed-Tree",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
+
     imgUrl:
       "https://eldenring.wiki.fextralife.com/file/Elden-Ring/retaliatory_crossed-tree_1_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
@@ -131,7 +120,7 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Lacerating+Crossed-Tree",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
+
     imgUrl:
       "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lacerating_crossed-tree_1_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
@@ -143,7 +132,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Arrow%27s+Sting+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -153,7 +141,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Arrow%27s+Reach+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -163,7 +150,6 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Arrow%27s+Soaring+Sting+Talisman",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -173,6 +159,5 @@ export const weaponAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Sharpshot+Talisman",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
 ];

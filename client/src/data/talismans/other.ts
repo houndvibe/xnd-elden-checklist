@@ -9,7 +9,6 @@ export const other: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Crepus%27s+Vial",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -19,7 +18,6 @@ export const other: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Concealing+Veil",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -29,7 +27,6 @@ export const other: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Longtail+Cat+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -39,7 +36,6 @@ export const other: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Furled+Finger%27s+Trick-Mirror",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -49,7 +45,6 @@ export const other: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Host%27s+Trick-Mirror",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -59,7 +54,6 @@ export const other: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Shabriri%27s+Woe",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -69,7 +63,6 @@ export const other: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Daedicar%27s+Woe",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -79,6 +72,5 @@ export const other: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Sacrificial+Twig",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
 ];

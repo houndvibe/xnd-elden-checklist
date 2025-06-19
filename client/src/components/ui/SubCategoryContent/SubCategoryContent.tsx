@@ -22,6 +22,10 @@ export default function SubCategoryContent({
 }: Props) {
   const [hoveredItemName, setHoveredItemName] = useState("");
 
+  const sortedDataSource = [...dataSource].sort((a, b) =>
+    a.name.localeCompare(b.name)
+  );
+
   const isItArmorSet = type === "armour" && subcategory !== "pieces";
   const TableComponent = isItArmorSet ? HierarchyTable : Table;
 
@@ -29,11 +33,11 @@ export default function SubCategoryContent({
     <Flex style={{ maxHeight: 800 }}>
       <TableComponent
         setHoveredItemName={setHoveredItemName}
-        dataSource={dataSource}
+        dataSource={sortedDataSource}
         subcategory={subcategory}
       />
       <Preview
-        dataSource={dataSource}
+        dataSource={sortedDataSource}
         categoty={type}
         subcategory={subcategory}
         hoveredItemName={hoveredItemName}

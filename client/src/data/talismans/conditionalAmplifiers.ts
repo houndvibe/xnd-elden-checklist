@@ -9,7 +9,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Red-Feathered+Branchsword",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -19,7 +18,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Blue-Feathered+Branchsword",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -29,7 +27,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Ritual+Sword+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -39,7 +36,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Ritual+Shield+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -49,7 +45,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Assassin%27s+Crimson+Dagger",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -59,7 +54,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Assassin%27s+Cerulean+Dagger",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -69,7 +63,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Winged+Sword+Insignia",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -79,7 +72,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Rotten+Winged+Sword+Insignia",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -89,7 +81,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Millicent%27s+Prosthesis",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -99,7 +90,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Godskin+Swaddling+Cloth",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -109,7 +99,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Kindred+of+Rot%27s+Exultation",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -119,7 +108,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Lord+of+Blood%27s+Exultation",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -129,7 +117,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Aged+One%27s+Exultation",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -139,7 +126,7 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/St.+Trina's+Smile",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
+
     imgUrl:
       "https://eldenring.wiki.fextralife.com/file/Elden-Ring/st._trinas_smile_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
@@ -151,7 +138,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Blade+of+Mercy",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -161,7 +147,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Taker%27s+Cameo",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -171,7 +156,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Ancestral+Spirit%27s+Horn",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -181,7 +165,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Crusade+Insignia",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -191,7 +174,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Dried+Bouquet",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -201,7 +183,6 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Gold+Scarab",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -211,6 +192,5 @@ export const conditionalAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Silver+Scarab",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
 ];

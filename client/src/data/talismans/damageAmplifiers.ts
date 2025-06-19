@@ -9,7 +9,6 @@ export const damageAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Bull-Goat%27s+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -19,7 +18,6 @@ export const damageAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Blue+Dancer+Charm",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -29,7 +27,6 @@ export const damageAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Verdigris+Discus",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -39,7 +36,6 @@ export const damageAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Fire+Scorpion+Charm",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -49,7 +45,6 @@ export const damageAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Lightning+Scorpion+Charm",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -59,7 +54,6 @@ export const damageAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Magic+Scorpion+Charm",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -69,7 +63,6 @@ export const damageAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Sacred+Scorpion+Charm",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -79,7 +72,6 @@ export const damageAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Crucible+Scale+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -89,7 +81,6 @@ export const damageAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Crucible+Feather+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -99,7 +90,6 @@ export const damageAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Crucible+Knot+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -109,7 +99,6 @@ export const damageAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Fine+Crucible+Feather+Talisman",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -119,6 +108,5 @@ export const damageAmplifiers: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Talisman+of+all+Crucibles",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
 ];

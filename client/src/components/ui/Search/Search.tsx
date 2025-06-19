@@ -7,7 +7,10 @@ import { Item, ItemSubCategoryMap } from "../../../global-types";
 import { useNavigate } from "react-router-dom";
 import { flattenCollectionItems } from "../../../lib/utils/search";
 import { useAppDispatch } from "../../../store/typedDispatch";
-import { setGlobalSearchItem } from "../../../store/serviceSlice";
+import {
+  setGlobalSearchItem,
+  setGlobalSearchSet,
+} from "../../../store/serviceSlice";
 import { itemsData } from "../../../data";
 
 const { Search } = Input;
@@ -24,21 +27,37 @@ const SearchWithSuggestions = () => {
   const [searchText, setSearchText] = useState<string>("");
 
   const handleSearch = (value: string): void => {
-    for (const category in itemsData) {
-      for (const subcategory in itemsData[category as keyof Collection]) {
-        const subject = (
-          itemsData[category as keyof Collection][
-            subcategory as keyof ItemSubCategoryMap
-          ] as Item[]
-        ).find((item: Item) => {
-          return item.name.toLocaleLowerCase() === value.toLocaleLowerCase();
-        });
+    const searchValue = value.toLocaleLowerCase();
 
-        if (subject) {
-          dispatch(setGlobalSearchItem(subject.name));
-          navigate(
-            `/${subject.type}?open=${encodeURIComponent(subject.subcategory)}`
-          );
+    for (const category in itemsData) {
+      const subcategories = itemsData[category as keyof Collection];
+
+      for (const subcategory in subcategories) {
+        const items = subcategories[
+          subcategory as keyof ItemSubCategoryMap
+        ] as Item[];
+
+        for (const item of items) {
+          // Стандартная проверка имени
+          if (item.name.toLocaleLowerCase() === searchValue) {
+            dispatch(setGlobalSearchItem(item.name));
+            navigate(`/${item.type}?open=${encodeURIComponent(subcategory)}`);
+            return;
+          }
+
+          // Дополнительная проверка для ArmourSet с items
+          if ("items" in item && Array.isArray(item.items)) {
+            for (const child of item.items) {
+              if (child.name.toLocaleLowerCase() === searchValue) {
+                dispatch(setGlobalSearchSet(item.name));
+                dispatch(setGlobalSearchItem(child.name));
+                navigate(
+                  `/${child.type}?open=${encodeURIComponent(subcategory)}`
+                );
+                return;
+              }
+            }
+          }
         }
       }
     }

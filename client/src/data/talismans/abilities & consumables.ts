@@ -9,7 +9,6 @@ export const abilitiesAndConsumables: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Roar+Medallion",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -19,7 +18,6 @@ export const abilitiesAndConsumables: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Companion+Jar",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -29,7 +27,6 @@ export const abilitiesAndConsumables: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Perfumer%27s+Talisman",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -39,7 +36,6 @@ export const abilitiesAndConsumables: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Carian+Filigreed+Crest",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -49,7 +45,6 @@ export const abilitiesAndConsumables: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Warrior+Jar+Shard",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -59,7 +54,6 @@ export const abilitiesAndConsumables: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Shard+of+Alexander",
     dlc: false,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -69,7 +63,6 @@ export const abilitiesAndConsumables: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Godfrey+Icon",
     dlc: false,
     legendary: true,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -79,7 +72,6 @@ export const abilitiesAndConsumables: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Rellana%27s+Cameo",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -89,7 +81,6 @@ export const abilitiesAndConsumables: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Shattered+Stone+Talisman",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -99,7 +90,6 @@ export const abilitiesAndConsumables: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Smithing+Talisman",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -109,7 +99,6 @@ export const abilitiesAndConsumables: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Enraged+Divine+Beast",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
   {
     type: "talismans",
@@ -119,6 +108,5 @@ export const abilitiesAndConsumables: TalismanItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Talisman+of+the+Dread",
     dlc: true,
     legendary: false,
-    versions: [{ tier: 0, collected: false }],
   },
 ];
