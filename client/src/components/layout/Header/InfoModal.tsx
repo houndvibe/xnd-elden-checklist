@@ -3,9 +3,9 @@ import { Divider, Modal, Space, Typography, Switch, Flex, Image } from "antd";
 import styles from "./InfoModal.module.scss";
 import { useAppSelector } from "../../../store/typedDispatch";
 
-import faq from "../../../../public/images/icons/faq.png";
-import important from "../../../../public/images/icons/important.png";
-import contacts from "../../../../public/images/icons/contacts.png";
+import faq from "../../../assets/icons/faq.png";
+import important from "../../../assets/icons/important.png";
+import contacts from "../../../assets/icons/contacts.png";
 const { Paragraph, Text, Title, Link } = Typography;
 
 interface Props {
