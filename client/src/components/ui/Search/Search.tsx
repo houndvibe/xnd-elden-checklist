@@ -38,18 +38,47 @@ const SearchWithSuggestions = () => {
         ] as Item[];
 
         for (const item of items) {
-          // Стандартная проверка имени
+          // Прямая проверка имени
           if (item.name.toLocaleLowerCase() === searchValue) {
             dispatch(setGlobalSearchItem(item.name));
             navigate(`/${item.type}?open=${encodeURIComponent(subcategory)}`);
             return;
           }
 
-          // Дополнительная проверка для ArmourSet с items
+          // Проверка по items у ArmourSet
           if ("items" in item && Array.isArray(item.items)) {
             for (const child of item.items) {
               if (child.name.toLocaleLowerCase() === searchValue) {
                 dispatch(setGlobalSearchSet(item.name));
+                dispatch(setGlobalSearchItem(child.name));
+                navigate(
+                  `/${child.type}?open=${encodeURIComponent(subcategory)}`
+                );
+                return;
+              }
+
+              // Проверка по children у ArmourPiece внутри items
+              if ("children" in child && Array.isArray(child.children)) {
+                for (const grandChild of child.children) {
+                  if (grandChild.name.toLocaleLowerCase() === searchValue) {
+                    dispatch(setGlobalSearchSet(item.name));
+                    dispatch(setGlobalSearchItem(grandChild.name));
+                    navigate(
+                      `/${grandChild.type}?open=${encodeURIComponent(
+                        subcategory
+                      )}`
+                    );
+                    return;
+                  }
+                }
+              }
+            }
+          }
+
+          // Проверка по children у ArmourPiece напрямую (если это не set, а просто piece)
+          if ("children" in item && Array.isArray(item.children)) {
+            for (const child of item.children) {
+              if (child.name.toLocaleLowerCase() === searchValue) {
                 dispatch(setGlobalSearchItem(child.name));
                 navigate(
                   `/${child.type}?open=${encodeURIComponent(subcategory)}`
