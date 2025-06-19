@@ -3,7 +3,7 @@ import styles from "./SubCategoryContent.module.scss";
 import { Item, ItemCategory, ItemSubCategory } from "../../../global-types";
 import { useAppSelector } from "../../../store/typedDispatch";
 import { exceptionalSubcategories } from "../../../lib/consts";
-import { findItemByName } from "../../../lib/utils/misc";
+import { findItemByName, isArmourSet } from "../../../lib/utils/misc";
 
 interface PreviewProps {
   hoveredItemName: string;
@@ -28,11 +28,15 @@ export default function Preview({
       return currentItem?.imgUrl;
     }
 
-    if (hoveredItemName.includes(" Set")) {
-      return `./images/${categoty}/placeholder.png`;
+    const sanitized = name.replace(/:|"/g, "");
+
+    if (isArmourSet(currentItem)) {
+      const [firstItem] = currentItem.items;
+      if (firstItem) {
+        return `./images/${categoty}/${subcategory}/${firstItem.name}.png`;
+      }
     }
 
-    const sanitized = name.replace(/:|"/g, "");
     return `./images/${categoty}/${subcategory}/${sanitized}.png`;
   };
 

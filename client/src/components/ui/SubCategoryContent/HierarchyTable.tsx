@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
-import { CheckOutlined } from "@ant-design/icons";
 import Link from "antd/es/typography/Link";
 import dlcIcon from "../../../assets/dlc-icon.png";
 import { getStoreAction } from "../../../store/actions";
@@ -20,6 +19,7 @@ import {
   setGlobalSearchItem,
   setGlobalSearchSet,
 } from "../../../store/serviceSlice";
+import CustomTableTitle from "./CustomTableTitle";
 
 interface Props {
   setHoveredItemName: React.Dispatch<React.SetStateAction<string>>;
@@ -113,7 +113,7 @@ export default function Table({
 
   const columns: TableProps<Item>["columns"] = [
     {
-      title: "Name",
+      title: <CustomTableTitle title={"name"} />,
       dataIndex: "name",
       key: "name",
       width: "90%",
@@ -122,7 +122,7 @@ export default function Table({
       render: renderNameCell,
     },
     {
-      title: <CheckOutlined />,
+      title: <CustomTableTitle title={"collected"} />,
       dataIndex: "collected",
       key: "collected",
       width: "60%",

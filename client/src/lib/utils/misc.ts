@@ -1,4 +1,9 @@
-import type { Item, ItemCategory, TalismanVersions } from "../../global-types";
+import type {
+  ArmourSet,
+  Item,
+  ItemCategory,
+  TalismanVersions,
+} from "../../global-types";
 import { legendaryEligibleItemCategories } from "../consts";
 
 function hasLegendaryProperty(
@@ -110,4 +115,14 @@ export const findItemByName = (
   }
 
   return undefined;
+};
+
+export const isArmourSet = (item: Item | undefined): item is ArmourSet => {
+  return (
+    !!item &&
+    item.type === "armour" &&
+    item.pieceType === "set" &&
+    "items" in item &&
+    Array.isArray(item.items)
+  );
 };

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
-import { CheckOutlined, ThunderboltTwoTone } from "@ant-design/icons";
+import { ThunderboltTwoTone } from "@ant-design/icons";
 import Link from "antd/es/typography/Link";
 import styles from "./SubCategoryContent.module.scss";
 import dlcIcon from "../../../assets/dlc-icon.png";
@@ -18,6 +18,7 @@ import type {
 import {
   Table as AntdTable,
   Checkbox,
+  ConfigProvider,
   Flex,
   Image,
   Tooltip,
@@ -27,6 +28,7 @@ import {
   isLegendaryItem,
   isMultiVersionTalisman,
 } from "../../../lib/utils/misc";
+import CustomTableTitle from "./CustomTableTitle";
 
 interface Props {
   setHoveredItemName: React.Dispatch<React.SetStateAction<string>>;
@@ -161,7 +163,7 @@ export default function Table({
 
   const columns: TableProps<Item>["columns"] = [
     {
-      title: "Name",
+      title: <CustomTableTitle title={"name"} />,
       dataIndex: "name",
       key: "name",
       width: "85%",
@@ -170,7 +172,7 @@ export default function Table({
       render: renderNameCell,
     },
     {
-      title: <CheckOutlined />,
+      title: <CustomTableTitle title={"collected"} />,
       dataIndex: "collected",
       key: "collected",
       sortOrder: sortColumn === "collected" ? sortOrder : null,
@@ -206,32 +208,39 @@ export default function Table({
   };
 
   return (
-    <AntdTable
-      className={styles.table}
-      columns={columns}
-      dataSource={dataSource}
-      pagination={false}
-      size="small"
-      rowKey="name"
-      rowClassName={(record) => {
-        if (record.name === globalSearchItem) return "row-searchTarget";
-        if (record.collected) return "row-collected";
-        return "row-missing";
+    <ConfigProvider
+      locale={{
+        locale: "custom",
+        Table: {},
       }}
-      onChange={handleTableChange}
-      onRow={(record) => ({
-        onMouseEnter: () => handleMouseEnter(record),
-        onMouseLeave: handleMouseLeave,
-        onClick: () =>
-          isMultiVersionTalisman(record)
-            ? null
-            : getStoreAction({
-                name: record.name,
-                category: record.type,
-                subcategory,
-                dispatch,
-              }),
-      })}
-    />
+    >
+      <AntdTable
+        className={styles.table}
+        columns={columns}
+        dataSource={dataSource}
+        pagination={false}
+        size="small"
+        rowKey="name"
+        rowClassName={(record) => {
+          if (record.name === globalSearchItem) return "row-searchTarget";
+          if (record.collected) return "row-collected";
+          return "row-missing";
+        }}
+        onChange={handleTableChange}
+        onRow={(record) => ({
+          onMouseEnter: () => handleMouseEnter(record),
+          onMouseLeave: handleMouseLeave,
+          onClick: () =>
+            isMultiVersionTalisman(record)
+              ? null
+              : getStoreAction({
+                  name: record.name,
+                  category: record.type,
+                  subcategory,
+                  dispatch,
+                }),
+        })}
+      />
+    </ConfigProvider>
   );
 }

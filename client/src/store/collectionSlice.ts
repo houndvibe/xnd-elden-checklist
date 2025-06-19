@@ -121,77 +121,76 @@ export const collectionSlice = createSlice({
       const { subcategory, name } = action.payload;
       const items = state.collectionData.armourData[subcategory];
 
-      // @ts-ignore
-      const toggleAndPropagate = (item: any, newValue: boolean): boolean => {
-        // Если есть вложенные children — рекурсивно применяем к ним
-        if ("children" in item && item.children) {
-          const children = Object.values(item.children);
-          children.forEach((child) => toggleAndPropagate(child, newValue));
-        }
-
-        // Если есть под-элементы внутри items (например, части сета)
+      const toggleSingle = (item: { collected: boolean }) => {
+        item.collected = !item.collected;
+      };
+      //@ts-ignore
+      const toggleRecursive = (item: any, newValue: boolean) => {
+        item.collected = newValue;
 
         if ("items" in item && Array.isArray(item.items)) {
-          // @ts-ignore
-          item.items.forEach((sub: any) => toggleAndPropagate(sub, newValue));
+          for (const subItem of item.items) {
+            subItem.collected = newValue;
+
+            if (Array.isArray(subItem.children)) {
+              //@ts-ignore
+              subItem.children.forEach((child) => {
+                child.collected = newValue;
+              });
+            }
+          }
         }
-
-        item.collected = newValue;
-        return item.collected;
       };
-
-      // @ts-ignore
+      //@ts-ignore
       const updateParentCollectedStatus = (item: any) => {
-        if ("children" in item && item.children) {
-          const allCollected = Object.values(item.children).every(
-            // @ts-ignore
-            (child) => child.collected
-          );
+        if ("children" in item && Array.isArray(item.children)) {
+          //@ts-ignore
+          const allCollected = item.children.every((child) => child.collected);
           item.collected = allCollected;
         }
 
         if ("items" in item && Array.isArray(item.items)) {
-          // @ts-ignore
+          //@ts-ignore
           const allCollected = item.items.every((i) => i.collected);
           item.collected = allCollected;
         }
       };
 
-      // Поиск на верхнем уровне
+      // === Поиск на верхнем уровне (в том числе set) ===
       const topItem = items.find((s) => s.name === name);
       if (topItem) {
         const newValue = !topItem.collected;
-        toggleAndPropagate(topItem, newValue);
+
+        if (topItem.pieceType === "set") {
+          toggleRecursive(topItem, newValue);
+        } else {
+          toggleSingle(topItem);
+        }
+
         saveToStorage("xnd.collection", state.collectionData);
         return;
       }
 
-      // Поиск на вложенных уровнях
+      // === Поиск в items и children ===
       for (const item of items) {
         if (!("items" in item)) continue;
 
         for (const subItem of item.items) {
           if (subItem.name === name) {
-            const newValue = !subItem.collected;
-            toggleAndPropagate(subItem, newValue);
-            updateParentCollectedStatus(item); // Обновляем родителя
+            toggleSingle(subItem);
+            updateParentCollectedStatus(item);
             saveToStorage("xnd.collection", state.collectionData);
             return;
           }
 
-          if (subItem.children) {
-            const matchKey = Object.keys(subItem.children).find(
-              // @ts-ignore
-              (key) => subItem.children?.[key]?.name === name
+          if (Array.isArray(subItem.children)) {
+            const childMatch = subItem.children.find(
+              (child) => child.name === name
             );
 
-            if (matchKey) {
-              // @ts-ignore
-              const match = subItem.children[matchKey];
-              const newValue = !match.collected;
-              toggleAndPropagate(match, newValue);
-              updateParentCollectedStatus(subItem); // Обновляем parent
-              updateParentCollectedStatus(item); // Обновляем ещё выше
+            if (childMatch) {
+              toggleSingle(childMatch);
+              // Не трогаем родителя!
               saveToStorage("xnd.collection", state.collectionData);
               return;
             }
