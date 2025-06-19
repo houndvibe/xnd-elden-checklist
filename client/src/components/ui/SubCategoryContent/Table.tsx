@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import type {
   Item,
   ItemSubCategory,
@@ -58,23 +58,24 @@ export default function Table({
   //debounce
   const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const handleMouseEnter = useCallback((record: Item) => {
+  const handleMouseEnter = (record: Item) => {
     const imgUrl = record.imgUrl || getNameToImgUrlConverter(record);
 
     if (record.name === globalSearchItem) {
       dispatch(setGlobalSearchItem(null));
     }
+
     hoverTimeoutRef.current = setTimeout(() => {
       setHoveredImg({ url: imgUrl, name: record.name });
     }, 50);
-  }, []);
+  };
 
-  const handleMouseLeave = useCallback(() => {
+  const handleMouseLeave = () => {
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
       hoverTimeoutRef.current = null;
     }
-  }, []);
+  };
 
   const columns: TableProps<Item>["columns"] = [
     {

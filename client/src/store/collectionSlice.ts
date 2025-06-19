@@ -20,7 +20,7 @@ import type {
   СonsumablesAndAmmoItemsCategoryMap,
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
-import { itemsDataNew } from "../data";
+import { itemsData } from "../data";
 
 export interface Collection {
   shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap;
@@ -46,24 +46,7 @@ export interface State {
 }
 
 const initialState: State = {
-  collectionData: loadFromStorage("xnd.collection", {
-    shieldsAndTorchesData: itemsDataNew.shieldsAndTorchesData,
-    spiritAshesData: itemsDataNew.spiritAshesData,
-    talismansData: itemsDataNew.talismansData,
-    ashesOfWarData: itemsDataNew.ashesOfWarData,
-    sorceriesData: itemsDataNew.sorceriesData,
-    incantationsData: itemsDataNew.incantationsData,
-    gesturesAndMultiplayerData: itemsDataNew.gesturesAndMultiplayerData,
-    meleWeaponsData: itemsDataNew.meleWeaponsData,
-    rangedWeaponsData: itemsDataNew.rangedWeaponsData,
-    toolsAndBellBearingsData: itemsDataNew.toolsAndBellBearingsData,
-    tearsAndUpgradesData: itemsDataNew.tearsAndUpgradesData,
-    craftData: itemsDataNew.craftData,
-    infoItemsData: itemsDataNew.infoItemsData,
-    armourData: itemsDataNew.armourData,
-    consumablesAndAmmoData: itemsDataNew.consumablesAndAmmoData,
-    keyItemsData: itemsDataNew.keyItemsData,
-  }),
+  collectionData: loadFromStorage("xnd.collection", itemsData),
 };
 
 export const collectionSlice = createSlice({

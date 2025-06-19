@@ -16,7 +16,7 @@ import { talismansData } from "./talismans";
 import { tearsAndUpgradesData } from "./tearsAndUpgrades";
 import { toolsAndBellBearingsData } from "./toolsAndBellBearings";
 
-export const itemsDataNew: Collection = {
+export const itemsData: Collection = {
   rangedWeaponsData: rangedWeaponData,
   shieldsAndTorchesData: shieldsAndTorchesData,
   sorceriesData: sorceriesData,

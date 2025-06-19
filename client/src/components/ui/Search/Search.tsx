@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Input, AutoComplete, Image, Flex } from "antd";
 import type { AutoCompleteProps } from "antd";
-import { itemsData } from "../../../data/data-index";
+
 import { Collection } from "../../../store/collectionSlice";
 import { Item, ItemSubCategoryMap } from "../../../global-types";
 import { useNavigate } from "react-router-dom";
 import { flattenCollectionItems } from "../../../lib/utils/search";
 import { useAppDispatch } from "../../../store/typedDispatch";
 import { setGlobalSearchItem } from "../../../store/serviceSlice";
+import { itemsData } from "../../../data";
 
 const { Search } = Input;
 
