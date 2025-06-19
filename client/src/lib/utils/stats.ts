@@ -1,42 +1,33 @@
-import type { Item, ItemSubCategoryMap } from "../../global-types";
+import type { Item, ItemSubCategoryMap, ArmourSet } from "../../global-types";
+
+type ArmourPieceStat = { name: string; collected: boolean };
 
 export function getItemStats(item: Item): {
   itemTotal: number;
   itemCollected: number;
+  armourPieces?: ArmourPieceStat[];
 } {
-  // Talisman versions
-  if (
-    item.type === "talismans" &&
-    "versions" in item &&
-    Array.isArray(item.versions)
-  ) {
+  if (item.type === "talismans" && Array.isArray(item.versions)) {
     const itemTotal = item.versions.length;
     const itemCollected = item.versions.filter((v) => v.collected).length;
     return { itemTotal, itemCollected };
   }
 
-  // Armour
   if (item.type === "armour" && item.subcategory !== "pieces") {
-    if ("items" in item && Array.isArray(item.items)) {
-      let total = 0;
-      let collected = 0;
+    const armourPieces: ArmourPieceStat[] = [];
 
-      for (const subItem of item.items) {
-        total += 1;
-        if (subItem.collected) collected += 1;
-
-        if ("children" in subItem && Array.isArray(subItem.children)) {
-          total += subItem.children.length;
-          collected += subItem.children.filter((c) => c.collected).length;
-        }
+    const set = item as ArmourSet;
+    for (const part of set.items ?? []) {
+      armourPieces.push({ name: part.name, collected: part.collected });
+      for (const child of part.children ?? []) {
+        armourPieces.push({ name: child.name, collected: child.collected });
       }
-
-      return { itemTotal: total, itemCollected: collected };
     }
 
     return {
-      itemTotal: 1,
-      itemCollected: item.collected ? 1 : 0,
+      itemTotal: armourPieces.length,
+      itemCollected: armourPieces.filter((p) => p.collected).length,
+      armourPieces,
     };
   }
 
@@ -46,32 +37,43 @@ export function getItemStats(item: Item): {
   };
 }
 
-export function getCategoryStats(data: ItemSubCategoryMap) {
+function aggregateStats(items: Item[]) {
   let total = 0;
   let collected = 0;
+  const armourPieceMap = new Map<string, boolean>();
 
-  for (const category of Object.values(data)) {
-    for (const item of category) {
-      const { itemTotal, itemCollected } = getItemStats(item);
+  for (const item of items) {
+    const { itemTotal, itemCollected, armourPieces } = getItemStats(item);
+
+    if (item.type === "armour" && armourPieces) {
+      for (const piece of armourPieces) {
+        const existing = armourPieceMap.get(piece.name);
+        if (existing === undefined || piece.collected) {
+          armourPieceMap.set(piece.name, piece.collected);
+        }
+      }
+    } else {
       total += itemTotal;
       collected += itemCollected;
     }
   }
 
-  const percentage = total === 0 ? 0 : Math.round((collected / total) * 100);
-  return { total, collected, percentage };
+  for (const isCollected of armourPieceMap.values()) {
+    total++;
+    if (isCollected) collected++;
+  }
+
+  return {
+    total,
+    collected,
+    percentage: total === 0 ? 0 : Math.round((collected / total) * 100),
+  };
+}
+
+export function getCategoryStats(data: ItemSubCategoryMap) {
+  return aggregateStats(Object.values(data).flat());
 }
 
 export function getSubCategoryStats(items: Item[]) {
-  let total = 0;
-  let collected = 0;
-
-  for (const item of items) {
-    const { itemTotal, itemCollected } = getItemStats(item);
-    total += itemTotal;
-    collected += itemCollected;
-  }
-
-  const percentage = total === 0 ? 0 : Math.round((collected / total) * 100);
-  return { total, collected, percentage };
+  return aggregateStats(items);
 }

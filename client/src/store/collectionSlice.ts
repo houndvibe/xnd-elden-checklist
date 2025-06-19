@@ -94,17 +94,14 @@ export const collectionSlice = createSlice({
 
       if (!talisman) return;
 
-      // Есть версии — переключаем конкретную
       if (talisman.versions && tier !== undefined) {
         const version = talisman.versions.find((v) => v.tier === tier);
         if (version) {
           version.collected = !version.collected;
 
-          // Если после переключения все версии собраны — выставляем collected = true
           talisman.collected = talisman.versions.every((v) => v.collected);
         }
       } else {
-        // Нет версий — просто переключаем collected
         talisman.collected = !talisman.collected;
       }
 
@@ -121,63 +118,80 @@ export const collectionSlice = createSlice({
       const { subcategory, name } = action.payload;
       const items = state.collectionData.armourData[subcategory];
 
-      const toggleSingle = (item: { collected: boolean }) => {
-        item.collected = !item.collected;
-      };
-      //@ts-ignore
-      const toggleRecursive = (item: any, newValue: boolean) => {
-        item.collected = newValue;
-
-        if ("items" in item && Array.isArray(item.items)) {
-          for (const subItem of item.items) {
-            subItem.collected = newValue;
-
-            if (Array.isArray(subItem.children)) {
-              //@ts-ignore
-              subItem.children.forEach((child) => {
-                child.collected = newValue;
-              });
-            }
-          }
-        }
+      const toggleSingle = (
+        item: { collected: boolean },
+        newValue?: boolean
+      ) => {
+        item.collected =
+          typeof newValue === "boolean" ? newValue : !item.collected;
       };
       //@ts-ignore
       const updateParentCollectedStatus = (item: any) => {
-        if ("children" in item && Array.isArray(item.children)) {
-          //@ts-ignore
-          const allCollected = item.children.every((child) => child.collected);
-          item.collected = allCollected;
-        }
-
         if ("items" in item && Array.isArray(item.items)) {
           //@ts-ignore
           const allCollected = item.items.every((i) => i.collected);
           item.collected = allCollected;
         }
+
+        if ("children" in item && Array.isArray(item.children)) {
+          //@ts-ignore
+          const allCollected = item.children.every((c) => c.collected);
+          item.collected = allCollected;
+        }
       };
 
-      // === Поиск на верхнем уровне (в том числе set) ===
+      const propagateToOtherSets = (targetName: string, newValue: boolean) => {
+        for (const otherSet of items) {
+          if (!("items" in otherSet)) continue;
+
+          for (const part of otherSet.items) {
+            if (part.name === targetName) {
+              toggleSingle(part, newValue);
+            }
+          }
+
+          updateParentCollectedStatus(otherSet);
+        }
+      };
+      //@ts-ignore
+      const toggleSetRecursively = (set: any, newValue: boolean) => {
+        toggleSingle(set, newValue);
+
+        for (const subItem of set.items) {
+          toggleSingle(subItem, newValue);
+          propagateToOtherSets(subItem.name, newValue); // propagate across sets
+
+          if (Array.isArray(subItem.children)) {
+            //@ts-ignore
+            subItem.children.forEach((child) => toggleSingle(child, newValue));
+          }
+        }
+      };
+
+      // === Верхний уровень (одиночный элемент или сет) ===
       const topItem = items.find((s) => s.name === name);
       if (topItem) {
         const newValue = !topItem.collected;
 
         if (topItem.pieceType === "set") {
-          toggleRecursive(topItem, newValue);
+          toggleSetRecursively(topItem, newValue);
         } else {
-          toggleSingle(topItem);
+          toggleSingle(topItem, newValue);
+          propagateToOtherSets(topItem.name, newValue);
         }
 
         saveToStorage("xnd.collection", state.collectionData);
         return;
       }
 
-      // === Поиск в items и children ===
+      // === Вложенные элементы ===
       for (const item of items) {
         if (!("items" in item)) continue;
 
         for (const subItem of item.items) {
           if (subItem.name === name) {
-            toggleSingle(subItem);
+            const newValue = !subItem.collected;
+            propagateToOtherSets(subItem.name, newValue);
             updateParentCollectedStatus(item);
             saveToStorage("xnd.collection", state.collectionData);
             return;
@@ -190,7 +204,7 @@ export const collectionSlice = createSlice({
 
             if (childMatch) {
               toggleSingle(childMatch);
-              // Не трогаем родителя!
+              // Родителей не трогаем
               saveToStorage("xnd.collection", state.collectionData);
               return;
             }
