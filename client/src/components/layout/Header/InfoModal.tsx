@@ -82,7 +82,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
           <Text code>Local Storage</Text>.
         </Paragraph>
         <Paragraph>
-          <Title level={5}>
+          <Title level={5} style={{ margin: 0 }}>
             {isRussian
               ? "Не удаляйте следующие ключи:"
               : "Do not delete the following keys:"}
@@ -108,9 +108,8 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
 
         <Title level={5}>
           <Flex align="center" gap={10}>
-            <>
-              <Image src={contacts} width={50} />
-            </>
+            <Image src={contacts} width={50} />
+
             <>{isRussian ? "Контакты и поддержка" : "Contact & Support"}</>
           </Flex>
         </Title>
@@ -118,18 +117,16 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
         <Paragraph>
           {isRussian
             ? "Есть вопросы или баги? Пишите на"
-            : "Got questions, feedback, or bug reports? Reach out via"}{" "}
+            : "Got questions, feedback, or bug reports?"}{" "}
           <Link href="mailto:houndvibe@gmail.com">houndvibe@gmail.com</Link>.
-        </Paragraph>
-        <Paragraph>
+          <br />
           {isRussian ? "Подписывайтесь на меня:" : "Stay connected on:"}{" "}
           <Space>
             <Link href="https://www.youtube.com/" target="_blank">
               YouTube
             </Link>
           </Space>
-        </Paragraph>
-        <Paragraph>
+          <br />
           {isRussian
             ? "Поддержать проект можно здесь:"
             : "Support the project here:"}{" "}
