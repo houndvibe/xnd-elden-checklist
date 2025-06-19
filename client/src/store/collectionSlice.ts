@@ -21,9 +21,6 @@ import type {
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 import { itemsDataNew } from "../data";
-import { infoItemsData } from "../data/infoItems";
-import { consumablesAndAmmoData } from "../data/consumablesAndAmmo";
-import { keyItemsData } from "../data/keyItems";
 
 export interface Collection {
   shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap;
@@ -62,10 +59,10 @@ const initialState: State = {
     toolsAndBellBearingsData: itemsDataNew.toolsAndBellBearingsData,
     tearsAndUpgradesData: itemsDataNew.tearsAndUpgradesData,
     craftData: itemsDataNew.craftData,
-    infoItemsData: infoItemsData,
+    infoItemsData: itemsDataNew.infoItemsData,
     armourData: itemsDataNew.armourData,
-    consumablesAndAmmoData: consumablesAndAmmoData,
-    keyItemsData: keyItemsData,
+    consumablesAndAmmoData: itemsDataNew.consumablesAndAmmoData,
+    keyItemsData: itemsDataNew.keyItemsData,
   }),
 };
 

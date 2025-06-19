@@ -10,7 +10,7 @@ import { keyItemsData } from "./keyItems";
 import { meleWeaponsData } from "./meleWeapons";
 import { rangedWeaponData } from "./rangedWeapon";
 import { shieldsAndTorchesData } from "./shieldsAndTorches";
-import { sorceriesData } from "./sorceries/indext";
+import { sorceriesData } from "./sorceries";
 import { spiritAshesData } from "./spiritAshes";
 import { talismansData } from "./talismans";
 import { tearsAndUpgradesData } from "./tearsAndUpgrades";
