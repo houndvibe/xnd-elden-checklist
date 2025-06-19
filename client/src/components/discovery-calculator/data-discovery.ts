@@ -58,85 +58,72 @@ export const discoveryData: Discovery = {
     {
       name: "Marika's Soreseal",
       effect: { arcaneGain: 5, discoveryGain: 0 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/marika's_soreseal_talismans_elden_ring_wiki_200px.png",
+      imgUrl: "./images/talismans/statsAmplifiers/Marika's Soreseal.png",
     },
     {
-      name: "Marika's Scarsea",
+      name: "Marika's Scarseal",
       effect: { arcaneGain: 3, discoveryGain: 0 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/marikas_scarseal_talisman_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/talismans/statsAmplifiers/Marika's Scarseal.png",
     },
     {
       name: "Silver Scarab",
       effect: { arcaneGain: 0, discoveryGain: 75 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/silver_scarab_talisman_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/talismans/conditionalAmplifiers/Silver Scarab.png",
     },
   ],
   helmets: [
     {
       name: "Silver Tear Mask",
       effect: { arcaneGain: 8, discoveryGain: 0 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/silver_tear_mask_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/armour/pieces/Silver Tear Mask.png",
     },
     {
       name: "Albinauric Mask",
       effect: { arcaneGain: 4, discoveryGain: 0 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/albinauric_mask_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/armour/commonfolkAndWanderers/Albinauric Mask.png",
     },
     {
-      name: "Witch's Glintstone Crown",
+      name: "Witch's Gl. Crown",
       effect: { arcaneGain: 3, discoveryGain: 0 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/witchs_glintstone_crown_helmet_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/armour/scholarsAndSeers/Witch's Glintstone Crown.png",
     },
     {
-      name: "Mask of Confidence ",
+      name: "Mask Of Confidence",
       effect: { arcaneGain: 3, discoveryGain: 3 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mask_of_confidence_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/armour/scholarsAndSeers/Mask Of Confidence.png",
     },
     {
       name: "Thiollier's Mask",
       effect: { arcaneGain: 3, discoveryGain: 0 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/thiolliers_mask_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+      imgUrl: "./images/armour/roguesAndOutcasts/Thiollier's Mask.png",
     },
     {
       name: "Imp Head (Elder)",
       effect: { arcaneGain: 2, discoveryGain: 0 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/imp_head_(elder)_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/armour/pieces/Imp Head (Elder).png",
     },
     {
       name: "Circlet of Light",
       effect: { arcaneGain: 1, discoveryGain: 0 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/circlet_of_light_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+      imgUrl: "./images/armour/pieces/Circlet of Light.png",
     },
     {
       name: "Marais Mask",
       effect: { arcaneGain: 1, discoveryGain: 0 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/marais_mask_elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/armour/cultistsAndNobles/Marais Mask.png",
     },
   ],
   consumables: [
     {
       name: "Silver-Pickled Fowl Foot",
       effect: { arcaneGain: 0, discoveryGain: 50 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/silver_pickled_fowl_foot__elden_ring_wiki_guide_200px.png",
+      imgUrl: "./images/consumablesAndAmmo/food/Silver-Pickled Fowl Foot.png",
       time: 180,
     },
     {
       name: "Silver Horn Tender",
       effect: { arcaneGain: 0, discoveryGain: 60 },
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/silver_horn_tender_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+      imgUrl: "./images/consumablesAndAmmo/food/Silver Horn Tender.png",
       time: 180,
     },
   ],

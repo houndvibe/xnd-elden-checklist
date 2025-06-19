@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
 import { CheckOutlined, ThunderboltTwoTone } from "@ant-design/icons";
 import Link from "antd/es/typography/Link";
@@ -57,6 +57,12 @@ export default function Table({
       setHoveredItemName(record.name);
     }, 50);
   };
+
+  useEffect(() => {
+    if (globalSearchItem) {
+      setHoveredItemName(globalSearchItem);
+    }
+  }, [globalSearchItem]);
 
   const handleMouseLeave = () => {
     if (hoverTimeoutRef.current) {

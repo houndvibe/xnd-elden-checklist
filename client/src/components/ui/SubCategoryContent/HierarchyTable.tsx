@@ -73,6 +73,12 @@ export default function Table({
     }
   };
 
+  useEffect(() => {
+    if (globalSearchItem) {
+      setHoveredItemName(globalSearchItem);
+    }
+  }, [globalSearchItem]);
+
   const renderNameCell = (value: string, record: Item) => {
     return (
       <Flex gap={10}>
