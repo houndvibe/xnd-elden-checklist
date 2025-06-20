@@ -63,6 +63,7 @@ export default function Table({
 
   const handleMouseLeave = () => {
     if (hoverTimeoutRef.current) {
+      setHoveredItemName("");
       clearTimeout(hoverTimeoutRef.current);
       hoverTimeoutRef.current = null;
     }

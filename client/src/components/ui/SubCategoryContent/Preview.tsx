@@ -24,7 +24,7 @@ export default function Preview({
 }: PreviewProps) {
   const { spoilers } = useAppSelector((state) => state.settings);
   const currentItem = findItemByName(dataSource, hoveredItemName);
-  const { name = "Unknown Item" } = currentItem || {};
+  const { name = "..." } = currentItem || {};
 
   const getImageUrls = (): string[] => {
     if (!currentItem) return [];

@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { Layout, Image } from "antd";
-import {
-  QuestionCircleOutlined,
-  TranslationOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
+import { QuestionCircleOutlined, SettingOutlined } from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
 
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
@@ -63,7 +59,7 @@ export default function Header() {
             title="Help"
             onClick={openHelpModal}
           />
-          <TranslationOutlined className={styles.icon} title="Language" />
+          {/*   <TranslationOutlined className={styles.icon} title="Language" /> */}
         </div>
       </div>
       <InfoModal isOpen={isHelpModalOpen} onCancel={closeHelpModal} />
