@@ -57,13 +57,13 @@ export default function Table({
       dispatch(setGlobalSearchSet(null));
     }
     hoverTimeoutRef.current = setTimeout(() => {
+      setHoveredItemName("");
       setHoveredItemName(record.name);
     }, 50);
   };
 
   const handleMouseLeave = () => {
     if (hoverTimeoutRef.current) {
-      setHoveredItemName("");
       clearTimeout(hoverTimeoutRef.current);
       hoverTimeoutRef.current = null;
     }

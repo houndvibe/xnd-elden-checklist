@@ -56,8 +56,16 @@ export default function Table({
       dispatch(setGlobalSearchItem(null));
     }
     hoverTimeoutRef.current = setTimeout(() => {
+      setHoveredItemName("");
       setHoveredItemName(record.name);
     }, 50);
+  };
+
+  const handleMouseLeave = () => {
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+      hoverTimeoutRef.current = null;
+    }
   };
 
   useEffect(() => {
@@ -65,14 +73,6 @@ export default function Table({
       setHoveredItemName(globalSearchItem);
     }
   }, [globalSearchItem]);
-
-  const handleMouseLeave = () => {
-    if (hoverTimeoutRef.current) {
-      clearTimeout(hoverTimeoutRef.current);
-      hoverTimeoutRef.current = null;
-      setHoveredItemName("");
-    }
-  };
 
   const renderNameCell = (value: string, record: Item) => {
     const getLink = (type: "link" | "legendary") => (
