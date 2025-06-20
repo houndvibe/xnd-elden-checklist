@@ -125,21 +125,26 @@ export const collectionSlice = createSlice({
         item.collected =
           typeof newValue === "boolean" ? newValue : !item.collected;
       };
-      //@ts-ignore
-      const updateParentCollectedStatus = (item: any) => {
-        if ("items" in item && Array.isArray(item.items)) {
-          //@ts-ignore
-          const allCollected = item.items.every((i) => i.collected);
-          item.collected = allCollected;
-        }
 
-        if ("children" in item && Array.isArray(item.children)) {
-          //@ts-ignore
-          const allCollected = item.children.every((c) => c.collected);
-          item.collected = allCollected;
-        }
+      // @ts-ignore
+      const updateParentCollectedStatus = (set: any) => {
+        if (!("items" in set) || !Array.isArray(set.items)) return;
+        // @ts-ignore
+        const allItemsAndChildrenCollected = set.items.every((item) => {
+          if (!item.collected) return false;
+
+          if (Array.isArray(item.children) && item.children.length > 0) {
+            // @ts-ignore
+            return item.children.every((child) => child.collected);
+          }
+
+          return true;
+        });
+
+        set.collected = allItemsAndChildrenCollected;
       };
 
+      // ✅ Распространение collected по другим сетам
       const propagateToOtherSets = (targetName: string, newValue: boolean) => {
         for (const otherSet of items) {
           if (!("items" in otherSet)) continue;
@@ -153,22 +158,41 @@ export const collectionSlice = createSlice({
           updateParentCollectedStatus(otherSet);
         }
       };
-      //@ts-ignore
+
+      // @ts-ignore
       const toggleSetRecursively = (set: any, newValue: boolean) => {
         toggleSingle(set, newValue);
 
         for (const subItem of set.items) {
           toggleSingle(subItem, newValue);
-          propagateToOtherSets(subItem.name, newValue); // propagate across sets
+          propagateToOtherSets(subItem.name, newValue);
 
           if (Array.isArray(subItem.children)) {
-            //@ts-ignore
+            // @ts-ignore
             subItem.children.forEach((child) => toggleSingle(child, newValue));
+          }
+        }
+
+        updateParentCollectedStatus(set);
+      };
+
+      const updateSetCollectedStatusByChild = (childName: string) => {
+        for (const set of items) {
+          if (!("items" in set)) continue;
+
+          const hasThisChild = set.items.some(
+            (item) =>
+              Array.isArray(item.children) &&
+              item.children.some((child) => child.name === childName)
+          );
+
+          if (hasThisChild) {
+            updateParentCollectedStatus(set);
+            return;
           }
         }
       };
 
-      // === Верхний уровень (одиночный элемент или сет) ===
       const topItem = items.find((s) => s.name === name);
       if (topItem) {
         const newValue = !topItem.collected;
@@ -184,13 +208,13 @@ export const collectionSlice = createSlice({
         return;
       }
 
-      // === Вложенные элементы ===
       for (const item of items) {
         if (!("items" in item)) continue;
 
         for (const subItem of item.items) {
           if (subItem.name === name) {
             const newValue = !subItem.collected;
+            toggleSingle(subItem, newValue);
             propagateToOtherSets(subItem.name, newValue);
             updateParentCollectedStatus(item);
             saveToStorage("xnd.collection", state.collectionData);
@@ -204,7 +228,7 @@ export const collectionSlice = createSlice({
 
             if (childMatch) {
               toggleSingle(childMatch);
-              // Родителей не трогаем
+              updateSetCollectedStatusByChild(childMatch.name);
               saveToStorage("xnd.collection", state.collectionData);
               return;
             }
