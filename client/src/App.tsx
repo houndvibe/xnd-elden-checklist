@@ -5,8 +5,37 @@ import Content from "./components/layout/Content/Content";
 import "./styles/reset.scss";
 import "./styles/global.scss";
 import { HashRouter } from "react-router-dom";
+import { useEffect } from "react";
+
+declare global {
+  interface Window {
+    electronAPI?: {
+      zoom: (dir: number) => void;
+    };
+  }
+}
 
 const App = () => {
+  const isElectron = !!window.electronAPI;
+
+  useEffect(() => {
+    if (!isElectron) return; // зум отключён в браузере
+
+    const handler = (e: WheelEvent) => {
+      if (e.ctrlKey) {
+        e.preventDefault();
+        const direction = e.deltaY < 0 ? 1 : -1;
+        window.electronAPI?.zoom?.(direction);
+      }
+    };
+
+    window.addEventListener("wheel", handler, { passive: false });
+
+    return () => {
+      window.removeEventListener("wheel", handler);
+    };
+  }, []);
+
   return (
     <ConfigProvider theme={{ algorithm: theme.darkAlgorithm }}>
       <HashRouter>
