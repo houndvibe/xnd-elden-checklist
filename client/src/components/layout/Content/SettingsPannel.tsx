@@ -5,6 +5,7 @@ import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
 import { setSpoilers } from "../../../store/settingsSlice";
 
 import { APP_PALETTE } from "../../../lib/consts";
+import ImportCollection from "./CollectionImport";
 
 export default function SettingsPannel() {
   const dispatch = useAppDispatch();
@@ -15,6 +16,7 @@ export default function SettingsPannel() {
   );
 
   const isElectron = !!window.electronAPI;
+  console.log(isElectron);
 
   const zoomIn = () => window.electronAPI?.zoom?.(1);
   const zoomOut = () => window.electronAPI?.zoom?.(-1);
@@ -61,6 +63,8 @@ export default function SettingsPannel() {
           </>
         ) : null}
 
+        <span>|</span>
+        <ImportCollection />
         <span>|</span>
       </Flex>
 
