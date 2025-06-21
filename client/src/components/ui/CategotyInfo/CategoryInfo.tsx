@@ -4,6 +4,7 @@ import styles from "./CategoryInfo.module.scss";
 import { PROGRESSBAR_COLORS } from "../../../lib/consts";
 import { getCategoryStats } from "../../../lib/utils/stats";
 import type { ItemSubCategoryMap } from "../../../global-types";
+import { t } from "../../../i18n";
 
 interface CategoryInfoProps {
   items: ItemSubCategoryMap;
@@ -17,7 +18,7 @@ export default function CategoryInfo({ items, title }: CategoryInfoProps) {
   return (
     <Flex vertical className={styles.card}>
       <Typography.Title level={4} className={styles[titleClassname]}>
-        {`${title} ${collected}/${total}`}
+        {`${t("misc", title)} ${collected}/${total}`}
       </Typography.Title>
 
       <Progress

@@ -8,6 +8,8 @@ import { APP_PALETTE } from "../../../lib/consts";
 
 import ZoomWidget from "./ZoomWidget";
 import ImportCollectionWidget from "./ImportCollectionWidget";
+import LangWidget from "./LangWidget";
+import { t } from "../../../i18n";
 
 export default function SettingsPannel() {
   const dispatch = useAppDispatch();
@@ -24,15 +26,15 @@ export default function SettingsPannel() {
       <Flex gap={10} align="center">
         <NavLink to="/discoveryCalculator">
           <Flex gap={6} align="center">
-            <span>discovery:</span>
+            <span>{t("misc", "Discovery")} :</span>
             <span style={{ color: APP_PALETTE.textPrimary }}>
               {storedDiscovery}
             </span>
           </Flex>
         </NavLink>
         <span>|</span>
-        <Flex gap={6}>
-          <span>spoilers</span>
+        <Flex gap={6} align="center">
+          <span>{t("misc", "Spoilers")}:</span>
           <Switch
             size="small"
             checked={spoilers}
@@ -48,7 +50,7 @@ export default function SettingsPannel() {
         <span>|</span>
         <ImportCollectionWidget />
         <span>|</span>
-        {/*  <LangWidget /> */}
+        <LangWidget />
       </Flex>
 
       <Divider size="small" />

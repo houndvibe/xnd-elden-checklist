@@ -29,6 +29,7 @@ import {
   isMultiVersionTalisman,
 } from "../../../lib/utils/misc";
 import CustomTableTitle from "./CustomTableTitle";
+import { t } from "../../../i18n";
 
 interface Props {
   setHoveredItemName: React.Dispatch<React.SetStateAction<string>>;
@@ -82,7 +83,7 @@ export default function Table({
         rel="noopener noreferrer"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className={styles[type]}>{value}</div>
+        <div className={styles[type]}>{t(record.type, value)}</div>
       </Link>
     );
 

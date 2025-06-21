@@ -8,6 +8,7 @@ import {
   isArmourSet,
   isMultiVersionTalisman,
 } from "../../../lib/utils/misc";
+import { t } from "../../../i18n";
 
 interface PreviewProps {
   hoveredItemName: string;
@@ -70,9 +71,9 @@ export default function Preview({
 
   return (
     <Flex className={styles.preview} vertical align="center" gap={30}>
-      {hoveredItemName ? (
+      {currentItem ? (
         <Flex vertical align="center" gap={10}>
-          <span className={styles.title}>{name}</span>
+          <span className={styles.title}>{t(currentItem.type, name)}</span>
           <Flex wrap="wrap" justify="center" gap={12}>
             {imageUrls.map((url, index) => (
               <>

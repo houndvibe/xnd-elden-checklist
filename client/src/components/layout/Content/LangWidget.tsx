@@ -1,6 +1,6 @@
 import { Radio, Flex } from "antd";
 import type { RadioChangeEvent } from "antd";
-import { setLanguage } from "../../../i18n";
+import { setLanguage, t } from "../../../i18n";
 
 type Lang = "ru" | "en";
 
@@ -14,7 +14,7 @@ export default function LangWidget() {
 
   return (
     <Flex gap={6} align="center">
-      <span>lang:</span>
+      <span>{t("misc", "Lang")}:</span>
       <Radio.Group
         size="small"
         defaultValue={storedLang ?? "en"}

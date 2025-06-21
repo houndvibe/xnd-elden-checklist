@@ -28,7 +28,7 @@ export function isMultiVersionTalisman(
 
 export function toTitleCaseFromCamel(
   str: string,
-  maxLength: number = 20
+  maxLength: number = 50
 ): string {
   const result = str
     .replace(/([a-z])([A-Z])/g, "$1 $2")
@@ -59,7 +59,7 @@ export function transformCategoryToName(category: ItemCategory) {
     case "spiritAshes":
       return "Spirit Ashes";
     case "ashesOfWar":
-      return "Ashes of war";
+      return "Ashes Of War";
     case "craft":
       return "Craft";
     case "tearsAndUpgrades":

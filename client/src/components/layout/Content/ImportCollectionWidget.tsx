@@ -1,5 +1,6 @@
 import { Button, Flex, Input, message } from "antd";
 import { useState } from "react";
+import { t } from "../../../i18n";
 
 export default function ImportCollectionWidget() {
   const [inputValue, setInputValue] = useState("");
@@ -44,16 +45,16 @@ export default function ImportCollectionWidget() {
       {contextHolder}
       <Input
         size="small"
-        placeholder="paste your progress data..."
+        placeholder={t("misc", "Paste Your Progress Data") + "..."}
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
       <Button onClick={handleImport} size="small">
-        import progress
+        {t("misc", "Import progress")}
       </Button>
       <span>|</span>
       <Button onClick={exportData} size="small">
-        export progress
+        {t("misc", "Export progress")}
       </Button>
     </Flex>
   );

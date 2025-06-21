@@ -9,6 +9,7 @@ import type { ItemCategory, ItemSubCategoryMap } from "../../global-types";
 
 import logoIcon from "../../assets/dlc-icon.png";
 import styles from "./Dashboard.module.scss";
+import { t } from "../../i18n";
 
 interface DashboardWidgetProps {
   dataType: ItemCategory;
@@ -57,7 +58,7 @@ export default function DashboardWidget({
     <Flex vertical gap={20} flex={3}>
       {Object.entries(subData).map(([subclassName, subItems]) => {
         const stats = getSubCategoryStats(subItems);
-        const title = toTitleCaseFromCamel(subclassName, 14);
+        const title = t("misc", toTitleCaseFromCamel(subclassName));
 
         return (
           <NavLink
@@ -96,7 +97,7 @@ export default function DashboardWidget({
         className={`${styles.widget} ${styles[mode ? "full" : "compact"]}`}
         title={
           <div style={{ textAlign: mode ? "start" : "center" }}>
-            {toTitleCaseFromCamel(dataType)}
+            {t("misc", toTitleCaseFromCamel(dataType))}
           </div>
         }
         onClick={() => navigate(`/${dataType}`)}

@@ -151,7 +151,7 @@ const SearchWithSuggestions = () => {
       style={{ width: "100%" }}
     >
       <Search
-        placeholder="Search..."
+        placeholder={t("misc", "Search...")}
         onSearch={handleSubmit}
         onChange={handleInputChange}
       />

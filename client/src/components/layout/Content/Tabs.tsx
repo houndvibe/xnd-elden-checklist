@@ -12,6 +12,7 @@ import DiscoveryCalculator from "../../discovery-calculator/DiscoveryCalculator"
 import SettingsPannel from "./SettingsPannel";
 
 import type { ItemCategory } from "../../../global-types";
+import { t } from "../../../i18n";
 
 type ExtendedTabKey = ItemCategory | "dashboard" | "discoveryCalculator";
 
@@ -24,15 +25,15 @@ interface CustomTabItem {
 const createItemTabs = (): CustomTabItem[] =>
   itemCategories.map((category) => ({
     key: category,
-    label: transformCategoryToName(category),
+    label: t("misc", transformCategoryToName(category)),
     children: <CategoryTab category={category} />,
   }));
 
 const baseTabs: CustomTabItem[] = [
-  { key: "dashboard", label: "PROGRESS", children: <Dashboard /> },
+  { key: "dashboard", label: t("misc", "PROGRESS"), children: <Dashboard /> },
   {
     key: "discoveryCalculator",
-    label: "Discovery Calculator",
+    label: t("misc", "Discovery Calculator"),
     children: <DiscoveryCalculator />,
   },
 ];

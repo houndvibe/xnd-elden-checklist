@@ -14,6 +14,7 @@ import {
   toTitleCaseFromCamel,
   transformCategoryToName,
 } from "../../../lib/utils/misc";
+import { t } from "../../../i18n";
 
 interface Props {
   category: ItemCategory;
@@ -65,7 +66,7 @@ export default function CategoryTab({ category }: Props) {
         key,
         label: (
           <SubCategoryLabel
-            title={toTitleCaseFromCamel(key as ItemSubCategory)}
+            title={t("misc", toTitleCaseFromCamel(key as ItemSubCategory))}
             data={subData}
           />
         ),
