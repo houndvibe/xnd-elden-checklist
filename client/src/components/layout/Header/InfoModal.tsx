@@ -57,8 +57,8 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
         <Title level={4}>
           <span className="info-title-text">
             {isRussian
-              ? "Спасибо что воспользовались The Elden Compendium!"
-              : "Thank You for Using The Elden Compendium!!"}
+              ? "Спасибо что воспользовались Elden Compendium!"
+              : "Thank You for Using The Elden Compendium!"}
           </span>
         </Title>
         <Paragraph>
