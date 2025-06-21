@@ -7,6 +7,9 @@
       padding: 0;
       background-color: $bg-light;
     }
+    .info-title-text {
+      color: $text-highlighted;
+    }
 
     .langSwitch {
       display: flex;
@@ -15,7 +18,6 @@
 
       span {
         font-size: 13px;
-        color: #d9d9d9;
       }
     }
 
@@ -36,12 +38,13 @@
 
       .ant-typography {
         color: inherit;
+        font-size: 18px;
+        font-family: "IM Fell English SC";
 
         h5 {
-          color: #f0f0f0;
         }
         h4 {
-          color: #f0f0f0;
+          font-family: Cinzel;
         }
 
         code {
@@ -55,16 +58,11 @@
         a {
           color: $link-color;
           text-decoration: underline;
-          font-size: 14px;
+          font-size: 18px;
 
           &:hover {
             color: #69c0ff;
           }
-        }
-
-        strong {
-          color: #f0f0f0;
-          font-weight: 600;
         }
       }
     }

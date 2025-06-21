@@ -8,7 +8,7 @@ interface SettingsState {
 }
 
 const initialState: SettingsState = loadFromStorage("xnd.settings", {
-  showSettings: false,
+  showSettings: true,
   spoilers: false,
   showWelcome: true,
 });

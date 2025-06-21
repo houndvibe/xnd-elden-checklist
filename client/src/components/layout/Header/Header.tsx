@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Layout, Image } from "antd";
+import { Layout, Image, Tooltip } from "antd";
 import { QuestionCircleOutlined, SettingOutlined } from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
 
@@ -49,17 +49,18 @@ export default function Header() {
         </div>
 
         <div className={styles.icons}>
-          <SettingOutlined
-            className={styles.icon}
-            onClick={handleToggleSettings}
-            title="Settings"
-          />
-          <QuestionCircleOutlined
-            className={styles.icon}
-            title="Help"
-            onClick={openHelpModal}
-          />
-          {/*   <TranslationOutlined className={styles.icon} title="Language" /> */}
+          <Tooltip title={"Tools"}>
+            <SettingOutlined
+              className={styles.icon}
+              onClick={handleToggleSettings}
+            />
+          </Tooltip>
+          <Tooltip title={"Info"}>
+            <QuestionCircleOutlined
+              className={styles.icon}
+              onClick={openHelpModal}
+            />
+          </Tooltip>
         </div>
       </div>
       <InfoModal isOpen={isHelpModalOpen} onCancel={closeHelpModal} />

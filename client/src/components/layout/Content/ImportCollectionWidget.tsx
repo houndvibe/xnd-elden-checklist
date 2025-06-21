@@ -1,7 +1,7 @@
 import { Button, Flex, Input, message } from "antd";
 import { useState } from "react";
 
-export default function ImportCollection() {
+export default function ImportCollectionWidget() {
   const [inputValue, setInputValue] = useState("");
 
   const [messageApi, contextHolder] = message.useMessage();
@@ -44,7 +44,7 @@ export default function ImportCollection() {
       {contextHolder}
       <Input
         size="small"
-        placeholder="JSON..."
+        placeholder="paste your progress data..."
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />

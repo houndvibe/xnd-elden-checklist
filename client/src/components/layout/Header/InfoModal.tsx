@@ -4,7 +4,7 @@ import styles from "./InfoModal.module.scss";
 import { useAppSelector } from "../../../store/typedDispatch";
 
 import faq from "../../../assets/icons/faq.png";
-import important from "../../../assets/icons/important.png";
+/* import important from "../../../assets/icons/important.png"; */
 import contacts from "../../../assets/icons/contacts.png";
 const { Paragraph, Text, Title, Link } = Typography;
 
@@ -18,6 +18,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
   const [lang, setLang] = useState<"en" | "ru">("en");
 
   const isRussian = lang === "ru";
+  /*   const isElectron = !!window.electronAPI; */
 
   const handleLangSwitch = (checked: boolean) => {
     setLang(checked ? "ru" : "en");
@@ -54,9 +55,11 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
     >
       <Typography>
         <Title level={4}>
-          {isRussian
-            ? "Спасибо за использование приложения!"
-            : "Thank You for Using the App!"}
+          <span className="info-title-text">
+            {isRussian
+              ? "Спасибо что воспользовались The Elden Compendium!"
+              : "Thank You for Using The Elden Compendium!!"}
+          </span>
         </Title>
         <Paragraph>
           {isRussian
@@ -66,51 +69,55 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
 
         <Divider />
 
-        <Title level={5}>
-          <Flex align="center" gap={10}>
-            <>
-              <Image src={important} width={30} />
-            </>
-            <>{isRussian ? "Важная информация" : "Important Information"}</>
-          </Flex>
-        </Title>
-
-        <Paragraph>
-          {isRussian
-            ? "Приложение сохраняет ваш прогресс в"
-            : "This app saves your progress using your browser's"}{" "}
-          <Text code>Local Storage</Text>.
-        </Paragraph>
-        <Paragraph>
-          <Title level={5} style={{ margin: 0 }}>
-            {isRussian
-              ? "Не удаляйте следующие ключи:"
-              : "Do not delete the following keys:"}
-          </Title>
-          <br />
-          <Text code>xnd.collection</Text> —{" "}
-          {isRussian
-            ? "содержит данные о собранных предметах."
-            : "contains all collected item data."}
-          <br />
-          <Text code>xnd.settings</Text> —{" "}
-          {isRussian
-            ? "содержит ваши личные настройки."
-            : "contains your personal preferences."}
-        </Paragraph>
-        <Paragraph>
-          {isRussian
-            ? "Очистка хранилища браузера или удаление этих ключей приведёт к потере прогресса!"
-            : "Clearing your browser storage or removing these keys will reset your progress!"}
-        </Paragraph>
-
-        <Divider />
-
+        {/*  {!isElectron && (
+          <>
+            <Title level={5}>
+              <Flex align="center" gap={10}>
+                <>
+                  <Image src={important} width={30} />
+                </>
+                <>{isRussian ? "Важная информация" : "Important Information"}</>
+              </Flex>
+            </Title>
+            <Paragraph>
+              {isRussian
+                ? "Приложение сохраняет ваш прогресс в"
+                : "This app saves your progress using your browser's"}{" "}
+              <Text code>Local Storage</Text>.
+            </Paragraph>
+            <Paragraph>
+              <Title level={5} style={{ margin: 0 }}>
+                {isRussian
+                  ? "Не удаляйте следующие ключи:"
+                  : "Do not delete the following keys:"}
+              </Title>
+              <br />
+              <Text code>xnd.collection</Text> —{" "}
+              {isRussian
+                ? "содержит данные о собранных предметах."
+                : "contains all collected item data."}
+              <br />
+              <Text code>xnd.settings</Text> —{" "}
+              {isRussian
+                ? "содержит ваши личные настройки."
+                : "contains your personal preferences."}
+            </Paragraph>
+            <Paragraph>
+              {isRussian
+                ? "Очистка хранилища браузера или удаление этих ключей приведёт к потере прогресса!"
+                : "Clearing your browser storage or removing these keys will reset your progress!"}
+            </Paragraph>
+            <Divider />
+          </>
+        )}
+ */}
         <Title level={5}>
           <Flex align="center" gap={10}>
             <Image src={contacts} width={50} />
 
-            <>{isRussian ? "Контакты и поддержка" : "Contact & Support"}</>
+            <span className="info-title-text">
+              {isRussian ? "Контакты и поддержка" : "Contact & Support"}
+            </span>
           </Flex>
         </Title>
 
@@ -148,23 +155,34 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
             <>
               <Image src={faq} width={50} />
             </>
-            <>
+            <span className="info-title-text">
               {isRussian
                 ? "Часто задаваемые вопросы (FAQ)"
                 : "Frequently Asked Questions (FAQ)"}
-            </>
+            </span>
           </Flex>
         </Title>
         <Paragraph>
           <Text strong>
             {isRussian
-              ? "Есть ли в приложении другие языки кроме английского?"
-              : "Are there other languages available besides English?"}
+              ? " ⬤ Есть ли в приложении другие языки кроме английского?"
+              : " ⬤ Are there other languages available besides English?"}
           </Text>
           <br />
           {isRussian
-            ? "На данный момент нет. Возможно, они появятся в будущих обновлениях."
-            : "Not at the moment. More languages may be added in future updates."}
+            ? "- На данный момент нет. Возможно, они появятся в будущих обновлениях."
+            : "- Not at the moment. More languages may be added in future updates."}
+        </Paragraph>
+        <Paragraph>
+          <Text strong>
+            {isRussian
+              ? "⬤ Вышла новая версия приложения - как мне перенести в нее данные?"
+              : "⬤ A new version of the app is out — how do I transfer my data?"}
+          </Text>
+          <br />
+          {isRussian
+            ? '- Откройте настройки (иконка шестерёнки вверху справа) и нажмите "Export progress". Затем в новой версии приложения вставьте строку в поле импорта и нажмите "Import progress".'
+            : '- Open settings (gear icon in the top right) and click "Export progress". Then, in the new version of the app, paste the string into the import field and click "Import progress".'}
         </Paragraph>
       </Typography>
     </Modal>

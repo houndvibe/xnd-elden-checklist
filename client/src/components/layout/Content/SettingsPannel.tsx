@@ -1,11 +1,13 @@
-import { Button, Divider, Flex, Switch } from "antd";
+import { Divider, Flex, Switch } from "antd";
 import { NavLink } from "react-router-dom";
-import { ZoomInOutlined, ZoomOutOutlined } from "@ant-design/icons";
+
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
 import { setSpoilers } from "../../../store/settingsSlice";
 
 import { APP_PALETTE } from "../../../lib/consts";
-import ImportCollection from "./CollectionImport";
+
+import ZoomWidget from "./ZoomWidget";
+import ImportCollectionWidget from "./ImportCollectionWidget";
 
 export default function SettingsPannel() {
   const dispatch = useAppDispatch();
@@ -16,11 +18,6 @@ export default function SettingsPannel() {
   );
 
   const isElectron = !!window.electronAPI;
-  console.log(isElectron);
-
-  const zoomIn = () => window.electronAPI?.zoom?.(1);
-  const zoomOut = () => window.electronAPI?.zoom?.(-1);
-  const resetZoom = () => window.electronAPI?.zoom?.(0);
 
   return (
     <>
@@ -42,29 +39,14 @@ export default function SettingsPannel() {
             onChange={(checked) => dispatch(setSpoilers(checked))}
           />
         </Flex>
-        {isElectron ? (
+        {isElectron && (
           <>
-            {" "}
             <span>|</span>
-            <Flex justify="center" align="center" gap={2}>
-              <>Zoom</>
-              <Button type="text" size="small" onClick={zoomIn}>
-                <ZoomInOutlined />
-              </Button>
-              <span>/</span>
-              <Button type="text" size="small" onClick={zoomOut}>
-                <ZoomOutOutlined />
-              </Button>
-              <span>/</span>
-              <Button type="text" size="small" onClick={resetZoom}>
-                default
-              </Button>
-            </Flex>
+            <ZoomWidget />
           </>
-        ) : null}
-
+        )}
         <span>|</span>
-        <ImportCollection />
+        <ImportCollectionWidget />
         <span>|</span>
       </Flex>
 
