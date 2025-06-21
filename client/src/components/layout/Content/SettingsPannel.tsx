@@ -48,6 +48,7 @@ export default function SettingsPannel() {
         <span>|</span>
         <ImportCollectionWidget />
         <span>|</span>
+        {/*  <LangWidget /> */}
       </Flex>
 
       <Divider size="small" />

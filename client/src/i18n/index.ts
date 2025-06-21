@@ -1,19 +1,21 @@
+type Language = "ru" | "en";
+type Translations = Record<string, Record<string, string>>;
+
 import ru from "./ru.json";
 import en from "./en.json";
 
-const translations = { ru, en };
-const currentLang: "ru" | "en" =
-  (localStorage.getItem("xnd.lang") as "ru" | "en") || "en";
+const translations: Record<Language, Translations> = { ru, en };
 
-// Устанавливаем класс и lang на html
+const currentLang: Language =
+  (localStorage.getItem("xnd.lang") as Language) || "en";
+
 document.documentElement.classList.add(`lang-${currentLang}`);
 document.documentElement.setAttribute("lang", currentLang);
 
-// 👇 Вызывается при смене языка вручную
-export const setLanguage = (lang: "ru" | "en") => {
+export const setLanguage = (lang: Language) => {
   if (lang !== currentLang) {
     localStorage.setItem("xnd.lang", lang);
-    window.location.reload(); // страница перезагрузится и применит язык из localStorage
+    window.location.reload();
   }
 };
 

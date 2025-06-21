@@ -26,6 +26,23 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/fonts/CormorantGaramond-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* .lang-ru body,
+.lang-ru * {
+  font-family: "Cormorant Garamond", "Lora", "Rozha One", serif;
+}
+
+.lang-en body,
+.lang-en * {
+  font-family: "Cinzel", "IM Fell English SC", serif;
+}
+ */
 * {
   color: $text-primary;
   font-family: "Cinzel";

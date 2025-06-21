@@ -8,7 +8,7 @@ import {
   setGlobalSearchItem,
   setGlobalSearchSet,
 } from "../../../store/serviceSlice";
-
+import { t } from "../../../i18n";
 import { itemsData } from "../../../data";
 import { Collection } from "../../../store/collectionSlice";
 import { Item, ItemSubCategoryMap } from "../../../global-types";
@@ -91,15 +91,15 @@ const generateSuggestions = (query: string): Item[] => {
   if (!query) return [];
 
   const itemsFlatMap = flattenCollectionItems(itemsData);
-
   const uniqueByName = itemsFlatMap.reduce((acc, item) => {
     if (!acc[item.name]) acc[item.name] = item;
     return acc;
   }, {} as Record<string, Item>);
 
-  return Object.values(uniqueByName).filter((item) =>
-    item.name.toLowerCase().includes(query.toLowerCase())
-  );
+  return Object.values(uniqueByName).filter((item) => {
+    const translated = t(item.type, item.name).toLowerCase();
+    return translated.includes(query.toLowerCase());
+  });
 };
 
 const SearchWithSuggestions = () => {
@@ -116,7 +116,7 @@ const SearchWithSuggestions = () => {
       value: item.name,
       label: (
         <Flex justify="space-between">
-          {item.name}
+          {t(item.type, item.name)}
           <Image
             height={20}
             preview={false}
