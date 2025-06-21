@@ -34,7 +34,7 @@ export default function Footer() {
           </Flex>
         </Link>
 
-        <span>{`© ${currentYear} Xnd. Elden Ring Checklist`}</span>
+        <span>{`© ${currentYear} XnD's Elden Compendium`}</span>
       </Flex>
     </AppFooter>
   );

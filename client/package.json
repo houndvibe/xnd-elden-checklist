@@ -1,14 +1,14 @@
 {
-  "name": "xnd-elden-checklist",
-  "description": "Elden Ring item checklist app",
-  "author": "Xnd",
+  "name": "XnD's-Elden-Compendium",
+  "description": "Elden Ring Compendium app",
+  "author": "XnD",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "main": "main.js",
   "build": {
-    "appId": "com.example.myapp",
-    "productName": "MyApp",
+    "appId": "XnDeldenCompendium",
+    "productName": "Xnd's Elden Compendium",
     "files": [
       "dist/**",
       "node_modules/**",

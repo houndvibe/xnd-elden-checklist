@@ -1,3 +1,3 @@
-# xnd-elden-checklist
+# xnd-elden-compendium
 
-elden ring checklist in progress
+Elden Ring Compendium App
