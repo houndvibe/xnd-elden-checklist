@@ -20,6 +20,7 @@ import {
   setGlobalSearchSet,
 } from "../../../store/serviceSlice";
 import CustomTableTitle from "./CustomTableTitle";
+import { t } from "../../../i18n";
 
 interface Props {
   setHoveredItemName: React.Dispatch<React.SetStateAction<string>>;
@@ -84,7 +85,7 @@ export default function Table({
           rel="noopener noreferrer"
           onClick={(e) => e.stopPropagation()}
         >
-          <div className={styles.link}>{value}</div>
+          <div className={styles.link}>{t(record.type, value)}</div>
         </Link>
         {record.dlc && (
           <Tooltip title="Shadow of the Erdtree Dlc content">
