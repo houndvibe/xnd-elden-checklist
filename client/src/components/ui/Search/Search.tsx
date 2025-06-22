@@ -19,6 +19,7 @@ const { Search } = Input;
 type SuggestionOption = {
   value: string;
   label: React.ReactNode;
+  displayText: string;
 };
 
 const navigateToItem = (
@@ -112,25 +113,30 @@ const SearchWithSuggestions = () => {
   const handleSearchChange = (value: string) => {
     setSearchText(value);
 
-    const suggestions = generateSuggestions(value).map((item) => ({
-      value: item.name,
-      label: (
-        <Flex justify="space-between">
-          {t(item.type, item.name)}
-          <Image
-            height={20}
-            preview={false}
-            src={`./images/${item.type}/${item.subcategory}/${item.name}.png`}
-          />
-        </Flex>
-      ),
-    }));
+    const suggestions = generateSuggestions(value).map((item) => {
+      const translatedText = t(item.type, item.name);
+      return {
+        value: item.name,
+        displayText: translatedText,
+        label: (
+          <Flex justify="space-between">
+            {translatedText}
+            <Image
+              height={20}
+              preview={false}
+              src={`./images/${item.type}/${item.subcategory}/${item.name}.png`}
+            />
+          </Flex>
+        ),
+      };
+    });
 
     setOptions(suggestions);
   };
 
-  const handleSelect: AutoCompleteProps["onSelect"] = (value) => {
-    setSearchText(value);
+  const handleSelect: AutoCompleteProps["onSelect"] = (value, option) => {
+    // Используем displayText вместо value для отображения в поле ввода
+    setSearchText((option as SuggestionOption).displayText);
     navigateToItem(value, dispatch, navigate);
   };
 
@@ -139,7 +145,22 @@ const SearchWithSuggestions = () => {
   };
 
   const handleSubmit = (value: string) => {
-    navigateToItem(value, dispatch, navigate);
+    // Ищем соответствующий элемент в options
+    const matchingOption = options.find(
+      (option) => option.displayText.toLowerCase() === value.toLowerCase()
+    );
+
+    if (matchingOption) {
+      navigateToItem(matchingOption.value, dispatch, navigate);
+    } else {
+      // Если точного совпадения нет, используем первый вариант из списка
+      if (options.length > 0) {
+        navigateToItem(options[0].value, dispatch, navigate);
+        setSearchText(options[0].displayText);
+      } else {
+        navigateToItem(value, dispatch, navigate);
+      }
+    }
   };
 
   return (

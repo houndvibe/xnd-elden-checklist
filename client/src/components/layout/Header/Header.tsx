@@ -13,6 +13,7 @@ import styles from "./Header.module.scss";
 
 import {} from "antd";
 import InfoModal from "./InfoModal";
+import { t } from "../../../i18n";
 
 const { Header: AppHeader } = Layout;
 
@@ -49,13 +50,13 @@ export default function Header() {
         </div>
 
         <div className={styles.icons}>
-          <Tooltip title={"Tools"}>
+          <Tooltip title={t("misc", "Tools")}>
             <SettingOutlined
               className={styles.icon}
               onClick={handleToggleSettings}
             />
           </Tooltip>
-          <Tooltip title={"Info"}>
+          <Tooltip title={t("misc", "Info")}>
             <QuestionCircleOutlined
               className={styles.icon}
               onClick={openHelpModal}

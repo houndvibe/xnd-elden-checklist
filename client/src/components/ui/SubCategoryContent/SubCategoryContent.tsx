@@ -8,6 +8,7 @@ import type {
 import Preview from "./Preview";
 import Table from "./Table";
 import HierarchyTable from "./HierarchyTable";
+import { t } from "../../../i18n";
 
 interface Props {
   type: ItemCategory;
@@ -23,7 +24,7 @@ export default function SubCategoryContent({
   const [hoveredItemName, setHoveredItemName] = useState("");
 
   const sortedDataSource = [...dataSource].sort((a, b) =>
-    a.name.localeCompare(b.name)
+    t(type, a.name).localeCompare(t(type, b.name))
   );
 
   const isItArmorSet = type === "armour" && subcategory !== "pieces";

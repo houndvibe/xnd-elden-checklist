@@ -1,4 +1,5 @@
 import type { Item } from "../../global-types";
+import { t } from "../../i18n";
 import { isLegendaryItem } from "./misc";
 
 function getSortSteps(dataSource: Item[]): number[] {
@@ -28,6 +29,6 @@ export function smartNameSort(sortStep: number, a: Item, b: Item) {
       return Number(isLegendaryItem(a)) - Number(isLegendaryItem(b));
     case 0: // alpabet
     default:
-      return a.name.localeCompare(b.name);
+      return t(a.type, a.name).localeCompare(t(b.type, b.name));
   }
 }

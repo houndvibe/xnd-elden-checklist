@@ -9,7 +9,7 @@ export default function ImportCollectionWidget() {
 
   const handleImport = () => {
     if (!inputValue.trim()) {
-      messageApi.error("Input is empty!");
+      messageApi.error(t("misc", "Input is empty!"));
       return;
     }
 
@@ -21,20 +21,20 @@ export default function ImportCollectionWidget() {
       }
 
       if (typeof parsed !== "object" || parsed === null) {
-        messageApi.error("Wrong format");
+        messageApi.error(t("misc", "Wrong format"));
       }
 
       localStorage.setItem("xnd.collection", JSON.stringify(parsed));
       window.location.reload();
     } catch (e) {
       console.error(e);
-      message.error("Wrong format");
+      message.error(t("misc", "Wrong format"));
     }
   };
 
   const exportData = () => {
     const data = localStorage.getItem("xnd.collection");
-    messageApi.info("Your progress data saved to clipboard!");
+    messageApi.info(t("misc", "Your progress data saved to clipboard!"));
     if (data) {
       navigator.clipboard.writeText(data);
     }
