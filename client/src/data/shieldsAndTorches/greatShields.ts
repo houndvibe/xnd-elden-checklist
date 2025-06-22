@@ -502,8 +502,6 @@ export const greatShields: ShieldOrTorchItem[] = [
     collected: false,
     legendary: false,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/visage_shield_elden_ring_wiki_guide_200px.png",
     /*     droppedBy: null, */
     /*     vendor: null, */
     /*     placementDescription: */
@@ -512,24 +510,10 @@ export const greatShields: ShieldOrTorchItem[] = [
   {
     type: "shieldsAndTorches",
     subcategory: "greatShields",
-    name: "One‑Eyed Shield",
-    /*     description:
-      "Greatshield that scales with Strength. No skill. High guard boost; strong resistances.", */
+    name: "One-Eyed Shield",
     link: "https://eldenring.wiki.fextralife.com/One-Eyed+Shield",
     collected: false,
     legendary: false,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/one-eyed_shield_elden_ring_wiki_guide_200px.png",
-    /*     droppedBy: {
-      name: "Chief Guardian Arghanthy",
-      dropRate: 100,
-      link: "https://eldenring.wiki.fextralife.com/Chief+Guardian+Arghanthy",
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/chief_guardian_arghanthy_enemies_elden_ring_wiki_600px.jpg",
-    },
-    vendor: null,
-    placementDescription:
-      "Dropped by Chief Guardian Arghanthy in the Guardian's Garrison (Mountaintops of the Giants).", */
   },
 ];

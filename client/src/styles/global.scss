@@ -37,7 +37,7 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
 .lang-ru * {
   font-family: "Cormorant Garamond", "Lora", "Rozha One", serif;
   font-weight: 700;
-  font-size: 20px;
+  /*   font-size: 20px; */
 }
 
 /* .lang-en body,

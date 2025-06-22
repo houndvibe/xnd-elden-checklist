@@ -63,7 +63,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
         </Title>
         <Paragraph>
           {isRussian
-            ? "Надеюсь, этот инструмент поможет вам собрать абсолютно все предметы в Elden Ring — включая дополнения."
+            ? "Надеюсь, этот инструмент поможет вам собрать абсолютно все предметы в Elden Ring — включая DLC контент."
             : "I hope this tool helps you collect every single item in Elden Ring — including all DLC content."}
         </Paragraph>
 
@@ -162,17 +162,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
             </span>
           </Flex>
         </Title>
-        <Paragraph>
-          <Text strong>
-            {isRussian
-              ? " ⬤ Есть ли в приложении другие языки кроме английского?"
-              : " ⬤ Are there other languages available besides English?"}
-          </Text>
-          <br />
-          {isRussian
-            ? "- На данный момент нет. Возможно, они появятся в будущих обновлениях."
-            : "- Not at the moment. More languages may be added in future updates."}
-        </Paragraph>
+
         <Paragraph>
           <Text strong>
             {isRussian

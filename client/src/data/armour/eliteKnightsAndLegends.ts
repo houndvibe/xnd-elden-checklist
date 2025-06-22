@@ -338,9 +338,9 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
         type: "armour",
         subcategory: "eliteKnightsAndLegends",
         pieceType: "helm",
-        name: "Ronin's Helm",
+        name: "Iron Kasa",
         collected: false,
-        link: "https://eldenring.wiki.fextralife.com/Ronin's+Helm",
+        link: "https://eldenring.wiki.fextralife.com/Iron+Kasa",
         dlc: false,
       },
       {
