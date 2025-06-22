@@ -168,7 +168,8 @@ export default function Table({
       rowKey={(item) => item.name}
       onChange={handleTableChange}
       expandable={{
-        expandedRowKeys: expandedKeys,
+        defaultExpandAllRows: true,
+        /*  expandedRowKeys: expandedKeys, */
         onExpandedRowsChange: (keys) => {
           setExpandedKeys([...keys]);
         },
