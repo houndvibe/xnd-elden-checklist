@@ -2,6 +2,7 @@ import { Flex, Image, Select } from "antd";
 import type { SelectProps } from "antd";
 import { DiscoveryItem } from "./data-discovery";
 import styles from "./DiscoveryCalculator.module.scss";
+import { t } from "../../i18n";
 
 interface DiscoveryItemSelectProps {
   items: DiscoveryItem[];
@@ -14,15 +15,15 @@ const renderItemDetails = (item: DiscoveryItem): string => {
   const details: string[] = [];
 
   if (item.effect.arcaneGain > 0) {
-    details.push(`Arcane: +${item.effect.arcaneGain}`);
+    details.push(`${t("misc", "Arcane")}: +${item.effect.arcaneGain}`);
   }
 
   if (item.effect.discoveryGain > 0) {
-    details.push(`Discovery: +${item.effect.discoveryGain}`);
+    details.push(`${t("misc", "Discovery")}: +${item.effect.discoveryGain}`);
   }
 
   if (item.time) {
-    details.push(`Duration: ${item.time}s`);
+    details.push(`${t("misc", "Duration")}: ${item.time} s`);
   }
 
   return details.join(" | ");

@@ -4,6 +4,7 @@ import type { ColumnsType } from "antd/es/table";
 import { calculateItemDropChance } from "../../lib/utils/misc";
 import { EXAMPLE_ITEM_DROPS, ItemDropTable } from "./data-discovery";
 import { useState } from "react";
+import { t } from "../../i18n";
 
 interface ExamplesTableProps {
   calculatedDiscovery: number;
@@ -11,7 +12,7 @@ interface ExamplesTableProps {
 
 const renderNameColumn = (name: string, record: ItemDropTable) => (
   <Flex align="center" gap={10}>
-    {name}
+    {t("misc", name)}
     <Image src={record.imgUrl} height={50} preview={false} />
   </Flex>
 );
@@ -50,7 +51,7 @@ const ExamplesTable = ({ calculatedDiscovery }: ExamplesTableProps) => {
   return (
     <div>
       <div style={{ marginBottom: 8 }}>
-        Rare items drop rate change examples:
+        {t("misc", "Rare items drop rate change examples:")}
       </div>
       <Table<ItemDropTable>
         style={{ width: 400 }}
@@ -62,7 +63,7 @@ const ExamplesTable = ({ calculatedDiscovery }: ExamplesTableProps) => {
         rowKey="name"
       />
       <Flex align="center" gap={10} style={{ marginTop: 10 }}>
-        Base Drop Rate:
+        {t("misc", "Base Drop Rate") + ":"}
         <InputNumber
           max={99}
           min={0.1}
@@ -71,7 +72,8 @@ const ExamplesTable = ({ calculatedDiscovery }: ExamplesTableProps) => {
           style={{ width: 70 }}
           onChange={(v) => setChance(v)}
         />
-        Your chance:
+        {t("misc", "Your chance") + ":"}
+
         <div>{`${calculateItemDropChance(chance!, calculatedDiscovery)}%`}</div>
       </Flex>
     </div>

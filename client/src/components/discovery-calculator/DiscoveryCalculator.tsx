@@ -12,6 +12,7 @@ import { discoveryData, DiscoveryItem } from "./data-discovery";
 import { BASE_DISCOVERY } from "../../lib/consts";
 
 import styles from "./DiscoveryCalculator.module.scss";
+import { t } from "../../i18n";
 
 type NullableString = string | null;
 type SelectorProps = {
@@ -22,7 +23,7 @@ type SelectorProps = {
 const AmuletSelect = ({ value, onChange }: SelectorProps) => (
   <DiscoveryItemSelect
     items={discoveryData.amulets}
-    placeholder="Select an amulet"
+    placeholder={t("misc", "Select an amulet")}
     value={value}
     onChange={onChange}
   />
@@ -31,7 +32,7 @@ const AmuletSelect = ({ value, onChange }: SelectorProps) => (
 const HelmetSelect = ({ value, onChange }: SelectorProps) => (
   <DiscoveryItemSelect
     items={discoveryData.helmets}
-    placeholder="Select a helmet"
+    placeholder={t("misc", "Select a helmet")}
     value={value}
     onChange={onChange}
   />
@@ -40,7 +41,7 @@ const HelmetSelect = ({ value, onChange }: SelectorProps) => (
 const ConsumableSelect = ({ value, onChange }: SelectorProps) => (
   <DiscoveryItemSelect
     items={discoveryData.consumables}
-    placeholder="Select a consumable"
+    placeholder={t("misc", "Select consumable")}
     value={value}
     onChange={onChange}
   />
@@ -84,7 +85,7 @@ export default function DiscoveryCalculator() {
 
   const formFields = [
     {
-      label: "Arcane",
+      label: t("misc", "Arcane"),
       component: (
         <InputNumber
           min={0}
@@ -96,27 +97,27 @@ export default function DiscoveryCalculator() {
       ),
     },
     {
-      label: "Godrick's Great Rune",
+      label: t("misc", "Godrick's Great Rune"),
       component: <Switch checked={rune} onChange={setRune} />,
     },
     {
-      label: "Oath of Vengeance",
+      label: t("misc", "Oath of Vengeance"),
       component: <Switch checked={oath} onChange={setOath} />,
     },
     {
-      label: "Thiollier's Garb",
+      label: t("misc", "Thiollier's Garb"),
       component: <Switch checked={chest} onChange={setChest} />,
     },
     {
-      label: "Amulet",
+      label: t("misc", "Amulet"),
       component: <AmuletSelect value={amulet} onChange={setAmulet} />,
     },
     {
-      label: "Helm",
+      label: t("misc", "Helm"),
       component: <HelmetSelect value={helm} onChange={setHelm} />,
     },
     {
-      label: "Consumable",
+      label: t("misc", "Consumable"),
       component: (
         <ConsumableSelect value={consumable} onChange={setConsumable} />
       ),
@@ -136,7 +137,9 @@ export default function DiscoveryCalculator() {
         </Flex>
 
         <Flex vertical className={styles.resultsContainer}>
-          <div className={styles.totalLabel}>Total discovery:</div>
+          <div className={styles.totalLabel}>
+            {t("misc", "Total Discovery") + ":"}
+          </div>
           <div className={styles.totalValue}>{storedDiscovery}</div>
         </Flex>
 
