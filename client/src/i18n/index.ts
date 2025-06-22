@@ -20,6 +20,7 @@ export const setLanguage = (lang: Language) => {
 };
 
 export const t = (category: string, key: string): string => {
+  console.log(category);
   return (
     translations[currentLang]?.[category]?.[key] ||
     translations["en"]?.[category]?.[key] ||

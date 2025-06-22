@@ -57,4 +57,29 @@ export const paintings: InfoItems[] = [
     link: "https://eldenring.wiki.fextralife.com/Sorcerer",
     dlc: false,
   },
+
+  {
+    type: "infoItems",
+    subcategory: "paintings",
+    name: "Domain of Dragons",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Domain+of+Dragons+Painting",
+    dlc: true,
+  },
+  {
+    type: "infoItems",
+    subcategory: "paintings",
+    name: "The Sacred Tower",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/The+Sacred+Tower+Painting",
+    dlc: true,
+  },
+  {
+    type: "infoItems",
+    subcategory: "paintings",
+    name: "Incursion",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Incursion+Painting",
+    dlc: true,
+  },
 ];
