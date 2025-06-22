@@ -13,9 +13,10 @@ import {
 } from "../../lib/consts";
 
 import styles from "./Dashboard.module.scss";
+import { t } from "../../i18n";
 
 export default function Dashboard() {
-  const [isCompactMode, setIsCompactMode] = useState(false);
+  const [isCompactMode, setIsCompactMode] = useState(true);
   const collectionData = useAppSelector(
     (state) => state.collection.collectionData
   );
@@ -88,12 +89,14 @@ export default function Dashboard() {
         <Card
           title={
             <Flex justify="space-between" align="center">
-              <span>General stats</span>
+              <span>{t("misc", "General stats")}</span>
               <Button
                 onClick={() => setIsCompactMode((prev) => !prev)}
                 style={{ background: APP_PALETTE.successGreen }}
               >
-                {isCompactMode ? "To full mode" : "To compact mode"}
+                {!isCompactMode
+                  ? t("misc", "To full mode")
+                  : t("misc", "To compact mode")}
               </Button>
             </Flex>
           }
