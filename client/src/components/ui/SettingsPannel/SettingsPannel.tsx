@@ -6,7 +6,7 @@ import { setSpoilers } from "../../../store/settingsSlice";
 
 import { APP_PALETTE } from "../../../lib/consts";
 
-import ZoomWidget from "./ZoomWidget";
+/* import ZoomWidget from "./ZoomWidget"; */
 import ImportCollectionWidget from "./ImportCollectionWidget";
 import LangWidget from "./LangWidget";
 import { t } from "../../../i18n";

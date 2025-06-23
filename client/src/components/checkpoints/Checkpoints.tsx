@@ -273,6 +273,7 @@ export default function Checkpoints() {
                 <YAxis />
                 <RechartsTooltip
                   shared={false}
+                  wrapperStyle={{ zIndex: 1000 }}
                   formatter={(value, name) => [
                     value,
                     t("misc", name.toString()),
@@ -310,6 +311,7 @@ export default function Checkpoints() {
                 <YAxis />
                 <RechartsTooltip
                   shared={false}
+                  wrapperStyle={{ zIndex: 1000 }}
                   formatter={(value, name) => [
                     value,
                     t(
@@ -369,6 +371,7 @@ export default function Checkpoints() {
                 <YAxis domain={[0, 100]} />
                 <RechartsTooltip
                   shared={false}
+                  wrapperStyle={{ zIndex: 1000 }}
                   formatter={(value, name) => [
                     `${value}%`,
                     t(
@@ -585,3 +588,6 @@ export default function Checkpoints() {
     </Flex>
   );
 }
+
+
+
