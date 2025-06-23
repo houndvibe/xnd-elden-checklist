@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
 import Link from "antd/es/typography/Link";
-import dlcIcon from "../../../assets/dlc-icon.png";
 import { getStoreAction } from "../../../store/actions";
 import { getNextSortStep, smartNameSort } from "../../../lib/utils/sorters";
 import { useEffect } from "react";
@@ -89,7 +88,7 @@ export default function Table({
         </Link>
         {record.dlc && (
           <Tooltip title="Shadow of the Erdtree Dlc content">
-            <Image src={dlcIcon} height={20} />
+            <Image src={"/assets/dlc-icon.png"} height={20} />
           </Tooltip>
         )}
       </Flex>

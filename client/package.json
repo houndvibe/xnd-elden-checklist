@@ -31,8 +31,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "electron": "electron .",
-    "dist": "electron-builder",
-    "compress-images": "node scripts/compress-images.js"
+    "dist": "electron-builder"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
@@ -69,4 +68,3 @@
     "vite": "^6.3.5"
   }
 }
-

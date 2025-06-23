@@ -3,9 +3,6 @@ import { Divider, Modal, Space, Typography, Switch, Flex, Image } from "antd";
 import styles from "./InfoModal.module.scss";
 import { useAppSelector } from "../../../store/typedDispatch";
 
-import faq from "../../../assets/icons/faq.png";
-/* import important from "../../../assets/icons/important.png"; */
-import contacts from "../../../assets/icons/contacts.png";
 const { Paragraph, Text, Title, Link } = Typography;
 
 interface Props {
@@ -113,7 +110,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
  */}
         <Title level={5}>
           <Flex align="center" gap={10}>
-            <Image src={contacts} width={50} />
+            <Image src={"assets/icons/contacts.png"} width={50} />
 
             <span className="info-title-text">
               {isRussian ? "Контакты и поддержка" : "Contact & Support"}
@@ -153,7 +150,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
         <Title level={5}>
           <Flex align="center" gap={10}>
             <>
-              <Image src={faq} width={50} />
+              <Image src={"assets/icons/faq.png"} width={50} />
             </>
             <span className="info-title-text">
               {isRussian

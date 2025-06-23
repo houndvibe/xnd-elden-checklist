@@ -3,7 +3,6 @@ import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
 import { ThunderboltTwoTone } from "@ant-design/icons";
 import Link from "antd/es/typography/Link";
 import styles from "./SubCategoryContent.module.scss";
-import dlcIcon from "../../../assets/dlc-icon.png";
 import { getNextSortStep, smartNameSort } from "../../../lib/utils/sorters";
 import { APP_PALETTE } from "../../../lib/consts";
 import { toggleTalismanCollected } from "../../../store/collectionSlice";
@@ -101,7 +100,7 @@ export default function Table({
         )}
         {record.dlc && (
           <Tooltip title="Shadow of the Erdtree Dlc content">
-            <Image src={dlcIcon} height={20} />
+            <Image src={"/assets/dlc-icon.png"} height={20} />
           </Tooltip>
         )}
       </Flex>
@@ -140,7 +139,11 @@ export default function Table({
             )}
             {item.dlc && (
               <Tooltip title="Shadow of the Erdtree Dlc content">
-                <Image src={dlcIcon} height={12} preview={false} />
+                <Image
+                  src={"/assets/dlc-icon.png"}
+                  height={12}
+                  preview={false}
+                />
               </Tooltip>
             )}
           </Flex>

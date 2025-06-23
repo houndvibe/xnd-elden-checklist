@@ -8,7 +8,6 @@ import { setShowSettings, setStopWelcome } from "../../../store/settingsSlice";
 
 import SearchWithSuggestions from "../../ui/Search/Search";
 
-import logo from "../../../assets/logo.png";
 import styles from "./Header.module.scss";
 
 import {} from "antd";
@@ -42,7 +41,7 @@ export default function Header() {
     <AppHeader className={styles.header}>
       <div className={styles.wrapper}>
         <NavLink to="/dashboard" className={styles.title}>
-          <Image src={logo} height={50} preview={false} />
+          <Image src={"/assets/logo.png"} height={50} preview={false} />
         </NavLink>
 
         <div className={styles.searchWrapper}>

@@ -11,7 +11,6 @@ import { toTitleCaseFromCamel, truncateString } from "../../lib/utils/misc";
 
 import type { ItemCategory, ItemSubCategoryMap } from "../../global-types";
 
-import logoIcon from "../../assets/dlc-icon.png";
 import styles from "./Dashboard.module.scss";
 import { t } from "../../i18n";
 
@@ -48,7 +47,7 @@ export default function DashboardWidget({
         strokeColor={PROGRESSBAR_COLORS}
         format={(percent) =>
           percent === 100 ? (
-            <Image src={logoIcon} height={80} preview={false} />
+            <Image src={"/assets/dlc-icon.png"} height={80} preview={false} />
           ) : (
             `${percent}%`
           )
