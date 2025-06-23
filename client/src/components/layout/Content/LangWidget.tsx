@@ -1,23 +1,23 @@
 import { Radio, Flex } from "antd";
 import type { RadioChangeEvent } from "antd";
-import { setLanguage, t } from "../../../i18n";
-
-type Lang = "ru" | "en";
+import { Language, setLanguage, t } from "../../../i18n";
+import { useAppSelector } from "../../../store/typedDispatch";
+import styles from "./Content.module.scss";
 
 export default function LangWidget() {
+  const currentLang = useAppSelector((state) => state.settings.lang);
+
   const handleLangChange = (e: RadioChangeEvent) => {
-    const lang = e.target.value as Lang;
+    const lang = e.target.value as Language;
     setLanguage(lang);
   };
 
-  const storedLang = localStorage.getItem("xnd.lang") as Lang | null;
-
   return (
-    <Flex gap={6} align="center">
+    <Flex gap={6} align="center" className={styles.langWidget}>
       <span>{t("misc", "Lang")}:</span>
       <Radio.Group
         size="small"
-        defaultValue={storedLang ?? "en"}
+        value={currentLang}
         onChange={handleLangChange}
         buttonStyle="solid"
       >

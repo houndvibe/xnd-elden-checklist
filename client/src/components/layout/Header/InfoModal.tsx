@@ -92,12 +92,12 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
                   : "Do not delete the following keys:"}
               </Title>
               <br />
-              <Text code>xnd.collection</Text> —{" "}
+              <Text code>XnDEldenCompendium.collection</Text> —{" "}
               {isRussian
                 ? "содержит данные о собранных предметах."
                 : "contains all collected item data."}
               <br />
-              <Text code>xnd.settings</Text> —{" "}
+              <Text code>XnDEldenCompendium.settings</Text> —{" "}
               {isRussian
                 ? "содержит ваши личные настройки."
                 : "contains your personal preferences."}

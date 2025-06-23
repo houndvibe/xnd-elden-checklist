@@ -1,17 +1,24 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 
+type Language = "ru" | "en";
+
 interface SettingsState {
   showSettings: boolean;
   spoilers: boolean;
   showWelcome: boolean;
+  lang: Language;
 }
 
-const initialState: SettingsState = loadFromStorage("xnd.settings", {
-  showSettings: true,
-  spoilers: false,
-  showWelcome: true,
-});
+const initialState: SettingsState = loadFromStorage(
+  "XnDEldenCompendium.settings",
+  {
+    showSettings: true,
+    spoilers: false,
+    showWelcome: true,
+    lang: "en",
+  }
+);
 
 export const settingsSlice = createSlice({
   name: "settings",
@@ -19,19 +26,23 @@ export const settingsSlice = createSlice({
   reducers: {
     setSpoilers: (state, action: PayloadAction<boolean>) => {
       state.spoilers = action.payload;
-      saveToStorage("xnd.settings", state);
+      saveToStorage("XnDEldenCompendium.settings", state);
     },
     setShowSettings: (state, action: PayloadAction<boolean>) => {
       state.showSettings = action.payload;
-      saveToStorage("xnd.settings", state);
+      saveToStorage("XnDEldenCompendium.settings", state);
     },
     setStopWelcome: (state) => {
       state.showWelcome = false;
-      saveToStorage("xnd.settings", state);
+      saveToStorage("XnDEldenCompendium.settings", state);
+    },
+    setLang: (state, action: PayloadAction<Language>) => {
+      state.lang = action.payload;
+      saveToStorage("XnDEldenCompendium.settings", state);
     },
   },
 });
 
-export const { setSpoilers, setShowSettings, setStopWelcome } =
+export const { setSpoilers, setShowSettings, setStopWelcome, setLang } =
   settingsSlice.actions;
 export default settingsSlice.reducer;

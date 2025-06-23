@@ -255,3 +255,30 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
     filter: none;
   }
 }
+
+// Radio buttons styling
+.ant-radio-button-wrapper {
+  background-color: $bg-light;
+  border-color: $text-primary !important;
+  color: $text-primary;
+
+  &:hover {
+    color: $text-highlighted !important;
+  }
+
+  &::before {
+    background-color: $text-primary !important;
+  }
+
+  &.ant-radio-button-wrapper-checked {
+    background-color: $success-green !important;
+    border-color: $text-primary !important;
+    color: $bg-dark !important;
+
+    &:hover {
+      background-color: $text-highlighted !important;
+      border-color: $text-highlighted !important;
+      color: $bg-dark !important;
+    }
+  }
+}

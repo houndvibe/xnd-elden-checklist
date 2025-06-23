@@ -24,7 +24,10 @@ export default function ImportCollectionWidget() {
         messageApi.error(t("misc", "Wrong format"));
       }
 
-      localStorage.setItem("xnd.collection", JSON.stringify(parsed));
+      localStorage.setItem(
+        "XnDEldenCompendium.collection",
+        JSON.stringify(parsed)
+      );
       window.location.reload();
     } catch (e) {
       console.error(e);
@@ -33,7 +36,7 @@ export default function ImportCollectionWidget() {
   };
 
   const exportData = () => {
-    const data = localStorage.getItem("xnd.collection");
+    const data = localStorage.getItem("XnDEldenCompendium.collection");
     messageApi.info(t("misc", "Your progress data saved to clipboard!"));
     if (data) {
       navigator.clipboard.writeText(data);

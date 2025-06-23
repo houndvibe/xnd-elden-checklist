@@ -46,7 +46,7 @@ export interface State {
 }
 
 const initialState: State = {
-  collectionData: loadFromStorage("xnd.collection", itemsData),
+  collectionData: loadFromStorage("XnDEldenCompendium.collection", itemsData),
 };
 
 export const collectionSlice = createSlice({
@@ -76,7 +76,7 @@ export const collectionSlice = createSlice({
 
       if (item) {
         item.collected = !item.collected;
-        saveToStorage("xnd.collection", state.collectionData);
+        saveToStorage("XnDEldenCompendium.collection", state.collectionData);
       }
     },
     toggleTalismanCollected: (
@@ -105,7 +105,7 @@ export const collectionSlice = createSlice({
         talisman.collected = !talisman.collected;
       }
 
-      saveToStorage("xnd.collection", state.collectionData);
+      saveToStorage("XnDEldenCompendium.collection", state.collectionData);
     },
 
     toggleArmourItemCollected: (
@@ -204,7 +204,7 @@ export const collectionSlice = createSlice({
           propagateToOtherSets(topItem.name, newValue);
         }
 
-        saveToStorage("xnd.collection", state.collectionData);
+        saveToStorage("XnDEldenCompendium.collection", state.collectionData);
         return;
       }
 
@@ -217,7 +217,10 @@ export const collectionSlice = createSlice({
             toggleSingle(subItem, newValue);
             propagateToOtherSets(subItem.name, newValue);
             updateParentCollectedStatus(item);
-            saveToStorage("xnd.collection", state.collectionData);
+            saveToStorage(
+              "XnDEldenCompendium.collection",
+              state.collectionData
+            );
             return;
           }
 
@@ -229,7 +232,10 @@ export const collectionSlice = createSlice({
             if (childMatch) {
               toggleSingle(childMatch);
               updateSetCollectedStatusByChild(childMatch.name);
-              saveToStorage("xnd.collection", state.collectionData);
+              saveToStorage(
+                "XnDEldenCompendium.collection",
+                state.collectionData
+              );
               return;
             }
           }
