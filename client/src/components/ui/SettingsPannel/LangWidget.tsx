@@ -2,7 +2,6 @@ import { Radio, Flex } from "antd";
 import type { RadioChangeEvent } from "antd";
 import { Language, setLanguage, t } from "../../../i18n";
 import { useAppSelector } from "../../../store/typedDispatch";
-import styles from "./Content.module.scss";
 
 export default function LangWidget() {
   const currentLang = useAppSelector((state) => state.settings.lang);
@@ -13,7 +12,7 @@ export default function LangWidget() {
   };
 
   return (
-    <Flex gap={6} align="center" className={styles.langWidget}>
+    <Flex gap={6} align="center">
       <span>{t("misc", "Lang")}:</span>
       <Radio.Group
         size="small"

@@ -1,19 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Input, AutoComplete, Image, Flex } from "antd";
 import type { AutoCompleteProps } from "antd";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import styles from "./Search.module.scss";
-
 import { useAppDispatch } from "../../../store/typedDispatch";
-import {
-  setGlobalSearchItem,
-  setGlobalSearchSet,
-} from "../../../store/serviceSlice";
 import { t } from "../../../i18n";
 import { itemsData } from "../../../data";
-import { Collection } from "../../../store/collectionSlice";
-import { Item, ItemSubCategoryMap } from "../../../global-types";
-import { flattenCollectionItems } from "../../../lib/utils/search";
+import { Item } from "../../../global-types";
+import {
+  flattenCollectionItems,
+  navigateToItem,
+  scrollToSearchTarget,
+} from "../../../lib/utils/search";
 
 const { Search } = Input;
 
@@ -21,72 +19,6 @@ type SuggestionOption = {
   value: string;
   label: React.ReactNode;
   displayText: string;
-};
-
-const navigateToItem = (
-  name: string,
-  dispatch: ReturnType<typeof useAppDispatch>,
-  navigate: ReturnType<typeof useNavigate>
-) => {
-  const searchValue = name.toLowerCase();
-
-  for (const category in itemsData) {
-    const subcategories = itemsData[category as keyof Collection];
-
-    for (const subcategory in subcategories) {
-      const items = subcategories[
-        subcategory as keyof ItemSubCategoryMap
-      ] as Item[];
-
-      for (const item of items) {
-        if (item.name.toLowerCase() === searchValue) {
-          dispatch(setGlobalSearchItem(item.name));
-          navigate(`/${item.type}?open=${encodeURIComponent(subcategory)}`);
-          return;
-        }
-
-        if ("items" in item && Array.isArray(item.items)) {
-          for (const child of item.items) {
-            if (child.name.toLowerCase() === searchValue) {
-              dispatch(setGlobalSearchSet(item.name));
-              dispatch(setGlobalSearchItem(child.name));
-              navigate(
-                `/${child.type}?open=${encodeURIComponent(subcategory)}`
-              );
-              return;
-            }
-
-            if ("children" in child && Array.isArray(child.children)) {
-              for (const grandChild of child.children) {
-                if (grandChild.name.toLowerCase() === searchValue) {
-                  dispatch(setGlobalSearchSet(item.name));
-                  dispatch(setGlobalSearchItem(grandChild.name));
-                  navigate(
-                    `/${grandChild.type}?open=${encodeURIComponent(
-                      subcategory
-                    )}`
-                  );
-                  return;
-                }
-              }
-            }
-          }
-        }
-
-        if ("children" in item && Array.isArray(item.children)) {
-          for (const child of item.children) {
-            if (child.name.toLowerCase() === searchValue) {
-              dispatch(setGlobalSearchItem(child.name));
-              navigate(
-                `/${child.type}?open=${encodeURIComponent(subcategory)}`
-              );
-              return;
-            }
-          }
-        }
-      }
-    }
-  }
 };
 
 const generateSuggestions = (query: string): Item[] => {
@@ -107,9 +39,17 @@ const generateSuggestions = (query: string): Item[] => {
 const SearchWithSuggestions = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [options, setOptions] = useState<SuggestionOption[]>([]);
   const [searchText, setSearchText] = useState("");
+
+  useEffect(() => {
+    const openParam = new URLSearchParams(location.search).get("open");
+    if (openParam) {
+      setTimeout(() => scrollToSearchTarget(), 500);
+    }
+  }, [location.search]);
 
   const handleSearchChange = (value: string) => {
     setSearchText(value);
@@ -136,7 +76,6 @@ const SearchWithSuggestions = () => {
   };
 
   const handleSelect: AutoCompleteProps["onSelect"] = (value, option) => {
-    // Используем displayText вместо value для отображения в поле ввода
     setSearchText((option as SuggestionOption).displayText);
     navigateToItem(value, dispatch, navigate);
   };
@@ -146,7 +85,6 @@ const SearchWithSuggestions = () => {
   };
 
   const handleSubmit = (value: string) => {
-    // Ищем соответствующий элемент в options
     const matchingOption = options.find(
       (option) => option.displayText.toLowerCase() === value.toLowerCase()
     );
@@ -154,7 +92,6 @@ const SearchWithSuggestions = () => {
     if (matchingOption) {
       navigateToItem(matchingOption.value, dispatch, navigate);
     } else {
-      // Если точного совпадения нет, используем первый вариант из списка
       if (options.length > 0) {
         navigateToItem(options[0].value, dispatch, navigate);
         setSearchText(options[0].displayText);
@@ -171,7 +108,7 @@ const SearchWithSuggestions = () => {
         value={searchText}
         onSearch={handleSearchChange}
         onSelect={handleSelect}
-        style={{ width: "500px" }}
+        style={{ minWidth: 400 }}
       >
         <Search
           placeholder={t("misc", "Search...")}

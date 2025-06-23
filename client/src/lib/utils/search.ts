@@ -1,5 +1,12 @@
-import { Item, TalismanVersions } from "../../global-types";
+import { useNavigate } from "react-router-dom";
+import { Item, ItemSubCategoryMap, TalismanVersions } from "../../global-types";
 import { Collection } from "../../store/collectionSlice";
+import { useAppDispatch } from "../../store/typedDispatch";
+import { itemsData } from "../../data";
+import {
+  setGlobalSearchItem,
+  setGlobalSearchSet,
+} from "../../store/serviceSlice";
 
 export function flattenCollectionItems(collection: Collection): Item[] {
   const result: Item[] = [];
@@ -75,3 +82,87 @@ export function flattenCollectionItems(collection: Collection): Item[] {
 
   return result;
 }
+
+export const scrollToSearchTarget = () => {
+  const searchTarget = document.querySelector(".row-searchTarget");
+  if (searchTarget) {
+    searchTarget.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  }
+};
+
+export const navigateToItem = (
+  name: string,
+  dispatch: ReturnType<typeof useAppDispatch>,
+  navigate: ReturnType<typeof useNavigate>
+) => {
+  const searchValue = name.toLowerCase();
+
+  for (const category in itemsData) {
+    const subcategories = itemsData[category as keyof Collection];
+
+    for (const subcategory in subcategories) {
+      const items = subcategories[
+        subcategory as keyof ItemSubCategoryMap
+      ] as Item[];
+
+      for (const item of items) {
+        if (item.name.toLowerCase() === searchValue) {
+          dispatch(setGlobalSearchItem(item.name));
+          navigate(`/${item.type}?open=${encodeURIComponent(subcategory)}`);
+
+          setTimeout(() => scrollToSearchTarget(), 300);
+          return;
+        }
+
+        if ("items" in item && Array.isArray(item.items)) {
+          for (const child of item.items) {
+            if (child.name.toLowerCase() === searchValue) {
+              dispatch(setGlobalSearchSet(item.name));
+              dispatch(setGlobalSearchItem(child.name));
+              navigate(
+                `/${child.type}?open=${encodeURIComponent(subcategory)}`
+              );
+
+              setTimeout(() => scrollToSearchTarget(), 300);
+              return;
+            }
+
+            if ("children" in child && Array.isArray(child.children)) {
+              for (const grandChild of child.children) {
+                if (grandChild.name.toLowerCase() === searchValue) {
+                  dispatch(setGlobalSearchSet(item.name));
+                  dispatch(setGlobalSearchItem(grandChild.name));
+                  navigate(
+                    `/${grandChild.type}?open=${encodeURIComponent(
+                      subcategory
+                    )}`
+                  );
+
+                  setTimeout(() => scrollToSearchTarget(), 300);
+                  return;
+                }
+              }
+            }
+          }
+        }
+
+        if ("children" in item && Array.isArray(item.children)) {
+          for (const child of item.children) {
+            if (child.name.toLowerCase() === searchValue) {
+              dispatch(setGlobalSearchItem(child.name));
+              navigate(
+                `/${child.type}?open=${encodeURIComponent(subcategory)}`
+              );
+
+              setTimeout(() => scrollToSearchTarget(), 300);
+              return;
+            }
+          }
+        }
+      }
+    }
+  }
+};

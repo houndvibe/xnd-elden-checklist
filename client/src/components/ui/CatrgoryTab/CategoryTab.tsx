@@ -1,6 +1,6 @@
 import { Collapse, Flex } from "antd";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useMemo, useEffect, useRef } from "react";
+import { useMemo } from "react";
 
 import { ItemCategory, ItemSubCategory } from "../../../global-types";
 import { useAppSelector } from "../../../store/typedDispatch";
@@ -24,9 +24,6 @@ export default function CategoryTab({ category }: Props) {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const containerRef = useRef<HTMLDivElement>(null);
-  const prevActiveKeysRef = useRef<string[]>([]);
-
   const openParam = new URLSearchParams(location.search).get("open");
 
   const data = useAppSelector(
@@ -37,28 +34,6 @@ export default function CategoryTab({ category }: Props) {
   const activeKeys = useMemo(() => {
     return openParam ? openParam.split(",").map(decodeURIComponent) : [];
   }, [openParam]);
-
-  useEffect(() => {
-    //scroll
-    const prevKeys = prevActiveKeysRef.current;
-    const newlyOpened = activeKeys.find((key) => !prevKeys.includes(key));
-
-    if (!newlyOpened || !containerRef.current) return;
-
-    const expectedText = toTitleCaseFromCamel(newlyOpened as ItemSubCategory);
-    const headers = containerRef.current.querySelectorAll<HTMLDivElement>(
-      ".ant-collapse-item-active .ant-collapse-header"
-    );
-
-    for (const header of headers) {
-      if (header.textContent?.includes(expectedText)) {
-        header.scrollIntoView({ behavior: "smooth", block: "start" });
-        break;
-      }
-    }
-
-    prevActiveKeysRef.current = activeKeys;
-  }, [activeKeys]);
 
   const subcategoryItems = useMemo(
     () =>
@@ -101,7 +76,7 @@ export default function CategoryTab({ category }: Props) {
         <CategoryInfo title={transformCategoryToName(category)} items={data} />
       </Flex>
 
-      <div className="collapse_wpapper" ref={containerRef}>
+      <div className="collapse_wpapper">
         <Collapse
           items={subcategoryItems}
           activeKey={activeKeys.length ? activeKeys : undefined}

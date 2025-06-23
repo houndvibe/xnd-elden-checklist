@@ -1,7 +1,6 @@
 @use "../../../styles/global.scss" as *;
 
 .footer {
-  text-align: center;
   color: $text-primary;
   background: $bg-light;
   font-size: 15px;
@@ -10,4 +9,7 @@
   border-left: 1px solid $bg-dark;
   border-right: 1px solid $bg-dark;
   border-top: 1px solid $bg-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

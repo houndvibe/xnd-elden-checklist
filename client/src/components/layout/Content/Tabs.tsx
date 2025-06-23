@@ -9,10 +9,10 @@ import { transformCategoryToName } from "../../../lib/utils/misc";
 import Dashboard from "../../dashboard/Dashboard";
 import CategoryTab from "../../ui/CatrgoryTab/CategoryTab";
 import DiscoveryCalculator from "../../discovery-calculator/DiscoveryCalculator";
-import SettingsPannel from "./SettingsPannel";
 
 import type { ItemCategory } from "../../../global-types";
 import { t } from "../../../i18n";
+import SettingsPannel from "../../ui/SettingsPannel/SettingsPannel";
 
 type ExtendedTabKey = ItemCategory | "dashboard" | "discoveryCalculator";
 
