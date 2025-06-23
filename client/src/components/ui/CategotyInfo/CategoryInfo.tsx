@@ -5,6 +5,7 @@ import { PROGRESSBAR_COLORS } from "../../../lib/consts";
 import { getCategoryStats } from "../../../lib/utils/stats";
 import type { ItemSubCategoryMap } from "../../../global-types";
 import { t } from "../../../i18n";
+import { useAppSelector } from "../../../store/typedDispatch";
 
 interface CategoryInfoProps {
   items: ItemSubCategoryMap;
@@ -13,7 +14,9 @@ interface CategoryInfoProps {
 
 export default function CategoryInfo({ items, title }: CategoryInfoProps) {
   const { total, collected, percentage } = getCategoryStats(items);
-  const titleClassname = total == collected ? "titleDone" : "title";
+  const currentLang = useAppSelector((state) => state.settings.lang);
+
+  const titleClassname = currentLang === "ru" ? "titleRu" : "title";
 
   return (
     <Flex vertical className={styles.card}>
