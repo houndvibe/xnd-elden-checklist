@@ -1,9 +1,13 @@
-import { Card, ConfigProvider, Flex, Image, Progress } from "antd";
+import { Card, ConfigProvider, Flex, Image, Progress, Tooltip } from "antd";
 import { NavLink, useNavigate } from "react-router-dom";
 
-import { APP_PALETTE, PROGRESSBAR_COLORS } from "../../lib/consts";
+import {
+  APP_PALETTE,
+  PROGRESSBAR_COLORS,
+  TRUNCATE_LIMITS,
+} from "../../lib/consts";
 import { getSubCategoryStats } from "../../lib/utils/stats";
-import { toTitleCaseFromCamel } from "../../lib/utils/misc";
+import { toTitleCaseFromCamel, truncateString } from "../../lib/utils/misc";
 
 import type { ItemCategory, ItemSubCategoryMap } from "../../global-types";
 
@@ -59,6 +63,7 @@ export default function DashboardWidget({
       {Object.entries(subData).map(([subclassName, subItems]) => {
         const stats = getSubCategoryStats(subItems);
         const title = t("misc", toTitleCaseFromCamel(subclassName));
+        const truncateTitle = truncateString(title, TRUNCATE_LIMITS.DASHBOARD);
 
         return (
           <NavLink
@@ -68,7 +73,9 @@ export default function DashboardWidget({
             className={styles.link}
           >
             <Flex gap={10} justify="flex-end">
-              <span>{title}</span>
+              <span>
+                <Tooltip title={title}> {truncateTitle}</Tooltip>
+              </span>
               <span>{`${stats.collected}/${stats.total}`}</span>
               <Progress
                 style={{ width: 200 }}

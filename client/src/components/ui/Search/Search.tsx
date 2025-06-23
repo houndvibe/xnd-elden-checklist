@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Input, AutoComplete, Image, Flex } from "antd";
 import type { AutoCompleteProps } from "antd";
 import { useNavigate } from "react-router-dom";
+import styles from "./Search.module.scss";
 
 import { useAppDispatch } from "../../../store/typedDispatch";
 import {
@@ -164,19 +165,21 @@ const SearchWithSuggestions = () => {
   };
 
   return (
-    <AutoComplete
-      options={options}
-      value={searchText}
-      onSearch={handleSearchChange}
-      onSelect={handleSelect}
-      style={{ width: "100%" }}
-    >
-      <Search
-        placeholder={t("misc", "Search...")}
-        onSearch={handleSubmit}
-        onChange={handleInputChange}
-      />
-    </AutoComplete>
+    <Flex className={styles.searchWrapper}>
+      <AutoComplete
+        options={options}
+        value={searchText}
+        onSearch={handleSearchChange}
+        onSelect={handleSelect}
+        style={{ width: "500px" }}
+      >
+        <Search
+          placeholder={t("misc", "Search...")}
+          onSearch={handleSubmit}
+          onChange={handleInputChange}
+        />
+      </AutoComplete>
+    </Flex>
   );
 };
 

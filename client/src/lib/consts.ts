@@ -48,3 +48,8 @@ export const PROGRESSBAR_COLORS: ProgressProps["strokeColor"] = {
 
 //категории где много предметов с ощдинаковыми изображениями
 export const exceptionalSubcategories = ["bellBearings", "cookbooks", "notes"];
+
+export const TRUNCATE_LIMITS = {
+  DASHBOARD: 16,
+  SUB_CATEGOTY_LABEL: 23,
+};

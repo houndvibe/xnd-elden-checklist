@@ -37,8 +37,6 @@
   }
 }
 
-// ===== Layout & Containers =====
-
 .preview {
   position: relative;
   padding: 50px;
@@ -75,12 +73,11 @@
   right: 30px;
 }
 
-// ===== Typography =====
-
 .title {
   color: $text-highlighted;
   font-family: "IM Fell English SC";
-  font-size: 50px;
+  font-size: 50px !important;
+  text-align: center;
 }
 
 .subtitle {

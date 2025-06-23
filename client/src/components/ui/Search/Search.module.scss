@@ -1,0 +1,48 @@
+@use "../../../styles/global.scss" as *;
+
+.searchWrapper {
+  :global {
+    // Стили для поля ввода
+    .ant-input {
+      font-size: 16px;
+      color: $text-primary;
+
+      &::placeholder {
+        font-size: 16px;
+        color: rgba($text-primary, 0.7);
+      }
+    }
+
+    // Стили для кнопки поиска
+    .ant-input-search-button {
+      background-color: $bg-light;
+      border-color: $text-primary;
+
+      &:hover {
+        background-color: $text-primary;
+        border-color: $text-highlighted;
+      }
+
+      .anticon {
+        color: $text-primary;
+
+        &:hover {
+          color: $bg-dark;
+        }
+      }
+    }
+
+    // Стили для выпадающего списка
+    .ant-select-item {
+      font-family: "Cinzel";
+      font-size: 16px;
+      color: $text-primary;
+    }
+
+    // Стили для активного элемента в выпадающем списке
+    .ant-select-item-option-active,
+    .ant-select-item-option-selected {
+      background-color: rgba($text-primary, 0.1);
+    }
+  }
+}

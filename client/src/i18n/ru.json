@@ -1045,6 +1045,7 @@
     "Diallos's Mask": "Маска Диаллоса"
   },
   "misc": {
+    "Quests": "Квестовые Предметы",
     "Commonfolk And Wanderers": "Простолюдины и странники",
     "Scholars And Seers": "Учёные и провидцы",
     "Cultists And Nobles": "Культисты и знать",
@@ -1087,7 +1088,7 @@
     "Helm": "Шлем",
     "Arcane": "Колдовство",
     "Consumable": "Расходник",
-    "Rare items drop rate change examples:": "Примеры изменения шанса дропа редких предметов:",
+    "Rare items drop rate change examples:": "Изменение шанса дропа редких предметов:",
     "Paste Your Progress Data": "Вставьте запись о прогрессе",
     "Duration": "Длительность",
     "Imp Head (Elder)": "Голова Беса (Cтарейшина)",

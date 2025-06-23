@@ -1,16 +1,12 @@
 @use "sass:color";
-/* $text-primary: #aa7714; */
 $text-primary: #856a51;
 $text-highlighted: #aa7714;
 $success-green: #112123;
 $bg-dark: #141414;
 $bg-light: #1f1f1f;
 
-/* $link-color: #6b568c; */
-
 $link-color: #4a6a8a;
 $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
-/* $link-color: #5a7f5a; */
 
 @font-face {
   font-family: "Cinzel";
@@ -33,21 +29,33 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Caveat";
+  src: url("/fonts/Caveat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .lang-ru body,
 .lang-ru * {
   font-family: "Cormorant Garamond", "Lora", "Rozha One", serif;
   font-weight: 700;
-  /*   font-size: 20px; */
+  font-size: 20px;
 }
-
-/* .lang-en body,
-.lang-en * {
-  font-family: "Cinzel", "IM Fell English SC", serif;
-} */
 
 * {
   color: $text-primary;
   font-family: "Cinzel";
+}
+
+.ant-input {
+  font-size: 16px;
+  color: $text-primary;
+
+  &::placeholder {
+    font-size: 16px;
+    color: rgba($text-primary, 0.7);
+  }
 }
 
 //Подсветка собранных предметов
@@ -229,22 +237,9 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
   }
 }
 
-.text-spoiler {
-  color: transparent;
-  border-left: none;
-  text-shadow: 0 0 8px $link-color; /* light glow effect */
-  transition: color 0.4s ease, text-shadow 0.2s ease;
-  cursor: pointer;
-  font-size: 20px;
-  &:hover {
-    color: $link-color;
-    text-shadow: none;
-  }
-}
-
 .block-spoiler {
   color: transparent;
-  text-shadow: 0 0 8px $link-color; /* light glow effect */
+  text-shadow: 0 0 8px $link-color;
   transition: color 0.4s ease, text-shadow 0.2s ease;
   filter: blur(50px);
   cursor: pointer;
@@ -256,7 +251,6 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
   }
 }
 
-// Radio buttons styling
 .ant-radio-button-wrapper {
   background-color: $bg-light;
   border-color: $text-primary !important;

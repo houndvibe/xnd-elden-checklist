@@ -26,18 +26,19 @@ export function isMultiVersionTalisman(
   return "versions" in item;
 }
 
-export function toTitleCaseFromCamel(
-  str: string,
-  maxLength: number = 50
-): string {
+export function toTitleCaseFromCamel(str: string): string {
   const result = str
     .replace(/([a-z])([A-Z])/g, "$1 $2")
     .replace(/^./, (s) => s.toUpperCase());
-
-  if (result.length > maxLength) {
-    return result.slice(0, maxLength).trimEnd() + "...";
-  }
   return result;
+}
+
+export function truncateString(str: string, n: number): string {
+  if (str.length > n) {
+    return str.slice(0, n - 3) + "...";
+  }
+
+  return str;
 }
 
 export function transformCategoryToName(category: ItemCategory) {
