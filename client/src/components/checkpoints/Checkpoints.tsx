@@ -242,6 +242,13 @@ export default function Checkpoints() {
       "#FF8042",
       "#a4de6c",
       "#d0ed57",
+      "#b19cd9",
+      "#f6a6b2",
+      "#67b7dc",
+      "#8a5ac9",
+      "#e8b339",
+      "#aa7714",
+      "#6b4226",
     ];
     return colors[index % colors.length];
   };
@@ -312,18 +319,53 @@ export default function Checkpoints() {
                 <RechartsTooltip
                   shared={false}
                   wrapperStyle={{ zIndex: 1000 }}
-                  formatter={(value, name) => [
-                    value,
-                    t(
-                      "misc",
-                      toTitleCaseFromCamel(
-                        name.toString().replace("Percentage", "")
-                      )
-                    ),
-                  ]}
-                  labelFormatter={(label) => {
-                    const item = fullChartData.find((d) => d.name === label);
-                    return item ? item.date : label;
+                  content={({ active, payload, label }) => {
+                    if (active && payload && payload.length) {
+                      const item = fullChartData.find((d) => d.name === label);
+                      const dateLabel = item ? item.date : label;
+
+                      return (
+                        <div
+                          style={{
+                            backgroundColor: "#141414",
+                            border: `1px solid #aa7714`,
+                            padding: "20px",
+                            borderRadius: "20px",
+                          }}
+                        >
+                          <p
+                            style={{
+                              margin: "0 0 10px 0",
+                              color: "#e8b339",
+                              fontFamily: "Cinzel",
+                            }}
+                          >
+                            {dateLabel}
+                          </p>
+                          {payload.map((entry, index) => (
+                            <p
+                              key={`item-${index}`}
+                              style={{
+                                color: entry.color,
+                                margin: "5px 0",
+                                fontFamily: "Cinzel",
+                              }}
+                            >
+                              {t(
+                                "misc",
+                                toTitleCaseFromCamel(
+                                  entry.name
+                                    .toString()
+                                    .replace("Percentage", "")
+                                )
+                              )}
+                              : {entry.value}%
+                            </p>
+                          ))}
+                        </div>
+                      );
+                    }
+                    return null;
                   }}
                 />
 
@@ -372,18 +414,53 @@ export default function Checkpoints() {
                 <RechartsTooltip
                   shared={false}
                   wrapperStyle={{ zIndex: 1000 }}
-                  formatter={(value, name) => [
-                    `${value}%`,
-                    t(
-                      "misc",
-                      toTitleCaseFromCamel(
-                        name.toString().replace("Percentage", "")
-                      )
-                    ),
-                  ]}
-                  labelFormatter={(label) => {
-                    const item = fullChartData.find((d) => d.name === label);
-                    return item ? item.date : label;
+                  content={({ active, payload, label }) => {
+                    if (active && payload && payload.length) {
+                      const item = fullChartData.find((d) => d.name === label);
+                      const dateLabel = item ? item.date : label;
+
+                      return (
+                        <div
+                          style={{
+                            backgroundColor: "#141414",
+                            border: "1px solid #aa7714",
+                            padding: "20px",
+                            borderRadius: "20px",
+                          }}
+                        >
+                          <p
+                            style={{
+                              margin: "0 0 10px 0",
+                              color: "#e8b339",
+                              fontFamily: "Cinzel",
+                            }}
+                          >
+                            {dateLabel}
+                          </p>
+                          {payload.map((entry, index) => (
+                            <p
+                              key={`item-${index}`}
+                              style={{
+                                color: entry.color,
+                                margin: "5px 0",
+                                fontFamily: "Cinzel",
+                              }}
+                            >
+                              {t(
+                                "misc",
+                                toTitleCaseFromCamel(
+                                  entry.name
+                                    .toString()
+                                    .replace("Percentage", "")
+                                )
+                              )}
+                              : {entry.value}%
+                            </p>
+                          ))}
+                        </div>
+                      );
+                    }
+                    return null;
                   }}
                 />
                 <Legend
@@ -588,6 +665,3 @@ export default function Checkpoints() {
     </Flex>
   );
 }
-
-
-
