@@ -1,0 +1,103 @@
+@use "../../styles/global.scss" as *;
+
+.bg {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding: 30px;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../assets/bg-ashesOfWar.jpg") center/cover no-repeat;
+    opacity: 0.09;
+    z-index: -1;
+    height: 100%;
+  }
+}
+
+.btn {
+  background: $bg-dark;
+  box-shadow: none;
+  border-color: $text-primary;
+  color: $text-primary;
+  font-family: "Cinzel";
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $success-green;
+    color: $text-highlighted;
+    border-color: $text-highlighted;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.title {
+  color: $text-primary !important;
+  font-family: Cinzel;
+}
+
+.itemTitle {
+  font-family: Cinzel;
+  font-size: 30px !important;
+  color: $text-highlighted !important;
+}
+
+.itemDesc {
+  font-size: 20px !important;
+  color: $text-primary !important;
+}
+
+.confirmButton {
+  background: $bg-dark;
+  border-color: $text-primary;
+  color: $text-primary;
+  font-family: "Cinzel";
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $success-green;
+    color: $text-highlighted;
+    border-color: $text-highlighted;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.cancelButton {
+  background: $bg-dark;
+  color: $text-primary;
+  font-family: "Cinzel";
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $text-highlighted;
+    border-color: $text-highlighted;
+  }
+}
+
+.dangerButton {
+  background: $bg-dark;
+  border-color: #ff4d4f;
+  color: #ff4d4f;
+  box-shadow: none;
+  font-family: "Cinzel";
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #ff4d4f;
+    color: $bg-dark;
+    border-color: #ff4d4f;
+  }
+}

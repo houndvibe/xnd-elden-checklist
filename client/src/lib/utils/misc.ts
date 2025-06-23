@@ -127,3 +127,27 @@ export const isArmourSet = (item: Item | undefined): item is ArmourSet => {
     Array.isArray(item.items)
   );
 };
+
+// Улучшенная функция форматирования даты с проверкой на валидность
+export function formatDate(date: Date | string | number | null | undefined): string {
+  // Проверяем, что дата существует
+  if (!date) return "";
+  
+  // Преобразуем строку или число в объект Date, если необходимо
+  const dateObj = date instanceof Date ? date : new Date(date);
+  
+  // Проверяем, что дата валидна
+  if (isNaN(dateObj.getTime())) {
+    console.warn("Invalid date value:", date);
+    return "";
+  }
+  
+  // Форматируем дату
+  return new Intl.DateTimeFormat("default", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(dateObj);
+}

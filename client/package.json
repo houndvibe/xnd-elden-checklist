@@ -44,6 +44,7 @@
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.6.2",
+    "recharts": "^3.0.0",
     "scss": "^0.2.4",
     "sharp": "^0.34.2",
     "vite-plugin-checker": "^0.9.3"

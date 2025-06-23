@@ -19,19 +19,14 @@ export default function SettingsPannel() {
     (state) => state.discovery.calculatedDiscovery
   );
 
-  const isElectron = !!window.electronAPI;
+  const checkpoints = useAppSelector((state) => state.checkpoints.checkpoints);
+
+  /*   const isElectron = !!window.electronAPI; */
 
   return (
     <>
       <Flex gap={10} align="center">
-        <NavLink to="/discoveryCalculator">
-          <Flex gap={6} align="center">
-            <span>{t("misc", "Discovery")} :</span>
-            <span style={{ color: APP_PALETTE.textPrimary }}>
-              {storedDiscovery}
-            </span>
-          </Flex>
-        </NavLink>
+        <LangWidget />
         <span>|</span>
         <Flex gap={6} align="center">
           <span>{t("misc", "Spoilers")}:</span>
@@ -41,16 +36,33 @@ export default function SettingsPannel() {
             onChange={(checked) => dispatch(setSpoilers(checked))}
           />
         </Flex>
-        {isElectron && (
+        {/*         {isElectron && (
           <>
             <span>|</span>
             <ZoomWidget />
           </>
-        )}
+        )} */}
+        <span>|</span>
+        <NavLink to="/discoveryCalculator">
+          <Flex gap={6} align="center">
+            <span>{t("misc", "Discovery")} :</span>
+            <span style={{ color: APP_PALETTE.textPrimary }}>
+              {storedDiscovery}
+            </span>
+          </Flex>
+        </NavLink>
+        <span>|</span>
+        <NavLink to="/checkpoints">
+          <Flex gap={6} align="center">
+            <span>{t("misc", "Checkpoints")} :</span>
+            <span style={{ color: APP_PALETTE.textPrimary }}>
+              {checkpoints.length}
+            </span>
+          </Flex>
+        </NavLink>
         <span>|</span>
         <ImportCollectionWidget />
         <span>|</span>
-        <LangWidget />
       </Flex>
 
       <Divider size="small" />

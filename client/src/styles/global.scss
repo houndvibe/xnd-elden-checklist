@@ -244,28 +244,32 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
   }
 }
 
-.ant-radio-button-wrapper {
-  background-color: $bg-light;
-  border-color: $text-primary !important;
-  color: $text-primary;
-
-  &:hover {
-    color: $text-highlighted !important;
-  }
-
-  &::before {
-    background-color: $text-primary !important;
-  }
-
-  &.ant-radio-button-wrapper-checked {
-    background-color: $success-green !important;
+:global {
+  .ant-radio-button-wrapper {
+    background-color: $bg-light;
     border-color: $text-primary !important;
-    color: $bg-dark !important;
+    color: $text-primary;
 
     &:hover {
-      background-color: $text-highlighted !important;
-      border-color: $text-highlighted !important;
+      color: $text-highlighted !important;
+    }
+
+    &::before {
+      background-color: $text-primary !important;
+    }
+
+    &.ant-radio-button-wrapper-checked {
+      background-color: $text-primary !important;
+    }
+
+    &.ant-radio-button-wrapper-checked * {
+      color: $text-primary !important;
       color: $bg-dark !important;
+
+      &:hover {
+        border-color: $text-highlighted !important;
+        color: $bg-dark !important;
+      }
     }
   }
 }

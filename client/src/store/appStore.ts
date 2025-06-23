@@ -1,16 +1,17 @@
 import { configureStore } from "@reduxjs/toolkit";
+import collectionReducer from "./collectionSlice";
+import settingsReducer from "./settingsSlice";
+import serviceReducer from "./serviceSlice";
+import discoveryReducer from "./discoverySlice";
+import checkpointsReducer from "./checkpointsSlice";
 
-import collectionSlice from "./collectionSlice";
-import discoverySlice from "./discoverySlice";
-import settingsSlice from "./settingsSlice";
-import serviceSlice from "./serviceSlice";
-
-const store = configureStore({
+export const store = configureStore({
   reducer: {
-    collection: collectionSlice,
-    discovery: discoverySlice,
-    settings: settingsSlice,
-    service: serviceSlice,
+    collection: collectionReducer,
+    settings: settingsReducer,
+    service: serviceReducer,
+    discovery: discoveryReducer,
+    checkpoints: checkpointsReducer,
   },
 });
 

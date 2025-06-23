@@ -13,8 +13,13 @@ import DiscoveryCalculator from "../../discovery-calculator/DiscoveryCalculator"
 import type { ItemCategory } from "../../../global-types";
 import { t } from "../../../i18n";
 import SettingsPannel from "../../ui/SettingsPannel/SettingsPannel";
+import Checkpoints from "../../checkpoints/Checkpoints";
 
-type ExtendedTabKey = ItemCategory | "dashboard" | "discoveryCalculator";
+type ExtendedTabKey =
+  | ItemCategory
+  | "dashboard"
+  | "discoveryCalculator"
+  | "checkpoints";
 
 interface CustomTabItem {
   key: ExtendedTabKey;
@@ -35,6 +40,11 @@ const baseTabs: CustomTabItem[] = [
     key: "discoveryCalculator",
     label: t("misc", "Discovery Calculator"),
     children: <DiscoveryCalculator />,
+  },
+  {
+    key: "checkpoints",
+    label: t("misc", "Checkpoints"),
+    children: <Checkpoints />,
   },
 ];
 
