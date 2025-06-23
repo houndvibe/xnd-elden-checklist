@@ -1,7 +1,6 @@
 import { Tabs as AntdTabs, ConfigProvider } from "antd";
 import { useNavigate, useParams } from "react-router-dom";
 
-import { useAppSelector } from "../../../store/typedDispatch";
 
 import { APP_PALETTE, itemCategories } from "../../../lib/consts";
 import { transformCategoryToName } from "../../../lib/utils/misc";
@@ -12,7 +11,7 @@ import DiscoveryCalculator from "../../discovery-calculator/DiscoveryCalculator"
 
 import type { ItemCategory } from "../../../global-types";
 import { t } from "../../../i18n";
-import SettingsPannel from "../../ui/SettingsPannel/SettingsPannel";
+
 import Checkpoints from "../../checkpoints/Checkpoints";
 
 type ExtendedTabKey =
@@ -48,16 +47,35 @@ const baseTabs: CustomTabItem[] = [
   },
 ];
 
-const tabs: CustomTabItem[] = [...baseTabs, ...createItemTabs()];
+const itemTabs: CustomTabItem[] = createItemTabs();
 
 export default function Tabs() {
   const navigate = useNavigate();
   const { tabKey } = useParams<{ tabKey?: string }>();
-  const showSettings = useAppSelector((state) => state.settings.showSettings);
 
-  const activeKey: ExtendedTabKey = tabs.some((item) => item.key === tabKey)
+  // Определяем, является ли текущая вкладка категорией предметов
+  const isItemCategory = itemCategories.includes(tabKey as ItemCategory);
+
+  // Определяем активную вкладку
+  const activeKey: ExtendedTabKey = [...baseTabs, ...itemTabs].some(
+    (item) => item.key === tabKey
+  )
     ? (tabKey as ExtendedTabKey)
     : "dashboard";
+
+  // Определяем, какой контент отображать
+  const renderContent = () => {
+    const baseTab = baseTabs.find((tab) => tab.key === activeKey);
+    if (baseTab) {
+      return baseTab.children;
+    }
+
+    if (isItemCategory) {
+      return null;
+    }
+
+    return <Dashboard />;
+  };
 
   return (
     <ConfigProvider
@@ -72,13 +90,15 @@ export default function Tabs() {
         },
       }}
     >
-      {showSettings && <SettingsPannel />}
+      {isItemCategory && (
+        <AntdTabs
+          items={itemTabs}
+          activeKey={activeKey}
+          onChange={(key) => navigate(`/${key}`)}
+        />
+      )}
 
-      <AntdTabs
-        items={tabs}
-        activeKey={activeKey}
-        onChange={(key) => navigate(`/${key}`)}
-      />
+      {renderContent()}
     </ConfigProvider>
   );
 }

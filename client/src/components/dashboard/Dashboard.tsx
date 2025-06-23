@@ -16,7 +16,7 @@ import styles from "./Dashboard.module.scss";
 import { t } from "../../i18n";
 
 export default function Dashboard() {
-  const [isCompactMode, setIsCompactMode] = useState(true);
+  const [isCompactMode, setIsCompactMode] = useState(false);
   const collectionData = useAppSelector(
     (state) => state.collection.collectionData
   );

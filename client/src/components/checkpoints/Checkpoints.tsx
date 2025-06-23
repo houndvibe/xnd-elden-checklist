@@ -359,7 +359,7 @@ export default function Checkpoints() {
                                     .replace("Percentage", "")
                                 )
                               )}
-                              : {entry.value}%
+                              : {entry.value}
                             </p>
                           ))}
                         </div>
