@@ -43,13 +43,14 @@
   width: 100%;
   z-index: 1;
   overflow: hidden;
-  background: url("../../../assets/fx.png") center/cover no-repeat;
+  background: url("../../../../public/assets/fx.png") center/cover no-repeat;
 
   &::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: url("../../../assets/bg-ashesOfWar.jpg") center/cover no-repeat;
+    background: url("../../../../public/assets/bg-ashesOfWar.jpg") center/cover
+      no-repeat;
     opacity: 0.09;
     z-index: -1;
   }

@@ -29,6 +29,7 @@ import {
 } from "../../../lib/utils/misc";
 import CustomTableTitle from "./CustomTableTitle";
 import { t } from "../../../i18n";
+import icon from "../../../../public/assets/dlc-icon.png";
 
 interface Props {
   setHoveredItemName: React.Dispatch<React.SetStateAction<string>>;
@@ -100,7 +101,7 @@ export default function Table({
         )}
         {record.dlc && (
           <Tooltip title="Shadow of the Erdtree Dlc content">
-            <Image preview={false} src={"/assets/dlc-icon.png"} height={20} />
+            <Image preview={false} src={icon} height={20} />
           </Tooltip>
         )}
       </Flex>
@@ -139,11 +140,7 @@ export default function Table({
             )}
             {item.dlc && (
               <Tooltip title="Shadow of the Erdtree Dlc content">
-                <Image
-                  src={"/assets/dlc-icon.png"}
-                  height={12}
-                  preview={false}
-                />
+                <Image src={icon} height={12} preview={false} />
               </Tooltip>
             )}
           </Flex>

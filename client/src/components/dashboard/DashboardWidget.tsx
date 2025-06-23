@@ -14,6 +14,8 @@ import type { ItemCategory, ItemSubCategoryMap } from "../../global-types";
 import styles from "./Dashboard.module.scss";
 import { t } from "../../i18n";
 
+import icon from "../../../public/assets/dlc-icon.png";
+
 interface DashboardWidgetProps {
   dataType: ItemCategory;
   data: {
@@ -47,7 +49,7 @@ export default function DashboardWidget({
         strokeColor={PROGRESSBAR_COLORS}
         format={(percent) =>
           percent === 100 ? (
-            <Image src={"/assets/dlc-icon.png"} height={80} preview={false} />
+            <Image src={icon} height={80} preview={false} />
           ) : (
             `${percent}%`
           )

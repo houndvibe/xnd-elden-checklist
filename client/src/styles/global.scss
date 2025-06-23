@@ -76,7 +76,7 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
 
 //Обои
 .container {
-  background: url("/assets/bg-1.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-1.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
 }
@@ -89,53 +89,57 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
   width: 100%;
 }
 .shieldsAndTorches_wallpaper {
-  background: url("/assets/bg-shields.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-shields.png") center/cover no-repeat;
 }
 .spiritAshes_wallpaper {
-  background: url("/assets/bg-ashes.jpg") center/cover no-repeat;
+  background: url("../../public/assets/bg-ashes.jpg") center/cover no-repeat;
 }
 .talismans_wallpaper {
-  background: url("/assets/bg-talismans.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-talismans.png") center/cover no-repeat;
 }
 .ashesOfWar_wallpaper {
-  background: url("/assets/bg-ashesOfWar.jpg") center/cover no-repeat;
-}
-.sorceries_wallpaper {
-  background: url("/assets/bg-sorceries.jpeg") center/cover no-repeat;
-}
-.incantations_wallpaper {
-  background: url("/assets/bg-incantations.png") center/cover no-repeat;
-}
-.gesturesAndMultiplayer_wallpaper {
-  background: url("/assets/bg-gesturesAndMultiplayer.jpg") center/cover
+  background: url("../../public/assets/bg-ashesOfWar.jpg") center/cover
     no-repeat;
 }
+.sorceries_wallpaper {
+  background: url("../../public/assets/bg-sorceries.jpeg") center/cover
+    no-repeat;
+}
+.incantations_wallpaper {
+  background: url("../../public/assets/bg-incantations.png") center/cover
+    no-repeat;
+}
+.gesturesAndMultiplayer_wallpaper {
+  background: url("../../public/assets/bg-gesturesAndMultiplayer.jpg")
+    center/cover no-repeat;
+}
 .meleWeapons_wallpaper {
-  background: url("/assets/bg-mele.jpg") center/cover no-repeat;
+  background: url("../../public/assets/bg-mele.jpg") center/cover no-repeat;
 }
 .rangedWeapons_wallpaper {
-  background: url("/assets/bg-range.png") 0px -150px / cover no-repeat;
+  background: url("../../public/assets/bg-range.png") 0px -150px / cover no-repeat;
 }
 .infoItems_wallpaper {
-  background: url("/assets/bg-infoItems.jpg") center/cover no-repeat;
+  background: url("../../public/assets/bg-infoItems.jpg") center/cover no-repeat;
 }
 .toolsAndBellBearings_wallpaper {
-  background: url("/assets/bg-tools.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-tools.png") center/cover no-repeat;
 }
 .tearsAndUpgrades_wallpaper {
-  background: url("/assets/bg-tears.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-tears.png") center/cover no-repeat;
 }
 .craft_wallpaper {
-  background: url("/assets/bg-craft.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-craft.png") center/cover no-repeat;
 }
 .armour_wallpaper {
-  background: url("/assets/bg-armour.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-armour.png") center/cover no-repeat;
 }
 .consumablesAndAmmo_wallpaper {
-  background: url("/assets/bg-consumables.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-consumables.png") center/cover
+    no-repeat;
 }
 .keyItems_wallpaper {
-  background: url("/assets/bg-keyitems.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-keyitems.png") center/cover no-repeat;
 }
 
 //чекбоксы

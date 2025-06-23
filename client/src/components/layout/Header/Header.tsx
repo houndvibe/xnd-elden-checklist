@@ -10,9 +10,10 @@ import SearchWithSuggestions from "../../ui/Search/Search";
 
 import styles from "./Header.module.scss";
 
-import {} from "antd";
 import InfoModal from "./InfoModal";
 import { t } from "../../../i18n";
+
+import logo from "../../../../public/assets/logo.png";
 
 const { Header: AppHeader } = Layout;
 
@@ -41,7 +42,7 @@ export default function Header() {
     <AppHeader className={styles.header}>
       <div className={styles.wrapper}>
         <NavLink to="/dashboard" className={styles.title}>
-          <Image src={"/assets/logo.png"} height={50} preview={false} />
+          <Image src={logo} height={50} preview={false} />
         </NavLink>
 
         <div className={styles.searchWrapper}>

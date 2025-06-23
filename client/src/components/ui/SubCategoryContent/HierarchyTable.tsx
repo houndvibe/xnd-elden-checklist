@@ -88,7 +88,11 @@ export default function Table({
         </Link>
         {record.dlc && (
           <Tooltip title="Shadow of the Erdtree Dlc content">
-            <Image preview={false} src={"/assets/dlc-icon.png"} height={20} />
+            <Image
+              preview={false}
+              src={"../../../../public/assets/dlc-icon.png"}
+              height={20}
+            />
           </Tooltip>
         )}
       </Flex>
