@@ -15,7 +15,8 @@ import styles from "./Dashboard.module.scss";
 import { t } from "../../i18n";
 
 import icon from "../../../public/assets/dlc-icon.png";
-
+import { isTablet } from "react-device-detect";
+import { useEffect, useState } from "react";
 interface DashboardWidgetProps {
   dataType: ItemCategory;
   data: {
@@ -35,11 +36,25 @@ export default function DashboardWidget({
 }: DashboardWidgetProps) {
   const navigate = useNavigate();
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const renderProgress = () => (
     <Flex
       vertical
       align="center"
-      justify="center"
+      justify="flex-start"
       style={{ padding: "1rem 0" }}
       flex={1}
     >
@@ -56,6 +71,33 @@ export default function DashboardWidget({
         }
       />
       <span style={{ fontSize: 20 }}>{`${data.collected}/${data.total}`}</span>
+    </Flex>
+  );
+
+  const renderLinearProgress = () => (
+    <Flex vertical gap={10} style={{ marginBottom: 20 }}>
+      <Flex justify="space-between" align="center">
+        <span
+          style={{ fontSize: 16 }}
+        >{`${data.collected}/${data.total}`}</span>
+      </Flex>
+      <Progress
+        percent={data.percentage}
+        strokeColor={PROGRESSBAR_COLORS}
+        showInfo={true}
+        format={(percent) =>
+          percent === 100 ? (
+            <span
+              style={{ display: "inline-flex", alignItems: "center", gap: 4 }}
+            >
+              <Image src={icon} height={16} width={16} preview={false} />
+              {`${percent}%`}
+            </span>
+          ) : (
+            `${percent}%`
+          )
+        }
+      />
     </Flex>
   );
 
@@ -110,10 +152,17 @@ export default function DashboardWidget({
         }
         onClick={() => navigate(`/${dataType}`)}
       >
-        <Flex>
-          {renderProgress()}
-          {mode && renderSubcategoryList()}
-        </Flex>
+        {(isTablet && mode) || (mode && windowWidth <= 1200) ? (
+          <Flex vertical>
+            {renderLinearProgress()}
+            {mode && renderSubcategoryList()}
+          </Flex>
+        ) : (
+          <Flex>
+            {renderProgress()}
+            {mode && renderSubcategoryList()}
+          </Flex>
+        )}
       </Card>
     </ConfigProvider>
   );
