@@ -1,6 +1,7 @@
 @use "../../../styles/global.scss" as *;
 
 .content {
+  user-select: none;
   flex-grow: 1;
   padding: 20px;
   background: $bg-dark;
