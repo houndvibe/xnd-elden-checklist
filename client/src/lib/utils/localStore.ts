@@ -180,14 +180,12 @@ function applyMinimalCollectedFlags(
         if (match) {
           match.collected = true;
 
-          // 🧩 Если это Talisman — восстановить все versions
           if ("versions" in match && Array.isArray(match.versions)) {
             match.versions.forEach((v) => {
               v.collected = true;
             });
           }
 
-          // 🧩 Если это ArmourSet — восстановить все items и их children
           if ("items" in match && Array.isArray(match.items)) {
             match.items.forEach((piece) => {
               piece.collected = true;

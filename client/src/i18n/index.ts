@@ -5,11 +5,12 @@ import en from "./en.json";
 import { loadFromStorage } from "../lib/utils/localStore";
 import store from "../store/appStore";
 import { setLang } from "../store/settingsSlice";
+import { LOCALSTORAGE_SETTINGS_KEY } from "../lib/consts";
 
 type Translations = Record<string, Record<string, string>>;
 const translations: Record<Language, Translations> = { ru, en };
 
-const settings = loadFromStorage("XnDEldenCompendium.settings", {
+const settings = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
   lang: "en",
 }) as {
   lang: Language;

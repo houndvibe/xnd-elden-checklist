@@ -21,6 +21,7 @@ import type {
 } from "../global-types";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 import { itemsData } from "../data";
+import { LOCALSTORAGE_COLLECTION_KEY } from "../lib/consts";
 
 export interface Collection {
   shieldsAndTorchesData: ShieldAndTorchesSubCategoryMap;
@@ -46,7 +47,7 @@ export interface State {
 }
 
 const initialState: State = {
-  collectionData: loadFromStorage("XnDEldenCompendium.collection", itemsData),
+  collectionData: loadFromStorage(LOCALSTORAGE_COLLECTION_KEY, itemsData),
 };
 
 export const collectionSlice = createSlice({
@@ -76,7 +77,7 @@ export const collectionSlice = createSlice({
 
       if (item) {
         item.collected = !item.collected;
-        saveToStorage("XnDEldenCompendium.collection", state.collectionData);
+        saveToStorage(LOCALSTORAGE_COLLECTION_KEY, state.collectionData);
       }
     },
     toggleTalismanCollected: (
@@ -105,7 +106,7 @@ export const collectionSlice = createSlice({
         talisman.collected = !talisman.collected;
       }
 
-      saveToStorage("XnDEldenCompendium.collection", state.collectionData);
+      saveToStorage(LOCALSTORAGE_COLLECTION_KEY, state.collectionData);
     },
 
     toggleArmourItemCollected: (
@@ -204,7 +205,7 @@ export const collectionSlice = createSlice({
           propagateToOtherSets(topItem.name, newValue);
         }
 
-        saveToStorage("XnDEldenCompendium.collection", state.collectionData);
+        saveToStorage(LOCALSTORAGE_COLLECTION_KEY, state.collectionData);
         return;
       }
 
@@ -217,10 +218,7 @@ export const collectionSlice = createSlice({
             toggleSingle(subItem, newValue);
             propagateToOtherSets(subItem.name, newValue);
             updateParentCollectedStatus(item);
-            saveToStorage(
-              "XnDEldenCompendium.collection",
-              state.collectionData
-            );
+            saveToStorage(LOCALSTORAGE_COLLECTION_KEY, state.collectionData);
             return;
           }
 
@@ -232,10 +230,7 @@ export const collectionSlice = createSlice({
             if (childMatch) {
               toggleSingle(childMatch);
               updateSetCollectedStatusByChild(childMatch.name);
-              saveToStorage(
-                "XnDEldenCompendium.collection",
-                state.collectionData
-              );
+              saveToStorage(LOCALSTORAGE_COLLECTION_KEY, state.collectionData);
               return;
             }
           }

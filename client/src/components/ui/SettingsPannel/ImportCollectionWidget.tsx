@@ -1,6 +1,7 @@
 import { Button, Flex, message } from "antd";
 import { t } from "../../../i18n";
 import LZString from "lz-string";
+import { LOCALSTORAGE_COLLECTION_KEY } from "../../../lib/consts";
 
 export default function ImportCollectionWidget() {
   const [messageApi, contextHolder] = message.useMessage();
@@ -38,10 +39,7 @@ export default function ImportCollectionWidget() {
         return;
       }
 
-      localStorage.setItem(
-        "XnDEldenCompendium.collection",
-        JSON.stringify(parsed)
-      );
+      localStorage.setItem(LOCALSTORAGE_COLLECTION_KEY, JSON.stringify(parsed));
 
       messageApi.success(t("misc", "Data imported successfully!"));
       window.location.reload();
@@ -61,7 +59,7 @@ export default function ImportCollectionWidget() {
   };
 
   const exportData = () => {
-    const data = localStorage.getItem("XnDEldenCompendium.collection");
+    const data = localStorage.getItem(LOCALSTORAGE_COLLECTION_KEY);
     messageApi.info(t("misc", "Your progress data saved to clipboard!"));
     if (data) {
       const compressedData = LZString.compressToBase64(data);

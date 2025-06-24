@@ -1,6 +1,7 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
 import { Collection } from "./collectionSlice";
+import { LOCALSTORAGE_CHECKPOINTS_KEY } from "../lib/consts";
 
 export interface Checkpoint {
   id: string;
@@ -21,7 +22,7 @@ export interface State {
 }
 
 const initialState: State = {
-  checkpoints: loadFromStorage("XnDEldenCompendium.checkpoints", []),
+  checkpoints: loadFromStorage(LOCALSTORAGE_CHECKPOINTS_KEY, []),
 };
 
 export const checkpointsSlice = createSlice({
@@ -36,32 +37,33 @@ export const checkpointsSlice = createSlice({
       }>
     ) => {
       const { name, collectionData } = action.payload;
-      
+
       const newCheckpoint: Checkpoint = {
         id: Date.now().toString(),
         name,
         date: new Date().toISOString(),
         collectionData,
       };
-      
+
       state.checkpoints.push(newCheckpoint);
-      saveToStorage("XnDEldenCompendium.checkpoints", state.checkpoints);
+      saveToStorage(LOCALSTORAGE_CHECKPOINTS_KEY, state.checkpoints);
     },
-    
+
     removeCheckpoint: (state, action: PayloadAction<string>) => {
       state.checkpoints = state.checkpoints.filter(
         (checkpoint) => checkpoint.id !== action.payload
       );
-      saveToStorage("XnDEldenCompendium.checkpoints", state.checkpoints);
+      saveToStorage(LOCALSTORAGE_CHECKPOINTS_KEY, state.checkpoints);
     },
-    
+
     clearAllCheckpoints: (state) => {
       state.checkpoints = [];
-      saveToStorage("XnDEldenCompendium.checkpoints", state.checkpoints);
+      saveToStorage(LOCALSTORAGE_CHECKPOINTS_KEY, state.checkpoints);
     },
   },
 });
 
-export const { addCheckpoint, removeCheckpoint, clearAllCheckpoints } = checkpointsSlice.actions;
+export const { addCheckpoint, removeCheckpoint, clearAllCheckpoints } =
+  checkpointsSlice.actions;
 
 export default checkpointsSlice.reducer;

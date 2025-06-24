@@ -19,7 +19,7 @@ const App = () => {
   const isElectron = !!window.electronAPI;
 
   useEffect(() => {
-    if (!isElectron) return; // зум отключён в браузере
+    if (!isElectron) return;
 
     const handler = (e: WheelEvent) => {
       if (e.ctrlKey) {

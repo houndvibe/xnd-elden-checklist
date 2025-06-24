@@ -53,3 +53,7 @@ export const TRUNCATE_LIMITS = {
   DASHBOARD: 16,
   SUB_CATEGOTY_LABEL: 23,
 };
+
+export const LOCALSTORAGE_COLLECTION_KEY = "XnDEldenCompendium.collection";
+export const LOCALSTORAGE_SETTINGS_KEY = "XnDEldenCompendium.settings";
+export const LOCALSTORAGE_CHECKPOINTS_KEY = "XnDEldenCompendium.checkpoints";
