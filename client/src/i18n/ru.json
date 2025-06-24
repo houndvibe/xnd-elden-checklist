@@ -2874,6 +2874,7 @@
     "Sunwarmth Stone": "Камень тёплого солнца"
   },
   "toolsAndBellBearings": {
+    "Memory of Grace": "Воспоминание о благодати",
     "Kalé's Bell Bearing": "Колокольная сфера Кале",
     "Nomadic Merchant's Bell Bearing [1]": "Колокольная сфера торговца-кочевника [1]",
     "Nomadic Merchant's Bell Bearing [2]": "Колокольная сфера торговца-кочевника [2]",
@@ -3445,6 +3446,7 @@
     "About Spiritspring Jumping": "О прыжке в духовный источник",
     "About Vanquishing Enemy Groups": "О победах над группами врагов",
     "About Teardrop Scarabs": "О скарабеях слёз",
+    "About Strengthening Armaments": "Об усилении оружия",
     "About Summoning Other Players": "О призыве других игроков",
     "About Cooperative Multiplayer": "О совместной игре",
     "About Competitive Multiplayer": "О состязательной игре",
@@ -3455,6 +3457,9 @@
     "About Requesting Hunter Assistance": "О запросе помощи от охотников",
     "About Skills": "О навыках",
     "About Fast Traveling to Sites of Grace": "О быстром перемещении к местам благодати",
+    "About the Scadutree Blessing": "О благословении Древа Упадка",
+    "About the Revered Spirit Ash Blessing": "О благословении праха славного духа",
+    "About New Inventory Features": "О новых возможностях инвентаря",
     "About Fast Travel to Sites of Grace": "О быстром перемещении к местам благодати",
     "About Weapon Reinforcement": "Об усилении оружия",
     "About Roundtable Hold": "О крепости Круглого стола",
@@ -3470,7 +3475,13 @@
     "About Duels": "О дуэлях",
     "About United Combats and Combat Trials": "О совместных боях и боевых испытаниях",
     "About Spirit Ash Battles": "О битвах с использованием праха для призыва",
-    "About the Statue of Marika in Roundtable Hold": "О статуе Марики в крепости Круглого стола"
+    "About the Statue of Marika in Roundtable Hold": "О статуе Марики в крепости Круглого стола",
+    "About Adding Affinities": "О добавлении свойств",
+    "About Adding Skills": "О добавлении навыков",
+    "About Combat with Spirit Ashes": "О битвах с использованием праха для призыва",
+    "About Marika's Effigy at the Roundtable": "О статуе Марики в крепости Круглого стола",
+    "About Requesting Help from Hunters": "О запросе помощи от охотников",
+    "About United Combat and Combat Ordeals": "О совместных боях и боевых испытаниях"
   },
   "keyItems": {
     "Miquella's Great Rune": "Великая руна Микеллы",

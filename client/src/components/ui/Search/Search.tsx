@@ -12,6 +12,7 @@ import {
   navigateToItem,
   scrollToSearchTarget,
 } from "../../../lib/utils/search";
+import { truncateString } from "../../../lib/utils/misc";
 
 const { Search } = Input;
 
@@ -55,7 +56,7 @@ const SearchWithSuggestions = () => {
     setSearchText(value);
 
     const suggestions = generateSuggestions(value).map((item) => {
-      const translatedText = t(item.type, item.name);
+      const translatedText = truncateString(t(item.type, item.name), 35);
       return {
         value: item.name,
         displayText: translatedText,

@@ -20,6 +20,14 @@ export const tools: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "tools",
+    name: "Memory of Grace",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Memory+of+Grace",
+    dlc: false,
+  },
+  {
+    type: "toolsAndBellBearings",
+    subcategory: "tools",
     name: "Ancestral Infant's Head",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancestral+Infant's+Head",
