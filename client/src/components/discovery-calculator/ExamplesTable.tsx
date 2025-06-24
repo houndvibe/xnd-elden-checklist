@@ -69,7 +69,7 @@ const ExamplesTable = ({ calculatedDiscovery }: ExamplesTableProps) => {
           min={0.1}
           step={0.1}
           size="small"
-          style={{ width: 70 }}
+          style={{ width: 80 }}
           onChange={(v) => setChance(v)}
         />
         {t("misc", "Your chance") + ":"}

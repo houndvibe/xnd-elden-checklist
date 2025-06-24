@@ -23,6 +23,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
 
   return (
     <Modal
+      width={700}
       title={
         <Flex gap={20}>
           <span>
@@ -77,7 +78,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
 
             <Paragraph>
               {isRussian
-                ? `Данные приложения хранятся в вашем браузере. При очистке истории или кэша они будут удалены. Чтобы не потерять прогресс, регулярно экспортируйте свой прогресс. (инструкцция в FAQ)`
+                ? `Данные приложения хранятся в вашем браузере. При очистке истории или кэша они будут удалены. Чтобы не потерять прогресс, регулярно экспортируйте его. (инструкцция в FAQ)`
                 : "Your progress is stored in your browser. Clearing history or cache will erase it. Please export your data regularly to avoid losing progress. (instructions in FAQ)"}{" "}
               <br />
               {/*       {isRussian
@@ -171,7 +172,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
           <br />
           <br />
           {isRussian
-            ? '- Откройте настройки (иконка шестерёнки вверху справа) и нажмите "Export progress". Данные скопируются в буфер. Затем, после очистки историии бразуера или хранилища вставьте строку в поле импорта и нажмите "Import progress".'
+            ? '- Откройте настройки (иконка шестерёнки вверху справа) и нажмите "Экспорт прогресса". Данные скопируются в буфер. Затем, после очистки историии бразуера или хранилища вставьте строку в поле импорта и нажмите "Импорт прогресса".'
             : '- Open the settings (gear icon in the top right) and click "Export progress". The data will be copied to the clipboard. Then, after clearing your browser history or storage, paste the string into the import field and click "Import progress".'}
         </Paragraph>
       </Typography>
