@@ -15,7 +15,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
   const [lang, setLang] = useState<"en" | "ru">("en");
 
   const isRussian = lang === "ru";
-  /*   const isElectron = !!window.electronAPI; */
+  const isElectron = !!window.electronAPI;
 
   const handleLangSwitch = (checked: boolean) => {
     setLang(checked ? "ru" : "en");
@@ -66,29 +66,25 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
 
         <Divider />
 
-        {/*  {!isElectron && (
+        {!isElectron && (
           <>
             <Title level={5}>
               <Flex align="center" gap={10}>
-                <>
-                  <Image src={important} width={30} />
-                </>
+                <Image src={"assets/icons/important.png"} width={30} />
                 <>{isRussian ? "Важная информация" : "Important Information"}</>
               </Flex>
             </Title>
+
             <Paragraph>
               {isRussian
-                ? "Приложение сохраняет ваш прогресс в"
-                : "This app saves your progress using your browser's"}{" "}
-              <Text code>Local Storage</Text>.
-            </Paragraph>
-            <Paragraph>
-              <Title level={5} style={{ margin: 0 }}>
-                {isRussian
-                  ? "Не удаляйте следующие ключи:"
-                  : "Do not delete the following keys:"}
-              </Title>
+                ? `Данные приложения хранятся в вашем браузере. При очистке истории или кэша они будут удалены. Чтобы не потерять прогресс, регулярно экспортируйте свой прогресс. (инструкцция в FAQ)`
+                : "Your progress is stored in your browser. Clearing history or cache will erase it. Please export your data regularly to avoid losing progress. (instructions in FAQ)"}{" "}
               <br />
+              {/*       {isRussian
+                ? "Не удаляйте следующие ключи:"
+                : "Do not delete the following keys:"} */}
+            </Paragraph>
+            {/*             <Paragraph>
               <Text code>XnDEldenCompendium.collection</Text> —{" "}
               {isRussian
                 ? "содержит данные о собранных предметах."
@@ -98,16 +94,21 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
               {isRussian
                 ? "содержит ваши личные настройки."
                 : "contains your personal preferences."}
+              <br />
+              <Text code>XnDEldenCompendium.checkpoints</Text> —{" "}
+              {isRussian
+                ? "содержит чекпоинты."
+                : "contains your checkpoints data."}
             </Paragraph>
             <Paragraph>
               {isRussian
-                ? "Очистка хранилища браузера или удаление этих ключей приведёт к потере прогресса!"
-                : "Clearing your browser storage or removing these keys will reset your progress!"}
-            </Paragraph>
+                ? "Очистка истории браузера или удаление этих ключей приведёт к потере прогресса! Поэтому не забывайте делать Экспорт данных."
+                : "Clearing your browser history or removing these keys will result in loss of progress! Don’t forget to export your data before doing so."}
+            </Paragraph> */}
             <Divider />
           </>
         )}
- */}
+
         <Title level={5}>
           <Flex align="center" gap={10}>
             <Image src={"assets/icons/contacts.png"} width={50} />
@@ -161,15 +162,17 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
         </Title>
 
         <Paragraph>
+          <br />
           <Text strong>
             {isRussian
-              ? "⬤ Вышла новая версия приложения - как мне перенести в нее данные?"
-              : "⬤ A new version of the app is out — how do I transfer my data?"}
+              ? "⬤ Как сделать экспорт прогресса?"
+              : "⬤ How do I export my progress?"}
           </Text>
           <br />
+          <br />
           {isRussian
-            ? '- Откройте настройки (иконка шестерёнки вверху справа) и нажмите "Export progress". Затем в новой версии приложения вставьте строку в поле импорта и нажмите "Import progress".'
-            : '- Open settings (gear icon in the top right) and click "Export progress". Then, in the new version of the app, paste the string into the import field and click "Import progress".'}
+            ? '- Откройте настройки (иконка шестерёнки вверху справа) и нажмите "Export progress". Данные скопируются в буфер. Затем, после очистки историии бразуера или хранилища вставьте строку в поле импорта и нажмите "Import progress".'
+            : '- Open the settings (gear icon in the top right) and click "Export progress". The data will be copied to the clipboard. Then, after clearing your browser history or storage, paste the string into the import field and click "Import progress".'}
         </Paragraph>
       </Typography>
     </Modal>
