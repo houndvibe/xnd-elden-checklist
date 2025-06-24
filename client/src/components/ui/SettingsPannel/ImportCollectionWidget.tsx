@@ -1,20 +1,20 @@
-import { Button, Flex, Input, message } from "antd";
-import { useState } from "react";
+import { Button, Flex, message } from "antd";
 import { t } from "../../../i18n";
 
 export default function ImportCollectionWidget() {
-  const [inputValue, setInputValue] = useState("");
-
   const [messageApi, contextHolder] = message.useMessage();
 
-  const handleImport = () => {
-    if (!inputValue.trim()) {
-      messageApi.error(t("misc", "Input is empty!"));
-      return;
-    }
-
+  const handleImport = async () => {
     try {
-      let parsed = inputValue;
+      // Читаем данные из буфера обмена
+      const clipboardText = await navigator.clipboard.readText();
+
+      if (!clipboardText.trim()) {
+        messageApi.error(t("misc", "Clipboard is empty!"));
+        return;
+      }
+
+      let parsed = clipboardText;
 
       while (typeof parsed === "string") {
         parsed = JSON.parse(parsed);
@@ -22,16 +22,28 @@ export default function ImportCollectionWidget() {
 
       if (typeof parsed !== "object" || parsed === null) {
         messageApi.error(t("misc", "Wrong format"));
+        return;
       }
 
       localStorage.setItem(
         "XnDEldenCompendium.collection",
         JSON.stringify(parsed)
       );
+
+      messageApi.success(t("misc", "Data imported successfully!"));
       window.location.reload();
     } catch (e) {
       console.error(e);
-      message.error(t("misc", "Wrong format"));
+      if (e instanceof DOMException && e.name === "NotAllowedError") {
+        messageApi.error(
+          t(
+            "misc",
+            "Access to clipboard denied. Please allow clipboard access."
+          )
+        );
+      } else {
+        messageApi.error(t("misc", "Wrong format"));
+      }
     }
   };
 
@@ -46,18 +58,12 @@ export default function ImportCollectionWidget() {
   return (
     <Flex gap={10} align="center">
       {contextHolder}
-      <Input
-        size="small"
-        placeholder={t("misc", "Paste Your Progress Data") + "..."}
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-      />
-      <Button onClick={handleImport} size="small">
-        {t("misc", "Import")}
-      </Button>
-      <span>|</span>
       <Button onClick={exportData} size="small">
         {t("misc", "Export progress")}
+      </Button>
+      <span>|</span>
+      <Button onClick={handleImport} size="small">
+        {t("misc", "Import from clipboard")}
       </Button>
     </Flex>
   );
