@@ -13,7 +13,7 @@ interface ExamplesTableProps {
 const renderNameColumn = (name: string, record: ItemDropTable) => (
   <Flex align="center" gap={10}>
     {t("misc", name)}
-    <Image src={record.imgUrl} height={50} preview={false} />
+    <Image src={record.imgUrl} height={50} width={50} preview={false} />
   </Flex>
 );
 

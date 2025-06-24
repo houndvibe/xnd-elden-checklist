@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Flex, InputNumber, Switch } from "antd";
+import { Card, Flex, InputNumber, Switch } from "antd";
 
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "../../store/typedDispatch";
@@ -125,7 +125,7 @@ export default function DiscoveryCalculator() {
   ];
 
   return (
-    <div className={styles.calculator}>
+    <Card className={styles.calculator}>
       <Flex className={styles.mainFlex}>
         <Flex vertical className={styles.formContainer}>
           {formFields.map(({ label, component }, idx) => (
@@ -147,6 +147,6 @@ export default function DiscoveryCalculator() {
           <ExamplesTable calculatedDiscovery={storedDiscovery} />
         </Flex>
       </Flex>
-    </div>
+    </Card>
   );
 }

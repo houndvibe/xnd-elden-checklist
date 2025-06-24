@@ -19,8 +19,8 @@ export default function SettingsPannel() {
     (state) => state.discovery.calculatedDiscovery
   );
 
-  const checkpoints = useAppSelector((state) => state.checkpoints.checkpoints);
-
+  /*  const checkpoints = useAppSelector((state) => state.checkpoints.checkpoints);
+   */
   /*   const isElectron = !!window.electronAPI; */
 
   return (
@@ -52,17 +52,16 @@ export default function SettingsPannel() {
           </Flex>
         </NavLink>
         <span>|</span>
-        <NavLink to="/checkpoints">
+        {/*  <NavLink to="/checkpoints">
           <Flex gap={6} align="center">
             <span>{t("misc", "Checkpoints")} :</span>
             <span style={{ color: APP_PALETTE.textPrimary }}>
               {checkpoints.length}
             </span>
           </Flex>
-        </NavLink>
+        </NavLink> */}
         <span>|</span>
         <ImportCollectionWidget />
-        <span>|</span>
       </Flex>
 
       <Divider size="small" />

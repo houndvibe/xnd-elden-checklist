@@ -101,7 +101,7 @@ export default function Table({
         )}
         {record.dlc && (
           <Tooltip title="Shadow of the Erdtree Dlc content">
-            <Image preview={false} src={icon} height={20} />
+            <Image preview={false} src={icon} height={20} width={20} />
           </Tooltip>
         )}
       </Flex>
@@ -140,7 +140,7 @@ export default function Table({
             )}
             {item.dlc && (
               <Tooltip title="Shadow of the Erdtree Dlc content">
-                <Image src={icon} height={12} preview={false} />
+                <Image src={icon} height={20} width={20} preview={false} />
               </Tooltip>
             )}
           </Flex>

@@ -49,7 +49,7 @@ export default function DashboardWidget({
         strokeColor={PROGRESSBAR_COLORS}
         format={(percent) =>
           percent === 100 ? (
-            <Image src={icon} height={80} preview={false} />
+            <Image src={icon} height={80} width={80} preview={false} />
           ) : (
             `${percent}%`
           )

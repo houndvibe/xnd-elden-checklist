@@ -53,7 +53,7 @@ export default function ImportCollectionWidget() {
         onChange={(e) => setInputValue(e.target.value)}
       />
       <Button onClick={handleImport} size="small">
-        {t("misc", "Import progress")}
+        {t("misc", "Import")}
       </Button>
       <span>|</span>
       <Button onClick={exportData} size="small">

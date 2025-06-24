@@ -172,8 +172,8 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
           <br />
           <br />
           {isRussian
-            ? '- Откройте настройки (иконка шестерёнки вверху справа) и нажмите "Экспорт прогресса". Данные скопируются в буфер. Затем, после очистки историии бразуера или хранилища вставьте строку в поле импорта и нажмите "Импорт прогресса".'
-            : '- Open the settings (gear icon in the top right) and click "Export progress". The data will be copied to the clipboard. Then, after clearing your browser history or storage, paste the string into the import field and click "Import progress".'}
+            ? '- Откройте настройки (иконка шестерёнки вверху справа) и нажмите "Экспорт прогресса". Данные скопируются в буфер. Затем, после очистки историии бразуера или хранилища вставьте строку в поле импорта и нажмите "Импорт".'
+            : '- Open the settings (gear icon in the top right) and click "Export progress". The data will be copied to the clipboard. Then, after clearing your browser history or storage, paste the string into the import field and click "Import".'}
         </Paragraph>
       </Typography>
     </Modal>

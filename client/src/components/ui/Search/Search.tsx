@@ -63,7 +63,8 @@ const SearchWithSuggestions = () => {
           <Flex justify="space-between">
             {translatedText}
             <Image
-              height={20}
+              height={40}
+              width={40}
               preview={false}
               src={
                 item.subcategory === "bellBearings"
