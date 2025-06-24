@@ -78,8 +78,8 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
 
             <Paragraph>
               {isRussian
-                ? `Данные приложения хранятся в вашем браузере. При очистке истории или кэша они будут удалены. Чтобы не потерять прогресс, регулярно экспортируйте его. (инструкцция в FAQ)`
-                : "Your progress is stored in your browser. Clearing history or cache will erase it. Please export your data regularly to avoid losing progress. (instructions in FAQ)"}{" "}
+                ? `Данные приложения хранятся в вашем браузере. При очистке истории или кэша они будут удалены. Чтобы не потерять прогресс, рекомендую экспортировать его после каждой игровой сессии и сохранять в текстовом файле. (инструкцция в FAQ)`
+                : "Your progress is stored in your browser. It will be lost if you clear history or cache. To avoid losing it, I recommend exporting your progress after each play session and saving it in a text file. (instructions in FAQ)"}
               <br />
               {/*       {isRussian
                 ? "Не удаляйте следующие ключи:"
@@ -166,14 +166,14 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
           <br />
           <Text strong>
             {isRussian
-              ? "⬤ Как сделать экспорт прогресса?"
-              : "⬤ How do I export my progress?"}
+              ? "⬤ Как сделать экспорт/импорт прогресса?"
+              : "⬤ How do I export/import my progress?"}
           </Text>
           <br />
           <br />
           {isRussian
-            ? '- Откройте настройки (иконка шестерёнки вверху справа) и нажмите "Экспорт прогресса". Данные скопируются в буфер. Затем, после очистки историии бразуера или хранилища вставьте строку в поле импорта и нажмите "Импорт".'
-            : '- Open the settings (gear icon in the top right) and click "Export progress". The data will be copied to the clipboard. Then, after clearing your browser history or storage, paste the string into the import field and click "Import".'}
+            ? '- Откройте настройки (иконка шестерёнки вверху справа) и нажмите "Экспорт прогресса". Данные скопируются в буфер. Затем, после очистки историии бразуера или хранилища нажмите "Импорт прогресса". Коллекция будет восстановлена. Если вы хотите восттановить коллекцию из заранее сохраненного текстового файла - просто скопируйте запись из файла и нажмите "Импорт прогресса"'
+            : '- Open the settings (gear icon in the top right) and click "Export Progress". The data will be copied to your clipboard. Then, after clearing your browser history or storage, click "Import Progress" — your collection will be restored. If you want to restore your collection from a previously saved text file, simply copy the saved entry and click "Import Progress".'}
         </Paragraph>
       </Typography>
     </Modal>

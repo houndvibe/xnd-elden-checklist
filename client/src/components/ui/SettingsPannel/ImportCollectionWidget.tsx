@@ -77,7 +77,7 @@ export default function ImportCollectionWidget() {
       </Button>
       <span>|</span>
       <Button onClick={handleImport} size="small">
-        {t("misc", "Import from clipboard")}
+        {t("misc", "Import progress")}
       </Button>
     </Flex>
   );
