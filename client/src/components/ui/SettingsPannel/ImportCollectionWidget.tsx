@@ -1,12 +1,12 @@
 import { Button, Flex, message } from "antd";
 import { t } from "../../../i18n";
+import LZString from "lz-string";
 
 export default function ImportCollectionWidget() {
   const [messageApi, contextHolder] = message.useMessage();
 
   const handleImport = async () => {
     try {
-      // Читаем данные из буфера обмена
       const clipboardText = await navigator.clipboard.readText();
 
       if (!clipboardText.trim()) {
@@ -14,7 +14,20 @@ export default function ImportCollectionWidget() {
         return;
       }
 
-      let parsed = clipboardText;
+      let dataToProcess = clipboardText;
+
+      try {
+        const decompressed = LZString.decompressFromBase64(clipboardText);
+        if (decompressed) {
+          dataToProcess = decompressed;
+        }
+      } catch {
+        console.log(
+          "Decompression failed, trying to parse as uncompressed data"
+        );
+      }
+
+      let parsed = dataToProcess;
 
       while (typeof parsed === "string") {
         parsed = JSON.parse(parsed);
@@ -51,7 +64,8 @@ export default function ImportCollectionWidget() {
     const data = localStorage.getItem("XnDEldenCompendium.collection");
     messageApi.info(t("misc", "Your progress data saved to clipboard!"));
     if (data) {
-      navigator.clipboard.writeText(data);
+      const compressedData = LZString.compressToBase64(data);
+      navigator.clipboard.writeText(compressedData);
     }
   };
 
