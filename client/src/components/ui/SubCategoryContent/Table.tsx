@@ -30,6 +30,7 @@ import {
 import CustomTableTitle from "./CustomTableTitle";
 import { t } from "../../../i18n";
 import icon from "../../../../public/assets/dlc-icon.png";
+import { isTablet } from "react-device-detect";
 
 interface Props {
   setHoveredItemName: React.Dispatch<React.SetStateAction<string>>;
@@ -233,7 +234,7 @@ export default function Table({
           onMouseEnter: () => handleMouseEnter(record),
           onMouseLeave: handleMouseLeave,
           onClick: () =>
-            isMultiVersionTalisman(record)
+            isMultiVersionTalisman(record) || isTablet
               ? null
               : getStoreAction({
                   name: record.name,

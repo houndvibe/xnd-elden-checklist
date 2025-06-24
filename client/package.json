@@ -28,7 +28,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "devhost":"vite --host",
+    "devhost": "vite --host",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -43,6 +43,7 @@
     "lodash.debounce": "^4.0.8",
     "puppeteer": "^24.10.0",
     "react": "^19.1.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.6.2",
