@@ -89,13 +89,13 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
   width: 100%;
 }
 .shieldsAndTorches_wallpaper {
-  background: url("../../public/assets/bg-shields.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-shields.jpg") center/cover no-repeat;
 }
 .spiritAshes_wallpaper {
   background: url("../../public/assets/bg-ashes.jpg") center/cover no-repeat;
 }
 .talismans_wallpaper {
-  background: url("../../public/assets/bg-talismans.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-talismans.jpg") center/cover no-repeat;
 }
 .ashesOfWar_wallpaper {
   background: url("../../public/assets/bg-ashesOfWar.jpg") center/cover
@@ -106,7 +106,7 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
     no-repeat;
 }
 .incantations_wallpaper {
-  background: url("../../public/assets/bg-incantations.png") center/cover
+  background: url("../../public/assets/bg-incantations.jpg") center/cover
     no-repeat;
 }
 .gesturesAndMultiplayer_wallpaper {
@@ -123,23 +123,23 @@ $link-color-hover: color.adjust($link-color, $lightness: 15%, $space: hsl);
   background: url("../../public/assets/bg-infoItems.jpg") center/cover no-repeat;
 }
 .toolsAndBellBearings_wallpaper {
-  background: url("../../public/assets/bg-tools.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-tools.jpg") center/cover no-repeat;
 }
 .tearsAndUpgrades_wallpaper {
   background: url("../../public/assets/bg-tears.png") center/cover no-repeat;
 }
 .craft_wallpaper {
-  background: url("../../public/assets/bg-craft.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-craft.jpg") center/cover no-repeat;
 }
 .armour_wallpaper {
-  background: url("../../public/assets/bg-armour.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-armour.jpg") center/cover no-repeat;
 }
 .consumablesAndAmmo_wallpaper {
-  background: url("../../public/assets/bg-consumables.png") center/cover
+  background: url("../../public/assets/bg-consumables.jpg") center/cover
     no-repeat;
 }
 .keyItems_wallpaper {
-  background: url("../../public/assets/bg-keyitems.png") center/cover no-repeat;
+  background: url("../../public/assets/bg-keyitems.jpg") center/cover no-repeat;
 }
 
 //чекбоксы
