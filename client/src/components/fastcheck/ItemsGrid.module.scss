@@ -4,6 +4,7 @@
   user-select: none;
   position: relative;
   height: 75vh;
+  width: 100%;
   padding: 30px;
   z-index: 1;
   overflow-y: scroll;
@@ -19,7 +20,7 @@
     height: 100vh;
     background: url("../../../public/assets/bg-shields.jpg") center center /
       cover no-repeat;
-    opacity: 0.1; // здесь регулируешь прозрачность
+    opacity: 0.01; // здесь регулируешь прозрачность
     z-index: -1;
     pointer-events: none;
   }

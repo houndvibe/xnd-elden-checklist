@@ -84,7 +84,7 @@ export default function Tabs() {
   };
 
   return (
-    <div style={{ maxWidth: "96vw", overflowX: "hidden" }}>
+    <div style={{ maxWidth: "96vw", overflowX: "hidden", marginTop: 10 }}>
       <ConfigProvider
         theme={{
           components: {
