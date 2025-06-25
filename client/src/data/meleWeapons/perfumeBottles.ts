@@ -42,7 +42,7 @@ export const perfumeBottles: MeleWeaponItem[] = [
     name: "Deadly Poison",
     subcategory: "perfumeBottles",
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Deadly_Poison",
+    link: "https://eldenring.wiki.fextralife.com/Deadly+Poison",
     legendary: false,
     dlc: true,
   },

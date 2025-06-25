@@ -1,4 +1,4 @@
-import { Image, Divider, Space, Tooltip, Spin } from "antd";
+import { Image, Divider, Space, Spin, Popover, Flex } from "antd";
 import {
   ItemCategory,
   Item,
@@ -18,6 +18,10 @@ import styles from "./ItemsGrid.module.scss";
 import { getSubCategoryStats } from "../../lib/utils/stats";
 import { APP_PALETTE, exceptionalSubcategories } from "../../lib/consts";
 import { t } from "../../i18n";
+import { useNavigate } from "react-router-dom";
+import { navigateToItem } from "../../lib/utils/search";
+import { setFastcheck } from "../../store/settingsSlice";
+import Link from "antd/es/typography/Link";
 
 interface ItemsGridProps {
   selectedCategory: ItemCategory;
@@ -48,7 +52,7 @@ export default function ItemsGrid({
   searchValue,
 }: ItemsGridProps) {
   const dispatch = useAppDispatch();
-
+  const navigate = useNavigate();
   const categoryData = useAppSelector(
     (state) => state.collection.collectionData[`${selectedCategory}Data`]
   );
@@ -104,9 +108,32 @@ export default function ItemsGrid({
                       const allVariants = [part, ...(part.children ?? [])];
 
                       return allVariants.map((variant) => (
-                        <Tooltip
-                          title={t(selectedCategory, variant.name)}
-                          key={variant.name}
+                        <Popover
+                          content={
+                            <Flex vertical gap={10} align="center">
+                              <Flex align="baseline">
+                                <Link style={{ fontSize: 30 }} href={part.link}>
+                                  {t(selectedCategory, part.name)}
+                                </Link>
+                              </Flex>
+
+                              <Image
+                                style={{ cursor: "pointer" }}
+                                onClick={() => {
+                                  dispatch(setFastcheck(false));
+                                  navigateToItem(part.name, dispatch, navigate);
+                                }}
+                                preview={false}
+                                width={500}
+                                height={500}
+                                src={getImageUrl(
+                                  variant,
+                                  subcategoryName,
+                                  selectedCategory
+                                )}
+                              />
+                            </Flex>
+                          }
                         >
                           <div
                             className={
@@ -146,7 +173,7 @@ export default function ItemsGrid({
                               }}
                             />
                           </div>
-                        </Tooltip>
+                        </Popover>
                       ));
                     });
                   }
@@ -158,15 +185,44 @@ export default function ItemsGrid({
                       }`;
 
                       return (
-                        <Tooltip
-                          title={
-                            version.tier
-                              ? `${t(selectedCategory, item.name)} +${
-                                  version.tier
-                                }`
-                              : t(selectedCategory, item.name)
+                        <Popover
+                          content={
+                            <Flex vertical gap={10} align="center">
+                              <Flex align="baseline">
+                                <Link
+                                  style={{ fontSize: 30 }}
+                                  href={
+                                    version.tier
+                                      ? item.link + "+" + version.tier
+                                      : item.link
+                                  }
+                                >
+                                  {version.tier
+                                    ? t(selectedCategory, item.name) +
+                                      " +" +
+                                      version.tier
+                                    : t(selectedCategory, item.name)}
+                                </Link>
+                              </Flex>
+
+                              <Image
+                                style={{ cursor: "pointer" }}
+                                onClick={() => {
+                                  dispatch(setFastcheck(false));
+                                  navigateToItem(item.name, dispatch, navigate);
+                                }}
+                                preview={false}
+                                width={500}
+                                height={500}
+                                src={getImageUrl(
+                                  item,
+                                  subcategoryName,
+                                  selectedCategory,
+                                  versionName
+                                )}
+                              />
+                            </Flex>
                           }
-                          key={versionName}
                         >
                           <div
                             className={
@@ -208,15 +264,38 @@ export default function ItemsGrid({
                               }}
                             />
                           </div>
-                        </Tooltip>
+                        </Popover>
                       );
                     });
                   }
 
                   return (
-                    <Tooltip
-                      title={t(selectedCategory, item.name)}
-                      key={item.name}
+                    <Popover
+                      content={
+                        <Flex vertical gap={10} align="center">
+                          <Flex align="baseline">
+                            <Link style={{ fontSize: 30 }} href={item.link}>
+                              {t(selectedCategory, item.name)}
+                            </Link>
+                          </Flex>
+
+                          <Image
+                            style={{ cursor: "pointer" }}
+                            onClick={() => {
+                              dispatch(setFastcheck(false));
+                              navigateToItem(item.name, dispatch, navigate);
+                            }}
+                            preview={false}
+                            width={500}
+                            height={500}
+                            src={getImageUrl(
+                              item,
+                              subcategoryName,
+                              selectedCategory
+                            )}
+                          />
+                        </Flex>
+                      }
                     >
                       <div
                         className={
@@ -253,7 +332,7 @@ export default function ItemsGrid({
                           }}
                         />
                       </div>
-                    </Tooltip>
+                    </Popover>
                   );
                 })}
               </Space>
