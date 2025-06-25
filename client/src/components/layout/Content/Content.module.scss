@@ -7,4 +7,30 @@
   background: $bg-dark;
   overflow-y: scroll;
   position: relative;
+  user-select: none;
+  position: relative;
+  height: 75vh;
+
+  z-index: 1;
+  overflow-y: scroll;
+  border-radius: 10px;
+
+  // Поверх фона будет контент
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("../../../public/assets/bg-shields.jpg") center center /
+      cover no-repeat;
+    opacity: 0.1; // здесь регулируешь прозрачность
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+.menu {
+  background: transparent;
 }

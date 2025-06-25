@@ -69,10 +69,7 @@ export default function Content() {
           <Menu
             mode="horizontal"
             selectedKeys={[getActiveKey()]}
-            style={{
-              backgroundColor: APP_PALETTE.bgDark,
-              marginBottom: "20px",
-            }}
+            className={styles.menu}
             items={[
               {
                 key: "dashboard",

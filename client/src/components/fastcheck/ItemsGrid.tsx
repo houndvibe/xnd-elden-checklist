@@ -127,42 +127,46 @@ export default function ItemsGrid({ selectedCategory }: ItemsGridProps) {
               <Space wrap size={12}>
                 {filteredItems.map((item) => {
                   if (isArmourSet(item)) {
-                    return item.items?.map((part) => (
-                      <Tooltip
-                        title={t(selectedCategory, part.name)}
-                        key={part.name}
-                      >
-                        <Image
-                          placeholder={
-                            <div>
-                              <Spin size="small" />
-                            </div>
-                          }
-                          className={
-                            part.collected
-                              ? styles.itemImgCollected
-                              : styles.itemImg
-                          }
-                          src={getImageUrl(
-                            part,
-                            subcategoryName,
-                            selectedCategory
-                          )}
-                          width={imgSize}
-                          height={imgSize}
-                          alt={part.name}
-                          preview={false}
-                          onClick={() => {
-                            getStoreAction({
-                              name: part.name,
-                              category: selectedCategory,
-                              subcategory: subcategoryName as ItemSubCategory,
-                              dispatch,
-                            });
-                          }}
-                        />
-                      </Tooltip>
-                    ));
+                    return item.items?.flatMap((part) => {
+                      const allVariants = [part, ...(part.children ?? [])];
+
+                      return allVariants.map((variant) => (
+                        <Tooltip
+                          title={t(selectedCategory, variant.name)}
+                          key={variant.name}
+                        >
+                          <Image
+                            placeholder={
+                              <div>
+                                <Spin size="small" />
+                              </div>
+                            }
+                            className={
+                              variant.collected
+                                ? styles.itemImgCollected
+                                : styles.itemImg
+                            }
+                            src={getImageUrl(
+                              variant,
+                              subcategoryName,
+                              selectedCategory
+                            )}
+                            width={imgSize}
+                            height={imgSize}
+                            alt={variant.name}
+                            preview={false}
+                            onClick={() => {
+                              getStoreAction({
+                                name: variant.name,
+                                category: selectedCategory,
+                                subcategory: subcategoryName as ItemSubCategory,
+                                dispatch,
+                              });
+                            }}
+                          />
+                        </Tooltip>
+                      ));
+                    });
                   }
 
                   if (isMultiVersionTalisman(item)) {

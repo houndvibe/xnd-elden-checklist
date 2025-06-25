@@ -3,25 +3,27 @@
 .itemsGridWrapper {
   user-select: none;
   position: relative;
-  width: 100%;
-  min-height: 100%;
+  height: 75vh;
   padding: 30px;
   z-index: 1;
-  overflow: hidden;
-  border-radius: 4px;
+  overflow-y: scroll;
+  border-radius: 10px;
 
+  // Поверх фона будет контент
   &::before {
     content: "";
-    position: absolute;
-    inset: 0;
-    background: url("../../../public/assets/bg-ashesOfWar.jpg") center/cover
-      no-repeat;
-    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("../../../public/assets/bg-shields.jpg") center center /
+      cover no-repeat;
+    opacity: 0.1; // здесь регулируешь прозрачность
     z-index: -1;
-    height: 100%;
+    pointer-events: none;
   }
 }
-
 .itemImg {
   cursor: pointer;
   object-fit: "cover";
