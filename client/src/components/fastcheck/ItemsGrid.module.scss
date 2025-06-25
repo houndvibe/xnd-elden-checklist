@@ -42,5 +42,6 @@
   object-fit: "cover";
   padding: 5px;
   border-radius: 4px;
-  background: rgba($text-highlighted, 0.3);
+  background: rgba($text-highlighted, 0.2);
+  border: 1px solid $text-primary;
 }
