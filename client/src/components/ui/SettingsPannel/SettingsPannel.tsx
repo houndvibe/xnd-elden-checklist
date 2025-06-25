@@ -10,7 +10,6 @@ import { setSpoilers } from "../../../store/settingsSlice";
 import ImportCollectionWidget from "./ImportCollectionWidget";
 import LangWidget from "./LangWidget";
 import { t } from "../../../i18n";
-import FastCheckSwitch from "./FastCheckSwitch";
 
 export default function SettingsPannel() {
   const dispatch = useAppDispatch();
@@ -37,15 +36,15 @@ export default function SettingsPannel() {
             onChange={(checked) => dispatch(setSpoilers(checked))}
           />
         </Flex>
-        {/* {isElectron && (
+        {/*         {isElectron && (
           <>
             <span>|</span>
             <ZoomWidget />
           </>
-        )} */}
+        )}
         <span>|</span>
         <FastCheckSwitch />
-        {/*   <NavLink to="/discoveryCalculator">
+        <NavLink to="/discoveryCalculator">
           <Flex gap={6} align="center">
             <span>{t("misc", "Discovery")} :</span>
             <span style={{ color: APP_PALETTE.textPrimary }}>

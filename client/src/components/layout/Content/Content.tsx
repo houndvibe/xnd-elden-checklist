@@ -14,6 +14,7 @@ import { t } from "../../../i18n";
 import { ItemCategory } from "../../../global-types";
 import { useAppSelector } from "../../../store/typedDispatch";
 import SettingsPannel from "../../ui/SettingsPannel/SettingsPannel";
+import FastCheckSwitch from "../../ui/SettingsPannel/FastCheckSwitch";
 
 const { Content: AppContent } = Layout;
 
@@ -22,7 +23,6 @@ export default function Content() {
   const location = useLocation();
 
   const showSettings = useAppSelector((state) => state.settings.showSettings);
-
   const getActiveKey = () => {
     const path = location.pathname.split("/")[1] as
       | ItemCategory
@@ -51,7 +51,7 @@ export default function Content() {
 
   return (
     <AppContent className={styles.content}>
-      <Flex vertical>
+      <Flex vertical style={{ position: "relative" }}>
         {showSettings && <SettingsPannel />}
         <ConfigProvider
           theme={{
@@ -98,6 +98,23 @@ export default function Content() {
               },
             ]}
           />
+
+          {itemCategories.includes(
+            location.pathname.split("/")[1] as ItemCategory
+          ) && (
+            <Flex
+              justify="center"
+              align="center"
+              gap={10}
+              style={{
+                position: "absolute",
+                right: 10,
+                top: showSettings ? 56 : 10,
+              }}
+            >
+              <FastCheckSwitch />
+            </Flex>
+          )}
         </ConfigProvider>
 
         <Routes>

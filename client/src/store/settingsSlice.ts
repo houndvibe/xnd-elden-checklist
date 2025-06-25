@@ -10,6 +10,7 @@ interface SettingsState {
   showWelcome: boolean;
   lang: Language;
   fastcheck: boolean;
+  fastcheckSize: number;
 }
 
 const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
@@ -18,6 +19,7 @@ const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
   showWelcome: true,
   lang: "en",
   fastcheck: false,
+  fastcheckSize: 60,
 });
 
 export const settingsSlice = createSlice({
@@ -44,6 +46,10 @@ export const settingsSlice = createSlice({
       state.fastcheck = !state.fastcheck;
       saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
     },
+    setFastcheckSize: (state, action: PayloadAction<number>) => {
+      state.fastcheckSize = action.payload;
+      saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
+    },
   },
 });
 
@@ -53,5 +59,6 @@ export const {
   setStopWelcome,
   setLang,
   setFastcheck,
+  setFastcheckSize,
 } = settingsSlice.actions;
 export default settingsSlice.reducer;

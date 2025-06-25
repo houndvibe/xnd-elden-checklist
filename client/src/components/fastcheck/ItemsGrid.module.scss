@@ -28,11 +28,11 @@
 .itemImg {
   cursor: pointer;
   object-fit: "cover";
-  padding: 5px;
-  border-radius: 4px;
+  padding: 10px;
+  border-radius: 18px;
 
   &:hover {
-    background: rgba(white, 0.3);
+    background: linear-gradient(330deg, $bg-light, rgba($text-primary, 0.2));
     opacity: 1;
   }
 }
@@ -42,11 +42,15 @@
   object-fit: "cover";
   padding: 5px;
   border-radius: 18px;
-  background: rgba($text-highlighted, 0.2);
+  background: linear-gradient(
+    330deg,
+    $bg-light,
+    rgba($text-highlighted, 0.2)
+  ); // black to gold
   border: 1px solid $text-primary;
-
+  padding: 10px;
   &:hover {
-    background: rgba(white, 0.3);
+    background: linear-gradient(330deg, $bg-light, rgba($text-primary, 0.2));
     opacity: 1;
   }
 }

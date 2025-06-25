@@ -8,11 +8,15 @@ import styles from "./FastCheck.module.scss";
 import { useNavigate, useParams } from "react-router-dom";
 import { t } from "../../i18n";
 import { useState } from "react";
+import { useAppDispatch, useAppSelector } from "../../store/typedDispatch";
+import { setFastcheckSize } from "../../store/settingsSlice";
 const { Option } = Select;
+
 export default function FastCheck() {
   const navigate = useNavigate();
+  const dispatch = useAppDispatch();
+  const fastcheckSize = useAppSelector((state) => state.settings.fastcheckSize);
 
-  const [imgSize, setImgSize] = useState(60);
   const [searchValue, setSearchValue] = useState("");
 
   const { tabKey } = useParams<{ tabKey?: ItemCategory }>();
@@ -32,9 +36,9 @@ export default function FastCheck() {
         <Flex vertical gap={10}>
           <Flex gap={12} wrap="wrap">
             <Select
-              defaultValue={imgSize}
+              defaultValue={fastcheckSize}
               style={{ width: 140 }}
-              onChange={setImgSize}
+              onChange={(v) => dispatch(setFastcheckSize(v))}
             >
               <Option value={40}>{t("misc", "Small")}</Option>
               <Option value={60}>{t("misc", "Medium")}</Option>
@@ -53,7 +57,7 @@ export default function FastCheck() {
           </Flex>
           <ItemsGrid
             selectedCategory={tabKey!}
-            imgSize={imgSize}
+            imgSize={fastcheckSize}
             searchValue={searchValue}
           />
         </Flex>

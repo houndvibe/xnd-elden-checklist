@@ -732,9 +732,9 @@ export const namedChampions: ArmourSet[] = [
         type: "armour",
         subcategory: "namedChampions",
         pieceType: "gloves",
-        name: "Rellana's Gauntlets",
+        name: "Rellana's Gloves",
         collected: false,
-        link: "https://eldenring.wiki.fextralife.com/Rellana's+Gauntlets",
+        link: "https://eldenring.wiki.fextralife.com/Rellana's+Gloves",
         dlc: true,
       },
       {
