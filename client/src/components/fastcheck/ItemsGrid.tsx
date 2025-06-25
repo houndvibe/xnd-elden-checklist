@@ -1,13 +1,4 @@
-import {
-  Image,
-  Divider,
-  Space,
-  Select,
-  Tooltip,
-  Input,
-  Flex,
-  Spin,
-} from "antd";
+import { Image, Divider, Space, Tooltip, Spin } from "antd";
 import {
   ItemCategory,
   Item,
@@ -27,12 +18,11 @@ import styles from "./ItemsGrid.module.scss";
 import { getSubCategoryStats } from "../../lib/utils/stats";
 import { APP_PALETTE, exceptionalSubcategories } from "../../lib/consts";
 import { t } from "../../i18n";
-import { useState } from "react";
-
-const { Option } = Select;
 
 interface ItemsGridProps {
   selectedCategory: ItemCategory;
+  imgSize: number;
+  searchValue: string;
 }
 
 const sanitize = (str: string) => str.replace(/:|"/g, "");
@@ -52,10 +42,12 @@ const getImageUrl = (
   )}.png`;
 };
 
-export default function ItemsGrid({ selectedCategory }: ItemsGridProps) {
+export default function ItemsGrid({
+  selectedCategory,
+  imgSize,
+  searchValue,
+}: ItemsGridProps) {
   const dispatch = useAppDispatch();
-  const [imgSize, setImgSize] = useState(60);
-  const [searchValue, setSearchValue] = useState("");
 
   const categoryData = useAppSelector(
     (state) => state.collection.collectionData[`${selectedCategory}Data`]
@@ -65,27 +57,6 @@ export default function ItemsGrid({ selectedCategory }: ItemsGridProps) {
 
   return (
     <div className={styles.itemsGridWrapper}>
-      <Flex gap={12} style={{ marginBottom: 16 }} wrap="wrap">
-        <Select
-          defaultValue={imgSize}
-          style={{ width: 140 }}
-          onChange={setImgSize}
-        >
-          <Option value={40}>{t("misc", "Small")}</Option>
-          <Option value={60}>{t("misc", "Medium")}</Option>
-          <Option value={80}>{t("misc", "Big")}</Option>
-          <Option value={160}>{t("misc", "Large")}</Option>
-        </Select>
-
-        <Input
-          allowClear
-          placeholder={t("misc", "Filter by name...")}
-          style={{ width: 240 }}
-          value={searchValue}
-          size="small"
-          onChange={(e) => setSearchValue(e.target.value)}
-        />
-      </Flex>
       {(Object.entries(categoryData) as [string, Item[]][]).map(
         ([subcategoryName, items]) => {
           // фильтруем по вводу
@@ -124,7 +95,7 @@ export default function ItemsGrid({ selectedCategory }: ItemsGridProps) {
                 >{` ${collected}/${total}`}</span>
               </Divider>
 
-              <Space wrap size={12}>
+              <Space align="center" wrap>
                 {filteredItems.map((item) => {
                   if (isArmourSet(item)) {
                     return item.items?.flatMap((part) => {
