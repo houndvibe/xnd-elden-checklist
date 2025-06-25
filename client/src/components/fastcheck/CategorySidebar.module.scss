@@ -1,0 +1,25 @@
+.sidebar {
+  min-width: 250px;
+  height: 100%;
+}
+
+.categoryButton {
+  width: 100%;
+  height: auto;
+  padding: 12px 16px;
+  text-align: left;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateX(4px);
+  }
+}
+
+.text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -10,6 +10,7 @@ import { APP_PALETTE } from "../../../lib/consts";
 import ImportCollectionWidget from "./ImportCollectionWidget";
 import LangWidget from "./LangWidget";
 import { t } from "../../../i18n";
+import FastCheckSwitch from "./FastCheckSwitch";
 
 export default function SettingsPannel() {
   const dispatch = useAppDispatch();
@@ -62,6 +63,8 @@ export default function SettingsPannel() {
         </NavLink>
         <span>|</span>
         <ImportCollectionWidget />
+        <span>|</span>
+        <FastCheckSwitch />
       </Flex>
 
       <Divider size="small" />

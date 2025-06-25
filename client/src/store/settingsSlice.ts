@@ -9,6 +9,7 @@ interface SettingsState {
   spoilers: boolean;
   showWelcome: boolean;
   lang: Language;
+  fastcheck: boolean;
 }
 
 const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
@@ -16,6 +17,7 @@ const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
   spoilers: false,
   showWelcome: true,
   lang: "en",
+  fastcheck: false,
 });
 
 export const settingsSlice = createSlice({
@@ -38,9 +40,18 @@ export const settingsSlice = createSlice({
       state.lang = action.payload;
       saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
     },
+    setFastcheck: (state) => {
+      state.fastcheck = !state.fastcheck;
+      saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
+    },
   },
 });
 
-export const { setSpoilers, setShowSettings, setStopWelcome, setLang } =
-  settingsSlice.actions;
+export const {
+  setSpoilers,
+  setShowSettings,
+  setStopWelcome,
+  setLang,
+  setFastcheck,
+} = settingsSlice.actions;
 export default settingsSlice.reducer;

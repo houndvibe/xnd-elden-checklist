@@ -12,6 +12,8 @@ import type { ItemCategory } from "../../../global-types";
 import { t } from "../../../i18n";
 
 import Checkpoints from "../../checkpoints/Checkpoints";
+import { useAppSelector } from "../../../store/typedDispatch";
+import FastCheck from "../../fastcheck/FastCheck";
 
 type ExtendedTabKey =
   | ItemCategory
@@ -51,29 +53,34 @@ const itemTabs: CustomTabItem[] = createItemTabs();
 export default function Tabs() {
   const navigate = useNavigate();
   const { tabKey } = useParams<{ tabKey?: string }>();
-
-  // Определяем, является ли текущая вкладка категорией предметов
+  const fastcheck = useAppSelector((state) => state.settings.fastcheck);
   const isItemCategory = itemCategories.includes(tabKey as ItemCategory);
 
-  // Определяем активную вкладку
   const activeKey: ExtendedTabKey = [...baseTabs, ...itemTabs].some(
     (item) => item.key === tabKey
   )
     ? (tabKey as ExtendedTabKey)
     : "dashboard";
 
-  // Определяем, какой контент отображать
   const renderContent = () => {
     const baseTab = baseTabs.find((tab) => tab.key === activeKey);
     if (baseTab) {
       return baseTab.children;
     }
 
-    if (isItemCategory) {
-      return null;
-    }
-
     return <Dashboard />;
+  };
+
+  const renderCollection = () => {
+    return fastcheck ? (
+      <FastCheck />
+    ) : (
+      <AntdTabs
+        items={itemTabs}
+        activeKey={activeKey}
+        onChange={(key) => navigate(`/${key}`)}
+      />
+    );
   };
 
   return (
@@ -90,15 +97,7 @@ export default function Tabs() {
           },
         }}
       >
-        {isItemCategory && (
-          <AntdTabs
-            items={itemTabs}
-            activeKey={activeKey}
-            onChange={(key) => navigate(`/${key}`)}
-          />
-        )}
-
-        {renderContent()}
+        {isItemCategory ? renderCollection() : renderContent()}
       </ConfigProvider>
     </div>
   );
