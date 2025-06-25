@@ -23,7 +23,6 @@ import { navigateToItem } from "../../lib/utils/search";
 import { setFastcheck } from "../../store/settingsSlice";
 import Link from "antd/es/typography/Link";
 import { LinkOutlined } from "@ant-design/icons";
-import { version } from "react";
 import { isTablet } from "react-device-detect";
 interface ItemsGridProps {
   selectedCategory: ItemCategory;
@@ -157,6 +156,12 @@ export default function ItemsGrid({
 
                         return (
                           <Popover
+                            styles={{
+                              body: {
+                                borderRadius: 30,
+                                border: `1px solid ${APP_PALETTE.bgDark}`,
+                              },
+                            }}
                             key={variantName}
                             mouseEnterDelay={0.5}
                             content={
@@ -237,6 +242,12 @@ export default function ItemsGrid({
 
                       return (
                         <Popover
+                          styles={{
+                            body: {
+                              borderRadius: 30,
+                              border: `1px solid ${APP_PALETTE.bgDark}`,
+                            },
+                          }}
                           key={versionName}
                           mouseEnterDelay={0.5}
                           content={
@@ -307,6 +318,12 @@ export default function ItemsGrid({
 
                   return (
                     <Popover
+                      styles={{
+                        body: {
+                          borderRadius: 30,
+                          border: `1px solid ${APP_PALETTE.bgDark}`,
+                        },
+                      }}
                       key={item.name}
                       mouseEnterDelay={0.5}
                       content={
@@ -325,7 +342,7 @@ export default function ItemsGrid({
                               item.name,
                               () => {
                                 dispatch(setFastcheck(false));
-                                navigateToItem(version, dispatch, navigate);
+                                navigateToItem(item.name, dispatch, navigate);
                               }
                             )}
                           </Flex>
