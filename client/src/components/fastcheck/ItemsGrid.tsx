@@ -22,6 +22,8 @@ import { useNavigate } from "react-router-dom";
 import { navigateToItem } from "../../lib/utils/search";
 import { setFastcheck } from "../../store/settingsSlice";
 import Link from "antd/es/typography/Link";
+import { LinkOutlined } from "@ant-design/icons";
+import { version } from "react";
 
 interface ItemsGridProps {
   selectedCategory: ItemCategory;
@@ -61,11 +63,16 @@ export default function ItemsGrid({
 
   if (!categoryData) return null;
 
+  const spin = (
+    <div>
+      <Spin size="small" />
+    </div>
+  );
+
   return (
     <div className={styles.itemsGridWrapper}>
       {(Object.entries(categoryData) as [string, Item[]][]).map(
         ([subcategoryName, items]) => {
-          // фильтруем по вводу
           const filteredItems = items.filter((item) => {
             const targetNames = [item.name];
 
@@ -103,78 +110,114 @@ export default function ItemsGrid({
 
               <Space align="center" wrap>
                 {filteredItems.map((item) => {
+                  const renderLinkWithIcon = (label: string, href: string) => (
+                    <Flex
+                      align="center"
+                      gap={10}
+                      className={styles.popoverTitle}
+                    >
+                      <Link className={styles.popoverLink} href={href}>
+                        {label}
+                      </Link>
+                      <LinkOutlined />
+                    </Flex>
+                  );
+
+                  const renderImageWithHoverOverlay = (
+                    src: string,
+                    alt: string,
+                    onClick: () => void
+                  ) => (
+                    <div
+                      className={styles.popoverImageWrapper}
+                      onClick={onClick}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <Image
+                        className={styles.popoverImage}
+                        preview={false}
+                        width={500}
+                        height={500}
+                        src={src}
+                        alt={alt}
+                      />
+                    </div>
+                  );
+
                   if (isArmourSet(item)) {
                     return item.items?.flatMap((part) => {
                       const allVariants = [part, ...(part.children ?? [])];
 
-                      return allVariants.map((variant) => (
-                        <Popover
-                          content={
-                            <Flex vertical gap={10} align="center">
-                              <Flex align="baseline">
-                                <Link style={{ fontSize: 30 }} href={part.link}>
-                                  {t(selectedCategory, part.name)}
-                                </Link>
-                              </Flex>
+                      return allVariants.map((variant) => {
+                        const isAltered = variant !== part;
+                        const variantName = variant.name;
+                        const translatedName = t(selectedCategory, variantName);
+                        const link =
+                          isAltered && variant.link ? variant.link : part.link;
 
+                        return (
+                          <Popover
+                            key={variantName}
+                            mouseEnterDelay={0.5}
+                            content={
+                              <Flex vertical gap={10} align="center">
+                                {renderLinkWithIcon(translatedName, link)}
+                                {renderImageWithHoverOverlay(
+                                  getImageUrl(
+                                    variant,
+                                    subcategoryName,
+                                    selectedCategory
+                                  ),
+                                  variantName,
+                                  () => {
+                                    dispatch(setFastcheck(false));
+                                    navigateToItem(
+                                      variantName,
+                                      dispatch,
+                                      navigate
+                                    );
+                                  }
+                                )}
+                              </Flex>
+                            }
+                          >
+                            <div
+                              className={
+                                spoilers && !variant.collected
+                                  ? styles.blockSpoiler
+                                  : ""
+                              }
+                            >
                               <Image
-                                style={{ cursor: "pointer" }}
-                                onClick={() => {
-                                  dispatch(setFastcheck(false));
-                                  navigateToItem(part.name, dispatch, navigate);
-                                }}
-                                preview={false}
-                                width={500}
-                                height={500}
+                                placeholder={spin}
+                                className={
+                                  variant.collected
+                                    ? styles.itemImgCollected
+                                    : styles.itemImg
+                                }
                                 src={getImageUrl(
                                   variant,
                                   subcategoryName,
                                   selectedCategory
                                 )}
+                                width={imgSize}
+                                height={imgSize}
+                                alt={variantName}
+                                preview={false}
+                                onClick={() => {
+                                  getStoreAction({
+                                    name: variantName,
+                                    category: selectedCategory,
+                                    subcategory:
+                                      subcategoryName as ItemSubCategory,
+                                    dispatch,
+                                  });
+                                }}
                               />
-                            </Flex>
-                          }
-                        >
-                          <div
-                            className={
-                              spoilers && !part.collected
-                                ? styles.blockSpoiler
-                                : ""
-                            }
-                          >
-                            <Image
-                              placeholder={
-                                <div>
-                                  <Spin size="small" />
-                                </div>
-                              }
-                              className={
-                                variant.collected
-                                  ? styles.itemImgCollected
-                                  : styles.itemImg
-                              }
-                              src={getImageUrl(
-                                variant,
-                                subcategoryName,
-                                selectedCategory
-                              )}
-                              width={imgSize}
-                              height={imgSize}
-                              alt={variant.name}
-                              preview={false}
-                              onClick={() => {
-                                getStoreAction({
-                                  name: variant.name,
-                                  category: selectedCategory,
-                                  subcategory:
-                                    subcategoryName as ItemSubCategory,
-                                  dispatch,
-                                });
-                              }}
-                            />
-                          </div>
-                        </Popover>
-                      ));
+                            </div>
+                          </Popover>
+                        );
+                      });
                     });
                   }
 
@@ -183,44 +226,33 @@ export default function ItemsGrid({
                       const versionName = `${item.name}${
                         version.tier > 0 ? ` +${version.tier}` : ""
                       }`;
+                      const displayName = version.tier
+                        ? `${t(selectedCategory, item.name)} +${version.tier}`
+                        : t(selectedCategory, item.name);
+                      const link = version.tier
+                        ? `${item.link}+${version.tier}`
+                        : item.link;
 
                       return (
                         <Popover
+                          key={versionName}
+                          mouseEnterDelay={0.5}
                           content={
                             <Flex vertical gap={10} align="center">
-                              <Flex align="baseline">
-                                <Link
-                                  style={{ fontSize: 30 }}
-                                  href={
-                                    version.tier
-                                      ? item.link + "+" + version.tier
-                                      : item.link
-                                  }
-                                >
-                                  {version.tier
-                                    ? t(selectedCategory, item.name) +
-                                      " +" +
-                                      version.tier
-                                    : t(selectedCategory, item.name)}
-                                </Link>
-                              </Flex>
-
-                              <Image
-                                style={{ cursor: "pointer" }}
-                                onClick={() => {
-                                  dispatch(setFastcheck(false));
-                                  navigateToItem(item.name, dispatch, navigate);
-                                }}
-                                preview={false}
-                                width={500}
-                                height={500}
-                                src={getImageUrl(
+                              {renderLinkWithIcon(displayName, link)}
+                              {renderImageWithHoverOverlay(
+                                getImageUrl(
                                   item,
                                   subcategoryName,
                                   selectedCategory,
                                   versionName
-                                )}
-                              />
+                                ),
+                                versionName,
+                                () => {
+                                  dispatch(setFastcheck(false));
+                                  navigateToItem(item.name, dispatch, navigate);
+                                }
+                              )}
                             </Flex>
                           }
                         >
@@ -232,11 +264,7 @@ export default function ItemsGrid({
                             }
                           >
                             <Image
-                              placeholder={
-                                <div>
-                                  <Spin size="small" />
-                                </div>
-                              }
+                              placeholder={spin}
                               className={
                                 version.collected
                                   ? styles.itemImgCollected
@@ -271,29 +299,26 @@ export default function ItemsGrid({
 
                   return (
                     <Popover
+                      key={item.name}
+                      mouseEnterDelay={0.5}
                       content={
                         <Flex vertical gap={10} align="center">
-                          <Flex align="baseline">
-                            <Link style={{ fontSize: 30 }} href={item.link}>
-                              {t(selectedCategory, item.name)}
-                            </Link>
-                          </Flex>
-
-                          <Image
-                            style={{ cursor: "pointer" }}
-                            onClick={() => {
-                              dispatch(setFastcheck(false));
-                              navigateToItem(item.name, dispatch, navigate);
-                            }}
-                            preview={false}
-                            width={500}
-                            height={500}
-                            src={getImageUrl(
+                          {renderLinkWithIcon(
+                            t(selectedCategory, item.name),
+                            item.link
+                          )}
+                          {renderImageWithHoverOverlay(
+                            getImageUrl(
                               item,
                               subcategoryName,
                               selectedCategory
-                            )}
-                          />
+                            ),
+                            item.name,
+                            () => {
+                              dispatch(setFastcheck(false));
+                              navigateToItem(version, dispatch, navigate);
+                            }
+                          )}
                         </Flex>
                       }
                     >
@@ -303,11 +328,7 @@ export default function ItemsGrid({
                         }
                       >
                         <Image
-                          placeholder={
-                            <div>
-                              <Spin size="small" />
-                            </div>
-                          }
+                          placeholder={spin}
                           className={
                             item.collected
                               ? styles.itemImgCollected

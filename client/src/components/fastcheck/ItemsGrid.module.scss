@@ -10,7 +10,6 @@
   overflow-y: scroll;
   border-radius: 10px;
 
-  // Поверх фона будет контент
   &::before {
     content: "";
     position: fixed;
@@ -20,14 +19,15 @@
     height: 100vh;
     background: url("../../../public/assets/bg-shields.jpg") center center /
       cover no-repeat;
-    opacity: 0.01; // здесь регулируешь прозрачность
+    opacity: 0.01;
     z-index: -1;
     pointer-events: none;
   }
 }
+
 .itemImg {
   cursor: pointer;
-  object-fit: "cover";
+  object-fit: cover;
   padding: 10px;
   border-radius: 18px;
 
@@ -39,16 +39,12 @@
 
 .itemImgCollected {
   cursor: pointer;
-  object-fit: "cover";
-  padding: 5px;
-  border-radius: 18px;
-  background: linear-gradient(
-    330deg,
-    $bg-light,
-    rgba($text-highlighted, 0.2)
-  ); // black to gold
-  border: 1px solid $text-primary;
+  object-fit: cover;
   padding: 10px;
+  border-radius: 18px;
+  background: linear-gradient(330deg, $bg-light, rgba($text-highlighted, 0.2));
+  border: 1px solid $text-primary;
+
   &:hover {
     background: linear-gradient(330deg, $bg-light, rgba($text-primary, 0.2));
     opacity: 1;
@@ -67,4 +63,43 @@
     text-shadow: none;
     filter: none;
   }
+}
+.popoverLink {
+  font-size: 30px;
+  color: $text-primary !important;
+  font-family: "Cormorant Garamond";
+  transition: color 0.3s;
+
+  &:hover {
+    color: $link-color;
+    text-decoration: underline;
+  }
+}
+
+.popoverImageWrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  cursor: pointer;
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+  .popoverImage {
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+  }
+}
+
+.popoverTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
