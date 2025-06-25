@@ -53,6 +53,8 @@ export default function ItemsGrid({
     (state) => state.collection.collectionData[`${selectedCategory}Data`]
   );
 
+  const spoilers = useAppSelector((state) => state.settings.spoilers);
+
   if (!categoryData) return null;
 
   return (
@@ -106,35 +108,44 @@ export default function ItemsGrid({
                           title={t(selectedCategory, variant.name)}
                           key={variant.name}
                         >
-                          <Image
-                            placeholder={
-                              <div>
-                                <Spin size="small" />
-                              </div>
-                            }
+                          <div
                             className={
-                              variant.collected
-                                ? styles.itemImgCollected
-                                : styles.itemImg
+                              spoilers && !part.collected
+                                ? styles.blockSpoiler
+                                : ""
                             }
-                            src={getImageUrl(
-                              variant,
-                              subcategoryName,
-                              selectedCategory
-                            )}
-                            width={imgSize}
-                            height={imgSize}
-                            alt={variant.name}
-                            preview={false}
-                            onClick={() => {
-                              getStoreAction({
-                                name: variant.name,
-                                category: selectedCategory,
-                                subcategory: subcategoryName as ItemSubCategory,
-                                dispatch,
-                              });
-                            }}
-                          />
+                          >
+                            <Image
+                              placeholder={
+                                <div>
+                                  <Spin size="small" />
+                                </div>
+                              }
+                              className={
+                                variant.collected
+                                  ? styles.itemImgCollected
+                                  : styles.itemImg
+                              }
+                              src={getImageUrl(
+                                variant,
+                                subcategoryName,
+                                selectedCategory
+                              )}
+                              width={imgSize}
+                              height={imgSize}
+                              alt={variant.name}
+                              preview={false}
+                              onClick={() => {
+                                getStoreAction({
+                                  name: variant.name,
+                                  category: selectedCategory,
+                                  subcategory:
+                                    subcategoryName as ItemSubCategory,
+                                  dispatch,
+                                });
+                              }}
+                            />
+                          </div>
                         </Tooltip>
                       ));
                     });
@@ -157,38 +168,46 @@ export default function ItemsGrid({
                           }
                           key={versionName}
                         >
-                          <Image
-                            placeholder={
-                              <div>
-                                <Spin size="small" />
-                              </div>
-                            }
+                          <div
                             className={
-                              version.collected
-                                ? styles.itemImgCollected
-                                : styles.itemImg
+                              spoilers && !version.collected
+                                ? styles.blockSpoiler
+                                : ""
                             }
-                            src={getImageUrl(
-                              item,
-                              subcategoryName,
-                              selectedCategory,
-                              versionName
-                            )}
-                            width={imgSize}
-                            height={imgSize}
-                            alt={versionName}
-                            preview={false}
-                            onClick={() => {
-                              dispatch(
-                                toggleTalismanCollected({
-                                  subcategory:
-                                    subcategoryName as keyof TalismansSubCategoryMap,
-                                  name: item.name,
-                                  tier: version.tier,
-                                })
-                              );
-                            }}
-                          />
+                          >
+                            <Image
+                              placeholder={
+                                <div>
+                                  <Spin size="small" />
+                                </div>
+                              }
+                              className={
+                                version.collected
+                                  ? styles.itemImgCollected
+                                  : styles.itemImg
+                              }
+                              src={getImageUrl(
+                                item,
+                                subcategoryName,
+                                selectedCategory,
+                                versionName
+                              )}
+                              width={imgSize}
+                              height={imgSize}
+                              alt={versionName}
+                              preview={false}
+                              onClick={() => {
+                                dispatch(
+                                  toggleTalismanCollected({
+                                    subcategory:
+                                      subcategoryName as keyof TalismansSubCategoryMap,
+                                    name: item.name,
+                                    tier: version.tier,
+                                  })
+                                );
+                              }}
+                            />
+                          </div>
                         </Tooltip>
                       );
                     });
@@ -199,35 +218,41 @@ export default function ItemsGrid({
                       title={t(selectedCategory, item.name)}
                       key={item.name}
                     >
-                      <Image
-                        placeholder={
-                          <div>
-                            <Spin size="small" />
-                          </div>
-                        }
+                      <div
                         className={
-                          item.collected
-                            ? styles.itemImgCollected
-                            : styles.itemImg
+                          spoilers && !item.collected ? styles.blockSpoiler : ""
                         }
-                        src={getImageUrl(
-                          item,
-                          subcategoryName,
-                          selectedCategory
-                        )}
-                        width={imgSize}
-                        height={imgSize}
-                        alt={item.name}
-                        preview={false}
-                        onClick={() => {
-                          getStoreAction({
-                            name: item.name,
-                            category: selectedCategory,
-                            subcategory: subcategoryName as ItemSubCategory,
-                            dispatch,
-                          });
-                        }}
-                      />
+                      >
+                        <Image
+                          placeholder={
+                            <div>
+                              <Spin size="small" />
+                            </div>
+                          }
+                          className={
+                            item.collected
+                              ? styles.itemImgCollected
+                              : styles.itemImg
+                          }
+                          src={getImageUrl(
+                            item,
+                            subcategoryName,
+                            selectedCategory
+                          )}
+                          width={imgSize}
+                          height={imgSize}
+                          alt={item.name}
+                          preview={false}
+                          onClick={() => {
+                            getStoreAction({
+                              name: item.name,
+                              category: selectedCategory,
+                              subcategory: subcategoryName as ItemSubCategory,
+                              dispatch,
+                            });
+                          }}
+                        />
+                      </div>
                     </Tooltip>
                   );
                 })}

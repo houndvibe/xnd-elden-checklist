@@ -50,3 +50,17 @@
     opacity: 1;
   }
 }
+
+.blockSpoiler {
+  color: transparent;
+  text-shadow: 0 0 8px $link-color;
+  transition: color 0.4s ease, text-shadow 0.2s ease;
+  filter: blur(10px);
+  cursor: pointer;
+
+  &:hover {
+    color: inherit;
+    text-shadow: none;
+    filter: none;
+  }
+}

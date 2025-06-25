@@ -20,7 +20,11 @@ export default function FastCheckSwitch() {
       >
         {t("misc", "Galery")}
       </span>
-      <Switch checked={fastcheck} onChange={() => dispatch(setFastcheck())} />
+      <Switch
+        size="small"
+        checked={fastcheck}
+        onChange={() => dispatch(setFastcheck())}
+      />
       <span
         style={
           fastcheck

@@ -29,7 +29,7 @@ export default function FastCheck() {
           selectedCategory={tabKey!}
           onCategorySelect={handelChangeCategory}
         />
-        <Flex vertical>
+        <Flex vertical gap={10}>
           <Flex gap={12} wrap="wrap">
             <Select
               defaultValue={imgSize}
