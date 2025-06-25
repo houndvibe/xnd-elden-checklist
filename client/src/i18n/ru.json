@@ -1045,6 +1045,13 @@
     "Diallos's Mask": "Маска Диаллоса"
   },
   "misc": {
+    "Small": "Маленькие",
+    "Medium": "Средние",
+    "Big": "Большие",
+    "Large": "Огромные",
+    "Filter by name...": "Фильтр по названию...",
+    "Galery": "Галерея",
+    "Fast-check": "Фаст-чек",
     "Clipboard is empty!": "В буфере нет данных",
     "Wrong format": "Неправильный формат",
     "Collection completion %": "% завершения коллекции",
@@ -1756,7 +1763,7 @@
     "My Lord": "Мой повелитель",
     "Let Us Go Together": "Пойдём вместе",
     "O Mother": "О матерь",
-    "What Do You Want?": "Что тебе нужно?",
+    "What Do You Want": "Что тебе нужно?",
     "By My Sword": "Клянусь своим мечом",
     "Hoslow's Oath": "Клятва Хослоу",
     "Fire Spur Me": "Огонь, вдохнови меня",
@@ -1866,7 +1873,7 @@
     "Hand of Malenia": "Длань Малении",
 
     "Great Katana": "Большая катана",
-    "Dragon Hunter's Great Katana": "Большая катана дракона-охотника",
+    "Dragon-Hunter's Great Katana": "Большая катана дракона-охотника",
     "Rakshasa's Great Katana": "Большая катана Ракшасы",
 
     "Twinblade": "Парный клинок",

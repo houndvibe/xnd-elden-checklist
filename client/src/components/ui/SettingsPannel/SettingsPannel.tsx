@@ -1,10 +1,10 @@
 import { Divider, Flex, Switch } from "antd";
-import { NavLink } from "react-router-dom";
+/* import { NavLink } from "react-router-dom"; */
 
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
 import { setSpoilers } from "../../../store/settingsSlice";
 
-import { APP_PALETTE } from "../../../lib/consts";
+/* import { APP_PALETTE } from "../../../lib/consts"; */
 
 /* import ZoomWidget from "./ZoomWidget"; */
 import ImportCollectionWidget from "./ImportCollectionWidget";
@@ -16,11 +16,11 @@ export default function SettingsPannel() {
   const dispatch = useAppDispatch();
 
   const spoilers = useAppSelector((state) => state.settings.spoilers);
-  const storedDiscovery = useAppSelector(
+  /*   const storedDiscovery = useAppSelector(
     (state) => state.discovery.calculatedDiscovery
-  );
+  ); */
 
-  const checkpoints = useAppSelector((state) => state.checkpoints.checkpoints);
+  /*   const checkpoints = useAppSelector((state) => state.checkpoints.checkpoints); */
 
   /*   const isElectron = !!window.electronAPI; */
 
@@ -44,7 +44,8 @@ export default function SettingsPannel() {
           </>
         )} */}
         <span>|</span>
-        <NavLink to="/discoveryCalculator">
+        <FastCheckSwitch />
+        {/*   <NavLink to="/discoveryCalculator">
           <Flex gap={6} align="center">
             <span>{t("misc", "Discovery")} :</span>
             <span style={{ color: APP_PALETTE.textPrimary }}>
@@ -60,11 +61,9 @@ export default function SettingsPannel() {
               {checkpoints.length}
             </span>
           </Flex>
-        </NavLink>
+        </NavLink> */}
         <span>|</span>
         <ImportCollectionWidget />
-        <span>|</span>
-        <FastCheckSwitch />
       </Flex>
 
       <Divider size="small" />

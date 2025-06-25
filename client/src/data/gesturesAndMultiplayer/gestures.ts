@@ -253,7 +253,7 @@ export const gestures: GestureOrMultiplayerItem[] = [
   },
   {
     type: "gesturesAndMultiplayer",
-    name: "What Do You Want?",
+    name: "What Do You Want",
     subcategory: "gestures",
     description: "",
     collected: false,

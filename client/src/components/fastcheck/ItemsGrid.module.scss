@@ -1,3 +1,43 @@
+@use "../../styles/global.scss" as *;
+
 .itemsGridWrapper {
-  overflow-y: scroll;
+  user-select: none;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding: 30px;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../../public/assets/bg-ashesOfWar.jpg") center/cover
+      no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+    height: 100%;
+  }
+}
+
+.itemImg {
+  cursor: pointer;
+  object-fit: "cover";
+  padding: 5px;
+  border-radius: 4px;
+
+  &:hover {
+    background: rgba(white, 0.3);
+    opacity: 1;
+  }
+}
+
+.itemImgCollected {
+  cursor: pointer;
+  object-fit: "cover";
+  padding: 5px;
+  border-radius: 4px;
+  background: rgba($text-highlighted, 0.3);
 }
