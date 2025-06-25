@@ -24,7 +24,7 @@ import { setFastcheck } from "../../store/settingsSlice";
 import Link from "antd/es/typography/Link";
 import { LinkOutlined } from "@ant-design/icons";
 import { version } from "react";
-
+import { isTablet } from "react-device-detect";
 interface ItemsGridProps {
   selectedCategory: ItemCategory;
   imgSize: number;
@@ -64,9 +64,9 @@ export default function ItemsGrid({
   if (!categoryData) return null;
 
   const spin = (
-    <div>
+    <Flex align="center" justify="center">
       <Spin size="small" />
-    </div>
+    </Flex>
   );
 
   return (
@@ -160,25 +160,27 @@ export default function ItemsGrid({
                             key={variantName}
                             mouseEnterDelay={0.5}
                             content={
-                              <Flex vertical gap={10} align="center">
-                                {renderLinkWithIcon(translatedName, link)}
-                                {renderImageWithHoverOverlay(
-                                  getImageUrl(
-                                    variant,
-                                    subcategoryName,
-                                    selectedCategory
-                                  ),
-                                  variantName,
-                                  () => {
-                                    dispatch(setFastcheck(false));
-                                    navigateToItem(
-                                      variantName,
-                                      dispatch,
-                                      navigate
-                                    );
-                                  }
-                                )}
-                              </Flex>
+                              isTablet ? null : (
+                                <Flex vertical gap={10} align="center">
+                                  {renderLinkWithIcon(translatedName, link)}
+                                  {renderImageWithHoverOverlay(
+                                    getImageUrl(
+                                      variant,
+                                      subcategoryName,
+                                      selectedCategory
+                                    ),
+                                    variantName,
+                                    () => {
+                                      dispatch(setFastcheck(false));
+                                      navigateToItem(
+                                        variantName,
+                                        dispatch,
+                                        navigate
+                                      );
+                                    }
+                                  )}
+                                </Flex>
+                              )
                             }
                           >
                             <div
@@ -238,22 +240,28 @@ export default function ItemsGrid({
                           key={versionName}
                           mouseEnterDelay={0.5}
                           content={
-                            <Flex vertical gap={10} align="center">
-                              {renderLinkWithIcon(displayName, link)}
-                              {renderImageWithHoverOverlay(
-                                getImageUrl(
-                                  item,
-                                  subcategoryName,
-                                  selectedCategory,
-                                  versionName
-                                ),
-                                versionName,
-                                () => {
-                                  dispatch(setFastcheck(false));
-                                  navigateToItem(item.name, dispatch, navigate);
-                                }
-                              )}
-                            </Flex>
+                            isTablet ? null : (
+                              <Flex vertical gap={10} align="center">
+                                {renderLinkWithIcon(displayName, link)}
+                                {renderImageWithHoverOverlay(
+                                  getImageUrl(
+                                    item,
+                                    subcategoryName,
+                                    selectedCategory,
+                                    versionName
+                                  ),
+                                  versionName,
+                                  () => {
+                                    dispatch(setFastcheck(false));
+                                    navigateToItem(
+                                      item.name,
+                                      dispatch,
+                                      navigate
+                                    );
+                                  }
+                                )}
+                              </Flex>
+                            )
                           }
                         >
                           <div
@@ -302,24 +310,26 @@ export default function ItemsGrid({
                       key={item.name}
                       mouseEnterDelay={0.5}
                       content={
-                        <Flex vertical gap={10} align="center">
-                          {renderLinkWithIcon(
-                            t(selectedCategory, item.name),
-                            item.link
-                          )}
-                          {renderImageWithHoverOverlay(
-                            getImageUrl(
-                              item,
-                              subcategoryName,
-                              selectedCategory
-                            ),
-                            item.name,
-                            () => {
-                              dispatch(setFastcheck(false));
-                              navigateToItem(version, dispatch, navigate);
-                            }
-                          )}
-                        </Flex>
+                        isTablet ? null : (
+                          <Flex vertical gap={10} align="center">
+                            {renderLinkWithIcon(
+                              t(selectedCategory, item.name),
+                              item.link
+                            )}
+                            {renderImageWithHoverOverlay(
+                              getImageUrl(
+                                item,
+                                subcategoryName,
+                                selectedCategory
+                              ),
+                              item.name,
+                              () => {
+                                dispatch(setFastcheck(false));
+                                navigateToItem(version, dispatch, navigate);
+                              }
+                            )}
+                          </Flex>
+                        )
                       }
                     >
                       <div
