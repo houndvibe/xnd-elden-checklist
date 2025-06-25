@@ -42,8 +42,8 @@ export const settingsSlice = createSlice({
       state.lang = action.payload;
       saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
     },
-    setFastcheck: (state) => {
-      state.fastcheck = !state.fastcheck;
+    setFastcheck: (state, action: PayloadAction<boolean>) => {
+      state.fastcheck = action.payload;
       saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
     },
     setFastcheckSize: (state, action: PayloadAction<number>) => {

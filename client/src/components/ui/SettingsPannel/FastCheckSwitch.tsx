@@ -1,4 +1,4 @@
-import { Switch } from "antd";
+import { Button, Flex, Switch } from "antd";
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
 import { setFastcheck } from "../../../store/settingsSlice";
 import { APP_PALETTE } from "../../../lib/consts";
@@ -8,34 +8,45 @@ export default function FastCheckSwitch() {
   const dispatch = useAppDispatch();
   const fastcheck = useAppSelector((state) => state.settings.fastcheck);
   return (
-    <>
-      <span
-        style={
-          !fastcheck
-            ? {
-                color: APP_PALETTE.textPrimary,
-              }
-            : {}
-        }
+    <Flex align="center" gap={10}>
+      <Button
+        type="text"
+        size="small"
+        onClick={() => dispatch(setFastcheck(false))}
       >
-        {t("misc", "Galery")}
-      </span>
+        <span
+          style={
+            !fastcheck
+              ? {
+                  color: APP_PALETTE.textPrimary,
+                }
+              : {}
+          }
+        >
+          {" "}
+          {t("misc", "Galery")}
+        </span>
+      </Button>
       <Switch
         size="small"
         checked={fastcheck}
-        onChange={() => dispatch(setFastcheck())}
+        onChange={() => dispatch(setFastcheck(!fastcheck))}
       />
-      <span
-        style={
-          fastcheck
-            ? {
-                color: APP_PALETTE.textPrimary,
-              }
-            : {}
-        }
-      >
-        {t("misc", "Fast-check")}
-      </span>
-    </>
+      <Button type="text" size="small">
+        <span
+          style={
+            fastcheck
+              ? {
+                  color: APP_PALETTE.textPrimary,
+                }
+              : {}
+          }
+          onClick={() => dispatch(setFastcheck(true))}
+        >
+          {" "}
+          {t("misc", "Fast-check")}
+        </span>
+      </Button>
+    </Flex>
   );
 }
