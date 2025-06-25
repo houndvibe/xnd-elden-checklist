@@ -26,6 +26,7 @@ import {
 import {
   isLegendaryItem,
   isMultiVersionTalisman,
+  truncateString,
 } from "../../../lib/utils/misc";
 import CustomTableTitle from "./CustomTableTitle";
 import { t } from "../../../i18n";
@@ -77,16 +78,21 @@ export default function Table({
   }, [globalSearchItem]);
 
   const renderNameCell = (value: string, record: Item) => {
-    const getLink = (type: "link" | "legendary") => (
-      <Link
-        href={record.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className={styles[type]}>{t(record.type, value)}</div>
-      </Link>
-    );
+    const getLink = (type: "link" | "legendary" | "") =>
+      isTablet ? (
+        <div className={styles[type]}>
+          {truncateString(t(record.type, value), 30)}
+        </div>
+      ) : (
+        <Link
+          href={record.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className={styles[type]}>{t(record.type, value)}</div>
+        </Link>
+      );
 
     return (
       <Flex gap={10}>
@@ -98,7 +104,7 @@ export default function Table({
             {getLink("legendary")}
           </>
         ) : (
-          getLink("link")
+          getLink(isTablet ? "" : "link")
         )}
         {record.dlc && (
           <Tooltip title="Shadow of the Erdtree Dlc content">

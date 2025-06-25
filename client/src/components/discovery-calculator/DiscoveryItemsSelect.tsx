@@ -3,6 +3,7 @@ import type { SelectProps } from "antd";
 import { DiscoveryItem } from "./data-discovery";
 import styles from "./DiscoveryCalculator.module.scss";
 import { t } from "../../i18n";
+import { isTablet } from "react-device-detect";
 
 interface DiscoveryItemSelectProps {
   items: DiscoveryItem[];
@@ -31,13 +32,23 @@ const renderItemDetails = (item: DiscoveryItem): string => {
 
 const renderOptionContent = (item: DiscoveryItem) => (
   <Flex vertical className={styles.optionContent}>
-    <div className={styles.itemName}>{item.name}</div>
+    <Flex align="center" gap={4}>
+      <div className={styles.itemName}>{item.name}</div> {renderItemImage(item)}
+    </Flex>
+
     <div className={styles.itemDetails}>{renderItemDetails(item)}</div>
   </Flex>
 );
 
 const renderItemImage = (item: DiscoveryItem) =>
-  item.imgUrl && <Image src={item.imgUrl} height={50} preview={false} />;
+  item.imgUrl && (
+    <Image
+      src={item.imgUrl}
+      height={isTablet ? 30 : 50}
+      width={isTablet ? 30 : 50}
+      preview={false}
+    />
+  );
 
 export const DiscoveryItemSelect = ({
   items,
@@ -62,7 +73,6 @@ export const DiscoveryItemSelect = ({
         <Select.Option key={item.name} value={item.name} label={item.name}>
           <Flex className={styles.optionContainer}>
             {renderOptionContent(item)}
-            {renderItemImage(item)}
           </Flex>
         </Select.Option>
       ))}

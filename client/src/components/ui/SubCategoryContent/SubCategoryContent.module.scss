@@ -18,25 +18,6 @@
   }
 }
 
-.linkVendor {
-  color: $link-color;
-  font-family: "IM Fell English SC";
-  font-size: 22px;
-  &:hover {
-    color: $link-color-hover;
-  }
-}
-
-.linkEnemy {
-  color: $link-color;
-  font-family: "IM Fell English SC";
-  font-size: 20px;
-
-  &:hover {
-    color: $link-color-hover;
-  }
-}
-
 .preview {
   user-select: text;
   position: relative;

@@ -22,6 +22,7 @@ import CustomTableTitle from "./CustomTableTitle";
 import { t } from "../../../i18n";
 import icon from "../../../../public/assets/dlc-icon.png";
 import { isTablet } from "react-device-detect";
+import { truncateString } from "../../../lib/utils/misc";
 
 interface Props {
   setHoveredItemName: React.Dispatch<React.SetStateAction<string>>;
@@ -80,14 +81,22 @@ export default function Table({
   const renderNameCell = (value: string, record: Item) => {
     return (
       <Flex gap={10}>
-        <Link
-          href={record.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <div className={styles.link}>{t(record.type, value)}</div>
-        </Link>
+        {isTablet ? (
+          <div className={styles[record.type]}>
+            {" "}
+            {truncateString(t(record.type, value), 25)}
+          </div>
+        ) : (
+          <Link
+            href={record.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className={styles.link}>{t(record.type, value)}</div>
+          </Link>
+        )}
+
         {record.dlc && (
           <Tooltip title="Shadow of the Erdtree Dlc content">
             <Image preview={false} src={icon} height={20} width={20} />

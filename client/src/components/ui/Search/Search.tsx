@@ -87,8 +87,11 @@ const SearchWithSuggestions = () => {
     setOptions(suggestions);
   };
 
-  const handleSelect: AutoCompleteProps["onSelect"] = (value, option) => {
-    setSearchText((option as SuggestionOption).displayText);
+  const handleSelect: AutoCompleteProps["onSelect"] = (
+    value /* , option */
+  ) => {
+    /*   setSearchText((option as SuggestionOption).displayText); */
+    setSearchText("");
     navigateToItem(value, dispatch, navigate);
   };
 

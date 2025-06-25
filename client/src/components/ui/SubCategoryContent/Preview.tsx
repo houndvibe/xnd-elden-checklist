@@ -9,13 +9,15 @@ import {
   isMultiVersionTalisman,
 } from "../../../lib/utils/misc";
 import { t } from "../../../i18n";
-
+import { isTablet } from "react-device-detect";
+import Link from "antd/es/typography/Link";
 interface PreviewProps {
   hoveredItemName: string;
   dataSource: Item[];
   categoty: ItemCategory;
   subcategory: ItemSubCategory;
 }
+import { LinkOutlined } from "@ant-design/icons";
 
 export default function Preview({
   hoveredItemName,
@@ -64,20 +66,34 @@ export default function Preview({
   const imageUrls = getImageUrls();
 
   const getImgSize = () => {
+    if (isTablet && isMultiVersionTalisman(currentItem!)) return 250;
     if (!isMultiVersionTalisman(currentItem!)) return 600;
     if (currentItem.versions.length == 2) return 330;
-    if (currentItem.versions.length >= 2) return 300;
+    if (currentItem.versions.length > 2) return 300;
   };
 
   return (
     <Flex className={styles.preview} vertical align="center" gap={30}>
       {currentItem ? (
         <Flex vertical align="center" gap={10}>
-          <span className={styles.title}>{t(currentItem.type, name)}</span>
+          {isTablet ? (
+            <Link
+              href={currentItem.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className={styles.title}>{t(currentItem.type, name)}</span>{" "}
+              <LinkOutlined />
+            </Link>
+          ) : (
+            <span className={styles.title}>{t(currentItem.type, name)}</span>
+          )}
+
           <Flex wrap="wrap" justify="center" gap={12}>
             {imageUrls.map((url, index) => (
               <>
                 <Image
+                  preview={!isTablet}
                   style={{ marginTop: imageUrls.length == 2 ? "30%" : 0 }}
                   key={index}
                   width={getImgSize()}
