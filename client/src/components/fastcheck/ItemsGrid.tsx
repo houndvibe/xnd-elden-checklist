@@ -42,7 +42,7 @@ const getImageUrl = (
     return item.imgUrl ? item.imgUrl : "";
   }
 
-  return `./images/${cat}/${sub}/${sanitize(
+  return `./images_resized/${cat}/${sub}/${sanitize(
     versionName ? versionName : item.name
   )}.png`;
 };
