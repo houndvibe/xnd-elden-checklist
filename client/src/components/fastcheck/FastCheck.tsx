@@ -46,7 +46,11 @@ export default function FastCheck() {
           <Input
             allowClear
             placeholder={t("misc", "Filter by name...")}
-            style={{ width: 240, color: APP_PALETTE.text, fontSize: 16 }}
+            style={{
+              width: 240,
+              color: APP_PALETTE.text,
+              fontSize: 16,
+            }}
             value={searchValue}
             size="small"
             onChange={(e) => setSearchValue(e.target.value)}
