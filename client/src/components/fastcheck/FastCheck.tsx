@@ -6,23 +6,25 @@ import ItemsGrid from "./ItemsGrid";
 
 import { useNavigate, useParams } from "react-router-dom";
 import { t } from "../../i18n";
-import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/typedDispatch";
 import { setFastcheckSize } from "../../store/settingsSlice";
+import { setGlobalSearchItem } from "../../store/serviceSlice";
 const { Option } = Select;
 
 export default function FastCheck() {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const fastcheckSize = useAppSelector((state) => state.settings.fastcheckSize);
-
-  const [searchValue, setSearchValue] = useState("");
+  const globalSearchItem = useAppSelector(
+    (state) => state.service.globalSearchItem
+  );
 
   const { tabKey } = useParams<{ tabKey?: ItemCategory }>();
 
   const handelChangeCategory = (categoryName: ItemCategory) => {
     navigate(`/${categoryName}`);
   };
+  const val = globalSearchItem ? t(tabKey!, globalSearchItem) : "";
 
   return (
     <Flex gap={20} style={{ width: "100%" }}>
@@ -54,16 +56,17 @@ export default function FastCheck() {
               color: APP_PALETTE.text,
               fontSize: 16,
             }}
-            value={searchValue}
+            onClear={() => dispatch(setGlobalSearchItem(null))}
+            value={val}
             size="small"
-            onChange={(e) => setSearchValue(e.target.value)}
+            onChange={(e) => dispatch(setGlobalSearchItem(e.target.value))}
           />
         </Flex>
 
         <ItemsGrid
           selectedCategory={tabKey!}
           imgSize={fastcheckSize}
-          searchValue={searchValue}
+          searchValue={val}
         />
       </Flex>
     </Flex>
