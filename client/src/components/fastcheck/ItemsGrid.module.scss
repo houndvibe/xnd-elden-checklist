@@ -39,7 +39,7 @@
 .itemImgCollected {
   cursor: pointer;
   object-fit: cover;
-  padding: 10px;
+  padding: 2px;
   border-radius: 18px;
   background: linear-gradient(330deg, $bg-light, rgba($text-highlighted, 0.2));
   border: 1px solid $text-primary;
@@ -51,18 +51,28 @@
 }
 
 .blockSpoiler {
+  position: relative;
   color: transparent;
-  text-shadow: 0 0 8px $link-color;
-  transition: color 0.4s ease, text-shadow 0.2s ease;
-  filter: blur(10px);
   cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba($bg-light, 0.96);
+    border-radius: 18px;
+    pointer-events: none;
+  }
 
   &:hover {
     color: inherit;
-    text-shadow: none;
-    filter: none;
+
+    &::after {
+      display: none;
+    }
   }
 }
+
 .popoverLink {
   font-size: 30px;
   color: $text-primary !important;
