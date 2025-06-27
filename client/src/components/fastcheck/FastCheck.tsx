@@ -35,13 +35,13 @@ export default function FastCheck() {
         <Flex gap={12} wrap="wrap">
           <Select
             defaultValue={fastcheckSize}
-            style={{ width: 140 }}
+            style={{ width: 70 }}
             onChange={(v) => dispatch(setFastcheckSize(v))}
           >
-            <Option value={40}>{t("misc", "Small")}</Option>
-            <Option value={60}>{t("misc", "Medium")}</Option>
-            <Option value={130}>{t("misc", "Big")}</Option>
-            <Option value={180}>{t("misc", "Large")}</Option>
+            <Option value={40}>{t("misc", "S")}</Option>
+            <Option value={60}>{t("misc", "M")}</Option>
+            <Option value={130}>{t("misc", "L")}</Option>
+            <Option value={180}>{t("misc", "XL")}</Option>
           </Select>
           <Input
             allowClear
