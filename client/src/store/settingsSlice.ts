@@ -20,7 +20,7 @@ const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
   showWelcome: true,
   lang: "en",
   fastcheck: false,
-  fastcheckSize: 60,
+  fastcheckSize: 92,
   discovery: BASE_DISCOVERY,
 });
 
