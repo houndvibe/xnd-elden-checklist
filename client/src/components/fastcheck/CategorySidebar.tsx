@@ -39,6 +39,7 @@ export default function CategorySidebar({
               size="middle"
               className={styles.categoryButton}
               onClick={() => onCategorySelect(category)}
+              style={{ maxWidth: 250 }}
             >
               <span className={styles.text}>
                 {t("misc", transformCategoryToName(category))}

@@ -25,13 +25,16 @@ export default function FastCheck() {
   };
 
   return (
-    <Flex gap={20}>
-      <CategorySidebar
-        categories={itemCategories}
-        selectedCategory={tabKey!}
-        onCategorySelect={handelChangeCategory}
-      />
-      <Flex vertical gap={10}>
+    <Flex gap={20} style={{ width: "100%" }}>
+      <div style={{ flexBasis: "10%", flexShrink: 0 }}>
+        <CategorySidebar
+          categories={itemCategories}
+          selectedCategory={tabKey!}
+          onCategorySelect={handelChangeCategory}
+        />
+      </div>
+
+      <Flex vertical gap={10} style={{ flex: 1 }}>
         <Flex gap={12} wrap="wrap">
           <Select
             defaultValue={fastcheckSize}
