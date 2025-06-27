@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
-import { LOCALSTORAGE_SETTINGS_KEY } from "../lib/consts";
+import { BASE_DISCOVERY, LOCALSTORAGE_SETTINGS_KEY } from "../lib/consts";
 
 type Language = "ru" | "en";
 
@@ -11,6 +11,7 @@ interface SettingsState {
   lang: Language;
   fastcheck: boolean;
   fastcheckSize: number;
+  discovery: number;
 }
 
 const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
@@ -20,6 +21,7 @@ const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
   lang: "en",
   fastcheck: false,
   fastcheckSize: 60,
+  discovery: BASE_DISCOVERY,
 });
 
 export const settingsSlice = createSlice({
@@ -50,6 +52,10 @@ export const settingsSlice = createSlice({
       state.fastcheckSize = action.payload;
       saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
     },
+    setDiscovery: (state, action: PayloadAction<number>) => {
+      state.discovery = action.payload;
+      saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
+    },
   },
 });
 
@@ -60,5 +66,6 @@ export const {
   setLang,
   setFastcheck,
   setFastcheckSize,
+  setDiscovery,
 } = settingsSlice.actions;
 export default settingsSlice.reducer;

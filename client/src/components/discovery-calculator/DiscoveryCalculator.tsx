@@ -3,7 +3,6 @@ import { Card, Flex, InputNumber, Switch } from "antd";
 
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "../../store/typedDispatch";
-import { setCalculatedDiscovery } from "../../store/discoverySlice";
 
 import { DiscoveryItemSelect } from "./DiscoveryItemsSelect";
 import ExamplesTable from "./ExamplesTable";
@@ -13,6 +12,7 @@ import { BASE_DISCOVERY } from "../../lib/consts";
 
 import styles from "./DiscoveryCalculator.module.scss";
 import { t } from "../../i18n";
+import { setDiscovery } from "../../store/settingsSlice";
 
 type NullableString = string | null;
 type SelectorProps = {
@@ -49,9 +49,7 @@ const ConsumableSelect = ({ value, onChange }: SelectorProps) => (
 
 export default function DiscoveryCalculator() {
   const dispatch = useDispatch();
-  const storedDiscovery = useAppSelector(
-    (state) => state.discovery.calculatedDiscovery
-  );
+  const storedDiscovery = useAppSelector((state) => state.settings.discovery);
 
   const [arcane, setArcane] = useState(0);
   const [rune, setRune] = useState(false);
@@ -80,7 +78,7 @@ export default function DiscoveryCalculator() {
   }, [arcane, rune, oath, chest, amulet, helm, consumable]);
 
   useEffect(() => {
-    dispatch(setCalculatedDiscovery(calculatedDiscovery));
+    dispatch(setDiscovery(calculatedDiscovery));
   }, [calculatedDiscovery, dispatch]);
 
   const formFields = [

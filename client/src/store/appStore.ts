@@ -2,7 +2,6 @@ import { configureStore } from "@reduxjs/toolkit";
 import collectionReducer from "./collectionSlice";
 import settingsReducer from "./settingsSlice";
 import serviceReducer from "./serviceSlice";
-import discoveryReducer from "./discoverySlice";
 import checkpointsReducer from "./checkpointsSlice";
 
 export const store = configureStore({
@@ -10,7 +9,6 @@ export const store = configureStore({
     collection: collectionReducer,
     settings: settingsReducer,
     service: serviceReducer,
-    discovery: discoveryReducer,
     checkpoints: checkpointsReducer,
   },
 });
