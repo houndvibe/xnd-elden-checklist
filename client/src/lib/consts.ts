@@ -38,6 +38,7 @@ export const APP_PALETTE = {
   successGreen: "#112123",
   bgDark: "#141414",
   bgLight: "#1f1f1f",
+  text:"#856a51"
 };
 
 //Цвета прогрессбара
