@@ -44,9 +44,9 @@ export default function FastCheck() {
             onChange={(v) => dispatch(setFastcheckSize(v))}
           >
             <Option value={40}>{t("misc", "S")}</Option>
-            <Option value={60}>{t("misc", "M")}</Option>
+            <Option value={92}>{t("misc", "M")}</Option>
             <Option value={130}>{t("misc", "L")}</Option>
-            <Option value={180}>{t("misc", "XL")}</Option>
+            <Option value={210}>{t("misc", "XL")}</Option>
           </Select>
           <Input
             allowClear
