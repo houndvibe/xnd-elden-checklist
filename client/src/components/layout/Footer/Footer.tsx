@@ -12,6 +12,7 @@ export default function Footer() {
   return (
     <AppFooter className={styles.footer}>
       <Flex align="center" justify="center" gap={20}>
+        <span>{`${currentYear} XnD's Elden Compendium`}</span>
         <Link
           href="https://www.youtube.com/"
           target="_blank"
@@ -19,7 +20,7 @@ export default function Footer() {
         >
           <Flex align="center" gap={5}>
             <YoutubeOutlined />
-            <span>Xndchannel</span>
+            <span className={styles.link}>Xndchannel</span>
           </Flex>
         </Link>
 
@@ -30,11 +31,29 @@ export default function Footer() {
         >
           <Flex align="center" gap={5}>
             <InstagramOutlined />
-            <span>houndpiiit</span>
+            <span className={styles.link}>houndpiiit</span>
           </Flex>
         </Link>
 
-        <span>{`© ${currentYear} XnD's Elden Compendium`}</span>
+        <Link
+          href="https://boosty.to/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Flex align="center" gap={5}>
+            <span className={styles.link}>-Boosty-</span>
+          </Flex>
+        </Link>
+
+        <Link
+          href="https://www.patreon.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Flex align="center" gap={5}>
+            <span className={styles.link}>-Patreon-</span>
+          </Flex>
+        </Link>
       </Flex>
     </AppFooter>
   );
