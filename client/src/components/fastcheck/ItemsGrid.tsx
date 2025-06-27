@@ -64,7 +64,7 @@ export default function ItemsGrid({
 
   const spin = (
     <Flex align="center" justify="center">
-      <Spin size="small" />
+      <Spin className={styles.spin} size="small" />
     </Flex>
   );
 

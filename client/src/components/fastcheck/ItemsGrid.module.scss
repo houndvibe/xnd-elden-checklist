@@ -50,12 +50,19 @@
   }
 }
 
+.spin {
+  z-index: 1000;
+  margin-top: 30%;
+}
+
 .blockSpoiler {
+  z-index: 1;
   position: relative;
   color: transparent;
   cursor: pointer;
 
   &::after {
+    z-index: 1;
     content: "";
     position: absolute;
     inset: 0;
