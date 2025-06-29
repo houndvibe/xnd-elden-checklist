@@ -100,7 +100,9 @@ export default function Checkpoints() {
       });
 
       data.total = totalCollected;
-      data.totalPercentage = Math.round((totalCollected / totalItems) * 100);
+      data.totalPercentage = Number(
+        ((totalCollected / totalItems) * 100).toFixed(2)
+      );
 
       return data;
     });
