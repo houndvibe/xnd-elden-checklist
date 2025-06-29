@@ -36,7 +36,9 @@ export default function Dashboard() {
     0
   );
   const totalItems = stats.reduce((acc, { stats }) => acc + stats.total, 0);
-  const totalPercentage = Math.round((totalCollected / totalItems) * 100);
+  const totalPercentage = Number(
+    ((totalCollected / totalItems) * 100).toFixed(2)
+  );
 
   const renderCompactMode = () => (
     <>

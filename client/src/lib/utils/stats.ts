@@ -63,10 +63,13 @@ function aggregateStats(items: Item[]) {
     if (isCollected) collected++;
   }
 
+  console.log(total === 0 ? 0 : Math.trunc((collected / total) * 100));
+
   return {
     total,
     collected,
-    percentage: total === 0 ? 0 : Math.trunc((collected / total) * 100),
+    percentage:
+      total === 0 ? 0 : Number(((collected / total) * 100).toFixed(2)),
   };
 }
 
