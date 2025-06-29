@@ -138,8 +138,8 @@ export default function Checkpoints() {
     });
 
     currentData.total = totalCollected;
-    currentData.totalPercentage = Math.round(
-      (totalCollected / totalItems) * 100
+    currentData.totalPercentage = Number(
+      ((totalCollected / totalItems) * 100).toFixed(2)
     );
 
     return [...chartData, currentData];
