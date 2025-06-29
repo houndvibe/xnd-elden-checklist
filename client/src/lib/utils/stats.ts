@@ -66,7 +66,7 @@ function aggregateStats(items: Item[]) {
   return {
     total,
     collected,
-    percentage: total === 0 ? 0 : Math.round((collected / total) * 100),
+    percentage: total === 0 ? 0 : Math.trunc((collected / total) * 100),
   };
 }
 

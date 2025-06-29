@@ -9,6 +9,9 @@ import { t } from "../../i18n";
 import { useAppDispatch, useAppSelector } from "../../store/typedDispatch";
 import { setFastcheckSize } from "../../store/settingsSlice";
 import { setGlobalSearchItem } from "../../store/serviceSlice";
+import { getCategoryStats } from "../../lib/utils/stats";
+import { Collection } from "../../store/collectionSlice";
+
 const { Option } = Select;
 
 export default function FastCheck() {
@@ -18,8 +21,13 @@ export default function FastCheck() {
   const globalSearchItem = useAppSelector(
     (state) => state.service.globalSearchItem
   );
+  const collection = useAppSelector((state) => state.collection.collectionData);
 
   const { tabKey } = useParams<{ tabKey?: ItemCategory }>();
+
+  const currentCategory = collection[`${tabKey}Data` as keyof Collection];
+
+  const { total, collected, percentage } = getCategoryStats(currentCategory);
 
   const handelChangeCategory = (categoryName: ItemCategory) => {
     navigate(`/${categoryName}`);
@@ -61,6 +69,10 @@ export default function FastCheck() {
             size="small"
             onChange={(e) => dispatch(setGlobalSearchItem(e.target.value))}
           />
+
+          <span
+            style={{ color: APP_PALETTE.textPrimary }}
+          >{`${collected}/${total} (${percentage}) %`}</span>
         </Flex>
 
         <ItemsGrid
