@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { Layout, Image, Tooltip } from "antd";
-import { QuestionCircleOutlined, SettingOutlined } from "@ant-design/icons";
+import {
+  QuestionCircleOutlined,
+  SettingOutlined,
+  HeartOutlined,
+} from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
 
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
@@ -14,6 +18,7 @@ import InfoModal from "./InfoModal";
 import { t } from "../../../i18n";
 
 import logo from "../../../../public/assets/logo.png";
+import BoostersModal from "./BoostersModal";
 
 const { Header: AppHeader } = Layout;
 
@@ -24,6 +29,7 @@ export default function Header() {
   );
 
   const [isHelpModalOpen, setIsHelpModalOpen] = useState(showWelcome);
+  const [isBoostersModalOpen, setIsBoostersModalOpen] = useState(false);
 
   const handleToggleSettings = () => {
     dispatch(setShowSettings(!showSettings));
@@ -31,6 +37,10 @@ export default function Header() {
 
   const openHelpModal = () => {
     setIsHelpModalOpen(true);
+  };
+
+  const openBoostersModal = () => {
+    setIsBoostersModalOpen(true);
   };
 
   const closeHelpModal = () => {
@@ -50,6 +60,13 @@ export default function Header() {
         </div>
 
         <div className={styles.icons}>
+          <Tooltip title={t("misc", "Thanks")}>
+            <HeartOutlined
+              className={styles.icon}
+              onClick={openBoostersModal}
+            />
+          </Tooltip>
+
           <Tooltip title={t("misc", "Tools")}>
             <SettingOutlined
               className={styles.icon}
@@ -64,6 +81,10 @@ export default function Header() {
           </Tooltip>
         </div>
       </div>
+      <BoostersModal
+        open={isBoostersModalOpen}
+        onClose={() => setIsBoostersModalOpen(false)}
+      />
       <InfoModal isOpen={isHelpModalOpen} onCancel={closeHelpModal} />
     </AppHeader>
   );

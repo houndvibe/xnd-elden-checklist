@@ -128,7 +128,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
           <br />
           {isRussian ? "Подписывайтесь на меня:" : "Stay connected on:"}{" "}
           <Space>
-            <Link href="https://www.youtube.com/" target="_blank">
+            <Link href="https://www.youtube.com/@XnDsChanel" target="_blank">
               YouTube
             </Link>
           </Space>
@@ -137,7 +137,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
             ? "Поддержать проект можно здесь:"
             : "Support the project here:"}{" "}
           <Space>
-            <Link href="https://boosty.to/your_boosty" target="_blank">
+            <Link href="https://boosty.to/xnd" target="_blank">
               Boosty
             </Link>
             {" | "}
