@@ -175,6 +175,20 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
             ? '- Откройте настройки (иконка шестерёнки вверху справа) и нажмите "Экспорт прогресса". Данные скопируются в буфер. Затем, после очистки историии бразуера или хранилища нажмите "Импорт прогресса". Коллекция будет восстановлена. Если вы хотите восттановить коллекцию из заранее сохраненного текстового файла - просто скопируйте запись из файла и нажмите "Импорт прогресса"'
             : '- Open the settings (gear icon in the top right) and click "Export Progress". The data will be copied to your clipboard. Then, after clearing your browser history or storage, click "Import Progress" — your collection will be restored. If you want to restore your collection from a previously saved text file, simply copy the saved entry and click "Import Progress".'}
         </Paragraph>
+
+        <Paragraph>
+          <br />
+          <Text strong>
+            {isRussian
+              ? "⬤ Я впервые открыл приложение, а там всё уже заполнено на 100%. Почему? И как сбросить?"
+              : "⬤ I just opened the app and everything is already 100% complete. Why? How do I reset it?"}
+          </Text>
+          <br />
+          <br />
+          {isRussian
+            ? "- Такое иногда случается при первом запуске. Откройте настройки и нажмите красную кнопку ОЧИСТИТЬ ДАННЫЕ. Проставьте все галочки и подтвердите действие."
+            : '- This sometimes happens on the first launch. Open the settings and click the red "CLEAR DATA" button. Check all the boxes and confirm the action.'}
+        </Paragraph>
       </Typography>
     </Modal>
   );

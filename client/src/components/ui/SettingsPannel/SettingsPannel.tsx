@@ -10,6 +10,7 @@ import { setSpoilers } from "../../../store/settingsSlice";
 import ImportCollectionWidget from "./ImportCollectionWidget";
 import LangWidget from "./LangWidget";
 import { t } from "../../../i18n";
+import ClearProgressWidget from "./ClearProgressWidget";
 
 export default function SettingsPannel() {
   const dispatch = useAppDispatch();
@@ -63,6 +64,8 @@ export default function SettingsPannel() {
         </NavLink> */}
         <span>|</span>
         <ImportCollectionWidget />
+        <span>|</span>
+        <ClearProgressWidget />
       </Flex>
 
       <Divider size="small" />

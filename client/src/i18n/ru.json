@@ -1132,6 +1132,15 @@
     "General stats": "Общий прогресс коллекции",
     "To compact mode": "Компактные виджеты",
     "To full mode": "Раскрыть виджеты",
+    "Thanks": "Благодарности",
+
+    "Clear data": "Очистить данные",
+    "Clear selected data": "Очистить выбранные данные",
+    "Cancel": "Отмена",
+    "Clear collection progress": "Очистить прогресс коллекции",
+    "Reset settings": "Сбросить настройки",
+    "Clear checkpoints": "Очистить контрольные точки",
+    "Selected data has been cleared": "Выбранные данные были очищены",
 
     "Light Bows": "Лёгкие луки",
     "Bows": "Длинные луки",
