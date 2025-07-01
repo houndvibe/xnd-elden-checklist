@@ -1,7 +1,7 @@
 import type { ProgressProps } from "antd";
 import type { ItemCategory } from "../global-types";
 
-export const CURRENT_APP_VERSION = "(v. 0.7.2 beta)";
+export const CURRENT_APP_VERSION = "(v. 0.9.1 beta)";
 
 export const BOOSTY_LINK = "https://boosty.to/xnd";
 export const PATREON_LINK = "https://www.patreon.com/XnDs";

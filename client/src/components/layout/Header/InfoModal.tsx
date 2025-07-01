@@ -71,8 +71,8 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
             : "I hope this tool helps you collect every single item in Elden Ring — including all DLC content."}
           <br />
           {isRussian
-            ? `На данный момент ${CURRENT_APP_VERSION} приложение стабильно и функционирует на 100%, однако некоторые предметы и категории по прежнему могут подвергнуться изменениям`
-            : `The application is currently fully functional and stable ${CURRENT_APP_VERSION}, but some items and categories may still be subject to changes.`}
+            ? `На данный момент ${CURRENT_APP_VERSION} приложение находится в фазе бета-тестирования. Оно стабильно и функционирует на 100%, однако некоторые предметы и категории по прежнему могут подвергнуться изменениям`
+            : `${CURRENT_APP_VERSION} — The application is currently in beta. It is stable and fully functional, but some items and categories may still be subject to change.`}
         </Paragraph>
 
         <Divider />
