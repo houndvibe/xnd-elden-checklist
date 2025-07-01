@@ -22,7 +22,6 @@ export function getStoreAction({
   subcategory: ItemSubCategory;
   dispatch: AppDispatch;
 }) {
-  console.log(category);
   if (category === "talismans") {
     dispatch(
       toggleTalismanCollected({
@@ -31,7 +30,6 @@ export function getStoreAction({
       })
     );
   } else if (category === "armour") {
-    console.log(123);
     dispatch(
       toggleArmourItemCollected({
         subcategory: subcategory as keyof ArmourSubCategoryMap,

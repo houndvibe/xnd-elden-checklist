@@ -63,8 +63,6 @@ function aggregateStats(items: Item[]) {
     if (isCollected) collected++;
   }
 
-  console.log(total === 0 ? 0 : Math.trunc((collected / total) * 100));
-
   return {
     total,
     collected,
