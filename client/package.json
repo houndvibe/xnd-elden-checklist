@@ -46,6 +46,7 @@
     "react": "^19.1.0",
     "react-device-detect": "^2.2.3",
     "react-dom": "^19.1.0",
+    "react-ga4": "^2.1.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.6.2",
     "recharts": "^3.0.0",
