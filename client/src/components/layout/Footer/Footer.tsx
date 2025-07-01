@@ -6,7 +6,7 @@ import styles from "./Footer.module.scss";
 import {
   BOOSTY_LINK,
   CURRENT_APP_VERSION,
-  PATREON_LINK,
+  /*   PATREON_LINK, */
   YOUTUBE_LINK,
 } from "../../../lib/consts";
 
@@ -44,11 +44,11 @@ export default function Footer() {
           </Flex>
         </Link>
 
-        <Link href={PATREON_LINK} target="_blank" rel="noopener noreferrer">
+        {/*     <Link href={PATREON_LINK} target="_blank" rel="noopener noreferrer">
           <Flex align="center" gap={5}>
             <span className={styles.link}>-Patreon-</span>
           </Flex>
-        </Link>
+        </Link> */}
       </Flex>
     </AppFooter>
   );

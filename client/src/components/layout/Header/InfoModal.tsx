@@ -5,7 +5,7 @@ import { useAppSelector } from "../../../store/typedDispatch";
 import {
   BOOSTY_LINK,
   CURRENT_APP_VERSION,
-  PATREON_LINK,
+  /*  PATREON_LINK, */
   YOUTUBE_LINK,
 } from "../../../lib/consts";
 
@@ -145,10 +145,10 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
             <Link href={BOOSTY_LINK} target="_blank">
               Boosty
             </Link>
-            {" | "}
+            {/*   {" | "}
             <Link href={PATREON_LINK} target="_blank">
               Patreon
-            </Link>
+            </Link> */}
           </Space>
         </Paragraph>
 
