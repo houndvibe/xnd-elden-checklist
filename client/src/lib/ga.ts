@@ -4,10 +4,7 @@ const MEASUREMENT_ID = "G-P7RR7ZCKT5";
 
 export function initGA() {
   ReactGA.initialize(MEASUREMENT_ID);
-}
-
-export function trackPage(path: string) {
-  ReactGA.send({ hitType: "pageview", page: path });
+  ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 }
 
 export function trackEvent(
