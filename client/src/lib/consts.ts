@@ -3,6 +3,8 @@ import type { ItemCategory } from "../global-types";
 
 export const BASE_DISCOVERY = 100;
 
+export const CURRENT_APP_VERSION = "(v. 0.7.2 beta)";
+
 export const itemCategories: ItemCategory[] = [
   "meleWeapons",
   "rangedWeapons",
@@ -38,7 +40,7 @@ export const APP_PALETTE = {
   successGreen: "#112123",
   bgDark: "#141414",
   bgLight: "#1f1f1f",
-  text:"#856a51"
+  text: "#856a51",
 };
 
 //Цвета прогрессбара

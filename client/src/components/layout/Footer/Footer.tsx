@@ -3,6 +3,7 @@ import { YoutubeOutlined /* InstagramOutlined */ } from "@ant-design/icons";
 import Link from "antd/es/typography/Link";
 
 import styles from "./Footer.module.scss";
+import { CURRENT_APP_VERSION } from "../../../lib/consts";
 
 const { Footer: AppFooter } = Layout;
 
@@ -11,8 +12,9 @@ export default function Footer() {
 
   return (
     <AppFooter className={styles.footer}>
-      <Flex align="center" justify="center" gap={20}>
-        {/*  <span>{`${currentYear} XnD's Elden Compendium`}</span> */}
+      <Flex align="center" justify="space-around" gap={20}>
+        {/* <span>{`${currentYear} XnD's Elden Compendium`}</span> */}
+        <span>{`- XnD's Elden Compendium ${CURRENT_APP_VERSION} -`}</span>
         <Link
           href="https://www.youtube.com/@XnDsChanel"
           target="_blank"

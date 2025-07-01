@@ -35,6 +35,8 @@
 
     .ant-modal-body {
       padding: 24px;
+      max-height: 70vh;
+      overflow-y: scroll;
 
       .ant-typography {
         color: inherit;

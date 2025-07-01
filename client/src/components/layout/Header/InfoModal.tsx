@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Divider, Modal, Space, Typography, Switch, Flex, Image } from "antd";
 import styles from "./InfoModal.module.scss";
 import { useAppSelector } from "../../../store/typedDispatch";
+import { CURRENT_APP_VERSION } from "../../../lib/consts";
 
 const { Paragraph, Text, Title, Link } = Typography;
 
@@ -63,6 +64,10 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
           {isRussian
             ? "Надеюсь, этот инструмент поможет вам собрать абсолютно все предметы в Elden Ring — включая DLC контент."
             : "I hope this tool helps you collect every single item in Elden Ring — including all DLC content."}
+          <br />
+          {isRussian
+            ? `На данный момент ${CURRENT_APP_VERSION} приложение стабильно и функционирует на 100%, однако некоторые предметы и категории по прежнему могут подвергнуться изменениям`
+            : `The application is currently fully functional and stable ${CURRENT_APP_VERSION}, but some items and categories may still be subject to changes.`}
         </Paragraph>
 
         <Divider />
@@ -78,34 +83,29 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
 
             <Paragraph>
               {isRussian
-                ? `Данные приложения хранятся в вашем браузере. При очистке истории или кэша они будут удалены. Чтобы не потерять прогресс, рекомендую экспортировать его после каждой игровой сессии и сохранять в текстовом файле. (инструкцция в FAQ)`
-                : "Your progress is stored in your browser. It will be lost if you clear history or cache. To avoid losing it, I recommend exporting your progress after each play session and saving it in a text file. (instructions in FAQ)"}
+                ? `Данные приложения хранятся в localStorage вашего браузера.`
+                : "The application's data is stored in your browser's localStorage."}
               <br />
-              {/*       {isRussian
-                ? "Не удаляйте следующие ключи:"
-                : "Do not delete the following keys:"} */}
             </Paragraph>
-            {/*             <Paragraph>
+            <Paragraph>
               <Text code>XnDEldenCompendium.collection</Text> —{" "}
               {isRussian
                 ? "содержит данные о собранных предметах."
-                : "contains all collected item data."}
+                : "contains data about collected items."}
               <br />
               <Text code>XnDEldenCompendium.settings</Text> —{" "}
               {isRussian
                 ? "содержит ваши личные настройки."
-                : "contains your personal preferences."}
+                : "contains your personal settings."}
               <br />
               <Text code>XnDEldenCompendium.checkpoints</Text> —{" "}
-              {isRussian
-                ? "содержит чекпоинты."
-                : "contains your checkpoints data."}
+              {isRussian ? "содержит чекпоинты." : "contains your checkpoints."}
             </Paragraph>
             <Paragraph>
               {isRussian
-                ? "Очистка истории браузера или удаление этих ключей приведёт к потере прогресса! Поэтому не забывайте делать Экспорт данных."
-                : "Clearing your browser history or removing these keys will result in loss of progress! Don’t forget to export your data before doing so."}
-            </Paragraph> */}
+                ? "Полная очистка истории браузера или удаление этих ключей приведёт к потере прогресса! Поэтому либо снимайте галочку 'Файлы Cookie и данные сайтов' при очистке браузера, либо не забывайте делать экспорт прогресса (FAQ). "
+                : "Clearing your browser history or deleting these keys will result in loss of progress! Either uncheck 'Cookies and site data' when clearing your browser, or make sure to export your progress in advance (FAQ)."}
+            </Paragraph>
             <Divider />
           </>
         )}
