@@ -1,6 +1,7 @@
 import { Modal, List, Typography, Flex, Switch } from "antd";
 import styles from "./BoostersModal.module.scss";
 import { useState } from "react";
+import { BOOSTY_LINK, PATREON_LINK } from "../../../lib/consts";
 
 const { Title, Text, Link, Paragraph } = Typography;
 
@@ -54,11 +55,11 @@ export default function BoostersModal({ open, onClose }: BoostersModalProps) {
             </div>
           </Flex>
           <Flex justify="center" gap={16}>
-            <Link href="https://boosty.to/xnd" target="_blank">
+            <Link href={BOOSTY_LINK} target="_blank">
               Boosty
             </Link>
             {" | "}
-            <Link href="https://patreon.com/your_patreon" target="_blank">
+            <Link href={PATREON_LINK} target="_blank">
               Patreon
             </Link>
           </Flex>

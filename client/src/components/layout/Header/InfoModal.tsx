@@ -2,7 +2,12 @@ import { useState } from "react";
 import { Divider, Modal, Space, Typography, Switch, Flex, Image } from "antd";
 import styles from "./InfoModal.module.scss";
 import { useAppSelector } from "../../../store/typedDispatch";
-import { CURRENT_APP_VERSION } from "../../../lib/consts";
+import {
+  BOOSTY_LINK,
+  CURRENT_APP_VERSION,
+  PATREON_LINK,
+  YOUTUBE_LINK,
+} from "../../../lib/consts";
 
 const { Paragraph, Text, Title, Link } = Typography;
 
@@ -128,7 +133,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
           <br />
           {isRussian ? "Подписывайтесь на меня:" : "Stay connected on:"}{" "}
           <Space>
-            <Link href="https://www.youtube.com/@XnDsChanel" target="_blank">
+            <Link href={YOUTUBE_LINK} target="_blank">
               YouTube
             </Link>
           </Space>
@@ -137,11 +142,11 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
             ? "Поддержать проект можно здесь:"
             : "Support the project here:"}{" "}
           <Space>
-            <Link href="https://boosty.to/xnd" target="_blank">
+            <Link href={BOOSTY_LINK} target="_blank">
               Boosty
             </Link>
             {" | "}
-            <Link href="https://patreon.com/your_patreon" target="_blank">
+            <Link href={PATREON_LINK} target="_blank">
               Patreon
             </Link>
           </Space>

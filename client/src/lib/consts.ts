@@ -1,9 +1,17 @@
 import type { ProgressProps } from "antd";
 import type { ItemCategory } from "../global-types";
 
-export const BASE_DISCOVERY = 100;
-
 export const CURRENT_APP_VERSION = "(v. 0.7.2 beta)";
+
+export const BOOSTY_LINK = "https://boosty.to/xnd";
+export const PATREON_LINK = "https://www.patreon.com/XnDs";
+export const YOUTUBE_LINK = "https://www.youtube.com/@XnDsChanel";
+
+export const LOCALSTORAGE_COLLECTION_KEY = "XnDEldenCompendium.collection";
+export const LOCALSTORAGE_SETTINGS_KEY = "XnDEldenCompendium.settings";
+export const LOCALSTORAGE_CHECKPOINTS_KEY = "XnDEldenCompendium.checkpoints";
+
+export const BASE_DISCOVERY = 100;
 
 export const itemCategories: ItemCategory[] = [
   "meleWeapons",
@@ -33,7 +41,6 @@ export const legendaryEligibleItemCategories: ItemCategory[] = [
   "incantations",
 ];
 
-//Палитра приложения дублированная для использования с Antd ConfigProvider
 export const APP_PALETTE = {
   textPrimary: "#aa7714",
   textHighlighted: "#e8b339",
@@ -43,20 +50,14 @@ export const APP_PALETTE = {
   text: "#856a51",
 };
 
-//Цвета прогрессбара
 export const PROGRESSBAR_COLORS: ProgressProps["strokeColor"] = {
   "0%": APP_PALETTE.textPrimary,
   "100%": APP_PALETTE.textPrimary,
 };
 
-//категории где много предметов с ощдинаковыми изображениями
 export const exceptionalSubcategories = ["bellBearings", "cookbooks", "notes"];
 
 export const TRUNCATE_LIMITS = {
   DASHBOARD: 16,
   SUB_CATEGOTY_LABEL: 23,
 };
-
-export const LOCALSTORAGE_COLLECTION_KEY = "XnDEldenCompendium.collection";
-export const LOCALSTORAGE_SETTINGS_KEY = "XnDEldenCompendium.settings";
-export const LOCALSTORAGE_CHECKPOINTS_KEY = "XnDEldenCompendium.checkpoints";
