@@ -59,6 +59,7 @@ export default function ItemsGrid({
   );
 
   const spoilers = useAppSelector((state) => state.settings.spoilers);
+  const subcategorySeenPartNames = new Map<string, Set<string>>();
 
   if (!categoryData) return null;
 
@@ -107,6 +108,12 @@ export default function ItemsGrid({
                 >{` ${collected}/${total}`}</span>
               </Divider>
 
+              {!subcategorySeenPartNames.has(subcategoryName) &&
+                void subcategorySeenPartNames.set(
+                  subcategoryName,
+                  new Set<string>()
+                )}
+
               <Space align="center" wrap>
                 {filteredItems.map((item) => {
                   const renderLinkWithIcon = (label: string, href: string) => (
@@ -144,7 +151,14 @@ export default function ItemsGrid({
                   );
 
                   if (isArmourSet(item)) {
+                    const seenPartNamesForSubcategory =
+                      subcategorySeenPartNames.get(subcategoryName) ||
+                      new Set<string>();
+
                     return item.items?.flatMap((part) => {
+                      // Пропускаем части с именами, которые мы уже видели в этой подкатегории
+                      if (seenPartNamesForSubcategory.has(part.name)) return [];
+                      seenPartNamesForSubcategory.add(part.name);
                       const allVariants = [part, ...(part.children ?? [])];
 
                       return allVariants.map((variant) => {

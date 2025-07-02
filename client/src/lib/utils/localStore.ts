@@ -22,88 +22,71 @@ function filterCollectedDataMinimal(
   for (const [categoryKey, subcategoryMap] of Object.entries(collection)) {
     const filteredSubcategories = Object.fromEntries(
       Object.entries(subcategoryMap).map(([subKey, items]) => {
+        const seenNames = new Set<string>();
+
         const filtered = (items as Item[]).flatMap((item) => {
-          //@ts-ignore
           const output: any[] = [];
 
-          // Броня — pieceType: set
-          if ("pieceType" in item && item.pieceType === "set") {
-            if (item.collected) {
-              output.push({ name: item.name, collected: true });
-              //@ts-ignore
-              for (const piece of item.items) {
-                output.push({ name: piece.name, collected: true });
-
-                if (piece.children) {
-                  for (const child of piece.children) {
-                    if (child.collected) {
-                      output.push({ name: child.name, collected: true });
-                    }
-                  }
-                }
-              }
-              return output;
+          const tryAdd = (name: string, extra?: object) => {
+            if (!seenNames.has(name)) {
+              seenNames.add(name);
+              output.push({ name, collected: true, ...extra });
             }
+          };
 
-            //@ts-ignore
-            for (const piece of item.items) {
-              if (piece.collected)
-                output.push({ name: piece.name, collected: true });
-              if (piece.children) {
-                for (const child of piece.children) {
-                  if (child.collected)
-                    output.push({ name: child.name, collected: true });
-                }
+          // Armour sets
+          if ("pieceType" in item && item.pieceType === "set") {
+            if (item.collected) tryAdd(item.name);
+            // @ts-ignore
+            for (const piece of item.items ?? []) {
+              if (piece.collected) tryAdd(piece.name);
+              for (const child of piece.children ?? []) {
+                if (child.collected) tryAdd(child.name);
               }
             }
 
             return output;
           }
 
+          // Children structure
           if ("children" in item && Array.isArray(item.children)) {
-            const children = item.children.filter((c) => c.collected);
-            if (item.collected || children.length > 0) {
-              if (item.collected)
-                output.push({ name: item.name, collected: true });
-              for (const c of children) {
-                output.push({ name: c.name, collected: true });
-              }
+            const hasCollectedChildren = item.children.some((c) => c.collected);
+            if (item.collected || hasCollectedChildren) {
+              if (item.collected) tryAdd(item.name);
+              item.children.forEach((c) => {
+                if (c.collected) tryAdd(c.name);
+              });
               return output;
             }
           }
 
+          // Versions (e.g., talismans)
           if ("versions" in item && Array.isArray(item.versions)) {
-            const allCollected = item.versions.every((v) => v.collected);
-            if (allCollected) {
-              return [{ name: item.name, collected: true }];
+            const collectedVersions = item.versions.filter((v) => v.collected);
+            if (collectedVersions.length === item.versions.length) {
+              tryAdd(item.name);
+            } else {
+              collectedVersions.forEach((v) =>
+                tryAdd(item.name, { tier: v.tier })
+              );
             }
-
-            const someCollected = item.versions.some((v) => v.collected);
-            if (someCollected) {
-              return item.versions
-                .filter((v) => v.collected)
-                .map((v) => ({
-                  name: item.name,
-                  tier: v.tier,
-                  collected: true,
-                }));
-            }
-
-            return [];
+            return output;
           }
 
+          // Base case
           if (item.collected) {
-            return [{ name: item.name, collected: true }];
+            tryAdd(item.name);
           }
 
-          return [];
+          return output;
         });
 
         return [subKey, filtered];
       })
     );
-    //@ts-ignore
-    result[categoryKey as keyof Collection] = filteredSubcategories as any;
+
+    // @ts-ignore
+    result[categoryKey as keyof Collection] = filteredSubcategories;
   }
 
   return result;
@@ -133,67 +116,65 @@ function applyMinimalCollectedFlags(
   const result: Collection = structuredClone(base);
 
   for (const [categoryKey, subcategoryMap] of Object.entries(saved)) {
-    //@ts-ignore
+    // @ts-ignore
     const baseSubMap = result[categoryKey as keyof Collection] as Record<
       string,
       Item[]
     >;
 
     for (const [subKey, savedItems] of Object.entries(
-      //@ts-ignore
+      // @ts-ignore
       subcategoryMap as Record<string, any[]>
     )) {
       const baseItems = baseSubMap[subKey];
       if (!Array.isArray(baseItems)) continue;
 
-      for (const saved of savedItems) {
-        if ("tier" in saved) {
-          const item = baseItems.find((i) => i.name === saved.name);
-          //@ts-ignore
-          const version = (item as any)?.versions?.find(
-            //@ts-ignore
-            (v: any) => v.tier === saved.tier
-          );
-          if (version) version.collected = true;
-          continue;
-        }
+      for (const savedItem of savedItems) {
+        const allMatches = baseItems.flatMap((i) => {
+          const matches: Item[] = [];
 
-        const match =
-          baseItems.find((i) => i.name === saved.name) ||
-          baseItems
-            .flatMap((i) =>
-              "items" in i && Array.isArray(i.items) ? i.items : []
-            )
-            .find((i) => i.name === saved.name) ||
-          baseItems
-            .flatMap((i) =>
-              "items" in i && Array.isArray(i.items)
-                ? i.items.flatMap((it) =>
-                    "children" in it ? it.children || [] : []
-                  )
-                : "children" in i
-                ? i.children || []
-                : []
-            )
-            .find((i) => i.name === saved.name);
+          if (i.name === savedItem.name) matches.push(i);
 
-        if (match) {
+          if ("items" in i && Array.isArray(i.items)) {
+            for (const piece of i.items) {
+              if (piece.name === savedItem.name) matches.push(piece);
+
+              for (const child of piece.children ?? []) {
+                if (child.name === savedItem.name) matches.push(child);
+              }
+            }
+          }
+
+          if ("children" in i && Array.isArray(i.children)) {
+            for (const child of i.children) {
+              if (child.name === savedItem.name) matches.push(child);
+            }
+          }
+
+          return matches;
+        });
+
+        for (const match of allMatches) {
           match.collected = true;
 
           if ("versions" in match && Array.isArray(match.versions)) {
-            match.versions.forEach((v) => {
-              v.collected = true;
-            });
+            if ("tier" in savedItem) {
+              const version = match.versions.find(
+                (v) => v.tier === savedItem.tier
+              );
+              if (version) version.collected = true;
+            } else {
+              match.versions.forEach((v) => (v.collected = true));
+            }
           }
 
           if ("items" in match && Array.isArray(match.items)) {
-            match.items.forEach((piece) => {
+            for (const piece of match.items) {
               piece.collected = true;
-              //@ts-ignore
-              piece.children?.forEach((child) => {
+              for (const child of piece.children ?? []) {
                 child.collected = true;
-              });
-            });
+              }
+            }
           }
         }
       }
