@@ -156,89 +156,99 @@ export default function ItemsGrid({
                       new Set<string>();
 
                     return item.items?.flatMap((part) => {
-                      // Пропускаем части с именами, которые мы уже видели в этой подкатегории
                       if (seenPartNamesForSubcategory.has(part.name)) return [];
                       seenPartNamesForSubcategory.add(part.name);
                       const allVariants = [part, ...(part.children ?? [])];
 
-                      return allVariants.map((variant) => {
-                        const isAltered = variant !== part;
-                        const variantName = variant.name;
-                        const translatedName = t(selectedCategory, variantName);
-                        const link =
-                          isAltered && variant.link ? variant.link : part.link;
+                      return allVariants
+                        .filter((i) =>
+                          t(selectedCategory, i.name)
+                            .toLowerCase()
+                            .includes(searchValue.toLowerCase())
+                        )
+                        .map((variant) => {
+                          const isAltered = variant !== part;
+                          const variantName = variant.name;
+                          const translatedName = t(
+                            selectedCategory,
+                            variantName
+                          );
+                          const link =
+                            isAltered && variant.link
+                              ? variant.link
+                              : part.link;
 
-                        return (
-                          <Popover
-                            styles={{
-                              body: {
-                                borderRadius: 30,
-                                border: `1px solid ${APP_PALETTE.bgDark}`,
-                              },
-                            }}
-                            key={variantName}
-                            mouseEnterDelay={0.5}
-                            content={
-                              isTablet ? null : (
-                                <Flex vertical gap={10} align="center">
-                                  {renderLinkWithIcon(translatedName, link)}
-                                  {renderImageWithHoverOverlay(
-                                    getImageUrl(
-                                      variant,
-                                      subcategoryName,
-                                      selectedCategory
-                                    ),
-                                    variantName,
-                                    () => {
-                                      dispatch(setFastcheck(false));
-                                      navigateToItem(
-                                        variantName,
-                                        dispatch,
-                                        navigate
-                                      );
-                                    }
-                                  )}
-                                </Flex>
-                              )
-                            }
-                          >
-                            <div
-                              className={
-                                spoilers && !variant.collected
-                                  ? styles.blockSpoiler
-                                  : ""
+                          return (
+                            <Popover
+                              styles={{
+                                body: {
+                                  borderRadius: 30,
+                                  border: `1px solid ${APP_PALETTE.bgDark}`,
+                                },
+                              }}
+                              key={variantName}
+                              mouseEnterDelay={0.5}
+                              content={
+                                isTablet ? null : (
+                                  <Flex vertical gap={10} align="center">
+                                    {renderLinkWithIcon(translatedName, link)}
+                                    {renderImageWithHoverOverlay(
+                                      getImageUrl(
+                                        variant,
+                                        subcategoryName,
+                                        selectedCategory
+                                      ),
+                                      variantName,
+                                      () => {
+                                        dispatch(setFastcheck(false));
+                                        navigateToItem(
+                                          variantName,
+                                          dispatch,
+                                          navigate
+                                        );
+                                      }
+                                    )}
+                                  </Flex>
+                                )
                               }
                             >
-                              <Image
-                                placeholder={spin}
+                              <div
                                 className={
-                                  variant.collected
-                                    ? styles.itemImgCollected
-                                    : styles.itemImg
+                                  spoilers && !variant.collected
+                                    ? styles.blockSpoiler
+                                    : ""
                                 }
-                                src={getImageUrl(
-                                  variant,
-                                  subcategoryName,
-                                  selectedCategory
-                                )}
-                                width={imgSize}
-                                height={imgSize}
-                                alt={variantName}
-                                preview={false}
-                                onClick={() => {
-                                  getStoreAction({
-                                    name: variantName,
-                                    category: selectedCategory,
-                                    subcategory:
-                                      subcategoryName as ItemSubCategory,
-                                    dispatch,
-                                  });
-                                }}
-                              />
-                            </div>
-                          </Popover>
-                        );
-                      });
+                              >
+                                <Image
+                                  placeholder={spin}
+                                  className={
+                                    variant.collected
+                                      ? styles.itemImgCollected
+                                      : styles.itemImg
+                                  }
+                                  src={getImageUrl(
+                                    variant,
+                                    subcategoryName,
+                                    selectedCategory
+                                  )}
+                                  width={imgSize}
+                                  height={imgSize}
+                                  alt={variantName}
+                                  preview={false}
+                                  onClick={() => {
+                                    getStoreAction({
+                                      name: variantName,
+                                      category: selectedCategory,
+                                      subcategory:
+                                        subcategoryName as ItemSubCategory,
+                                      dispatch,
+                                    });
+                                  }}
+                                />
+                              </div>
+                            </Popover>
+                          );
+                        });
                     });
                   }
 
