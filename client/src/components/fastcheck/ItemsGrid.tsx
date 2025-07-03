@@ -80,7 +80,10 @@ export default function ItemsGrid({
             const targetNames = [item.name];
 
             if (isArmourSet(item)) {
-              item.items?.forEach((part) => targetNames.push(part.name));
+              item.items?.forEach((part) => {
+                targetNames.push(part.name);
+                part.children?.forEach((child) => targetNames.push(child.name));
+              });
             }
 
             if (isMultiVersionTalisman(item)) {
@@ -91,11 +94,29 @@ export default function ItemsGrid({
               });
             }
 
-            return targetNames.some((name) =>
+            const matchesSearch = targetNames.some((name) =>
               t(selectedCategory, name)
                 .toLowerCase()
                 .includes(searchValue.toLowerCase())
             );
+
+            if (
+              isArmourSet(item) &&
+              Object.values(pieceTypeFilters).some((v) => !v)
+            ) {
+              const hasPieceMatchingFilter = item.items?.some(
+                (part) =>
+                  pieceTypeFilters[part.pieceType as keyof ArmorFilter] ||
+                  part.children?.some(
+                    (child) =>
+                      pieceTypeFilters[child.pieceType as keyof ArmorFilter]
+                  )
+              );
+
+              return matchesSearch && hasPieceMatchingFilter;
+            }
+
+            return matchesSearch;
           });
 
           if (filteredItems.length === 0) return null;
