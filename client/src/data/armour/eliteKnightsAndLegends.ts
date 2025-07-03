@@ -451,7 +451,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
           {
             type: "armour",
             subcategory: "eliteKnightsAndLegends",
-            pieceType: "chest",
+            pieceType: "helm",
             name: "Eccentric's Hood (Altered)",
             collected: false,
             link: "https://eldenring.wiki.fextralife.com/Eccentric's+Hood+(Altered)",
@@ -853,7 +853,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "eliteKnightsAndLegends",
-        pieceType: "chest",
+        pieceType: "gloves",
         name: "Gauntlets of Night",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Gauntlets+of+Night",
@@ -862,7 +862,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "eliteKnightsAndLegends",
-        pieceType: "helm",
+        pieceType: "boots",
         name: "Greaves of Night",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Greaves+of+Night",

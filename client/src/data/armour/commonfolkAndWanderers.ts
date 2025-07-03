@@ -118,7 +118,7 @@ export const commonfolkAndWanderers: ArmourSet[] = [
           {
             type: "armour",
             subcategory: "commonfolkAndWanderers",
-            pieceType: "chest",
+            pieceType: "helm",
             name: "Commoner's Headband (Altered)",
             collected: false,
             link: "https://eldenring.wiki.fextralife.com/Commoner's+Headband+(Altered)",
@@ -585,7 +585,7 @@ export const commonfolkAndWanderers: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "commonfolkAndWanderers",
-        pieceType: "boots",
+        pieceType: "helm",
         name: "Bloodsoaked Mask",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Bloodsoaked+Mask",

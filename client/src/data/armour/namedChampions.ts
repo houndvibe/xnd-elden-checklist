@@ -100,7 +100,7 @@ export const namedChampions: ArmourSet[] = [
           {
             type: "armour",
             subcategory: "namedChampions",
-            pieceType: "chest",
+            pieceType: "helm",
             name: "Drake Knight Helm (Altered)",
             collected: false,
             link: "https://eldenring.wiki.fextralife.com/Drake+Knight+Helm+(Altered)",
@@ -287,7 +287,7 @@ export const namedChampions: ArmourSet[] = [
           {
             type: "armour",
             subcategory: "namedChampions",
-            pieceType: "chest",
+            pieceType: "helm",
             name: "Diallos's Mask",
             collected: false,
             link: "https://eldenring.wiki.fextralife.com/Diallos's+Mask",

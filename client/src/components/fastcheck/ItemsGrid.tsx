@@ -24,10 +24,12 @@ import { setFastcheck } from "../../store/settingsSlice";
 import Link from "antd/es/typography/Link";
 import { LinkOutlined } from "@ant-design/icons";
 import { isTablet } from "react-device-detect";
+import { ArmorFilter } from "./FastCheck";
 interface ItemsGridProps {
   selectedCategory: ItemCategory;
   imgSize: number;
   searchValue: string;
+  pieceTypeFilters: ArmorFilter;
 }
 
 const sanitize = (str: string) => str.replace(/:|"/g, "");
@@ -51,6 +53,7 @@ export default function ItemsGrid({
   selectedCategory,
   imgSize,
   searchValue,
+  pieceTypeFilters,
 }: ItemsGridProps) {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
@@ -165,6 +168,12 @@ export default function ItemsGrid({
                           t(selectedCategory, i.name)
                             .toLowerCase()
                             .includes(searchValue.toLowerCase())
+                        )
+                        .filter(
+                          (piece) =>
+                            pieceTypeFilters[
+                              piece.pieceType as keyof ArmorFilter
+                            ]
                         )
                         .map((variant) => {
                           const isAltered = variant !== part;

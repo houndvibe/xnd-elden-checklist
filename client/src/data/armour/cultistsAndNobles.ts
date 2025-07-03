@@ -492,7 +492,7 @@ export const cultistsAndNobles: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "cultistsAndNobles",
-        pieceType: "chest",
+        pieceType: "helm",
         name: "Wise Man's Mask",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Wise+Man's+Mask",
@@ -501,7 +501,7 @@ export const cultistsAndNobles: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "cultistsAndNobles",
-        pieceType: "helm",
+        pieceType: "chest",
         name: "Ansbach's Attire",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Ansbach's+Attire",

@@ -680,7 +680,7 @@ export const knightlyOrders: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "knightlyOrders",
-        pieceType: "chest",
+        pieceType: "gloves",
         name: "Bloodhound Knight Gauntlets",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Gauntlets",
@@ -689,7 +689,7 @@ export const knightlyOrders: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "knightlyOrders",
-        pieceType: "helm",
+        pieceType: "boots",
         name: "Bloodhound Knight Greaves",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Greaves",
@@ -892,7 +892,7 @@ export const knightlyOrders: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "knightlyOrders",
-        pieceType: "chest",
+        pieceType: "helm",
         name: "Divine Bird Helm",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Divine+Bird+Helm",
@@ -902,7 +902,7 @@ export const knightlyOrders: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "knightlyOrders",
-        pieceType: "chest",
+        pieceType: "gloves",
         name: "Divine Bird Warrior Gauntlets",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Divine+Bird+Warrior+Gauntlets",
@@ -911,7 +911,7 @@ export const knightlyOrders: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "knightlyOrders",
-        pieceType: "helm",
+        pieceType: "boots",
         name: "Divine Bird Warrior Greaves",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Divine+Bird+Warrior+Greaves",

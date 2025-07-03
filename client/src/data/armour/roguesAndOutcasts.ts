@@ -288,7 +288,7 @@ export const roguesAndOutcasts: ArmourSet[] = [
           {
             type: "armour",
             subcategory: "roguesAndOutcasts",
-            pieceType: "chest",
+            pieceType: "helm",
             name: "Confessor Hood (Altered)",
             collected: false,
             link: "https://eldenring.wiki.fextralife.com/Confessor+Hood+(Altered)",
