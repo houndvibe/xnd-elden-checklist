@@ -10,6 +10,7 @@ import {
   isArmourSet,
   isMultiVersionTalisman,
   toTitleCaseFromCamel,
+  truncateString,
 } from "../../lib/utils/misc";
 import { useAppDispatch, useAppSelector } from "../../store/typedDispatch";
 import { getStoreAction } from "../../store/actions";
@@ -62,6 +63,7 @@ export default function ItemsGrid({
   );
 
   const spoilers = useAppSelector((state) => state.settings.spoilers);
+  const showFCNames = useAppSelector((state) => state.settings.showFCNames);
   const subcategorySeenPartNames = new Map<string, Set<string>>();
 
   if (!categoryData) return null;
@@ -71,6 +73,30 @@ export default function ItemsGrid({
       <Spin className={styles.spin} size="small" />
     </Flex>
   );
+
+  const getNameBlock = (name: string, collected: boolean) => {
+    const getTruncSize = () => {
+      switch (imgSize) {
+        case 40:
+          return 5;
+        case 92:
+          return 10;
+        case 130:
+          return 14;
+        case 210:
+          return 24;
+        default:
+          return 10;
+      }
+    };
+    return showFCNames ? (
+      <span style={collected ? { color: APP_PALETTE.textPrimary } : {}}>
+        {truncateString(t(selectedCategory, name), getTruncSize())}
+      </span>
+    ) : (
+      <></>
+    );
+  };
 
   return (
     <div className={styles.itemsGridWrapper}>
@@ -249,32 +275,38 @@ export default function ItemsGrid({
                                     : ""
                                 }
                               >
-                                <Image
-                                  placeholder={spin}
-                                  className={
+                                <Flex vertical justify="center" align="center">
+                                  <Image
+                                    placeholder={spin}
+                                    className={
+                                      variant.collected
+                                        ? styles.itemImgCollected
+                                        : styles.itemImg
+                                    }
+                                    src={getImageUrl(
+                                      variant,
+                                      subcategoryName,
+                                      selectedCategory
+                                    )}
+                                    width={imgSize}
+                                    height={imgSize}
+                                    alt={variantName}
+                                    preview={false}
+                                    onClick={() => {
+                                      getStoreAction({
+                                        name: variantName,
+                                        category: selectedCategory,
+                                        subcategory:
+                                          subcategoryName as ItemSubCategory,
+                                        dispatch,
+                                      });
+                                    }}
+                                  />
+                                  {getNameBlock(
+                                    translatedName,
                                     variant.collected
-                                      ? styles.itemImgCollected
-                                      : styles.itemImg
-                                  }
-                                  src={getImageUrl(
-                                    variant,
-                                    subcategoryName,
-                                    selectedCategory
                                   )}
-                                  width={imgSize}
-                                  height={imgSize}
-                                  alt={variantName}
-                                  preview={false}
-                                  onClick={() => {
-                                    getStoreAction({
-                                      name: variantName,
-                                      category: selectedCategory,
-                                      subcategory:
-                                        subcategoryName as ItemSubCategory,
-                                      dispatch,
-                                    });
-                                  }}
-                                />
+                                </Flex>
                               </div>
                             </Popover>
                           );
@@ -336,34 +368,37 @@ export default function ItemsGrid({
                                 : ""
                             }
                           >
-                            <Image
-                              placeholder={spin}
-                              className={
-                                version.collected
-                                  ? styles.itemImgCollected
-                                  : styles.itemImg
-                              }
-                              src={getImageUrl(
-                                item,
-                                subcategoryName,
-                                selectedCategory,
-                                versionName
-                              )}
-                              width={imgSize}
-                              height={imgSize}
-                              alt={versionName}
-                              preview={false}
-                              onClick={() => {
-                                dispatch(
-                                  toggleTalismanCollected({
-                                    subcategory:
-                                      subcategoryName as keyof TalismansSubCategoryMap,
-                                    name: item.name,
-                                    tier: version.tier,
-                                  })
-                                );
-                              }}
-                            />
+                            <Flex vertical justify="center" align="center">
+                              <Image
+                                placeholder={spin}
+                                className={
+                                  version.collected
+                                    ? styles.itemImgCollected
+                                    : styles.itemImg
+                                }
+                                src={getImageUrl(
+                                  item,
+                                  subcategoryName,
+                                  selectedCategory,
+                                  versionName
+                                )}
+                                width={imgSize}
+                                height={imgSize}
+                                alt={versionName}
+                                preview={false}
+                                onClick={() => {
+                                  dispatch(
+                                    toggleTalismanCollected({
+                                      subcategory:
+                                        subcategoryName as keyof TalismansSubCategoryMap,
+                                      name: item.name,
+                                      tier: version.tier,
+                                    })
+                                  );
+                                }}
+                              />
+                              {getNameBlock(displayName, version.collected)}
+                            </Flex>
                           </div>
                         </Popover>
                       );
@@ -408,31 +443,34 @@ export default function ItemsGrid({
                           spoilers && !item.collected ? styles.blockSpoiler : ""
                         }
                       >
-                        <Image
-                          placeholder={spin}
-                          className={
-                            item.collected
-                              ? styles.itemImgCollected
-                              : styles.itemImg
-                          }
-                          src={getImageUrl(
-                            item,
-                            subcategoryName,
-                            selectedCategory
-                          )}
-                          width={imgSize}
-                          height={imgSize}
-                          alt={item.name}
-                          preview={false}
-                          onClick={() => {
-                            getStoreAction({
-                              name: item.name,
-                              category: selectedCategory,
-                              subcategory: subcategoryName as ItemSubCategory,
-                              dispatch,
-                            });
-                          }}
-                        />
+                        <Flex vertical justify="center" align="center">
+                          <Image
+                            placeholder={spin}
+                            className={
+                              item.collected
+                                ? styles.itemImgCollected
+                                : styles.itemImg
+                            }
+                            src={getImageUrl(
+                              item,
+                              subcategoryName,
+                              selectedCategory
+                            )}
+                            width={imgSize}
+                            height={imgSize}
+                            alt={item.name}
+                            preview={false}
+                            onClick={() => {
+                              getStoreAction({
+                                name: item.name,
+                                category: selectedCategory,
+                                subcategory: subcategoryName as ItemSubCategory,
+                                dispatch,
+                              });
+                            }}
+                          />
+                          {getNameBlock(item.name, item.collected)}
+                        </Flex>
                       </div>
                     </Popover>
                   );

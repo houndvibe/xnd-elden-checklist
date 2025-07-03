@@ -2,7 +2,7 @@ import { Divider, Flex, Switch } from "antd";
 /* import { NavLink } from "react-router-dom"; */
 
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
-import { setSpoilers } from "../../../store/settingsSlice";
+import { setSpoilers, toggleFCNames } from "../../../store/settingsSlice";
 
 /* import { APP_PALETTE } from "../../../lib/consts"; */
 
@@ -16,6 +16,7 @@ export default function SettingsPannel() {
   const dispatch = useAppDispatch();
 
   const spoilers = useAppSelector((state) => state.settings.spoilers);
+  const showFCNames = useAppSelector((state) => state.settings.showFCNames);
   /*   const storedDiscovery = useAppSelector(
     (state) => state.discovery.calculatedDiscovery
   ); */
@@ -35,6 +36,13 @@ export default function SettingsPannel() {
             size="small"
             checked={spoilers}
             onChange={(checked) => dispatch(setSpoilers(checked))}
+          />
+          <span>|</span>
+          <span>{t("misc", "f/c. names")}:</span>
+          <Switch
+            size="small"
+            checked={showFCNames}
+            onChange={() => dispatch(toggleFCNames())}
           />
         </Flex>
         {/*         {isElectron && (

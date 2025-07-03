@@ -12,6 +12,7 @@ interface SettingsState {
   fastcheck: boolean;
   fastcheckSize: number;
   discovery: number;
+  showFCNames: boolean;
 }
 
 const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
@@ -22,6 +23,7 @@ const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
   fastcheck: false,
   fastcheckSize: 92,
   discovery: BASE_DISCOVERY,
+  showFCNames: false,
 });
 
 export const settingsSlice = createSlice({
@@ -56,6 +58,10 @@ export const settingsSlice = createSlice({
       state.discovery = action.payload;
       saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
     },
+    toggleFCNames: (state) => {
+      state.showFCNames = !state.showFCNames;
+      saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
+    },
   },
 });
 
@@ -67,5 +73,6 @@ export const {
   setFastcheck,
   setFastcheckSize,
   setDiscovery,
+  toggleFCNames,
 } = settingsSlice.actions;
 export default settingsSlice.reducer;
