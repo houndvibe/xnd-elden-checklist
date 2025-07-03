@@ -89,10 +89,14 @@ export default function ItemsGrid({
           return 10;
       }
     };
-    return showFCNames ? (
-      <span style={collected ? { color: APP_PALETTE.textPrimary } : {}}>
-        {truncateString(t(selectedCategory, name), getTruncSize())}
-      </span>
+    return showFCNames && imgSize > 40 ? (
+      <>
+        <Divider size="small" />
+        <span style={collected ? { color: APP_PALETTE.textPrimary } : {}}>
+          {truncateString(t(selectedCategory, name), getTruncSize())}
+        </span>
+        <Divider size="small" />
+      </>
     ) : (
       <></>
     );

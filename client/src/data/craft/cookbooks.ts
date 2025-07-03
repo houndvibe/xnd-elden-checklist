@@ -4,7 +4,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [1]",
+    name: "[1] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(1)",
     dlc: false,
@@ -13,7 +13,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [2]",
+    name: "[2] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(2)",
     dlc: false,
@@ -22,7 +22,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [3]",
+    name: "[3] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(3)",
     dlc: false,
@@ -31,7 +31,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [4]",
+    name: "[4] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(4)",
     dlc: false,
@@ -40,7 +40,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [5]",
+    name: "[5] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(5)",
     dlc: false,
@@ -49,7 +49,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [6]",
+    name: "[6] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(6)",
     dlc: false,
@@ -58,7 +58,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [7]",
+    name: "[7] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(7)",
     dlc: false,
@@ -67,7 +67,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [8]",
+    name: "[8] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(8)",
     dlc: false,
@@ -76,7 +76,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [9]",
+    name: "[9] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(9)",
     dlc: false,
@@ -85,7 +85,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [10]",
+    name: "[10] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(10)",
     dlc: false,
@@ -94,7 +94,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [11]",
+    name: "[11] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(11)",
     dlc: false,
@@ -103,7 +103,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [12]",
+    name: "[12] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(12)",
     dlc: false,
@@ -112,7 +112,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [13]",
+    name: "[13] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(13)",
     dlc: false,
@@ -121,7 +121,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [14]",
+    name: "[14] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(14)",
     dlc: false,
@@ -130,7 +130,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [15]",
+    name: "[15] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(15)",
     dlc: false,
@@ -139,7 +139,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [16]",
+    name: "[16] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(16)",
     dlc: false,
@@ -148,7 +148,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [17]",
+    name: "[17] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(17)",
     dlc: false,
@@ -157,7 +157,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [18]",
+    name: "[18] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(18)",
     dlc: false,
@@ -166,7 +166,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [19]",
+    name: "[19] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(19)",
     dlc: false,
@@ -175,7 +175,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [20]",
+    name: "[20] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(20)",
     dlc: false,
@@ -184,7 +184,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [21]",
+    name: "[21] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(21)",
     dlc: false,
@@ -193,7 +193,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [22]",
+    name: "[22] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(22)",
     dlc: false,
@@ -202,7 +202,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [23]",
+    name: "[23] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(23)",
     dlc: false,
@@ -211,7 +211,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Nomadic Warrior's Cookbook [24]",
+    name: "[24] Nomadic Warrior's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(24)",
     dlc: false,
@@ -220,7 +220,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Armorer's Cookbook [1]",
+    name: "[1] Armorer's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Armorer's+Cookbook+(1)",
     dlc: false,
@@ -229,7 +229,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Armorer's Cookbook [2]",
+    name: "[2] Armorer's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Armorer's+Cookbook+(2)",
     dlc: false,
@@ -238,7 +238,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Armorer's Cookbook [3]",
+    name: "[3] Armorer's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Armorer's+Cookbook+(3)",
     dlc: false,
@@ -247,7 +247,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Armorer's Cookbook [4]",
+    name: "[4] Armorer's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Armorer's+Cookbook+(4)",
     dlc: false,
@@ -256,7 +256,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Armorer's Cookbook [5]",
+    name: "[5] Armorer's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Armorer's+Cookbook+(5)",
     dlc: false,
@@ -265,7 +265,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Armorer's Cookbook [6]",
+    name: "[6] Armorer's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Armorer's+Cookbook+(6)",
     dlc: false,
@@ -274,7 +274,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Armorer's Cookbook [7]",
+    name: "[7] Armorer's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Armorer's+Cookbook+(7)",
     dlc: false,
@@ -283,7 +283,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Glintstone Craftsman's Cookbook [1]",
+    name: "[1] Glintstone Craftsman's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Craftsman's+Cookbook+(1)",
     dlc: false,
@@ -292,7 +292,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Glintstone Craftsman's Cookbook [2]",
+    name: "[2] Glintstone Craftsman's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Craftsman's+Cookbook+(2)",
     dlc: false,
@@ -301,7 +301,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Glintstone Craftsman's Cookbook [3]",
+    name: "[3] Glintstone Craftsman's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Craftsman's+Cookbook+(3)",
     dlc: false,
@@ -310,7 +310,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Glintstone Craftsman's Cookbook [4]",
+    name: "[4] Glintstone Craftsman's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Craftsman's+Cookbook+(4)",
     dlc: false,
@@ -319,7 +319,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Glintstone Craftsman's Cookbook [5]",
+    name: "[5] Glintstone Craftsman's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Craftsman's+Cookbook+(5)",
     dlc: false,
@@ -328,7 +328,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Glintstone Craftsman's Cookbook [6]",
+    name: "[6] Glintstone Craftsman's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Craftsman's+Cookbook+(6)",
     dlc: false,
@@ -337,7 +337,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Glintstone Craftsman's Cookbook [7]",
+    name: "[7] Glintstone Craftsman's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Craftsman's+Cookbook+(7)",
     dlc: false,
@@ -346,7 +346,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Glintstone Craftsman's Cookbook [8]",
+    name: "[8] Glintstone Craftsman's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glintstone+Craftsman's+Cookbook+(8)",
     dlc: false,
@@ -355,7 +355,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Missionary's Cookbook [1]",
+    name: "[1] Missionary's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Missionary's+Cookbook+(1)",
     dlc: false,
@@ -364,7 +364,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Missionary's Cookbook [2]",
+    name: "[2] Missionary's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Missionary's+Cookbook+(2)",
     dlc: false,
@@ -373,7 +373,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Missionary's Cookbook [3]",
+    name: "[3] Missionary's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Missionary's+Cookbook+(3)",
     dlc: false,
@@ -382,7 +382,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Missionary's Cookbook [4]",
+    name: "[4] Missionary's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Missionary's+Cookbook+(4)",
     dlc: false,
@@ -391,7 +391,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Missionary's Cookbook [5]",
+    name: "[5] Missionary's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Missionary's+Cookbook+(5)",
     dlc: false,
@@ -400,7 +400,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Missionary's Cookbook [6]",
+    name: "[6] Missionary's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Missionary's+Cookbook+(6)",
     dlc: false,
@@ -409,7 +409,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Missionary's Cookbook [7]",
+    name: "[7] Missionary's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Missionary's+Cookbook+(7)",
     dlc: false,
@@ -418,7 +418,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Ancient Dragon Apostle's Cookbook [1]",
+    name: "[1] Ancient Dragon Apostle's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Apostle's+Cookbook+(1)",
     dlc: false,
@@ -427,7 +427,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Ancient Dragon Apostle's Cookbook [2]",
+    name: "[2] Ancient Dragon Apostle's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Apostle's+Cookbook+(2)",
     dlc: false,
@@ -436,7 +436,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Ancient Dragon Apostle's Cookbook [3]",
+    name: "[3] Ancient Dragon Apostle's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Apostle's+Cookbook+(3)",
     dlc: false,
@@ -445,7 +445,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Ancient Dragon Apostle's Cookbook [4]",
+    name: "[4] Ancient Dragon Apostle's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Apostle's+Cookbook+(4)",
     dlc: false,
@@ -454,7 +454,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Perfumer's Cookbook [1]",
+    name: "[1] Perfumer's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Perfumer's+Cookbook+(1)",
     dlc: false,
@@ -463,7 +463,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Perfumer's Cookbook [2]",
+    name: "[2] Perfumer's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Perfumer's+Cookbook+(2)",
     dlc: false,
@@ -472,7 +472,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Perfumer's Cookbook [3]",
+    name: "[3] Perfumer's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Perfumer's+Cookbook+(3)",
     dlc: false,
@@ -481,7 +481,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Perfumer's Cookbook [4]",
+    name: "[4] Perfumer's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Perfumer's+Cookbook+(4)",
     dlc: false,
@@ -490,7 +490,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Fevour's Cookbook [1]",
+    name: "[1] Fevour's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fevor's+Cookbook+(1)",
     dlc: false,
@@ -499,7 +499,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Fevour's Cookbook [2]",
+    name: "[2] Fevour's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fevor's+Cookbook+(2)",
     dlc: false,
@@ -508,7 +508,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Fevour's Cookbook [3]",
+    name: "[3] Fevour's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fevor's+Cookbook+(3)",
     dlc: false,
@@ -517,7 +517,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Frenzied's Cookbook [1]",
+    name: "[1] Frenzied's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Frenzied's+Cookbook+(1)",
     dlc: false,
@@ -526,7 +526,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Frenzied's Cookbook [2]",
+    name: "[2] Frenzied's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Frenzied's+Cookbook+(2)",
     dlc: false,
@@ -535,7 +535,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [1]",
+    name: "[1] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(1)",
     dlc: true,
@@ -544,7 +544,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [2]",
+    name: "[2] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(2)",
     dlc: true,
@@ -553,7 +553,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [3]",
+    name: "[3] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(3)",
     dlc: true,
@@ -562,7 +562,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [4]",
+    name: "[4] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(4)",
     dlc: true,
@@ -571,7 +571,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [5]",
+    name: "[5] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(5)",
     dlc: true,
@@ -580,7 +580,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [6]",
+    name: "[6] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(6)",
     dlc: true,
@@ -589,7 +589,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [7]",
+    name: "[7] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(7)",
     dlc: true,
@@ -598,7 +598,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [8]",
+    name: "[8] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(8)",
     dlc: true,
@@ -607,7 +607,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [9]",
+    name: "[9] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(9)",
     dlc: true,
@@ -616,7 +616,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [10]",
+    name: "[10] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(10)",
     dlc: true,
@@ -625,7 +625,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [11]",
+    name: "[11] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(11)",
     dlc: true,
@@ -634,7 +634,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [12]",
+    name: "[12] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(12)",
     dlc: true,
@@ -643,7 +643,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [13]",
+    name: "[13] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(13)",
     dlc: true,
@@ -652,7 +652,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Great Potentate's Cookbook [14]",
+    name: "[14] Great Potentate's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(14)",
     dlc: true,
@@ -670,7 +670,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Fire Knight's Cookbook [1]",
+    name: "[1] Fire Knight's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fire+Knight's+Cookbook+(1)",
     dlc: true,
@@ -679,7 +679,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Fire Knight's Cookbook [2]",
+    name: "[2] Fire Knight's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Fire+Knight's+Cookbook+(2)",
     dlc: true,
@@ -688,7 +688,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Battlefield Priest's Cookbook [1]",
+    name: "[1] Battlefield Priest's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Battlefield+Priest's+Cookbook+(1)",
     dlc: true,
@@ -697,7 +697,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Battlefield Priest's Cookbook [2]",
+    name: "[2] Battlefield Priest's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Battlefield+Priest's+Cookbook+(2)",
     dlc: true,
@@ -706,7 +706,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Battlefield Priest's Cookbook [3]",
+    name: "[3] Battlefield Priest's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Battlefield+Priest's+Cookbook+(3)",
     dlc: true,
@@ -715,7 +715,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Battlefield Priest's Cookbook [4]",
+    name: "[4] Battlefield Priest's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Battlefield+Priest's+Cookbook+(4)",
     dlc: true,
@@ -724,7 +724,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Ancient Dragon Knight's Cookbook [1]",
+    name: "[1] Ancient Dragon Knight's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Knight's+Cookbook+(1)",
     dlc: true,
@@ -733,7 +733,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Ancient Dragon Knight's Cookbook [2]",
+    name: "[2] Ancient Dragon Knight's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Knight's+Cookbook+(2)",
     dlc: true,
@@ -742,7 +742,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "St. Trina's Disciple's Cookbook [1]",
+    name: "[1] St. Trina's Disciple's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/St.+Trina+Disciple's+Cookbook+(1)",
     dlc: true,
@@ -751,7 +751,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "St. Trina's Disciple's Cookbook [2]",
+    name: "[2] St. Trina's Disciple's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/St.+Trina+Disciple's+Cookbook+(2)",
     dlc: true,
@@ -760,7 +760,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "St. Trina's Disciple's Cookbook [3]",
+    name: "[3] St. Trina's Disciple's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/St.+Trina+Disciple's+Cookbook+(3)",
     dlc: true,
@@ -769,7 +769,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Mad Craftsman's Cookbook [1]",
+    name: "[1] Mad Craftsman's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mad+Craftsman's+Cookbook+(1)",
     dlc: true,
@@ -778,7 +778,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Mad Craftsman's Cookbook [2]",
+    name: "[2] Mad Craftsman's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mad+Craftsman's+Cookbook+(2)",
     dlc: true,
@@ -787,7 +787,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Mad Craftsman's Cookbook [3]",
+    name: "[3] Mad Craftsman's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mad+Craftsman's+Cookbook+(3)",
     dlc: true,
@@ -796,7 +796,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Grave Keeper's Cookbook [1]",
+    name: "[1] Grave Keeper's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Grave+Keeper's+Cookbook+(1)",
     dlc: true,
@@ -805,7 +805,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Grave Keeper's Cookbook [2]",
+    name: "[2] Grave Keeper's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Grave+Keeper's+Cookbook+(2)",
     dlc: true,
@@ -823,7 +823,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Finger-Weaver's Cookbook [1]",
+    name: "[1] Finger-Weaver's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Finger-Weaver's+Cookbook+(1)",
     dlc: true,
@@ -832,7 +832,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Finger-Weaver's Cookbook [2]",
+    name: "[2] Finger-Weaver's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Finger-Weaver's+Cookbook+(2)",
     dlc: true,
@@ -841,7 +841,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Forager Brood's Cookbook [1]",
+    name: "[1] Forager Brood's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(1)",
     dlc: true,
@@ -850,7 +850,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Forager Brood's Cookbook [2]",
+    name: "[2] Forager Brood's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(2)",
     dlc: true,
@@ -859,7 +859,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Forager Brood's Cookbook [3]",
+    name: "[3] Forager Brood's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(3)",
     dlc: true,
@@ -868,7 +868,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Forager Brood's Cookbook [4]",
+    name: "[4] Forager Brood's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(4)",
     dlc: true,
@@ -877,7 +877,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Forager Brood's Cookbook [5]",
+    name: "[5] Forager Brood's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(5)",
     dlc: true,
@@ -886,7 +886,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Forager Brood's Cookbook [6]",
+    name: "[6] Forager Brood's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(6)",
     dlc: true,
@@ -895,7 +895,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Forager Brood's Cookbook [7]",
+    name: "[7] Forager Brood's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(7)",
     dlc: true,
@@ -904,7 +904,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Igon's Cookbook [1]",
+    name: "[1] Igon's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Igon's+Cookbook+(1)",
     dlc: true,
@@ -913,7 +913,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Igon's Cookbook [2]",
+    name: "[2] Igon's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Igon's+Cookbook+(2)",
     dlc: true,
@@ -922,7 +922,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Antiquity Scholar's Cookbook [1]",
+    name: "[1] Antiquity Scholar's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Antiquity+Scholar's+Cookbook+(1)",
     dlc: true,
@@ -931,7 +931,7 @@ export const cookbooks: CraftItem[] = [
   {
     type: "craft",
     subcategory: "cookbooks",
-    name: "Antiquity Scholar's Cookbook [2]",
+    name: "[2] Antiquity Scholar's Cookbook",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Antiquity+Scholar's+Cookbook+(2)",
     dlc: true,

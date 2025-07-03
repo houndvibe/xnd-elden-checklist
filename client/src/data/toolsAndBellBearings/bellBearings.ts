@@ -13,7 +13,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Nomadic Merchant's Bell Bearing [1]",
+    name: "[1] Nomadic Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
@@ -22,7 +22,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Nomadic Merchant's Bell Bearing [2]",
+    name: "[2] Nomadic Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
@@ -31,7 +31,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Nomadic Merchant's Bell Bearing [3]",
+    name: "[3] Nomadic Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
@@ -40,7 +40,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Nomadic Merchant's Bell Bearing [4]",
+    name: "[4] Nomadic Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B4%5D",
     dlc: false,
@@ -49,7 +49,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Nomadic Merchant's Bell Bearing [5]",
+    name: "[5] Nomadic Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B5%5D",
     dlc: false,
@@ -58,7 +58,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Nomadic Merchant's Bell Bearing [6]",
+    name: "[6] Nomadic Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B6%5D",
     dlc: false,
@@ -67,7 +67,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Nomadic Merchant's Bell Bearing [7]",
+    name: "[7] Nomadic Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B7%5D",
     dlc: false,
@@ -76,7 +76,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Nomadic Merchant's Bell Bearing [8]",
+    name: "[8] Nomadic Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B8%5D",
     dlc: false,
@@ -85,7 +85,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Nomadic Merchant's Bell Bearing [9]",
+    name: "[9] Nomadic Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Nomadic%2BMerchant%27s%2BBell%2BBearing%2B%5B9%5D",
     dlc: false,
@@ -94,7 +94,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Isolated Merchant's Bell Bearing [1]",
+    name: "[1] Isolated Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Isolated%2BMerchant%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
@@ -103,7 +103,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Isolated Merchant's Bell Bearing [2]",
+    name: "[2] Isolated Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Isolated%2BMerchant%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
@@ -112,7 +112,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Isolated Merchant's Bell Bearing [3]",
+    name: "[3] Isolated Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Isolated%2BMerchant%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
@@ -121,7 +121,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Hermit Merchant's Bell Bearing [1]",
+    name: "[1] Hermit Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Hermit%2BMerchant%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
@@ -130,7 +130,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Hermit Merchant's Bell Bearing [2]",
+    name: "[2] Hermit Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Hermit%2BMerchant%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
@@ -139,7 +139,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Hermit Merchant's Bell Bearing [3]",
+    name: "[3] Hermit Merchant's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Hermit%2BMerchant%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
@@ -167,7 +167,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Smithing-Stone Miner's Bell Bearing [1]",
+    name: "[1] Smithing-Stone Miner's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smithing-Stone%2BMiner%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
@@ -176,7 +176,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Smithing-Stone Miner's Bell Bearing [2]",
+    name: "[2] Smithing-Stone Miner's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smithing-Stone%2BMiner%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
@@ -185,7 +185,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Smithing-Stone Miner's Bell Bearing [3]",
+    name: "[3] Smithing-Stone Miner's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smithing-Stone%2BMiner%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
@@ -194,7 +194,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Smithing-Stone Miner's Bell Bearing [4]",
+    name: "[4] Smithing-Stone Miner's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Smithing-Stone%2BMiner%27s%2BBell%2BBearing%2B%5B4%5D",
     dlc: false,
@@ -203,7 +203,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Somberstone Miner's Bell Bearing [1]",
+    name: "[1] Somberstone Miner's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Somberstone%2BMiner%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
@@ -212,7 +212,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Somberstone Miner's Bell Bearing [2]",
+    name: "[2] Somberstone Miner's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Somberstone%2BMiner%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
@@ -221,7 +221,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Somberstone Miner's Bell Bearing [3]",
+    name: "[3] Somberstone Miner's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Somberstone%2BMiner%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
@@ -230,7 +230,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Somberstone Miner's Bell Bearing [4]",
+    name: "[4] Somberstone Miner's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Somberstone%2BMiner%27s%2BBell%2BBearing%2B%5B4%5D",
     dlc: false,
@@ -239,7 +239,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Somberstone Miner's Bell Bearing [5]",
+    name: "[5] Somberstone Miner's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Somberstone%2BMiner%27s%2BBell%2BBearing%2B%5B5%5D",
     dlc: false,
@@ -248,7 +248,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Glovewort Picker's Bell Bearing [1]",
+    name: "[1] Glovewort Picker's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
@@ -257,7 +257,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Glovewort Picker's Bell Bearing [2]",
+    name: "[2] Glovewort Picker's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
@@ -266,7 +266,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Glovewort Picker's Bell Bearing [3]",
+    name: "[3] Glovewort Picker's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
@@ -275,7 +275,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Ghost-Glovewort Picker's Bell Bearing [1]",
+    name: "[1] Ghost-Glovewort Picker's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ghost-Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
@@ -284,7 +284,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Ghost-Glovewort Picker's Bell Bearing [2]",
+    name: "[2] Ghost-Glovewort Picker's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ghost-Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
@@ -293,7 +293,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Ghost-Glovewort Picker's Bell Bearing [3]",
+    name: "[3] Ghost-Glovewort Picker's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ghost-Glovewort%2BPicker%27s%2BBell%2BBearing%2B%5B3%5D",
     dlc: false,
@@ -475,7 +475,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Mushroom-Seller's Bell Bearing [1]",
+    name: "[1] Mushroom-Seller's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mushroom-Seller%27s%2BBell%2BBearing%2B%5B1%5D",
     dlc: false,
@@ -484,7 +484,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "bellBearings",
-    name: "Mushroom-Seller's Bell Bearing [2]",
+    name: "[2] Mushroom-Seller's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mushroom-Seller%27s%2BBell%2BBearing%2B%5B2%5D",
     dlc: false,
