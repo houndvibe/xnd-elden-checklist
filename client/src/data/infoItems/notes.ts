@@ -4,7 +4,7 @@ export const notes: InfoItems[] = [
   {
     type: "infoItems",
     subcategory: "notes",
-    name: "Flask Of Wondrous Physick",
+    name: "Flask of Wondrous Physickk",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Note:+Flask+of+Wondrous+Physick",
     dlc: false,
