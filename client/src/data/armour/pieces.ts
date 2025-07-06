@@ -310,6 +310,15 @@ export const pieces: ArmourItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Commoner's+Simple+Garb",
     dlc: false,
   },
+  {
+    type: "armour",
+    subcategory: "pieces",
+    pieceType: "chest",
+    name: "Commoner's Simple Garb (Altered)",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Commoner's+Simple+Garb+(Altered)",
+    dlc: false,
+  },
 
   {
     type: "armour",
