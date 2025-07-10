@@ -30,6 +30,15 @@ export function flattenCollectionItems(collection: Collection): Item[] {
         for (const subCategory in categoryData) {
           // @ts-ignore
           const sets = categoryData[subCategory];
+
+          //чтобы в поиске отображались некомплектные предметы и не отображались 'комплекты'
+          if (sets[0].subcategory == "pieces") {
+            // @ts-ignore
+            if (Array.isArray(categoryData[subCategory])) {
+              // @ts-ignore
+              result.push(...categoryData[subCategory]);
+            }
+          }
           if (!Array.isArray(sets)) continue;
 
           for (const set of sets) {
