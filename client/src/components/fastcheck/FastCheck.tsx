@@ -39,6 +39,7 @@ export default function FastCheck() {
 
   const handelChangeCategory = (categoryName: ItemCategory) => {
     navigate(`/${categoryName}`);
+    dispatch(setGlobalSearchItem(null));
   };
   const val = globalSearchItem ? t(tabKey!, globalSearchItem) : "";
 
