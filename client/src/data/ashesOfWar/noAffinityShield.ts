@@ -51,7 +51,7 @@ export const noAffinityShield: AshOfWarItem[] = [
   },
   {
     type: "ashesOfWar",
-    name: "Thops's Barrier",
+    name: "Thops's Barrierr",
     subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Thops's+Barrier",

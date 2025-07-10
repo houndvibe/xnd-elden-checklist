@@ -217,4 +217,12 @@ export const tools: ToolOrBellBearingItems[] = [
     link: "https://eldenring.wiki.fextralife.com/Lamenter's+Mask",
     dlc: true,
   },
+  {
+    type: "toolsAndBellBearings",
+    subcategory: "tools",
+    name: "Pureblood Knight's Medal",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Pureblood+Knight's+Medal",
+    dlc: true,
+  },
 ];
