@@ -1,6 +1,13 @@
 import { Checkbox, Flex, Input, Select } from "antd";
 import { ItemCategory } from "../../global-types";
-import { APP_PALETTE, itemCategories } from "../../lib/consts";
+import {
+  APP_PALETTE,
+  FASTCHECK_SIZE_L,
+  FASTCHECK_SIZE_M,
+  FASTCHECK_SIZE_S,
+  FASTCHECK_SIZE_XL,
+  itemCategories,
+} from "../../lib/consts";
 import CategorySidebar from "./CategorySidebar";
 import ItemsGrid from "./ItemsGrid";
 
@@ -77,10 +84,10 @@ export default function FastCheck() {
               style={{ width: 70 }}
               onChange={(v) => dispatch(setFastcheckSize(v))}
             >
-              <Option value={40}>{t("misc", "S")}</Option>
-              <Option value={92}>{t("misc", "M")}</Option>
-              <Option value={130}>{t("misc", "L")}</Option>
-              <Option value={210}>{t("misc", "XL")}</Option>
+              <Option value={FASTCHECK_SIZE_S}>{t("misc", "S")}</Option>
+              <Option value={FASTCHECK_SIZE_M}>{t("misc", "M")}</Option>
+              <Option value={FASTCHECK_SIZE_L}>{t("misc", "L")}</Option>
+              <Option value={FASTCHECK_SIZE_XL}>{t("misc", "XL")}</Option>
             </Select>
             <Input
               allowClear

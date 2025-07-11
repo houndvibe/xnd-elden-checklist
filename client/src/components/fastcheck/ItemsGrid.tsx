@@ -1,4 +1,4 @@
-import { Image, Divider, Space, Spin, Popover, Flex } from "antd";
+import { Image, Divider, Spin, Popover, Flex } from "antd";
 import {
   ItemCategory,
   Item,
@@ -17,7 +17,14 @@ import { getStoreAction } from "../../store/actions";
 import { toggleTalismanCollected } from "../../store/collectionSlice";
 import styles from "./ItemsGrid.module.scss";
 import { getSubCategoryStats } from "../../lib/utils/stats";
-import { APP_PALETTE, exceptionalSubcategories } from "../../lib/consts";
+import {
+  APP_PALETTE,
+  exceptionalSubcategories,
+  FASTCHECK_SIZE_L,
+  FASTCHECK_SIZE_M,
+  FASTCHECK_SIZE_S,
+  FASTCHECK_SIZE_XL,
+} from "../../lib/consts";
 import { t } from "../../i18n";
 import { useNavigate } from "react-router-dom";
 import { navigateToItem } from "../../lib/utils/search";
@@ -77,14 +84,14 @@ export default function ItemsGrid({
   const getNameBlock = (name: string, collected: boolean) => {
     const getTruncSize = () => {
       switch (imgSize) {
-        case 40:
+        case FASTCHECK_SIZE_S:
           return 5;
-        case 92:
-          return 10;
-        case 130:
-          return 14;
-        case 210:
-          return 24;
+        case FASTCHECK_SIZE_M:
+          return 9;
+        case FASTCHECK_SIZE_L:
+          return 15;
+        case FASTCHECK_SIZE_XL:
+          return 25;
         default:
           return 10;
       }
@@ -168,7 +175,7 @@ export default function ItemsGrid({
                   new Set<string>()
                 )}
 
-              <Space align="center" wrap>
+              <div className={styles[`gridWrapper${imgSize}`]}>
                 {filteredItems.map((item) => {
                   const renderLinkWithIcon = (label: string, href: string) => (
                     <Flex
@@ -479,7 +486,7 @@ export default function ItemsGrid({
                     </Popover>
                   );
                 })}
-              </Space>
+              </div>
             </div>
           );
         }

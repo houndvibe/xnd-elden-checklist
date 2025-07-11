@@ -24,6 +24,31 @@
   }
 }
 
+.gridWrapper40 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  gap: 10px;
+  justify-content: start;
+}
+.gridWrapper95 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+  gap: 10px;
+  justify-content: start;
+}
+.gridWrapper140 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  justify-content: start;
+}
+.gridWrapper210 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 20px;
+  justify-content: start;
+}
+
 .itemImg {
   cursor: pointer;
   object-fit: cover;

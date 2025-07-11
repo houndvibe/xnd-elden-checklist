@@ -61,3 +61,8 @@ export const TRUNCATE_LIMITS = {
   DASHBOARD: 16,
   SUB_CATEGOTY_LABEL: 23,
 };
+
+export const FASTCHECK_SIZE_S = 40;
+export const FASTCHECK_SIZE_M = 95;
+export const FASTCHECK_SIZE_L = 140;
+export const FASTCHECK_SIZE_XL = 210;

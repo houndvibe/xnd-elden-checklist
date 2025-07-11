@@ -1,6 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { loadFromStorage, saveToStorage } from "../lib/utils/localStore";
-import { BASE_DISCOVERY, LOCALSTORAGE_SETTINGS_KEY } from "../lib/consts";
+import {
+  BASE_DISCOVERY,
+  FASTCHECK_SIZE_M,
+  LOCALSTORAGE_SETTINGS_KEY,
+} from "../lib/consts";
 
 type Language = "ru" | "en";
 
@@ -21,7 +25,7 @@ const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
   showWelcome: true,
   lang: "en",
   fastcheck: false,
-  fastcheckSize: 92,
+  fastcheckSize: FASTCHECK_SIZE_M,
   discovery: BASE_DISCOVERY,
   showFCNames: false,
 });
