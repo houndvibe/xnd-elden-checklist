@@ -89,9 +89,9 @@ export default function ItemsGrid({
         case FASTCHECK_SIZE_M:
           return 9;
         case FASTCHECK_SIZE_L:
-          return 15;
+          return 14;
         case FASTCHECK_SIZE_XL:
-          return 25;
+          return 24;
         default:
           return 10;
       }
@@ -421,7 +421,8 @@ export default function ItemsGrid({
                       styles={{
                         body: {
                           borderRadius: 30,
-                          border: `1px solid ${APP_PALETTE.bgDark}`,
+                          border: `1px solid ${APP_PALETTE.bgLight}`,
+                          backgroundColor: "rgba(20, 20, 20, 0.91)",
                         },
                       }}
                       key={item.name}

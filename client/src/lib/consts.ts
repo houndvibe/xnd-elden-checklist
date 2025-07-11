@@ -1,7 +1,7 @@
 import type { ProgressProps } from "antd";
 import type { ItemCategory } from "../global-types";
 
-export const CURRENT_APP_VERSION = "(v. 0.9.1 beta)";
+export const CURRENT_APP_VERSION = "(v. 0.9.2 beta)";
 
 export const BOOSTY_LINK = "https://boosty.to/xnd";
 export const PATREON_LINK = "https://www.patreon.com/XnDs";
@@ -14,21 +14,21 @@ export const LOCALSTORAGE_CHECKPOINTS_KEY = "XnDEldenCompendium.checkpoints";
 export const BASE_DISCOVERY = 100;
 
 export const itemCategories: ItemCategory[] = [
-  "meleWeapons",
-  "rangedWeapons",
-  "armour",
-  "shieldsAndTorches",
-  "talismans",
-  "sorceries",
-  "incantations",
+  "consumablesAndAmmo",
+  "toolsAndBellBearings",
+  "gesturesAndMultiplayer",
   "spiritAshes",
-  "ashesOfWar",
   "craft",
   "tearsAndUpgrades",
-  "toolsAndBellBearings",
   "keyItems",
-  "consumablesAndAmmo",
-  "gesturesAndMultiplayer",
+  "sorceries",
+  "incantations",
+  "ashesOfWar",
+  "meleWeapons",
+  "rangedWeapons",
+  "shieldsAndTorches",
+  "armour",
+  "talismans",
   "infoItems",
 ];
 
