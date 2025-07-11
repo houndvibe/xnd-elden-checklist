@@ -1,5 +1,6 @@
 import { Item } from "../../global-types";
 import { Collection } from "../../store/collectionSlice";
+import { compressToUTF16, decompressFromUTF16 } from "lz-string";
 
 export function saveToStorage<T>(key: string, value: T) {
   try {
@@ -8,7 +9,12 @@ export function saveToStorage<T>(key: string, value: T) {
         ? filterCollectedDataMinimal(value as Collection)
         : value;
 
-    localStorage.setItem(key, JSON.stringify(dataToSave));
+    const compressedData =
+      key === "XnDEldenCompendium.checkpoints"
+        ? compressToUTF16(JSON.stringify(dataToSave))
+        : JSON.stringify(dataToSave);
+
+    localStorage.setItem(key, compressedData);
   } catch (err) {
     console.warn("Storage write failed", err);
   }
@@ -97,7 +103,10 @@ export function loadFromStorage<T>(key: string, fallback: T): T {
     const raw = localStorage.getItem(key);
     if (!raw) return fallback;
 
-    const parsed = JSON.parse(raw);
+    const parsed =
+      key === "XnDEldenCompendium.checkpoints"
+        ? JSON.parse(decompressFromUTF16(raw))
+        : JSON.parse(raw);
 
     if (key === "XnDEldenCompendium.collection") {
       return applyMinimalCollectedFlags(parsed, fallback as Collection) as T;
