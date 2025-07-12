@@ -9,10 +9,10 @@ import { throwables } from "./throwables";
 
 export const consumablesAndAmmoData: СonsumablesAndAmmoItemsCategoryMap = {
   food,
-  greases,
   throwables,
+  greases,
+  other,
   runes,
   ammo,
-  other,
   remembrances,
 };

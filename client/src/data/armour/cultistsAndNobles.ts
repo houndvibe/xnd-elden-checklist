@@ -101,9 +101,9 @@ export const cultistsAndNobles: ArmourSet[] = [
         type: "armour",
         subcategory: "cultistsAndNobles",
         pieceType: "gloves",
-        name: "Perfumer Gloves",
+        name: "Traveler's Gloves",
         collected: false,
-        link: "https://eldenring.wiki.fextralife.com/Perfumer+Gloves",
+        link: "https://eldenring.wiki.fextralife.com/Traveler's+Gloves",
         dlc: false,
       },
       {
