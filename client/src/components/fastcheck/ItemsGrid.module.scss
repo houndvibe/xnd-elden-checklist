@@ -65,9 +65,21 @@
   cursor: pointer;
   object-fit: cover;
   padding: 2px;
-  border-radius: 18px;
-  background: linear-gradient(330deg, $bg-light, rgba($text-highlighted, 0.2));
-  border: 1px solid $text-primary;
+  border-radius: 12px;
+  background: linear-gradient(330deg, $bg-dark, rgba($text-primary, 0.5));
+
+  &:hover {
+    background: linear-gradient(330deg, $bg-light, rgba($text-primary, 0.2));
+    opacity: 1;
+  }
+}
+
+.itemImgCollectedSmall {
+  cursor: pointer;
+  object-fit: cover;
+  padding: 2px;
+  border-radius: 5px;
+  background: linear-gradient(330deg, $bg-light, rgba($text-primary, 0.5));
 
   &:hover {
     background: linear-gradient(330deg, $bg-light, rgba($text-primary, 0.2));

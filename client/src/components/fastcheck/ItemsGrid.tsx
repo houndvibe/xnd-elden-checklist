@@ -73,6 +73,11 @@ export default function ItemsGrid({
   const showFCNames = useAppSelector((state) => state.settings.showFCNames);
   const subcategorySeenPartNames = new Map<string, Set<string>>();
 
+  const collectedStyle =
+    imgSize > FASTCHECK_SIZE_S
+      ? styles.itemImgCollected
+      : styles.itemImgCollectedSmall;
+
   if (!categoryData) return null;
 
   const spin = (
@@ -291,7 +296,7 @@ export default function ItemsGrid({
                                     placeholder={spin}
                                     className={
                                       variant.collected
-                                        ? styles.itemImgCollected
+                                        ? collectedStyle
                                         : styles.itemImg
                                     }
                                     src={getImageUrl(
@@ -384,7 +389,7 @@ export default function ItemsGrid({
                                 placeholder={spin}
                                 className={
                                   version.collected
-                                    ? styles.itemImgCollected
+                                    ? collectedStyle
                                     : styles.itemImg
                                 }
                                 src={getImageUrl(
@@ -459,9 +464,7 @@ export default function ItemsGrid({
                           <Image
                             placeholder={spin}
                             className={
-                              item.collected
-                                ? styles.itemImgCollected
-                                : styles.itemImg
+                              item.collected ? collectedStyle : styles.itemImg
                             }
                             src={getImageUrl(
                               item,
