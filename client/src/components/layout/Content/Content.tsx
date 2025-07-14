@@ -14,7 +14,7 @@ import { t } from "../../../i18n";
 import { ItemCategory } from "../../../global-types";
 import { useAppSelector } from "../../../store/typedDispatch";
 import SettingsPannel from "../../ui/SettingsPannel/SettingsPannel";
-import FastCheckSwitch from "../../ui/SettingsPannel/FastCheckSwitch";
+/* import FastCheckSwitch from "../../ui/SettingsPannel/FastCheckSwitch"; */
 
 const { Content: AppContent } = Layout;
 
@@ -99,7 +99,7 @@ export default function Content() {
             ]}
           />
 
-          {itemCategories.includes(
+          {/*           {itemCategories.includes(
             location.pathname.split("/")[1] as ItemCategory
           ) && (
             <Flex
@@ -114,7 +114,7 @@ export default function Content() {
             >
               <FastCheckSwitch />
             </Flex>
-          )}
+          )} */}
         </ConfigProvider>
 
         <Routes>

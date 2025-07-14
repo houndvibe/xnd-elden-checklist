@@ -71,7 +71,7 @@ function aggregateStats(items: Item[]) {
   };
 }
 
-export function getCategoryStats(data: ItemSubCategoryMap) {
+export function getCategoryStats(data: Partial<ItemSubCategoryMap>) {
   return aggregateStats(Object.values(data).flat());
 }
 

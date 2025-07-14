@@ -20,6 +20,8 @@ import { t } from "../../../i18n";
 import logo from "../../../../public/assets/logo.png";
 import BoostersModal from "./BoostersModal";
 
+import FastCheckSwitch from "../../ui/SettingsPannel/FastCheckSwitch";
+
 const { Header: AppHeader } = Layout;
 
 export default function Header() {
@@ -48,6 +50,8 @@ export default function Header() {
     setIsHelpModalOpen(false);
   };
 
+  console.log(location.pathname);
+
   return (
     <AppHeader className={styles.header}>
       <div className={styles.wrapper}>
@@ -60,6 +64,7 @@ export default function Header() {
         </div>
 
         <div className={styles.icons}>
+          <FastCheckSwitch />
           <Tooltip title={t("misc", "Thanks")}>
             <HeartOutlined
               className={styles.icon}

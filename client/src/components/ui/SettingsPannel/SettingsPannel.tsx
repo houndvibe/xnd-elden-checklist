@@ -77,10 +77,7 @@ export default function SettingsPannel() {
         <ClearProgressWidget />
       </Flex>
       <Divider size="small" />
-      <Flex>
-        <CategoriesWidget />
-      </Flex>
-
+      <CategoriesWidget />
       <Divider size="small" />
     </>
   );

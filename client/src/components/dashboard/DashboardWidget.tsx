@@ -24,7 +24,7 @@ interface DashboardWidgetProps {
     collected: number;
     percentage: number;
   };
-  subData: ItemSubCategoryMap;
+  subData: Partial<ItemSubCategoryMap>;
   mode: boolean;
 }
 

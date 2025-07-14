@@ -14,6 +14,7 @@ import {
 
 import styles from "./Dashboard.module.scss";
 import { t } from "../../i18n";
+import { ItemSubCategoryMap } from "../../global-types";
 
 export default function Dashboard() {
   const [isCompactMode, setIsCompactMode] = useState(false);
@@ -21,15 +22,29 @@ export default function Dashboard() {
     (state) => state.collection.collectionData
   );
 
-  const stats = itemCategories.map((type) => {
-    const key = `${type}Data` as keyof typeof collectionData;
-    const data = collectionData[key];
-    return {
-      type,
-      data,
-      stats: getCategoryStats(data),
-    };
-  });
+  const { checkedCategories, checkedSubcategories } = useAppSelector(
+    (state) => state.settings
+  );
+
+  const stats = itemCategories
+    .filter((type) => checkedCategories.includes(type))
+    .map((type) => {
+      const key = `${type}Data` as keyof typeof collectionData;
+      const data = collectionData[key];
+
+      // Оставляем только включённые подкатегории
+      const filteredData: Partial<ItemSubCategoryMap> = Object.fromEntries(
+        Object.entries(data).filter(([subcategory]) =>
+          checkedSubcategories.includes(subcategory)
+        )
+      );
+
+      return {
+        type,
+        data: filteredData,
+        stats: getCategoryStats(filteredData),
+      };
+    });
 
   const totalCollected = stats.reduce(
     (acc, { stats }) => acc + stats.collected,

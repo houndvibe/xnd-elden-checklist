@@ -121,6 +121,12 @@ export const settingsSlice = createSlice({
         state.openCategories.push(category);
       }
     },
+    setAllCategoriesChecked: (state, action: PayloadAction<string[]>) => {
+      state.checkedCategories = action.payload;
+    },
+    setAllSubcategoriesChecked: (state, action: PayloadAction<string[]>) => {
+      state.checkedSubcategories = action.payload;
+    },
   },
 });
 
@@ -136,5 +142,7 @@ export const {
   toggleCategoryChecked,
   toggleSubcategoryChecked,
   toggleCategoryOpen,
+  setAllCategoriesChecked,
+  setAllSubcategoriesChecked,
 } = settingsSlice.actions;
 export default settingsSlice.reducer;
