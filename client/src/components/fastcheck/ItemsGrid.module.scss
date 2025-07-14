@@ -67,7 +67,8 @@
   padding: 2px;
   border-radius: 12px;
   background: linear-gradient(330deg, $bg-dark, rgba($text-primary, 0.5));
-
+  border: 2px solid rgba($text-primary, 0.5);
+  box-shadow: inset 10px 10px 10px rgba($bg-light, 0.2);
   &:hover {
     background: linear-gradient(330deg, $bg-light, rgba($text-primary, 0.2));
     opacity: 1;
@@ -79,8 +80,9 @@
   object-fit: cover;
   padding: 2px;
   border-radius: 5px;
+  border: 1px solid rgba($text-primary, 0.5);
   background: linear-gradient(330deg, $bg-light, rgba($text-primary, 0.5));
-
+  box-shadow: inset 10px 10px 10px rgba($bg-light, 0.2);
   &:hover {
     background: linear-gradient(330deg, $bg-light, rgba($text-primary, 0.2));
     opacity: 1;
