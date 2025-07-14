@@ -62,16 +62,16 @@ export default function CategoriesWidget() {
           style={{ display: "flex", alignItems: "center", gap: 8 }}
         >
           {allOpen ? <CaretUpOutlined /> : <CaretDownOutlined />}
-          <span>{"Что считаем?"}</span>
+          <span>{t("misc", "What should we count?")}</span>
         </div>
 
         <Flex align="center" gap={10}>
           <Button size="small" onClick={handleSelectAll}>
-            Все
+            {t("misc", "Check all")}
           </Button>
           |
           <Button size="small" onClick={handleSelectNone}>
-            Ничего
+            {t("misc", "Uncheck all")}
           </Button>
         </Flex>
       </div>
