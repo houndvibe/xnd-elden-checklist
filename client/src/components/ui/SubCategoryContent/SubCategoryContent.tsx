@@ -9,6 +9,7 @@ import Preview from "./Preview";
 import Table from "./Table";
 import HierarchyTable from "./HierarchyTable";
 import { t } from "../../../i18n";
+import { useAppSelector } from "../../../store/typedDispatch";
 
 interface Props {
   type: ItemCategory;
@@ -23,7 +24,13 @@ export default function SubCategoryContent({
 }: Props) {
   const [hoveredItemName, setHoveredItemName] = useState("");
 
-  const sortedDataSource = [...dataSource].sort((a, b) =>
+  const { checkDlc } = useAppSelector((state) => state.settings);
+
+  const dlcFiltered = [...dataSource].filter((item) =>
+    checkDlc ? item : !item.dlc
+  );
+
+  const sortedDataSource = [...dlcFiltered].sort((a, b) =>
     t(type, a.name).localeCompare(t(type, b.name))
   );
 

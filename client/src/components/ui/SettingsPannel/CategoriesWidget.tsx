@@ -135,7 +135,7 @@ export default function CategoriesWidget() {
               {t("misc", "DLC")}
             </Checkbox>
             <Button size="small" onClick={handleSave} disabled={isUnchanged}>
-              {t("misc", "Save")}
+              {t("misc", "Apply changes")}
             </Button>
           </Flex>
         </Flex>
