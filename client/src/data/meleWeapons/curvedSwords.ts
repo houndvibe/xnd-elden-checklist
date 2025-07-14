@@ -109,15 +109,7 @@ export const curvedSwords: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Spirit Sword",
-    subcategory: "curvedSwords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Spirit+Sword",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Nox Flowing Sword",
@@ -135,6 +127,25 @@ export const curvedSwords: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Wing+of+Astel",
     legendary: false,
     dlc: false,
+  },
+
+  {
+    type: "meleWeapons",
+    name: "Eclipse Shotel",
+    subcategory: "curvedSwords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Eclipse+Shotel",
+    legendary: true,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Spirit Sword",
+    subcategory: "curvedSwords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Spirit+Sword",
+    legendary: false,
+    dlc: true,
   },
   {
     type: "meleWeapons",
@@ -162,14 +173,5 @@ export const curvedSwords: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Horned+Warrior's+Sword",
     legendary: false,
     dlc: true,
-  },
-  {
-    type: "meleWeapons",
-    name: "Eclipse Shotel",
-    subcategory: "curvedSwords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Eclipse+Shotel",
-    legendary: true,
-    dlc: false,
   },
 ];

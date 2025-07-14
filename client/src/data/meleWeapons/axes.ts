@@ -19,15 +19,7 @@ export const axes: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Forked-Tongue Hatchet",
-    subcategory: "axes",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Forked-Tongue+Hatchet",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Battle Axe",
@@ -37,15 +29,7 @@ export const axes: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Messmer Soldier's Axe",
-    subcategory: "axes",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Mesmmer+Soldier's+Axe",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Warped Axe",
@@ -82,15 +66,7 @@ export const axes: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Smithscript Axe",
-    subcategory: "axes",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Smithscript+Axe",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Celebrant's Cleaver",
@@ -144,6 +120,33 @@ export const axes: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Rosus+Axe",
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Forked-Tongue Hatchet",
+    subcategory: "axes",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Forked-Tongue+Hatchet",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "meleWeapons",
+    name: "Messmer Soldier's Axe",
+    subcategory: "axes",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Mesmmer+Soldier's+Axe",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "meleWeapons",
+    name: "Smithscript Axe",
+    subcategory: "axes",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Smithscript+Axe",
+    legendary: false,
+    dlc: true,
   },
   {
     type: "meleWeapons",

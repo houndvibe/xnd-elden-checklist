@@ -28,15 +28,7 @@ export const colossalSwords: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Fire Knight's Greatsword",
-    subcategory: "colossalSwords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Fire+Knight's+Greatsword",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Troll's Golden Sword",
@@ -55,15 +47,7 @@ export const colossalSwords: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Moonrithyll's Knight Sword",
-    subcategory: "colossalSwords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Moonrithyll's+Knight+Sword",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Royal Greatsword",
@@ -91,6 +75,44 @@ export const colossalSwords: MeleWeaponItem[] = [
     legendary: true,
     dlc: false,
   },
+
+  {
+    type: "meleWeapons",
+    name: "Starscourge Greatsword",
+    subcategory: "colossalSwords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Starscourge+Greatsword",
+    legendary: false,
+    dlc: false,
+  },
+
+  {
+    type: "meleWeapons",
+    name: "Godslayer's Greatsword",
+    subcategory: "colossalSwords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Godslayer's+Greatsword",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Maliketh's Black Blade",
+    subcategory: "colossalSwords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Maliketh's+Black+Blade",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Fire Knight's Greatsword",
+    subcategory: "colossalSwords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Fire+Knight's+Greatsword",
+    legendary: false,
+    dlc: true,
+  },
   {
     type: "meleWeapons",
     name: "Ancient Meteoric Ore Greatsword",
@@ -102,12 +124,12 @@ export const colossalSwords: MeleWeaponItem[] = [
   },
   {
     type: "meleWeapons",
-    name: "Starscourge Greatsword",
+    name: "Moonrithyll's Knight Sword",
     subcategory: "colossalSwords",
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Starscourge+Greatsword",
+    link: "https://eldenring.wiki.fextralife.com/Moonrithyll's+Knight+Sword",
     legendary: false,
-    dlc: false,
+    dlc: true,
   },
   {
     type: "meleWeapons",
@@ -126,23 +148,5 @@ export const colossalSwords: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Greatsword+of+Radahn+(Light)",
     legendary: false,
     dlc: true,
-  },
-  {
-    type: "meleWeapons",
-    name: "Godslayer's Greatsword",
-    subcategory: "colossalSwords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Godslayer's+Greatsword",
-    legendary: false,
-    dlc: false,
-  },
-  {
-    type: "meleWeapons",
-    name: "Maliketh's Black Blade",
-    subcategory: "colossalSwords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Maliketh's+Black+Blade",
-    legendary: false,
-    dlc: false,
   },
 ];

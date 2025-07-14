@@ -10,15 +10,7 @@ export const greatSpears: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Messmer Soldier's Spear",
-    subcategory: "greatSpears",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Messmer+Soldier's+Spear",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Treespear",
@@ -57,6 +49,24 @@ export const greatSpears: MeleWeaponItem[] = [
   },
   {
     type: "meleWeapons",
+    name: "Mohgwyn's Sacred Spear",
+    subcategory: "greatSpears",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Mohgwyn's+Sacred+Spear",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Messmer Soldier's Spear",
+    subcategory: "greatSpears",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Messmer+Soldier's+Spear",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "meleWeapons",
     name: "Barbed Staff-Spear",
     subcategory: "greatSpears",
     collected: false,
@@ -72,15 +82,6 @@ export const greatSpears: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Bloodfiend's+Sacred+Spear",
     legendary: false,
     dlc: true,
-  },
-  {
-    type: "meleWeapons",
-    name: "Mohgwyn's Sacred Spear",
-    subcategory: "greatSpears",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Mohgwyn's+Sacred+Spear",
-    legendary: false,
-    dlc: false,
   },
   {
     type: "meleWeapons",

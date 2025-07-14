@@ -27,8 +27,6 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Flame+Sling",
     legendary: false,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/feast_upon_flame_incantation_elden_ring_wiki_guide_200px.png",
   },
   {
     type: "incantations",
@@ -56,8 +54,6 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Flame+of+the+Fell+God",
     legendary: true,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/flame_of_the_fell%20_god_incantation_elden_ring_wiki_guide_200px.png",
   },
   {
     type: "incantations",
@@ -121,7 +117,5 @@ export const fireMonkAndFireGiants: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Fire's+Deadly+Sin",
     legendary: false,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fires_%20deadly_sin_incantation_elden_ring_wiki_guide_200px.png",
   },
 ];

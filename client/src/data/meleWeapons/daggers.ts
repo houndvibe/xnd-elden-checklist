@@ -55,15 +55,7 @@ export const daggers: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Fire Knight's Shortsword",
-    subcategory: "daggers",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Fire+Knight's+Shortsword",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Wakizashi",
@@ -73,15 +65,7 @@ export const daggers: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Main-gauche",
-    subcategory: "daggers",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Main-gauche",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Celebrant's Sickle",
@@ -162,5 +146,23 @@ export const daggers: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Black+Knife",
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Fire Knight's Shortsword",
+    subcategory: "daggers",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Fire+Knight's+Shortsword",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "meleWeapons",
+    name: "Main-gauche",
+    subcategory: "daggers",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Main-gauche",
+    legendary: false,
+    dlc: true,
   },
 ];

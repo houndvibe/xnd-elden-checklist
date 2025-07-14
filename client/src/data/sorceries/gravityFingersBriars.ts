@@ -19,17 +19,7 @@ export const gravityFingersBriars: SorceryItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "sorceries",
-    name: "Gravitational Missile",
-    subcategory: "gravityFingersBriars",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Gravitational+Missile",
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/gravitational_missile_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-  },
+
   {
     type: "sorceries",
     name: "Rock Sling",
@@ -39,17 +29,7 @@ export const gravityFingersBriars: SorceryItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "sorceries",
-    name: "Blades of Stone",
-    subcategory: "gravityFingersBriars",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Blades+of+Stone",
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/blades_of_stone_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-  },
+
   {
     type: "sorceries",
     name: "Meteorite",
@@ -68,50 +48,7 @@ export const gravityFingersBriars: SorceryItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "sorceries",
-    name: "Glintstone Nail",
-    subcategory: "gravityFingersBriars",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Glintstone+Nail",
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_nail_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-  },
-  {
-    type: "sorceries",
-    name: "Glintstone Nails",
-    subcategory: "gravityFingersBriars",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Glintstone+Nails",
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_nails_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-  },
-  {
-    type: "sorceries",
-    name: "Fleeting Microcosm",
-    subcategory: "gravityFingersBriars",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Fleeting+Microcosm",
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fleeting_microcosm_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-  },
-  {
-    type: "sorceries",
-    name: "Cherishing Fingers",
-    subcategory: "gravityFingersBriars",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Cherishing+Fingers",
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cherishing_fingers_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-  },
+
   {
     type: "sorceries",
     name: "Oracle Bubbles",
@@ -152,14 +89,70 @@ export const gravityFingersBriars: SorceryItem[] = [
   },
   {
     type: "sorceries",
+    name: "Gravitational Missile",
+    subcategory: "gravityFingersBriars",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Gravitational+Missile",
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/gravitational_missile_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "sorceries",
+    name: "Blades of Stone",
+    subcategory: "gravityFingersBriars",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Blades+of+Stone",
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/blades_of_stone_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+  },
+  {
+    type: "sorceries",
+    name: "Glintstone Nail",
+    subcategory: "gravityFingersBriars",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Glintstone+Nail",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "sorceries",
+    name: "Glintstone Nails",
+    subcategory: "gravityFingersBriars",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Glintstone+Nails",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "sorceries",
+    name: "Fleeting Microcosm",
+    subcategory: "gravityFingersBriars",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Fleeting+Microcosm",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "sorceries",
+    name: "Cherishing Fingers",
+    subcategory: "gravityFingersBriars",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Cherishing+Fingers",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "sorceries",
     name: "Mantle of Thorns",
     subcategory: "gravityFingersBriars",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mantle+of+Thorns",
     legendary: false,
     dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mantle_of_thorns_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
   {
     type: "sorceries",
@@ -169,7 +162,5 @@ export const gravityFingersBriars: SorceryItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Impenetrable+Thorns",
     legendary: false,
     dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/impenetrable_thorns_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
 ];

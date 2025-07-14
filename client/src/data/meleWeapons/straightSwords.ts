@@ -64,15 +64,7 @@ export const straightSwords: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Stone-Sheathed Sword",
-    subcategory: "straightSwords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Stone-Sheathed+Sword",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Warhawk's Talon",
@@ -156,15 +148,6 @@ export const straightSwords: MeleWeaponItem[] = [
   },
   {
     type: "meleWeapons",
-    name: "Velvet Sword of St Trina",
-    subcategory: "straightSwords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Velvet+Sword+of+St+Trina",
-    legendary: false,
-    dlc: true,
-  },
-  {
-    type: "meleWeapons",
     name: "Regalia of Eochaid",
     subcategory: "straightSwords",
     collected: false,
@@ -189,6 +172,24 @@ export const straightSwords: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Sword+of+Night+and+Flame",
     legendary: true,
     dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Velvet Sword of St Trina",
+    subcategory: "straightSwords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Velvet+Sword+of+St+Trina",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "meleWeapons",
+    name: "Stone-Sheathed Sword",
+    subcategory: "straightSwords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Stone-Sheathed+Sword",
+    legendary: false,
+    dlc: true,
   },
   {
     type: "meleWeapons",

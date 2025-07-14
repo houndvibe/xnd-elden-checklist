@@ -10,15 +10,7 @@ export const carianRoyalFamily: SorceryItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "sorceries",
-    name: "Glintblade Trio",
-    subcategory: "carianRoyalFamily",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Glintblade+Trio",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "sorceries",
     name: "Glintblade Phalanx",
@@ -93,17 +85,7 @@ export const carianRoyalFamily: SorceryItem[] = [
     legendary: true,
     dlc: false,
   },
-  {
-    type: "sorceries",
-    name: "Rellana's Twin Moons",
-    subcategory: "carianRoyalFamily",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Rellana's+Twin+Moons",
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rellanas_twin_moons_sorceries_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-  },
+
   {
     type: "sorceries",
     name: "Carian Slicer",
@@ -157,6 +139,24 @@ export const carianRoyalFamily: SorceryItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Carian+Retaliation",
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "sorceries",
+    name: "Glintblade Trio",
+    subcategory: "carianRoyalFamily",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Glintblade+Trio",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "sorceries",
+    name: "Rellana's Twin Moons",
+    subcategory: "carianRoyalFamily",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Rellana's+Twin+Moons",
+    legendary: false,
+    dlc: true,
   },
   {
     type: "sorceries",

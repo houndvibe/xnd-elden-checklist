@@ -37,15 +37,7 @@ export const whips: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Tooth Whip",
-    subcategory: "whips",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Tooth+Whip",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Magma Whip Candlestick",
@@ -63,5 +55,14 @@ export const whips: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Giant's+Red+Braid",
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Tooth Whip",
+    subcategory: "whips",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Tooth+Whip",
+    legendary: false,
+    dlc: true,
   },
 ];

@@ -40,6 +40,15 @@ export const statsAmplifiers: TalismanItem[] = [
   },
   {
     type: "talismans",
+    name: "Blessed Blue Dew Talisman",
+    collected: false,
+    subcategory: "statsAmplifiers",
+    link: "https://eldenring.wiki.fextralife.com/Blessed+Blue+Dew+Talisman",
+    dlc: true,
+    legendary: false,
+  },
+  {
+    type: "talismans",
     name: "Cerulean Amber Medallion",
     collected: false,
     subcategory: "statsAmplifiers",
@@ -66,15 +75,7 @@ export const statsAmplifiers: TalismanItem[] = [
       { tier: 1, collected: false, dlc: true },
     ],
   },
-  {
-    type: "talismans",
-    name: "Blessed Blue Dew Talisman",
-    collected: false,
-    subcategory: "statsAmplifiers",
-    link: "https://eldenring.wiki.fextralife.com/Blessed+Blue+Dew+Talisman",
-    dlc: true,
-    legendary: false,
-  },
+
   {
     type: "talismans",
     name: "Talisman of Lord's Bestowal",

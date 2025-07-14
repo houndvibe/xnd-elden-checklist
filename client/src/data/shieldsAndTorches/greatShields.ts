@@ -4,51 +4,6 @@ export const greatShields: ShieldOrTorchItem[] = [
   {
     type: "shieldsAndTorches",
     subcategory: "greatShields",
-    name: "Verdigris Greatshield",
-    /*     description:
-      "Massive greatshield forged from verdigris metal. Offers highest guard boost in game. Skill: Moore’s Charge — powerful crowd-control bash, but deals no damage.", */
-    link: "https://eldenring.wiki.fextralife.com/Verdigris+Greatshield",
-    collected: false,
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/verdigris_greatshield_greatshields_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-    /*     droppedBy: { */
-    /*       name: "Sir Moore", */
-    /*       dropRate: 100, */
-    /*       link: "https://eldenring.wiki.fextralife.com/Moore", */
-    /*       imgUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/moore.png", */
-    /*     }, */
-    /*     vendor: null, */
-    /*     placementDescription: */
-    /*       "Reward for defeating Sir Moore during Shadow of the Erdtree DLC questline.", */
-  },
-  {
-    type: "shieldsAndTorches",
-    subcategory: "greatShields",
-    name: "Black Steel Greatshield",
-    /*     description:
-      "Weighty shields carried by the Black Knights, servants of Messmer the Impaler. Made of black steel with decorative embellishments in gold. Symbolic of their iron conviction in their crusade, the Black Knights will never yield. Nor will they ever doubt their purpose.", */
-    link: "https://eldenring.wiki.fextralife.com/Black+Steel+Greatshield",
-    collected: false,
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_steel_greatshield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-    /*     droppedBy: {
-      name: "Black Knight Garrew",
-      dropRate: 100,
-      link: "https://eldenring.wiki.fextralife.com/Black+Knight+Garrew",
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/garrew.png",
-    },
-    vendor: null,
-    placementDescription:
-      "Dropped by Black Knight Garrew at Fog Rift Fort in Scadew.", */
-  },
-  {
-    type: "shieldsAndTorches",
-    subcategory: "greatShields",
     name: "Wooden Greatshield",
     /*     description:
       "Wooden greatshield reinforced with a metal ornamentation. Greatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.", */
@@ -515,5 +470,50 @@ export const greatShields: ShieldOrTorchItem[] = [
     collected: false,
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "shieldsAndTorches",
+    subcategory: "greatShields",
+    name: "Verdigris Greatshield",
+    /*     description:
+      "Massive greatshield forged from verdigris metal. Offers highest guard boost in game. Skill: Moore’s Charge — powerful crowd-control bash, but deals no damage.", */
+    link: "https://eldenring.wiki.fextralife.com/Verdigris+Greatshield",
+    collected: false,
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/verdigris_greatshield_greatshields_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    /*     droppedBy: { */
+    /*       name: "Sir Moore", */
+    /*       dropRate: 100, */
+    /*       link: "https://eldenring.wiki.fextralife.com/Moore", */
+    /*       imgUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/moore.png", */
+    /*     }, */
+    /*     vendor: null, */
+    /*     placementDescription: */
+    /*       "Reward for defeating Sir Moore during Shadow of the Erdtree DLC questline.", */
+  },
+  {
+    type: "shieldsAndTorches",
+    subcategory: "greatShields",
+    name: "Black Steel Greatshield",
+    /*     description:
+      "Weighty shields carried by the Black Knights, servants of Messmer the Impaler. Made of black steel with decorative embellishments in gold. Symbolic of their iron conviction in their crusade, the Black Knights will never yield. Nor will they ever doubt their purpose.", */
+    link: "https://eldenring.wiki.fextralife.com/Black+Steel+Greatshield",
+    collected: false,
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_steel_greatshield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    /*     droppedBy: {
+      name: "Black Knight Garrew",
+      dropRate: 100,
+      link: "https://eldenring.wiki.fextralife.com/Black+Knight+Garrew",
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/garrew.png",
+    },
+    vendor: null,
+    placementDescription:
+      "Dropped by Black Knight Garrew at Fog Rift Fort in Scadew.", */
   },
 ];

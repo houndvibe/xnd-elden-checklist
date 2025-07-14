@@ -73,15 +73,7 @@ export const colossalWeapons: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Bloodfiend's Arm",
-    subcategory: "colossalSwords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Bloodfiend's+Arm",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Watchdog's Staff",
@@ -136,6 +128,25 @@ export const colossalWeapons: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
+
+  {
+    type: "meleWeapons",
+    name: "Axe of Godfrey",
+    subcategory: "colossalSwords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Axe+of+Godfrey",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Bloodfiend's Arm",
+    subcategory: "colossalSwords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Bloodfiend's+Arm",
+    legendary: false,
+    dlc: true,
+  },
   {
     type: "meleWeapons",
     name: "Anvil Hammer",
@@ -153,15 +164,6 @@ export const colossalWeapons: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Devonia's+Hammer",
     legendary: false,
     dlc: true,
-  },
-  {
-    type: "meleWeapons",
-    name: "Axe of Godfrey",
-    subcategory: "colossalSwords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Axe+of+Godfrey",
-    legendary: false,
-    dlc: false,
   },
   {
     type: "meleWeapons",

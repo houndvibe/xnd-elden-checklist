@@ -17,26 +17,7 @@ export const upgrades: TearsOrUpgradesItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Sacred+Tear",
     dlc: false,
   },
-  {
-    type: "tearsAndUpgrades",
-    subcategory: "upgrades",
-    name: "Scadutree Fragment",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Scadutree+Fragment",
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/scadutree_fragment_bolstering_material_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-  },
-  {
-    type: "tearsAndUpgrades",
-    subcategory: "upgrades",
-    name: "Revered Spirit Ash",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Revered+Spirit+Ash",
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/revered_spirit_ash_bolstering_material_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-  },
+
   {
     type: "tearsAndUpgrades",
     subcategory: "upgrades",
@@ -53,16 +34,7 @@ export const upgrades: TearsOrUpgradesItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Ritual+Pot",
     dlc: false,
   },
-  {
-    type: "tearsAndUpgrades",
-    subcategory: "upgrades",
-    name: "Hefty Cracked Pot",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Hefty+Cracked+Pot",
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/hefty_cracked_pot_container_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-  },
+
   {
     type: "tearsAndUpgrades",
     subcategory: "upgrades",
@@ -86,5 +58,29 @@ export const upgrades: TearsOrUpgradesItem[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Talisman+Pouch",
     dlc: false,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Scadutree Fragment",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Scadutree+Fragment",
+    dlc: true,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Revered Spirit Ash",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Revered+Spirit+Ash",
+    dlc: true,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "upgrades",
+    name: "Hefty Cracked Pot",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Hefty+Cracked+Pot",
+    dlc: true,
   },
 ];

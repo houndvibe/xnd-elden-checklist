@@ -127,15 +127,7 @@ export const hammers: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Flowerstone Gavel",
-    subcategory: "hammers",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Flowerstone+Gavel",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Marika's Hammer",
@@ -144,5 +136,14 @@ export const hammers: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Marika's+Hammer",
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Flowerstone Gavel",
+    subcategory: "hammers",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Flowerstone+Gavel",
+    legendary: false,
+    dlc: true,
   },
 ];

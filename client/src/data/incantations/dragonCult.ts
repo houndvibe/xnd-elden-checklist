@@ -12,15 +12,6 @@ export const dragonCult: IncantationsItem[] = [
   },
   {
     type: "incantations",
-    name: "Knight's Lightning Spear",
-    subcategory: "dragonCult",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Knight's+Lightning+Spear",
-    legendary: false,
-    dlc: true,
-  },
-  {
-    type: "incantations",
     name: "Lightning Strike",
     subcategory: "dragonCult",
     collected: false,
@@ -36,8 +27,6 @@ export const dragonCult: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Honed+Bolt",
     legendary: false,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/honed%20bolt_incantation_elden_ring_wiki_guide_200px.png",
   },
   {
     type: "incantations",
@@ -47,8 +36,6 @@ export const dragonCult: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragons'+Lightning+Spear",
     legendary: false,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragons_%20lightning_spear_incantation_elden_ring_wiki_guide_200px.png",
   },
   {
     type: "incantations",
@@ -58,8 +45,6 @@ export const dragonCult: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragons'+Lightning+Strike",
     legendary: false,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragons_%20lightning_strike_incantation_elden_ring_wiki_guide_200px.png",
   },
   {
     type: "incantations",
@@ -108,15 +93,6 @@ export const dragonCult: IncantationsItem[] = [
   },
   {
     type: "incantations",
-    name: "Electrocharge",
-    subcategory: "dragonCult",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Electrocharge",
-    legendary: false,
-    dlc: true,
-  },
-  {
-    type: "incantations",
     name: "Dragonbolt Blessing",
     subcategory: "dragonCult",
     collected: false,
@@ -132,6 +108,24 @@ export const dragonCult: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Vyke's+Dragonbolt",
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "incantations",
+    name: "Electrocharge",
+    subcategory: "dragonCult",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Electrocharge",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "incantations",
+    name: "Knight's Lightning Spear",
+    subcategory: "dragonCult",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Knight's+Lightning+Spear",
+    legendary: false,
+    dlc: true,
   },
   {
     type: "incantations",

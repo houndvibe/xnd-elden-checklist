@@ -350,99 +350,101 @@ export default function ItemsGrid({
                   }
 
                   if (isMultiVersionTalisman(item)) {
-                    return item.versions.map((version) => {
-                      const versionName = `${item.name}${
-                        version.tier > 0 ? ` +${version.tier}` : ""
-                      }`;
-                      const displayName = version.tier
-                        ? `${t(selectedCategory, item.name)} +${version.tier}`
-                        : t(selectedCategory, item.name);
-                      const link = version.tier
-                        ? `${item.link}+${version.tier}`
-                        : item.link;
+                    return item.versions
+                      .filter((version) => (checkDlc ? version : !version.dlc))
+                      .map((version) => {
+                        const versionName = `${item.name}${
+                          version.tier > 0 ? ` +${version.tier}` : ""
+                        }`;
+                        const displayName = version.tier
+                          ? `${t(selectedCategory, item.name)} +${version.tier}`
+                          : t(selectedCategory, item.name);
+                        const link = version.tier
+                          ? `${item.link}+${version.tier}`
+                          : item.link;
 
-                      return (
-                        <Popover
-                          styles={{
-                            body: {
-                              borderRadius: 30,
-                              border: `1px solid ${APP_PALETTE.bgDark}`,
-                            },
-                          }}
-                          key={versionName}
-                          mouseEnterDelay={0.5}
-                          content={
-                            isTablet ? null : (
-                              <Flex vertical gap={10} align="center">
-                                {renderLinkWithIcon(displayName, link)}
-                                {renderImageWithHoverOverlay(
-                                  getImageUrl(
+                        return (
+                          <Popover
+                            styles={{
+                              body: {
+                                borderRadius: 30,
+                                border: `1px solid ${APP_PALETTE.bgDark}`,
+                              },
+                            }}
+                            key={versionName}
+                            mouseEnterDelay={0.5}
+                            content={
+                              isTablet ? null : (
+                                <Flex vertical gap={10} align="center">
+                                  {renderLinkWithIcon(displayName, link)}
+                                  {renderImageWithHoverOverlay(
+                                    getImageUrl(
+                                      item,
+                                      subcategoryName,
+                                      selectedCategory,
+                                      versionName
+                                    ),
+                                    versionName,
+                                    () => {
+                                      dispatch(setFastcheck(false));
+                                      navigateToItem(
+                                        item.name,
+                                        dispatch,
+                                        navigate
+                                      );
+                                    }
+                                  )}
+                                </Flex>
+                              )
+                            }
+                          >
+                            <div
+                              className={
+                                spoilers && !version.collected
+                                  ? styles.blockSpoiler
+                                  : ""
+                              }
+                            >
+                              <Flex
+                                vertical
+                                justify="center"
+                                align="center"
+                                className={version.dlc ? dlcStyle : ""}
+                              >
+                                <Image
+                                  placeholder={spin}
+                                  className={
+                                    version.collected
+                                      ? collectedStyle
+                                      : styles.itemImg
+                                  }
+                                  src={getImageUrl(
                                     item,
                                     subcategoryName,
                                     selectedCategory,
                                     versionName
-                                  ),
-                                  versionName,
-                                  () => {
-                                    dispatch(setFastcheck(false));
-                                    navigateToItem(
-                                      item.name,
-                                      dispatch,
-                                      navigate
+                                  )}
+                                  width={imgSize}
+                                  height={imgSize}
+                                  alt={versionName}
+                                  preview={false}
+                                  onClick={() => {
+                                    dispatch(
+                                      toggleTalismanCollected({
+                                        subcategory:
+                                          subcategoryName as keyof TalismansSubCategoryMap,
+                                        name: item.name,
+                                        tier: version.tier,
+                                      })
                                     );
-                                  }
-                                )}
+                                  }}
+                                />
+                                {getNameBlock(displayName, version.collected)}
                               </Flex>
-                            )
-                          }
-                        >
-                          <div
-                            className={
-                              spoilers && !version.collected
-                                ? styles.blockSpoiler
-                                : ""
-                            }
-                          >
-                            <Flex
-                              vertical
-                              justify="center"
-                              align="center"
-                              className={version.dlc ? dlcStyle : ""}
-                            >
-                              <Image
-                                placeholder={spin}
-                                className={
-                                  version.collected
-                                    ? collectedStyle
-                                    : styles.itemImg
-                                }
-                                src={getImageUrl(
-                                  item,
-                                  subcategoryName,
-                                  selectedCategory,
-                                  versionName
-                                )}
-                                width={imgSize}
-                                height={imgSize}
-                                alt={versionName}
-                                preview={false}
-                                onClick={() => {
-                                  dispatch(
-                                    toggleTalismanCollected({
-                                      subcategory:
-                                        subcategoryName as keyof TalismansSubCategoryMap,
-                                      name: item.name,
-                                      tier: version.tier,
-                                    })
-                                  );
-                                }}
-                              />
-                              {getNameBlock(displayName, version.collected)}
-                            </Flex>
-                          </div>
-                        </Popover>
-                      );
-                    });
+                            </div>
+                          </Popover>
+                        );
+                      });
                   }
 
                   return (

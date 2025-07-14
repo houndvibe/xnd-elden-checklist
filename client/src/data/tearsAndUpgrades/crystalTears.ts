@@ -37,14 +37,7 @@ export const crystalTears: TearsOrUpgradesItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Crimsonburst+Crystal+Tear",
     dlc: false,
   },
-  {
-    type: "tearsAndUpgrades",
-    subcategory: "crystalTears",
-    name: "Crimsonburst Dried Tear",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Crimsonburst+Dried+Tear",
-    dlc: true,
-  },
+
   {
     type: "tearsAndUpgrades",
     subcategory: "crystalTears",
@@ -139,14 +132,7 @@ export const crystalTears: TearsOrUpgradesItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Leaden+Hardtear",
     dlc: false,
   },
-  {
-    type: "tearsAndUpgrades",
-    subcategory: "crystalTears",
-    name: "Deflecting Hardtear",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Deflecting+Hardtear",
-    dlc: true,
-  },
+
   {
     type: "tearsAndUpgrades",
     subcategory: "crystalTears",
@@ -203,30 +189,7 @@ export const crystalTears: TearsOrUpgradesItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Thorny+Cracked+Tear",
     dlc: false,
   },
-  {
-    type: "tearsAndUpgrades",
-    subcategory: "crystalTears",
-    name: "Crimson-Sapping Cracked Tear",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Crimson-Sapping+Cracked+Tear",
-    dlc: true,
-  },
-  {
-    type: "tearsAndUpgrades",
-    subcategory: "crystalTears",
-    name: "Cerulean-Sapping Cracked Tear",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Cerulean-Sapping+Cracked+Tear",
-    dlc: true,
-  },
-  {
-    type: "tearsAndUpgrades",
-    subcategory: "crystalTears",
-    name: "Bloodsucking Cracked Tear",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Bloodsucking+Cracked+Tear",
-    dlc: true,
-  },
+
   {
     type: "tearsAndUpgrades",
     subcategory: "crystalTears",
@@ -251,14 +214,7 @@ export const crystalTears: TearsOrUpgradesItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Windy+Crystal+Tear",
     dlc: false,
   },
-  {
-    type: "tearsAndUpgrades",
-    subcategory: "crystalTears",
-    name: "Glovewort Crystal Tear",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Glovewort+Crystal+Tear",
-    dlc: true,
-  },
+
   {
     type: "tearsAndUpgrades",
     subcategory: "crystalTears",
@@ -291,14 +247,7 @@ export const crystalTears: TearsOrUpgradesItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Cerulean+Hidden+Tear",
     dlc: false,
   },
-  {
-    type: "tearsAndUpgrades",
-    subcategory: "crystalTears",
-    name: "Viridian Hidden Tear",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Viridian+Hidden+Tear",
-    dlc: true,
-  },
+
   {
     type: "tearsAndUpgrades",
     subcategory: "crystalTears",
@@ -326,6 +275,62 @@ export const crystalTears: TearsOrUpgradesItem[] = [
     dlc: false,
     imgUrl:
       "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ruptured_crystal_tear_elden_ring_wiki_guide_200px.png",
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "crystalTears",
+    name: "Crimson-Sapping Cracked Tear",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Crimson-Sapping+Cracked+Tear",
+    dlc: true,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "crystalTears",
+    name: "Cerulean-Sapping Cracked Tear",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Cerulean-Sapping+Cracked+Tear",
+    dlc: true,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "crystalTears",
+    name: "Bloodsucking Cracked Tear",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Bloodsucking+Cracked+Tear",
+    dlc: true,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "crystalTears",
+    name: "Deflecting Hardtear",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Deflecting+Hardtear",
+    dlc: true,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "crystalTears",
+    name: "Crimsonburst Dried Tear",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Crimsonburst+Dried+Tear",
+    dlc: true,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "crystalTears",
+    name: "Glovewort Crystal Tear",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Glovewort+Crystal+Tear",
+    dlc: true,
+  },
+  {
+    type: "tearsAndUpgrades",
+    subcategory: "crystalTears",
+    name: "Viridian Hidden Tear",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Viridian+Hidden+Tear",
+    dlc: true,
   },
   {
     type: "tearsAndUpgrades",

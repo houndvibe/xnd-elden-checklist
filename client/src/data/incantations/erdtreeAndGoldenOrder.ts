@@ -36,8 +36,6 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Protection+of+the+Erdtree",
     legendary: false,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/protection_of_the%20erdtree_incantation_elden_ring_wiki_guide_200px.png",
   },
   {
     type: "incantations",
@@ -47,29 +45,8 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Wrath+of+Gold",
     legendary: false,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/wrath%20of%20gold_incantation_elden_ring_wiki_guide_200px.png",
   },
-  {
-    type: "incantations",
-    name: "Wrath from Afar",
-    subcategory: "erdtree&GoldenOrder",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Wrath+from+Afar",
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/wrath_from_afar_incantation_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-  },
-  {
-    type: "incantations",
-    name: "Heal from Afar",
-    subcategory: "erdtree&GoldenOrder",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Heal+from+Afar",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "incantations",
     name: "Erdtree Heal",
@@ -97,15 +74,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "incantations",
-    name: "Minor Erdtree",
-    subcategory: "erdtree&GoldenOrder",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Minor+Erdtree",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "incantations",
     name: "Aspects of the Crucible: Breath",
@@ -114,8 +83,6 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Breath",
     legendary: false,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/aspect_of_the_crucible_breath_incantation_elden_ring_wiki_guide_200px.png",
   },
   {
     type: "incantations",
@@ -125,8 +92,6 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Horns",
     legendary: false,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/aspect_crucible_horns.png",
   },
   {
     type: "incantations",
@@ -137,33 +102,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "incantations",
-    name: "Aspects of the Crucible: Thorns",
-    subcategory: "erdtree&GoldenOrder",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Thorns",
-    legendary: false,
-    dlc: true,
-  },
-  {
-    type: "incantations",
-    name: "Aspects of the Crucible: Bloom",
-    subcategory: "erdtree&GoldenOrder",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Bloom",
-    legendary: false,
-    dlc: true,
-  },
-  {
-    type: "incantations",
-    name: "Land of Shadow",
-    subcategory: "erdtree&GoldenOrder",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Land+of+Shadow",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "incantations",
     name: "Elden Stars",
@@ -209,15 +148,7 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "incantations",
-    name: "Multilayered Ring of Light",
-    subcategory: "erdtree&GoldenOrder",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Multilayered+Ring+of+Light",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "incantations",
     name: "Litany of Proper Death",
@@ -271,5 +202,68 @@ export const erdtreeAndGoldenOrder: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Law+of+Regression",
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "incantations",
+    name: "Wrath from Afar",
+    subcategory: "erdtree&GoldenOrder",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Wrath+from+Afar",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "incantations",
+    name: "Heal from Afar",
+    subcategory: "erdtree&GoldenOrder",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Heal+from+Afar",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "incantations",
+    name: "Minor Erdtree",
+    subcategory: "erdtree&GoldenOrder",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Minor+Erdtree",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "incantations",
+    name: "Aspects of the Crucible: Thorns",
+    subcategory: "erdtree&GoldenOrder",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Thorns",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "incantations",
+    name: "Aspects of the Crucible: Bloom",
+    subcategory: "erdtree&GoldenOrder",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Aspects+of+the+Crucible:+Bloom",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "incantations",
+    name: "Land of Shadow",
+    subcategory: "erdtree&GoldenOrder",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Land+of+Shadow",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "incantations",
+    name: "Multilayered Ring of Light",
+    subcategory: "erdtree&GoldenOrder",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Multilayered+Ring+of+Light",
+    legendary: false,
+    dlc: true,
   },
 ];

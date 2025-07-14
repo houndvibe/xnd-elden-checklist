@@ -91,15 +91,7 @@ export const dragonCommunion: IncantationsItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "incantations",
-    name: "Ghostflame Breath",
-    subcategory: "dragonCommunion",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Ghostflame+Breath",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "incantations",
     name: "Placidusax's Ruin",
@@ -135,6 +127,15 @@ export const dragonCommunion: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Greyoll's+Roar",
     legendary: true,
     dlc: false,
+  },
+  {
+    type: "incantations",
+    name: "Ghostflame Breath",
+    subcategory: "dragonCommunion",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ghostflame+Breath",
+    legendary: false,
+    dlc: true,
   },
   {
     type: "incantations",

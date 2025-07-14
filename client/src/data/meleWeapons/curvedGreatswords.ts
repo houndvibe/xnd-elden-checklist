@@ -37,15 +37,7 @@ export const curvedGreatswords: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Freyja's Greatsword",
-    subcategory: "colossalSwords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Freyja's+Greatsword",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Bloodhound's Fang",
@@ -84,6 +76,15 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   },
   {
     type: "meleWeapons",
+    name: "Morgott's Cursed Sword",
+    subcategory: "colossalSwords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Morgott's+Cursed+Sword",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
     name: "Horned Warrior's Greatsword",
     subcategory: "colossalSwords",
     collected: false,
@@ -93,11 +94,11 @@ export const curvedGreatswords: MeleWeaponItem[] = [
   },
   {
     type: "meleWeapons",
-    name: "Morgott's Cursed Sword",
+    name: "Freyja's Greatsword",
     subcategory: "colossalSwords",
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Morgott's+Cursed+Sword",
+    link: "https://eldenring.wiki.fextralife.com/Freyja's+Greatsword",
     legendary: false,
-    dlc: false,
+    dlc: true,
   },
 ];

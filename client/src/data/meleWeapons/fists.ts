@@ -28,15 +28,7 @@ export const fists: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Pata",
-    subcategory: "fists",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Pata",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Iron Ball",
@@ -84,6 +76,24 @@ export const fists: MeleWeaponItem[] = [
   },
   {
     type: "meleWeapons",
+    name: "Grafted Dragon",
+    subcategory: "fists",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Grafted+Dragon",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Pata",
+    subcategory: "fists",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Pata",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "meleWeapons",
     name: "Poisoned Hand",
     subcategory: "fists",
     collected: false,
@@ -117,14 +127,5 @@ export const fists: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Thiollier's+Hidden+Needle",
     legendary: false,
     dlc: true,
-  },
-  {
-    type: "meleWeapons",
-    name: "Grafted Dragon",
-    subcategory: "fists",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Grafted+Dragon",
-    legendary: false,
-    dlc: false,
   },
 ];

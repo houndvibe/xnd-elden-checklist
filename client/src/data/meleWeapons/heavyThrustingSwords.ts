@@ -10,15 +10,7 @@ export const heavyThrustingSwords: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Queelign's Greatsword",
-    subcategory: "heavyThrustingSwords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Queelign's+Greatsword",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Godskin Stitcher",
@@ -45,6 +37,15 @@ export const heavyThrustingSwords: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Dragon+King's+Cragblade",
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Queelign's Greatsword",
+    subcategory: "heavyThrustingSwords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Queelign's+Greatsword",
+    legendary: false,
+    dlc: true,
   },
   {
     type: "meleWeapons",

@@ -55,15 +55,7 @@ export const greatswords: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Lizard Greatsword",
-    subcategory: "greatswords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Lizard+Greatsword",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Forked Greatsword",
@@ -127,15 +119,7 @@ export const greatswords: MeleWeaponItem[] = [
     legendary: true,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Greatsword of Solitude",
-    subcategory: "greatswords",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Greatsword+of+Solitude",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Ordovis's Greatsword",
@@ -201,6 +185,15 @@ export const greatswords: MeleWeaponItem[] = [
   },
   {
     type: "meleWeapons",
+    name: "Sacred Relic Sword",
+    subcategory: "greatswords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Sacred+Relic+Sword",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "meleWeapons",
     name: "Greatsword of Damnation",
     subcategory: "greatswords",
     collected: false,
@@ -210,11 +203,20 @@ export const greatswords: MeleWeaponItem[] = [
   },
   {
     type: "meleWeapons",
-    name: "Sacred Relic Sword",
+    name: "Lizard Greatsword",
     subcategory: "greatswords",
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Sacred+Relic+Sword",
+    link: "https://eldenring.wiki.fextralife.com/Lizard+Greatsword",
     legendary: false,
-    dlc: false,
+    dlc: true,
+  },
+  {
+    type: "meleWeapons",
+    name: "Greatsword of Solitude",
+    subcategory: "greatswords",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Greatsword+of+Solitude",
+    legendary: false,
+    dlc: true,
   },
 ];

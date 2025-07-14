@@ -19,15 +19,7 @@ export const damageAmplifiers: TalismanItem[] = [
     dlc: false,
     legendary: false,
   },
-  {
-    type: "talismans",
-    name: "Verdigris Discus",
-    subcategory: "damageAmplifiers",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Verdigris+Discus",
-    dlc: true,
-    legendary: false,
-  },
+
   {
     type: "talismans",
     name: "Fire Scorpion Charm",
@@ -89,6 +81,15 @@ export const damageAmplifiers: TalismanItem[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Crucible+Knot+Talisman",
     dlc: false,
+    legendary: false,
+  },
+  {
+    type: "talismans",
+    name: "Verdigris Discus",
+    subcategory: "damageAmplifiers",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Verdigris+Discus",
+    dlc: true,
     legendary: false,
   },
   {

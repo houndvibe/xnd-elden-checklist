@@ -64,15 +64,7 @@ export const greatAxes: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Bonny Butchering Knife",
-    subcategory: "greatAxes",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Bonny+Butchering+Knife",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Gargoyle's Great Axe",
@@ -91,15 +83,7 @@ export const greatAxes: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Death Knight's Longhaft Axe",
-    subcategory: "greatAxes",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Death+Knight's+Longhaft+Axe",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Winged Greathorn",
@@ -117,6 +101,24 @@ export const greatAxes: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Axe+of+Godrick",
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Bonny Butchering Knife",
+    subcategory: "greatAxes",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Bonny+Butchering+Knife",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "meleWeapons",
+    name: "Death Knight's Longhaft Axe",
+    subcategory: "greatAxes",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Death+Knight's+Longhaft+Axe",
+    legendary: false,
+    dlc: true,
   },
   {
     type: "meleWeapons",

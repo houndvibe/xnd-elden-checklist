@@ -10,15 +10,7 @@ export const threeFingers: IncantationsItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "incantations",
-    name: "Midra's Flame of Frenzy",
-    subcategory: "threeFingers",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Midra's+Flame+of+Frenzy",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "incantations",
     name: "Unendurable Frenzy",
@@ -54,5 +46,14 @@ export const threeFingers: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Inescapable+Frenzy",
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "incantations",
+    name: "Midra's Flame of Frenzy",
+    subcategory: "threeFingers",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Midra's+Flame+of+Frenzy",
+    legendary: false,
+    dlc: true,
   },
 ];

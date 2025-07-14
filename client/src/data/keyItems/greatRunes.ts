@@ -4,15 +4,6 @@ export const greatRunes: KeyItem[] = [
   {
     type: "keyItems",
     subcategory: "greatRunes",
-    name: "Miquella's Great Rune",
-    collected: false,
-    legendary: false,
-    link: "https://eldenring.wiki.fextralife.com/Miquella%27s+Great+Rune",
-    dlc: true,
-  },
-  {
-    type: "keyItems",
-    subcategory: "greatRunes",
     name: "Godrick's Great Rune",
     collected: false,
     legendary: false,
@@ -108,5 +99,14 @@ export const greatRunes: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Mending+Rune+of+the+Fell+Curse",
     dlc: false,
+  },
+  {
+    type: "keyItems",
+    subcategory: "greatRunes",
+    name: "Miquella's Great Rune",
+    collected: false,
+    legendary: false,
+    link: "https://eldenring.wiki.fextralife.com/Miquella%27s+Great+Rune",
+    dlc: true,
   },
 ];

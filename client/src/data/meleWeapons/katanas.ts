@@ -46,15 +46,7 @@ export const katanas: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Sword of Night",
-    subcategory: "katanas",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Sword+of+Night",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Rivers of Blood",
@@ -73,15 +65,7 @@ export const katanas: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Star-Lined Sword",
-    subcategory: "katanas",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Star-Lined+Sword",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Hand of Malenia",
@@ -90,5 +74,23 @@ export const katanas: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Hand+of+Malenia",
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Sword of Night",
+    subcategory: "katanas",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Sword+of+Night",
+    legendary: false,
+    dlc: true,
+  },
+  {
+    type: "meleWeapons",
+    name: "Star-Lined Sword",
+    subcategory: "katanas",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Star-Lined+Sword",
+    legendary: false,
+    dlc: true,
   },
 ];

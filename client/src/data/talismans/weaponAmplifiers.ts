@@ -73,15 +73,7 @@ export const weaponAmplifiers: TalismanItem[] = [
     dlc: false,
     legendary: false,
   },
-  {
-    type: "talismans",
-    name: "Two-Handed Sword Talisman",
-    subcategory: "weaponAmplifiers",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Two-Handed+Sword+Talisman",
-    dlc: true,
-    legendary: false,
-  },
+
   {
     type: "talismans",
     name: "Greatshield Talisman",
@@ -89,6 +81,34 @@ export const weaponAmplifiers: TalismanItem[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greatshield+Talisman",
     dlc: false,
+    legendary: false,
+  },
+
+  {
+    type: "talismans",
+    name: "Arrow's Sting Talisman",
+    subcategory: "weaponAmplifiers",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Arrow%27s+Sting+Talisman",
+    dlc: false,
+    legendary: false,
+  },
+  {
+    type: "talismans",
+    name: "Arrow's Reach Talisman",
+    subcategory: "weaponAmplifiers",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Arrow%27s+Reach+Talisman",
+    dlc: false,
+    legendary: false,
+  },
+  {
+    type: "talismans",
+    name: "Two-Handed Sword Talisman",
+    subcategory: "weaponAmplifiers",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Two-Handed+Sword+Talisman",
+    dlc: true,
     legendary: false,
   },
   {
@@ -123,24 +143,6 @@ export const weaponAmplifiers: TalismanItem[] = [
 
     imgUrl:
       "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lacerating_crossed-tree_1_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-  },
-  {
-    type: "talismans",
-    name: "Arrow's Sting Talisman",
-    subcategory: "weaponAmplifiers",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Arrow%27s+Sting+Talisman",
-    dlc: false,
-    legendary: false,
-  },
-  {
-    type: "talismans",
-    name: "Arrow's Reach Talisman",
-    subcategory: "weaponAmplifiers",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Arrow%27s+Reach+Talisman",
-    dlc: false,
-    legendary: false,
   },
   {
     type: "talismans",

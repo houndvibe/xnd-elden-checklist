@@ -4,82 +4,6 @@ export const mediumShields: ShieldOrTorchItem[] = [
   {
     type: "shieldsAndTorches",
     subcategory: "mediumShields",
-    name: "Golden Lion Shield",
-    /*     description:
-      "Medium shield with a stylized lion motif. Scales primarily with Strength and offers balanced protection with moderate weight.", */
-    link: "https://eldenring.wiki.fextralife.com/Golden+Lion+Shield",
-    collected: false,
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/golden_lion_shield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-    /*     droppedBy: null, */
-    /*     vendor: null, */
-    /*     placementDescription: */
-    /*       "Reward from Ansbach's invasion quest in Shadow Keep (DLC). Can be acquired after siding with him or defeating him in the arena.", */
-  },
-  {
-    type: "shieldsAndTorches",
-    subcategory: "mediumShields",
-    name: "Serpent Crest Shield",
-    /*     description:
-      "Medium shield with serpent crest motif. Useful for guarding against poison and scaling with Strength.", */
-    link: "https://eldenring.wiki.fextralife.com/Serpent+Crest+Shield",
-    collected: false,
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/serpent_crest_shield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-    /*     droppedBy: null,
-    vendor: null,
-    placementDescription:
-      "Found during Shadow of the Erdtree DLC questline—interact with the ghost in the DLC map to obtain it.", */
-  },
-  {
-    type: "shieldsAndTorches",
-    subcategory: "mediumShields",
-    name: "Wolf Crest Shield",
-    /*     description:
-      "Medium shield with a wolf under the moon motif. Excels at negating sorceries and can be infused with Ashes of War.", */
-    link: "https://eldenring.wiki.fextralife.com/Wolf+Crest+Shield",
-    collected: false,
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/wolf_crest_shield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-    /*     droppedBy: null,
-    vendor: null,
-    placementDescription:
-      "Found in a chest in CastleEnsis, Realm of Shadow—downstairs from the chapel entrance guarded by Moonrithyll.", */
-  },
-
-  {
-    type: "shieldsAndTorches",
-    subcategory: "mediumShields",
-    name: "Messmer Soldier Shield",
-    /*     description:
-      "Large medium shield carried by Messmer’s soldiers. Offers very high physical defense for its class.", */
-    link: "https://eldenring.wiki.fextralife.com/Messmer+Soldier+Shield",
-    collected: false,
-    legendary: false,
-    dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_soldier_shield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
-    /*     droppedBy: {
-      name: "Messmer's Soldiers",
-      dropRate: 2,
-      link: "https://eldenring.wiki.fextralife.com/Messmer+Soldier",
-      imgUrl:
-        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_soldier_enemies_elden_ring_wiki_300px.jpg",
-    },
-    vendor: null,
-    placementDescription:
-      "Dropped (~2%) by Messmer's Soldiers near Church of Consolation (Shadow of the Erdtree DLC).", */
-  },
-
-  {
-    type: "shieldsAndTorches",
-    subcategory: "mediumShields",
     name: "Hawk Crest Wooden Shield",
     /*     description:
       "Tall wooden medium shield with hawk crest. Light for its type and features Parry skill.", */
@@ -610,5 +534,80 @@ export const mediumShields: ShieldOrTorchItem[] = [
     vendor: null,
     placementDescription:
       "Found on top of tower near Castle Morne Rampart via spiritspring.", */
+  },
+  {
+    type: "shieldsAndTorches",
+    subcategory: "mediumShields",
+    name: "Golden Lion Shield",
+    /*     description:
+      "Medium shield with a stylized lion motif. Scales primarily with Strength and offers balanced protection with moderate weight.", */
+    link: "https://eldenring.wiki.fextralife.com/Golden+Lion+Shield",
+    collected: false,
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/golden_lion_shield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    /*     droppedBy: null, */
+    /*     vendor: null, */
+    /*     placementDescription: */
+    /*       "Reward from Ansbach's invasion quest in Shadow Keep (DLC). Can be acquired after siding with him or defeating him in the arena.", */
+  },
+  {
+    type: "shieldsAndTorches",
+    subcategory: "mediumShields",
+    name: "Serpent Crest Shield",
+    /*     description:
+      "Medium shield with serpent crest motif. Useful for guarding against poison and scaling with Strength.", */
+    link: "https://eldenring.wiki.fextralife.com/Serpent+Crest+Shield",
+    collected: false,
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/serpent_crest_shield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    /*     droppedBy: null,
+    vendor: null,
+    placementDescription:
+      "Found during Shadow of the Erdtree DLC questline—interact with the ghost in the DLC map to obtain it.", */
+  },
+  {
+    type: "shieldsAndTorches",
+    subcategory: "mediumShields",
+    name: "Wolf Crest Shield",
+    /*     description:
+      "Medium shield with a wolf under the moon motif. Excels at negating sorceries and can be infused with Ashes of War.", */
+    link: "https://eldenring.wiki.fextralife.com/Wolf+Crest+Shield",
+    collected: false,
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/wolf_crest_shield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    /*     droppedBy: null,
+    vendor: null,
+    placementDescription:
+      "Found in a chest in CastleEnsis, Realm of Shadow—downstairs from the chapel entrance guarded by Moonrithyll.", */
+  },
+
+  {
+    type: "shieldsAndTorches",
+    subcategory: "mediumShields",
+    name: "Messmer Soldier Shield",
+    /*     description:
+      "Large medium shield carried by Messmer’s soldiers. Offers very high physical defense for its class.", */
+    link: "https://eldenring.wiki.fextralife.com/Messmer+Soldier+Shield",
+    collected: false,
+    legendary: false,
+    dlc: true,
+    imgUrl:
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_soldier_shield_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    /*     droppedBy: {
+      name: "Messmer's Soldiers",
+      dropRate: 2,
+      link: "https://eldenring.wiki.fextralife.com/Messmer+Soldier",
+      imgUrl:
+        "https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_soldier_enemies_elden_ring_wiki_300px.jpg",
+    },
+    vendor: null,
+    placementDescription:
+      "Dropped (~2%) by Messmer's Soldiers near Church of Consolation (Shadow of the Erdtree DLC).", */
   },
 ];

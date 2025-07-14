@@ -19,15 +19,7 @@ export const twinblades: MeleWeaponItem[] = [
     legendary: false,
     dlc: false,
   },
-  {
-    type: "meleWeapons",
-    name: "Black Steel Twinblade",
-    subcategory: "twinblades",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Black+Steel+Twinblade",
-    legendary: false,
-    dlc: true,
-  },
+
   {
     type: "meleWeapons",
     name: "Godskin Peeler",
@@ -63,6 +55,15 @@ export const twinblades: MeleWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Eleonora's+Poleblade",
     legendary: false,
     dlc: false,
+  },
+  {
+    type: "meleWeapons",
+    name: "Black Steel Twinblade",
+    subcategory: "twinblades",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Black+Steel+Twinblade",
+    legendary: false,
+    dlc: true,
   },
   {
     type: "meleWeapons",
