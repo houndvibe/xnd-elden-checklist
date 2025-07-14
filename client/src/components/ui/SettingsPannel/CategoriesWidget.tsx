@@ -11,6 +11,7 @@ import {
   toggleSubcategoryChecked,
   setAllCategoriesChecked,
   setAllSubcategoriesChecked,
+  setCheckDlc,
 } from "../../../store/settingsSlice";
 
 export default function CategoriesWidget() {
@@ -18,7 +19,7 @@ export default function CategoriesWidget() {
 
   const cllection = useAppSelector((state) => state.collection.collectionData);
   const dispatch = useAppDispatch();
-  const { checkedCategories, checkedSubcategories, openCategories } =
+  const { checkedCategories, checkedSubcategories, openCategories, checkDlc } =
     useAppSelector((s) => s.settings);
 
   const categories = Object.entries(cllection);
@@ -73,6 +74,10 @@ export default function CategoriesWidget() {
           <Button size="small" onClick={handleSelectNone}>
             {t("misc", "Uncheck all")}
           </Button>
+          |
+          <Checkbox checked={checkDlc} onChange={() => dispatch(setCheckDlc())}>
+            {t("misc", "DLC")}
+          </Checkbox>
         </Flex>
       </div>
 

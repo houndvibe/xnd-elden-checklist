@@ -23,6 +23,7 @@ interface SettingsState {
   checkedCategories: string[];
   checkedSubcategories: string[];
   openCategories: string[];
+  checkDlc: boolean;
 }
 
 const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
@@ -37,6 +38,7 @@ const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
   checkedCategories: itemCategories,
   checkedSubcategories: itemSubCategories,
   openCategories: [],
+  checkDlc: true,
 });
 
 export const settingsSlice = createSlice({
@@ -123,9 +125,15 @@ export const settingsSlice = createSlice({
     },
     setAllCategoriesChecked: (state, action: PayloadAction<string[]>) => {
       state.checkedCategories = action.payload;
+      saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
     },
     setAllSubcategoriesChecked: (state, action: PayloadAction<string[]>) => {
       state.checkedSubcategories = action.payload;
+      saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
+    },
+    setCheckDlc: (state) => {
+      state.checkDlc = !state.checkDlc;
+      saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
     },
   },
 });
@@ -144,5 +152,6 @@ export const {
   toggleCategoryOpen,
   setAllCategoriesChecked,
   setAllSubcategoriesChecked,
+  setCheckDlc,
 } = settingsSlice.actions;
 export default settingsSlice.reducer;

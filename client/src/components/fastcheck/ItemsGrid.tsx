@@ -68,6 +68,7 @@ export default function ItemsGrid({
   const categoryData = useAppSelector(
     (state) => state.collection.collectionData[`${selectedCategory}Data`]
   );
+  const { checkDlc } = useAppSelector((state) => state.settings);
 
   const spoilers = useAppSelector((state) => state.settings.spoilers);
   const showFCNames = useAppSelector((state) => state.settings.showFCNames);
@@ -163,7 +164,10 @@ export default function ItemsGrid({
 
           if (filteredItems.length === 0) return null;
 
-          const { total, collected } = getSubCategoryStats(filteredItems);
+          const { total, collected } = getSubCategoryStats(
+            filteredItems,
+            checkDlc
+          );
 
           return (
             <div key={subcategoryName}>

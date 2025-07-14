@@ -17,6 +17,7 @@ import { t } from "../../i18n";
 import icon from "../../../public/assets/dlc-icon.png";
 import { isTablet } from "react-device-detect";
 import { useEffect, useState } from "react";
+import { useAppSelector } from "../../store/typedDispatch";
 interface DashboardWidgetProps {
   dataType: ItemCategory;
   data: {
@@ -37,6 +38,7 @@ export default function DashboardWidget({
   const navigate = useNavigate();
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const { checkDlc } = useAppSelector((state) => state.settings);
 
   useEffect(() => {
     const handleResize = () => {
@@ -104,7 +106,7 @@ export default function DashboardWidget({
   const renderSubcategoryList = () => (
     <Flex vertical gap={20} flex={3}>
       {Object.entries(subData).map(([subclassName, subItems]) => {
-        const stats = getSubCategoryStats(subItems);
+        const stats = getSubCategoryStats(subItems, checkDlc);
         const title = t("misc", toTitleCaseFromCamel(subclassName));
         const truncateTitle = truncateString(title, TRUNCATE_LIMITS.DASHBOARD);
 

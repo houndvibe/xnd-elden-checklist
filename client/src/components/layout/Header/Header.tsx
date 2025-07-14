@@ -21,10 +21,13 @@ import logo from "../../../../public/assets/logo.png";
 import BoostersModal from "./BoostersModal";
 
 import FastCheckSwitch from "../../ui/SettingsPannel/FastCheckSwitch";
-
+import { itemCategories } from "../../../lib/consts";
+import { ItemCategory } from "../../../global-types";
+import { useLocation } from "react-router-dom";
 const { Header: AppHeader } = Layout;
 
 export default function Header() {
+  const location = useLocation();
   const dispatch = useAppDispatch();
   const { showSettings, showWelcome } = useAppSelector(
     (state) => state.settings
@@ -64,7 +67,9 @@ export default function Header() {
         </div>
 
         <div className={styles.icons}>
-          <FastCheckSwitch />
+          {itemCategories.includes(
+            location.pathname.split("/")[1] as ItemCategory
+          ) && <FastCheckSwitch />}
           <Tooltip title={t("misc", "Thanks")}>
             <HeartOutlined
               className={styles.icon}

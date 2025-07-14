@@ -6,6 +6,7 @@ import { getSubCategoryStats } from "../../../lib/utils/stats";
 
 import styles from "./SubCategoryInfo.module.scss";
 import { truncateString } from "../../../lib/utils/misc";
+import { useAppSelector } from "../../../store/typedDispatch";
 
 interface SubCategoryLabelProps {
   title: string;
@@ -16,7 +17,8 @@ export default function SubCategoryLabel({
   title,
   data,
 }: SubCategoryLabelProps) {
-  const { total, collected, percentage } = getSubCategoryStats(data);
+  const { checkDlc } = useAppSelector((state) => state.settings);
+  const { total, collected, percentage } = getSubCategoryStats(data, checkDlc);
 
   const truncateTitle = truncateString(
     title,

@@ -38,11 +38,16 @@ export default function FastCheck() {
 
   const collection = useAppSelector((state) => state.collection.collectionData);
 
+  const { checkDlc } = useAppSelector((state) => state.settings);
+
   const { tabKey } = useParams<{ tabKey?: ItemCategory }>();
 
   const currentCategory = collection[`${tabKey}Data` as keyof Collection];
 
-  const { total, collected, percentage } = getCategoryStats(currentCategory);
+  const { total, collected, percentage } = getCategoryStats(
+    currentCategory,
+    checkDlc
+  );
 
   const handelChangeCategory = (categoryName: ItemCategory) => {
     navigate(`/${categoryName}`);

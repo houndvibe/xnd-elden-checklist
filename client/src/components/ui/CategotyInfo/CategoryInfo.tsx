@@ -13,7 +13,8 @@ interface CategoryInfoProps {
 }
 
 export default function CategoryInfo({ items, title }: CategoryInfoProps) {
-  const { total, collected, percentage } = getCategoryStats(items);
+  const { checkDlc } = useAppSelector((state) => state.settings);
+  const { total, collected, percentage } = getCategoryStats(items, checkDlc);
   const currentLang = useAppSelector((state) => state.settings.lang);
 
   const titleClassname = currentLang === "ru" ? "titleRu" : "title";

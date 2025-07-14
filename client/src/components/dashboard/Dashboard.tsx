@@ -22,7 +22,7 @@ export default function Dashboard() {
     (state) => state.collection.collectionData
   );
 
-  const { checkedCategories, checkedSubcategories } = useAppSelector(
+  const { checkedCategories, checkedSubcategories, checkDlc } = useAppSelector(
     (state) => state.settings
   );
 
@@ -42,7 +42,7 @@ export default function Dashboard() {
       return {
         type,
         data: filteredData,
-        stats: getCategoryStats(filteredData),
+        stats: getCategoryStats(filteredData, checkDlc),
       };
     });
 
