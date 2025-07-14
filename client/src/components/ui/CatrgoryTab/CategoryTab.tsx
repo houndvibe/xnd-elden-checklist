@@ -2,7 +2,11 @@ import { Collapse, Flex } from "antd";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useMemo } from "react";
 
-import { ItemCategory, ItemSubCategory } from "../../../global-types";
+import {
+  ItemCategory,
+  ItemSubCategory,
+  ItemSubCategoryMap,
+} from "../../../global-types";
 import { useAppSelector } from "../../../store/typedDispatch";
 import { Collection } from "../../../store/collectionSlice";
 
@@ -30,6 +34,15 @@ export default function CategoryTab({ category }: Props) {
     (state) =>
       state.collection.collectionData[`${category}Data` as keyof Collection]
   );
+  const { checkDlc, checkedSubcategories } = useAppSelector(
+    (state) => state.settings
+  );
+
+  const filteredData: Partial<ItemSubCategoryMap> = Object.fromEntries(
+    Object.entries(data).filter(([subcategory]) =>
+      checkedSubcategories.includes(subcategory)
+    )
+  );
 
   const activeKeys = useMemo(() => {
     return openParam ? openParam.split(",").map(decodeURIComponent) : [];
@@ -37,7 +50,7 @@ export default function CategoryTab({ category }: Props) {
 
   const subcategoryItems = useMemo(
     () =>
-      Object.entries(data).map(([key, subData]) => ({
+      Object.entries(filteredData).map(([key, subData]) => ({
         key,
         label: (
           <SubCategoryLabel
@@ -53,7 +66,7 @@ export default function CategoryTab({ category }: Props) {
           />
         ),
       })),
-    [data, category]
+    [data, category, checkedSubcategories, checkDlc]
   );
 
   const handleCollapseChange = (keys: string | string[]) => {

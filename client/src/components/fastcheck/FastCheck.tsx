@@ -1,5 +1,5 @@
 import { Checkbox, Flex, Input, Select } from "antd";
-import { ItemCategory } from "../../global-types";
+import { ItemCategory, ItemSubCategoryMap } from "../../global-types";
 import {
   APP_PALETTE,
   FASTCHECK_SIZE_L,
@@ -38,14 +38,23 @@ export default function FastCheck() {
 
   const collection = useAppSelector((state) => state.collection.collectionData);
 
-  const { checkDlc } = useAppSelector((state) => state.settings);
+  const { checkDlc, checkedSubcategories } = useAppSelector(
+    (state) => state.settings
+  );
 
   const { tabKey } = useParams<{ tabKey?: ItemCategory }>();
 
   const currentCategory = collection[`${tabKey}Data` as keyof Collection];
 
+  // Оставляем только включённые подкатегории
+  const filteredData: Partial<ItemSubCategoryMap> = Object.fromEntries(
+    Object.entries(currentCategory).filter(([subcategory]) =>
+      checkedSubcategories.includes(subcategory)
+    )
+  );
+
   const { total, collected, percentage } = getCategoryStats(
-    currentCategory,
+    filteredData,
     checkDlc
   );
 

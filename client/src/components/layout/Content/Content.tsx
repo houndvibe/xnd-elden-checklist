@@ -22,7 +22,9 @@ export default function Content() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const showSettings = useAppSelector((state) => state.settings.showSettings);
+  const { showSettings, checkedCategories } = useAppSelector(
+    (state) => state.settings
+  );
   const getActiveKey = () => {
     const path = location.pathname.split("/")[1] as
       | ItemCategory
@@ -46,7 +48,7 @@ export default function Content() {
   };
 
   const getDefaultItemCategory = () => {
-    return itemCategories[0];
+    return itemCategories.filter((i) => checkedCategories.includes(i))[0];
   };
 
   return (

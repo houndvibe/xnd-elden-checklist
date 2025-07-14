@@ -68,7 +68,9 @@ export default function ItemsGrid({
   const categoryData = useAppSelector(
     (state) => state.collection.collectionData[`${selectedCategory}Data`]
   );
-  const { checkDlc } = useAppSelector((state) => state.settings);
+  const { checkDlc, checkedSubcategories } = useAppSelector(
+    (state) => state.settings
+  );
 
   const spoilers = useAppSelector((state) => state.settings.spoilers);
   const showFCNames = useAppSelector((state) => state.settings.showFCNames);
@@ -78,6 +80,9 @@ export default function ItemsGrid({
     imgSize > FASTCHECK_SIZE_S
       ? styles.itemImgCollected
       : styles.itemImgCollectedSmall;
+
+  const dlcStyle =
+    imgSize > FASTCHECK_SIZE_S ? styles.dlcOverlay : styles.dlcOverlaySmall;
 
   if (!categoryData) return null;
 
@@ -119,48 +124,53 @@ export default function ItemsGrid({
     <div className={styles.itemsGridWrapper}>
       {(Object.entries(categoryData) as [string, Item[]][]).map(
         ([subcategoryName, items]) => {
-          const filteredItems = items.filter((item) => {
-            const targetNames = [item.name];
+          const filteredItems = items
+            .filter((item) => (checkDlc ? item : !item.dlc))
+            .filter(() => checkedSubcategories.includes(subcategoryName))
+            .filter((item) => {
+              const targetNames = [item.name];
 
-            if (isArmourSet(item)) {
-              item.items?.forEach((part) => {
-                targetNames.push(part.name);
-                part.children?.forEach((child) => targetNames.push(child.name));
-              });
-            }
+              if (isArmourSet(item)) {
+                item.items?.forEach((part) => {
+                  targetNames.push(part.name);
+                  part.children?.forEach((child) =>
+                    targetNames.push(child.name)
+                  );
+                });
+              }
 
-            if (isMultiVersionTalisman(item)) {
-              item.versions.forEach((v) => {
-                targetNames.push(
-                  `${item.name}${v.tier > 0 ? ` +${v.tier}` : ""}`
-                );
-              });
-            }
+              if (isMultiVersionTalisman(item)) {
+                item.versions.forEach((v) => {
+                  targetNames.push(
+                    `${item.name}${v.tier > 0 ? ` +${v.tier}` : ""}`
+                  );
+                });
+              }
 
-            const matchesSearch = targetNames.some((name) =>
-              t(selectedCategory, name)
-                .toLowerCase()
-                .includes(searchValue.toLowerCase())
-            );
-
-            if (
-              isArmourSet(item) &&
-              Object.values(pieceTypeFilters).some((v) => !v)
-            ) {
-              const hasPieceMatchingFilter = item.items?.some(
-                (part) =>
-                  pieceTypeFilters[part.pieceType as keyof ArmorFilter] ||
-                  part.children?.some(
-                    (child) =>
-                      pieceTypeFilters[child.pieceType as keyof ArmorFilter]
-                  )
+              const matchesSearch = targetNames.some((name) =>
+                t(selectedCategory, name)
+                  .toLowerCase()
+                  .includes(searchValue.toLowerCase())
               );
 
-              return matchesSearch && hasPieceMatchingFilter;
-            }
+              if (
+                isArmourSet(item) &&
+                Object.values(pieceTypeFilters).some((v) => !v)
+              ) {
+                const hasPieceMatchingFilter = item.items?.some(
+                  (part) =>
+                    pieceTypeFilters[part.pieceType as keyof ArmorFilter] ||
+                    part.children?.some(
+                      (child) =>
+                        pieceTypeFilters[child.pieceType as keyof ArmorFilter]
+                    )
+                );
 
-            return matchesSearch;
-          });
+                return matchesSearch && hasPieceMatchingFilter;
+              }
+
+              return matchesSearch;
+            });
 
           if (filteredItems.length === 0) return null;
 
@@ -295,7 +305,12 @@ export default function ItemsGrid({
                                     : ""
                                 }
                               >
-                                <Flex vertical justify="center" align="center">
+                                <Flex
+                                  vertical
+                                  justify="center"
+                                  align="center"
+                                  className={item.dlc ? dlcStyle : ""}
+                                >
                                   <Image
                                     placeholder={spin}
                                     className={
@@ -388,7 +403,12 @@ export default function ItemsGrid({
                                 : ""
                             }
                           >
-                            <Flex vertical justify="center" align="center">
+                            <Flex
+                              vertical
+                              justify="center"
+                              align="center"
+                              className={version.dlc ? dlcStyle : ""}
+                            >
                               <Image
                                 placeholder={spin}
                                 className={
@@ -464,7 +484,12 @@ export default function ItemsGrid({
                           spoilers && !item.collected ? styles.blockSpoiler : ""
                         }
                       >
-                        <Flex vertical justify="center" align="center">
+                        <Flex
+                          vertical
+                          justify="center"
+                          align="center"
+                          className={item.dlc ? dlcStyle : ""}
+                        >
                           <Image
                             placeholder={spin}
                             className={

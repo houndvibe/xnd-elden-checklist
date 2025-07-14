@@ -280,7 +280,7 @@ export const pieces: ArmourItem[] = [
     pieceType: "helm",
     name: "Crucible Hammer Helm",
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Crucible+Hammer+Helm",
+    link: "https://eldenring.wiki.fextralife.com/Crucible+Hammer-Helm",
     dlc: true,
   },
   {

@@ -5,6 +5,7 @@ import { t } from "../../i18n";
 
 import styles from "./CategorySidebar.module.scss";
 import { APP_PALETTE } from "../../lib/consts";
+import { useAppSelector } from "../../store/typedDispatch";
 
 interface CategorySidebarProps {
   categories: ItemCategory[];
@@ -17,36 +18,41 @@ export default function CategorySidebar({
   selectedCategory,
   onCategorySelect,
 }: CategorySidebarProps) {
+  const checkedCategories = useAppSelector(
+    (state) => state.settings.checkedCategories
+  );
   return (
     <div className={styles.sidebar}>
       <Flex vertical gap={8}>
-        {categories.map((category) => (
-          <ConfigProvider
-            theme={{
-              components: {
-                Button: {
-                  colorPrimary: APP_PALETTE.successGreen,
-                  colorPrimaryText: APP_PALETTE.bgDark,
-                  colorPrimaryHover: APP_PALETTE.successGreen,
-                  colorPrimaryActive: APP_PALETTE.bgDark,
+        {categories
+          .filter((cat) => checkedCategories.includes(cat))
+          .map((category) => (
+            <ConfigProvider
+              theme={{
+                components: {
+                  Button: {
+                    colorPrimary: APP_PALETTE.successGreen,
+                    colorPrimaryText: APP_PALETTE.bgDark,
+                    colorPrimaryHover: APP_PALETTE.successGreen,
+                    colorPrimaryActive: APP_PALETTE.bgDark,
+                  },
                 },
-              },
-            }}
-          >
-            <Button
-              key={category}
-              type={selectedCategory === category ? "primary" : "default"}
-              size="middle"
-              className={styles.categoryButton}
-              onClick={() => onCategorySelect(category)}
-              style={{ maxWidth: 250 }}
+              }}
             >
-              <span className={styles.text}>
-                {t("misc", transformCategoryToName(category))}
-              </span>
-            </Button>
-          </ConfigProvider>
-        ))}
+              <Button
+                key={category}
+                type={selectedCategory === category ? "primary" : "default"}
+                size="middle"
+                className={styles.categoryButton}
+                onClick={() => onCategorySelect(category)}
+                style={{ maxWidth: 250 }}
+              >
+                <span className={styles.text}>
+                  {t("misc", transformCategoryToName(category))}
+                </span>
+              </Button>
+            </ConfigProvider>
+          ))}
       </Flex>
     </div>
   );

@@ -53,8 +53,6 @@ export default function Header() {
     setIsHelpModalOpen(false);
   };
 
-  console.log(location.pathname);
-
   return (
     <AppHeader className={styles.header}>
       <div className={styles.wrapper}>

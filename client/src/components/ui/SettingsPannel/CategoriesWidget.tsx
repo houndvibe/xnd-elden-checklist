@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Checkbox, Col, Row, Button, Flex } from "antd";
 import { CaretUpOutlined, CaretDownOutlined } from "@ant-design/icons";
 
@@ -6,21 +6,34 @@ import { t } from "../../../i18n";
 import { toTitleCaseFromCamel, trimDataSuffix } from "../../../lib/utils/misc";
 import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
 import {
-  toggleCategoryChecked,
   toggleCategoryOpen,
-  toggleSubcategoryChecked,
   setAllCategoriesChecked,
   setAllSubcategoriesChecked,
   setCheckDlc,
 } from "../../../store/settingsSlice";
+import { useNavigate } from "react-router-dom";
 
 export default function CategoriesWidget() {
   const [allOpen, setAllOpen] = useState(false);
-
+  const navigate = useNavigate();
   const cllection = useAppSelector((state) => state.collection.collectionData);
   const dispatch = useAppDispatch();
   const { checkedCategories, checkedSubcategories, openCategories, checkDlc } =
     useAppSelector((s) => s.settings);
+
+  const [localCheckedCategories, setLocalCheckedCategories] = useState<
+    string[]
+  >([]);
+  const [localCheckedSubcategories, setLocalCheckedSubcategories] = useState<
+    string[]
+  >([]);
+  const [localCheckDlc, setLocalCheckDlc] = useState(false);
+
+  useEffect(() => {
+    setLocalCheckedCategories(checkedCategories);
+    setLocalCheckedSubcategories(checkedSubcategories);
+    setLocalCheckDlc(checkDlc);
+  }, [checkedCategories, checkedSubcategories, checkDlc]);
 
   const categories = Object.entries(cllection);
   const chunkSize = 6;
@@ -37,14 +50,53 @@ export default function CategoriesWidget() {
       Object.keys(subcats)
     );
 
-    dispatch(setAllCategoriesChecked(allCategories));
-    dispatch(setAllSubcategoriesChecked(allSubcategories));
+    setLocalCheckedCategories(allCategories);
+    setLocalCheckedSubcategories(allSubcategories);
   };
 
   const handleSelectNone = () => {
-    dispatch(setAllCategoriesChecked([]));
-    dispatch(setAllSubcategoriesChecked([]));
+    setLocalCheckedCategories([]);
+    setLocalCheckedSubcategories([]);
   };
+
+  const toggleLocalCategory = (category: string, subkeys: string[]) => {
+    const trimmed = trimDataSuffix(category);
+    const isChecked = localCheckedCategories.includes(trimmed);
+    if (isChecked) {
+      setLocalCheckedCategories((prev) => prev.filter((c) => c !== trimmed));
+      setLocalCheckedSubcategories((prev) =>
+        prev.filter((s) => !subkeys.includes(s))
+      );
+    } else {
+      setLocalCheckedCategories((prev) => [...prev, trimmed]);
+      setLocalCheckedSubcategories((prev) => [
+        ...new Set([...prev, ...subkeys]),
+      ]);
+    }
+  };
+
+  const toggleLocalSubcategory = (subcategory: string) => {
+    const isChecked = localCheckedSubcategories.includes(subcategory);
+    setLocalCheckedSubcategories((prev) =>
+      isChecked ? prev.filter((s) => s !== subcategory) : [...prev, subcategory]
+    );
+  };
+
+  const handleSave = () => {
+    if (localCheckDlc !== checkDlc) {
+      dispatch(setCheckDlc());
+    }
+    dispatch(setAllCategoriesChecked(localCheckedCategories));
+    dispatch(setAllSubcategoriesChecked(localCheckedSubcategories));
+    navigate("/");
+  };
+
+  const isUnchanged =
+    localCheckDlc === checkDlc &&
+    JSON.stringify(localCheckedCategories) ===
+      JSON.stringify(checkedCategories) &&
+    JSON.stringify(localCheckedSubcategories) ===
+      JSON.stringify(checkedSubcategories);
 
   return (
     <>
@@ -75,9 +127,17 @@ export default function CategoriesWidget() {
             {t("misc", "Uncheck all")}
           </Button>
           |
-          <Checkbox checked={checkDlc} onChange={() => dispatch(setCheckDlc())}>
-            {t("misc", "DLC")}
-          </Checkbox>
+          <Flex align="center" gap={8}>
+            <Checkbox
+              checked={localCheckDlc}
+              onChange={(e) => setLocalCheckDlc(e.target.checked)}
+            >
+              {t("misc", "DLC")}
+            </Checkbox>
+            <Button size="small" onClick={handleSave} disabled={isUnchanged}>
+              {t("misc", "Save")}
+            </Button>
+          </Flex>
         </Flex>
       </div>
 
@@ -87,7 +147,8 @@ export default function CategoriesWidget() {
             <Col key={colIndex}>
               {chunk.map(([category, subcats]) => {
                 const trimmedCategory = trimDataSuffix(category);
-                const isChecked = checkedCategories.includes(trimmedCategory);
+                const isChecked =
+                  localCheckedCategories.includes(trimmedCategory);
                 const isOpen = openCategories.includes(category);
                 const subkeys = Object.keys(subcats);
 
@@ -104,9 +165,7 @@ export default function CategoriesWidget() {
                     >
                       <Checkbox
                         checked={isChecked}
-                        onChange={() =>
-                          dispatch(toggleCategoryChecked({ category, subkeys }))
-                        }
+                        onChange={() => toggleLocalCategory(category, subkeys)}
                       />
                       <span
                         onClick={() => dispatch(toggleCategoryOpen(category))}
@@ -130,10 +189,8 @@ export default function CategoriesWidget() {
                         {subkeys.map((sub) => (
                           <Checkbox
                             key={sub}
-                            checked={checkedSubcategories.includes(sub)}
-                            onChange={() =>
-                              dispatch(toggleSubcategoryChecked(sub))
-                            }
+                            checked={localCheckedSubcategories.includes(sub)}
+                            onChange={() => toggleLocalSubcategory(sub)}
                           >
                             {t("misc", toTitleCaseFromCamel(sub))}
                           </Checkbox>

@@ -27,30 +27,34 @@ interface CustomTabItem {
   children: React.ReactNode;
 }
 
-const createItemTabs = (): CustomTabItem[] =>
-  itemCategories.map((category) => ({
-    key: category,
-    label: t("misc", transformCategoryToName(category)),
-    children: <CategoryTab category={category} />,
-  }));
-
-const baseTabs: CustomTabItem[] = [
-  { key: "dashboard", label: t("misc", "PROGRESS"), children: <Dashboard /> },
-  {
-    key: "discoveryCalculator",
-    label: t("misc", "Discovery Calculator"),
-    children: <DiscoveryCalculator />,
-  },
-  {
-    key: "checkpoints",
-    label: t("misc", "Checkpoints"),
-    children: <Checkpoints />,
-  },
-];
-
-const itemTabs: CustomTabItem[] = createItemTabs();
-
 export default function Tabs() {
+  const { checkedCategories } = useAppSelector((state) => state.settings);
+
+  const createItemTabs = (): CustomTabItem[] =>
+    itemCategories
+      .filter((category) => checkedCategories.includes(category))
+      .map((category) => ({
+        key: category,
+        label: t("misc", transformCategoryToName(category)),
+        children: <CategoryTab category={category} />,
+      }));
+
+  const baseTabs: CustomTabItem[] = [
+    { key: "dashboard", label: t("misc", "PROGRESS"), children: <Dashboard /> },
+    {
+      key: "discoveryCalculator",
+      label: t("misc", "Discovery Calculator"),
+      children: <DiscoveryCalculator />,
+    },
+    {
+      key: "checkpoints",
+      label: t("misc", "Checkpoints"),
+      children: <Checkpoints />,
+    },
+  ];
+
+  const itemTabs: CustomTabItem[] = createItemTabs();
+
   const navigate = useNavigate();
   const { tabKey } = useParams<{ tabKey?: string }>();
   const fastcheck = useAppSelector((state) => state.settings.fastcheck);
