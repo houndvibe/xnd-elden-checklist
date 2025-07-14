@@ -129,19 +129,21 @@ export const isArmourSet = (item: Item | undefined): item is ArmourSet => {
 };
 
 // Улучшенная функция форматирования даты с проверкой на валидность
-export function formatDate(date: Date | string | number | null | undefined): string {
+export function formatDate(
+  date: Date | string | number | null | undefined
+): string {
   // Проверяем, что дата существует
   if (!date) return "";
-  
+
   // Преобразуем строку или число в объект Date, если необходимо
   const dateObj = date instanceof Date ? date : new Date(date);
-  
+
   // Проверяем, что дата валидна
   if (isNaN(dateObj.getTime())) {
     console.warn("Invalid date value:", date);
     return "";
   }
-  
+
   // Форматируем дату
   return new Intl.DateTimeFormat("default", {
     year: "numeric",
@@ -150,4 +152,7 @@ export function formatDate(date: Date | string | number | null | undefined): str
     hour: "2-digit",
     minute: "2-digit",
   }).format(dateObj);
+}
+export function trimDataSuffix(label: string): string {
+  return label.endsWith("Data") ? label.slice(0, -4) : label;
 }

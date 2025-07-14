@@ -11,6 +11,7 @@ import ImportCollectionWidget from "./ImportCollectionWidget";
 import LangWidget from "./LangWidget";
 import { t } from "../../../i18n";
 import ClearProgressWidget from "./ClearProgressWidget";
+import CategoriesWidget from "./CategoriesWidget";
 
 export default function SettingsPannel() {
   const dispatch = useAppDispatch();
@@ -74,6 +75,10 @@ export default function SettingsPannel() {
         <ImportCollectionWidget />
         <span>|</span>
         <ClearProgressWidget />
+      </Flex>
+      <Divider size="small" />
+      <Flex>
+        <CategoriesWidget />
       </Flex>
 
       <Divider size="small" />
