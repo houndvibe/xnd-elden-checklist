@@ -428,7 +428,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
     name: "Eccentric Set",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Eccentric+Set",
-    dlc: true,
+    dlc: false,
     items: [
       {
         type: "armour",
@@ -437,7 +437,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
         name: "Eccentric's Armor",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Eccentric's+Armor",
-        dlc: true,
+        dlc: false,
       },
       {
         type: "armour",
@@ -446,7 +446,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
         name: "Eccentric's Hood",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Eccentric's+Hood",
-        dlc: true,
+        dlc: false,
         children: [
           {
             type: "armour",
@@ -466,7 +466,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
         name: "Eccentric's Manchettes",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Eccentric's+Manchettes",
-        dlc: true,
+        dlc: false,
       },
       {
         type: "armour",
@@ -475,7 +475,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
         name: "Eccentric's Breeches",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Eccentric's+Breeches",
-        dlc: true,
+        dlc: false,
       },
     ],
   },

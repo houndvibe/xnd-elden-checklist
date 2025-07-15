@@ -658,4 +658,33 @@ export const commonfolkAndWanderers: ArmourSet[] = [
       },
     ],
   },
+  {
+    type: "armour",
+    subcategory: "commonfolkAndWanderers",
+    pieceType: "set",
+    name: "Albinauric Set",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Albinauric+Set",
+    dlc: false,
+    items: [
+      {
+        type: "armour",
+        subcategory: "commonfolkAndWanderers",
+        pieceType: "chest",
+        name: "Dirty Chainmail",
+        collected: false,
+        link: "https://eldenring.wiki.fextralife.com/Dirty+Chainmail",
+        dlc: false,
+      },
+      {
+        type: "armour",
+        subcategory: "commonfolkAndWanderers",
+        pieceType: "chest",
+        name: "Albinauric Mask",
+        collected: false,
+        link: "https://eldenring.wiki.fextralife.com/Albinauric+Mask",
+        dlc: false,
+      },
+    ],
+  },
 ];
