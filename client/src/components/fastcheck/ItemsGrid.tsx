@@ -10,7 +10,7 @@ import {
   isArmourSet,
   isMultiVersionTalisman,
   toTitleCaseFromCamel,
-  truncateString,
+  /*   truncateString, */
 } from "../../lib/utils/misc";
 import { useAppDispatch, useAppSelector } from "../../store/typedDispatch";
 import { getStoreAction } from "../../store/actions";
@@ -20,10 +20,10 @@ import { getSubCategoryStats } from "../../lib/utils/stats";
 import {
   APP_PALETTE,
   exceptionalSubcategories,
-  FASTCHECK_SIZE_L,
-  FASTCHECK_SIZE_M,
   FASTCHECK_SIZE_S,
-  FASTCHECK_SIZE_XL,
+  /*   FASTCHECK_SIZE_L,
+  FASTCHECK_SIZE_M,
+  FASTCHECK_SIZE_XL, */
 } from "../../lib/consts";
 import { t } from "../../i18n";
 import { useNavigate } from "react-router-dom";
@@ -93,25 +93,36 @@ export default function ItemsGrid({
   );
 
   const getNameBlock = (name: string, collected: boolean) => {
-    const getTruncSize = () => {
+    /*     const getTruncSize = () => {
       switch (imgSize) {
         case FASTCHECK_SIZE_S:
           return 5;
         case FASTCHECK_SIZE_M:
-          return 9;
+          return 12;
         case FASTCHECK_SIZE_L:
-          return 14;
+          return 19;
         case FASTCHECK_SIZE_XL:
-          return 24;
+          return 33;
         default:
           return 10;
       }
-    };
+    }; */
     return showFCNames && imgSize > 40 ? (
       <>
         <Divider size="small" />
-        <span style={collected ? { color: APP_PALETTE.textPrimary } : {}}>
-          {truncateString(t(selectedCategory, name), getTruncSize())}
+        <span
+          style={
+            collected
+              ? {
+                  color: APP_PALETTE.textPrimary,
+                  fontSize: 15,
+                  textAlign: "center",
+                }
+              : { fontSize: 15, textAlign: "center" }
+          }
+        >
+          {/*   {truncateString(t(selectedCategory, name), getTruncSize())} */}
+          {t(selectedCategory, name)}
         </span>
         <Divider size="small" />
       </>
