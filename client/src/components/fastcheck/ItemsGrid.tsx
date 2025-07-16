@@ -40,6 +40,8 @@ interface ItemsGridProps {
   pieceTypeFilters: ArmorFilter;
 }
 
+const mouseEnterDelay = 1.4;
+
 const sanitize = (str: string) => str.replace(/:|"/g, "");
 
 const getImageUrl = (
@@ -92,7 +94,7 @@ export default function ItemsGrid({
     </Flex>
   );
 
-  const getNameBlock = (name: string, collected: boolean) => {
+  const getNameBlock = (name: string, collected: boolean, link: string) => {
     /*     const getTruncSize = () => {
       switch (imgSize) {
         case FASTCHECK_SIZE_S:
@@ -110,20 +112,16 @@ export default function ItemsGrid({
     return showFCNames && imgSize > 40 ? (
       <>
         <Divider size="small" />
-        <span
-          style={
-            collected
-              ? {
-                  color: APP_PALETTE.textPrimary,
-                  fontSize: 15,
-                  textAlign: "center",
-                }
-              : { fontSize: 15, textAlign: "center" }
-          }
-        >
-          {/*   {truncateString(t(selectedCategory, name), getTruncSize())} */}
-          {t(selectedCategory, name)}
-        </span>
+        <Link href={link} className={styles.lnk}>
+          <span
+            className={`${styles.linkText} ${
+              collected ? styles.collected : ""
+            }`}
+          >
+            {t(selectedCategory, name)}
+          </span>
+        </Link>
+
         <Divider size="small" />
       </>
     ) : (
@@ -284,7 +282,7 @@ export default function ItemsGrid({
                                 },
                               }}
                               key={variantName}
-                              mouseEnterDelay={0.5}
+                              mouseEnterDelay={mouseEnterDelay}
                               content={
                                 isTablet ? null : (
                                   <Flex vertical gap={10} align="center">
@@ -350,7 +348,8 @@ export default function ItemsGrid({
                                   />
                                   {getNameBlock(
                                     translatedName,
-                                    variant.collected
+                                    variant.collected,
+                                    variant.link
                                   )}
                                 </Flex>
                               </div>
@@ -383,7 +382,7 @@ export default function ItemsGrid({
                               },
                             }}
                             key={versionName}
-                            mouseEnterDelay={0.5}
+                            mouseEnterDelay={mouseEnterDelay}
                             content={
                               isTablet ? null : (
                                 <Flex vertical gap={10} align="center">
@@ -450,7 +449,11 @@ export default function ItemsGrid({
                                     );
                                   }}
                                 />
-                                {getNameBlock(displayName, version.collected)}
+                                {getNameBlock(
+                                  displayName,
+                                  version.collected,
+                                  link
+                                )}
                               </Flex>
                             </div>
                           </Popover>
@@ -468,7 +471,7 @@ export default function ItemsGrid({
                         },
                       }}
                       key={item.name}
-                      mouseEnterDelay={0.5}
+                      mouseEnterDelay={mouseEnterDelay}
                       content={
                         isTablet ? null : (
                           <Flex vertical gap={10} align="center">
@@ -526,7 +529,7 @@ export default function ItemsGrid({
                               });
                             }}
                           />
-                          {getNameBlock(item.name, item.collected)}
+                          {getNameBlock(item.name, item.collected, item.link)}
                         </Flex>
                       </div>
                     </Popover>

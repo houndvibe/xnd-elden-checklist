@@ -361,6 +361,17 @@ export const gestures: GestureOrMultiplayerItem[] = [
     dlc: false,
     imgUrl: "./images/gestures/Outer Order.png",
   },
+
+  {
+    type: "gesturesAndMultiplayer",
+    name: "Golden Order Totality",
+    subcategory: "gestures",
+    description: "",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Gestures",
+    dlc: false,
+    imgUrl: "./images/gestures/Golden Order Totality.png",
+  },
   {
     type: "gesturesAndMultiplayer",
     name: "Extreme Repentance",

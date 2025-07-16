@@ -47,9 +47,7 @@ export const flameLightning: AshOfWarItem[] = [
     subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+Skewer",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_flame_skewer_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",
@@ -57,9 +55,7 @@ export const flameLightning: AshOfWarItem[] = [
     subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+Spear",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_flame_spear_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",
@@ -83,9 +79,7 @@ export const flameLightning: AshOfWarItem[] = [
     subcategory: "flameLightning",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Blinkbolt",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_blinkbolt_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",

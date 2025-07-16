@@ -40,8 +40,6 @@ export const magic: AshOfWarItem[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Sovereignty",
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_carian_sovereignty_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
   {
     type: "ashesOfWar",
@@ -66,8 +64,6 @@ export const magic: AshOfWarItem[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Gravitas",
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_gravitas_elden_ring_wiki_guide_200.png",
   },
   {
     type: "ashesOfWar",
@@ -75,9 +71,7 @@ export const magic: AshOfWarItem[] = [
     subcategory: "magic",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Spinning+Gravity+Thrust",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spinning_gravity_thrust_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",

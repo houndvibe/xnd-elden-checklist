@@ -193,3 +193,19 @@
   align-items: center;
   gap: 10px;
 }
+
+.linkText {
+  font-size: 15px !important;
+
+  &:hover {
+    color: $link-color;
+  }
+}
+.lnk {
+  line-height: 1em;
+  text-align: center;
+}
+
+.collected {
+  color: $text-highlighted;
+}

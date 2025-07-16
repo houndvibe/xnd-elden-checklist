@@ -71,9 +71,7 @@ export const noAffinityShield: AshOfWarItem[] = [
     subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Shield+Strike",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_shield_strike_3_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",

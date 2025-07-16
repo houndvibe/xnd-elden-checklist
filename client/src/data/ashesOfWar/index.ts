@@ -19,8 +19,8 @@ export const ashesOfWarData: AshesOfWarSubCategoryMap = {
   flameLightning,
   sacred,
   poisonBloodCold,
-  noAffinityHandToHandAndPerfume,
+  occult,
   noAffinityRanged,
   noAffinityShield,
-  occult,
+  noAffinityHandToHandAndPerfume,
 };

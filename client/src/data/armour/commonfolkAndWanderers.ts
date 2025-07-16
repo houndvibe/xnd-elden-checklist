@@ -152,7 +152,7 @@ export const commonfolkAndWanderers: ArmourSet[] = [
         pieceType: "chest",
         name: "Aristocrat Garb",
         collected: false,
-        link: "https://eldenring.wiki.fextralife.com/Aristocrat's+Garb",
+        link: "https://eldenring.wiki.fextralife.com/Aristocrat+Garb",
         dlc: false,
         children: [
           {
@@ -161,7 +161,7 @@ export const commonfolkAndWanderers: ArmourSet[] = [
             pieceType: "chest",
             name: "Aristocrat Garb (Altered)",
             collected: false,
-            link: "https://eldenring.wiki.fextralife.com/Aristocrat's+Garb+(Altered)",
+            link: "https://eldenring.wiki.fextralife.com/Aristocrat+Garb+(Altered)",
             dlc: false,
           },
         ],

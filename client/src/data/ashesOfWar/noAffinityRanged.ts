@@ -23,9 +23,7 @@ export const noAffinityRanged: AshOfWarItem[] = [
     subcategory: "noAffinityRanged",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Igon's+Drake+Hunt",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_igons_drake_hunt_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",
