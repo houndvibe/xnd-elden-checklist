@@ -19,6 +19,7 @@ import {
   transformCategoryToName,
 } from "../../../lib/utils/misc";
 import { t } from "../../../i18n";
+import { DLC_ONLY_SUBCATEGORIES } from "../../../lib/consts";
 
 interface Props {
   category: ItemCategory;
@@ -39,9 +40,13 @@ export default function CategoryTab({ category }: Props) {
   );
 
   const filteredData: Partial<ItemSubCategoryMap> = Object.fromEntries(
-    Object.entries(data).filter(([subcategory]) =>
-      checkedSubcategories.includes(subcategory)
-    )
+    Object.entries(data)
+      .filter(([subcategory]) => checkedSubcategories.includes(subcategory))
+      .filter(([subcategory]) =>
+        checkDlc
+          ? subcategory
+          : !DLC_ONLY_SUBCATEGORIES.includes(subcategory as ItemSubCategory)
+      )
   );
 
   const activeKeys = useMemo(() => {

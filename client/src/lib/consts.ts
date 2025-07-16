@@ -188,3 +188,18 @@ export const FASTCHECK_SIZE_S = 40;
 export const FASTCHECK_SIZE_M = 95;
 export const FASTCHECK_SIZE_L = 140;
 export const FASTCHECK_SIZE_XL = 210;
+
+export const DLC_ONLY_SUBCATEGORIES: ItemSubCategory[] = [
+  "thrustingShields",
+  "messmer",
+  "miquella",
+  "shadowRealm",
+  "noAffinityHandToHandAndPerfume",
+  "throwingBlades",
+  "lightGreatswords",
+  "backhandBlades",
+  "greatKatanas",
+  "handToHand",
+  "beastClaws",
+  "perfumeBottles",
+];
