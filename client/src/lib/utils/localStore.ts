@@ -36,7 +36,7 @@ function filterCollectedDataMinimal(
           const tryAdd = (name: string, extra?: object) => {
             if (!seenNames.has(name)) {
               seenNames.add(name);
-              output.push({ name, collected: true, ...extra });
+              output.push({ name, collected: extra ? false : true, ...extra });
             }
           };
 
@@ -72,10 +72,11 @@ function filterCollectedDataMinimal(
             if (collectedVersions.length === item.versions.length) {
               tryAdd(item.name);
             } else {
-              collectedVersions.forEach((v) =>
-                tryAdd(item.name, { tier: v.tier })
-              );
+              tryAdd(item.name, {
+                tiers: collectedVersions.map((i) => i.tier),
+              });
             }
+
             return output;
           }
 
@@ -167,11 +168,13 @@ function applyMinimalCollectedFlags(
           match.collected = true;
 
           if ("versions" in match && Array.isArray(match.versions)) {
-            if ("tier" in savedItem) {
-              const version = match.versions.find(
-                (v) => v.tier === savedItem.tier
-              );
-              if (version) version.collected = true;
+            if ("tiers" in savedItem) {
+              match.collected = false;
+              match.versions.forEach((v) => {
+                if (savedItem.tiers.includes(v.tier)) {
+                  v.collected = true;
+                }
+              });
             } else {
               match.versions.forEach((v) => (v.collected = true));
             }

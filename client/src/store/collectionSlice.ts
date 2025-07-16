@@ -99,7 +99,6 @@ export const collectionSlice = createSlice({
         const version = talisman.versions.find((v) => v.tier === tier);
         if (version) {
           version.collected = !version.collected;
-
           talisman.collected = talisman.versions.every((v) => v.collected);
         }
       } else {
