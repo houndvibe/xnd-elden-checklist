@@ -10,6 +10,7 @@ import {
   setAllCategoriesChecked,
   setAllSubcategoriesChecked,
   setCheckDlc,
+  setAltArmor,
 } from "../../../store/settingsSlice";
 import { useNavigate } from "react-router-dom";
 
@@ -18,8 +19,13 @@ export default function CategoriesWidget() {
   const navigate = useNavigate();
   const cllection = useAppSelector((state) => state.collection.collectionData);
   const dispatch = useAppDispatch();
-  const { checkedCategories, checkedSubcategories, openCategories, checkDlc } =
-    useAppSelector((s) => s.settings);
+  const {
+    checkedCategories,
+    checkedSubcategories,
+    openCategories,
+    checkDlc,
+    altArmor,
+  } = useAppSelector((s) => s.settings);
 
   const [localCheckedCategories, setLocalCheckedCategories] = useState<
     string[]
@@ -28,12 +34,14 @@ export default function CategoriesWidget() {
     string[]
   >([]);
   const [localCheckDlc, setLocalCheckDlc] = useState(false);
+  const [localAltArmor, setLocalAltArmor] = useState(true);
 
   useEffect(() => {
     setLocalCheckedCategories(checkedCategories);
     setLocalCheckedSubcategories(checkedSubcategories);
     setLocalCheckDlc(checkDlc);
-  }, [checkedCategories, checkedSubcategories, checkDlc]);
+    setLocalAltArmor(altArmor);
+  }, [checkedCategories, checkedSubcategories, checkDlc, altArmor]);
 
   const categories = Object.entries(cllection);
   const chunkSize = 6;
@@ -86,6 +94,9 @@ export default function CategoriesWidget() {
     if (localCheckDlc !== checkDlc) {
       dispatch(setCheckDlc());
     }
+    if (localAltArmor !== altArmor) {
+      dispatch(setAltArmor());
+    }
     dispatch(setAllCategoriesChecked(localCheckedCategories));
     dispatch(setAllSubcategoriesChecked(localCheckedSubcategories));
     navigate("/");
@@ -93,6 +104,7 @@ export default function CategoriesWidget() {
 
   const isUnchanged =
     localCheckDlc === checkDlc &&
+    localAltArmor === altArmor &&
     JSON.stringify(localCheckedCategories) ===
       JSON.stringify(checkedCategories) &&
     JSON.stringify(localCheckedSubcategories) ===
@@ -133,6 +145,12 @@ export default function CategoriesWidget() {
               onChange={(e) => setLocalCheckDlc(e.target.checked)}
             >
               {t("misc", "DLC")}
+            </Checkbox>
+            <Checkbox
+              checked={localAltArmor}
+              onChange={(e) => setLocalAltArmor(e.target.checked)}
+            >
+              {t("misc", "Alt.Armor")}
             </Checkbox>
             <Button size="small" onClick={handleSave} disabled={isUnchanged}>
               {t("misc", "Apply changes")}
