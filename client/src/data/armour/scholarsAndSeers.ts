@@ -478,17 +478,6 @@ export const scholarsAndSeers: ArmourSet[] = [
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Preceptor's+Big+Hat",
         dlc: false,
-        children: [
-          {
-            type: "armour",
-            subcategory: "scholarsAndSeers",
-            pieceType: "helm",
-            name: "Mask Of Confidence",
-            collected: false,
-            link: "https://eldenring.wiki.fextralife.com/Mask+Of+Confidence",
-            dlc: false,
-          },
-        ],
       },
       {
         type: "armour",

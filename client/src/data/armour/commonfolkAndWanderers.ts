@@ -367,7 +367,7 @@ export const commonfolkAndWanderers: ArmourSet[] = [
         pieceType: "chest",
         name: "Guardian Garb (Full Bloom)",
         collected: false,
-        link: "https://eldenring.wiki.fextralife.com/Guardian+Garb+(Fool+Bloom)",
+        link: "https://eldenring.wiki.fextralife.com/Guardian+Garb+(Full+Bloom)",
         dlc: false,
       },
       {
@@ -629,15 +629,7 @@ export const commonfolkAndWanderers: ArmourSet[] = [
         link: "https://eldenring.wiki.fextralife.com/Mushroom+Head",
         dlc: false,
       },
-      {
-        type: "armour",
-        subcategory: "commonfolkAndWanderers",
-        pieceType: "helm",
-        name: "Mushroom Crown",
-        collected: false,
-        link: "https://eldenring.wiki.fextralife.com/Mushroom+Crown",
-        dlc: false,
-      },
+
       {
         type: "armour",
         subcategory: "commonfolkAndWanderers",

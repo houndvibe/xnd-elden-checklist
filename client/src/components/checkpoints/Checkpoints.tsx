@@ -306,7 +306,7 @@ export default function Checkpoints() {
             </ResponsiveContainer>
           </Tabs.TabPane>
 
-          <Tabs.TabPane tab={t("misc", "Items Count")} key="items">
+          {/*           <Tabs.TabPane tab={t("misc", "Items Count")} key="items">
             <ResponsiveContainer width="100%" height={600}>
               <LineChart data={fullChartData}>
                 <CartesianGrid strokeDasharray="3 3" />
@@ -400,7 +400,7 @@ export default function Checkpoints() {
               </LineChart>
             </ResponsiveContainer>
           </Tabs.TabPane>
-
+ */}
           <Tabs.TabPane tab={t("misc", "Completion %")} key="percentage">
             <ResponsiveContainer width="100%" height={600}>
               <LineChart data={fullChartData}>

@@ -133,7 +133,11 @@ export default function ItemsGrid({
     <div className={styles.itemsGridWrapper}>
       {(Object.entries(categoryData) as [string, Item[]][]).map(
         ([subcategoryName, items]) => {
-          const filteredItems = items
+          const sorted = [...items].sort(
+            (a, b) => Number(a.dlc) - Number(b.dlc)
+          );
+          const filteredItems = sorted
+            .sort((a, b) => Number(a.dlc) - Number(b.dlc))
             .filter((item) => (checkDlc ? item : !item.dlc))
             .filter(() => checkedSubcategories.includes(subcategoryName))
             .filter((item) => {
