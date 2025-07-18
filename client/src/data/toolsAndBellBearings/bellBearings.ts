@@ -469,7 +469,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     name: "Herbalist's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Herbalist%27s%2BBell%2BBearing",
-    dlc: false,
+    dlc: true,
     imgUrl: "./images/toolsAndBellBearings/bellBearings/DlcBellBearing.png",
   },
   {
@@ -477,8 +477,8 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     subcategory: "bellBearings",
     name: "[1] Mushroom-Seller's Bell Bearing",
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Mushroom-Seller%27s%2BBell%2BBearing%2B%5B1%5D",
-    dlc: false,
+    link: "https://eldenring.wiki.fextralife.com/Mushroom-Seller's+Bell+Bearing+(1)",
+    dlc: true,
     imgUrl: "./images/toolsAndBellBearings/bellBearings/DlcBellBearing.png",
   },
   {
@@ -487,7 +487,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     name: "[2] Mushroom-Seller's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mushroom-Seller%27s%2BBell%2BBearing%2B%5B2%5D",
-    dlc: false,
+    dlc: true,
     imgUrl: "./images/toolsAndBellBearings/bellBearings/DlcBellBearing.png",
   },
   {
@@ -495,8 +495,8 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     subcategory: "bellBearings",
     name: "Moldmonger's Bell Bearing",
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Bell%2BBearing%2B%5B2%5D%2BMoldmonger%27s%2BBell%2BBearing",
-    dlc: false,
+    link: "https://eldenring.wiki.fextralife.com/Moldmonger's+Bell+Bearing",
+    dlc: true,
     imgUrl:
       "./images/toolsAndBellBearings/bellBearings/Moldmonger's Bell Bearing.png",
   },
@@ -507,7 +507,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     name: "Greasemonger's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Greasemonger%27s%2BBell%2BBearing",
-    dlc: false,
+    dlc: true,
     imgUrl: "./images/toolsAndBellBearings/bellBearings/DlcBellBearing.png",
   },
   {
@@ -516,7 +516,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     name: "String-Seller's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/String-Seller%27s%2BBell%2BBearing",
-    dlc: false,
+    dlc: true,
     imgUrl: "./images/toolsAndBellBearings/bellBearings/DlcBellBearing.png",
   },
   {
@@ -525,7 +525,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     name: "Spellmachinist's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spellmachinist%27s%2BBell%2BBearing",
-    dlc: false,
+    dlc: true,
     imgUrl: "./images/toolsAndBellBearings/bellBearings/MagicBellBearing.png",
   },
   {
@@ -534,7 +534,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     name: "Moore's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Moore%27s%2BBell%2BBearing",
-    dlc: false,
+    dlc: true,
     imgUrl:
       "./images/toolsAndBellBearings/bellBearings/Moore's Bell Bearing.png",
   },
@@ -544,7 +544,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     name: "Ymir's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ymir%27s%2BBell%2BBearing",
-    dlc: false,
+    dlc: true,
     imgUrl:
       "./images/toolsAndBellBearings/bellBearings/Ymir's Bell Bearing.png",
   },
@@ -554,7 +554,7 @@ export const bellBearings: ToolOrBellBearingItems[] = [
     name: "Igon's Bell Bearing",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Igon%27s%2BBell%2BBearing",
-    dlc: false,
+    dlc: true,
     imgUrl:
       "./images/toolsAndBellBearings/bellBearings/Igon's Bell Bearing.png",
   },

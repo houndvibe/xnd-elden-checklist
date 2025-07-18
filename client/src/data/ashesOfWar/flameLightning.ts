@@ -41,22 +41,7 @@ export const flameLightning: AshOfWarItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Black+Flame+Tornado",
     dlc: false,
   },
-  {
-    type: "ashesOfWar",
-    name: "Flame Skewer",
-    subcategory: "flameLightning",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+Skewer",
-    dlc: true,
-  },
-  {
-    type: "ashesOfWar",
-    name: "Flame Spear",
-    subcategory: "flameLightning",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+Spear",
-    dlc: true,
-  },
+
   {
     type: "ashesOfWar",
     name: "Thunderbolt",
@@ -75,6 +60,14 @@ export const flameLightning: AshOfWarItem[] = [
   },
   {
     type: "ashesOfWar",
+    name: "Lightning Ram",
+    subcategory: "flameLightning",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Lightning+Ram",
+    dlc: false,
+  },
+  {
+    type: "ashesOfWar",
     name: "Blinkbolt",
     subcategory: "flameLightning",
     collected: false,
@@ -83,10 +76,18 @@ export const flameLightning: AshOfWarItem[] = [
   },
   {
     type: "ashesOfWar",
-    name: "Lightning Ram",
+    name: "Flame Skewer",
     subcategory: "flameLightning",
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Lightning+Ram",
-    dlc: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+Skewer",
+    dlc: true,
+  },
+  {
+    type: "ashesOfWar",
+    name: "Flame Spear",
+    subcategory: "flameLightning",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+Spear",
+    dlc: true,
   },
 ];

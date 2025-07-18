@@ -67,18 +67,18 @@ export const noAffinityShield: AshOfWarItem[] = [
   },
   {
     type: "ashesOfWar",
-    name: "Shield Strike",
-    subcategory: "noAffinityShield",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Shield+Strike",
-    dlc: true,
-  },
-  {
-    type: "ashesOfWar",
     name: "No Skill",
     subcategory: "noAffinityShield",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+No+Skill",
     dlc: false,
+  },
+  {
+    type: "ashesOfWar",
+    name: "Shield Strike",
+    subcategory: "noAffinityShield",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Shield+Strike",
+    dlc: true,
   },
 ];

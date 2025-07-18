@@ -101,6 +101,14 @@ export const tools: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "tools",
+    name: "Pureblood Knight's Medal",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Pureblood+Knight's+Medal",
+    dlc: false,
+  },
+  {
+    type: "toolsAndBellBearings",
+    subcategory: "tools",
     name: 'Prattling Pate "Hello"',
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Hello%22",
@@ -194,14 +202,7 @@ export const tools: ToolOrBellBearingItems[] = [
     link: "https://eldenring.wiki.fextralife.com/Lamenter's+Mask",
     dlc: true,
   },
-  {
-    type: "toolsAndBellBearings",
-    subcategory: "tools",
-    name: "Pureblood Knight's Medal",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Pureblood+Knight's+Medal",
-    dlc: true,
-  },
+
   {
     type: "toolsAndBellBearings",
     subcategory: "tools",

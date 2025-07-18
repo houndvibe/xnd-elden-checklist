@@ -384,4 +384,13 @@ export const pieces: ArmourItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Eye+Surcoat",
     dlc: false,
   },
+  {
+    type: "armour",
+    subcategory: "pieces",
+    pieceType: "helm",
+    name: "Diallos's Mask",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Diallos's+Mask",
+    dlc: false,
+  },
 ];

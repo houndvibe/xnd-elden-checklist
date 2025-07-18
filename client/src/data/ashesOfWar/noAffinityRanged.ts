@@ -17,14 +17,7 @@ export const noAffinityRanged: AshOfWarItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Through+and+Through",
     dlc: false,
   },
-  {
-    type: "ashesOfWar",
-    name: "Igon's Drake Hunt",
-    subcategory: "noAffinityRanged",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Igon's+Drake+Hunt",
-    dlc: true,
-  },
+
   {
     type: "ashesOfWar",
     name: "Barrage",
@@ -56,5 +49,13 @@ export const noAffinityRanged: AshOfWarItem[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Rain+of+Arrows",
     dlc: false,
+  },
+  {
+    type: "ashesOfWar",
+    name: "Igon's Drake Hunt",
+    subcategory: "noAffinityRanged",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Igon's+Drake+Hunt",
+    dlc: true,
   },
 ];

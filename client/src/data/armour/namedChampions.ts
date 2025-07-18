@@ -279,21 +279,10 @@ export const namedChampions: ArmourSet[] = [
         type: "armour",
         subcategory: "namedChampions",
         pieceType: "helm",
-        name: "Diallos's Helm",
+        name: "Hoslow's Helm",
         collected: false,
-        link: "https://eldenring.wiki.fextralife.com/Diallos's+ Helm",
+        link: "https://eldenring.wiki.fextralife.com/Hoslow's+Helm",
         dlc: false,
-        children: [
-          {
-            type: "armour",
-            subcategory: "namedChampions",
-            pieceType: "helm",
-            name: "Diallos's Mask",
-            collected: false,
-            link: "https://eldenring.wiki.fextralife.com/Diallos's+Mask",
-            dlc: false,
-          },
-        ],
       },
       {
         type: "armour",
