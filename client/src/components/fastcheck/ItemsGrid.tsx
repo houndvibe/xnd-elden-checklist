@@ -70,7 +70,7 @@ export default function ItemsGrid({
   const categoryData = useAppSelector(
     (state) => state.collection.collectionData[`${selectedCategory}Data`]
   );
-  const { checkDlc, checkedSubcategories } = useAppSelector(
+  const { checkDlc, checkedSubcategories, altArmor } = useAppSelector(
     (state) => state.settings
   );
 
@@ -251,7 +251,10 @@ export default function ItemsGrid({
                     return item.items?.flatMap((part) => {
                       if (seenPartNamesForSubcategory.has(part.name)) return [];
                       seenPartNamesForSubcategory.add(part.name);
-                      const allVariants = [part, ...(part.children ?? [])];
+                      const allVariants = [
+                        part,
+                        ...(part.children && altArmor ? part.children : []),
+                      ];
 
                       return allVariants
                         .filter((i) =>
