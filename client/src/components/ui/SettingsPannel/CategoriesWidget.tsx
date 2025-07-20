@@ -99,7 +99,7 @@ export default function CategoriesWidget() {
     }
     dispatch(setAllCategoriesChecked(localCheckedCategories));
     dispatch(setAllSubcategoriesChecked(localCheckedSubcategories));
-    /*   navigate("/"); */
+    navigate(`/`);
   };
 
   const isUnchanged =
