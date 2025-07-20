@@ -4,7 +4,8 @@ type ArmourPieceStat = { name: string; collected: boolean };
 
 export function getItemStats(
   item: Item,
-  countDlc: boolean
+  countDlc: boolean,
+  altArmor: boolean
 ): {
   itemTotal: number;
   itemCollected: number;
@@ -33,6 +34,7 @@ export function getItemStats(
 
       for (const child of part.children ?? []) {
         if (!countDlc && child.dlc) continue;
+        if (!altArmor) continue;
         armourPieces.push({ name: child.name, collected: child.collected });
       }
     }
@@ -50,7 +52,7 @@ export function getItemStats(
   };
 }
 
-function aggregateStats(items: Item[], countDlc: boolean) {
+function aggregateStats(items: Item[], countDlc: boolean, altArmor: boolean) {
   let total = 0;
   let collected = 0;
   const armourPieceMap = new Map<string, boolean>();
@@ -58,7 +60,8 @@ function aggregateStats(items: Item[], countDlc: boolean) {
   for (const item of items) {
     const { itemTotal, itemCollected, armourPieces } = getItemStats(
       item,
-      countDlc
+      countDlc,
+      altArmor
     );
 
     if (item.type === "armour" && armourPieces) {
@@ -88,11 +91,16 @@ function aggregateStats(items: Item[], countDlc: boolean) {
 }
 export function getCategoryStats(
   data: Partial<ItemSubCategoryMap>,
-  countDlc: boolean
+  countDlc: boolean,
+  altArmor: boolean
 ) {
-  return aggregateStats(Object.values(data).flat(), countDlc);
+  return aggregateStats(Object.values(data).flat(), countDlc, altArmor);
 }
 
-export function getSubCategoryStats(items: Item[], countDlc: boolean) {
-  return aggregateStats(items, countDlc);
+export function getSubCategoryStats(
+  items: Item[],
+  countDlc: boolean,
+  altArmor: boolean
+) {
+  return aggregateStats(items, countDlc, altArmor);
 }

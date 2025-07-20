@@ -306,7 +306,7 @@ export const scholarsAndSeers: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "scholarsAndSeers",
-        pieceType: "helm",
+        pieceType: "boots",
         name: "Errant Sorcerer Boots",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Errant+Sorcerer+Boots",

@@ -189,7 +189,8 @@ export default function ItemsGrid({
 
           const { total, collected } = getSubCategoryStats(
             filteredItems,
-            checkDlc
+            checkDlc,
+            altArmor
           );
 
           return (

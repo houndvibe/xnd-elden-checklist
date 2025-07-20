@@ -17,8 +17,12 @@ export default function SubCategoryLabel({
   title,
   data,
 }: SubCategoryLabelProps) {
-  const { checkDlc } = useAppSelector((state) => state.settings);
-  const { total, collected, percentage } = getSubCategoryStats(data, checkDlc);
+  const { checkDlc, altArmor } = useAppSelector((state) => state.settings);
+  const { total, collected, percentage } = getSubCategoryStats(
+    data,
+    checkDlc,
+    altArmor
+  );
 
   const truncateTitle = truncateString(
     title,

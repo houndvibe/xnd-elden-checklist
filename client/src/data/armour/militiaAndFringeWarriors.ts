@@ -737,7 +737,7 @@ export const militiaAndFringeWarriors: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "militiaAndFringeWarriors",
-        pieceType: "chest",
+        pieceType: "helm",
         name: "Champion Headband",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Champion+Headband",

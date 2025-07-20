@@ -22,9 +22,8 @@ export default function Dashboard() {
     (state) => state.collection.collectionData
   );
 
-  const { checkedCategories, checkedSubcategories, checkDlc } = useAppSelector(
-    (state) => state.settings
-  );
+  const { checkedCategories, checkedSubcategories, checkDlc, altArmor } =
+    useAppSelector((state) => state.settings);
 
   const stats = itemCategories
     .filter((type) => checkedCategories.includes(type))
@@ -42,7 +41,7 @@ export default function Dashboard() {
       return {
         type,
         data: filteredData,
-        stats: getCategoryStats(filteredData, checkDlc),
+        stats: getCategoryStats(filteredData, checkDlc, altArmor),
       };
     });
 

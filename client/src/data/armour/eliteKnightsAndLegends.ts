@@ -830,7 +830,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
     name: "Night Set",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Night+Set",
-    dlc: false,
+    dlc: true,
     items: [
       {
         type: "armour",
@@ -839,7 +839,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
         name: "Armor of Night",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Armor+of+Night",
-        dlc: false,
+        dlc: true,
       },
       {
         type: "armour",
@@ -848,7 +848,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
         name: "Helm of Night",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Helm+of+Night",
-        dlc: false,
+        dlc: true,
       },
       {
         type: "armour",
@@ -857,7 +857,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
         name: "Gauntlets of Night",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Gauntlets+of+Night",
-        dlc: false,
+        dlc: true,
       },
       {
         type: "armour",
@@ -866,7 +866,7 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
         name: "Greaves of Night",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Greaves+of+Night",
-        dlc: false,
+        dlc: true,
       },
     ],
   },

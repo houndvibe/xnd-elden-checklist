@@ -61,7 +61,7 @@ export default function Checkpoints() {
   const currentCollection = useAppSelector(
     (state) => state.collection.collectionData
   );
-  const { checkDlc } = useAppSelector((state) => state.settings);
+  const { checkDlc, altArmor } = useAppSelector((state) => state.settings);
 
   // Подготовка данных для графиков
   const chartData = useMemo(() => {
@@ -82,7 +82,7 @@ export default function Checkpoints() {
         const categoryKey =
           `${category}Data` as keyof typeof checkpoint.collectionData;
         const categoryData = checkpoint.collectionData[categoryKey];
-        const stats = getCategoryStats(categoryData, checkDlc);
+        const stats = getCategoryStats(categoryData, checkDlc, altArmor);
         data[category] = stats.collected;
         data[`${category}Percentage`] = stats.percentage;
       });
@@ -95,7 +95,7 @@ export default function Checkpoints() {
         const categoryKey =
           `${category}Data` as keyof typeof checkpoint.collectionData;
         const categoryData = checkpoint.collectionData[categoryKey];
-        const stats = getCategoryStats(categoryData, checkDlc);
+        const stats = getCategoryStats(categoryData, checkDlc, altArmor);
         totalCollected += stats.collected;
         totalItems += stats.total;
       });
@@ -123,7 +123,7 @@ export default function Checkpoints() {
     itemCategories.forEach((category) => {
       const categoryKey = `${category}Data` as keyof typeof currentCollection;
       const categoryData = currentCollection[categoryKey];
-      const stats = getCategoryStats(categoryData, checkDlc);
+      const stats = getCategoryStats(categoryData, checkDlc, altArmor);
       currentData[category] = stats.collected;
       currentData[`${category}Percentage`] = stats.percentage;
     });
@@ -135,7 +135,7 @@ export default function Checkpoints() {
     itemCategories.forEach((category) => {
       const categoryKey = `${category}Data` as keyof typeof currentCollection;
       const categoryData = currentCollection[categoryKey];
-      const stats = getCategoryStats(categoryData, checkDlc);
+      const stats = getCategoryStats(categoryData, checkDlc, altArmor);
       totalCollected += stats.collected;
       totalItems += stats.total;
     });
@@ -181,8 +181,12 @@ export default function Checkpoints() {
       const currentData = currentCollection[categoryKey];
       const checkpointData = checkpoint.collectionData[categoryKey];
 
-      const currentStats = getCategoryStats(currentData, checkDlc);
-      const checkpointStats = getCategoryStats(checkpointData, checkDlc);
+      const currentStats = getCategoryStats(currentData, checkDlc, altArmor);
+      const checkpointStats = getCategoryStats(
+        checkpointData,
+        checkDlc,
+        altArmor
+      );
 
       diffs.push({
         categoryName: t("misc", category),

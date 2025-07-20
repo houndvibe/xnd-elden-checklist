@@ -13,7 +13,7 @@ interface CategoryInfoProps {
 }
 
 export default function CategoryInfo({ items, title }: CategoryInfoProps) {
-  const { checkDlc, checkedSubcategories } = useAppSelector(
+  const { checkDlc, checkedSubcategories, altArmor } = useAppSelector(
     (state) => state.settings
   );
 
@@ -25,7 +25,8 @@ export default function CategoryInfo({ items, title }: CategoryInfoProps) {
 
   const { total, collected, percentage } = getCategoryStats(
     filteredData,
-    checkDlc
+    checkDlc,
+    altArmor
   );
 
   const currentLang = useAppSelector((state) => state.settings.lang);

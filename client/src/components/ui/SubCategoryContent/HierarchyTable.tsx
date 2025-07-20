@@ -40,6 +40,8 @@ export default function Table({
     (state) => state.service
   );
 
+  const { altArmor } = useAppSelector((state) => state.settings);
+
   const [sortStep, setSortStep] = useState(0);
   const [sortColumn, setSortColumn] = useState<string | null>(null);
   const [sortOrder, setSortOrder] = useState<"ascend" | "descend" | null>(null);
@@ -195,7 +197,9 @@ export default function Table({
               <AntdTable
                 expandable={{
                   defaultExpandAllRows: true,
+                  childrenColumnName: altArmor ? undefined : "childEsist",
                 }}
+                indentSize={20}
                 showHeader={false}
                 columns={columns}
                 dataSource={parts}

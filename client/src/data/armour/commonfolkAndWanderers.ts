@@ -671,7 +671,7 @@ export const commonfolkAndWanderers: ArmourSet[] = [
       {
         type: "armour",
         subcategory: "commonfolkAndWanderers",
-        pieceType: "chest",
+        pieceType: "helm",
         name: "Albinauric Mask",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Albinauric+Mask",

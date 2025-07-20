@@ -24,7 +24,7 @@ export default function SubCategoryContent({
 }: Props) {
   const [hoveredItemName, setHoveredItemName] = useState("");
 
-  const { checkDlc } = useAppSelector((state) => state.settings);
+  const { checkDl } = useAppSelector((state) => state.settings);
 
   const dlcFiltered = [...dataSource].filter((item) =>
     checkDlc ? item : !item.dlc
