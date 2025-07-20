@@ -3,7 +3,7 @@ import { ArmourSet } from "../../global-types";
 export const warlords: ArmourSet[] = [
   {
     type: "armour",
-    subcategory: "juggernouts",
+    subcategory: "warlords",
     pieceType: "set",
     name: "Banished Knight Set",
     collected: false,
@@ -12,7 +12,7 @@ export const warlords: ArmourSet[] = [
     items: [
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "chest",
         name: "Banished Knight Armor",
         collected: false,
@@ -21,7 +21,7 @@ export const warlords: ArmourSet[] = [
         children: [
           {
             type: "armour",
-            subcategory: "juggernouts",
+            subcategory: "warlords",
             pieceType: "chest",
             name: "Banished Knight Armor (Altered)",
             collected: false,
@@ -32,7 +32,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "helm",
         name: "Banished Knight Helm",
         collected: false,
@@ -41,7 +41,7 @@ export const warlords: ArmourSet[] = [
         children: [
           {
             type: "armour",
-            subcategory: "juggernouts",
+            subcategory: "warlords",
             pieceType: "helm",
             name: "Banished Knight Helm (Altered)",
             collected: false,
@@ -52,7 +52,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "gloves",
         name: "Banished Knight Gauntlets",
         collected: false,
@@ -61,7 +61,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "boots",
         name: "Banished Knight Greaves",
         collected: false,
@@ -72,7 +72,7 @@ export const warlords: ArmourSet[] = [
   },
   {
     type: "armour",
-    subcategory: "juggernouts",
+    subcategory: "warlords",
     pieceType: "set",
     name: "Night's Cavalry Set",
     collected: false,
@@ -81,7 +81,7 @@ export const warlords: ArmourSet[] = [
     items: [
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "chest",
         name: "Night's Cavalry Armor",
         collected: false,
@@ -90,7 +90,7 @@ export const warlords: ArmourSet[] = [
         children: [
           {
             type: "armour",
-            subcategory: "juggernouts",
+            subcategory: "warlords",
             pieceType: "chest",
             name: "Night's Cavalry Armor (Altered)",
             collected: false,
@@ -101,7 +101,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "helm",
         name: "Night's Cavalry Helm",
         collected: false,
@@ -110,7 +110,7 @@ export const warlords: ArmourSet[] = [
         children: [
           {
             type: "armour",
-            subcategory: "juggernouts",
+            subcategory: "warlords",
             pieceType: "helm",
             name: "Night's Cavalry Helm (Altered)",
             collected: false,
@@ -121,7 +121,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "gloves",
         name: "Night's Cavalry Gauntlets",
         collected: false,
@@ -130,7 +130,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "boots",
         name: "Night's Cavalry Greaves",
         collected: false,
@@ -142,7 +142,7 @@ export const warlords: ArmourSet[] = [
 
   {
     type: "armour",
-    subcategory: "juggernouts",
+    subcategory: "warlords",
     pieceType: "set",
     name: "Solitude Set",
     collected: false,
@@ -151,7 +151,7 @@ export const warlords: ArmourSet[] = [
     items: [
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "chest",
         name: "Armor of Solitude",
         collected: false,
@@ -160,7 +160,7 @@ export const warlords: ArmourSet[] = [
         children: [
           {
             type: "armour",
-            subcategory: "juggernouts",
+            subcategory: "warlords",
             pieceType: "chest",
             name: "Armor of Solitude (Altered)",
             collected: false,
@@ -171,7 +171,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "helm",
         name: "Helm of Solitude",
         collected: false,
@@ -180,7 +180,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "gloves",
         name: "Gauntlets of Solitude",
         collected: false,
@@ -189,7 +189,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "boots",
         name: "Greaves of Solitude",
         collected: false,
@@ -200,7 +200,7 @@ export const warlords: ArmourSet[] = [
   },
   {
     type: "armour",
-    subcategory: "juggernouts",
+    subcategory: "warlords",
     pieceType: "set",
     name: "Veteran's Set",
     collected: false,
@@ -209,7 +209,7 @@ export const warlords: ArmourSet[] = [
     items: [
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "chest",
         name: "Veteran's Armor",
         collected: false,
@@ -218,7 +218,7 @@ export const warlords: ArmourSet[] = [
         children: [
           {
             type: "armour",
-            subcategory: "juggernouts",
+            subcategory: "warlords",
             pieceType: "chest",
             name: "Veteran's Armor (Altered)",
             collected: false,
@@ -229,7 +229,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "helm",
         name: "Veteran's Helm",
         collected: false,
@@ -238,7 +238,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "gloves",
         name: "Veteran's Gauntlets",
         collected: false,
@@ -247,7 +247,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "boots",
         name: "Veteran's Greaves",
         collected: false,
@@ -258,7 +258,7 @@ export const warlords: ArmourSet[] = [
   },
   {
     type: "armour",
-    subcategory: "juggernouts",
+    subcategory: "warlords",
     pieceType: "set",
     name: "Scaled Set",
     collected: false,
@@ -267,7 +267,7 @@ export const warlords: ArmourSet[] = [
     items: [
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "chest",
         name: "Scaled Armor",
         collected: false,
@@ -276,7 +276,7 @@ export const warlords: ArmourSet[] = [
         children: [
           {
             type: "armour",
-            subcategory: "juggernouts",
+            subcategory: "warlords",
             pieceType: "chest",
             name: "Scaled Armor (Altered)",
             collected: false,
@@ -287,7 +287,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "helm",
         name: "Scaled Helm",
         collected: false,
@@ -296,7 +296,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "gloves",
         name: "Scaled Gauntlets",
         collected: false,
@@ -305,7 +305,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "boots",
         name: "Scaled Greaves",
         collected: false,
@@ -316,7 +316,7 @@ export const warlords: ArmourSet[] = [
   },
   {
     type: "armour",
-    subcategory: "juggernouts",
+    subcategory: "warlords",
     pieceType: "set",
     name: "Tree Sentinel Set",
     collected: false,
@@ -325,7 +325,7 @@ export const warlords: ArmourSet[] = [
     items: [
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "chest",
         name: "Tree Sentinel Armor",
         collected: false,
@@ -334,7 +334,7 @@ export const warlords: ArmourSet[] = [
         children: [
           {
             type: "armour",
-            subcategory: "juggernouts",
+            subcategory: "warlords",
             pieceType: "chest",
             name: "Tree Sentinel Armor (Altered)",
             collected: false,
@@ -345,7 +345,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "helm",
         name: "Tree Sentinel Helm",
         collected: false,
@@ -354,7 +354,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "gloves",
         name: "Tree Sentinel Gauntlets",
         collected: false,
@@ -363,7 +363,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "boots",
         name: "Tree Sentinel Greaves",
         collected: false,
@@ -374,7 +374,7 @@ export const warlords: ArmourSet[] = [
   },
   {
     type: "armour",
-    subcategory: "juggernouts",
+    subcategory: "warlords",
     pieceType: "set",
     name: "Malformed Dragon Set",
     collected: false,
@@ -383,7 +383,7 @@ export const warlords: ArmourSet[] = [
     items: [
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "chest",
         name: "Malformed Dragon Armor",
         collected: false,
@@ -392,7 +392,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "helm",
         name: "Malformed Dragon Helm",
         collected: false,
@@ -401,7 +401,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "gloves",
         name: "Malformed Dragon Gauntlets",
         collected: false,
@@ -410,7 +410,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "boots",
         name: "Malformed Dragon Greaves",
         collected: false,
@@ -421,7 +421,7 @@ export const warlords: ArmourSet[] = [
   },
   {
     type: "armour",
-    subcategory: "juggernouts",
+    subcategory: "warlords",
     pieceType: "set",
     name: "Crucible Axe Set",
     collected: false,
@@ -430,7 +430,7 @@ export const warlords: ArmourSet[] = [
     items: [
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "chest",
         name: "Crucible Axe Armor",
         collected: false,
@@ -439,7 +439,7 @@ export const warlords: ArmourSet[] = [
         children: [
           {
             type: "armour",
-            subcategory: "juggernouts",
+            subcategory: "warlords",
             pieceType: "chest",
             name: "Crucible Axe Armor (Altered)",
             collected: false,
@@ -450,7 +450,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "helm",
         name: "Crucible Axe Helm",
         collected: false,
@@ -459,7 +459,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "gloves",
         name: "Crucible Gauntlets",
         collected: false,
@@ -468,7 +468,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "boots",
         name: "Crucible Greaves",
         collected: false,
@@ -479,7 +479,7 @@ export const warlords: ArmourSet[] = [
   },
   {
     type: "armour",
-    subcategory: "juggernouts",
+    subcategory: "warlords",
     pieceType: "set",
     name: "Crucible Tree Set",
     collected: false,
@@ -488,7 +488,7 @@ export const warlords: ArmourSet[] = [
     items: [
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "chest",
         name: "Crucible Tree Armor",
         collected: false,
@@ -497,7 +497,7 @@ export const warlords: ArmourSet[] = [
         children: [
           {
             type: "armour",
-            subcategory: "juggernouts",
+            subcategory: "warlords",
             pieceType: "chest",
             name: "Crucible Tree Armor (Altered)",
             collected: false,
@@ -508,7 +508,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "helm",
         name: "Crucible Tree Helm",
         collected: false,
@@ -517,7 +517,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "gloves",
         name: "Crucible Gauntlets",
         collected: false,
@@ -526,7 +526,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "boots",
         name: "Crucible Greaves",
         collected: false,
@@ -537,7 +537,7 @@ export const warlords: ArmourSet[] = [
   },
   {
     type: "armour",
-    subcategory: "juggernouts",
+    subcategory: "warlords",
     pieceType: "set",
     name: "Gaius's Set",
     collected: false,
@@ -546,7 +546,7 @@ export const warlords: ArmourSet[] = [
     items: [
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "chest",
         name: "Gaius's Armor",
         collected: false,
@@ -555,7 +555,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "helm",
         name: "Gaius's Helm",
         collected: false,
@@ -564,7 +564,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "gloves",
         name: "Gaius's Gauntlets",
         collected: false,
@@ -573,7 +573,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "boots",
         name: "Gaius's Greaves",
         collected: false,
@@ -584,7 +584,7 @@ export const warlords: ArmourSet[] = [
   },
   {
     type: "armour",
-    subcategory: "juggernouts",
+    subcategory: "warlords",
     pieceType: "set",
     name: "General Radahn's Set",
     collected: false,
@@ -593,7 +593,7 @@ export const warlords: ArmourSet[] = [
     items: [
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "chest",
         name: "Radahn's Lion Armor",
         collected: false,
@@ -602,7 +602,7 @@ export const warlords: ArmourSet[] = [
         children: [
           {
             type: "armour",
-            subcategory: "juggernouts",
+            subcategory: "warlords",
             pieceType: "chest",
             name: "Radahn's Lion Armor (Altered)",
             collected: false,
@@ -613,7 +613,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "helm",
         name: "Radahn's Redmane Helm",
         collected: false,
@@ -622,7 +622,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "gloves",
         name: "Radahn's Gauntlets",
         collected: false,
@@ -631,7 +631,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "boots",
         name: "Radahn's Greaves",
         collected: false,
@@ -642,7 +642,7 @@ export const warlords: ArmourSet[] = [
   },
   {
     type: "armour",
-    subcategory: "juggernouts",
+    subcategory: "warlords",
     pieceType: "set",
     name: "Young Lion's Set",
     collected: false,
@@ -651,7 +651,7 @@ export const warlords: ArmourSet[] = [
     items: [
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "chest",
         name: "Young Lion's Armor",
         collected: false,
@@ -660,7 +660,7 @@ export const warlords: ArmourSet[] = [
         children: [
           {
             type: "armour",
-            subcategory: "juggernouts",
+            subcategory: "warlords",
             pieceType: "chest",
             name: "Young Lion's Armor (Altered)",
             collected: false,
@@ -671,7 +671,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "helm",
         name: "Young Lion's Helm",
         collected: false,
@@ -680,7 +680,7 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "gloves",
         name: "Young Lion's Gauntlets",
         collected: false,
@@ -689,12 +689,60 @@ export const warlords: ArmourSet[] = [
       },
       {
         type: "armour",
-        subcategory: "juggernouts",
+        subcategory: "warlords",
         pieceType: "boots",
         name: "Young Lion's Greaves",
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Young+Lion's+Greaves",
         dlc: true,
+      },
+    ],
+  },
+
+  {
+    type: "armour",
+    subcategory: "warlords",
+    pieceType: "set",
+    name: "Beast Champion Set",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Beast+Champion+Set",
+    dlc: false,
+    items: [
+      {
+        type: "armour",
+        subcategory: "warlords",
+        pieceType: "chest",
+        name: "Beast Champion Armor",
+        collected: false,
+        link: "https://eldenring.wiki.fextralife.com/Beast+Champion+Armor",
+        dlc: false,
+      },
+      {
+        type: "armour",
+        subcategory: "warlords",
+        pieceType: "helm",
+        name: "Beast Champion Helm",
+        collected: false,
+        link: "https://eldenring.wiki.fextralife.com/Beast+Champion+Helm",
+        dlc: false,
+      },
+      {
+        type: "armour",
+        subcategory: "warlords",
+        pieceType: "gloves",
+        name: "Beast Champion Gauntlets",
+        collected: false,
+        link: "https://eldenring.wiki.fextralife.com/Beast+Champion+Gauntlets",
+        dlc: false,
+      },
+      {
+        type: "armour",
+        subcategory: "warlords",
+        pieceType: "boots",
+        name: "Beast Champion Greaves",
+        collected: false,
+        link: "https://eldenring.wiki.fextralife.com/Beast+Champion+Greaves",
+        dlc: false,
       },
     ],
   },
