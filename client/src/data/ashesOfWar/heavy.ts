@@ -41,9 +41,7 @@ export const heavy: AshOfWarItem[] = [
     subcategory: "heavy",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Savage+Lion's+Claw",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_savage_lions_claw_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",

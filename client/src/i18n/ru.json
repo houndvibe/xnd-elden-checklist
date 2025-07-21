@@ -2976,7 +2976,7 @@
     "Mimic's Veil": "Вуаль ложности",
     "Margit's Shackle": "Оковы Маргита",
     "Mohg's Shackle": "Оковы Мога",
-    "Blasphemous Claw": "Богохульный коготь",
+
     "Lantern": "Фонарь",
     "Telescope": "Телескоп",
     "Prattling Pate \"Hello\"": "Говорящая голова «Привет»",
@@ -3001,7 +3001,7 @@
     "Soap": "Мыло",
     "False Grace": "Ложная благодать",
     "Glass Shard": "Осколок стекла",
-    "Pureblood Knight's Medal": "Медаль чистокровного рыцаря",
+
     "Miquella's Needle": "Игла Микеллы",
     "Iris of Grace": "Радужка благодати",
     "Iris of Darkness": "Радужка тьмы",
@@ -3512,6 +3512,8 @@
     "About United Combat and Combat Ordeals": "О совместных боях и боевых испытаниях"
   },
   "keyItems": {
+    "Pureblood Knight's Medal": "Медаль чистокровного рыцаря",
+    "Blasphemous Claw": "Богохульный коготь",
     "Miquella's Great Rune": "Великая руна Микеллы",
     "Godrick's Great Rune": "Великая руна Годрика",
     "Rykard's Great Rune": "Великая руна Рикарда",
@@ -3555,6 +3557,7 @@
     "Unalloyed Gold Needle (Snapped)": "Игла из чистого золота (сломанная)",
     "Unalloyed Gold Needle (Repaired)": "Игла из чистого золота (починенная)",
     "Unalloyed Gold Needle (Restored)": "Игла из чистого золота (восстановленная)",
+    "Miquella's Needle": "Игла Микеллы",
     "Valkyrie's Prosthesis": "Протез валькирии",
     "Alexander's Innards": "Внутренности Александра",
     "Lord of Blood's Favor": "Милость Повелителя Крови",

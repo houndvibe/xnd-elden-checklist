@@ -74,14 +74,7 @@ export const tools: ToolOrBellBearingItems[] = [
     link: "https://eldenring.wiki.fextralife.com/Mohg's+Shackle",
     dlc: false,
   },
-  {
-    type: "toolsAndBellBearings",
-    subcategory: "tools",
-    name: "Blasphemous Claw",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Blasphemous+Claw",
-    dlc: false,
-  },
+
   {
     type: "toolsAndBellBearings",
     subcategory: "tools",
@@ -96,14 +89,6 @@ export const tools: ToolOrBellBearingItems[] = [
     name: "Telescope",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Telescope",
-    dlc: false,
-  },
-  {
-    type: "toolsAndBellBearings",
-    subcategory: "tools",
-    name: "Pureblood Knight's Medal",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Pureblood+Knight's+Medal",
     dlc: false,
   },
   {

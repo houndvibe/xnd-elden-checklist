@@ -23,9 +23,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
     subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+The+Poison+Flower+Blooms+Twice",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_the_poison_flower_blooms_twice_1_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",
@@ -81,9 +79,7 @@ export const poisonBloodCold: AshOfWarItem[] = [
     subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Ghostflame+Call",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_ghostflame_call_1_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",
@@ -99,8 +95,6 @@ export const poisonBloodCold: AshOfWarItem[] = [
     subcategory: "poisonBloodCold",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Divine+Beast+Frost+Stomp",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_divine_beast_frost_stomp_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
 ];

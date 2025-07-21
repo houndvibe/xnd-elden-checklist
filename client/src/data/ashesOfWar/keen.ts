@@ -23,9 +23,7 @@ export const keen: AshOfWarItem[] = [
     subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Blind+Spot",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_blind_spot_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",
@@ -33,9 +31,7 @@ export const keen: AshOfWarItem[] = [
     subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Swift+Slash",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_swift_slash_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",
@@ -83,9 +79,7 @@ export const keen: AshOfWarItem[] = [
     subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Overhead+Stance",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_overhead_stance_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",
@@ -127,9 +121,7 @@ export const keen: AshOfWarItem[] = [
     subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Savage+Claws",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_savage_claws_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",
@@ -137,9 +129,7 @@ export const keen: AshOfWarItem[] = [
     subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Raging+Beast",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_raging_beast_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",
@@ -147,9 +137,7 @@ export const keen: AshOfWarItem[] = [
     subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Piercing+Throw",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_piercing_throw_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
   {
     type: "ashesOfWar",
@@ -157,8 +145,6 @@ export const keen: AshOfWarItem[] = [
     subcategory: "keen",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Scattershot+Throw",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_scattershot_throw_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
+    dlc: true,
   },
 ];
