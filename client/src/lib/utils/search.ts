@@ -8,7 +8,12 @@ import {
   setGlobalSearchSet,
 } from "../../store/serviceSlice";
 
-export function flattenCollectionItems(collection: Collection): Item[] {
+export function flattenCollectionItems(
+  collection: Collection,
+  altArmor: boolean,
+  checkDlc: boolean,
+  checkedSubcategories: string[]
+): Item[] {
   const result: Item[] = [];
 
   // @ts-ignore
@@ -45,8 +50,9 @@ export function flattenCollectionItems(collection: Collection): Item[] {
             if (!Array.isArray(set.items)) continue;
 
             for (const item of set.items) {
-              if (Array.isArray(item.children)) {
+              if (Array.isArray(item.children) && altArmor) {
                 result.push(...item.children);
+                result.push(item);
               } else {
                 result.push(item);
               }
@@ -89,7 +95,13 @@ export function flattenCollectionItems(collection: Collection): Item[] {
     }
   }
 
-  return result;
+  const subcategoriesFiltered = result.filter((i) =>
+    checkedSubcategories.includes(i.subcategory)
+  );
+
+  const dlcFiltered = subcategoriesFiltered.filter((i) => !i.dlc);
+
+  return checkDlc ? subcategoriesFiltered : dlcFiltered;
 }
 
 export const scrollToSearchTarget = () => {

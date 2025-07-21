@@ -3,7 +3,7 @@ import { Input, AutoComplete, Image, Flex } from "antd";
 import type { AutoCompleteProps } from "antd";
 import { useNavigate, useLocation } from "react-router-dom";
 import styles from "./Search.module.scss";
-import { useAppDispatch } from "../../../store/typedDispatch";
+import { useAppDispatch, useAppSelector } from "../../../store/typedDispatch";
 import { t } from "../../../i18n";
 import { itemsData } from "../../../data";
 import { Item } from "../../../global-types";
@@ -22,21 +22,6 @@ type SuggestionOption = {
   displayText: string;
 };
 
-const generateSuggestions = (query: string): Item[] => {
-  if (!query) return [];
-
-  const itemsFlatMap = flattenCollectionItems(itemsData);
-  const uniqueByName = itemsFlatMap.reduce((acc, item) => {
-    if (!acc[item.name]) acc[item.name] = item;
-    return acc;
-  }, {} as Record<string, Item>);
-
-  return Object.values(uniqueByName).filter((item) => {
-    const translated = t(item.type, item.name).toLowerCase();
-    return translated.includes(query.toLowerCase());
-  });
-};
-
 const SearchWithSuggestions = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
@@ -45,12 +30,36 @@ const SearchWithSuggestions = () => {
   const [options, setOptions] = useState<SuggestionOption[]>([]);
   const [searchText, setSearchText] = useState("");
 
+  const { altArmor, checkDlc, checkedSubcategories } = useAppSelector(
+    (state) => state.settings
+  );
+
   useEffect(() => {
     const openParam = new URLSearchParams(location.search).get("open");
     if (openParam) {
       setTimeout(() => scrollToSearchTarget(), 500);
     }
   }, [location.search]);
+
+  const generateSuggestions = (query: string): Item[] => {
+    if (!query) return [];
+
+    const itemsFlatMap = flattenCollectionItems(
+      itemsData,
+      altArmor,
+      checkDlc,
+      checkedSubcategories
+    );
+    const uniqueByName = itemsFlatMap.reduce((acc, item) => {
+      if (!acc[item.name]) acc[item.name] = item;
+      return acc;
+    }, {} as Record<string, Item>);
+
+    return Object.values(uniqueByName).filter((item) => {
+      const translated = t(item.type, item.name).toLowerCase();
+      return translated.includes(query.toLowerCase());
+    });
+  };
 
   const handleSearchChange = (value: string) => {
     setSearchText(value);
