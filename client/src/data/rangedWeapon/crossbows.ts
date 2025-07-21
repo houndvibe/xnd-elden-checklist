@@ -8,7 +8,7 @@ export const crossbows: RangedWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Spread+Crossbow",
     collected: false,
     legendary: false,
-    dlc: false,
+    dlc: true,
   },
   {
     type: "rangedWeapons",

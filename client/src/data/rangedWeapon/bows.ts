@@ -8,7 +8,7 @@ export const bows: RangedWeaponItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Ansbach%27s+Longbow",
     collected: false,
     legendary: false,
-    dlc: false,
+    dlc: true,
   },
   {
     type: "rangedWeapons",
