@@ -1816,7 +1816,7 @@
     "Recusant Finger": "Мятежный палец",
     "Phantom Bloody Finger": "Мятежный палец-фантом",
     "Grace Mimic": "Ложная благодать",
-    "Scriptstone": "Обломок руин с тайнописью",
+
     "Bloody Finger": "Окровавленный палец",
     "Finger Severer": "Отсекатель пальцев",
     "Phantom Great Rune": "Призрачная великая руна",
@@ -2543,6 +2543,7 @@
     "Sacrificial Twig": "Жертвенная ветвь"
   },
   "consumablesAndAmmo": {
+    "Scriptstone": "Обломок руин с тайнописью",
     "Fire Grease": "Огненная смазка",
     "Messmerfire Grease": "Огненная смазка Мессмера",
     "Magic Grease": "Магическая смазка",

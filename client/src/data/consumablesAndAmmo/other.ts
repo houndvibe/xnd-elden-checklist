@@ -110,6 +110,7 @@ export const other: СonsumableAndAmmoItem[] = [
     legendary: false,
     dlc: false,
   },
+
   {
     type: "consumablesAndAmmo",
     subcategory: "other",
@@ -325,5 +326,14 @@ export const other: СonsumableAndAmmoItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Sunwarmth+Stone",
     legendary: false,
     dlc: true,
+  },
+  {
+    type: "consumablesAndAmmo",
+    subcategory: "other",
+    name: "Scriptstone",
+    legendary: false,
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Scriptstone",
+    dlc: false,
   },
 ];

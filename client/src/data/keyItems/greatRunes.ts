@@ -64,15 +64,7 @@ export const greatRunes: KeyItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Great+Rune+of+the+Unborn",
     dlc: false,
   },
-  {
-    type: "keyItems",
-    subcategory: "greatRunes",
-    name: "Phantom Great Rune",
-    collected: false,
-    legendary: false,
-    link: "https://eldenring.wiki.fextralife.com/Phantom+Great+Rune",
-    dlc: false,
-  },
+
   {
     type: "keyItems",
     subcategory: "greatRunes",

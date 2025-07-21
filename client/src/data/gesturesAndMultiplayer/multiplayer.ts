@@ -84,15 +84,7 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Phantom+Bloody+Finger",
     dlc: false,
   },
-  {
-    type: "gesturesAndMultiplayer",
-    name: "Phantom Great Rune",
-    subcategory: "multiplayer",
-    description: "Give blessing of blood to enemies in invaded world.",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Phantom+Great+Rune",
-    dlc: false,
-  },
+
   {
     type: "gesturesAndMultiplayer",
     name: "White Cipher Ring",
@@ -141,20 +133,20 @@ export const multiplayer: GestureOrMultiplayerItem[] = [
   },
   {
     type: "gesturesAndMultiplayer",
-    name: "Scriptstone",
-    subcategory: "multiplayer",
-    description: "Reveals more messages from other worlds.",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Scriptstone",
-    dlc: false,
-  },
-  {
-    type: "gesturesAndMultiplayer",
     name: "Grace Mimic",
     subcategory: "multiplayer",
     description: "Light shows the path, but without order",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Grace+Mimic",
+    dlc: false,
+  },
+  {
+    type: "gesturesAndMultiplayer",
+    name: "Phantom Great Rune",
+    subcategory: "multiplayer",
+    description: "Give blessing of blood to enemies in invaded world.",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Phantom+Great+Rune",
     dlc: false,
   },
 ];
