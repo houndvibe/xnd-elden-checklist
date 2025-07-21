@@ -39,7 +39,7 @@ export const magic: AshOfWarItem[] = [
     subcategory: "magic",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Sovereignty",
-    dlc: false,
+    dlc: true,
   },
   {
     type: "ashesOfWar",
