@@ -8,7 +8,7 @@ import { DiscoveryItemSelect } from "./DiscoveryItemsSelect";
 import ExamplesTable from "./ExamplesTable";
 
 import { discoveryData, DiscoveryItem } from "./data-discovery";
-import { BASE_DISCOVERY } from "../../lib/consts";
+import { BASE_DISCOVERY, STAT_MAX_VALUE } from "../../lib/consts";
 
 import styles from "./DiscoveryCalculator.module.scss";
 import { t } from "../../i18n";
@@ -61,20 +61,44 @@ export default function DiscoveryCalculator() {
 
   const getItemEffect = (name: NullableString, source: DiscoveryItem[]) => {
     const item = source.find((i) => i.name === name);
-    return item ? item.effect.arcaneGain + item.effect.discoveryGain : 0;
+    return item
+      ? {
+          arcane: item.effect.arcaneGain,
+          discovery: item.effect.discoveryGain,
+        }
+      : {
+          arcane: 0,
+          discovery: 0,
+        };
   };
 
   const calculatedDiscovery = useMemo(() => {
-    return (
-      BASE_DISCOVERY +
-      arcane +
-      getItemEffect(amulet, discoveryData.amulets) +
-      getItemEffect(helm, discoveryData.helmets) +
-      getItemEffect(consumable, discoveryData.consumables) +
-      (rune ? 5 : 0) +
-      (oath ? 5 : 0) +
-      (chest ? 2 : 0)
+    const amuletEffect = getItemEffect(amulet, discoveryData.amulets);
+    const helmEffect = getItemEffect(helm, discoveryData.helmets);
+    const consumableEffect = getItemEffect(
+      consumable,
+      discoveryData.consumables
     );
+
+    const arcaneBonus =
+      amuletEffect.arcane +
+      helmEffect.arcane +
+      consumableEffect.arcane +
+      (chest ? 2 : 0) +
+      (rune ? 5 : 0) +
+      (oath ? 5 : 0);
+
+    const arcaneWithBonus = arcane + arcaneBonus;
+
+    const calculatedArcane =
+      arcaneWithBonus >= STAT_MAX_VALUE ? STAT_MAX_VALUE : arcaneWithBonus;
+
+    const discoveryBonus =
+      amuletEffect.discovery +
+      helmEffect.discovery +
+      consumableEffect.discovery;
+
+    return BASE_DISCOVERY + calculatedArcane + discoveryBonus;
   }, [arcane, rune, oath, chest, amulet, helm, consumable]);
 
   useEffect(() => {

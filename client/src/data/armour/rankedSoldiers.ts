@@ -325,9 +325,9 @@ export const rankedSoldiers: ArmourSet[] = [
         type: "armour",
         subcategory: "rankedSoldiers",
         pieceType: "gloves",
-        name: "Haligtree Greaves",
+        name: "Haligtree Gauntlets",
         collected: false,
-        link: "https://eldenring.wiki.fextralife.com/Haligtree+Greaves",
+        link: "https://eldenring.wiki.fextralife.com/Haligtree+Gauntlets",
         dlc: false,
       },
       {

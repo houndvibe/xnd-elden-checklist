@@ -203,3 +203,5 @@ export const DLC_ONLY_SUBCATEGORIES: ItemSubCategory[] = [
   "beastClaws",
   "perfumeBottles",
 ];
+
+export const STAT_MAX_VALUE = 99;
