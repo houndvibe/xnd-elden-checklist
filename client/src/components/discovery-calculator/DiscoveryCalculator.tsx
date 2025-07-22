@@ -63,15 +63,17 @@ export default function DiscoveryCalculator() {
     let updated = [...value];
 
     if (hasScar && hasPain) {
-      // Оставим только последний выбранный
       const lastSelected = value[value.length - 1];
       if (lastSelected === scar) {
-        updated = value.filter((v) => v !== pain);
+        //antd select не хочет принимать в value string[]
+        //@ts-ignore
+        updated = value.filter((v: string) => v !== pain);
       } else {
-        updated = value.filter((v) => v !== scar);
+        //@ts-ignore
+        updated = value.filter((v: string) => v !== scar);
       }
     }
-
+    //@ts-ignore
     setAmulet(updated);
   };
   const [arcane, setArcane] = useState(0);
