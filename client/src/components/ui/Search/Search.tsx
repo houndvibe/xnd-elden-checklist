@@ -78,14 +78,14 @@ const SearchWithSuggestions = () => {
               preview={false}
               src={
                 item.subcategory === "bellBearings"
-                  ? `./images/toolsAndBellBearings/bellBearings/CommonBellBearing.png`
+                  ? `./images_resized/toolsAndBellBearings/bellBearings/CommonBellBearing.png`
                   : item.subcategory === "cookbooks"
-                  ? `./images/craft/cookbooks/Nomadic Warrior's Cookbook.png`
+                  ? `./images_resized/craft/cookbooks/Nomadic Warrior's Cookbook.png`
                   : item.subcategory === "maps"
-                  ? `./images/infoItems/maps/Map Liurnia, North.png`
+                  ? `./images_resized/infoItems/maps/Map Liurnia, North.png`
                   : item.subcategory === "notes"
-                  ? `./images/infoItems/notes/Note The Preceptor's Secret.png`
-                  : `./images/${item.type}/${item.subcategory}/${item.name}.png`
+                  ? `./images_resized/infoItems/notes/Note The Preceptor's Secret.png`
+                  : `./images_resized/${item.type}/${item.subcategory}/${item.name}.png`
               }
             />
           </Flex>

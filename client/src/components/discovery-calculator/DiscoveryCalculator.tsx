@@ -15,6 +15,7 @@ import { t } from "../../i18n";
 import { setDiscovery } from "../../store/settingsSlice";
 
 type NullableString = string | null;
+type NullableStringOrArray = NullableString | string[];
 type SelectorProps = {
   value: NullableString;
   onChange: React.Dispatch<React.SetStateAction<NullableString>>;
@@ -26,6 +27,7 @@ const AmuletSelect = ({ value, onChange }: SelectorProps) => (
     placeholder={t("misc", "Select an amulet")}
     value={value}
     onChange={onChange}
+    multiple={true}
   />
 );
 
@@ -51,6 +53,27 @@ export default function DiscoveryCalculator() {
   const dispatch = useDispatch();
   const storedDiscovery = useAppSelector((state) => state.settings.discovery);
 
+  const handleSetAmulet = (value: string) => {
+    const scar = t("misc", "Marika's Scarseal");
+    const pain = t("misc", "Marika's Soreseal");
+
+    const hasScar = value.includes(scar);
+    const hasPain = value.includes(pain);
+
+    let updated = [...value];
+
+    if (hasScar && hasPain) {
+      // Оставим только последний выбранный
+      const lastSelected = value[value.length - 1];
+      if (lastSelected === scar) {
+        updated = value.filter((v) => v !== pain);
+      } else {
+        updated = value.filter((v) => v !== scar);
+      }
+    }
+
+    setAmulet(updated);
+  };
   const [arcane, setArcane] = useState(0);
   const [rune, setRune] = useState(false);
   const [oath, setOath] = useState(false);
@@ -59,7 +82,28 @@ export default function DiscoveryCalculator() {
   const [helm, setHelm] = useState<NullableString>(null);
   const [consumable, setConsumable] = useState<NullableString>(null);
 
-  const getItemEffect = (name: NullableString, source: DiscoveryItem[]) => {
+  const getItemEffect = (
+    name: NullableStringOrArray,
+    source: DiscoveryItem[]
+  ) => {
+    if (!name) {
+      return { arcane: 0, discovery: 0 };
+    }
+
+    if (Array.isArray(name)) {
+      return name.reduce(
+        (acc, currentName) => {
+          const item = source.find((i) => i.name === currentName);
+          if (item) {
+            acc.arcane += item.effect.arcaneGain;
+            acc.discovery += item.effect.discoveryGain;
+          }
+          return acc;
+        },
+        { arcane: 0, discovery: 0 }
+      );
+    }
+
     const item = source.find((i) => i.name === name);
     return item
       ? {
@@ -132,7 +176,12 @@ export default function DiscoveryCalculator() {
     },
     {
       label: t("misc", "Amulet"),
-      component: <AmuletSelect value={amulet} onChange={setAmulet} />,
+      component: (
+        <AmuletSelect
+          value={amulet}
+          onChange={(v) => handleSetAmulet(v as string)}
+        />
+      ),
     },
     {
       label: t("misc", "Helm"),

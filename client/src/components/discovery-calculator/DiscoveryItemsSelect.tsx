@@ -10,6 +10,7 @@ interface DiscoveryItemSelectProps {
   placeholder?: string;
   value: string | null;
   onChange: (value: string | null) => void;
+  multiple?: boolean;
 }
 
 const renderItemDetails = (item: DiscoveryItem): string => {
@@ -55,6 +56,7 @@ export const DiscoveryItemSelect = ({
   placeholder = "Select an item",
   value,
   onChange,
+  multiple,
 }: DiscoveryItemSelectProps) => {
   const handleChange: SelectProps<string>["onChange"] = (val) => {
     onChange(val ?? null);
@@ -62,6 +64,7 @@ export const DiscoveryItemSelect = ({
 
   return (
     <Select
+      mode={multiple ? "multiple" : undefined}
       allowClear
       className={styles.select}
       placeholder={placeholder}
