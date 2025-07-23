@@ -137,6 +137,7 @@ export const pieces: ArmourItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Nox+Mirrorhelm",
     dlc: false,
   },
+
   {
     type: "armour",
     subcategory: "pieces",
@@ -146,6 +147,7 @@ export const pieces: ArmourItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Iji's+Mirrorhelm",
     dlc: false,
   },
+
   {
     type: "armour",
     subcategory: "pieces",
@@ -162,6 +164,15 @@ export const pieces: ArmourItem[] = [
     name: "Envoy Crown",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Envoy+Crown",
+    dlc: false,
+  },
+  {
+    type: "armour",
+    subcategory: "scholarsAndSeers",
+    pieceType: "helm",
+    name: "Mask Of Confidence",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Mask+Of+Confidence",
     dlc: false,
   },
   {
@@ -282,26 +293,6 @@ export const pieces: ArmourItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Fell+Omen+Cloak",
     dlc: false,
   },
-  {
-    type: "armour",
-    subcategory: "pieces",
-    pieceType: "chest",
-    name: "Lord of Blood's Robe",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Robe",
-    dlc: false,
-    children: [
-      {
-        type: "armour",
-        subcategory: "pieces",
-        pieceType: "chest",
-        name: "Lord of Blood's Robe (Altered)",
-        collected: false,
-        link: "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Robe+(Altered)",
-        dlc: false,
-      },
-    ],
-  },
 
   {
     type: "armour",
@@ -312,15 +303,7 @@ export const pieces: ArmourItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Tree+Surcoat",
     dlc: false,
   },
-  {
-    type: "armour",
-    subcategory: "scholarsAndSeers",
-    pieceType: "helm",
-    name: "Mask Of Confidence",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Mask+Of+Confidence",
-    dlc: false,
-  },
+
   {
     type: "armour",
     subcategory: "pieces",

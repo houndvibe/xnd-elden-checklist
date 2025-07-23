@@ -757,4 +757,35 @@ export const warlords: ArmourSet[] = [
       },
     ],
   },
+  {
+    type: "armour",
+    subcategory: "warlords",
+    pieceType: "set",
+    name: "Lord of Blood's Set",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Robe",
+    dlc: false,
+    items: [
+      {
+        type: "armour",
+        subcategory: "warlords",
+        pieceType: "chest",
+        name: "Lord of Blood's Robe",
+        collected: false,
+        link: "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Robe",
+        dlc: false,
+        children: [
+          {
+            type: "armour",
+            subcategory: "warlords",
+            pieceType: "chest",
+            name: "Lord of Blood's Robe (Altered)",
+            collected: false,
+            link: "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Robe+(Altered)",
+            dlc: false,
+          },
+        ],
+      },
+    ],
+  },
 ];
