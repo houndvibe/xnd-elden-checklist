@@ -746,17 +746,6 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Blackflame+Monk+Armor",
         dlc: false,
-        children: [
-          {
-            type: "armour",
-            subcategory: "eliteKnightsAndLegends",
-            pieceType: "chest",
-            name: "Blackflame Monk Armor (Altered)",
-            collected: false,
-            link: "https://eldenring.wiki.fextralife.com/Blackflame+Monk+Armor+(Altered)",
-            dlc: false,
-          },
-        ],
       },
       {
         type: "armour",
