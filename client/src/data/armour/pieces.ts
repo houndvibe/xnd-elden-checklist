@@ -290,6 +290,17 @@ export const pieces: ArmourItem[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Robe",
     dlc: false,
+    children: [
+      {
+        type: "armour",
+        subcategory: "pieces",
+        pieceType: "chest",
+        name: "Lord of Blood's Robe (Altered)",
+        collected: false,
+        link: "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Robe+(Altered)",
+        dlc: false,
+      },
+    ],
   },
 
   {

@@ -578,6 +578,17 @@ export const militiaAndFringeWarriors: ArmourSet[] = [
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Nox+Monk+Armor",
         dlc: false,
+        children: [
+          {
+            type: "armour",
+            subcategory: "militiaAndFringeWarriors",
+            pieceType: "chest",
+            name: "Nox Monk Armor (Altered)",
+            collected: false,
+            link: "https://eldenring.wiki.fextralife.com/Nox+Monk+Armor+(Altered)",
+            dlc: false,
+          },
+        ],
       },
       {
         type: "armour",
@@ -637,6 +648,17 @@ export const militiaAndFringeWarriors: ArmourSet[] = [
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Nox+Swordstress+Armor",
         dlc: false,
+        children: [
+          {
+            type: "armour",
+            subcategory: "militiaAndFringeWarriors",
+            pieceType: "chest",
+            name: "Nox Swordstress Armor (Altered)",
+            collected: false,
+            link: "https://eldenring.wiki.fextralife.com/Nox+Swordstress+Armor+(Altered)",
+            dlc: false,
+          },
+        ],
       },
       {
         type: "armour",

@@ -583,6 +583,17 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Blue+Silver+Mail+Armor",
         dlc: false,
+        children: [
+          {
+            type: "armour",
+            subcategory: "eliteKnightsAndLegends",
+            pieceType: "chest",
+            name: "Blue Silver Mail Armor (Altered)",
+            collected: false,
+            link: "https://eldenring.wiki.fextralife.com/Blue+Silver+Mail+Armor+(Altered)",
+            dlc: false,
+          },
+        ],
       },
       {
         type: "armour",
@@ -630,6 +641,17 @@ export const eliteKnightsAndLegends: ArmourSet[] = [
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Malenia's+Armor",
         dlc: false,
+        children: [
+          {
+            type: "armour",
+            subcategory: "eliteKnightsAndLegends",
+            pieceType: "chest",
+            name: "Malenia's Armor (Altered)",
+            collected: false,
+            link: "https://eldenring.wiki.fextralife.com/Malenia's+Armor+(Altered)",
+            dlc: false,
+          },
+        ],
       },
       {
         type: "armour",

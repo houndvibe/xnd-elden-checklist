@@ -716,6 +716,17 @@ export const warlords: ArmourSet[] = [
         collected: false,
         link: "https://eldenring.wiki.fextralife.com/Beast+Champion+Armor",
         dlc: false,
+        children: [
+          {
+            type: "armour",
+            subcategory: "warlords",
+            pieceType: "chest",
+            name: "Beast Champion Armor (Altered)",
+            collected: false,
+            link: "https://eldenring.wiki.fextralife.com/Beast+Champion+Armor+(Altered)",
+            dlc: false,
+          },
+        ],
       },
       {
         type: "armour",
