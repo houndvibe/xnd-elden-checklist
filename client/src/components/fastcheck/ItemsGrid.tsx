@@ -40,7 +40,7 @@ interface ItemsGridProps {
   pieceTypeFilters: ArmorFilter;
 }
 
-const mouseEnterDelay = 1.4;
+const mouseEnterDelay = 1;
 
 const sanitize = (str: string) => str.replace(/:|"/g, "");
 

@@ -543,16 +543,7 @@ export const materials: CraftItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Gravel%2BStone",
     dlc: false,
   },
-  {
-    type: "craft",
-    subcategory: "materials",
-    name: "Ruin Fragment",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Ruin%2BFragment",
-    dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tuind_fragment_elden_ring_wiki_guide_200px.png",
-  },
+
   {
     type: "craft",
     subcategory: "materials",

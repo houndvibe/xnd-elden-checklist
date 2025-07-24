@@ -168,6 +168,15 @@ export const other: СonsumableAndAmmoItem[] = [
   {
     type: "consumablesAndAmmo",
     subcategory: "other",
+    name: "Ruin Fragment",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Ruin%2BFragment",
+    legendary: false,
+    dlc: false,
+  },
+  {
+    type: "consumablesAndAmmo",
+    subcategory: "other",
     name: "Spirit Raisin",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spirit+Raisin",
