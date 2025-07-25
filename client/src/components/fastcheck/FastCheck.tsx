@@ -19,6 +19,7 @@ import { setGlobalSearchItem } from "../../store/serviceSlice";
 import { getCategoryStats } from "../../lib/utils/stats";
 import { Collection } from "../../store/collectionSlice";
 import { useState } from "react";
+import { normalizeText } from "../../lib/utils/misc";
 
 export interface ArmorFilter {
   chest: boolean;
@@ -115,7 +116,9 @@ export default function FastCheck() {
               onClear={() => dispatch(setGlobalSearchItem(null))}
               value={val}
               size="small"
-              onChange={(e) => dispatch(setGlobalSearchItem(e.target.value))}
+              onChange={(e) =>
+                dispatch(setGlobalSearchItem(normalizeText(e.target.value)))
+              }
             />
 
             <span

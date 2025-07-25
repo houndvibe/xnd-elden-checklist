@@ -156,3 +156,11 @@ export function formatDate(
 export function trimDataSuffix(label: string): string {
   return label.endsWith("Data") ? label.slice(0, -4) : label;
 }
+
+export const normalizeText = (text: string) =>
+  text
+    .toLowerCase()
+    .replace(/ё/g, "е")
+    .replace(/[-–—]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();

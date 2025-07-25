@@ -12,7 +12,7 @@ import {
   navigateToItem,
   scrollToSearchTarget,
 } from "../../../lib/utils/search";
-import { truncateString } from "../../../lib/utils/misc";
+import { normalizeText, truncateString } from "../../../lib/utils/misc";
 
 const { Search } = Input;
 
@@ -56,8 +56,8 @@ const SearchWithSuggestions = () => {
     }, {} as Record<string, Item>);
 
     return Object.values(uniqueByName).filter((item) => {
-      const translated = t(item.type, item.name).toLowerCase();
-      return translated.includes(query.toLowerCase());
+      const translated = normalizeText(t(item.type, item.name));
+      return translated.includes(normalizeText(query));
     });
   };
 
@@ -109,8 +109,9 @@ const SearchWithSuggestions = () => {
   };
 
   const handleSubmit = (value: string) => {
+    const normalizedValue = normalizeText(value);
     const matchingOption = options.find(
-      (option) => option.displayText.toLowerCase() === value.toLowerCase()
+      (option) => normalizeText(option.displayText) === normalizedValue
     );
 
     if (matchingOption) {

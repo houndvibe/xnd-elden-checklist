@@ -9,6 +9,7 @@ import {
 import {
   isArmourSet,
   isMultiVersionTalisman,
+  normalizeText,
   toTitleCaseFromCamel,
   /*   truncateString, */
 } from "../../lib/utils/misc";
@@ -161,9 +162,9 @@ export default function ItemsGrid({
               }
 
               const matchesSearch = targetNames.some((name) =>
-                t(selectedCategory, name)
-                  .toLowerCase()
-                  .includes(searchValue.toLowerCase())
+                normalizeText(t(selectedCategory, name)).includes(
+                  normalizeText(searchValue)
+                )
               );
 
               if (
@@ -259,9 +260,9 @@ export default function ItemsGrid({
 
                       return allVariants
                         .filter((i) =>
-                          t(selectedCategory, i.name)
-                            .toLowerCase()
-                            .includes(searchValue.toLowerCase())
+                          normalizeText(t(selectedCategory, i.name)).includes(
+                            normalizeText(searchValue)
+                          )
                         )
                         .filter(
                           (piece) =>
