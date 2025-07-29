@@ -198,8 +198,6 @@ export const eliteSpirits: SpiritAshItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Florissax",
     legendary: false,
     dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_florissax_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
   {
     type: "spiritAshes",
@@ -209,8 +207,6 @@ export const eliteSpirits: SpiritAshItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Black+Knight+Captain+Huw",
     legendary: false,
     dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knight_captain_huw_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
   {
     type: "spiritAshes",
@@ -220,8 +216,6 @@ export const eliteSpirits: SpiritAshItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Black+Knight+Commander+Andreas",
     legendary: false,
     dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knight_commander_andreas_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
   {
     type: "spiritAshes",
@@ -231,8 +225,6 @@ export const eliteSpirits: SpiritAshItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Fire+Knight+Queelign",
     legendary: false,
     dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_knight_queelign_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
   {
     type: "spiritAshes",
@@ -242,30 +234,24 @@ export const eliteSpirits: SpiritAshItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Fire+Knight+Hilde",
     legendary: false,
     dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_knight_hilde_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
   {
     type: "spiritAshes",
     name: "Swordhand of Night Jolán",
     subcategory: "eliteSpirits",
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Swordhand+of+Night+Jolán",
+    link: "https://eldenring.wiki.fextralife.com/Swordhand+of+Night+Jolan",
     legendary: false,
     dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/swordhand_of_night_jolan_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide200px.png",
   },
   {
     type: "spiritAshes",
     name: "Jolán and Anna",
     subcategory: "eliteSpirits",
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Jolán+and+Anna",
+    link: "https://eldenring.wiki.fextralife.com/Jolan+and+Anna",
     legendary: false,
     dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/jolan_and_anna_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide200px.png",
   },
   {
     type: "spiritAshes",
@@ -275,8 +261,6 @@ export const eliteSpirits: SpiritAshItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Curseblade+Meera",
     legendary: false,
     dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/curseblade_meera_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
   {
     type: "spiritAshes",
@@ -286,7 +270,5 @@ export const eliteSpirits: SpiritAshItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Demi-Human+Swordsman+Yosh",
     legendary: false,
     dlc: true,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human_swordsman_yosh_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
   },
 ];
