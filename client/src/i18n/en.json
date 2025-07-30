@@ -573,6 +573,9 @@
     "Taunter's Tongue": "Taunter's Tongue",
     "multiplayer": "Multiplayer"
   },
+  "meleWeapons": {
+    "Beast Claww": "Beast Claw"
+  },
   "rangedWeapons": {
     "Short Bow": "Short Bow",
     "Composite Bow": "Composite Bow",

@@ -3,10 +3,10 @@ import { MeleWeaponItem } from "../../global-types";
 export const beastClaws: MeleWeaponItem[] = [
   {
     type: "meleWeapons",
-    name: "Beast Claw",
+    name: "Beast Claww",
     subcategory: "beastClaws",
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Beast+Claw",
+    link: "https://eldenring.wiki.fextralife.com/Beast+Claw+(Weapon)",
     legendary: false,
     dlc: true,
   },

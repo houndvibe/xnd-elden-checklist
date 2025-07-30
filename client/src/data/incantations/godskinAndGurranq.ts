@@ -72,8 +72,6 @@ export const godskinAndGurranq: IncantationsItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Gurranq's+Beast+Claw",
     legendary: false,
     dlc: false,
-    imgUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/gurrangs_beast_claw_incantation_elden_ring_wiki_guide_200px.png",
   },
   {
     type: "incantations",
