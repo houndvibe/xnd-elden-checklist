@@ -12,6 +12,7 @@ export function flattenCollectionItems(
   collection: Collection,
   altArmor: boolean,
   checkDlc: boolean,
+  loosable: boolean,
   checkedSubcategories: string[]
 ): Item[] {
   const result: Item[] = [];
@@ -99,9 +100,12 @@ export function flattenCollectionItems(
     checkedSubcategories.includes(i.subcategory)
   );
 
-  const dlcFiltered = subcategoriesFiltered.filter((i) => !i.dlc);
-
-  return checkDlc ? subcategoriesFiltered : dlcFiltered;
+  const filtered = subcategoriesFiltered.filter((i) => {
+    const dlcPass = checkDlc || !i.dlc;
+    const loosablePass = loosable || !i.loosable;
+    return dlcPass && loosablePass;
+  });
+  return filtered;
 }
 
 export const scrollToSearchTarget = () => {

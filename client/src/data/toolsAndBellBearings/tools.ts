@@ -16,7 +16,6 @@ export const tools: ToolOrBellBearingItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Spirit+Calling+Bell",
     dlc: false,
-    loosable: true,
   },
   {
     type: "toolsAndBellBearings",

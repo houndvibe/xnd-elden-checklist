@@ -9,6 +9,7 @@ export const spellBooks: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Academy+Scroll",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -18,6 +19,7 @@ export const spellBooks: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Conspectus+Scroll",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -27,6 +29,7 @@ export const spellBooks: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Royal+House+Scroll",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -36,6 +39,7 @@ export const spellBooks: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Two+Fingers+Prayerbook",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -45,6 +49,7 @@ export const spellBooks: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Assassins+Prayerbook",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -54,6 +59,7 @@ export const spellBooks: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Golden+Order+Principia",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -63,6 +69,7 @@ export const spellBooks: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Dragon+Cult+Prayerbook",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -72,6 +79,7 @@ export const spellBooks: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Prayerbook",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -81,6 +89,7 @@ export const spellBooks: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Fire+Monks+Prayerbook",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -90,6 +99,7 @@ export const spellBooks: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Giants+Prayerbook",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -99,5 +109,6 @@ export const spellBooks: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Godskin+Prayerbook",
     dlc: false,
+    loosable: true,
   },
 ];

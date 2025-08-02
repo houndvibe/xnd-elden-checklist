@@ -8,13 +8,15 @@ import DashboardWidget from "./DashboardWidget";
 
 import {
   APP_PALETTE,
+  DLC_ONLY_SUBCATEGORIES,
   itemCategories,
+  LOOSABLE_ONLY_SUBCATEGORIES,
   PROGRESSBAR_COLORS,
 } from "../../lib/consts";
 
 import styles from "./Dashboard.module.scss";
 import { t } from "../../i18n";
-import { ItemSubCategoryMap } from "../../global-types";
+import { ItemSubCategory, ItemSubCategoryMap } from "../../global-types";
 
 export default function Dashboard() {
   const [isCompactMode, setIsCompactMode] = useState(false);
@@ -38,9 +40,22 @@ export default function Dashboard() {
 
       // Оставляем только включённые подкатегории
       const filteredData: Partial<ItemSubCategoryMap> = Object.fromEntries(
-        Object.entries(data).filter(([subcategory]) =>
-          checkedSubcategories.includes(subcategory)
-        )
+        Object.entries(data)
+          .filter(([subcategory]) => {
+            return checkedSubcategories.includes(subcategory);
+          })
+          .filter(([subcategory]) =>
+            checkDlc
+              ? subcategory
+              : !DLC_ONLY_SUBCATEGORIES.includes(subcategory as ItemSubCategory)
+          )
+          .filter(([subcategory]) =>
+            loosable
+              ? subcategory
+              : !LOOSABLE_ONLY_SUBCATEGORIES.includes(
+                  subcategory as ItemSubCategory
+                )
+          )
       );
 
       return {

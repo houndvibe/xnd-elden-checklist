@@ -30,7 +30,7 @@ const SearchWithSuggestions = () => {
   const [options, setOptions] = useState<SuggestionOption[]>([]);
   const [searchText, setSearchText] = useState("");
 
-  const { altArmor, checkDlc, checkedSubcategories } = useAppSelector(
+  const { altArmor, checkDlc, checkedSubcategories, loosable } = useAppSelector(
     (state) => state.settings
   );
 
@@ -48,6 +48,7 @@ const SearchWithSuggestions = () => {
       itemsData,
       altArmor,
       checkDlc,
+      loosable,
       checkedSubcategories
     );
     const uniqueByName = itemsFlatMap.reduce((acc, item) => {

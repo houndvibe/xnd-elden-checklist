@@ -204,4 +204,9 @@ export const DLC_ONLY_SUBCATEGORIES: ItemSubCategory[] = [
   "perfumeBottles",
 ];
 
+export const LOOSABLE_ONLY_SUBCATEGORIES: ItemSubCategory[] = [
+  "greatRunes",
+  "spellBooks",
+];
+
 export const STAT_MAX_VALUE = 99;

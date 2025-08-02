@@ -109,7 +109,8 @@ export default function DashboardWidget({
 
   const renderSubcategoryList = () => (
     <Flex vertical gap={20} flex={3}>
-      {Object.entries(subData).map(([subclassName, subItems]) => {
+      {Object.entries(subData)
+      .map(([subclassName, subItems]) => {
         const stats = getSubCategoryStats(
           subItems,
           checkDlc,

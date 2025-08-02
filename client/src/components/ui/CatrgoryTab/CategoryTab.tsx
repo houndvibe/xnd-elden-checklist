@@ -19,7 +19,10 @@ import {
   transformCategoryToName,
 } from "../../../lib/utils/misc";
 import { t } from "../../../i18n";
-import { DLC_ONLY_SUBCATEGORIES } from "../../../lib/consts";
+import {
+  DLC_ONLY_SUBCATEGORIES,
+  LOOSABLE_ONLY_SUBCATEGORIES,
+} from "../../../lib/consts";
 
 interface Props {
   category: ItemCategory;
@@ -48,7 +51,11 @@ export default function CategoryTab({ category }: Props) {
           : !DLC_ONLY_SUBCATEGORIES.includes(subcategory as ItemSubCategory)
       )
       .filter(([subcategory]) =>
-        loosable ? subcategory : subcategory !== "greatRunes"
+        loosable
+          ? subcategory
+          : !LOOSABLE_ONLY_SUBCATEGORIES.includes(
+              subcategory as ItemSubCategory
+            )
       )
   );
 
