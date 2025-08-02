@@ -71,7 +71,7 @@ export default function ItemsGrid({
   const categoryData = useAppSelector(
     (state) => state.collection.collectionData[`${selectedCategory}Data`]
   );
-  const { checkDlc, checkedSubcategories, altArmor } = useAppSelector(
+  const { checkDlc, checkedSubcategories, altArmor, loosable } = useAppSelector(
     (state) => state.settings
   );
 
@@ -140,6 +140,7 @@ export default function ItemsGrid({
           const filteredItems = sorted
             .sort((a, b) => Number(a.dlc) - Number(b.dlc))
             .filter((item) => (checkDlc ? item : !item.dlc))
+            .filter((item) => (loosable ? item : !item.loosable))
             .filter(() => checkedSubcategories.includes(subcategoryName))
             .filter((item) => {
               const targetNames = [item.name];
@@ -191,7 +192,8 @@ export default function ItemsGrid({
           const { total, collected } = getSubCategoryStats(
             filteredItems,
             checkDlc,
-            altArmor
+            altArmor,
+            loosable
           );
 
           return (

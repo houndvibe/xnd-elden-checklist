@@ -35,7 +35,7 @@ export default function CategoryTab({ category }: Props) {
     (state) =>
       state.collection.collectionData[`${category}Data` as keyof Collection]
   );
-  const { checkDlc, checkedSubcategories } = useAppSelector(
+  const { checkDlc, checkedSubcategories, loosable } = useAppSelector(
     (state) => state.settings
   );
 
@@ -46,6 +46,9 @@ export default function CategoryTab({ category }: Props) {
         checkDlc
           ? subcategory
           : !DLC_ONLY_SUBCATEGORIES.includes(subcategory as ItemSubCategory)
+      )
+      .filter(([subcategory]) =>
+        loosable ? subcategory : subcategory !== "greatRunes"
       )
   );
 

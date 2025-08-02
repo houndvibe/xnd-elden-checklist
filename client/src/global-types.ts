@@ -22,24 +22,12 @@ export interface ShieldOrTorchItem {
   type: Extract<ItemCategory, "shieldsAndTorches">;
   subcategory: keyof ShieldAndTorchesSubCategoryMap;
   name: string;
-  /*   description: string; */
   link: string;
   collected: boolean;
   legendary: boolean;
   dlc: boolean;
   imgUrl?: string;
-  /*   droppedBy: {
-    name: string;
-    dropRate: number;
-    link: string;
-    imgUrl: string;
-  } | null;
-  vendor: {
-    name: string;
-    link: string;
-    imgUrl: string;
-  } | null;
-  placementDescription?: string | null; */
+  loosable?: boolean;
 }
 
 export interface ShieldAndTorchesSubCategoryMap {
@@ -60,6 +48,7 @@ export interface SpiritAshItem {
   dlc: boolean;
   legendary: boolean;
   imgUrl?: string;
+  loosable?: boolean;
 }
 
 export interface SpiritAshesSubCategoryMap {
@@ -75,6 +64,7 @@ export interface TalismanVersions {
   collected: boolean;
   legendary?: boolean;
   dlc?: true;
+  loosable?: boolean;
 }
 
 export interface TalismanItem {
@@ -87,6 +77,7 @@ export interface TalismanItem {
   legendary: boolean;
   imgUrl?: string;
   versions?: TalismanVersions[];
+  loosable?: boolean;
 }
 
 export interface TalismansSubCategoryMap {
@@ -109,6 +100,7 @@ export interface AshOfWarItem {
   link: string;
   dlc: boolean;
   imgUrl?: string;
+  loosable?: boolean;
 }
 
 export interface AshesOfWarSubCategoryMap {
@@ -135,6 +127,7 @@ export interface SorceryItem {
   legendary: boolean;
   dlc: boolean;
   imgUrl?: string;
+  loosable?: boolean;
 }
 
 export interface SorceriesSubCategoryMap {
@@ -156,6 +149,7 @@ export interface IncantationsItem {
   legendary: boolean;
   dlc: boolean;
   imgUrl?: string;
+  loosable?: boolean;
 }
 
 export interface IncantationsSubCategoryMap {
@@ -182,6 +176,7 @@ export interface GestureOrMultiplayerItem {
   link: string;
   dlc: boolean;
   imgUrl?: string;
+  loosable?: boolean;
 }
 
 export interface GesturesAndMultiplayerSubCategoryMap {
@@ -199,6 +194,7 @@ export interface MeleWeaponItem {
   legendary: boolean;
   dlc: boolean;
   imgUrl?: string;
+  loosable?: boolean;
 }
 
 export interface MeleWeaponsSubCategoryMap {
@@ -238,24 +234,12 @@ export interface RangedWeaponItem {
   type: Extract<ItemCategory, "rangedWeapons">;
   subcategory: keyof RangedWeaponsSubCategoryMap;
   name: string;
-  /*   description: string; */
   link: string;
   collected: boolean;
   legendary: boolean;
   dlc: boolean;
   imgUrl?: string;
-  /*   droppedBy: {
-    name: string;
-    dropRate: number;
-    link: string;
-    imgUrl: string;
-  } | null;
-  vendor: {
-    name: string;
-    link: string;
-    imgUrl: string;
-  } | null;
-  placementDescription?: string | null; */
+  loosable?: boolean;
 }
 
 export interface RangedWeaponsSubCategoryMap {
@@ -277,6 +261,7 @@ export interface InfoItems {
   link: string;
   dlc: boolean;
   imgUrl?: string;
+  loosable?: boolean;
 }
 
 export interface InfoItemsSubCategoryMap {
@@ -295,6 +280,7 @@ export interface ToolOrBellBearingItems {
   collected: boolean;
   link: string;
   dlc: boolean;
+  loosable?: boolean;
   imgUrl?: string;
 }
 
@@ -313,6 +299,7 @@ export interface TearsOrUpgradesItem {
   link: string;
   dlc: boolean;
   imgUrl?: string;
+  loosable?: boolean;
 }
 
 export interface TearsOrUpgradesCategoryMap {
@@ -332,6 +319,7 @@ export interface CraftItem {
   link: string;
   dlc: boolean;
   imgUrl?: string;
+  loosable?: boolean;
 }
 
 export interface CraftItemsCategoryMap {
@@ -351,6 +339,7 @@ export interface ArmorBase {
   link: string;
   dlc: boolean;
   imgUrl?: string;
+  loosable?: boolean;
 }
 
 export interface ArmourPiece extends ArmorBase {
@@ -389,6 +378,7 @@ export interface СonsumableAndAmmoItem {
   legendary: boolean;
   dlc: boolean;
   imgUrl?: string;
+  loosable?: boolean;
 }
 
 export interface СonsumablesAndAmmoItemsCategoryMap {
@@ -412,6 +402,7 @@ export interface KeyItem {
   legendary: boolean;
   dlc: boolean;
   imgUrl?: string;
+  loosable?: boolean;
 }
 
 export interface KeyItemsSubCategoryMap {

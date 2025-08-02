@@ -5,13 +5,18 @@ type ArmourPieceStat = { name: string; collected: boolean };
 export function getItemStats(
   item: Item,
   countDlc: boolean,
-  altArmor: boolean
+  altArmor: boolean,
+  loosable: boolean
 ): {
   itemTotal: number;
   itemCollected: number;
   armourPieces?: ArmourPieceStat[];
 } {
   if (!countDlc && item.dlc) {
+    return { itemTotal: 0, itemCollected: 0 };
+  }
+
+  if (!loosable && item.loosable) {
     return { itemTotal: 0, itemCollected: 0 };
   }
 
@@ -52,7 +57,12 @@ export function getItemStats(
   };
 }
 
-function aggregateStats(items: Item[], countDlc: boolean, altArmor: boolean) {
+function aggregateStats(
+  items: Item[],
+  countDlc: boolean,
+  altArmor: boolean,
+  loosble: boolean
+) {
   let total = 0;
   let collected = 0;
   const armourPieceMap = new Map<string, boolean>();
@@ -61,7 +71,8 @@ function aggregateStats(items: Item[], countDlc: boolean, altArmor: boolean) {
     const { itemTotal, itemCollected, armourPieces } = getItemStats(
       item,
       countDlc,
-      altArmor
+      altArmor,
+      loosble
     );
 
     if (item.type === "armour" && armourPieces) {
@@ -92,15 +103,22 @@ function aggregateStats(items: Item[], countDlc: boolean, altArmor: boolean) {
 export function getCategoryStats(
   data: Partial<ItemSubCategoryMap>,
   countDlc: boolean,
-  altArmor: boolean
+  altArmor: boolean,
+  loosable: boolean
 ) {
-  return aggregateStats(Object.values(data).flat(), countDlc, altArmor);
+  return aggregateStats(
+    Object.values(data).flat(),
+    countDlc,
+    altArmor,
+    loosable
+  );
 }
 
 export function getSubCategoryStats(
   items: Item[],
   countDlc: boolean,
-  altArmor: boolean
+  altArmor: boolean,
+  loosable: boolean
 ) {
-  return aggregateStats(items, countDlc, altArmor);
+  return aggregateStats(items, countDlc, altArmor, loosable);
 }

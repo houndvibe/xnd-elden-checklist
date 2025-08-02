@@ -9,6 +9,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Chrysalids'+Memento",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -18,6 +19,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/The+Stormhawk+King",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -27,6 +29,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Irina's+Letter",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -36,6 +39,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Shabriri+Grape",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -45,6 +49,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Fingerprint+Grape",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -54,6 +59,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Rya's+Necklace",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -63,6 +69,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Serpent's+Amnion",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -72,6 +79,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Tonic+of+Forgetfulness",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -81,6 +89,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Dancer's+Castanets",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -90,6 +99,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Unalloyed+Gold+Needle+(Snapped)",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -99,6 +109,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Unalloyed+Gold+Needle+(Repaired)",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -108,6 +119,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Unalloyed+Gold+Needle+(Restored)",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -117,6 +129,7 @@ export const quests: KeyItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Blasphemous+Claw",
     dlc: false,
     legendary: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -126,6 +139,7 @@ export const quests: KeyItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Pureblood+Knight's+Medal",
     dlc: false,
     legendary: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -135,6 +149,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Unalloyed+Gold+Needle+(Restored)",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -144,6 +159,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Valkyrie's+Prosthesis",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -153,6 +169,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Alexander's+Innards",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -162,6 +179,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Favor",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -171,6 +189,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Weathered+Dagger",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -180,6 +199,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Black+Knifeprint",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -189,6 +209,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Cursemark+of+Death",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -198,6 +219,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Seedbed+Curse",
     dlc: false,
+    loosable: true,
   },
 
   {
@@ -208,6 +230,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Sellen's+Primal+Glintstone",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -217,6 +240,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Seluvis's+Potion",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -226,6 +250,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Seluvis's+Introduction",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -235,6 +260,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Amber+Starlight",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -244,6 +270,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Amber+Draught",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -253,6 +280,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Fingerslayer+Blade",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -262,6 +290,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Miniature+Ranni",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -271,6 +300,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Miniature+Ranni+(Lifeless)",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -280,6 +310,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Dark+Moon+Ring",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -289,6 +320,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Deathroot",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -298,6 +330,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Beast+Eye",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -353,6 +386,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Black+Syrup",
     dlc: true,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -362,6 +396,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Secret+Rite+Scroll",
     dlc: true,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -371,6 +406,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Letter+for+Freyja",
     dlc: true,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -380,6 +416,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Hole-Laden+Necklace",
     dlc: true,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -389,6 +426,7 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Igon's+Furled+Finger",
     dlc: true,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -398,5 +436,6 @@ export const quests: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Messmer's+Kindling",
     dlc: true,
+    loosable: true,
   },
 ];

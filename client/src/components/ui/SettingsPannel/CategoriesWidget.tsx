@@ -11,6 +11,7 @@ import {
   setAllSubcategoriesChecked,
   setCheckDlc,
   setAltArmor,
+  setLoosable,
 } from "../../../store/settingsSlice";
 import { useNavigate } from "react-router-dom";
 
@@ -25,6 +26,7 @@ export default function CategoriesWidget() {
     openCategories,
     checkDlc,
     altArmor,
+    loosable,
   } = useAppSelector((s) => s.settings);
 
   const [localCheckedCategories, setLocalCheckedCategories] = useState<
@@ -35,13 +37,15 @@ export default function CategoriesWidget() {
   >([]);
   const [localCheckDlc, setLocalCheckDlc] = useState(false);
   const [localAltArmor, setLocalAltArmor] = useState(true);
+  const [localLoosable, setLocalLoosable] = useState(true);
 
   useEffect(() => {
     setLocalCheckedCategories(checkedCategories);
     setLocalCheckedSubcategories(checkedSubcategories);
     setLocalCheckDlc(checkDlc);
     setLocalAltArmor(altArmor);
-  }, [checkedCategories, checkedSubcategories, checkDlc, altArmor]);
+    setLocalLoosable(loosable);
+  }, [checkedCategories, checkedSubcategories, checkDlc, altArmor, loosable]);
 
   const categories = Object.entries(cllection);
   const chunkSize = 6;
@@ -97,6 +101,9 @@ export default function CategoriesWidget() {
     if (localAltArmor !== altArmor) {
       dispatch(setAltArmor());
     }
+    if (localLoosable !== loosable) {
+      dispatch(setLoosable());
+    }
     dispatch(setAllCategoriesChecked(localCheckedCategories));
     dispatch(setAllSubcategoriesChecked(localCheckedSubcategories));
     navigate(`/`);
@@ -105,6 +112,7 @@ export default function CategoriesWidget() {
   const isUnchanged =
     localCheckDlc === checkDlc &&
     localAltArmor === altArmor &&
+    localLoosable === loosable &&
     JSON.stringify(localCheckedCategories) ===
       JSON.stringify(checkedCategories) &&
     JSON.stringify(localCheckedSubcategories) ===
@@ -151,6 +159,13 @@ export default function CategoriesWidget() {
               onChange={(e) => setLocalAltArmor(e.target.checked)}
             >
               {t("misc", "Alt.Armor")}
+            </Checkbox>
+
+            <Checkbox
+              checked={localLoosable}
+              onChange={(e) => setLocalLoosable(e.target.checked)}
+            >
+              {t("misc", "NG+ Loosable")}
             </Checkbox>
             <Button size="small" onClick={handleSave} disabled={isUnchanged}>
               {t("misc", "Apply changes")}

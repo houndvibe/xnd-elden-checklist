@@ -39,7 +39,7 @@ export default function FastCheck() {
 
   const collection = useAppSelector((state) => state.collection.collectionData);
 
-  const { checkDlc, checkedSubcategories, altArmor } = useAppSelector(
+  const { checkDlc, checkedSubcategories, altArmor, loosable } = useAppSelector(
     (state) => state.settings
   );
 
@@ -57,7 +57,8 @@ export default function FastCheck() {
   const { total, collected, percentage } = getCategoryStats(
     filteredData,
     checkDlc,
-    altArmor
+    altArmor,
+    loosable
   );
 
   const handelChangeCategory = (categoryName: ItemCategory) => {

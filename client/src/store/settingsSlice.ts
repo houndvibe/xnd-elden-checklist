@@ -25,6 +25,7 @@ interface SettingsState {
   openCategories: string[];
   checkDlc: boolean;
   altArmor: boolean;
+  loosable: boolean;
 }
 
 const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
@@ -41,6 +42,7 @@ const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
   openCategories: [],
   checkDlc: true,
   altArmor: false,
+  loosable: true,
 });
 
 export const settingsSlice = createSlice({
@@ -141,6 +143,10 @@ export const settingsSlice = createSlice({
       state.altArmor = !state.altArmor;
       saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
     },
+    setLoosable: (state) => {
+      state.loosable = !state.loosable;
+      saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
+    },
   },
 });
 
@@ -160,5 +166,6 @@ export const {
   setAllSubcategoriesChecked,
   setCheckDlc,
   setAltArmor,
+  setLoosable,
 } = settingsSlice.actions;
 export default settingsSlice.reducer;

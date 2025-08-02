@@ -27,6 +27,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Rusty+Key",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -36,6 +37,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Drawing-Room+Key",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -45,6 +47,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Sewer-Gaol+Key",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -54,6 +57,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Discarded+Palace+Key",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -63,6 +67,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Academy+Glintstone+Key",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -72,6 +77,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Sellian+Sealbreaker",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -81,6 +87,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Carian+Inverted+Statue",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -90,6 +97,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Dectus+Medallion+(Left)",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -99,6 +107,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Dectus+Medallion+(Right)",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -108,6 +117,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Rold+Medallion",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -117,6 +127,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Haligtree+Secret+Medallion+(Left)",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -126,6 +137,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Haligtree+Secret+Medallion+(Right)",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -135,6 +147,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Well+Depths+Key",
     dlc: true,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -144,6 +157,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Storeroom+Key",
     dlc: true,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -153,6 +167,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Prayer+Room+Key",
     dlc: true,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -162,6 +177,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Gaol+Upper+Level+Key",
     dlc: true,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -171,5 +187,6 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Gaol+Lower+Level+Key",
     dlc: true,
+    loosable: true,
   },
 ];

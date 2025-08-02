@@ -9,6 +9,7 @@ export const greatRunes: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Godrick%27s+Great+Rune",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -18,6 +19,7 @@ export const greatRunes: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Rykard%27s+Great+Rune",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -27,6 +29,7 @@ export const greatRunes: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Radahn%27s+Great+Rune",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -36,6 +39,7 @@ export const greatRunes: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Morgott%27s+Great+Rune",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -45,6 +49,7 @@ export const greatRunes: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Mohg%27s+Great+Rune",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -54,6 +59,7 @@ export const greatRunes: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Malenia%27s+Great+Rune",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -63,6 +69,7 @@ export const greatRunes: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Great+Rune+of+the+Unborn",
     dlc: false,
+    loosable: true,
   },
 
   {
@@ -73,6 +80,7 @@ export const greatRunes: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Mending+Rune+of+Perfect+Order",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -82,6 +90,7 @@ export const greatRunes: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Mending+Rune+of+the+Death-Prince",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -91,6 +100,7 @@ export const greatRunes: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Mending+Rune+of+the+Fell+Curse",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
@@ -100,5 +110,6 @@ export const greatRunes: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Miquella%27s+Great+Rune",
     dlc: true,
+    loosable: true,
   },
 ];

@@ -38,7 +38,9 @@ export default function DashboardWidget({
   const navigate = useNavigate();
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const { checkDlc, altArmor } = useAppSelector((state) => state.settings);
+  const { checkDlc, altArmor, loosable } = useAppSelector(
+    (state) => state.settings
+  );
 
   useEffect(() => {
     const handleResize = () => {
@@ -108,7 +110,12 @@ export default function DashboardWidget({
   const renderSubcategoryList = () => (
     <Flex vertical gap={20} flex={3}>
       {Object.entries(subData).map(([subclassName, subItems]) => {
-        const stats = getSubCategoryStats(subItems, checkDlc, altArmor);
+        const stats = getSubCategoryStats(
+          subItems,
+          checkDlc,
+          altArmor,
+          loosable
+        );
         const title = t("misc", toTitleCaseFromCamel(subclassName));
         const truncateTitle = truncateString(title, TRUNCATE_LIMITS.DASHBOARD);
 
