@@ -26,6 +26,7 @@ interface SettingsState {
   checkDlc: boolean;
   altArmor: boolean;
   loosable: boolean;
+  missedOnly: boolean;
 }
 
 const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
@@ -43,6 +44,7 @@ const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
   checkDlc: true,
   altArmor: false,
   loosable: true,
+  missedOnly: false,
 });
 
 export const settingsSlice = createSlice({
@@ -147,6 +149,10 @@ export const settingsSlice = createSlice({
       state.loosable = !state.loosable;
       saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
     },
+    setMissedOnly: (state) => {
+      state.missedOnly = !state.missedOnly;
+      saveToStorage(LOCALSTORAGE_SETTINGS_KEY, state);
+    },
   },
 });
 
@@ -167,5 +173,6 @@ export const {
   setCheckDlc,
   setAltArmor,
   setLoosable,
+  setMissedOnly,
 } = settingsSlice.actions;
 export default settingsSlice.reducer;

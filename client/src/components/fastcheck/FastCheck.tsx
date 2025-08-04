@@ -14,7 +14,7 @@ import ItemsGrid from "./ItemsGrid";
 import { useNavigate, useParams } from "react-router-dom";
 import { t } from "../../i18n";
 import { useAppDispatch, useAppSelector } from "../../store/typedDispatch";
-import { setFastcheckSize } from "../../store/settingsSlice";
+import { setFastcheckSize, setMissedOnly } from "../../store/settingsSlice";
 import { setGlobalSearchItem } from "../../store/serviceSlice";
 import { getCategoryStats } from "../../lib/utils/stats";
 import { Collection } from "../../store/collectionSlice";
@@ -39,9 +39,8 @@ export default function FastCheck() {
 
   const collection = useAppSelector((state) => state.collection.collectionData);
 
-  const { checkDlc, checkedSubcategories, altArmor, loosable } = useAppSelector(
-    (state) => state.settings
-  );
+  const { checkDlc, missedOnly, checkedSubcategories, altArmor, loosable } =
+    useAppSelector((state) => state.settings);
 
   const { tabKey } = useParams<{ tabKey?: ItemCategory }>();
 
@@ -125,6 +124,12 @@ export default function FastCheck() {
             <span
               style={{ color: APP_PALETTE.textPrimary }}
             >{`${collected}/${total} (${percentage}) %`}</span>
+            <Checkbox
+              checked={missedOnly}
+              onChange={() => dispatch(setMissedOnly())}
+            >
+              {t("misc", "Missed only")}
+            </Checkbox>
           </Flex>
 
           {tabKey === "armour" && (

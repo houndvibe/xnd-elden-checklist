@@ -167,6 +167,7 @@ export default function CategoriesWidget() {
             >
               {t("misc", "NG+ Missable")}
             </Checkbox>
+
             <Button size="small" onClick={handleSave} disabled={isUnchanged}>
               {t("misc", "Apply changes")}
             </Button>

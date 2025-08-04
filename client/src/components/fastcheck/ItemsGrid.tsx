@@ -71,9 +71,8 @@ export default function ItemsGrid({
   const categoryData = useAppSelector(
     (state) => state.collection.collectionData[`${selectedCategory}Data`]
   );
-  const { checkDlc, checkedSubcategories, altArmor, loosable } = useAppSelector(
-    (state) => state.settings
-  );
+  const { checkDlc, missedOnly, checkedSubcategories, altArmor, loosable } =
+    useAppSelector((state) => state.settings);
 
   const spoilers = useAppSelector((state) => state.settings.spoilers);
   const showFCNames = useAppSelector((state) => state.settings.showFCNames);
@@ -142,6 +141,7 @@ export default function ItemsGrid({
             .filter((item) => (checkDlc ? item : !item.dlc))
             .filter((item) => (loosable ? item : !item.loosable))
             .filter(() => checkedSubcategories.includes(subcategoryName))
+            .filter((item) => (missedOnly ? !item.collected : item))
             .filter((item) => {
               const targetNames = [item.name];
 
@@ -272,6 +272,9 @@ export default function ItemsGrid({
                               piece.pieceType as keyof ArmorFilter
                             ]
                         )
+                        .filter((piece) =>
+                          missedOnly ? !piece.collected : piece
+                        )
                         .map((variant) => {
                           const isAltered = variant !== part;
                           const variantName = variant.name;
@@ -373,6 +376,9 @@ export default function ItemsGrid({
                   if (isMultiVersionTalisman(item)) {
                     return item.versions
                       .filter((version) => (checkDlc ? version : !version.dlc))
+                      .filter((version) =>
+                        missedOnly ? !version.collected : version
+                      )
                       .map((version) => {
                         const versionName = `${item.name}${
                           version.tier > 0 ? ` +${version.tier}` : ""
