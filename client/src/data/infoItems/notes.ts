@@ -170,6 +170,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Volcano+Manor+Invitation",
     dlc: false,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Volcano Manor Invitation.png",
   },
   {
@@ -179,6 +180,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Letter+from+Volcano+Manor",
     dlc: false,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Volcano Manor Invitation.png",
   },
   {
@@ -188,6 +190,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Letter+from+Volcano+Manor",
     dlc: false,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Volcano Manor Invitation.png",
   },
   {
@@ -197,6 +200,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Red+Letter",
     dlc: false,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Red Letter.png",
   },
   {
@@ -206,6 +210,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Letter+to+Patches",
     dlc: false,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Letter to Patches.png",
   },
   {
@@ -215,6 +220,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Letter+to+Bernahl",
     dlc: false,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Letter to Bernahl.png",
   },
   {
@@ -224,6 +230,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sellia's+Secret",
     dlc: false,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Sellia's Secret.png",
   },
 
@@ -234,6 +241,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Meeting+Place+Map",
     dlc: false,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Meeting Place Map.png",
   },
 
@@ -244,6 +252,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Knifeprint+Clue",
     dlc: false,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Knifeprint Clue.png",
   },
   {
@@ -253,6 +262,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Mirage+Riddle",
     dlc: false,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Mirage Riddle.png",
   },
   {
@@ -272,6 +282,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Rogier's+Letter",
     dlc: false,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Rogier's Letter.png",
   },
   {
@@ -281,6 +292,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Zorayas'+Letter",
     dlc: false,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Rogier's Letter.png",
   },
   {
@@ -290,6 +302,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Cross+Map",
     dlc: true,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Cross Map.png",
   },
   {
@@ -299,6 +312,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/New+Cross+Map",
     dlc: true,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/New Cross Map.png",
   },
   {
@@ -308,6 +322,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ruins+Map",
     dlc: true,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Ruins Map.png",
   },
   {
@@ -317,6 +332,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ruins+Map+(2nd)",
     dlc: true,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Ruins Map (2nd).png",
   },
   {
@@ -326,6 +342,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ruins+Map+(3rd)",
     dlc: true,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Ruins Map (3rd).png",
   },
 
@@ -345,6 +362,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Ancient+Ruins+Cross+Message",
     dlc: true,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Ancient Ruins Cross Message.png",
   },
   {
@@ -354,6 +372,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Monk's+Missive",
     dlc: true,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Monk's Missive.png",
   },
   {
@@ -363,6 +382,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Storehouse+Cross+Message",
     dlc: true,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Storehouse Cross Message.png",
   },
   {
@@ -399,6 +419,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Message+from+Leda",
     dlc: true,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Message from Leda.png",
   },
   {
@@ -409,6 +430,7 @@ export const notes: InfoItems[] = [
     link: "https://eldenring.wiki.fextralife.com/Castle+Cross+Message",
     dlc: true,
     imgUrl: "./images/infoItems/notes/Message from Leda.png",
+    loosable: true,
   },
   {
     type: "infoItems",
@@ -417,6 +439,7 @@ export const notes: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Tower+of+Shadow+Message",
     dlc: true,
+    loosable: true,
     imgUrl: "./images/infoItems/notes/Message from Leda.png",
   },
 ];
