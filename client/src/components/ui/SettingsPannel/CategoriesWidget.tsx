@@ -165,7 +165,7 @@ export default function CategoriesWidget() {
               checked={localLoosable}
               onChange={(e) => setLocalLoosable(e.target.checked)}
             >
-              {t("misc", "NG+ Loosable")}
+              {t("misc", "NG+ Missable")}
             </Checkbox>
             <Button size="small" onClick={handleSave} disabled={isUnchanged}>
               {t("misc", "Apply changes")}
