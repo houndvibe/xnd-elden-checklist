@@ -121,16 +121,7 @@ export const quests: KeyItem[] = [
     dlc: false,
     loosable: true,
   },
-  {
-    type: "keyItems",
-    subcategory: "quests",
-    name: "Blasphemous Claw",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Blasphemous+Claw",
-    dlc: false,
-    legendary: false,
-    loosable: true,
-  },
+
   {
     type: "keyItems",
     subcategory: "quests",

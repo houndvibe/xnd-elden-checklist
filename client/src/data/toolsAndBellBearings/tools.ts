@@ -44,6 +44,14 @@ export const tools: ToolOrBellBearingItems[] = [
   {
     type: "toolsAndBellBearings",
     subcategory: "tools",
+    name: "Blasphemous Claw",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Blasphemous+Claw",
+    dlc: false,
+  },
+  {
+    type: "toolsAndBellBearings",
+    subcategory: "tools",
     name: "Regal Omen Bairn",
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Regal+Omen+Bairn",
