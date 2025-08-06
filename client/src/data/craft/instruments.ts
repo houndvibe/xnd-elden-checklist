@@ -24,6 +24,7 @@ export const instruments: CraftItem[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sewing+Needle",
     dlc: false,
+    loosable: true,
   },
   {
     type: "craft",
@@ -32,6 +33,7 @@ export const instruments: CraftItem[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Gold+Sewing+Needle",
     dlc: false,
+    loosable: true,
   },
   {
     type: "craft",

@@ -82,6 +82,7 @@ export const other: СonsumableAndAmmoItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Baldachin%27s+Blessing",
     legendary: false,
     dlc: false,
+    loosable: true,
   },
   {
     type: "consumablesAndAmmo",
@@ -254,6 +255,7 @@ export const other: СonsumableAndAmmoItem[] = [
     link: "https://eldenring.wiki.fextralife.com/Ancient+Dragon%27s+Blessing",
     legendary: false,
     dlc: true,
+    loosable: true,
   },
   {
     type: "consumablesAndAmmo",

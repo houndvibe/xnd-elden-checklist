@@ -18,6 +18,7 @@ export const keys: KeyItem[] = [
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Imbued+Sword+Key",
     dlc: false,
+    loosable: true,
   },
   {
     type: "keyItems",
