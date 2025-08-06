@@ -8,6 +8,7 @@ export const paintings: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Homing+Instinct",
     dlc: false,
+    loosable: true,
   },
   {
     type: "infoItems",
@@ -16,6 +17,7 @@ export const paintings: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Flightless+Bird",
     dlc: false,
+    loosable: true,
   },
   {
     type: "infoItems",
@@ -24,6 +26,7 @@ export const paintings: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Resurrection",
     dlc: false,
+    loosable: true,
   },
   {
     type: "infoItems",
@@ -32,6 +35,7 @@ export const paintings: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Prophecy",
     dlc: false,
+    loosable: true,
   },
   {
     type: "infoItems",
@@ -40,6 +44,7 @@ export const paintings: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Champion's+Song",
     dlc: false,
+    loosable: true,
   },
   {
     type: "infoItems",
@@ -48,6 +53,7 @@ export const paintings: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Redmane",
     dlc: false,
+    loosable: true,
   },
   {
     type: "infoItems",
@@ -56,6 +62,7 @@ export const paintings: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Sorcerer",
     dlc: false,
+    loosable: true,
   },
 
   {
@@ -65,6 +72,7 @@ export const paintings: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Domain+of+Dragons+Painting",
     dlc: true,
+    loosable: true,
   },
   {
     type: "infoItems",
@@ -73,6 +81,7 @@ export const paintings: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/The+Sacred+Tower+Painting",
     dlc: true,
+    loosable: true,
   },
   {
     type: "infoItems",
@@ -81,5 +90,6 @@ export const paintings: InfoItems[] = [
     collected: false,
     link: "https://eldenring.wiki.fextralife.com/Incursion+Painting",
     dlc: true,
+    loosable: true,
   },
 ];
