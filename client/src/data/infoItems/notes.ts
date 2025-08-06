@@ -394,15 +394,7 @@ export const notes: InfoItems[] = [
     dlc: true,
     imgUrl: "./images/infoItems/notes/Note Sealed Spiritsprings.png",
   },
-  {
-    type: "infoItems",
-    subcategory: "notes",
-    name: "Note: Sealed Spiritsprings (2)",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Note:+Sealed+Spiritsprings+(2)",
-    dlc: true,
-    imgUrl: "./images/infoItems/notes/Note Sealed Spiritsprings.png",
-  },
+
   {
     type: "infoItems",
     subcategory: "notes",
