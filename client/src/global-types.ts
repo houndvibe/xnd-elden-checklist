@@ -406,7 +406,6 @@ export interface KeyItem {
 }
 
 export interface KeyItemsSubCategoryMap {
-  keys: KeyItem[];
   quests: KeyItem[];
   spellBooks: KeyItem[];
   greatRunes: KeyItem[];

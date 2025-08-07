@@ -137,7 +137,6 @@ export const itemSubCategories: ItemSubCategory[] = [
   "ammo",
   "remembrances",
   "quests",
-  "keys",
   "spellBooks",
   "greatRunes",
   "commonfolkAndWanderers",
