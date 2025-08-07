@@ -1,4 +1,4 @@
-import { Checkbox, Flex, Input, Select } from "antd";
+import { Checkbox, Flex, Image, Input, Select } from "antd";
 import { ItemCategory, ItemSubCategoryMap } from "../../global-types";
 import {
   APP_PALETTE,
@@ -20,7 +20,7 @@ import { getCategoryStats } from "../../lib/utils/stats";
 import { Collection } from "../../store/collectionSlice";
 import { useState } from "react";
 import { normalizeText } from "../../lib/utils/misc";
-
+import { isTablet } from "react-device-detect";
 export interface ArmorFilter {
   chest: boolean;
   helm: boolean;
@@ -109,9 +109,10 @@ export default function FastCheck() {
               allowClear
               placeholder={t("misc", "Filter by name...")}
               style={{
-                width: 240,
+                width: isTablet ? 120 : 240,
                 color: APP_PALETTE.text,
                 fontSize: 16,
+                height: 31,
               }}
               onClear={() => dispatch(setGlobalSearchItem(null))}
               value={val}
@@ -145,7 +146,14 @@ export default function FastCheck() {
                   handlePieceTypeFilterChange("helm", e.target.checked)
                 }
               >
-                {t("misc", "Head")}
+                {/*     {t("misc", "Head")} */}{" "}
+                {
+                  <Image
+                    preview={false}
+                    src={"../../../public/assets/icons/head.png"}
+                    width={20}
+                  />
+                }
               </Checkbox>
               <Checkbox
                 checked={pieceTypeFilters.chest}
@@ -153,7 +161,14 @@ export default function FastCheck() {
                   handlePieceTypeFilterChange("chest", e.target.checked)
                 }
               >
-                {t("misc", "Body")}
+                {/*   {t("misc", "Body")} */}
+                {
+                  <Image
+                    preview={false}
+                    src={"../../../public/assets/icons/chest.png"}
+                    width={20}
+                  />
+                }
               </Checkbox>
               <Checkbox
                 checked={pieceTypeFilters.gloves}
@@ -161,7 +176,14 @@ export default function FastCheck() {
                   handlePieceTypeFilterChange("gloves", e.target.checked)
                 }
               >
-                {t("misc", "Hands")}
+                {/*   {t("misc", "Hands")} */}
+                {
+                  <Image
+                    preview={false}
+                    src={"../../../public/assets/icons/gloves.png"}
+                    width={20}
+                  />
+                }
               </Checkbox>
               <Checkbox
                 checked={pieceTypeFilters.boots}
@@ -169,7 +191,14 @@ export default function FastCheck() {
                   handlePieceTypeFilterChange("boots", e.target.checked)
                 }
               >
-                {t("misc", "Legs")}
+                {/* {t("misc", "Legs")} */}
+                {
+                  <Image
+                    preview={false}
+                    src={"../../../public/assets/icons/boots.png"}
+                    width={12}
+                  />
+                }
               </Checkbox>
             </Flex>
           )}
