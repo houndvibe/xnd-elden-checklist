@@ -74,7 +74,15 @@ export default function DashboardWidget({
           )
         }
       />
-      <span style={{ fontSize: 20 }}>{`${data.collected}/${data.total}`}</span>
+      <span
+        style={{
+          fontSize: 20,
+          color:
+            data.collected == data.total
+              ? APP_PALETTE.textHighlighted
+              : APP_PALETTE.text,
+        }}
+      >{`${data.collected}/${data.total}`}</span>
     </Flex>
   );
 
@@ -109,8 +117,7 @@ export default function DashboardWidget({
 
   const renderSubcategoryList = () => (
     <Flex vertical gap={20} flex={3}>
-      {Object.entries(subData)
-      .map(([subclassName, subItems]) => {
+      {Object.entries(subData).map(([subclassName, subItems]) => {
         const stats = getSubCategoryStats(
           subItems,
           checkDlc,

@@ -201,7 +201,12 @@ export default function ItemsGrid({
               <Divider size="small" orientation="center" orientationMargin="0">
                 {t("misc", toTitleCaseFromCamel(subcategoryName))}
                 <span
-                  style={{ color: APP_PALETTE.textPrimary }}
+                  style={{
+                    color:
+                      collected == total
+                        ? APP_PALETTE.textHighlighted
+                        : APP_PALETTE.textPrimary,
+                  }}
                 >{` ${collected}/${total}`}</span>
               </Divider>
 

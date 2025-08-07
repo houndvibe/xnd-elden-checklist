@@ -122,7 +122,12 @@ export default function FastCheck() {
             />
 
             <span
-              style={{ color: APP_PALETTE.textPrimary }}
+              style={{
+                color:
+                  collected == total
+                    ? APP_PALETTE.textHighlighted
+                    : APP_PALETTE.textPrimary,
+              }}
             >{`${collected}/${total} (${percentage}) %`}</span>
             <Checkbox
               checked={missedOnly}

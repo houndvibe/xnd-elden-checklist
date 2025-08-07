@@ -71,7 +71,14 @@ export default function CategorySidebar({
                   }}
                 >
                   <Flex className={styles.text} gap={10}>
-                    <span style={{ color: APP_PALETTE.textPrimary }}>
+                    <span
+                      style={{
+                        color:
+                          stats.collected == stats.total
+                            ? APP_PALETTE.textHighlighted
+                            : APP_PALETTE.textPrimary,
+                      }}
+                    >
                       {stats.collected + "/" + stats.total}
                     </span>
                     <>

@@ -238,10 +238,10 @@ export default function Checkpoints() {
       render: (value: string) => t("misc", toTitleCaseFromCamel(value)),
     },
     {
-      title: t("misc", "Previous"),
+      title: t("misc", "This Checkpoint"),
       dataIndex: "prevCount",
       key: "prevCount",
-      width: "10%",
+      width: "30%",
     },
     {
       title: t("misc", "Current"),
