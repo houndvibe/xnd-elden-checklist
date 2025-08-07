@@ -17,7 +17,6 @@ import styles from "./Header.module.scss";
 import InfoModal from "./InfoModal";
 import { t } from "../../../i18n";
 
-import logo from "../../../../public/assets/logo.png";
 import BoostersModal from "./BoostersModal";
 
 import FastCheckSwitch from "../../ui/SettingsPannel/FastCheckSwitch";
@@ -57,7 +56,7 @@ export default function Header() {
     <AppHeader className={styles.header}>
       <div className={styles.wrapper}>
         <NavLink to="/dashboard" className={styles.title}>
-          <Image src={logo} height={50} preview={false} />
+          <Image src={"assets/logo.png"} height={50} preview={false} />
         </NavLink>
 
         <div className={styles.searchWrapper}>

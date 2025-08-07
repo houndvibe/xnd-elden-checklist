@@ -64,7 +64,7 @@ export default function FastCheck() {
     navigate(`/${categoryName}`);
     dispatch(setGlobalSearchItem(null));
   };
-  
+
   const val = globalSearchItem ? t(tabKey!, globalSearchItem) : "";
 
   const [pieceTypeFilters, setPieceTypeFilters] = useState<ArmorFilter>({
@@ -151,7 +151,7 @@ export default function FastCheck() {
                 {
                   <Image
                     preview={false}
-                    src={"../../../public/assets/icons/head.png"}
+                    src={"assets/icons/head.png"}
                     width={20}
                   />
                 }
@@ -166,7 +166,7 @@ export default function FastCheck() {
                 {
                   <Image
                     preview={false}
-                    src={"../../../public/assets/icons/chest.png"}
+                    src={"assets/icons/chest.png"}
                     width={20}
                   />
                 }
@@ -181,7 +181,7 @@ export default function FastCheck() {
                 {
                   <Image
                     preview={false}
-                    src={"../../../public/assets/icons/gloves.png"}
+                    src={"assets/icons/gloves.png"}
                     width={20}
                   />
                 }
@@ -196,7 +196,7 @@ export default function FastCheck() {
                 {
                   <Image
                     preview={false}
-                    src={"../../../public/assets/icons/boots.png"}
+                    src={"assets/icons/boots.png"}
                     width={12}
                   />
                 }
