@@ -6,9 +6,7 @@
   padding: 20px;
   background: $bg-dark;
   position: relative;
-  height: 75vh;
   z-index: 1;
-  overflow-y: auto;
 
   /*   &::before {
     content: "";
@@ -27,4 +25,10 @@
 
 .menu {
   background: transparent;
+}
+.contentGallery {
+  overflow-y: auto;
+}
+.contentFast {
+  overflow-y: hidden;
 }

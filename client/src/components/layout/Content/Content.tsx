@@ -22,7 +22,7 @@ export default function Content() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const { showSettings, checkedCategories } = useAppSelector(
+  const { showSettings, checkedCategories, fastcheck } = useAppSelector(
     (state) => state.settings
   );
   const getActiveKey = () => {
@@ -52,7 +52,11 @@ export default function Content() {
   };
 
   return (
-    <AppContent className={styles.content}>
+    <AppContent
+      className={`${styles.content} ${
+        fastcheck ? styles.contentFast : styles.contentGallery
+      }`}
+    >
       <Flex vertical style={{ position: "relative" }}>
         {showSettings && <SettingsPannel />}
         <ConfigProvider

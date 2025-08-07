@@ -127,15 +127,14 @@ export default function CategoriesWidget() {
           display: "flex",
           alignItems: "center",
           gap: 12,
-          marginBottom: 8,
         }}
       >
         <div
           onClick={() => setAllOpen((prev) => !prev)}
           style={{ display: "flex", alignItems: "center", gap: 8 }}
         >
-          {allOpen ? <CaretUpOutlined /> : <CaretDownOutlined />}
           <span>{t("misc", "What should we count?")}</span>
+          {allOpen ? <CaretUpOutlined /> : <CaretDownOutlined />}
         </div>
 
         <Flex align="center" gap={10}>
