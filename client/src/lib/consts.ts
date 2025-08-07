@@ -179,7 +179,7 @@ export const PROGRESSBAR_COLORS: ProgressProps["strokeColor"] = {
 export const exceptionalSubcategories = ["bellBearings", "cookbooks", "notes"];
 
 export const TRUNCATE_LIMITS = {
-  DASHBOARD: 16,
+  DASHBOARD: 12,
   SUB_CATEGOTY_LABEL: 23,
 };
 

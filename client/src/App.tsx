@@ -6,6 +6,7 @@ import "./styles/reset.scss";
 import "./styles/global.scss";
 import { HashRouter } from "react-router-dom";
 import { useEffect } from "react";
+import { isTablet } from "react-device-detect";
 
 declare global {
   interface Window {
@@ -43,7 +44,7 @@ const App = () => {
           <Layout className="layout">
             <Header />
             <Content />
-            <Footer />
+            {!isTablet && <Footer />}
           </Layout>
         </div>
       </HashRouter>

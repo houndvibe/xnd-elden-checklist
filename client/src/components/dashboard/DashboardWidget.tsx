@@ -1,5 +1,5 @@
 import { Card, ConfigProvider, Flex, Image, Progress, Tooltip } from "antd";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import {
   APP_PALETTE,
@@ -113,8 +113,6 @@ export default function DashboardWidget({
     </Flex>
   );
 
-  console.log(altArmor);
-
   const renderSubcategoryList = () => (
     <Flex vertical gap={20} flex={3}>
       {Object.entries(subData).map(([subclassName, subItems]) => {
@@ -128,11 +126,13 @@ export default function DashboardWidget({
         const truncateTitle = truncateString(title, TRUNCATE_LIMITS.DASHBOARD);
 
         return (
-          <NavLink
-            key={subclassName}
-            to={`/${dataType}?open=${subclassName}`}
-            onClick={(e) => e.stopPropagation()}
+          <span
             className={styles.link}
+            key={subclassName}
+            onClick={(e) => {
+              e.stopPropagation();
+              navigate(`/${dataType}?open=${subclassName}`);
+            }}
           >
             <Flex gap={10} justify="flex-end">
               <span>
@@ -145,7 +145,7 @@ export default function DashboardWidget({
                 strokeColor={PROGRESSBAR_COLORS}
               />
             </Flex>
-          </NavLink>
+          </span>
         );
       })}
     </Flex>
@@ -169,7 +169,9 @@ export default function DashboardWidget({
             {t("misc", toTitleCaseFromCamel(dataType))}
           </div>
         }
-        onClick={() => navigate(`/${dataType}`)}
+        onClick={() => {
+          navigate(`/${dataType}`);
+        }}
       >
         {(isTablet && mode) || (mode && windowWidth <= 1200) ? (
           <Flex vertical>

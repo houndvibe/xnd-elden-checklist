@@ -2,7 +2,7 @@ import { Button, ConfigProvider, Flex } from "antd";
 import { ItemCategory } from "../../global-types";
 import { transformCategoryToName, truncateString } from "../../lib/utils/misc";
 import { t } from "../../i18n";
-
+import { isTablet } from "react-device-detect";
 import styles from "./CategorySidebar.module.scss";
 import { APP_PALETTE } from "../../lib/consts";
 import { useAppSelector } from "../../store/typedDispatch";
@@ -61,7 +61,7 @@ export default function CategorySidebar({
                 <Button
                   key={category}
                   type={selectedCategory === category ? "primary" : "default"}
-                  size="middle"
+                  size={isTablet ? "small" : "middle"}
                   className={styles.categoryButton}
                   onClick={() => onCategorySelect(category)}
                   style={{

@@ -64,6 +64,7 @@ export default function FastCheck() {
     navigate(`/${categoryName}`);
     dispatch(setGlobalSearchItem(null));
   };
+  
   const val = globalSearchItem ? t(tabKey!, globalSearchItem) : "";
 
   const [pieceTypeFilters, setPieceTypeFilters] = useState<ArmorFilter>({

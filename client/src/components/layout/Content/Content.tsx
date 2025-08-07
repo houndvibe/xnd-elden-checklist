@@ -14,6 +14,8 @@ import { t } from "../../../i18n";
 import { ItemCategory } from "../../../global-types";
 import { useAppSelector } from "../../../store/typedDispatch";
 import SettingsPannel from "../../ui/SettingsPannel/SettingsPannel";
+import { useMemo } from "react";
+
 /* import FastCheckSwitch from "../../ui/SettingsPannel/FastCheckSwitch"; */
 
 const { Content: AppContent } = Layout;
@@ -22,7 +24,7 @@ export default function Content() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const { showSettings, checkedCategories } = useAppSelector(
+  const { showSettings, checkedCategories, fastcheck } = useAppSelector(
     (state) => state.settings
   );
   const getActiveKey = () => {
@@ -51,8 +53,16 @@ export default function Content() {
     return itemCategories.filter((i) => checkedCategories.includes(i))[0];
   };
 
+  const isOverflowHidden = useMemo(
+    () => getActiveKey() === "items" && fastcheck && !showSettings,
+    [fastcheck, location.pathname, showSettings]
+  );
+  console.log(showSettings);
+
   return (
-    <AppContent className={`${styles.content} `}>
+    <AppContent
+      className={`${styles.content} ${isOverflowHidden ? styles.hidden : ""}`}
+    >
       <Flex vertical style={{ position: "relative" }}>
         {showSettings && <SettingsPannel />}
         <ConfigProvider

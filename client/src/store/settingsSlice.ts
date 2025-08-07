@@ -30,7 +30,7 @@ interface SettingsState {
 }
 
 const initialState: SettingsState = loadFromStorage(LOCALSTORAGE_SETTINGS_KEY, {
-  showSettings: true,
+  showSettings: false,
   spoilers: false,
   showWelcome: true,
   lang: "en",

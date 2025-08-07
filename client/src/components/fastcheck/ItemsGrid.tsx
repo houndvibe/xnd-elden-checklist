@@ -34,6 +34,8 @@ import Link from "antd/es/typography/Link";
 import { LinkOutlined } from "@ant-design/icons";
 import { isTablet } from "react-device-detect";
 import { ArmorFilter } from "./FastCheck";
+import { useEffect } from "react";
+
 interface ItemsGridProps {
   selectedCategory: ItemCategory;
   imgSize: number;
@@ -71,12 +73,28 @@ export default function ItemsGrid({
   const categoryData = useAppSelector(
     (state) => state.collection.collectionData[`${selectedCategory}Data`]
   );
-  const { checkDlc, missedOnly, checkedSubcategories, altArmor, loosable } =
-    useAppSelector((state) => state.settings);
+  const {
+    checkDlc,
+    missedOnly,
+    checkedSubcategories,
+    altArmor,
+    loosable,
+    showSettings,
+  } = useAppSelector((state) => state.settings);
 
   const spoilers = useAppSelector((state) => state.settings.spoilers);
   const showFCNames = useAppSelector((state) => state.settings.showFCNames);
   const subcategorySeenPartNames = new Map<string, Set<string>>();
+
+  useEffect(() => {
+    const searchTarget = document.querySelector(".scroll-target");
+    if (searchTarget) {
+      searchTarget.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  }, [selectedCategory]);
 
   const collectedStyle =
     imgSize > FASTCHECK_SIZE_S
@@ -95,20 +113,6 @@ export default function ItemsGrid({
   );
 
   const getNameBlock = (name: string, collected: boolean, link: string) => {
-    /*     const getTruncSize = () => {
-      switch (imgSize) {
-        case FASTCHECK_SIZE_S:
-          return 5;
-        case FASTCHECK_SIZE_M:
-          return 12;
-        case FASTCHECK_SIZE_L:
-          return 19;
-        case FASTCHECK_SIZE_XL:
-          return 33;
-        default:
-          return 10;
-      }
-    }; */
     return showFCNames && imgSize > 40 ? (
       <>
         <Divider size="small" />
@@ -129,8 +133,30 @@ export default function ItemsGrid({
     );
   };
 
+  const getHeight = () => {
+    if (isTablet) {
+      if (showSettings) {
+        return "55vh";
+      }
+      return "68vh";
+    }
+    if (showSettings) return "74vh";
+    return "82vh";
+  };
+
   return (
-    <div className={styles.itemsGridWrapper}>
+    <div className={styles.itemsGridWrapper} style={{ height: getHeight() }}>
+      <span
+        className="scroll-target"
+        style={{
+          position: "relative",
+          display: "block",
+          height: "0",
+          overflow: "hidden",
+        }}
+      >
+        {"scroll-target"}
+      </span>
       {(Object.entries(categoryData) as [string, Item[]][]).map(
         ([subcategoryName, items]) => {
           const sorted = [...items].sort(
