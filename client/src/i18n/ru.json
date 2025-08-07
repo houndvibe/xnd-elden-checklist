@@ -2894,9 +2894,7 @@
     "Fire Coil": "Огненный завиток",
     "Glinting Nail": "Сверкающий ноготь",
     "Ancient Dragon's Blessing": "Благословление древнего дракона",
-    "Iris of Grace": "Радужка благодати",
-    "Iris of Occultation": "Радужка тьмы",
-    "Thiollier's Concoction": "Снадобье Тиолье",
+
     "Call of Tibia": "Зов Тибии",
     "Charming Branch": "Чарующая ветвь",
     "Fire Spritestone": "Огненный камень духов",
@@ -3007,8 +3005,7 @@
     "Glass Shard": "Осколок стекла",
 
     "Miquella's Needle": "Игла Микеллы",
-    "Iris of Grace": "Радужка благодати",
-    "Iris of Darkness": "Радужка тьмы",
+
     "Tiolé's Elixir": "Снадобье Тиолье"
   },
   "tearsAndUpgrades": {
@@ -3600,6 +3597,9 @@
     "Ancient Dragon Prayerbook": "Молитвослов древних драконов",
     "Fire Monks' Prayerbook": "Молитвослов огненного монаха",
     "Giant's Prayerbook": "Молитвослов великана",
-    "Godskin Prayerbook": "Молитвослов божественной кожи"
+    "Godskin Prayerbook": "Молитвослов божественной кожи",
+    "Iris of Grace": "Радужка благодати",
+    "Iris of Occultation": "Радужка тьмы",
+    "Thiollier's Concoction": "Снадобье Тиолье"
   }
 }
