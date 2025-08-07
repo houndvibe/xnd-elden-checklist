@@ -33,7 +33,7 @@ export default function Dashboard() {
   } = useAppSelector((state) => state.settings);
 
   const stats = itemCategories
-    .filter((type) => checkedCategories.includes(type))
+    .filter((type) => checkedCategories?.includes(type))
     .map((type) => {
       const key = `${type}Data` as keyof typeof collectionData;
       const data = collectionData[key];

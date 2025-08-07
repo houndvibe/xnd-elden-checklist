@@ -32,7 +32,7 @@ export default function Tabs() {
 
   const createItemTabs = (): CustomTabItem[] =>
     itemCategories
-      .filter((category) => checkedCategories.includes(category))
+      .filter((category) => checkedCategories?.includes(category))
       .map((category) => ({
         key: category,
         label: t("misc", transformCategoryToName(category)),
