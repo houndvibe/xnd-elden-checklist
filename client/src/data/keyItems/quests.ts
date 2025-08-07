@@ -14,16 +14,6 @@ export const quests: KeyItem[] = [
   {
     type: "keyItems",
     subcategory: "quests",
-    name: "The Stormhawk King",
-    collected: false,
-    legendary: false,
-    link: "https://eldenring.wiki.fextralife.com/The+Stormhawk+King",
-    dlc: false,
-    loosable: true,
-  },
-  {
-    type: "keyItems",
-    subcategory: "quests",
     name: "Irina's Letter",
     collected: false,
     legendary: false,
@@ -31,6 +21,17 @@ export const quests: KeyItem[] = [
     dlc: false,
     loosable: true,
   },
+  {
+    type: "keyItems",
+    subcategory: "quests",
+    name: "The Stormhawk King",
+    collected: false,
+    legendary: false,
+    link: "https://eldenring.wiki.fextralife.com/The+Stormhawk+King",
+    dlc: false,
+    loosable: true,
+  },
+
   {
     type: "keyItems",
     subcategory: "quests",
@@ -121,17 +122,6 @@ export const quests: KeyItem[] = [
     dlc: false,
     loosable: true,
   },
-
-  {
-    type: "keyItems",
-    subcategory: "quests",
-    name: "Pureblood Knight's Medal",
-    collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Pureblood+Knight's+Medal",
-    dlc: false,
-    legendary: false,
-    loosable: true,
-  },
   {
     type: "keyItems",
     subcategory: "quests",
@@ -155,16 +145,6 @@ export const quests: KeyItem[] = [
   {
     type: "keyItems",
     subcategory: "quests",
-    name: "Alexander's Innards",
-    collected: false,
-    legendary: false,
-    link: "https://eldenring.wiki.fextralife.com/Alexander's+Innards",
-    dlc: false,
-    loosable: true,
-  },
-  {
-    type: "keyItems",
-    subcategory: "quests",
     name: "Lord of Blood's Favor",
     collected: false,
     legendary: false,
@@ -172,6 +152,28 @@ export const quests: KeyItem[] = [
     dlc: false,
     loosable: true,
   },
+  {
+    type: "keyItems",
+    subcategory: "quests",
+    name: "Pureblood Knight's Medal",
+    collected: false,
+    link: "https://eldenring.wiki.fextralife.com/Pureblood+Knight's+Medal",
+    dlc: false,
+    legendary: false,
+    loosable: true,
+  },
+
+  {
+    type: "keyItems",
+    subcategory: "quests",
+    name: "Alexander's Innards",
+    collected: false,
+    legendary: false,
+    link: "https://eldenring.wiki.fextralife.com/Alexander's+Innards",
+    dlc: false,
+    loosable: true,
+  },
+
   {
     type: "keyItems",
     subcategory: "quests",
@@ -303,6 +305,38 @@ export const quests: KeyItem[] = [
     dlc: false,
     loosable: true,
   },
+
+  {
+    type: "keyItems",
+    subcategory: "quests",
+    name: "Mending Rune of Perfect Order",
+    collected: false,
+    legendary: false,
+    link: "https://eldenring.wiki.fextralife.com/Mending+Rune+of+Perfect+Order",
+    dlc: false,
+    loosable: true,
+  },
+  {
+    type: "keyItems",
+    subcategory: "quests",
+    name: "Mending Rune of the Death-Prince",
+    collected: false,
+    legendary: false,
+    link: "https://eldenring.wiki.fextralife.com/Mending+Rune+of+the+Death-Prince",
+    dlc: false,
+    loosable: true,
+  },
+  {
+    type: "keyItems",
+    subcategory: "quests",
+    name: "Mending Rune of the Fell Curse",
+    collected: false,
+    legendary: false,
+    link: "https://eldenring.wiki.fextralife.com/Mending+Rune+of+the+Fell+Curse",
+    dlc: false,
+    loosable: true,
+  },
+
   {
     type: "keyItems",
     subcategory: "quests",
@@ -379,6 +413,7 @@ export const quests: KeyItem[] = [
     dlc: true,
     loosable: true,
   },
+
   {
     type: "keyItems",
     subcategory: "quests",
@@ -426,6 +461,16 @@ export const quests: KeyItem[] = [
     collected: false,
     legendary: false,
     link: "https://eldenring.wiki.fextralife.com/Messmer's+Kindling",
+    dlc: true,
+    loosable: true,
+  },
+  {
+    type: "keyItems",
+    subcategory: "quests",
+    name: "Miquella's Great Rune",
+    collected: false,
+    legendary: false,
+    link: "https://eldenring.wiki.fextralife.com/Miquella%27s+Great+Rune",
     dlc: true,
     loosable: true,
   },
