@@ -54,7 +54,7 @@ export default function Content() {
   return (
     <AppContent
       className={`${styles.content} ${
-        fastcheck ? styles.contentFast : styles.contentGallery
+        fastcheck && !showSettings ? styles.contentFast : styles.contentGallery
       }`}
     >
       <Flex vertical style={{ position: "relative" }}>

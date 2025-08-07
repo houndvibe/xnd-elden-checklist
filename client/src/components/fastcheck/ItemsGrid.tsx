@@ -71,15 +71,8 @@ export default function ItemsGrid({
   const categoryData = useAppSelector(
     (state) => state.collection.collectionData[`${selectedCategory}Data`]
   );
-  const {
-    checkDlc,
-    missedOnly,
-    checkedSubcategories,
-    altArmor,
-    loosable,
-    fastcheck,
-    showSettings,
-  } = useAppSelector((state) => state.settings);
+  const { checkDlc, missedOnly, checkedSubcategories, altArmor, loosable } =
+    useAppSelector((state) => state.settings);
 
   const spoilers = useAppSelector((state) => state.settings.spoilers);
   const showFCNames = useAppSelector((state) => state.settings.showFCNames);
@@ -569,11 +562,6 @@ export default function ItemsGrid({
           );
         }
       )}
-      {fastcheck && showSettings ? (
-        <Flex vertical style={{ height: 100 }}>
-          <span style={{ color: APP_PALETTE.bgDark }}>{"margin bottom"}</span>
-        </Flex>
-      ) : null}
     </div>
   );
 }
