@@ -104,7 +104,7 @@ export const tools: ToolOrBellBearingItems[] = [
     subcategory: "tools",
     name: 'Prattling Pate "Hello"',
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Hello%22",
+    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+Hello",
     dlc: false,
   },
   {
@@ -112,7 +112,7 @@ export const tools: ToolOrBellBearingItems[] = [
     subcategory: "tools",
     name: 'Prattling Pate "Thank You"',
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Thank+You%22",
+    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+Thank+You",
     dlc: false,
   },
   {
@@ -120,7 +120,7 @@ export const tools: ToolOrBellBearingItems[] = [
     subcategory: "tools",
     name: 'Prattling Pate "Apologies"',
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Apologies%22",
+    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+Apologies",
     dlc: false,
   },
   {
@@ -128,7 +128,7 @@ export const tools: ToolOrBellBearingItems[] = [
     subcategory: "tools",
     name: 'Prattling Pate "Wonderful"',
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Wonderful%22",
+    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+Wonderful",
     dlc: false,
   },
   {
@@ -136,7 +136,7 @@ export const tools: ToolOrBellBearingItems[] = [
     subcategory: "tools",
     name: 'Prattling Pate "Please Help"',
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Please+Help%22",
+    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+Please+Help",
     dlc: false,
   },
   {
@@ -144,7 +144,7 @@ export const tools: ToolOrBellBearingItems[] = [
     subcategory: "tools",
     name: 'Prattling Pate "My Beloved"',
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22My+Beloved%22",
+    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+My+Beloved",
     dlc: false,
   },
   {
@@ -168,7 +168,7 @@ export const tools: ToolOrBellBearingItems[] = [
     subcategory: "tools",
     name: 'Prattling Pate "Lamentation"',
     collected: false,
-    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+%22Lamentation%22",
+    link: "https://eldenring.wiki.fextralife.com/Prattling+Pate+Lamentation",
     dlc: true,
   },
   {

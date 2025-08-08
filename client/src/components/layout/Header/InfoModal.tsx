@@ -142,7 +142,7 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
             ? "Поддержать проект можно здесь:"
             : "Support the project here:"}{" "}
           <Space>
-            <Link href={BOOSTY_LINK} target="_blank">
+            <Link href={BOOSTY_LINK} target="_blank" rel="noopener noreferrer">
               Boosty
             </Link>
             {/*   {" | "}

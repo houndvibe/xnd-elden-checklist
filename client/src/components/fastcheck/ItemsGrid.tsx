@@ -116,7 +116,12 @@ export default function ItemsGrid({
     return showFCNames && imgSize > 40 ? (
       <>
         <Divider size="small" />
-        <Link href={link} className={styles.lnk}>
+        <Link
+          href={link}
+          className={styles.lnk}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span
             className={`${styles.linkText} ${
               collected ? styles.collected : ""
@@ -250,7 +255,12 @@ export default function ItemsGrid({
                       gap={10}
                       className={styles.popoverTitle}
                     >
-                      <Link className={styles.popoverLink} href={href}>
+                      <Link
+                        className={styles.popoverLink}
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {label}
                       </Link>
                       <LinkOutlined />

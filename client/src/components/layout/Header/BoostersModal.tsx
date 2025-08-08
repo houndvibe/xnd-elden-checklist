@@ -55,7 +55,7 @@ export default function BoostersModal({ open, onClose }: BoostersModalProps) {
             </div>
           </Flex>
           <Flex justify="center" gap={16}>
-            <Link href={BOOSTY_LINK} target="_blank">
+            <Link href={BOOSTY_LINK} target="_blank" rel="noopener noreferrer">
               Boosty
             </Link>
             {/*   {" | "}
