@@ -34,9 +34,8 @@ export default function CategorySidebar({
     <div className={styles.sidebar}>
       <Flex
         vertical
-        gap={10}
         justify="space-around"
-        style={isTablet ? { height: "100%" } : {}}
+        style={isTablet ? { height: "100%" } : { gap: 10 }}
       >
         {categories
           .filter((cat) => checkedCategories.includes(cat))
