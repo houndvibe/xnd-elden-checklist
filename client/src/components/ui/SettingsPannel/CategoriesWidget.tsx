@@ -15,6 +15,8 @@ import {
 } from "../../../store/settingsSlice";
 import { useNavigate } from "react-router-dom";
 
+//наставил ? перед includes для обратной совмеастимости при тестах
+
 export default function CategoriesWidget() {
   const [allOpen, setAllOpen] = useState(false);
   const navigate = useNavigate();
@@ -71,7 +73,7 @@ export default function CategoriesWidget() {
 
   const toggleLocalCategory = (category: string, subkeys: string[]) => {
     const trimmed = trimDataSuffix(category);
-    const isChecked = localCheckedCategories.includes(trimmed);
+    const isChecked = localCheckedCategories?.includes(trimmed);
     if (isChecked) {
       setLocalCheckedCategories((prev) => prev.filter((c) => c !== trimmed));
       setLocalCheckedSubcategories((prev) =>
@@ -86,7 +88,7 @@ export default function CategoriesWidget() {
   };
 
   const toggleLocalSubcategory = (subcategory: string) => {
-    const isChecked = localCheckedSubcategories.includes(subcategory);
+    const isChecked = localCheckedSubcategories?.includes(subcategory);
     setLocalCheckedSubcategories((prev) =>
       isChecked ? prev.filter((s) => s !== subcategory) : [...prev, subcategory]
     );
@@ -179,12 +181,12 @@ export default function CategoriesWidget() {
               {chunk.map(([category, subcats]) => {
                 const trimmedCategory = trimDataSuffix(category);
                 const isChecked =
-                  localCheckedCategories.includes(trimmedCategory);
+                  localCheckedCategories?.includes(trimmedCategory);
                 const isOpen = openCategories.includes(category);
                 const subkeys = Object.keys(subcats);
 
                 return (
-                  <div key={category}>
+                  <div key={category} style={{ marginTop: 5 }}>
                     <div
                       style={{
                         cursor: "pointer",
@@ -220,7 +222,7 @@ export default function CategoriesWidget() {
                         {subkeys.map((sub) => (
                           <Checkbox
                             key={sub}
-                            checked={localCheckedSubcategories.includes(sub)}
+                            checked={localCheckedSubcategories?.includes(sub)}
                             onChange={() => toggleLocalSubcategory(sub)}
                           >
                             {t("misc", toTitleCaseFromCamel(sub))}

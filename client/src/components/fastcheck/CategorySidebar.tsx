@@ -32,7 +32,12 @@ export default function CategorySidebar({
 
   return (
     <div className={styles.sidebar}>
-      <Flex vertical gap={8}>
+      <Flex
+        vertical
+        gap={10}
+        justify="space-around"
+        style={isTablet ? { height: "100%" } : {}}
+      >
         {categories
           .filter((cat) => checkedCategories.includes(cat))
           .map((category) => {
