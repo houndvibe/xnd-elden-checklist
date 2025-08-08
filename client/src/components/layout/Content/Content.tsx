@@ -57,7 +57,6 @@ export default function Content() {
     () => getActiveKey() === "items" && fastcheck && !showSettings,
     [fastcheck, location.pathname, showSettings]
   );
-  console.log(showSettings);
 
   return (
     <AppContent

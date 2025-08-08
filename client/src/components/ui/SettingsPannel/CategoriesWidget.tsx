@@ -29,12 +29,10 @@ export default function CategoriesWidget() {
     loosable,
   } = useAppSelector((s) => s.settings);
 
-  const [localCheckedCategories, setLocalCheckedCategories] = useState<
-    string[]
-  >([]);
-  const [localCheckedSubcategories, setLocalCheckedSubcategories] = useState<
-    string[]
-  >([]);
+  const [localCheckedCategories, setLocalCheckedCategories] =
+    useState<string[]>(checkedCategories);
+  const [localCheckedSubcategories, setLocalCheckedSubcategories] =
+    useState<string[]>(checkedSubcategories);
   const [localCheckDlc, setLocalCheckDlc] = useState(false);
   const [localAltArmor, setLocalAltArmor] = useState(true);
   const [localLoosable, setLocalLoosable] = useState(true);
