@@ -34,7 +34,7 @@ export default function Footer() {
         >
           <Flex align="center" gap={5}>
             <InstagramOutlined />
-            <span className={styles.link}>houndpiiit</span>
+     
           </Flex>
         </Link> */}
 
