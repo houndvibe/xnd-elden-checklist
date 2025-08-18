@@ -166,6 +166,32 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
             </span>
           </Flex>
         </Title>
+        <Paragraph>
+          <br />
+          <Text strong>
+            {isRussian
+              ? "⬤ Я впервые открыл приложение, а там общий прогресс коллекции 0/0 и при попытке открыть 'Что считаем?' белый экран. Как пофиксить?"
+              : "⬤ I opened the app for the first time, and the genereal stats shows 0/0. When I try to open 'What should we count?', I get a white screen. How can I fix this?"}
+          </Text>
+          <br />
+          <br />
+          {isRussian
+            ? "- Такое иногда случается при первом запуске. Откройте настройки и нажмите красную кнопку ОЧИСТИТЬ ДАННЫЕ. Проставьте все галочки и подтвердите действие."
+            : '- This sometimes happens on the first launch. Open the settings and click the red "CLEAR DATA" button. Check all the boxes and confirm the action.'}
+        </Paragraph>
+        <Paragraph>
+          <br />
+          <Text strong>
+            {isRussian
+              ? "⬤ Я впервые открыл приложение, а там всё уже заполнено на 100%. Почему? И как сбросить?"
+              : "⬤ I just opened the app and everything is already 100% complete. Why? How do I reset it?"}
+          </Text>
+          <br />
+          <br />
+          {isRussian
+            ? "- Такое иногда случается при первом запуске. Откройте настройки и нажмите красную кнопку ОЧИСТИТЬ ДАННЫЕ. Проставьте все галочки и подтвердите действие."
+            : '- This sometimes happens on the first launch. Open the settings and click the red "CLEAR DATA" button. Check all the boxes and confirm the action.'}
+        </Paragraph>
 
         <Paragraph>
           <br />
@@ -179,20 +205,6 @@ export default function InfoModal({ isOpen, onCancel }: Props) {
           {isRussian
             ? '- Откройте настройки (иконка шестерёнки вверху справа) и нажмите "Экспорт прогресса". Данные скопируются в буфер. Затем, после очистки историии бразуера или хранилища нажмите "Импорт прогресса". Коллекция будет восстановлена. Если вы хотите восттановить коллекцию из заранее сохраненного текстового файла - просто скопируйте запись из файла и нажмите "Импорт прогресса"'
             : '- Open the settings (gear icon in the top right) and click "Export Progress". The data will be copied to your clipboard. Then, after clearing your browser history or storage, click "Import Progress" — your collection will be restored. If you want to restore your collection from a previously saved text file, simply copy the saved entry and click "Import Progress".'}
-        </Paragraph>
-
-        <Paragraph>
-          <br />
-          <Text strong>
-            {isRussian
-              ? "⬤ Я впервые открыл приложение, а там всё уже заполнено на 100%. Почему? И как сбросить?"
-              : "⬤ I just opened the app and everything is already 100% complete. Why? How do I reset it?"}
-          </Text>
-          <br />
-          <br />
-          {isRussian
-            ? "- Такое иногда случается при первом запуске. Откройте настройки и нажмите красную кнопку ОЧИСТИТЬ ДАННЫЕ. Проставьте все галочки и подтвердите действие."
-            : '- This sometimes happens on the first launch. Open the settings and click the red "CLEAR DATA" button. Check all the boxes and confirm the action.'}
         </Paragraph>
       </Typography>
     </Modal>
