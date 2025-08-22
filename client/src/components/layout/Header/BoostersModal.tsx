@@ -2,6 +2,7 @@ import { Modal, List, Typography, Flex, Switch } from "antd";
 import styles from "./BoostersModal.module.scss";
 import { useState } from "react";
 import { BOOSTY_LINK /*  PATREON_LINK */ } from "../../../lib/consts";
+import { useAppSelector } from "../../../store/typedDispatch";
 
 const { Title, Text, Link, Paragraph } = Typography;
 
@@ -24,7 +25,9 @@ interface BoostersModalProps {
 }
 
 export default function BoostersModal({ open, onClose }: BoostersModalProps) {
-  const [lang, setLang] = useState<"en" | "ru">("en");
+  const { lang: appLang } = useAppSelector((state) => state.settings);
+
+  const [lang, setLang] = useState<"en" | "ru">(appLang);
   const isRussian = lang === "ru";
 
   const isElectron = !!window.electronAPI;

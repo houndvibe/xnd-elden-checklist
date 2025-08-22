@@ -43,3 +43,13 @@
     transform: scale(1.1);
   }
 }
+
+.videoThumb img {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: white;
+  }
+}

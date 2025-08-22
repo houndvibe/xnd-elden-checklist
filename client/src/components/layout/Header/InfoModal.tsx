@@ -5,7 +5,6 @@ import { useAppSelector } from "../../../store/typedDispatch";
 import {
   BOOSTY_LINK,
   CURRENT_APP_VERSION,
-  /*  PATREON_LINK, */
   YOUTUBE_LINK,
 } from "../../../lib/consts";
 
@@ -17,8 +16,11 @@ interface Props {
 }
 
 export default function InfoModal({ isOpen, onCancel }: Props) {
-  const { showWelcome } = useAppSelector((state) => state.settings);
-  const [lang, setLang] = useState<"en" | "ru">("en");
+  const { showWelcome, lang: appLang } = useAppSelector(
+    (state) => state.settings
+  );
+
+  const [lang, setLang] = useState<"en" | "ru">(appLang);
 
   const isRussian = lang === "ru";
   const isElectron = !!window.electronAPI;

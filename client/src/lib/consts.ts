@@ -6,6 +6,7 @@ export const CURRENT_APP_VERSION = "(v. 0.9.7 beta)";
 export const BOOSTY_LINK = "https://boosty.to/xnd";
 export const PATREON_LINK = "https://www.patreon.com/XnDs";
 export const YOUTUBE_LINK = "https://www.youtube.com/@XnDsChanel";
+export const LAST_VIDEO_LINK = "https://www.youtube.com/@XnDsChanel";
 
 export const LOCALSTORAGE_COLLECTION_KEY = "XnDEldenCompendium.collection";
 export const LOCALSTORAGE_SETTINGS_KEY = "XnDEldenCompendium.settings";

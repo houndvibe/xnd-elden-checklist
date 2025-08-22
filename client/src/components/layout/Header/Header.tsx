@@ -23,6 +23,7 @@ import FastCheckSwitch from "../../ui/SettingsPannel/FastCheckSwitch";
 import { itemCategories } from "../../../lib/consts";
 import { ItemCategory } from "../../../global-types";
 import { useLocation } from "react-router-dom";
+import LastVideoModal from "./LastVideoModal";
 const { Header: AppHeader } = Layout;
 
 export default function Header() {
@@ -34,6 +35,7 @@ export default function Header() {
 
   const [isHelpModalOpen, setIsHelpModalOpen] = useState(showWelcome);
   const [isBoostersModalOpen, setIsBoostersModalOpen] = useState(false);
+  const [isLastVideoModal, setIsLastVideoModal] = useState(false);
 
   const handleToggleSettings = () => {
     dispatch(setShowSettings(!showSettings));
@@ -50,6 +52,7 @@ export default function Header() {
   const closeHelpModal = () => {
     dispatch(setStopWelcome());
     setIsHelpModalOpen(false);
+    setIsLastVideoModal(true);
   };
 
   return (
@@ -91,6 +94,10 @@ export default function Header() {
       <BoostersModal
         open={isBoostersModalOpen}
         onClose={() => setIsBoostersModalOpen(false)}
+      />
+      <LastVideoModal
+        open={isLastVideoModal}
+        onClose={() => setIsLastVideoModal(false)}
       />
       <InfoModal isOpen={isHelpModalOpen} onCancel={closeHelpModal} />
     </AppHeader>
